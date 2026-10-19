@@ -1,0 +1,906 @@
+{
+  "max_missing_share": 0.05,
+  "tables": {
+    "usgs_raw_1976_1985": {
+      "rows": 37121,
+      "columns": {
+        "time": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "UTC, ISO 8601",
+          "range": [
+            "1976-01-01T00:04:05.400Z",
+            "1985-12-31T22:56:33.100Z"
+          ]
+        },
+        "latitude": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "degrees"
+        },
+        "longitude": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "degrees"
+        },
+        "depth": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "km"
+        },
+        "mag": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "magnitude units (scale given by magType)"
+        },
+        "magType": {
+          "type": "TEXT",
+          "missing": 1,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "nst": {
+          "type": "REAL",
+          "missing": 36802,
+          "missing_share": 0.9914
+        },
+        "gap": {
+          "type": "REAL",
+          "missing": 36803,
+          "missing_share": 0.9914
+        },
+        "dmin": {
+          "type": "REAL",
+          "missing": 36872,
+          "missing_share": 0.9933
+        },
+        "rms": {
+          "type": "REAL",
+          "missing": 17635,
+          "missing_share": 0.4751
+        },
+        "net": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "id": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "updated": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "place": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "type": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "horizontalError": {
+          "type": "REAL",
+          "missing": 36820,
+          "missing_share": 0.9919
+        },
+        "depthError": {
+          "type": "REAL",
+          "missing": 28429,
+          "missing_share": 0.7658
+        },
+        "magError": {
+          "type": "REAL",
+          "missing": 36841,
+          "missing_share": 0.9925
+        },
+        "magNst": {
+          "type": "REAL",
+          "missing": 19128,
+          "missing_share": 0.5153
+        },
+        "status": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "locationSource": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "magSource": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        }
+      },
+      "key": [
+        "id"
+      ],
+      "duplicate_rows": 0
+    },
+    "usgs_raw_1986_1995": {
+      "rows": 42573,
+      "columns": {
+        "time": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "UTC, ISO 8601",
+          "range": [
+            "1986-01-01T04:37:24.880Z",
+            "1995-12-31T22:42:33.550Z"
+          ]
+        },
+        "latitude": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "degrees"
+        },
+        "longitude": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "degrees"
+        },
+        "depth": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "km"
+        },
+        "mag": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "magnitude units (scale given by magType)"
+        },
+        "magType": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "nst": {
+          "type": "REAL",
+          "missing": 42275,
+          "missing_share": 0.993
+        },
+        "gap": {
+          "type": "REAL",
+          "missing": 42274,
+          "missing_share": 0.993
+        },
+        "dmin": {
+          "type": "REAL",
+          "missing": 42444,
+          "missing_share": 0.997
+        },
+        "rms": {
+          "type": "REAL",
+          "missing": 221,
+          "missing_share": 0.0052
+        },
+        "net": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "id": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "updated": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "place": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "type": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "horizontalError": {
+          "type": "REAL",
+          "missing": 42397,
+          "missing_share": 0.9959
+        },
+        "depthError": {
+          "type": "REAL",
+          "missing": 27781,
+          "missing_share": 0.6525
+        },
+        "magError": {
+          "type": "REAL",
+          "missing": 42524,
+          "missing_share": 0.9988
+        },
+        "magNst": {
+          "type": "REAL",
+          "missing": 8182,
+          "missing_share": 0.1922
+        },
+        "status": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "locationSource": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "magSource": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        }
+      },
+      "key": [
+        "id"
+      ],
+      "duplicate_rows": 0
+    },
+    "usgs_raw_1996_2005": {
+      "rows": 50984,
+      "columns": {
+        "time": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "UTC, ISO 8601",
+          "range": [
+            "1996-01-01T01:34:16.000Z",
+            "2005-12-31T19:08:45.530Z"
+          ]
+        },
+        "latitude": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "degrees"
+        },
+        "longitude": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "degrees"
+        },
+        "depth": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "km"
+        },
+        "mag": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "magnitude units (scale given by magType)"
+        },
+        "magType": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "nst": {
+          "type": "REAL",
+          "missing": 18882,
+          "missing_share": 0.3704
+        },
+        "gap": {
+          "type": "REAL",
+          "missing": 32417,
+          "missing_share": 0.6358
+        },
+        "dmin": {
+          "type": "REAL",
+          "missing": 50892,
+          "missing_share": 0.9982
+        },
+        "rms": {
+          "type": "REAL",
+          "missing": 1091,
+          "missing_share": 0.0214
+        },
+        "net": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "id": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "updated": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "place": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "type": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "horizontalError": {
+          "type": "REAL",
+          "missing": 50836,
+          "missing_share": 0.9971
+        },
+        "depthError": {
+          "type": "REAL",
+          "missing": 40037,
+          "missing_share": 0.7853
+        },
+        "magError": {
+          "type": "REAL",
+          "missing": 50939,
+          "missing_share": 0.9991
+        },
+        "magNst": {
+          "type": "REAL",
+          "missing": 12577,
+          "missing_share": 0.2467
+        },
+        "status": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "locationSource": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "magSource": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        }
+      },
+      "key": [
+        "id"
+      ],
+      "duplicate_rows": 0
+    },
+    "usgs_raw_2006_2015": {
+      "rows": 73394,
+      "columns": {
+        "time": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "UTC, ISO 8601",
+          "range": [
+            "2006-01-01T03:21:39.210Z",
+            "2015-12-31T23:39:28.940Z"
+          ]
+        },
+        "latitude": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "degrees"
+        },
+        "longitude": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "degrees"
+        },
+        "depth": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "km"
+        },
+        "mag": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "magnitude units (scale given by magType)"
+        },
+        "magType": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "nst": {
+          "type": "REAL",
+          "missing": 18950,
+          "missing_share": 0.2582
+        },
+        "gap": {
+          "type": "REAL",
+          "missing": 1409,
+          "missing_share": 0.0192
+        },
+        "dmin": {
+          "type": "REAL",
+          "missing": 55708,
+          "missing_share": 0.759
+        },
+        "rms": {
+          "type": "REAL",
+          "missing": 3839,
+          "missing_share": 0.0523
+        },
+        "net": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "id": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "updated": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "place": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "type": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "horizontalError": {
+          "type": "REAL",
+          "missing": 63198,
+          "missing_share": 0.8611
+        },
+        "depthError": {
+          "type": "REAL",
+          "missing": 30361,
+          "missing_share": 0.4137
+        },
+        "magError": {
+          "type": "REAL",
+          "missing": 56171,
+          "missing_share": 0.7653
+        },
+        "magNst": {
+          "type": "REAL",
+          "missing": 18439,
+          "missing_share": 0.2512
+        },
+        "status": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "locationSource": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "magSource": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        }
+      },
+      "key": [
+        "id"
+      ],
+      "duplicate_rows": 0
+    },
+    "usgs_raw_2016_2025": {
+      "rows": 74436,
+      "columns": {
+        "time": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "UTC, ISO 8601",
+          "range": [
+            "2016-01-01T02:00:39.950Z",
+            "2025-12-31T23:04:28.213Z"
+          ]
+        },
+        "latitude": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "degrees"
+        },
+        "longitude": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "degrees"
+        },
+        "depth": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "km"
+        },
+        "mag": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "magnitude units (scale given by magType)"
+        },
+        "magType": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "nst": {
+          "type": "REAL",
+          "missing": 46579,
+          "missing_share": 0.6258
+        },
+        "gap": {
+          "type": "REAL",
+          "missing": 525,
+          "missing_share": 0.0071
+        },
+        "dmin": {
+          "type": "REAL",
+          "missing": 559,
+          "missing_share": 0.0075
+        },
+        "rms": {
+          "type": "REAL",
+          "missing": 109,
+          "missing_share": 0.0015
+        },
+        "net": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "id": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "updated": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "place": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "type": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "horizontalError": {
+          "type": "REAL",
+          "missing": 484,
+          "missing_share": 0.0065
+        },
+        "depthError": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "magError": {
+          "type": "REAL",
+          "missing": 1610,
+          "missing_share": 0.0216
+        },
+        "magNst": {
+          "type": "REAL",
+          "missing": 1536,
+          "missing_share": 0.0206
+        },
+        "status": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "locationSource": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "magSource": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        }
+      },
+      "key": [
+        "id"
+      ],
+      "duplicate_rows": 0
+    },
+    "eq_clean_m45": {
+      "rows": 277946,
+      "columns": {
+        "id": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "time": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "UTC, ISO 8601",
+          "range": [
+            "1976-01-01T00:04:05.400Z",
+            "2025-12-31T23:04:28.213Z"
+          ]
+        },
+        "year": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "calendar year (UTC)",
+          "range": [
+            1976,
+            2025
+          ]
+        },
+        "latitude": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "degrees"
+        },
+        "longitude": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "degrees"
+        },
+        "depth": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "km"
+        },
+        "mag": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "magnitude units"
+        },
+        "magType": {
+          "type": "TEXT",
+          "missing": 1,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "mag_class": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "net": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "type": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "status": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        }
+      },
+      "key": [
+        "id"
+      ],
+      "duplicate_rows": 0,
+      "coverage": {
+        "column": "year",
+        "declared": [
+          1976,
+          2025
+        ],
+        "found": [
+          1976,
+          2025
+        ]
+      }
+    },
+    "eq_annual_counts": {
+      "rows": 50,
+      "columns": {
+        "year": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "calendar year (UTC)",
+          "range": [
+            1976,
+            2025
+          ]
+        },
+        "n_m45": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none (count)"
+        },
+        "n_m50": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none (count)"
+        },
+        "n_m55": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none (count)"
+        },
+        "n_m60": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none (count)"
+        },
+        "n_m70": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none (count)"
+        },
+        "n_m50_mw": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none (count)"
+        },
+        "n_m50_mb": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none (count)"
+        },
+        "n_m50_ms": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none (count)"
+        },
+        "n_m50_other": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none (count)"
+        },
+        "n_m50_shallow": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none (count)"
+        },
+        "max_mag": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "magnitude units"
+        }
+      },
+      "key": [
+        "year"
+      ],
+      "duplicate_rows": 0,
+      "coverage": {
+        "column": "year",
+        "declared": [
+          1976,
+          2025
+        ],
+        "found": [
+          1976,
+          2025
+        ]
+      }
+    },
+    "eq_bvalue_windows": {
+      "rows": 5,
+      "columns": {
+        "window": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "years, e.g. 1976-1985"
+        },
+        "start_year": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "calendar year"
+        },
+        "end_year": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "calendar year"
+        },
+        "window_type": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "n_total": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none (count)"
+        }
+      },
+      "key": [
+        "window"
+      ],
+      "duplicate_rows": 0
+    }
+  },
+  "passed": true,
+  "problems": []
+}

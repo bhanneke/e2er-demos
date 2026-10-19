@@ -1,0 +1,107 @@
+[
+  {
+    "target": "table:tab:mc_shift",
+    "edit_type": "keep",
+    "find": "$+0.2$ & 1.191 & 1.019 & 0.924 & 1.145 & 1.220 \\\\",
+    "reason": "The 0.2 is the row label of the shift in M_c (a magnitude offset), not the missing share of magNst (0.1922); the numbers match by coincidence and the table cell is correct. The 0.2 in the table note is the maximum-curvature correction, also not a data share.",
+    "source_finding": "F1"
+  },
+  {
+    "target": "section:literature",
+    "edit_type": "replace_text",
+    "find": "We use two of the established rules, maximum curvature with a correction and a goodness-of-fit criterion, and we report how far results move when the rule or the threshold changes. Our study differs in that it applies them decade by decade to a single global catalogue whose magnitude scale itself changes.",
+    "replace": "We use two of the established rules, maximum curvature with a correction of 0.2 (which places the threshold above the mode of the magnitude distribution and is therefore the more conservative choice) and a goodness-of-fit criterion, and we report how far results move when the rule or the threshold changes. Our study differs in that it applies them decade by decade to a single global catalogue whose magnitude scale itself changes. Because completeness varies in space, a single value per decade averages over regions with different detection capability; our $M_c$ values describe the global catalogue and are not regional completeness estimates.",
+    "source_finding": "F2"
+  },
+  {
+    "target": "section:literature",
+    "edit_type": "replace_text",
+    "find": "The standard maximum-likelihood estimator of the $b$-value, due to Aki and Utsu, uses",
+    "replace": "The standard maximum-likelihood estimator of the $b$-value, due to Aki and Utsu (we name the estimator and the likelihood-ratio test attributed to Utsu in words, because their original papers could not be verified in the reference database used for this study), uses",
+    "source_finding": "F2"
+  },
+  {
+    "target": "section:literature",
+    "edit_type": "replace_text",
+    "find": "which is large in every decade of our sample; the practical limit is therefore the set of assumptions behind the standard error, chiefly that events are independent and the sample homogeneous. We take up this point in the discussion.",
+    "replace": "which is large in every decade of our sample, so sampling error in the strict sense is small; the practical limit is therefore the set of assumptions behind the standard error, chiefly that events are independent and the sample homogeneous. Aftershock sequences violate the first assumption, and the literature on clustering and $b$-value inference, including declustering, lies outside this descriptive study, which keeps aftershocks; our standard errors and test statistics are therefore conditional on independence and understate uncertainty. We take up this point in the discussion.",
+    "source_finding": "F2"
+  },
+  {
+    "target": "section:literature",
+    "edit_type": "replace_text",
+    "find": "in specific arcs after 2004 \\citep{srivastava2021sundaarc}.",
+    "replace": "in specific arcs after 2004 \\citep{srivastava2021sundaarc}, a regional result that does not test the global hypothesis.",
+    "source_finding": "F2"
+  },
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "a concern that previous work on extreme magnitudes with a time-varying measurement process makes explicit \\citep{varty2021inference}",
+    "replace": "a concern that related work on extreme-value inference for magnitudes with a time-varying measurement process makes explicit \\citep{varty2021inference}, although that work addresses a different problem from the stability of the $b$-value",
+    "source_finding": "F2"
+  },
+  {
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "Counts at higher thresholds tell a different story, which is informative about the role of the magnitude scale. The decade means",
+    "replace": "Counts at higher thresholds share the peak in 2006--2015 and the fall in 2016--2025, but differ in the first decades and in the 1996--2005 dip. The decade means",
+    "source_finding": "F3"
+  },
+  {
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "Counts at different thresholds therefore do not move together across decades, which is what a change of magnitude scale, and not a common change of the rate, would produce; the catalogue alone cannot establish this reading.",
+    "replace": "Counts at different thresholds therefore share the peak in 2006--2015 but differ in the first decades and in the 1996--2005 dip. This pattern is compatible with a change of magnitude scale and with aftershock clustering that weights thresholds differently, and it is also compatible with a common change of the rate; the catalogue alone cannot separate these readings.",
+    "source_finding": "F3"
+  },
+  {
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "We therefore do not read the slope as a secular trend.",
+    "replace": "The small positive slope is an association with calendar time that depends on the threshold (rank correlation 0.27 at 5.0 and 0.51 at 4.9), so we describe it as such and do not read it as a secular trend.",
+    "source_finding": "F3"
+  },
+  {
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "so the catalogue is complete at the level used for the yearly counts in each decade under these rules.",
+    "replace": "so the 90 percent criterion is met at the level used for the yearly counts in every decade, whereas the 95 percent criterion is not met in one decade (94.0 percent). The goodness-of-fit measure assesses how well a straight line fits the distribution above a threshold; it does not show that events were never missed.",
+    "source_finding": "F3"
+  },
+  {
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "while the bootstrap intervals overlap; we report both as computed.",
+    "replace": "while the bootstrap intervals overlap; we report both as computed. Overlap of two 95 percent intervals is not a second test, since non-overlap corresponds to a test stricter than 5 percent, so this difference is expected. No correction for multiple comparisons is applied across the ten pairs, and pairs compared at each decade's own $M_c$ differ in their truncation point (4.9 against 4.7), so only the comparisons at a common threshold compare the same part of the distribution.",
+    "source_finding": "F3"
+  },
+  {
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "The two samples are estimated at different thresholds, so the contrast is descriptive.",
+    "replace": "The two samples are estimated at different thresholds, so the contrast is descriptive; a higher threshold combined with the few giant events can lower $b$ without any change in the magnitude procedures, and we have not computed the full-sample $b$ at the thresholds of the moment-magnitude sample.",
+    "source_finding": "F3"
+  },
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "and the counts at magnitudes 6 and 7 do not share this shape.",
+    "replace": "and the counts at magnitudes 6 and 7 share the peak in 2006--2015 but not the dip in 1996--2005.",
+    "source_finding": "F3"
+  },
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "A physical change in the size distribution would affect every magnitude type, yet it is absent from the moment-magnitude sample at its own, higher completeness magnitude; a change in how magnitudes are determined for events between 4.7 and 5.2 would affect the full sample and not the moment-magnitude sample.",
+    "replace": "A physical change in the size distribution and a change in how magnitudes are determined for events between 4.7 and 5.2 could each produce the variation in the full sample; the moment-magnitude sample is estimated at a higher threshold and so does not reach the events at which the two readings differ.",
+    "source_finding": "F3"
+  },
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "The variation depends on the completeness rule, on the composition of magnitude types, and, in the moment-magnitude sample, largely disappears.",
+    "replace": "The variation depends on the completeness rule and on the threshold; in the moment-magnitude sample, which is estimated at a higher completeness magnitude, the two latest decades show lower values, a contrast that is not on equal thresholds and therefore cannot be read as the removal of the variation.",
+    "source_finding": "F3"
+  }
+]

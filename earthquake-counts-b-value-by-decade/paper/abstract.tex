@@ -1,0 +1,14 @@
+\begin{abstract}
+Claims that earthquakes are becoming more frequent rest on raw catalogue counts, which depend on detection thresholds and magnitude scales. We ask how the yearly number of magnitude 5 and larger earthquakes worldwide changed from 1976 to 2025, and whether the Gutenberg--Richter $b$-value is stable across decades once the completeness magnitude is taken into account. Using the USGS ComCat catalogue with aftershocks retained, we compute annual counts and decade means, estimate the completeness magnitude per decade, and fit $b$ by Aki--Utsu maximum likelihood with bootstrap intervals.
+% src: estimation_results.json#sample.aftershocks_kept
+Decade means of M5+ counts range from 1,391 events per year (1996--2005) to 1,993 (2006--2015); the series shows no steady rise.
+% src: estimation_results.json#counts.m5.summary.decades
+The share of moment magnitudes among M5+ events grows from 10 to 77 percent before easing to 59 percent, so the magnitude scale is not constant.
+% src: estimation_results.json#magtype_mix_m5_by_decade
+The $b$-value is not stable: with completeness at the maximum-curvature estimate plus 0.2, it ranges from 1.02 to 1.16 across decades, and most decade pairs differ.
+% src: estimation_results.json#b_values.decade_mc_maxc_plus_0.2
+Estimates are sensitive to the completeness rule, and for recent decades completeness is censored at the 4.5 load floor.
+% src: estimation_results.json#completeness.mc_censored_at_load_floor
+\end{abstract}
+
+\noindent\textbf{Keywords:} earthquake catalogue, Gutenberg--Richter law, $b$-value, magnitude of completeness, USGS ComCat, annual earthquake counts

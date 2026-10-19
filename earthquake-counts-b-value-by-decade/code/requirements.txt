@@ -1,0 +1,22 @@
+# The packages the study's scripts import, at the versions of the Python environment
+# e2er ran the study in (Python 3.14.7), written by e2er at export. `e2er reproduce` installs
+# them in a new environment.
+# Also every package the scripts loaded when the run ran them (recorded by e2er), at the run's versions.
+charset-normalizer==3.5.2
+cloudpickle==3.1.2
+formulaic==1.2.2
+interface_meta==2.0.1
+joblib==1.6.0
+narwhals==2.27.1
+numpy==2.5.4
+packaging==26.3
+pandas==2.3.3
+patsy==1.0.3
+pyarrow==26.0.0
+python-dateutil==2.9.0.post0
+pytz==2026.5
+scipy==1.18.1
+six==1.17.0
+statsmodels==0.15.0
+typing_extensions==4.16.0
+wrapt==2.5.1

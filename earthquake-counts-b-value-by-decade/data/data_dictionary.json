@@ -1,0 +1,784 @@
+{
+  "study": "Yearly number of M>=5 earthquakes worldwide and stability of the Gutenberg-Richter b-value, 1976-2025",
+  "unit_of_observation": "one catalogue event (raw/clean tables); one calendar year (annual table); one decade and Mc rule (b-value table)",
+  "population_note": "The ANSS ComCat catalogue records what global networks detected and located, not every earthquake. Completeness depends on magnitude and period; the study describes the catalogue, with the completeness magnitude Mc estimated per decade from events down to M4.5.",
+  "tables": [
+    {
+      "name": "usgs_raw_1976_1985",
+      "source": "usgs",
+      "series": "earthquakes of magnitude 4.5 and above worldwide, 1976-01-01 to 1986-01-01",
+      "frequency": "event",
+      "role": "raw event table, part 1 of 5 (loaded per decade so each request stays under the service's 40-window split limit)",
+      "load": "e2er-data usgs events --start 1976-01-01 --end 1986-01-01 --min-magnitude 4.5 --table usgs_raw_1976_1985 --save-to usgs_raw_1976_1985.csv  (no --event-type, so explosions, quarry blasts and other types are kept for the quality check)",
+      "key": [
+        "id"
+      ],
+      "columns": [
+        {
+          "name": "id",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "ComCat event id (network code + number)"
+        },
+        {
+          "name": "time",
+          "type": "TEXT",
+          "unit": "UTC, ISO 8601",
+          "description": "origin time",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "latitude",
+          "type": "REAL",
+          "unit": "degrees",
+          "description": "epicentre latitude",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "longitude",
+          "type": "REAL",
+          "unit": "degrees",
+          "description": "epicentre longitude",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "depth",
+          "type": "REAL",
+          "unit": "km",
+          "description": "hypocentre depth",
+          "min_non_null": 0.9
+        },
+        {
+          "name": "mag",
+          "type": "REAL",
+          "unit": "magnitude units (scale given by magType)",
+          "description": "preferred magnitude",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "magType",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "magnitude type (mww, mw, mwc, mwb, mwr, mb, ms, ml, md ...)",
+          "min_non_null": 0.9
+        },
+        {
+          "name": "net",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "contributing network code of the preferred solution",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "type",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "event type: earthquake, explosion, quarry blast, nuclear explosion, mining explosion, ..."
+        },
+        {
+          "name": "status",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "reviewed or automatic"
+        }
+      ],
+      "licence": "U.S. public domain (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits): \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain.\" USGS asks \"that proper credit be given\". Cite the catalogue: U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "citation": "U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "provenance": "ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey (https://earthquake.usgs.gov/earthquakes/search/)",
+      "source_files": [
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1976-01-01T00%3A00%3A00&endtime=1980-12-31T12%3A00%3A00",
+          "sha256": "57883ff433407fbae9cacbb50fa1692a17ee9560235e561b1482c4661e18d76c"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1980-12-31T12%3A00%3A00&endtime=1986-01-01T00%3A00%3A00",
+          "sha256": "bb6fdb8d5662068931bda9c738bda406d9fb4701067435d7049f864e225f9d47"
+        }
+      ],
+      "cite_key": "USGS_ComCat",
+      "coverage_note": "origin times 1976-01-01 to 1985-12-31 UTC (half-open load window); the year coverage is checked on eq_clean_m45"
+    },
+    {
+      "name": "usgs_raw_1986_1995",
+      "source": "usgs",
+      "series": "earthquakes of magnitude 4.5 and above worldwide, 1986-01-01 to 1996-01-01",
+      "frequency": "event",
+      "role": "raw event table, part 2 of 5",
+      "load": "e2er-data usgs events --start 1986-01-01 --end 1996-01-01 --min-magnitude 4.5 --table usgs_raw_1986_1995 --save-to usgs_raw_1986_1995.csv",
+      "key": [
+        "id"
+      ],
+      "columns": [
+        {
+          "name": "id",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "ComCat event id"
+        },
+        {
+          "name": "time",
+          "type": "TEXT",
+          "unit": "UTC, ISO 8601",
+          "description": "origin time",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "latitude",
+          "type": "REAL",
+          "unit": "degrees",
+          "description": "epicentre latitude",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "longitude",
+          "type": "REAL",
+          "unit": "degrees",
+          "description": "epicentre longitude",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "depth",
+          "type": "REAL",
+          "unit": "km",
+          "description": "hypocentre depth",
+          "min_non_null": 0.9
+        },
+        {
+          "name": "mag",
+          "type": "REAL",
+          "unit": "magnitude units (scale given by magType)",
+          "description": "preferred magnitude",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "magType",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "magnitude type",
+          "min_non_null": 0.9
+        },
+        {
+          "name": "net",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "contributing network code",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "type",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "event type"
+        },
+        {
+          "name": "status",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "reviewed or automatic"
+        }
+      ],
+      "licence": "U.S. public domain (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits): \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain.\" USGS asks \"that proper credit be given\". Cite the catalogue: U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "citation": "U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "provenance": "ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey (https://earthquake.usgs.gov/earthquakes/search/)",
+      "source_files": [
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1986-01-01T00%3A00%3A00&endtime=1988-07-02T00%3A00%3A00",
+          "sha256": "2985e3844e924bb31443f159b3655292dacdf96c1135a42ee8c7244165b4bf6b"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1988-07-02T00%3A00%3A00&endtime=1991-01-01T00%3A00%3A00",
+          "sha256": "f6370b5bf4359b6a6aabb9846124a30bdebd3d81f2b403268b98a49d0184d344"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1991-01-01T00%3A00%3A00&endtime=1993-07-02T00%3A00%3A00",
+          "sha256": "564903fd967fd552acc9cca186216905c0e6619b2e2506a6b21ca6b22d2b8a9b"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1993-07-02T00%3A00%3A00&endtime=1996-01-01T00%3A00%3A00",
+          "sha256": "ab51eacb38fff8d49fdd05e4ecb326a815e08171bdaa42204992017bf2b8bb12"
+        }
+      ],
+      "cite_key": "USGS_ComCat",
+      "coverage_note": "origin times 1986-01-01 to 1995-12-31 UTC (half-open load window); the year coverage is checked on eq_clean_m45"
+    },
+    {
+      "name": "usgs_raw_1996_2005",
+      "source": "usgs",
+      "series": "earthquakes of magnitude 4.5 and above worldwide, 1996-01-01 to 2006-01-01",
+      "frequency": "event",
+      "role": "raw event table, part 3 of 5",
+      "load": "e2er-data usgs events --start 1996-01-01 --end 2006-01-01 --min-magnitude 4.5 --table usgs_raw_1996_2005 --save-to usgs_raw_1996_2005.csv",
+      "key": [
+        "id"
+      ],
+      "columns": [
+        {
+          "name": "id",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "ComCat event id"
+        },
+        {
+          "name": "time",
+          "type": "TEXT",
+          "unit": "UTC, ISO 8601",
+          "description": "origin time",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "latitude",
+          "type": "REAL",
+          "unit": "degrees",
+          "description": "epicentre latitude",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "longitude",
+          "type": "REAL",
+          "unit": "degrees",
+          "description": "epicentre longitude",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "depth",
+          "type": "REAL",
+          "unit": "km",
+          "description": "hypocentre depth",
+          "min_non_null": 0.9
+        },
+        {
+          "name": "mag",
+          "type": "REAL",
+          "unit": "magnitude units (scale given by magType)",
+          "description": "preferred magnitude",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "magType",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "magnitude type",
+          "min_non_null": 0.9
+        },
+        {
+          "name": "net",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "contributing network code",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "type",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "event type"
+        },
+        {
+          "name": "status",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "reviewed or automatic"
+        }
+      ],
+      "licence": "U.S. public domain (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits): \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain.\" USGS asks \"that proper credit be given\". Cite the catalogue: U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "citation": "U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "provenance": "ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey (https://earthquake.usgs.gov/earthquakes/search/)",
+      "source_files": [
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1996-01-01T00%3A00%3A00&endtime=1998-07-02T06%3A00%3A00",
+          "sha256": "251527d65d72730a549cc4617b02b90a476854e7ccdd39820c62f94fad6b1a86"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1998-07-02T06%3A00%3A00&endtime=2000-12-31T12%3A00%3A00",
+          "sha256": "780dd4e289a2e9c7210c8dadcd24f072690f921c809c20adc2968557ce03c4a8"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2000-12-31T12%3A00%3A00&endtime=2003-07-02T18%3A00%3A00",
+          "sha256": "ea75b8d00d21c514004dcdc275e54b47237f7792d94f2f60d66799c7894f658f"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2003-07-02T18%3A00%3A00&endtime=2006-01-01T00%3A00%3A00",
+          "sha256": "058480955f15f8ab0b8c4a0f8c27310d94039416724ceb4fbe79c98c3152d652"
+        }
+      ],
+      "cite_key": "USGS_ComCat",
+      "coverage_note": "origin times 1996-01-01 to 2005-12-31 UTC (half-open load window); the year coverage is checked on eq_clean_m45"
+    },
+    {
+      "name": "usgs_raw_2006_2015",
+      "source": "usgs",
+      "series": "earthquakes of magnitude 4.5 and above worldwide, 2006-01-01 to 2016-01-01",
+      "frequency": "event",
+      "role": "raw event table, part 4 of 5",
+      "load": "e2er-data usgs events --start 2006-01-01 --end 2016-01-01 --min-magnitude 4.5 --table usgs_raw_2006_2015 --save-to usgs_raw_2006_2015.csv",
+      "key": [
+        "id"
+      ],
+      "columns": [
+        {
+          "name": "id",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "ComCat event id"
+        },
+        {
+          "name": "time",
+          "type": "TEXT",
+          "unit": "UTC, ISO 8601",
+          "description": "origin time",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "latitude",
+          "type": "REAL",
+          "unit": "degrees",
+          "description": "epicentre latitude",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "longitude",
+          "type": "REAL",
+          "unit": "degrees",
+          "description": "epicentre longitude",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "depth",
+          "type": "REAL",
+          "unit": "km",
+          "description": "hypocentre depth",
+          "min_non_null": 0.9
+        },
+        {
+          "name": "mag",
+          "type": "REAL",
+          "unit": "magnitude units (scale given by magType)",
+          "description": "preferred magnitude",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "magType",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "magnitude type",
+          "min_non_null": 0.9
+        },
+        {
+          "name": "net",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "contributing network code",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "type",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "event type"
+        },
+        {
+          "name": "status",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "reviewed or automatic"
+        }
+      ],
+      "licence": "U.S. public domain (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits): \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain.\" USGS asks \"that proper credit be given\". Cite the catalogue: U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "citation": "U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "provenance": "ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey (https://earthquake.usgs.gov/earthquakes/search/)",
+      "source_files": [
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2006-01-01T00%3A00%3A00&endtime=2008-07-02T00%3A00%3A00",
+          "sha256": "c14aded8e744ff95eddb9c741021d0325c0c16a22c42e8883f82f4057b90813e"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2008-07-02T00%3A00%3A00&endtime=2011-01-01T00%3A00%3A00",
+          "sha256": "917bef1459665a1691488c068568750d268978a42af03944d94baf64e1455957"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2011-01-01T00%3A00%3A00&endtime=2012-04-01T12%3A00%3A00",
+          "sha256": "0f64a3bdb8ba8ba5b59f0754d6c11e6e66201be48b11e554917ac125ed83b1c0"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2012-04-01T12%3A00%3A00&endtime=2013-07-02T00%3A00%3A00",
+          "sha256": "8036aa5263d88ba708f0d51e577f252548edd4cb20d68e17d50d06f07b88ca79"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2013-07-02T00%3A00%3A00&endtime=2016-01-01T00%3A00%3A00",
+          "sha256": "f7d729fd260942f051548dcbc3c705f65d20f2b3c8259d3723dda01408eb9d02"
+        }
+      ],
+      "cite_key": "USGS_ComCat",
+      "coverage_note": "origin times 2006-01-01 to 2015-12-31 UTC (half-open load window); the year coverage is checked on eq_clean_m45"
+    },
+    {
+      "name": "usgs_raw_2016_2025",
+      "source": "usgs",
+      "series": "earthquakes of magnitude 4.5 and above worldwide, 2016-01-01 to 2026-01-01",
+      "frequency": "event",
+      "role": "raw event table, part 5 of 5",
+      "load": "e2er-data usgs events --start 2016-01-01 --end 2026-01-01 --min-magnitude 4.5 --table usgs_raw_2016_2025 --save-to usgs_raw_2016_2025.csv",
+      "key": [
+        "id"
+      ],
+      "columns": [
+        {
+          "name": "id",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "ComCat event id"
+        },
+        {
+          "name": "time",
+          "type": "TEXT",
+          "unit": "UTC, ISO 8601",
+          "description": "origin time",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "latitude",
+          "type": "REAL",
+          "unit": "degrees",
+          "description": "epicentre latitude",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "longitude",
+          "type": "REAL",
+          "unit": "degrees",
+          "description": "epicentre longitude",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "depth",
+          "type": "REAL",
+          "unit": "km",
+          "description": "hypocentre depth",
+          "min_non_null": 0.9
+        },
+        {
+          "name": "mag",
+          "type": "REAL",
+          "unit": "magnitude units (scale given by magType)",
+          "description": "preferred magnitude",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "magType",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "magnitude type",
+          "min_non_null": 0.9
+        },
+        {
+          "name": "net",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "contributing network code",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "type",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "event type"
+        },
+        {
+          "name": "status",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "reviewed or automatic"
+        }
+      ],
+      "licence": "U.S. public domain (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits): \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain.\" USGS asks \"that proper credit be given\". Cite the catalogue: U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "citation": "U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "provenance": "ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey (https://earthquake.usgs.gov/earthquakes/search/)",
+      "source_files": [
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2016-01-01T00%3A00%3A00&endtime=2018-07-02T06%3A00%3A00",
+          "sha256": "8630e87d9b1a06d168b7b111e460fddee16a1bcb343f5d2e8d555d30ca33b52e"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2018-07-02T06%3A00%3A00&endtime=2020-12-31T12%3A00%3A00",
+          "sha256": "a1d734977c8f3d0c71291c919640a515734a66a366d3a6e04fa38e4dfe563f62"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2020-12-31T12%3A00%3A00&endtime=2022-04-02T03%3A00%3A00",
+          "sha256": "90f12f6c4aafe995d32c7095217130a89a510000a0dcaa3ac6dbc23cd7aeadbc"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2022-04-02T03%3A00%3A00&endtime=2023-07-02T18%3A00%3A00",
+          "sha256": "9508fceef77a5d181896b8654afa65c75a90a4ed73221b71a7a2d9aa9e0c735c"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2023-07-02T18%3A00%3A00&endtime=2026-01-01T00%3A00%3A00",
+          "sha256": "0ab0a066d6315aef0e8ad2339dcdbbc8372dea13786879f913ab56dfb7dad54d"
+        }
+      ],
+      "cite_key": "USGS_ComCat",
+      "coverage_note": "origin times 2016-01-01 to 2025-12-31 UTC (half-open load window); the year coverage is checked on eq_clean_m45"
+    },
+    {
+      "name": "eq_clean_m45",
+      "source": "usgs",
+      "derived": true,
+      "derived_from": [
+        "usgs_raw_1976_1985",
+        "usgs_raw_1986_1995",
+        "usgs_raw_1996_2005",
+        "usgs_raw_2006_2015",
+        "usgs_raw_2016_2025"
+      ],
+      "series": "cleaned earthquake catalogue, M>=4.5, 1976-2025",
+      "frequency": "event",
+      "role": "cleaned table for Mc estimation, annual counts and b-values; built by the data analyst's cleaning script with the rules in `cleaning`; raw tables are never overwritten",
+      "key": [
+        "id"
+      ],
+      "coverage": {
+        "column": "year",
+        "from": 1976,
+        "to": 2025
+      },
+      "columns": [
+        {
+          "name": "id",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "ComCat event id"
+        },
+        {
+          "name": "time",
+          "type": "TEXT",
+          "unit": "UTC, ISO 8601",
+          "description": "origin time"
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "unit": "calendar year (UTC)",
+          "description": "year of origin time"
+        },
+        {
+          "name": "latitude",
+          "type": "REAL",
+          "unit": "degrees",
+          "description": "epicentre latitude"
+        },
+        {
+          "name": "longitude",
+          "type": "REAL",
+          "unit": "degrees",
+          "description": "epicentre longitude"
+        },
+        {
+          "name": "depth",
+          "type": "REAL",
+          "unit": "km",
+          "description": "hypocentre depth"
+        },
+        {
+          "name": "mag",
+          "type": "REAL",
+          "unit": "magnitude units",
+          "description": "preferred magnitude, as published (not converted)"
+        },
+        {
+          "name": "magType",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "magnitude type, lower-cased"
+        },
+        {
+          "name": "mag_class",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "moment-magnitude family (mw, mww, mwc, mwb, mwr, mwp) vs body-wave (mb, mb_lg) vs surface-wave (ms) vs local/duration (ml, md) vs other"
+        },
+        {
+          "name": "net",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "contributing network code"
+        },
+        {
+          "name": "type",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "event type; all rows are 'earthquake'"
+        }
+      ]
+    },
+    {
+      "name": "eq_annual_counts",
+      "source": "usgs",
+      "derived": true,
+      "derived_from": [
+        "eq_clean_m45"
+      ],
+      "series": "yearly counts by magnitude threshold",
+      "frequency": "annual",
+      "role": "one row per calendar year 1976-2025: counts of M>=5 (primary), M>=5.5, M>=6, M>=7 and M>=4.5; M>=5 counts by magnitude class and by depth (<=70 km); the largest magnitude. Counting only, no tests. Counts at the common threshold (largest decade Mc) are computed in the analysis step, once the decade Mc values exist.",
+      "key": [
+        "year"
+      ],
+      "coverage": {
+        "column": "year",
+        "from": 1976,
+        "to": 2025
+      },
+      "columns": [
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "unit": "calendar year (UTC)",
+          "description": "year"
+        },
+        {
+          "name": "n_m45",
+          "type": "INTEGER",
+          "unit": "none (count)",
+          "description": "earthquakes with mag >= 4.5"
+        },
+        {
+          "name": "n_m50",
+          "type": "INTEGER",
+          "unit": "none (count)",
+          "description": "earthquakes with mag >= 5.0 (primary series)"
+        },
+        {
+          "name": "n_m55",
+          "type": "INTEGER",
+          "unit": "none (count)",
+          "description": "earthquakes with mag >= 5.5"
+        },
+        {
+          "name": "n_m60",
+          "type": "INTEGER",
+          "unit": "none (count)",
+          "description": "earthquakes with mag >= 6.0"
+        },
+        {
+          "name": "n_m70",
+          "type": "INTEGER",
+          "unit": "none (count)",
+          "description": "earthquakes with mag >= 7.0"
+        },
+        {
+          "name": "n_m50_mw",
+          "type": "INTEGER",
+          "unit": "none (count)",
+          "description": "M>=5 events whose magType is in the moment-magnitude family"
+        },
+        {
+          "name": "n_m50_mb",
+          "type": "INTEGER",
+          "unit": "none (count)",
+          "description": "M>=5 events with magType mb"
+        },
+        {
+          "name": "n_m50_ms",
+          "type": "INTEGER",
+          "unit": "none (count)",
+          "description": "M>=5 events with magType ms"
+        },
+        {
+          "name": "n_m50_other",
+          "type": "INTEGER",
+          "unit": "none (count)",
+          "description": "M>=5 events with any other magType"
+        },
+        {
+          "name": "n_m50_shallow",
+          "type": "INTEGER",
+          "unit": "none (count)",
+          "description": "M>=5 events with depth <= 70 km"
+        },
+        {
+          "name": "max_mag",
+          "type": "REAL",
+          "unit": "magnitude units",
+          "description": "largest magnitude in the year"
+        }
+      ]
+    },
+    {
+      "name": "eq_bvalue_windows",
+      "source": "usgs",
+      "derived": true,
+      "derived_from": [
+        "eq_clean_m45"
+      ],
+      "series": "decade windows for the b-value analysis (sample sizes only)",
+      "frequency": "decade",
+      "role": "sample sizes per decade (1976-85, 1986-95, 1996-2005, 2006-15, 2016-25; no sliding windows). Mc (maximum curvature +0.2, goodness-of-fit 90/95%, common threshold = largest decade Mc), n above Mc and the b-value (Aki-Utsu MLE, dM = 0.1) are estimates and are computed in the analysis step from eq_clean_m45, not stored here.",
+      "key": [
+        "window"
+      ],
+      "columns": [
+        {
+          "name": "window",
+          "type": "TEXT",
+          "unit": "years, e.g. 1976-1985",
+          "description": "decade label"
+        },
+        {
+          "name": "start_year",
+          "type": "INTEGER",
+          "unit": "calendar year",
+          "description": "first year included"
+        },
+        {
+          "name": "end_year",
+          "type": "INTEGER",
+          "unit": "calendar year",
+          "description": "last year included"
+        },
+        {
+          "name": "window_type",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "decade"
+        },
+        {
+          "name": "n_total",
+          "type": "INTEGER",
+          "unit": "none (count)",
+          "description": "events in the decade with mag >= 4.5"
+        }
+      ]
+    }
+  ],
+  "cleaning": {
+    "event_type": "keep type == 'earthquake' only. Count and report removed rows by type (explosion, nuclear explosion, quarry blast, mining explosion, other) and by decade. Fixed-period reload with --event-type earthquake is not used for the raw tables so that these counts exist.",
+    "time_range": "origin time 1976-01-01T00:00:00Z to 2025-12-31T23:59:59Z; year = UTC year.",
+    "magnitude_filter": "drop mag < 4.5 (already excluded by the request) and rows with null mag. The request filters on magnitude, so null-magnitude events cannot appear in the raw tables; their number is not observable here and the paper says so.",
+    "magnitude_type_handling": "No conversion between magnitude types in the primary analysis: the preferred magnitude 'mag' of ComCat is used as published (one preferred magnitude per event), and magType is kept and lower-cased. mww/mw/mwc/mwb/mwr are treated as one moment-magnitude family; mb and ms are kept separate; ml/md are rare at M>=4.5. Checks: (a) the mix of magType per decade is reported; (b) counts and b-values restricted to the moment-magnitude family; (c) a shallow sample (depth <= 70 km). ComCat's preferred magnitude mixes types over time, so a shift in the mix is a possible catalogue artefact and is reported, not corrected.",
+    "duplicates": "key = id. Drop repeated ids across the five raw tables (boundary events are loaded once only because windows are half-open, but check). Also flag near-duplicates: events within 16 s, 100 km and 0.5 magnitude units of each other, reported by net pair; flagged ones are listed, and removed only in a documented sensitivity run. No silent dropping.",
+    "depth": "depth in km; negative values (above sea level) are kept and counted; no depth filter in the primary tables (the shallow check uses depth <= 70 km).",
+    "region": "worldwide, no bounding box."
+  },
+  "expected_quality_checks": [
+    "rows per raw table, rows per year, and the decade each row falls in; 50 calendar years all present in eq_annual_counts",
+    "share of rows by type; count of explosions, quarry blasts and nuclear explosions removed",
+    "null counts for time, latitude, longitude, depth, mag, magType, net",
+    "share of rows by magType and by net per decade (shows the mix shift)",
+    "duplicate ids and near-duplicate pairs",
+    "range checks: latitude in [-90, 90], longitude in [-180, 180], depth in [-5, 800] km, mag in [4.5, 10]",
+    "status split reviewed vs automatic per year (recent months are mostly automatic; 2025 events may still be revised)",
+    "event counts per request against the service limit; the load stops rather than saving a cut table"
+  ],
+  "missing_values_note": "Columns nst, gap, dmin, rms, horizontalError, depthError, magError and magNst are mostly empty before 2000 and are not used; they are not declared and are not checked.",
+  "unavailable": [
+    {
+      "item": "Global CMT catalogue (Ekstroem, Nettles & Dziewonski 2012)",
+      "reason": "no available source holds it (not among usgs, exoplanets, gaia, nasa_power, worldbank, eurostat, owid, who_gho, gutenberg, github, gisco, naturalearth, and no data files supplied). The cross-check is dropped; instead ComCat events with magType in the Mw family serve as the internal check, and the paper names the limitation."
+    }
+  ],
+  "known_limits": [
+    "ComCat is compiled from several networks; its preferred magnitude type changes over time, and completeness in the 1970s-80s may be above 4.5 worldwide, so M>=4.5 counts are not assumed comparable across decades. The primary count series uses M>=5, and counts are also given at one common threshold equal to the largest decade Mc.",
+    "ComCat events are revised after review; the load records its date and a later load can differ slightly (especially for 2025).",
+    "Aftershocks are included and not removed."
+  ],
+  "citation": "U.S. Geological Survey (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. https://doi.org/10.5066/F7MS3QZH (BibTeX key USGS_ComCat)"
+}

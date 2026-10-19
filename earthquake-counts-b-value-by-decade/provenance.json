@@ -1,0 +1,3590 @@
+{
+  "schema": "e2er-provenance/1",
+  "run": {
+    "paper_id": "b68c8252-7002-4831-8bce-e6c639b9faf7",
+    "backend": "claude_code",
+    "model": "sonnet",
+    "governance": "full",
+    "template": "descriptive-study",
+    "e2er_version": "0.17.0",
+    "exported_at": "20261015",
+    "purpose": "demonstration",
+    "results_from_code": {
+      "results/estimation_results.json": {
+        "outcome": "from_code",
+        "reason": "written by run_estimation.py (run 2026-10-14T16:57:19Z)",
+        "script": "run_estimation.py",
+        "script_sha256": "852f5b90b77afd2c2f3d5640b1e73304526ba270d096d2bc7d86452ed327daa8",
+        "output_sha256": "5c9d6e0b6259ef0512ae091616e987f8955afac74c86bff313d455787d85a78f",
+        "ran_at": "2026-10-14T16:57:19Z",
+        "exit_code": 0,
+        "script_in_folder": "code/run_estimation.py",
+        "script_in_folder_sha256": "852f5b90b77afd2c2f3d5640b1e73304526ba270d096d2bc7d86452ed327daa8"
+      }
+    }
+  },
+  "files": {
+    "README.md": {
+      "sha256": "fe60dd6c369b7d07ee10e273786394a3a80cc0ed442dc8946aed40d13280d6fd",
+      "bytes": 3794
+    },
+    "code/requirements.txt": {
+      "sha256": "f3889dcae7cbbee54b9a14ce9d2896ebdc5e58cb968ceb0cbb37fb58bfae8ec8",
+      "bytes": 627
+    },
+    "code/run_estimation.py": {
+      "sha256": "852f5b90b77afd2c2f3d5640b1e73304526ba270d096d2bc7d86452ed327daa8",
+      "bytes": 14843
+    },
+    "code/scratch/clean_catalogue.py": {
+      "sha256": "92b9d5d54bb839e12b973b6c0338ed54772a16326141a93c47a4e6f652db21f9",
+      "bytes": 9532
+    },
+    "code/scratch/fix_coverage.py": {
+      "sha256": "e8d26bb4916ca00d4a6d897e4d616794d0abc5b7a7e46ef8febed247272fdbcd",
+      "bytes": 342
+    },
+    "code/scratch/fix_windows.py": {
+      "sha256": "05653a07a1746660040f53767332650e724a637939325c468732b5164778ad0c",
+      "bytes": 1148
+    },
+    "code/scratch/paper_draft.log": {
+      "sha256": "25cae4c9e5a388f6de0d75e9b012a5e3b5533873b04d16f406e50c4452be3619",
+      "bytes": 8419
+    },
+    "code/scratch/patch_tmp.py": {
+      "sha256": "2a9bae45b7399c77f49b7f846a9f611f7ebd5ac27042f46f13d3f2df0060bf8e",
+      "bytes": 1913
+    },
+    "data/data.db": {
+      "sha256": "8b1cfbf8e9d5d951aa327394d9d39570ebdb8109785ba7fcd4f612dd04056d2b",
+      "bytes": 85770240
+    },
+    "data/data_dictionary.json": {
+      "sha256": "8a38e80d0075686aed2a9ab6bcf1a211dff0853c49d051c193e986ec75e511c3",
+      "bytes": 33187
+    },
+    "data/data_sources.json": {
+      "sha256": "a80f3d4878f3d9f6af7df8e467bfddf5c391835e4cc15874b6adfa2570ddbca7",
+      "bytes": 15110
+    },
+    "data/data_summary.md": {
+      "sha256": "31c4527b131323c832d50a301b29f35214898f8091423844a2c06403552b8f45",
+      "bytes": 6543
+    },
+    "design/econometric_spec.md": {
+      "sha256": "08fae36a5119f3a5314a3859616ed97fbdb369bb9256f0addf0752912ffb8316",
+      "bytes": 3327
+    },
+    "design/literature_review.md": {
+      "sha256": "ccf32f7ea753d4c40057ef013b51d41cc2baca47018326ccee1889c766a6c486",
+      "bytes": 8483
+    },
+    "design/paper_plan.md": {
+      "sha256": "a158d57f51f96c279a23c8c0ce13ad8cde6725c5ba0df697b76db6fe8bb654ee",
+      "bytes": 20266
+    },
+    "design/researcher_instructions.md": {
+      "sha256": "b301a4a7a5ed8b0e94a33bb6120268b708b45901d962ace469b95e5a06a54b0b",
+      "bytes": 7887
+    },
+    "misc/fig_annual_counts_m5.pdf": {
+      "sha256": "6b2e25f714794a8c97fd08e88cdc42825a00b4ffde2a86269a1c21208b3420b0",
+      "bytes": 13689
+    },
+    "misc/fig_annual_counts_m7.pdf": {
+      "sha256": "d689937958297b462e1be7307de7007edbb933eebb192086bebf0e9f39116e16",
+      "bytes": 12025
+    },
+    "misc/fig_magtype_mix.pdf": {
+      "sha256": "d59f4ce8799bfaeea7784c4e8201320a9a03259114a1751a8fc94d78f30a23e1",
+      "bytes": 14433
+    },
+    "misc/figure_render_report.json": {
+      "sha256": "616178d5a019e20f5b2bacc533b1bf1b6f86ddf116c7bb5d33c5ac6721034e1e",
+      "bytes": 209
+    },
+    "misc/paper_draft.blg": {
+      "sha256": "7bb0cf5b8dfee15f158165765dbfa6ddf1a4cdba64783f0630a5d3bc6264f29c",
+      "bytes": 201
+    },
+    "misc/paper_draft.tex.applied.diff": {
+      "sha256": "306776170b7cc40158b6908c128623617c28ece7e84c06ec31dcb85221a11047",
+      "bytes": 24216
+    },
+    "misc/paper_draft.tex.edits.json": {
+      "sha256": "1184c1f17270a94bc9b5b84bfcd5c7252759b23dc30d9535724444f3cdb0c964",
+      "bytes": 8725
+    },
+    "misc/refs.bib": {
+      "sha256": "fa70ca742b7c537d0cd1e7f3dd67550f5416ceaf4fa1f5ab4bfb27beb4c521b1",
+      "bytes": 11934
+    },
+    "paper/abstract.tex": {
+      "sha256": "49ab20b8356cce96117acdba8e9c6cc1c9137e341e89fef6c42875988cbc90d3",
+      "bytes": 1634
+    },
+    "paper/paper.pdf": {
+      "sha256": "35332bcff17bdac1a93402b1157f79b642b2d0fae2bec3f6e1ee9f2a974efe13",
+      "bytes": 100437
+    },
+    "paper/paper.tex": {
+      "sha256": "e21fb72d2edbd49142ddd607691dca579714cff51b01f85f07973e69afb69477",
+      "bytes": 40521
+    },
+    "paper/refs.bib": {
+      "sha256": "98398c808470e9c7e4896f366ca1f32f75775cf425b77f0f413e090cc01506b5",
+      "bytes": 11939
+    },
+    "paper/tables/bvalues_common.tex": {
+      "sha256": "a9cdd0c2a9d692d6aa33854489a01804ce5994f8233c0c772629c5541436e090",
+      "bytes": 857
+    },
+    "paper/tables/bvalues_gft95.tex": {
+      "sha256": "b6d48bf827548b2ae406341a6d230f8c1aa99bdd73f8a6b9f9117f3be7074def",
+      "bytes": 784
+    },
+    "paper/tables/check_mw.tex": {
+      "sha256": "787dddd3294b2632f191bc05aa90a6f99ebc40d076ba27ba8208421a141f1bd6",
+      "bytes": 802
+    },
+    "paper/tables/check_shallow.tex": {
+      "sha256": "5b4fbc3b0d03e9cfe298a65bbee5ec83b88e10e223418663e6a15f6dfa6170d7",
+      "bytes": 794
+    },
+    "paper/tables/completeness.tex": {
+      "sha256": "1fd58d8078c150ef57a1a6e9bb59a5410c520b6acd082f7997adebc2632015e8",
+      "bytes": 649
+    },
+    "paper/tables/counts_common.tex": {
+      "sha256": "62f861d32926db887918f94f1b8669f5b90f315ff633d38a258b6c2732283670",
+      "bytes": 780
+    },
+    "paper/tables/counts_m5.tex": {
+      "sha256": "bbc73c6cc87790c8e5fd603e3afe4c50d1c452840d8d3d45d2ba075415232cbd",
+      "bytes": 719
+    },
+    "paper/tables/magtype_mix.tex": {
+      "sha256": "d2100ae79b02e3f7ba83087bcd38e772e7627608a626821b9a6fbc3753ae3e02",
+      "bytes": 765
+    },
+    "paper/tables/mc_shift.tex": {
+      "sha256": "f032f40002a78f78fc7b6d7c6dde1d377b0c4908302f69fc7665d31337cf8270",
+      "bytes": 922
+    },
+    "paper/tables/summary.tex": {
+      "sha256": "e6b496db09d78aa8e9e45079e3f56ce244a1bb55bde655c4039f3ddaaa8a53d8",
+      "bytes": 995
+    },
+    "paper/tables/tests_common.tex": {
+      "sha256": "e6b4af838a96e6ef749632806f730bf05f3258a191e0c83bc9418379fe0dd7c7",
+      "bytes": 1196
+    },
+    "paper/tables/tests_gft95.tex": {
+      "sha256": "834392e3dc74b6ac79c35a7de675a0a451d4d614890bd0f957e9b1688162f7ef",
+      "bytes": 1177
+    },
+    "replication/audit_log.csv": {
+      "sha256": "e8a494489f94928869353032839b981f696af5fe0f8109f6c07b2b05ffcd51b3",
+      "bytes": 1625
+    },
+    "replication/data_queries.sql": {
+      "sha256": "0fa08c9b8f431f0ef4b7b42d33e6965c025a5de62e877b985b2a546ae1bef1c2",
+      "bytes": 137
+    },
+    "replication/estimation.py": {
+      "sha256": "8fa489f086f7d5a83271bdd6149eaa3b0fadde439f2b3edae2f805b0aa9b6b14",
+      "bytes": 17285
+    },
+    "report.html": {
+      "sha256": "fcb03031053dec36fb3430056cba84da5b6ea611df3b57a3664ecbe519cfaae3",
+      "bytes": 17343
+    },
+    "reproduce.json": {
+      "sha256": "95e90c96b3f5ee09697685ad681452f6082ee511ce1f5877fe773f01bfffbb8f",
+      "bytes": 3551
+    },
+    "results/data_quality.json": {
+      "sha256": "18bb24b4193d0d8d91a88b34c616b13aa121f34a25d0a7a0ef6b1ea87ac8eb27",
+      "bytes": 20792
+    },
+    "results/data_quality.md": {
+      "sha256": "6dd86326d14a056f4e44320225c3163a4efa69952803117f62d512767b904604",
+      "bytes": 7705
+    },
+    "results/estimation_results.json": {
+      "sha256": "5c9d6e0b6259ef0512ae091616e987f8955afac74c86bff313d455787d85a78f",
+      "bytes": 49115
+    },
+    "results/figure_check.json": {
+      "sha256": "7efd0ad028d30c2a1659b5772225b4e0e2a03f0a93051e0db8cffb07e7015852",
+      "bytes": 1009
+    },
+    "results/figure_spec.json": {
+      "sha256": "99184c14aed49be1ffdf308c4f276e62e4ab0f8564b10cf09bde7a7222d47e49",
+      "bytes": 4661
+    },
+    "results/figures/fig_annual_counts_m5.pdf": {
+      "sha256": "6b2e25f714794a8c97fd08e88cdc42825a00b4ffde2a86269a1c21208b3420b0",
+      "bytes": 13689
+    },
+    "results/figures/fig_annual_counts_m7.pdf": {
+      "sha256": "d689937958297b462e1be7307de7007edbb933eebb192086bebf0e9f39116e16",
+      "bytes": 12025
+    },
+    "results/figures/fig_magtype_mix.pdf": {
+      "sha256": "d59f4ce8799bfaeea7784c4e8201320a9a03259114a1751a8fc94d78f30a23e1",
+      "bytes": 14433
+    },
+    "results/number_verification.json": {
+      "sha256": "afbb5a4af2892294566eb169ea86f20a7c84acefb5cd7da8b934914dfa519928",
+      "bytes": 99813
+    },
+    "results/summary_statistics.json": {
+      "sha256": "70ab63a6a67779a23d0307d335f05fce5a2b2e6d36152a3242b899572466b9f7",
+      "bytes": 8682
+    },
+    "results/table_render_report.json": {
+      "sha256": "61dbd6d4e1e2daee0d2907d072858af00d94258a4117341e41d915bc6652c116",
+      "bytes": 398
+    },
+    "results/table_spec.json": {
+      "sha256": "46f12d93db87b8e069f11372e4adf2bafe6b014ca7b49c2bc3509b26b92ffc2a",
+      "bytes": 10925
+    },
+    "reviews/citation_integrity.json": {
+      "sha256": "d8db0cea5e9474ece8553c3ec53f7176d66ea90a01ded306217b23e4dc88b03a",
+      "bytes": 6320
+    },
+    "reviews/review_aggregation.json": {
+      "sha256": "1ed4ca36100360ac845d6ff0ad90621f9089b53b0068f4f38e35c580c9ac029f",
+      "bytes": 1333
+    },
+    "reviews/review_data.md": {
+      "sha256": "1f03891fed3d284746867923e3e05392880b4809f88518868234574fc09b0eaa",
+      "bytes": 19904
+    },
+    "reviews/review_literature.md": {
+      "sha256": "4ebd2629a869e4d1c628059f0d59980a33e4aca7e26f5b21c17943668a61aa69",
+      "bytes": 8142
+    },
+    "reviews/review_methods.md": {
+      "sha256": "446dbffe146265add72d04f2fac4e96574489b726c546f9bfcbb904d05150901",
+      "bytes": 18857
+    },
+    "reviews/review_plausibility.md": {
+      "sha256": "6ec69c4ad549732cb9607fc1e3ca183eac52f863a137d9014399e868a759f3d7",
+      "bytes": 13665
+    },
+    "reviews/review_writing.md": {
+      "sha256": "6fb7371b4459d727b4efd5c4c290871bfad7eeb2bd95234dd6f377c5eeef1c3d",
+      "bytes": 15245
+    },
+    "reviews/self_attack_report.json": {
+      "sha256": "b685817ad96942941002ac01c77b9ba1a12561c23e637354adc5ccc3d72be895",
+      "bytes": 45
+    }
+  },
+  "edges": [
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "277,946",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 2, col 2",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.87",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 2, col 3",
+      "source_key": "summary_statistics.json.outcome.mag.mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.40",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 2, col 4",
+      "source_key": "summary_statistics.json.outcome.mag.sd",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.5",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 2, col 5",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.60",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 2, col 6",
+      "source_key": "summary_statistics.json.outcome.mag.p25",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.80",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 2, col 7",
+      "source_key": "summary_statistics.json.outcome.mag.median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.00",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 2, col 8",
+      "source_key": "summary_statistics.json.outcome.mag.p75",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9.1",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 2, col 9",
+      "source_key": "summary_statistics.json.outcome.mag.max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "277,946",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 3, col 2",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "70.76",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 3, col 3",
+      "source_key": "summary_statistics.json.outcome.depth_km.mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "117.10",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 3, col 4",
+      "source_key": "summary_statistics.json.outcome.depth_km.sd",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-3.0",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 3, col 5",
+      "source_key": "summary_statistics.json.outcome.depth_km.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10.00",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 3, col 6",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "33.00",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 3, col 7",
+      "source_key": "summary_statistics.json.outcome.depth_km.median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "63.20",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 3, col 8",
+      "source_key": "estimation_results.json.statistics.depth_km.p75",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "700.9",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 3, col 9",
+      "source_key": "summary_statistics.json.outcome.depth_km.max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "50",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 4, col 2",
+      "source_key": "summary_statistics.json.time_coverage.n_periods",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1669.38",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 4, col 3",
+      "source_key": "summary_statistics.json.outcome.annual_count_m50.mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "307.76",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 4, col 4",
+      "source_key": "summary_statistics.json.outcome.annual_count_m50.sd",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1077.0",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 4, col 5",
+      "source_key": "summary_statistics.json.outcome.annual_count_m50.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1494.25",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 4, col 6",
+      "source_key": "estimation_results.json.statistics.annual_count_m5.p25",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1648.50",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 4, col 7",
+      "source_key": "summary_statistics.json.outcome.annual_count_m50.median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1768.00",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 4, col 8",
+      "source_key": "estimation_results.json.statistics.annual_count_m5.p75",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2701.0",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 4, col 9",
+      "source_key": "summary_statistics.json.outcome.annual_count_m50.max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "50",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 5, col 2",
+      "source_key": "summary_statistics.json.time_coverage.n_periods",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "140.62",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 5, col 3",
+      "source_key": "estimation_results.json.statistics.annual_count_m6.mean",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "29.03",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 5, col 4",
+      "source_key": "estimation_results.json.statistics.annual_count_m6.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "83.0",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 5, col 5",
+      "source_key": "estimation_results.json.statistics.annual_count_m6.min",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "128.50",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 5, col 6",
+      "source_key": "estimation_results.json.statistics.annual_count_m6.p25",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "143.50",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 5, col 7",
+      "source_key": "estimation_results.json.statistics.annual_count_m6.median",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "157.00",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 5, col 8",
+      "source_key": "estimation_results.json.statistics.annual_count_m6.p75",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "207.0",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 5, col 9",
+      "source_key": "estimation_results.json.statistics.annual_count_m6.max",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "50",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 6, col 2",
+      "source_key": "summary_statistics.json.time_coverage.n_periods",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "13.92",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 6, col 3",
+      "source_key": "estimation_results.json.statistics.annual_count_m7.mean",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3.90",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 6, col 4",
+      "source_key": "estimation_results.json.statistics.annual_count_m7.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "6.0",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 6, col 5",
+      "source_key": "summary_statistics.json.type_by_decade.1996-2005.nuclear explosion",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "11.00",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 6, col 6",
+      "source_key": "summary_statistics.json.removed_by_type_all_decades.explosion",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14.00",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 6, col 7",
+      "source_key": "summary_statistics.json.magtype_counts_by_decade.1986-1995.mwc",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "16.75",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 6, col 8",
+      "source_key": "summary_statistics.json.by_decade.2006-2015.mean_annual_m70",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "24.0",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 6, col 9",
+      "source_key": "estimation_results.json.statistics.annual_count_m7.max",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "15,959",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 2, col 2",
+      "source_key": "summary_statistics.json.by_decade.1976-1985.n_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.775",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 2, col 3",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1986-1995.mb",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.103",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 2, col 4",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.1976-1985.mw_family",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.006",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 2, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "16,174",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 3, col 2",
+      "source_key": "summary_statistics.json.by_decade.1986-1995.n_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.476",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 3, col 3",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.1986-1995.mb",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.480",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 3, col 4",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.1986-1995.mb",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.006",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 3, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "13,906",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 4, col 2",
+      "source_key": "summary_statistics.json.by_decade.1996-2005.n_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.220",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 4, col 3",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.1996-2005.mb",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.766",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 4, col 4",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.1996-2005.mw_family",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.003",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 4, col 5",
+      "source_key": "summary_statistics.json.sample_flow[0].dropped",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "19,928",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 5, col 2",
+      "source_key": "summary_statistics.json.by_decade.2006-2015.n_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.362",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 5, col 3",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.2006-2015.mb",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.634",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 5, col 4",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.2006-2015.mw_family",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.003",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 5, col 5",
+      "source_key": "summary_statistics.json.sample_flow[0].dropped",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "17,502",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 6, col 2",
+      "source_key": "summary_statistics.json.by_decade.2016-2025.n_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.410",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 6, col 3",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.2016-2025.mb",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.586",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 6, col 4",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.2016-2025.mw_family",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.004",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 6, col 5",
+      "source_key": "summary_statistics.json.sample_flow[0].dropped",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 2, col 2",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1595.9",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 2, col 3",
+      "source_key": "summary_statistics.json.by_decade.1976-1985.mean_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "187.9",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 2, col 4",
+      "source_key": "summary_statistics.json.by_decade.1976-1985.sd_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,259",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 2, col 5",
+      "source_key": "summary_statistics.json.by_decade.1976-1985.min_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,790",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 2, col 6",
+      "source_key": "summary_statistics.json.by_decade.1976-1985.max_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "22.1",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 2, col 7",
+      "source_key": "estimation_results.json.counts.m5.summary.decades.1976-1985.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 3, col 2",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1617.4",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 3, col 3",
+      "source_key": "summary_statistics.json.by_decade.1976-1985.median_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "93.1",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 3, col 4",
+      "source_key": "summary_statistics.json.by_decade.1986-1995.sd_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,495",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 3, col 5",
+      "source_key": "summary_statistics.json.by_decade.1986-1995.min_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,757",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 3, col 6",
+      "source_key": "summary_statistics.json.by_decade.1986-1995.max_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.4",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 3, col 7",
+      "source_key": "estimation_results.json.checks.mw_family_only.mc_maxc_plus_0.2.1996-2005",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 4, col 2",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1390.6",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 4, col 3",
+      "source_key": "summary_statistics.json.by_decade.1996-2005.mean_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "227.5",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 4, col 4",
+      "source_key": "summary_statistics.json.by_decade.1996-2005.sd_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,077",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 4, col 5",
+      "source_key": "summary_statistics.json.outcome.annual_count_m50.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,844",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 4, col 6",
+      "source_key": "summary_statistics.json.by_decade.1996-2005.max_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "37.2",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 4, col 7",
+      "source_key": "estimation_results.json.counts.m5.summary.decades.1996-2005.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 5, col 2",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1992.8",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 5, col 3",
+      "source_key": "summary_statistics.json.by_decade.2006-2015.mean_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "371.4",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 5, col 4",
+      "source_key": "summary_statistics.json.by_decade.2006-2015.sd_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,571",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 5, col 5",
+      "source_key": "summary_statistics.json.by_decade.2006-2015.min_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2,701",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 5, col 6",
+      "source_key": "summary_statistics.json.outcome.annual_count_m50.max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "69.2",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 5, col 7",
+      "source_key": "estimation_results.json.counts.m5.summary.decades.2006-2015.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 6, col 2",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1750.2",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 6, col 3",
+      "source_key": "summary_statistics.json.by_decade.2016-2025.mean_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "251.2",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 6, col 4",
+      "source_key": "summary_statistics.json.by_decade.2016-2025.sd_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,450",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 6, col 5",
+      "source_key": "summary_statistics.json.by_decade.2016-2025.min_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2,227",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 6, col 6",
+      "source_key": "summary_statistics.json.by_decade.2016-2025.max_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "36.1",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 6, col 7",
+      "source_key": "estimation_results.json.counts.m5.summary.decades.2016-2025.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 2, col 2",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2002.2",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 2, col 3",
+      "source_key": "summary_statistics.json.by_decade.2006-2015.mean_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "236.8",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 2, col 4",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1976-1985.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,587",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 2, col 5",
+      "source_key": "estimation_results.json.statistics.annual_count_common_m4.9.p5",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2,312",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 2, col 6",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1976-1985.max",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "28.0",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 2, col 7",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1976-1985.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 3, col 2",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2056.2",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 3, col 3",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1986-1995.mean",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "126.1",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 3, col 4",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1986-1995.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,852",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 3, col 5",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1986-1995.min",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2,256",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 3, col 6",
+      "source_key": "estimation_results.json.statistics.annual_count_m5.p95",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.7",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 3, col 7",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1986-1995.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 4, col 2",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1716.0",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 4, col 3",
+      "source_key": "summary_statistics.json.by_decade.2016-2025.median_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "298.5",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 4, col 4",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1996-2005.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,285",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 4, col 5",
+      "source_key": "estimation_results.json.statistics.annual_count_common_m4.9.min",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2,338",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 4, col 6",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1996-2005.max",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "51.9",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 4, col 7",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1996-2005.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 5, col 2",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2633.7",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 5, col 3",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2006-2015.mean",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "465.5",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 5, col 4",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2006-2015.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2,099",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 5, col 5",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2006-2015.min",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3,622",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 5, col 6",
+      "source_key": "estimation_results.json.statistics.annual_count_common_m4.9.max",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "82.3",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 5, col 7",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2006-2015.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 6, col 2",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2448.8",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 6, col 3",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2016-2025.mean",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "341.6",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 6, col 4",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2016-2025.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2,092",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 6, col 5",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2016-2025.min",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3,099",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 6, col 6",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2016-2025.max",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "47.7",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 6, col 7",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2016-2025.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.7",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 2, col 2",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.7",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 2, col 3",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.9",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 2, col 4",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.7",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 3, col 2",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.5",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 3, col 3",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.7",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 3, col 4",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.5",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 4, col 2",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.5",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 4, col 3",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.5",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 4, col 4",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.5",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 5, col 2",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.5",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 5, col 3",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.5",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 5, col 4",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.5",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 6, col 2",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.5",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 6, col 3",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.5",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 6, col 4",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.9",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 2, col 2",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "20,023",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 2, col 3",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.123",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 2, col 4",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0077",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 2, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.107",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 2, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.138",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 2, col 7",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.9",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 3, col 2",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "20,569",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 3, col 3",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.020",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 3, col 4",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0070",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 3, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.006",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 3, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.034",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 3, col 7",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.9",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 4, col 2",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "17,169",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 4, col 3",
+      "source_key": "estimation_results.json.b_values.decade_common_threshold.1996-2005.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.924",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 4, col 4",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0065",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 4, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.912",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 4, col 6",
+      "source_key": "estimation_results.json.b_values.decade_common_threshold.1996-2005.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.936",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 4, col 7",
+      "source_key": "estimation_results.json.b_values.decade_common_threshold.1996-2005.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.9",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 5, col 2",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "26,344",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 5, col 3",
+      "source_key": "estimation_results.json.b_values.decade_common_threshold.2006-2015.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.145",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 5, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0075",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 5, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.130",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 5, col 6",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.160",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 5, col 7",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.9",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 6, col 2",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "24,495",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 6, col 3",
+      "source_key": "estimation_results.json.b_values.decade_common_threshold.2016-2025.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.220",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 6, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0085",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 6, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.204",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 6, col 6",
+      "source_key": "estimation_results.json.b_values.decade_common_threshold.2016-2025.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.236",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 6, col 7",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 2, col 1",
+      "source_key": "summary_statistics.json.sample_flow[3].dropped",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.123",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 2, col 4",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.020",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 2, col 5",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "93.5",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 2, col 6",
+      "source_key": "summary_statistics.json.by_decade.1986-1995.sd_annual_m50",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "91.5",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 2, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.maxc_plus_0.2[0].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 3, col 1",
+      "source_key": "summary_statistics.json.removed_by_type_all_decades.landslide",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.123",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 3, col 4",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.924",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 3, col 5",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "353.3",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 3, col 6",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[1].lr_stat",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "351.3",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 3, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[1].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 4, col 1",
+      "source_key": "summary_statistics.json.removed_by_type_all_decades.rock burst",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.123",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 4, col 4",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.145",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 4, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.4",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 4, col 6",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[2].lr_stat",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.4",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 4, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[2].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 5, col 1",
+      "source_key": "summary_statistics.json.removed_by_type_all_decades.mine collapse",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.123",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 5, col 4",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.220",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 5, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "76.5",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 5, col 6",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[3].lr_stat",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "74.5",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 5, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[3].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 6, col 1",
+      "source_key": "summary_statistics.json.outcome.mag.p75",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.020",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 6, col 4",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.924",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 6, col 5",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "92.2",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 6, col 6",
+      "source_key": "estimation_results.json.counts.common.summary.overall.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "90.2",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 6, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[4].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "6",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 7, col 1",
+      "source_key": "summary_statistics.json.type_by_decade.1996-2005.nuclear explosion",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.020",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 7, col 4",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.145",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 7, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "155.2",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 7, col 6",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[5].lr_stat",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "153.2",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 7, col 7",
+      "source_key": "summary_statistics.json.by_decade.1986-1995.mean_annual_m60",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 8, col 1",
+      "source_key": "estimation_results.json.distributions.annual_count_m5.bins[6].count",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.020",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 8, col 4",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.220",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 8, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "360.5",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 8, col 6",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[6].lr_stat",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "358.5",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 8, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[6].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 9, col 1",
+      "source_key": "summary_statistics.json.magtype_counts_by_decade.2016-2025.mwp",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.924",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 9, col 4",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.145",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 9, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "486.1",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 9, col 6",
+      "source_key": "summary_statistics.json.by_decade.1996-2005.mean_annual_m55",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "484.1",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 9, col 7",
+      "source_key": "summary_statistics.json.by_decade.1996-2005.mean_annual_m55",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 10, col 1",
+      "source_key": "summary_statistics.json.type_by_decade.1976-1985.explosion",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.924",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 10, col 4",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.220",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 10, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "792.6",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 10, col 6",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[8].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "790.6",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 10, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[8].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 11, col 1",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.145",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 11, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.220",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 11, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "51.2",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 11, col 6",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[9].lr_stat",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "49.2",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 11, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[9].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.9",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 2, col 2",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "20,023",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 2, col 3",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.123",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 2, col 4",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0077",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 2, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.108",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 2, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.138",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 2, col 7",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.7",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 3, col 2",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "31,521",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 3, col 3",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.1986-1995.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.981",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 3, col 4",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.1986-1995.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0053",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 3, col 5",
+      "source_key": "summary_statistics.json.missingness_pct.magType",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.971",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 3, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.1986-1995.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.992",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 3, col 7",
+      "source_key": "summary_statistics.json.reviewed_share_by_year_min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.5",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 4, col 2",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "50,975",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 4, col 3",
+      "source_key": "summary_statistics.json.by_decade.1996-2005.n_events_m45",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.055",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 4, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0048",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 4, col 5",
+      "source_key": "summary_statistics.json.sample_flow[0].dropped",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.046",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 4, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.066",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 4, col 7",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.5",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 5, col 2",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "73,390",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 5, col 3",
+      "source_key": "summary_statistics.json.type_by_decade.2006-2015.earthquake",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.108",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 5, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0040",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 5, col 5",
+      "source_key": "summary_statistics.json.sample_flow[0].dropped",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.100",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 5, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2006-2015.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.116",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 5, col 7",
+      "source_key": "estimation_results.json.counts.m7.trend.negbin.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.5",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 6, col 2",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "74,359",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 6, col 3",
+      "source_key": "summary_statistics.json.type_by_decade.2016-2025.earthquake",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.226",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 6, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0047",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 6, col 5",
+      "source_key": "summary_statistics.json.sample_flow[0].dropped",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.218",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 6, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.235",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 6, col 7",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 2, col 1",
+      "source_key": "summary_statistics.json.sample_flow[3].dropped",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.123",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 2, col 4",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.981",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 2, col 5",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.1986-1995.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "219.7",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 2, col 6",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[0].lr_stat",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "217.7",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 2, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[0].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 3, col 1",
+      "source_key": "summary_statistics.json.removed_by_type_all_decades.landslide",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.123",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 3, col 4",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.055",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 3, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "54.3",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 3, col 6",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[1].lr_stat",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "52.3",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 3, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[1].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 4, col 1",
+      "source_key": "summary_statistics.json.removed_by_type_all_decades.rock burst",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.123",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 4, col 4",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.108",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 4, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.6",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 4, col 6",
+      "source_key": "estimation_results.json.counts.m6.summary.decades.2016-2025.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.6",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 4, col 7",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.slope_pct_per_year",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 5, col 1",
+      "source_key": "summary_statistics.json.removed_by_type_all_decades.mine collapse",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.123",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 5, col 4",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.226",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 5, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "124.8",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 5, col 6",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[3].lr_stat",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "122.8",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 5, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[3].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 6, col 1",
+      "source_key": "summary_statistics.json.outcome.mag.p75",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.981",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 6, col 4",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.1986-1995.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.055",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 6, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "104.2",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 6, col 6",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[4].lr_stat",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "102.2",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 6, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[4].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "6",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 7, col 1",
+      "source_key": "summary_statistics.json.type_by_decade.1996-2005.nuclear explosion",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.981",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 7, col 4",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.1986-1995.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.108",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 7, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "332.2",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 7, col 6",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[5].lr_stat",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "330.2",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 7, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[5].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 8, col 1",
+      "source_key": "estimation_results.json.distributions.annual_count_m5.bins[6].count",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.981",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 8, col 4",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.1986-1995.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.226",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 8, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1131.5",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 8, col 6",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[6].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1129.5",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 8, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[6].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 9, col 1",
+      "source_key": "summary_statistics.json.magtype_counts_by_decade.2016-2025.mwp",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.055",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 9, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.108",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 9, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "71.9",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 9, col 6",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[7].lr_stat",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "69.9",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 9, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[7].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 10, col 1",
+      "source_key": "summary_statistics.json.type_by_decade.1976-1985.explosion",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.055",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 10, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.226",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 10, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "685.7",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 10, col 6",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[8].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "683.7",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 10, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[8].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 11, col 1",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.108",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 11, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.226",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 11, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "377.5",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 11, col 6",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[9].lr_stat",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "375.5",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 11, col 7",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[9].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.912",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 2, col 2",
+      "source_key": "estimation_results.json.b_values.decade_common_threshold.1996-2005.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.927",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 2, col 3",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.849",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 2, col 4",
+      "source_key": "estimation_results.json.mc_sensitivity_shift.-0.3.1996-2005.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.883",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 2, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.mb",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.956",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 2, col 6",
+      "source_key": "estimation_results.json.mc_sensitivity_shift.-0.3.2016-2025.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.996",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 3, col 2",
+      "source_key": "summary_statistics.json.sample_flow[3].dropped",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.981",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 3, col 3",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.1986-1995.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.055",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 3, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.108",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 3, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.226",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 3, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.066",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 4, col 2",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.014",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 4, col 3",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.072",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 4, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.144",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 4, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.212",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 4, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.123",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 5, col 2",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.020",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 5, col 3",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.055",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 5, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.149",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 5, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.162",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 5, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.1",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 6, col 1",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.1976-1985.mw_family",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.166",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 6, col 2",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.015",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 6, col 3",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.003",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 6, col 4",
+      "source_key": "summary_statistics.json.sample_flow[3].dropped",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.147",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 6, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.173",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 6, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2016-2025.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.191",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 7, col 2",
+      "source_key": "estimation_results.json.mc_sensitivity_shift.+0.1.2016-2025.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.019",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 7, col 3",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.924",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 7, col 4",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.145",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 7, col 5",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.220",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 7, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.3",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 8, col 1",
+      "source_key": "estimation_results.json.counts.m7.trend.spearman_year.rho",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.175",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 8, col 2",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2016-2025.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.035",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 8, col 3",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.927",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 8, col 4",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.129",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 8, col 5",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.150",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 8, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.6",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 2, col 2",
+      "source_key": "estimation_results.json.b_equality_tests.maxc_plus_0.2[2].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "857",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 2, col 3",
+      "source_key": "estimation_results.json.checks.mw_family_only.b_own_mc.1976-1985.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.835",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 2, col 4",
+      "source_key": "estimation_results.json.checks.mw_family_only.b_own_mc.1976-1985.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0251",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 2, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1986-1995.ms",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.790",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 2, col 6",
+      "source_key": "estimation_results.json.checks.mw_family_only.b_own_mc.1976-1985.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.883",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 2, col 7",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.mb",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.6",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 3, col 2",
+      "source_key": "estimation_results.json.b_equality_tests.maxc_plus_0.2[2].delta_aic_utsu",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3,522",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 3, col 3",
+      "source_key": "estimation_results.json.checks.mw_family_only.b_own_mc.1986-1995.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.975",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 3, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.1986-1995.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0155",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 3, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.947",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 3, col 6",
+      "source_key": "estimation_results.json.counts.common.trend.poisson.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.006",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 3, col 7",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.4",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 4, col 2",
+      "source_key": "estimation_results.json.checks.mw_family_only.mc_maxc_plus_0.2.1996-2005",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5,922",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 4, col 3",
+      "source_key": "estimation_results.json.checks.mw_family_only.b_own_mc.1996-2005.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.032",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 4, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0135",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 4, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.006",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 4, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.059",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 4, col 7",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.2",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 5, col 2",
+      "source_key": "estimation_results.json.mc_sensitivity_shift.+0.3.1976-1985.mc",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8,788",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 5, col 3",
+      "source_key": "estimation_results.json.checks.mw_family_only.b_own_mc.2006-2015.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.921",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 5, col 4",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0094",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 5, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.904",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 5, col 6",
+      "source_key": "estimation_results.json.mc_sensitivity_shift.-0.3.1976-1985.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.939",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 5, col 7",
+      "source_key": "estimation_results.json.counts.common.trend.poisson.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.4",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 6, col 2",
+      "source_key": "estimation_results.json.checks.mw_family_only.mc_maxc_plus_0.2.1996-2005",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5,288",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 6, col 3",
+      "source_key": "estimation_results.json.checks.mw_family_only.b_own_mc.2016-2025.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.995",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 6, col 4",
+      "source_key": "summary_statistics.json.reviewed_share_by_year_min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0133",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 6, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.970",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 6, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.1986-1995.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.023",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 6, col 7",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.9",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 2, col 2",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14,635",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 2, col 3",
+      "source_key": "estimation_results.json.checks.shallow_depth_le_70km.b_common_threshold.1976-1985.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.086",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 2, col 4",
+      "source_key": "estimation_results.json.counts.m7.summary.overall.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0088",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 2, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.069",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 2, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.103",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 2, col 7",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.9",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 3, col 2",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "15,356",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 3, col 3",
+      "source_key": "estimation_results.json.checks.shallow_depth_le_70km.b_common_threshold.1986-1995.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.995",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 3, col 4",
+      "source_key": "summary_statistics.json.reviewed_share_by_year_min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0078",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 3, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.979",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 3, col 6",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.1986-1995.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.012",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 3, col 7",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.7",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 4, col 2",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "24,878",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 4, col 3",
+      "source_key": "estimation_results.json.checks.shallow_depth_le_70km.b_own_mc.1996-2005.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.045",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 4, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.boot_lo",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0068",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 4, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.031",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 4, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.058",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 4, col 7",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.7",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 5, col 2",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "36,609",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 5, col 3",
+      "source_key": "estimation_results.json.checks.shallow_depth_le_70km.b_own_mc.2006-2015.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.134",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 5, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0060",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 5, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.122",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 5, col 6",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.146",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 5, col 7",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.7",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 6, col 2",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "33,086",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 6, col 3",
+      "source_key": "estimation_results.json.checks.shallow_depth_le_70km.b_own_mc.2016-2025.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.164",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 6, col 4",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.0064",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 6, col 5",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.152",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 6, col 6",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.176",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 6, col 7",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2016-2025.boot_hi",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "varty2021inference",
+      "status": "verified_title",
+      "registry": "openalex",
+      "external_id": "doi:10.48550/arxiv.2102.00884"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "USGS_ComCat",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.5066/f7ms3qzh"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "shearer2011global",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1073/pnas.1118525109"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "wiemer2000minimum",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1785/0119990114"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "woessner2005assessing",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1785/0120040007"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "wang2025estimating",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1029/2025jb031441"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "godano2023evaluating",
+      "status": "verified_title",
+      "registry": "openalex",
+      "external_id": "doi:10.1093/gji/ggad466"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "shi1982the",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1785/bssa0720051677"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "kamer2014minimum",
+      "status": "verified_title",
+      "registry": "openalex",
+      "external_id": "doi:10.48550/arxiv.1410.1815"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "srivastava2021sundaarc",
+      "status": "verified_title",
+      "registry": "openalex",
+      "external_id": "doi:10.48550/arxiv.2108.06557"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "spearman1904proof",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.2307/1412159"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "hyndman1996sample",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1080/00031305.1996.10473566"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_annual_counts_m5.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_annual_counts_m7.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_magtype_mix.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "estimation",
+      "output": "results/estimation_results.json",
+      "script": "code/run_estimation.py"
+    },
+    {
+      "type": "data",
+      "output": "data/data.db",
+      "queries": "replication/data_queries.sql",
+      "sources": "data/data_sources.json"
+    }
+  ],
+  "amendments": [
+    {
+      "path": "paper/paper.tex",
+      "sha256_before": "d3aea8c732fb695c6a14bba0367f91554614cfaa61352f8fb96f2531a80f4b7b",
+      "sha256_after": "72cbf5d1ce01419163ca17859e6588e6707685b45ae684302c4e9035a47b1f27",
+      "reason": "stamped with the dossier link",
+      "at": "2026-10-15T09:19:54Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256_before": "69eb90bac046f1cbb4b2452bb4437abbcd677b97f92f177de3c065e062837e5b",
+      "sha256_after": "0da93afff57bda93749fcb5c4601b23b7bcb1e5f1887d85ab5347c06d5dfaf89",
+      "reason": "recompiled with the dossier link",
+      "at": "2026-10-15T09:19:54Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "paper/paper.tex",
+      "sha256_before": "72cbf5d1ce01419163ca17859e6588e6707685b45ae684302c4e9035a47b1f27",
+      "sha256_after": "e21fb72d2edbd49142ddd607691dca579714cff51b01f85f07973e69afb69477",
+      "reason": "stamped with the dossier link",
+      "at": "2026-10-19T13:14:17Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256_before": "0da93afff57bda93749fcb5c4601b23b7bcb1e5f1887d85ab5347c06d5dfaf89",
+      "sha256_after": "35332bcff17bdac1a93402b1157f79b642b2d0fae2bec3f6e1ee9f2a974efe13",
+      "reason": "recompiled with the dossier link",
+      "at": "2026-10-19T13:14:17Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "README.md",
+      "sha256_before": "6c50be49e2c879805bbfe4310d7465bc60cca93740438d6f645edcf3a23b62a6",
+      "sha256_after": "fe60dd6c369b7d07ee10e273786394a3a80cc0ed442dc8946aed40d13280d6fd",
+      "reason": "the study's summary for its GitHub repository, at the top",
+      "at": "2026-10-19T13:14:17Z",
+      "kind": "readme"
+    }
+  ]
+}

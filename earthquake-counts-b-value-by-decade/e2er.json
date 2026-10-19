@@ -1,0 +1,3533 @@
+{
+  "schema": "e2er-research-object/0.1",
+  "id": "bhanneke/earthquake-counts-b-value-by-decade",
+  "content_id": "sha256:7e71594d213dcd8764f08bfeb243e8c688f539d6b423b148610a6c5e11cb3bc0",
+  "title": "How has the yearly number of magnitude 5 and larger earthquakes worldwide cha...",
+  "question": "How has the yearly number of magnitude 5 and larger earthquakes worldwide changed from 1976 to 2025, and is the Gutenberg–Richter b-value stable across decades once the catalogue's completeness magnitude is taken into account?",
+  "contributors": [
+    {
+      "name": "Björn Hanneke",
+      "github": "bhanneke",
+      "roles": [
+        "conceptualization",
+        "investigation"
+      ]
+    }
+  ],
+  "ai": {
+    "backend": "claude_code",
+    "model": "sonnet",
+    "agents": [
+      "literature_scanner",
+      "idea_developer",
+      "data_architect",
+      "data_analyst",
+      "econometrics_specialist",
+      "abstract_writer",
+      "paper_drafter",
+      "literature_reviewer",
+      "writing_reviewer",
+      "data_reviewer",
+      "methods_reviewer",
+      "plausibility_reviewer",
+      "patch_revisor",
+      "replication_packager"
+    ],
+    "agents_source": "recorded",
+    "usage": [
+      {
+        "agent": "strategist:decide",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 3,
+        "input_tokens": 6,
+        "output_tokens": 3653,
+        "cache_read_tokens": 41284,
+        "cache_write_tokens": 75409,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 16:04:35",
+        "last": "2026-10-14 16:56:48"
+      },
+      {
+        "agent": "literature_scanner",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 2,
+        "input_tokens": 32,
+        "output_tokens": 14402,
+        "cache_read_tokens": 575247,
+        "cache_write_tokens": 65919,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 16:05:48",
+        "last": "2026-10-14 16:09:58"
+      },
+      {
+        "agent": "idea_developer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 9112,
+        "cache_read_tokens": 47995,
+        "cache_write_tokens": 31453,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 16:05:55",
+        "last": "2026-10-14 16:05:55"
+      },
+      {
+        "agent": "data_architect",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 2,
+        "input_tokens": 10,
+        "output_tokens": 18308,
+        "cache_read_tokens": 236591,
+        "cache_write_tokens": 129377,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 16:06:58",
+        "last": "2026-10-14 16:08:38"
+      },
+      {
+        "agent": "data_analyst",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 8,
+        "input_tokens": 102,
+        "output_tokens": 20909,
+        "cache_read_tokens": 4187763,
+        "cache_write_tokens": 580308,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 16:40:32",
+        "last": "2026-10-14 16:57:07"
+      },
+      {
+        "agent": "econometrics_specialist",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 5,
+        "input_tokens": 74,
+        "output_tokens": 21922,
+        "cache_read_tokens": 1965938,
+        "cache_write_tokens": 249466,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 16:46:07",
+        "last": "2026-10-14 16:57:44"
+      },
+      {
+        "agent": "abstract_writer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 8,
+        "output_tokens": 1894,
+        "cache_read_tokens": 175524,
+        "cache_write_tokens": 58215,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 16:49:58",
+        "last": "2026-10-14 16:49:58"
+      },
+      {
+        "agent": "paper_drafter",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 3,
+        "input_tokens": 68,
+        "output_tokens": 55101,
+        "cache_read_tokens": 2775851,
+        "cache_write_tokens": 263766,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 16:55:12",
+        "last": "2026-10-14 16:59:42"
+      },
+      {
+        "agent": "strategist:ceiling_check",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 2,
+        "input_tokens": 4,
+        "output_tokens": 493,
+        "cache_read_tokens": 28718,
+        "cache_write_tokens": 48864,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 16:56:36",
+        "last": "2026-10-14 16:57:51"
+      },
+      {
+        "agent": "strategist:self_attack",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 2,
+        "output_tokens": 7360,
+        "cache_read_tokens": 14359,
+        "cache_write_tokens": 17175,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:00:54",
+        "last": "2026-10-14 17:00:54"
+      },
+      {
+        "agent": "literature_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 3676,
+        "cache_read_tokens": 93189,
+        "cache_write_tokens": 67564,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:01:36",
+        "last": "2026-10-14 17:01:36"
+      },
+      {
+        "agent": "writing_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 12442,
+        "cache_read_tokens": 96260,
+        "cache_write_tokens": 79407,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:02:38",
+        "last": "2026-10-14 17:02:38"
+      },
+      {
+        "agent": "data_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 20574,
+        "cache_read_tokens": 101928,
+        "cache_write_tokens": 93236,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:03:45",
+        "last": "2026-10-14 17:03:45"
+      },
+      {
+        "agent": "methods_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 20713,
+        "cache_read_tokens": 97028,
+        "cache_write_tokens": 88408,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:04:24",
+        "last": "2026-10-14 17:04:24"
+      },
+      {
+        "agent": "plausibility_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 16151,
+        "cache_read_tokens": 94292,
+        "cache_write_tokens": 81165,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:04:54",
+        "last": "2026-10-14 17:04:54"
+      },
+      {
+        "agent": "patch_revisor",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 14,
+        "output_tokens": 7520,
+        "cache_read_tokens": 406088,
+        "cache_write_tokens": 68967,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:06:00",
+        "last": "2026-10-14 17:06:00"
+      },
+      {
+        "agent": "replication_packager",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 6,
+        "output_tokens": 9377,
+        "cache_read_tokens": 119520,
+        "cache_write_tokens": 50938,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:06:57",
+        "last": "2026-10-14 17:06:57"
+      }
+    ]
+  },
+  "process": {
+    "template": "descriptive-study",
+    "mode": "iterative",
+    "methodology": "empirical",
+    "governance": "full",
+    "e2er_version": "0.17.0",
+    "exported": "20261015"
+  },
+  "components": {
+    "skills": {
+      "literature_scanner": [
+        "base/researcher",
+        "synthesis/context-builder"
+      ],
+      "idea_developer": [
+        "base/researcher",
+        "reasoning/creative-ideation",
+        "reasoning/novelty"
+      ],
+      "data_architect": [
+        "data/data-tables",
+        "data/query-data",
+        "base/researcher",
+        "data/yfinance",
+        "data/fred",
+        "data/gmd",
+        "data/usgs",
+        "data/exoplanets",
+        "data/gaia",
+        "data/nasa_power",
+        "data/noaa",
+        "data/worldbank",
+        "data/eurostat",
+        "data/owid",
+        "data/who_gho",
+        "data/gutenberg",
+        "data/github",
+        "data/gisco",
+        "data/naturalearth",
+        "methods/descriptive-analysis"
+      ],
+      "data_analyst": [
+        "data/data-tables",
+        "data/query-data",
+        "data/cleaning",
+        "data/figure-spec",
+        "econometrics/panel-data",
+        "data/yfinance",
+        "data/fred",
+        "data/gmd",
+        "data/summary-statistics-schema",
+        "data/usgs",
+        "data/exoplanets",
+        "data/gaia",
+        "data/nasa_power",
+        "data/noaa",
+        "data/worldbank",
+        "data/eurostat",
+        "data/owid",
+        "data/who_gho",
+        "data/gutenberg",
+        "data/github",
+        "data/gisco",
+        "data/naturalearth",
+        "methods/descriptive-analysis"
+      ],
+      "econometrics_specialist": [
+        "data/query-data",
+        "data/cleaning",
+        "data/figure-spec",
+        "data/descriptive-results-schema",
+        "methods/descriptive-analysis"
+      ],
+      "abstract_writer": [
+        "writing/abstract",
+        "reasoning/anti-slop",
+        "writing/cite-numbers-by-source"
+      ],
+      "paper_drafter": [
+        "writing/paper-structure",
+        "writing/personal-style",
+        "base/researcher",
+        "writing/cite-numbers-by-source",
+        "data/table-spec",
+        "methods/descriptive-analysis"
+      ],
+      "literature_reviewer": [
+        "review/referee-simulation",
+        "synthesis/context-builder"
+      ],
+      "writing_reviewer": [
+        "review/writing-quality",
+        "reasoning/anti-slop"
+      ],
+      "data_reviewer": [
+        "review/data-quality",
+        "data/cleaning",
+        "methods/descriptive-analysis"
+      ],
+      "methods_reviewer": [
+        "review/methods-review",
+        "review/consistency-check",
+        "methods/descriptive-analysis"
+      ],
+      "plausibility_reviewer": [
+        "review/domain-plausibility",
+        "review/consistency-check"
+      ],
+      "patch_revisor": [
+        "writing/scoped-revision",
+        "writing/cite-numbers-by-source",
+        "writing/personal-style",
+        "reasoning/anti-slop"
+      ],
+      "replication_packager": [
+        "data/cleaning",
+        "base/researcher",
+        "synthesis/replication-package"
+      ]
+    },
+    "skills_source": "recorded"
+  },
+  "literature": [
+    {
+      "cite_key": "varty2021inference",
+      "doi": "10.48550/arxiv.2102.00884",
+      "status": "verified_title",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "USGS_ComCat",
+      "doi": "10.5066/f7ms3qzh",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "shearer2011global",
+      "doi": "10.1073/pnas.1118525109",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "wiemer2000minimum",
+      "doi": "10.1785/0119990114",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "woessner2005assessing",
+      "doi": "10.1785/0120040007",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "wang2025estimating",
+      "doi": "10.1029/2025jb031441",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "godano2023evaluating",
+      "doi": "10.1093/gji/ggad466",
+      "status": "verified_title",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "shi1982the",
+      "doi": "10.1785/bssa0720051677",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "kamer2014minimum",
+      "doi": "10.48550/arxiv.1410.1815",
+      "status": "verified_title",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "srivastava2021sundaarc",
+      "doi": "10.48550/arxiv.2108.06557",
+      "status": "verified_title",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "spearman1904proof",
+      "doi": "10.2307/1412159",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "hyndman1996sample",
+      "doi": "10.1080/00031305.1996.10473566",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    }
+  ],
+  "data": [
+    {
+      "path": "data/data.db",
+      "sha256": "8b1cfbf8e9d5d951aa327394d9d39570ebdb8109785ba7fcd4f612dd04056d2b",
+      "bytes": 85770240
+    },
+    {
+      "path": "data/data_dictionary.json",
+      "sha256": "8a38e80d0075686aed2a9ab6bcf1a211dff0853c49d051c193e986ec75e511c3",
+      "bytes": 33187
+    },
+    {
+      "path": "data/data_sources.json",
+      "sha256": "a80f3d4878f3d9f6af7df8e467bfddf5c391835e4cc15874b6adfa2570ddbca7",
+      "bytes": 15110
+    },
+    {
+      "path": "data/data_summary.md",
+      "sha256": "31c4527b131323c832d50a301b29f35214898f8091423844a2c06403552b8f45",
+      "bytes": 6543
+    }
+  ],
+  "outputs": [
+    {
+      "path": "paper/abstract.tex",
+      "sha256": "49ab20b8356cce96117acdba8e9c6cc1c9137e341e89fef6c42875988cbc90d3"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256": "35332bcff17bdac1a93402b1157f79b642b2d0fae2bec3f6e1ee9f2a974efe13"
+    },
+    {
+      "path": "paper/paper.tex",
+      "sha256": "e21fb72d2edbd49142ddd607691dca579714cff51b01f85f07973e69afb69477"
+    },
+    {
+      "path": "paper/refs.bib",
+      "sha256": "98398c808470e9c7e4896f366ca1f32f75775cf425b77f0f413e090cc01506b5"
+    },
+    {
+      "path": "paper/tables/bvalues_common.tex",
+      "sha256": "a9cdd0c2a9d692d6aa33854489a01804ce5994f8233c0c772629c5541436e090"
+    },
+    {
+      "path": "paper/tables/bvalues_gft95.tex",
+      "sha256": "b6d48bf827548b2ae406341a6d230f8c1aa99bdd73f8a6b9f9117f3be7074def"
+    },
+    {
+      "path": "paper/tables/check_mw.tex",
+      "sha256": "787dddd3294b2632f191bc05aa90a6f99ebc40d076ba27ba8208421a141f1bd6"
+    },
+    {
+      "path": "paper/tables/check_shallow.tex",
+      "sha256": "5b4fbc3b0d03e9cfe298a65bbee5ec83b88e10e223418663e6a15f6dfa6170d7"
+    },
+    {
+      "path": "paper/tables/completeness.tex",
+      "sha256": "1fd58d8078c150ef57a1a6e9bb59a5410c520b6acd082f7997adebc2632015e8"
+    },
+    {
+      "path": "paper/tables/counts_common.tex",
+      "sha256": "62f861d32926db887918f94f1b8669f5b90f315ff633d38a258b6c2732283670"
+    },
+    {
+      "path": "paper/tables/counts_m5.tex",
+      "sha256": "bbc73c6cc87790c8e5fd603e3afe4c50d1c452840d8d3d45d2ba075415232cbd"
+    },
+    {
+      "path": "paper/tables/magtype_mix.tex",
+      "sha256": "d2100ae79b02e3f7ba83087bcd38e772e7627608a626821b9a6fbc3753ae3e02"
+    },
+    {
+      "path": "paper/tables/mc_shift.tex",
+      "sha256": "f032f40002a78f78fc7b6d7c6dde1d377b0c4908302f69fc7665d31337cf8270"
+    },
+    {
+      "path": "paper/tables/summary.tex",
+      "sha256": "e6b496db09d78aa8e9e45079e3f56ce244a1bb55bde655c4039f3ddaaa8a53d8"
+    },
+    {
+      "path": "paper/tables/tests_common.tex",
+      "sha256": "e6b4af838a96e6ef749632806f730bf05f3258a191e0c83bc9418379fe0dd7c7"
+    },
+    {
+      "path": "paper/tables/tests_gft95.tex",
+      "sha256": "834392e3dc74b6ac79c35a7de675a0a451d4d614890bd0f957e9b1688162f7ef"
+    },
+    {
+      "path": "replication/audit_log.csv",
+      "sha256": "e8a494489f94928869353032839b981f696af5fe0f8109f6c07b2b05ffcd51b3"
+    },
+    {
+      "path": "replication/data_queries.sql",
+      "sha256": "0fa08c9b8f431f0ef4b7b42d33e6965c025a5de62e877b985b2a546ae1bef1c2"
+    },
+    {
+      "path": "replication/estimation.py",
+      "sha256": "8fa489f086f7d5a83271bdd6149eaa3b0fadde439f2b3edae2f805b0aa9b6b14"
+    },
+    {
+      "path": "results/data_quality.json",
+      "sha256": "18bb24b4193d0d8d91a88b34c616b13aa121f34a25d0a7a0ef6b1ea87ac8eb27"
+    },
+    {
+      "path": "results/data_quality.md",
+      "sha256": "6dd86326d14a056f4e44320225c3163a4efa69952803117f62d512767b904604"
+    },
+    {
+      "path": "results/estimation_results.json",
+      "sha256": "5c9d6e0b6259ef0512ae091616e987f8955afac74c86bff313d455787d85a78f"
+    },
+    {
+      "path": "results/figure_check.json",
+      "sha256": "7efd0ad028d30c2a1659b5772225b4e0e2a03f0a93051e0db8cffb07e7015852"
+    },
+    {
+      "path": "results/figure_spec.json",
+      "sha256": "99184c14aed49be1ffdf308c4f276e62e4ab0f8564b10cf09bde7a7222d47e49"
+    },
+    {
+      "path": "results/figures/fig_annual_counts_m5.pdf",
+      "sha256": "6b2e25f714794a8c97fd08e88cdc42825a00b4ffde2a86269a1c21208b3420b0"
+    },
+    {
+      "path": "results/figures/fig_annual_counts_m7.pdf",
+      "sha256": "d689937958297b462e1be7307de7007edbb933eebb192086bebf0e9f39116e16"
+    },
+    {
+      "path": "results/figures/fig_magtype_mix.pdf",
+      "sha256": "d59f4ce8799bfaeea7784c4e8201320a9a03259114a1751a8fc94d78f30a23e1"
+    },
+    {
+      "path": "results/number_verification.json",
+      "sha256": "afbb5a4af2892294566eb169ea86f20a7c84acefb5cd7da8b934914dfa519928"
+    },
+    {
+      "path": "results/summary_statistics.json",
+      "sha256": "70ab63a6a67779a23d0307d335f05fce5a2b2e6d36152a3242b899572466b9f7"
+    },
+    {
+      "path": "results/table_render_report.json",
+      "sha256": "61dbd6d4e1e2daee0d2907d072858af00d94258a4117341e41d915bc6652c116"
+    },
+    {
+      "path": "results/table_spec.json",
+      "sha256": "46f12d93db87b8e069f11372e4adf2bafe6b014ca7b49c2bc3509b26b92ffc2a"
+    }
+  ],
+  "provenance": {
+    "files": 65,
+    "edges": {
+      "citation": 12,
+      "data": 1,
+      "estimation": 1,
+      "figure": 3,
+      "table_cell": 392
+    }
+  },
+  "verification": [
+    {
+      "check": "integrity",
+      "status": "PASS",
+      "detail": "65 files hash-verified against provenance.json; 392 table cell(s) traced in the derivation graph; 5 change(s) after export recorded as amendments (README.md, paper/paper.pdf, paper/paper.tex)"
+    },
+    {
+      "check": "numbers",
+      "status": "PASS",
+      "detail": "397 table cell(s) are source values at the precision shown; text (not gating): 256 of 259 number(s) are source values, 2 differ from the quantity named nearby, 1 untraced"
+    },
+    {
+      "check": "tables",
+      "status": "PASS",
+      "detail": "12 table(s) reproduce byte-identically from the sidecars"
+    },
+    {
+      "check": "spec",
+      "status": "SKIP",
+      "detail": "no design/identification_spec.json"
+    },
+    {
+      "check": "results contract",
+      "status": "PASS",
+      "detail": "descriptive results (descriptive statistics and distributions) are complete and consistent"
+    },
+    {
+      "check": "citations",
+      "status": "PASS",
+      "detail": "12 cite key(s) resolve in refs.bib; snapshot: 12 verified, 0 unverifiable at run time"
+    },
+    {
+      "check": "results from code",
+      "status": "PASS",
+      "detail": "written by the last run of the shipped script: estimation_results.json ← run_estimation.py"
+    }
+  ],
+  "dependencies": {
+    "uses": [
+      "template:descriptive-study",
+      "agent:literature_scanner",
+      "agent:idea_developer",
+      "agent:data_architect",
+      "agent:data_analyst",
+      "agent:econometrics_specialist",
+      "agent:abstract_writer",
+      "agent:paper_drafter",
+      "agent:literature_reviewer",
+      "agent:writing_reviewer",
+      "agent:data_reviewer",
+      "agent:methods_reviewer",
+      "agent:plausibility_reviewer",
+      "agent:patch_revisor",
+      "agent:replication_packager",
+      "skill:e2er/base/researcher",
+      "skill:e2er/data/cleaning",
+      "skill:e2er/data/data-tables",
+      "skill:e2er/data/descriptive-results-schema",
+      "skill:e2er/data/eurostat",
+      "skill:e2er/data/exoplanets",
+      "skill:e2er/data/figure-spec",
+      "skill:e2er/data/fred",
+      "skill:e2er/data/gaia",
+      "skill:e2er/data/gisco",
+      "skill:e2er/data/github",
+      "skill:e2er/data/gmd",
+      "skill:e2er/data/gutenberg",
+      "skill:e2er/data/nasa_power",
+      "skill:e2er/data/naturalearth",
+      "skill:e2er/data/noaa",
+      "skill:e2er/data/owid",
+      "skill:e2er/data/query-data",
+      "skill:e2er/data/summary-statistics-schema",
+      "skill:e2er/data/table-spec",
+      "skill:e2er/data/usgs",
+      "skill:e2er/data/who_gho",
+      "skill:e2er/data/worldbank",
+      "skill:e2er/data/yfinance",
+      "skill:e2er/econometrics/panel-data",
+      "skill:e2er/methods/descriptive-analysis",
+      "skill:e2er/reasoning/anti-slop",
+      "skill:e2er/reasoning/creative-ideation",
+      "skill:e2er/reasoning/novelty",
+      "skill:e2er/review/consistency-check",
+      "skill:e2er/review/data-quality",
+      "skill:e2er/review/domain-plausibility",
+      "skill:e2er/review/methods-review",
+      "skill:e2er/review/referee-simulation",
+      "skill:e2er/review/writing-quality",
+      "skill:e2er/synthesis/context-builder",
+      "skill:e2er/synthesis/replication-package",
+      "skill:e2er/writing/abstract",
+      "skill:e2er/writing/cite-numbers-by-source",
+      "skill:e2er/writing/paper-structure",
+      "skill:e2er/writing/personal-style",
+      "skill:e2er/writing/scoped-revision"
+    ],
+    "derived_from": []
+  },
+  "repository": {
+    "url": "https://github.com/bhanneke/e2er-demos",
+    "path": "earthquake-counts-b-value-by-decade",
+    "host": "github",
+    "left_out": []
+  },
+  "license": null,
+  "purpose": "demonstration",
+  "availability": {
+    "data": {
+      "access": "public",
+      "url": "https://github.com/bhanneke/e2er-demos"
+    },
+    "code": {
+      "access": "public",
+      "url": "https://github.com/bhanneke/e2er-demos"
+    }
+  },
+  "dossier": {
+    "id": "sha256:2710da27da3a6d1bba0638dec8ca8e8c9e3975fc09ccc0edf14ae1fc579db012",
+    "url": "https://e2er.org/d/2710da27da3a6d1b",
+    "doc": {
+      "study": {
+        "title": "How has the yearly number of magnitude 5 and larger earthquakes worldwide cha..."
+      },
+      "schema": "e2er-dossier/0.6",
+      "e2er": {
+        "version": "0.16.1",
+        "repository": null,
+        "commit": null,
+        "uncommitted_changes": false,
+        "segments": [
+          {
+            "commit": null,
+            "version": "0.16.1",
+            "from": "2026-10-14T16:04:18Z",
+            "template": "descriptive-study",
+            "skills": "recorded at dispatch",
+            "steps": 5
+          },
+          {
+            "commit": null,
+            "version": "0.16.1",
+            "from": "2026-10-14T16:07:46Z",
+            "template": "descriptive-study",
+            "skills": "recorded at dispatch",
+            "steps": 2
+          },
+          {
+            "commit": null,
+            "version": "0.16.1",
+            "from": "2026-10-14T16:08:54Z",
+            "template": "descriptive-study",
+            "skills": "recorded at dispatch",
+            "steps": 3
+          },
+          {
+            "commit": null,
+            "version": "0.16.1",
+            "from": "2026-10-14T16:10:31Z",
+            "template": "descriptive-study",
+            "skills": "recorded at dispatch",
+            "steps": 10
+          },
+          {
+            "commit": null,
+            "version": "0.16.1",
+            "from": "2026-10-14T16:43:25Z",
+            "template": "descriptive-study",
+            "steps": 4
+          },
+          {
+            "commit": null,
+            "version": "0.16.1",
+            "from": "2026-10-14T16:43:41Z",
+            "template": "descriptive-study",
+            "skills": "recorded at dispatch",
+            "steps": 6
+          },
+          {
+            "commit": null,
+            "version": "0.16.1",
+            "from": "2026-10-14T16:46:49Z",
+            "template": "descriptive-study",
+            "skills": "recorded at dispatch",
+            "steps": 4
+          },
+          {
+            "commit": null,
+            "version": "0.16.1",
+            "from": "2026-10-14T16:48:03Z",
+            "template": "descriptive-study",
+            "skills": "recorded at dispatch",
+            "steps": 5
+          },
+          {
+            "commit": null,
+            "version": "0.16.1",
+            "from": "2026-10-14T16:49:00Z",
+            "template": "descriptive-study",
+            "skills": "recorded at dispatch",
+            "steps": 13
+          },
+          {
+            "commit": null,
+            "version": "0.16.1",
+            "from": "2026-10-14T16:58:56Z",
+            "template": "descriptive-study",
+            "skills": "recorded at dispatch",
+            "steps": 3
+          },
+          {
+            "commit": null,
+            "version": "0.16.1",
+            "from": "2026-10-14T16:59:57Z",
+            "template": "descriptive-study",
+            "skills": "recorded at dispatch",
+            "steps": 11
+          }
+        ],
+        "exported_with": "0.17.0"
+      },
+      "run": {
+        "template": "descriptive-study",
+        "mode": "iterative",
+        "governance": "full",
+        "backend": "claude_code",
+        "models": [
+          {
+            "backend": "claude_code",
+            "model": "sonnet"
+          }
+        ],
+        "exported": "20261015",
+        "outcome": {
+          "status": "completed",
+          "at": "2026-10-14T17:06:57Z"
+        },
+        "internal_review": {
+          "score": 5.75,
+          "scale": 10,
+          "combined": "weighted average",
+          "reviewers": {
+            "literature_reviewer": 5.3,
+            "writing_reviewer": 6.0,
+            "data_reviewer": 6.0,
+            "methods_reviewer": 5.0,
+            "plausibility_reviewer": 6.5
+          },
+          "weights": {
+            "literature_reviewer": 0.75,
+            "writing_reviewer": 0.75,
+            "data_reviewer": 1.25,
+            "methods_reviewer": 1.5,
+            "plausibility_reviewer": 1.25
+          },
+          "rounds": 1
+        },
+        "events": [
+          {
+            "event": "backend_identity",
+            "segment": 0,
+            "at": "2026-10-14T16:04:18Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "cli": "claude-medium",
+            "cli_version": "2.1.299 (Claude Code)"
+          },
+          {
+            "event": "method_sources",
+            "segment": 0,
+            "at": "2026-10-14T16:04:18Z",
+            "keys": [
+              "emerson1983statistical",
+              "freedman1981histogram",
+              "hyndman1996sample",
+              "spearman1904proof",
+              "little2019statistical",
+              "wickham2014tidy"
+            ]
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 0,
+            "at": "2026-10-14T16:05:48Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 9,
+            "input_tokens": 14,
+            "cache_read_tokens": 222863,
+            "cache_write_tokens": 30994,
+            "output_tokens": 7941,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 0,
+            "at": "2026-10-14T16:05:55Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 1,
+            "input_tokens": 4,
+            "cache_read_tokens": 47995,
+            "cache_write_tokens": 31453,
+            "output_tokens": 9112,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 0,
+            "at": "2026-10-14T16:06:58Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 1,
+            "input_tokens": 4,
+            "cache_read_tokens": 80171,
+            "cache_write_tokens": 60242,
+            "output_tokens": 9404,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "awaiting_review",
+            "step": "review_design",
+            "segment": 0,
+            "at": "2026-10-14T16:06:58Z",
+            "stage": "review_design"
+          },
+          {
+            "event": "backend_identity",
+            "segment": 1,
+            "at": "2026-10-14T16:07:46Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "cli": "claude-medium",
+            "cli_version": "2.1.299 (Claude Code)"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 1,
+            "at": "2026-10-14T16:08:38Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 2,
+            "input_tokens": 6,
+            "cache_read_tokens": 156420,
+            "cache_write_tokens": 69135,
+            "output_tokens": 8904,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "awaiting_review",
+            "step": "review_design",
+            "segment": 1,
+            "at": "2026-10-14T16:08:38Z",
+            "stage": "review_design"
+          },
+          {
+            "event": "backend_identity",
+            "segment": 2,
+            "at": "2026-10-14T16:08:54Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "cli": "claude-medium",
+            "cli_version": "2.1.299 (Claude Code)"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 2,
+            "at": "2026-10-14T16:09:58Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 16,
+            "input_tokens": 18,
+            "cache_read_tokens": 352384,
+            "cache_write_tokens": 34925,
+            "output_tokens": 6461,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "awaiting_review",
+            "step": "review_design",
+            "segment": 2,
+            "at": "2026-10-14T16:09:58Z",
+            "stage": "review_design"
+          },
+          {
+            "event": "backend_identity",
+            "segment": 3,
+            "at": "2026-10-14T16:10:31Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "cli": "claude-medium",
+            "cli_version": "2.1.299 (Claude Code)"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 3,
+            "at": "2026-10-14T16:40:32Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": false,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 0,
+            "input_tokens": 0,
+            "cache_read_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 3,
+            "at": "2026-10-14T16:41:22Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": false,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 6,
+            "input_tokens": 14,
+            "cache_read_tokens": 616886,
+            "cache_write_tokens": 95371,
+            "output_tokens": 4729,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 3,
+            "at": "2026-10-14T16:41:57Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 11,
+            "input_tokens": 16,
+            "cache_read_tokens": 667239,
+            "cache_write_tokens": 83097,
+            "output_tokens": 3696,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 3,
+            "at": "2026-10-14T16:42:46Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 9,
+            "input_tokens": 18,
+            "cache_read_tokens": 741373,
+            "cache_write_tokens": 79104,
+            "output_tokens": 2949,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "backend_identity",
+            "segment": 4,
+            "at": "2026-10-14T16:43:25Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "cli": "claude-medium",
+            "cli_version": "2.1.299 (Claude Code)"
+          },
+          {
+            "event": "backend_identity",
+            "segment": 5,
+            "at": "2026-10-14T16:43:41Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "cli": "claude-medium",
+            "cli_version": "2.1.299 (Claude Code)"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 5,
+            "at": "2026-10-14T16:44:22Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 11,
+            "input_tokens": 20,
+            "cache_read_tokens": 838404,
+            "cache_write_tokens": 83803,
+            "output_tokens": 3728,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 5,
+            "at": "2026-10-14T16:46:07Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 8,
+            "input_tokens": 14,
+            "cache_read_tokens": 349811,
+            "cache_write_tokens": 50966,
+            "output_tokens": 11326,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "backend_identity",
+            "segment": 6,
+            "at": "2026-10-14T16:46:49Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "cli": "claude-medium",
+            "cli_version": "2.1.299 (Claude Code)"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 6,
+            "at": "2026-10-14T16:47:45Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 10,
+            "input_tokens": 18,
+            "cache_read_tokens": 518657,
+            "cache_write_tokens": 53449,
+            "output_tokens": 4436,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "backend_identity",
+            "segment": 7,
+            "at": "2026-10-14T16:48:03Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "cli": "claude-medium",
+            "cli_version": "2.1.299 (Claude Code)"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 7,
+            "at": "2026-10-14T16:48:42Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 10,
+            "input_tokens": 20,
+            "cache_read_tokens": 838933,
+            "cache_write_tokens": 80215,
+            "output_tokens": 3283,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "backend_identity",
+            "segment": 8,
+            "at": "2026-10-14T16:49:00Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "cli": "claude-medium",
+            "cli_version": "2.1.299 (Claude Code)"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 8,
+            "at": "2026-10-14T16:49:36Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 9,
+            "input_tokens": 18,
+            "cache_read_tokens": 458119,
+            "cache_write_tokens": 43791,
+            "output_tokens": 2116,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 8,
+            "at": "2026-10-14T16:49:58Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 3,
+            "input_tokens": 8,
+            "cache_read_tokens": 175524,
+            "cache_write_tokens": 58215,
+            "output_tokens": 1894,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 8,
+            "at": "2026-10-14T16:55:12Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": false,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 44,
+            "input_tokens": 52,
+            "cache_read_tokens": 2345780,
+            "cache_write_tokens": 133735,
+            "output_tokens": 46493,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 8,
+            "at": "2026-10-14T16:55:34Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 6,
+            "input_tokens": 8,
+            "cache_read_tokens": 199813,
+            "cache_write_tokens": 58822,
+            "output_tokens": 1462,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 8,
+            "at": "2026-10-14T16:56:04Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 5,
+            "input_tokens": 8,
+            "cache_read_tokens": 288571,
+            "cache_write_tokens": 78844,
+            "output_tokens": 1200,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 8,
+            "at": "2026-10-14T16:56:29Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 5,
+            "input_tokens": 10,
+            "cache_read_tokens": 248318,
+            "cache_write_tokens": 48521,
+            "output_tokens": 1534,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 8,
+            "at": "2026-10-14T16:57:07Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 4,
+            "input_tokens": 6,
+            "cache_read_tokens": 196357,
+            "cache_write_tokens": 79874,
+            "output_tokens": 1324,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 8,
+            "at": "2026-10-14T16:57:44Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 8,
+            "input_tokens": 14,
+            "cache_read_tokens": 391033,
+            "cache_write_tokens": 52739,
+            "output_tokens": 2510,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "awaiting_review",
+            "step": "review_draft",
+            "segment": 8,
+            "at": "2026-10-14T16:57:52Z",
+            "stage": "review_draft"
+          },
+          {
+            "event": "backend_identity",
+            "segment": 9,
+            "at": "2026-10-14T16:58:56Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "cli": "claude-medium",
+            "cli_version": "2.1.299 (Claude Code)"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 9,
+            "at": "2026-10-14T16:59:42Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 16,
+            "input_tokens": 8,
+            "cache_read_tokens": 230258,
+            "cache_write_tokens": 71209,
+            "output_tokens": 7146,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "awaiting_review",
+            "step": "review_draft",
+            "segment": 9,
+            "at": "2026-10-14T16:59:42Z",
+            "stage": "review_draft"
+          },
+          {
+            "event": "backend_identity",
+            "segment": 10,
+            "at": "2026-10-14T16:59:57Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "cli": "claude-medium",
+            "cli_version": "2.1.299 (Claude Code)"
+          },
+          {
+            "event": "self_critique",
+            "step": "self_attack",
+            "segment": 10,
+            "at": "2026-10-14T17:00:54Z",
+            "findings": 0,
+            "serious": 0,
+            "max_severity": 0,
+            "categories": [],
+            "label": "Self-critique"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 10,
+            "at": "2026-10-14T17:01:36Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 1,
+            "input_tokens": 4,
+            "cache_read_tokens": 93189,
+            "cache_write_tokens": 67564,
+            "output_tokens": 3676,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 10,
+            "at": "2026-10-14T17:02:38Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 1,
+            "input_tokens": 4,
+            "cache_read_tokens": 96260,
+            "cache_write_tokens": 79407,
+            "output_tokens": 12442,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 10,
+            "at": "2026-10-14T17:03:45Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 1,
+            "input_tokens": 4,
+            "cache_read_tokens": 101928,
+            "cache_write_tokens": 93236,
+            "output_tokens": 20574,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 10,
+            "at": "2026-10-14T17:04:24Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 1,
+            "input_tokens": 4,
+            "cache_read_tokens": 97028,
+            "cache_write_tokens": 88408,
+            "output_tokens": 20713,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 10,
+            "at": "2026-10-14T17:04:54Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 1,
+            "input_tokens": 4,
+            "cache_read_tokens": 94292,
+            "cache_write_tokens": 81165,
+            "output_tokens": 16151,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 10,
+            "at": "2026-10-14T17:06:00Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 6,
+            "input_tokens": 14,
+            "cache_read_tokens": 406088,
+            "cache_write_tokens": 68967,
+            "output_tokens": 7520,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 10,
+            "at": "2026-10-14T17:06:57Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 2,
+            "input_tokens": 6,
+            "cache_read_tokens": 119520,
+            "cache_write_tokens": 50938,
+            "output_tokens": 9377,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "label": "Round 1",
+            "segment": 8,
+            "started": "2026-10-14T16:55:44Z",
+            "specialists": [
+              "econometrics_specialist",
+              "data_analyst"
+            ],
+            "specialist_labels": [
+              "Estimation",
+              "Data and descriptive analysis"
+            ],
+            "reason": "The figure check failed. The econometrics fixes (count threshold, Mw-only common-threshold b, Mc floor censoring flag, list layout) must run first. Then the data analyst re-points and verifies the figure spec before paper_drafter is dispatched.",
+            "ceiling_check": {
+              "verdict": "continue",
+              "decision": "another round",
+              "at": "2026-10-14T16:56:36Z",
+              "reason": "Iteration 1 has produced a full draft with real data (277,946 events, decade means, b-values at decade-specific Mc and common threshold), so improvement has not stalled; this is the first pass and there is no multi-iteration trajectory showing diminishing returns. The draft is still missing the checks the plan promised: figure_data re-read after econometrics, sensitivity to Mc method, magnitude type and declustering, and a test of whether the decade b-value differences exceed sampling error (Utsu test or bootstrap). The draft also leaves a `% src:` placeholder in the introduction. Targeted section_writer and analysis work can close these without a pivot, so continue to the next iteration and keep the pivot in reserve."
+            }
+          },
+          {
+            "round": 2,
+            "label": "Round 2",
+            "segment": 8,
+            "started": "2026-10-14T16:56:48Z",
+            "specialists": [
+              "econometrics_specialist",
+              "data_analyst"
+            ],
+            "specialist_labels": [
+              "Estimation",
+              "Data and descriptive analysis"
+            ],
+            "reason": "The researcher's pending fixes come first. The econometrics_specialist corrects the count threshold and the Mw-only and Mc-censoring handling, and adds the list-form magtype shares. The data_analyst then re-verifies figure_spec.json against the new results before the figure check and drafting. paper_drafter and revisor are not allowed on iteration 2+, so section_writer will handle any follow-up text changes.",
+            "ceiling_check": {
+              "verdict": "proceed_to_review",
+              "decision": "ready for review",
+              "at": "2026-10-14T16:57:51Z",
+              "reason": "The draft is already coherent and complete for a descriptive study: abstract reports decade-level counts, magnitude-type shifts, and b-values at both decade-specific and common Mc, and the conclusions are appropriately hedged (catalogue change cannot be separated from physical change). The data, quality, and figure checks are in the template's pipeline, and the remaining gaps (polish, citation verification, wording) are handled better by the review panel and the automatic patch_revisor than by a pivot with new upstream work. A further strategist-driven iteration is unlikely to yield more than 5% qualitative improvement."
+            }
+          }
+        ]
+      },
+      "credit": {
+        "template": "descriptive-study",
+        "entries": [
+          {
+            "creator": "John D. Emerson and Graham A. Colditz",
+            "role": "related work",
+            "relation": "cites",
+            "kind": "article",
+            "title": "Use of Statistical Analysis in The New England Journal of Medicine",
+            "publisher": "New England Journal of Medicine 309(12), 709-713",
+            "year": 1983,
+            "url": "https://doi.org/10.1056/NEJM198309223091206",
+            "accessed": "2026-10-11",
+            "found_via": "Crossref record checked 2026-10-11",
+            "note": "Evidence that descriptive statistics carry much of a field's empirical work (58% of NEJM articles readable with descriptives alone)."
+          },
+          {
+            "creator": "David Freedman and Persi Diaconis",
+            "role": "method",
+            "relation": "cites",
+            "kind": "article",
+            "title": "On the histogram as a density estimator: L2 theory",
+            "publisher": "Zeitschrift für Wahrscheinlichkeitstheorie und Verwandte Gebiete 57(4), 453-476",
+            "year": 1981,
+            "url": "https://doi.org/10.1007/BF01025868",
+            "accessed": "2026-10-11",
+            "found_via": "Crossref record checked 2026-10-11",
+            "note": "Histogram bin width (Freedman-Diaconis rule) in the descriptive-analysis skill."
+          },
+          {
+            "creator": "Rob J. Hyndman and Yanan Fan",
+            "role": "method",
+            "relation": "cites",
+            "kind": "article",
+            "title": "Sample Quantiles in Statistical Packages",
+            "publisher": "The American Statistician 50(4), 361-365",
+            "year": 1996,
+            "url": "https://doi.org/10.1080/00031305.1996.10473566",
+            "accessed": "2026-10-11",
+            "found_via": "Crossref record checked 2026-10-11",
+            "note": "Quantile definitions (type 7, linear interpolation) the skill asks studies to state."
+          },
+          {
+            "creator": "Charles Spearman",
+            "role": "method",
+            "relation": "cites",
+            "kind": "article",
+            "title": "The Proof and Measurement of Association between Two Things",
+            "publisher": "The American Journal of Psychology 15(1), 72-101",
+            "year": 1904,
+            "url": "https://doi.org/10.2307/1412159",
+            "accessed": "2026-10-11",
+            "found_via": "Crossref record checked 2026-10-11",
+            "note": "Rank correlation (Spearman's rho) for associations in skewed data."
+          },
+          {
+            "creator": "Roderick Little and Donald Rubin",
+            "role": "method",
+            "relation": "cites",
+            "kind": "book",
+            "title": "Statistical Analysis with Missing Data (3rd edition)",
+            "publisher": "Wiley",
+            "year": 2019,
+            "url": "https://doi.org/10.1002/9781119482260",
+            "accessed": "2026-10-11",
+            "found_via": "Crossref record checked 2026-10-11",
+            "note": "Reporting and treating missing values, which the data check asks the dictionary to explain."
+          },
+          {
+            "creator": "Hadley Wickham",
+            "role": "method",
+            "relation": "cites",
+            "kind": "article",
+            "title": "Tidy Data",
+            "publisher": "Journal of Statistical Software 59(10)",
+            "year": 2014,
+            "url": "https://doi.org/10.18637/jss.v059.i10",
+            "accessed": "2026-10-11",
+            "found_via": "Crossref record checked 2026-10-11",
+            "note": "One row per unit, one column per variable: the shape the data check reads."
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "agent:abstract_writer",
+          "kind": "agent",
+          "name": "abstract_writer",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:data_analyst",
+          "kind": "agent",
+          "name": "data_analyst",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:data_architect",
+          "kind": "agent",
+          "name": "data_architect",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:data_reviewer",
+          "kind": "agent",
+          "name": "data_reviewer",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:econometrics_specialist",
+          "kind": "agent",
+          "name": "econometrics_specialist",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:idea_developer",
+          "kind": "agent",
+          "name": "idea_developer",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:literature_reviewer",
+          "kind": "agent",
+          "name": "literature_reviewer",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:literature_scanner",
+          "kind": "agent",
+          "name": "literature_scanner",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:methods_reviewer",
+          "kind": "agent",
+          "name": "methods_reviewer",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:paper_drafter",
+          "kind": "agent",
+          "name": "paper_drafter",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:patch_revisor",
+          "kind": "agent",
+          "name": "patch_revisor",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:plausibility_reviewer",
+          "kind": "agent",
+          "name": "plausibility_reviewer",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:replication_packager",
+          "kind": "agent",
+          "name": "replication_packager",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:writing_reviewer",
+          "kind": "agent",
+          "name": "writing_reviewer",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "connector:claude-code",
+          "kind": "connector",
+          "name": "claude-code",
+          "pin": {
+            "path": "src/modules/llm/claude_code.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/base/researcher",
+          "kind": "skill",
+          "name": "researcher",
+          "pin": {
+            "path": "skills/files/base/researcher.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/cleaning",
+          "kind": "skill",
+          "name": "cleaning",
+          "pin": {
+            "path": "skills/files/data/cleaning.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/data-tables",
+          "kind": "skill",
+          "name": "data-tables",
+          "pin": {
+            "path": "skills/files/data/data-tables.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/descriptive-results-schema",
+          "kind": "skill",
+          "name": "descriptive-results-schema",
+          "pin": {
+            "path": "skills/files/data/descriptive-results-schema.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/eurostat",
+          "kind": "skill",
+          "name": "eurostat",
+          "pin": {
+            "path": "skills/files/data/eurostat.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/exoplanets",
+          "kind": "skill",
+          "name": "exoplanets",
+          "pin": {
+            "path": "skills/files/data/exoplanets.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/figure-spec",
+          "kind": "skill",
+          "name": "figure-spec",
+          "pin": {
+            "path": "skills/files/data/figure-spec.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/fred",
+          "kind": "skill",
+          "name": "fred",
+          "pin": {
+            "path": "skills/files/data/fred.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gaia",
+          "kind": "skill",
+          "name": "gaia",
+          "pin": {
+            "path": "skills/files/data/gaia.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gisco",
+          "kind": "skill",
+          "name": "gisco",
+          "pin": {
+            "path": "skills/files/data/gisco.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/github",
+          "kind": "skill",
+          "name": "github",
+          "pin": {
+            "path": "skills/files/data/github.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gmd",
+          "kind": "skill",
+          "name": "gmd",
+          "pin": {
+            "path": "skills/files/data/gmd.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gutenberg",
+          "kind": "skill",
+          "name": "gutenberg",
+          "pin": {
+            "path": "skills/files/data/gutenberg.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/nasa_power",
+          "kind": "skill",
+          "name": "nasa_power",
+          "pin": {
+            "path": "skills/files/data/nasa_power.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/naturalearth",
+          "kind": "skill",
+          "name": "naturalearth",
+          "pin": {
+            "path": "skills/files/data/naturalearth.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/noaa",
+          "kind": "skill",
+          "name": "noaa",
+          "pin": {
+            "path": "skills/files/data/noaa.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/owid",
+          "kind": "skill",
+          "name": "owid",
+          "pin": {
+            "path": "skills/files/data/owid.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/query-data",
+          "kind": "skill",
+          "name": "query-data",
+          "pin": {
+            "path": "skills/files/data/query-data.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/summary-statistics-schema",
+          "kind": "skill",
+          "name": "summary-statistics-schema",
+          "pin": {
+            "path": "skills/files/data/summary-statistics-schema.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/table-spec",
+          "kind": "skill",
+          "name": "table-spec",
+          "pin": {
+            "path": "skills/files/data/table-spec.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/usgs",
+          "kind": "skill",
+          "name": "usgs",
+          "pin": {
+            "path": "skills/files/data/usgs.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/who_gho",
+          "kind": "skill",
+          "name": "who_gho",
+          "pin": {
+            "path": "skills/files/data/who_gho.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/worldbank",
+          "kind": "skill",
+          "name": "worldbank",
+          "pin": {
+            "path": "skills/files/data/worldbank.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/yfinance",
+          "kind": "skill",
+          "name": "yfinance",
+          "pin": {
+            "path": "skills/files/data/yfinance.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/econometrics/panel-data",
+          "kind": "skill",
+          "name": "panel-data",
+          "pin": {
+            "path": "skills/files/econometrics/panel-data.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/methods/descriptive-analysis",
+          "kind": "skill",
+          "name": "descriptive-analysis",
+          "pin": {
+            "path": "skills/files/methods/descriptive-analysis.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/anti-slop",
+          "kind": "skill",
+          "name": "anti-slop",
+          "pin": {
+            "path": "skills/files/reasoning/anti-slop.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/creative-ideation",
+          "kind": "skill",
+          "name": "creative-ideation",
+          "pin": {
+            "path": "skills/files/reasoning/creative-ideation.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/novelty",
+          "kind": "skill",
+          "name": "novelty",
+          "pin": {
+            "path": "skills/files/reasoning/novelty.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/review/consistency-check",
+          "kind": "skill",
+          "name": "consistency-check",
+          "pin": {
+            "path": "skills/files/review/consistency-check.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/review/data-quality",
+          "kind": "skill",
+          "name": "data-quality",
+          "pin": {
+            "path": "skills/files/review/data-quality.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/review/domain-plausibility",
+          "kind": "skill",
+          "name": "domain-plausibility",
+          "pin": {
+            "path": "skills/files/review/domain-plausibility.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/review/methods-review",
+          "kind": "skill",
+          "name": "methods-review",
+          "pin": {
+            "path": "skills/files/review/methods-review.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/review/referee-simulation",
+          "kind": "skill",
+          "name": "referee-simulation",
+          "pin": {
+            "path": "skills/files/review/referee-simulation.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/review/writing-quality",
+          "kind": "skill",
+          "name": "writing-quality",
+          "pin": {
+            "path": "skills/files/review/writing-quality.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/synthesis/context-builder",
+          "kind": "skill",
+          "name": "context-builder",
+          "pin": {
+            "path": "skills/files/synthesis/context-builder.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/synthesis/replication-package",
+          "kind": "skill",
+          "name": "replication-package",
+          "pin": {
+            "path": "skills/files/synthesis/replication-package.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/abstract",
+          "kind": "skill",
+          "name": "abstract",
+          "pin": {
+            "path": "skills/files/writing/abstract.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/cite-numbers-by-source",
+          "kind": "skill",
+          "name": "cite-numbers-by-source",
+          "pin": {
+            "path": "skills/files/writing/cite-numbers-by-source.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/paper-structure",
+          "kind": "skill",
+          "name": "paper-structure",
+          "pin": {
+            "path": "skills/files/writing/paper-structure.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/personal-style",
+          "kind": "skill",
+          "name": "personal-style",
+          "pin": {
+            "path": "skills/files/writing/personal-style.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/scoped-revision",
+          "kind": "skill",
+          "name": "scoped-revision",
+          "pin": {
+            "path": "skills/files/writing/scoped-revision.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "template:descriptive-study",
+          "kind": "template",
+          "name": "descriptive-study",
+          "pin": {
+            "path": "pipelines/descriptive-study.toml",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        }
+      ],
+      "data": [
+        {
+          "path": "data/data.db",
+          "sha256": "8b1cfbf8e9d5d951aa327394d9d39570ebdb8109785ba7fcd4f612dd04056d2b"
+        },
+        {
+          "path": "data/data_dictionary.json",
+          "sha256": "8a38e80d0075686aed2a9ab6bcf1a211dff0853c49d051c193e986ec75e511c3"
+        },
+        {
+          "path": "data/data_sources.json",
+          "sha256": "a80f3d4878f3d9f6af7df8e467bfddf5c391835e4cc15874b6adfa2570ddbca7"
+        },
+        {
+          "path": "data/data_summary.md",
+          "sha256": "31c4527b131323c832d50a301b29f35214898f8091423844a2c06403552b8f45"
+        }
+      ],
+      "data_sources": [
+        {
+          "connector": "usgs",
+          "dataset": "ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey",
+          "table": "usgs_raw_1976_1985",
+          "saved_to": "data/usgs_raw_1976_1985.csv",
+          "licence": "U.S. public domain (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits): \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain.\" USGS asks \"that proper credit be given\". Cite the catalogue: U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+          "terms": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+          "citation": "U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+          "cite_key": "USGS_ComCat",
+          "series": "earthquakes of magnitude 4.5 and above worldwide, 1976-01-01 to 1986-01-01",
+          "retrieved_at": "2026-10-14T16:13:23Z",
+          "terms_summary": "USGS-authored or produced data are in the U.S. public domain; USGS asks that proper credit be given.",
+          "citation_by": "source",
+          "link": "https://earthquake.usgs.gov/earthquakes/search/",
+          "files": [
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1976-01-01T00%3A00%3A00&endtime=1980-12-31T12%3A00%3A00",
+              "sha256": "57883ff433407fbae9cacbb50fa1692a17ee9560235e561b1482c4661e18d76c"
+            },
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1980-12-31T12%3A00%3A00&endtime=1986-01-01T00%3A00%3A00",
+              "sha256": "bb6fdb8d5662068931bda9c738bda406d9fb4701067435d7049f864e225f9d47"
+            }
+          ]
+        },
+        {
+          "connector": "usgs",
+          "dataset": "ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey",
+          "table": "usgs_raw_1986_1995",
+          "saved_to": "data/usgs_raw_1986_1995.csv",
+          "licence": "U.S. public domain (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits): \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain.\" USGS asks \"that proper credit be given\". Cite the catalogue: U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+          "terms": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+          "citation": "U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+          "cite_key": "USGS_ComCat",
+          "series": "earthquakes of magnitude 4.5 and above worldwide, 1986-01-01 to 1996-01-01",
+          "retrieved_at": "2026-10-14T16:18:28Z",
+          "terms_summary": "USGS-authored or produced data are in the U.S. public domain; USGS asks that proper credit be given.",
+          "citation_by": "source",
+          "link": "https://earthquake.usgs.gov/earthquakes/search/",
+          "files": [
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1986-01-01T00%3A00%3A00&endtime=1988-07-02T00%3A00%3A00",
+              "sha256": "2985e3844e924bb31443f159b3655292dacdf96c1135a42ee8c7244165b4bf6b"
+            },
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1988-07-02T00%3A00%3A00&endtime=1991-01-01T00%3A00%3A00",
+              "sha256": "f6370b5bf4359b6a6aabb9846124a30bdebd3d81f2b403268b98a49d0184d344"
+            },
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1991-01-01T00%3A00%3A00&endtime=1993-07-02T00%3A00%3A00",
+              "sha256": "564903fd967fd552acc9cca186216905c0e6619b2e2506a6b21ca6b22d2b8a9b"
+            },
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1993-07-02T00%3A00%3A00&endtime=1996-01-01T00%3A00%3A00",
+              "sha256": "ab51eacb38fff8d49fdd05e4ecb326a815e08171bdaa42204992017bf2b8bb12"
+            }
+          ]
+        },
+        {
+          "connector": "usgs",
+          "dataset": "ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey",
+          "table": "usgs_raw_1996_2005",
+          "saved_to": "data/usgs_raw_1996_2005.csv",
+          "licence": "U.S. public domain (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits): \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain.\" USGS asks \"that proper credit be given\". Cite the catalogue: U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+          "terms": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+          "citation": "U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+          "cite_key": "USGS_ComCat",
+          "series": "earthquakes of magnitude 4.5 and above worldwide, 1996-01-01 to 2006-01-01",
+          "retrieved_at": "2026-10-14T16:24:35Z",
+          "terms_summary": "USGS-authored or produced data are in the U.S. public domain; USGS asks that proper credit be given.",
+          "citation_by": "source",
+          "link": "https://earthquake.usgs.gov/earthquakes/search/",
+          "files": [
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1996-01-01T00%3A00%3A00&endtime=1998-07-02T06%3A00%3A00",
+              "sha256": "251527d65d72730a549cc4617b02b90a476854e7ccdd39820c62f94fad6b1a86"
+            },
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1998-07-02T06%3A00%3A00&endtime=2000-12-31T12%3A00%3A00",
+              "sha256": "780dd4e289a2e9c7210c8dadcd24f072690f921c809c20adc2968557ce03c4a8"
+            },
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2000-12-31T12%3A00%3A00&endtime=2003-07-02T18%3A00%3A00",
+              "sha256": "ea75b8d00d21c514004dcdc275e54b47237f7792d94f2f60d66799c7894f658f"
+            },
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2003-07-02T18%3A00%3A00&endtime=2006-01-01T00%3A00%3A00",
+              "sha256": "058480955f15f8ab0b8c4a0f8c27310d94039416724ceb4fbe79c98c3152d652"
+            }
+          ]
+        },
+        {
+          "connector": "usgs",
+          "dataset": "ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey",
+          "table": "usgs_raw_2006_2015",
+          "saved_to": "data/usgs_raw_2006_2015.csv",
+          "licence": "U.S. public domain (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits): \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain.\" USGS asks \"that proper credit be given\". Cite the catalogue: U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+          "terms": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+          "citation": "U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+          "cite_key": "USGS_ComCat",
+          "series": "earthquakes of magnitude 4.5 and above worldwide, 2006-01-01 to 2016-01-01",
+          "retrieved_at": "2026-10-14T16:32:12Z",
+          "terms_summary": "USGS-authored or produced data are in the U.S. public domain; USGS asks that proper credit be given.",
+          "citation_by": "source",
+          "link": "https://earthquake.usgs.gov/earthquakes/search/",
+          "files": [
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2006-01-01T00%3A00%3A00&endtime=2008-07-02T00%3A00%3A00",
+              "sha256": "c14aded8e744ff95eddb9c741021d0325c0c16a22c42e8883f82f4057b90813e"
+            },
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2008-07-02T00%3A00%3A00&endtime=2011-01-01T00%3A00%3A00",
+              "sha256": "917bef1459665a1691488c068568750d268978a42af03944d94baf64e1455957"
+            },
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2011-01-01T00%3A00%3A00&endtime=2012-04-01T12%3A00%3A00",
+              "sha256": "0f64a3bdb8ba8ba5b59f0754d6c11e6e66201be48b11e554917ac125ed83b1c0"
+            },
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2012-04-01T12%3A00%3A00&endtime=2013-07-02T00%3A00%3A00",
+              "sha256": "8036aa5263d88ba708f0d51e577f252548edd4cb20d68e17d50d06f07b88ca79"
+            },
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2013-07-02T00%3A00%3A00&endtime=2016-01-01T00%3A00%3A00",
+              "sha256": "f7d729fd260942f051548dcbc3c705f65d20f2b3c8259d3723dda01408eb9d02"
+            }
+          ]
+        },
+        {
+          "connector": "usgs",
+          "dataset": "ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey",
+          "table": "usgs_raw_2016_2025",
+          "saved_to": "data/usgs_raw_2016_2025.csv",
+          "licence": "U.S. public domain (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits): \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain.\" USGS asks \"that proper credit be given\". Cite the catalogue: U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+          "terms": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+          "citation": "U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+          "cite_key": "USGS_ComCat",
+          "series": "earthquakes of magnitude 4.5 and above worldwide, 2016-01-01 to 2026-01-01",
+          "retrieved_at": "2026-10-14T16:39:30Z",
+          "terms_summary": "USGS-authored or produced data are in the U.S. public domain; USGS asks that proper credit be given.",
+          "citation_by": "source",
+          "link": "https://earthquake.usgs.gov/earthquakes/search/",
+          "files": [
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2016-01-01T00%3A00%3A00&endtime=2018-07-02T06%3A00%3A00",
+              "sha256": "8630e87d9b1a06d168b7b111e460fddee16a1bcb343f5d2e8d555d30ca33b52e"
+            },
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2018-07-02T06%3A00%3A00&endtime=2020-12-31T12%3A00%3A00",
+              "sha256": "a1d734977c8f3d0c71291c919640a515734a66a366d3a6e04fa38e4dfe563f62"
+            },
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2020-12-31T12%3A00%3A00&endtime=2022-04-02T03%3A00%3A00",
+              "sha256": "90f12f6c4aafe995d32c7095217130a89a510000a0dcaa3ac6dbc23cd7aeadbc"
+            },
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2022-04-02T03%3A00%3A00&endtime=2023-07-02T18%3A00%3A00",
+              "sha256": "9508fceef77a5d181896b8654afa65c75a90a4ed73221b71a7a2d9aa9e0c735c"
+            },
+            {
+              "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2023-07-02T18%3A00%3A00&endtime=2026-01-01T00%3A00%3A00",
+              "sha256": "0ab0a066d6315aef0e8ad2339dcdbbc8372dea13786879f913ab56dfb7dad54d"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "key": "varty2021inference",
+          "title": "Inference for extreme earthquake magnitudes accounting for a time-varying measurement process",
+          "source": "web",
+          "year": "2021"
+        },
+        {
+          "key": "USGS_ComCat",
+          "title": "Advanced National Seismic System (ANSS) Comprehensive Catalog",
+          "source": "web",
+          "year": "2017",
+          "doi": "10.5066/F7MS3QZH"
+        },
+        {
+          "key": "shearer2011global",
+          "title": "Global risk of big earthquakes has not recently increased",
+          "source": "web",
+          "year": "2011",
+          "doi": "10.1073/pnas.1118525109"
+        },
+        {
+          "key": "wiemer2000minimum",
+          "title": "Minimum Magnitude of Completeness in Earthquake Catalogs: Examples from Alaska, the Western United States, and Japan",
+          "source": "web",
+          "year": "2000",
+          "doi": "10.1785/0119990114"
+        },
+        {
+          "key": "woessner2005assessing",
+          "title": "Assessing the Quality of Earthquake Catalogues: Estimating the Magnitude of Completeness and Its Uncertainty",
+          "source": "web",
+          "year": "2005",
+          "doi": "10.1785/0120040007"
+        },
+        {
+          "key": "wang2025estimating",
+          "title": "Estimating Magnitude Completeness in Earthquake Catalogs: A Comparative Study of Catalog-based Methods",
+          "source": "web",
+          "year": "2025",
+          "doi": "10.1029/2025JB031441"
+        },
+        {
+          "key": "godano2023evaluating",
+          "title": "Evaluating the incompleteness magnitude using an unbiased estimate of the $b$ value",
+          "source": "web",
+          "year": "2023"
+        },
+        {
+          "key": "shi1982the",
+          "title": "The standard error of the magnitude-frequency b value",
+          "source": "web",
+          "year": "1982",
+          "doi": "10.1785/bssa0720051677"
+        },
+        {
+          "key": "kamer2014minimum",
+          "title": "Minimum sample size for detection of Gutenberg-Richter's b-value",
+          "source": "web",
+          "year": "2014"
+        },
+        {
+          "key": "srivastava2021sundaarc",
+          "title": "Sunda-arc seismicity: continuing increase of high-magnitude earthquakes since 2004",
+          "source": "web",
+          "year": "2021"
+        },
+        {
+          "key": "spearman1904proof",
+          "title": "The Proof and Measurement of Association between Two Things",
+          "source": "template",
+          "year": "1904",
+          "doi": "10.2307/1412159"
+        },
+        {
+          "key": "hyndman1996sample",
+          "title": "Sample Quantiles in Statistical Packages",
+          "source": "template",
+          "year": "1996",
+          "doi": "10.1080/00031305.1996.10473566"
+        }
+      ],
+      "workflow": [
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "literature_scanner",
+          "segment": 0,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:04:35Z",
+          "ended": "2026-10-14T16:05:48Z",
+          "accepted": true,
+          "output": {
+            "file": "design/literature_review.md",
+            "sha256": "c3fc7362bf37ffaef752d7c2d42a85b896d2c229f3352ee346ffe8265ae50290"
+          }
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "idea_developer",
+          "segment": 0,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:04:35Z",
+          "ended": "2026-10-14T16:05:55Z",
+          "accepted": true,
+          "output": {
+            "file": "design/paper_plan.md",
+            "sha256": "a158d57f51f96c279a23c8c0ce13ad8cde6725c5ba0df697b76db6fe8bb654ee"
+          }
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "data_architect",
+          "segment": 0,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:05:55Z",
+          "ended": "2026-10-14T16:06:58Z",
+          "accepted": true,
+          "output": {
+            "file": "data/data_dictionary.json",
+            "sha256": "4761b1131cbeb07a612a79f2e50c1d1c82605aca82f905d5af71ebb7674b74a9"
+          }
+        },
+        {
+          "type": "researcher",
+          "action": "instruction",
+          "phase": "initial",
+          "step": "review_design",
+          "at": "2026-10-14T16:07:35Z",
+          "text": "Scope for this descriptive study (replaces the larger plan where they differ): (1) Counts: yearly counts of M>=5 with ComCat's preferred magnitude (one preferred magnitude per event; report the mix of magnitude types by decade), decade means, and counts at ONE common threshold equal to the largest decade Mc. Describe a change in counts only if the decade means show it; aftershocks are kept and the paper says so. (2) b-value: Aki-Utsu maximum likelihood with the bin correction (dM = 0.1); standard error by Shi & Bolt (1982): sigma_b = 2.30 b^2 sqrt(sum (M_i - mean M)^2 / (N (N-1))) - b/sqrt(N) is Aki's, label it so if reported; bootstrap 95% intervals. Mc per decade by maximum curvature (+0.2) and goodness-of-fit (90/95%), estimated from events down to M4.5. Pairwise decade comparisons by Utsu's test, reported exactly as computed (say which pairs overlap and which do not). (3) Checks: Mw-family-only sample and shallow (depth <= 70 km) sample. (4) Drop: ETAS/Poisson simulations, all three declustering methods, regional exclusions, 5-year and sliding windows, mb->Mw conversions, synthetic validation, LOESS, CUSUM/Pettitt. (5) Cite the catalogue as USGS ComCat (doi 10.5066/F7MS3QZH) for the data; cite only references that resolve in literature.bib; no JEL line. (6) A difference between the M>=5 and M>=5.5 counts is not a detection share; incompleteness below Mc lowers the estimated b, it does not raise it.",
+          "segment": 0
+        },
+        {
+          "type": "researcher",
+          "action": "send_back",
+          "phase": "initial",
+          "step": "review_design",
+          "at": "2026-10-14T16:07:46Z",
+          "target": "data_architect",
+          "remark": "Load ComCat from M>=4.5, not M>=4.0: Mc is about 5 in every decade, so events down to 4.5 are enough to estimate it, and M>=4.0 roughly doubles the load (worldwide M4 is far from complete and mostly regional-network ML/md events). Change the five load commands to --min-magnitude 4.5, rename eq_clean_m40 to eq_clean_m45 and drop the n_m40 column; keep everything else (no --event-type so the type counts exist, the ComCat citation, the GCMT 'unavailable' entry). In eq_bvalue_windows keep only the five decades (no sliding windows) and Mc rules maxc+0.2, gft90/95 and the common threshold (largest decade Mc); drop declustering from known_limits wording ('aftershocks are included and not removed').",
+          "segment": 0
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "data_architect",
+          "segment": 1,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:07:46Z",
+          "ended": "2026-10-14T16:08:38Z",
+          "accepted": true,
+          "sent_back": {
+            "at": "2026-10-14T16:07:46Z",
+            "remark": "Load ComCat from M>=4.5, not M>=4.0: Mc is about 5 in every decade, so events down to 4.5 are enough to estimate it, and M>=4.0 roughly doubles the load (worldwide M4 is far from complete and mostly regional-network ML/md events). Change the five load commands to --min-magnitude 4.5, rename eq_clean_m40 to eq_clean_m45 and drop the n_m40 column; keep everything else (no --event-type so the type counts exist, the ComCat citation, the GCMT 'unavailable' entry). In eq_bvalue_windows keep only the five decades (no sliding windows) and Mc rules maxc+0.2, gft90/95 and the common threshold (largest decade Mc); drop declustering from known_limits wording ('aftershocks are included and not removed')."
+          },
+          "output": {
+            "file": "data/data_dictionary.json",
+            "sha256": "b2ccf74f7efd3cf9bcb8e52e2237e40c6afa09a75f633c802895d1938a39fe21"
+          }
+        },
+        {
+          "type": "researcher",
+          "action": "send_back",
+          "phase": "initial",
+          "step": "review_design",
+          "at": "2026-10-14T16:08:54Z",
+          "target": "literature_scanner",
+          "remark": "The library lacks every core methods reference, and several of the 29 keys are off-topic (emerson1983statistical, jagla2013a, maslov2012derivation, serino2010gutenbergrichter, guglielmi*). Search (e2er-lit search, which reaches OpenAlex/Crossref) and record only what resolves: Aki 1965 (b-value MLE), Utsu 1965, Shi & Bolt 1982 (BSSA 72(5) 1677-1687, b-value standard error), Wiemer & Wyss 2000 (BSSA, Mc), Woessner & Wiemer 2005 (BSSA 95(2), doi 10.1785/0120040007), Utsu 1992 or 1999 (b-value comparison test), Shearer & Stark 2012 (PNAS, doi 10.1073/pnas.1118525109), Michael 2011 (GRL). Whatever does not resolve stays out of literature.bib and is listed as unverified. Do not add declustering/ETAS references; the analysis drops them. Rewrite literature_review.md's tiers accordingly.",
+          "segment": 1
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "literature_scanner",
+          "segment": 2,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:08:54Z",
+          "ended": "2026-10-14T16:09:58Z",
+          "accepted": true,
+          "sent_back": {
+            "at": "2026-10-14T16:08:54Z",
+            "remark": "The library lacks every core methods reference, and several of the 29 keys are off-topic (emerson1983statistical, jagla2013a, maslov2012derivation, serino2010gutenbergrichter, guglielmi*). Search (e2er-lit search, which reaches OpenAlex/Crossref) and record only what resolves: Aki 1965 (b-value MLE), Utsu 1965, Shi & Bolt 1982 (BSSA 72(5) 1677-1687, b-value standard error), Wiemer & Wyss 2000 (BSSA, Mc), Woessner & Wiemer 2005 (BSSA 95(2), doi 10.1785/0120040007), Utsu 1992 or 1999 (b-value comparison test), Shearer & Stark 2012 (PNAS, doi 10.1073/pnas.1118525109), Michael 2011 (GRL). Whatever does not resolve stays out of literature.bib and is listed as unverified. Do not add declustering/ETAS references; the analysis drops them. Rewrite literature_review.md's tiers accordingly."
+          },
+          "output": {
+            "file": "design/literature_review.md",
+            "sha256": "ccf32f7ea753d4c40057ef013b51d41cc2baca47018326ccee1889c766a6c486"
+          }
+        },
+        {
+          "type": "researcher",
+          "action": "instruction",
+          "phase": "initial",
+          "step": "review_design",
+          "at": "2026-10-14T16:10:31Z",
+          "text": "Do not cite wong2011oxidation (off-topic; a wrong DOI guess) nor the off-topic keys emerson1983statistical, jagla2013a, maslov2012derivation, serino2010gutenbergrichter, guglielmi2019global, guglielmi2021dependence. Aki 1965 and Utsu 1965/1999 are unverified: name the estimator and test in words, do not cite them by key. Note: OpenAlex lists only the first author for woessner2005assessing (Woessner & Wiemer) and wiemer2000minimum (Wiemer & Wyss); write the author pairs correctly in the text.",
+          "segment": 2
+        },
+        {
+          "type": "researcher",
+          "action": "approve",
+          "phase": "initial",
+          "step": "review_design",
+          "at": "2026-10-14T16:10:31Z",
+          "segment": 2
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "data_analyst",
+          "segment": 3,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:10:32Z",
+          "ended": "2026-10-14T16:40:32Z",
+          "accepted": false,
+          "stopped_by": "Claude Code timed out after 1800s (limit 1800s)",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "7d1c1fe85709c41e3f6948068acddf3adb4051d672979e5aaf522465f0d22265"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "7d1c1fe85709c41e3f6948068acddf3adb4051d672979e5aaf522465f0d22265"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "70ab63a6a67779a23d0307d335f05fce5a2b2e6d36152a3242b899572466b9f7"
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "c72e3dee6e1975abb9c08c59266f5c32b959539779c685326e5991f736f23ca9"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "contracts",
+          "segment": 3,
+          "passed": false,
+          "enforced": true,
+          "at": "2026-10-14T16:41:22Z",
+          "detail": "data.db: data_dictionary.json declares tables that were not loaded — loaded without values: eq_bvalue_windows.mc: 0 of 5 non-null (needs 90%); eq_bvalue_windows.n_above_mc: 0 of 5 non-null (needs 90%); eq_bvalue_windows.mean_mag_above_mc: 0 of 5 non-null (needs 90%). Tables in data.db: eq_annual_counts (50 rows), eq_bvalue_windows (5 rows), eq_clean_m45 (277946 rows), usgs_raw_1976_1985 (37121 rows), usgs_raw_1986_1995 (42573 rows), usgs_raw_1996_2005 (50984 rows), usgs_raw_2006_2015 (73394 rows), usgs_raw_2016_2025 (74436 rows). Load each series with `e2er-data ... --table <name>`; a table whose values are NULL was not loaded (check the connector's error, e.g. an API key)."
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "data_analyst",
+          "segment": 3,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:40:32Z",
+          "ended": "2026-10-14T16:41:22Z",
+          "accepted": false,
+          "stopped_by": "contract violation: data.db: data_dictionary.json declares tables that were not loaded — loaded without values: eq_bvalue_windows.mc: 0 of 5 non-null (needs 90%); eq_bvalue_windows.n_above_mc: 0 of 5 non-null (needs 90%); eq_bvalue_windows.mean_mag_above_mc: 0 of 5 non-null (needs 90%). Tables in data.db: eq_annual_counts (50 rows), eq_bvalue_windows (5 rows), eq_clean_m45 (277946 rows), usgs_raw_1976_1985 (37121 rows), usgs_raw_1986_1995 (42573 rows), usgs_raw_1996_2005 (50984 rows), usgs_raw_2006_2015 (73394 rows), usgs_raw_2016_2025 (74436 rows). Load each series with `e2er-data ... --table <name>`; a table whose values are NULL was not loaded (check the connector's error, e.g. an API key).",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "ea4ab0f0319cb4ef188ef1f7e39841f4386b12f915fe0b73bbe84951d3066a4f"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "ea4ab0f0319cb4ef188ef1f7e39841f4386b12f915fe0b73bbe84951d3066a4f"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "70ab63a6a67779a23d0307d335f05fce5a2b2e6d36152a3242b899572466b9f7",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "c72e3dee6e1975abb9c08c59266f5c32b959539779c685326e5991f736f23ca9",
+              "unchanged": true
+            }
+          ]
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "data_analyst",
+          "segment": 3,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:41:22Z",
+          "ended": "2026-10-14T16:41:57Z",
+          "accepted": true,
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "514d03fa69c76527e5d520302c314696da17883dfeb49d6e31281cc6b018f5b5"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "514d03fa69c76527e5d520302c314696da17883dfeb49d6e31281cc6b018f5b5"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "70ab63a6a67779a23d0307d335f05fce5a2b2e6d36152a3242b899572466b9f7",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "c72e3dee6e1975abb9c08c59266f5c32b959539779c685326e5991f736f23ca9",
+              "unchanged": true
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "data_quality",
+          "segment": 3,
+          "passed": false,
+          "enforced": true,
+          "at": "2026-10-14T16:41:58Z",
+          "detail": "table usgs_raw_1976_1985: time starts at 1976-01-01T00:04:05.400Z, after the declared coverage from 1976-01-01; table usgs_raw_1986_1995: time starts at 1986-01-01T04:37:24.880Z, after the declared coverage from 1986-01-01; table usgs_raw_1996_2005: time starts at 1996-01-01T01:34:16.000Z, after the declared coverage from 1996-01-01; table usgs_raw_2006_2015: time starts at 2006-01-01T03:21:39.210Z, after the declared coverage from 2006-01-01; table usgs_raw_2016_2025: time starts at 2016-01-01T02:00:39.950Z, after the declared coverage from 2016-01-01"
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "data_analyst",
+          "segment": 3,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:41:58Z",
+          "ended": "2026-10-14T16:42:46Z",
+          "accepted": true,
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "9d753408f1d16c3e5724ac01f95cd6ecb86af4cca4d04f17dd0c483637ffa05f"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "9d753408f1d16c3e5724ac01f95cd6ecb86af4cca4d04f17dd0c483637ffa05f"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "70ab63a6a67779a23d0307d335f05fce5a2b2e6d36152a3242b899572466b9f7",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "c72e3dee6e1975abb9c08c59266f5c32b959539779c685326e5991f736f23ca9",
+              "unchanged": true
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "data_quality",
+          "segment": 3,
+          "passed": false,
+          "enforced": true,
+          "at": "2026-10-14T16:42:47Z",
+          "detail": "table usgs_raw_1976_1985: time starts at 1976-01-01T00:04:05.400Z, after the declared coverage from 1976-01-01T00:00:00Z; table usgs_raw_1976_1985: time ends at 1985-12-31T22:56:33.100Z, before the declared coverage to 1985-12-31T23:59:59Z; table usgs_raw_1986_1995: time starts at 1986-01-01T04:37:24.880Z, after the declared coverage from 1986-01-01T00:00:00Z; table usgs_raw_1986_1995: time ends at 1995-12-31T22:42:33.550Z, before the declared coverage to 1995-12-31T23:59:59Z; table usgs_raw_1996_2005: time starts at 1996-01-01T01:34:16.000Z, after the declared coverage from 1996-01-01T00:00:00Z; table usgs_raw_1996_2005: time ends at 2005-12-31T19:08:45.530Z, before the declared coverage to 2005-12-31T23:59:59Z; table usgs_raw_2006_2015: time starts at 2006-01-01T03:21:39.210Z, after the declared coverage from 2006-01-01T00:00:00Z; table usgs_raw_2006_2015: time ends at 2015-12-31T23:39:28.940Z, before the declared coverage to 2015-12-31T23:59:59Z; table usgs_raw_2016_2025: time starts at 2016-01-01T02:00:39.950Z, after the declared coverage from 2016-01-01T00:00:00Z; table usgs_raw_2016_2025: time ends at 2025-12-31T23:04:28.213Z, before the declared coverage to 2025-12-31T23:59:59Z"
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "data_quality_gate",
+          "segment": 3,
+          "passed": false,
+          "enforced": true,
+          "halted": true,
+          "at": "2026-10-14T16:42:48Z",
+          "detail": "table usgs_raw_1976_1985: time starts at 1976-01-01T00:04:05.400Z, after the declared coverage from 1976-01-01T00:00:00Z; table usgs_raw_1976_1985: time ends at 1985-12-31T22:56:33.100Z, before the declared coverage to 1985-12-31T23:59:59Z; table usgs_raw_1986_1995: time starts at 1986-01-01T04:37:24.880Z, after the declared coverage from 1986-01-01T00:00:00Z; table usgs_raw_1986_1995: time ends at 1995-12-31T22:42:33.550Z, before the declared coverage to 1995-12-31T23:59:59Z; table usgs_raw_1996_2005: time starts at 1996-01-01T01:34:16.000Z, after the declared coverage from 1996-01-01T00:00:00Z; table usgs_raw_1996_2005: time ends at 2005-12-31T19:08:45.530Z, before the declared coverage to 2005-12-31T23:59:59Z; table usgs_raw_2006_2015: time starts at 2006-01-01T03:21:39.210Z, after the declared coverage from 2006-01-01T00:00:00Z; table usgs_raw_2006_2015: time ends at 2015-12-31T23:39:28.940Z, before the declared coverage to 2015-12-31T23:59:59Z; table usgs_raw_2016_2025: time starts at 2016-01-01T02:00:39.950Z, after the declared coverage from 2016-01-01T00:00:00Z; table usgs_raw_2016_2025: time ends at 2025-12-31T23:04:28.213Z, before the declared coverage to 2025-12-31T23:59:59Z"
+        },
+        {
+          "type": "researcher",
+          "action": "edit",
+          "phase": "initial",
+          "step": "data_quality_gate",
+          "at": "2026-10-14T16:43:16Z",
+          "file": "data_dictionary.json",
+          "sha256_before": "0f6df320674adabe0cf9e6140d8db28282268915bc8ee4a92622eaf9eb0bba80",
+          "sha256_after": "68311a84bb1a1cf3cbe47c269ee9263b8c9518681d0dddaf2b78894b5cbf9060",
+          "segment": 3
+        },
+        {
+          "type": "researcher",
+          "action": "approve",
+          "phase": "initial",
+          "step": "data_quality_gate",
+          "at": "2026-10-14T16:43:25Z",
+          "segment": 3
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "data_quality",
+          "segment": 4,
+          "passed": false,
+          "enforced": true,
+          "at": "2026-10-14T16:43:26Z",
+          "detail": "table usgs_raw_1976_1985: time starts at 1976-01-01T00:04:05.400Z, after the declared coverage from 1976-01-01; table usgs_raw_1986_1995: time starts at 1986-01-01T04:37:24.880Z, after the declared coverage from 1986-01-01; table usgs_raw_1996_2005: time starts at 1996-01-01T01:34:16.000Z, after the declared coverage from 1996-01-01; table usgs_raw_2006_2015: time starts at 2006-01-01T03:21:39.210Z, after the declared coverage from 2006-01-01; table usgs_raw_2016_2025: time starts at 2016-01-01T02:00:39.950Z, after the declared coverage from 2016-01-01"
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "data_quality_gate",
+          "segment": 4,
+          "passed": false,
+          "enforced": true,
+          "halted": true,
+          "at": "2026-10-14T16:43:26Z",
+          "detail": "table usgs_raw_1976_1985: time starts at 1976-01-01T00:04:05.400Z, after the declared coverage from 1976-01-01; table usgs_raw_1986_1995: time starts at 1986-01-01T04:37:24.880Z, after the declared coverage from 1986-01-01; table usgs_raw_1996_2005: time starts at 1996-01-01T01:34:16.000Z, after the declared coverage from 1996-01-01; table usgs_raw_2006_2015: time starts at 2006-01-01T03:21:39.210Z, after the declared coverage from 2006-01-01; table usgs_raw_2016_2025: time starts at 2016-01-01T02:00:39.950Z, after the declared coverage from 2016-01-01"
+        },
+        {
+          "type": "researcher",
+          "action": "edit",
+          "phase": "initial",
+          "step": "data_quality_gate",
+          "at": "2026-10-14T16:43:41Z",
+          "file": "data_dictionary.json",
+          "sha256_before": "68311a84bb1a1cf3cbe47c269ee9263b8c9518681d0dddaf2b78894b5cbf9060",
+          "sha256_after": "8a38e80d0075686aed2a9ab6bcf1a211dff0853c49d051c193e986ec75e511c3",
+          "segment": 4
+        },
+        {
+          "type": "researcher",
+          "action": "approve",
+          "phase": "initial",
+          "step": "data_quality_gate",
+          "at": "2026-10-14T16:43:41Z",
+          "segment": 4
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "data_quality",
+          "segment": 5,
+          "passed": true,
+          "enforced": true,
+          "at": "2026-10-14T16:43:43Z"
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "data_analyst",
+          "segment": 5,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:43:43Z",
+          "ended": "2026-10-14T16:44:22Z",
+          "accepted": true,
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "31c4527b131323c832d50a301b29f35214898f8091423844a2c06403552b8f45"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "31c4527b131323c832d50a301b29f35214898f8091423844a2c06403552b8f45"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "70ab63a6a67779a23d0307d335f05fce5a2b2e6d36152a3242b899572466b9f7",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "e4b9832fa55de7176499fe6e24e7f37723b4a31056b7c7becff4c44245c2c459"
+            }
+          ]
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "econometrics_specialist",
+          "segment": 5,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:44:22Z",
+          "ended": "2026-10-14T16:46:07Z",
+          "accepted": true,
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "6a52776ed3bc42e6b1b4b96babb3a016aaca985cb6a155bac4f5ae862d48c036"
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "6a52776ed3bc42e6b1b4b96babb3a016aaca985cb6a155bac4f5ae862d48c036"
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "25a804205221782a27ca73f2ead59e8abcfae31f486fc6af876c0058a1b80140"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "figure_data",
+          "segment": 5,
+          "passed": false,
+          "enforced": true,
+          "at": "2026-10-14T16:46:07Z",
+          "detail": "fig_magtype_mix.pdf names no 'source' (a data.db table and columns, or a results path)"
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "figures_before_draft",
+          "segment": 5,
+          "passed": false,
+          "enforced": true,
+          "halted": true,
+          "at": "2026-10-14T16:46:07Z",
+          "detail": "fig_magtype_mix.pdf names no 'source' (a data.db table and columns, or a results path)"
+        },
+        {
+          "type": "researcher",
+          "action": "send_back",
+          "phase": "initial",
+          "step": "figures_before_draft",
+          "at": "2026-10-14T16:46:49Z",
+          "target": "econometrics_specialist",
+          "remark": "Three fixes in run_estimation.py, then run it so it writes estimation_results.json (no number typed by hand): (1) Counts must use the same threshold as the data table: eq_annual_counts.n_m50 counts mag >= 5.0 (83,469 events, decade means 1,595.9/1,617.4/1,390.6/1,992.8/1,750.2), but the script counts the 0.1-rounded magnitude (mi >= 50), i.e. mag >= 4.95 (83,543 events, mean 1,670.86). Count on the published magnitude (mag >= threshold, e.g. 5.0, 6.0, 7.0, and the common threshold) so the results match eq_annual_counts and the figure; keep the 0.1 binning only for Mc and b. (2) The Mw-family-only b at the common threshold 4.9 (b 0.51-0.80) is not a b-value of a complete sample: moment magnitudes are only assigned to larger events and that sample's own Mc is 5.2-5.6. Drop b_common_threshold and its pair tests for the Mw-only check; keep b at its own Mc. (3) Record that Mc = 4.5 (maxc, gft90, gft95 for 1996-2025) equals the load floor (M>=4.5): the estimate is censored there, Mc may be lower; add a field saying so. No other method change.",
+          "then": "check_runs_again",
+          "segment": 5
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "econometrics_specialist",
+          "segment": 6,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:46:50Z",
+          "ended": "2026-10-14T16:47:45Z",
+          "accepted": true,
+          "sent_back": {
+            "at": "2026-10-14T16:46:49Z",
+            "remark": "Three fixes in run_estimation.py, then run it so it writes estimation_results.json (no number typed by hand): (1) Counts must use the same threshold as the data table: eq_annual_counts.n_m50 counts mag >= 5.0 (83,469 events, decade means 1,595.9/1,617.4/1,390.6/1,992.8/1,750.2), but the script counts the 0.1-rounded magnitude (mi >= 50), i.e. mag >= 4.95 (83,543 events, mean 1,670.86). Count on the published magnitude (mag >= threshold, e.g. 5.0, 6.0, 7.0, and the common threshold) so the results match eq_annual_counts and the figure; keep the 0.1 binning only for Mc and b. (2) The Mw-family-only b at the common threshold 4.9 (b 0.51-0.80) is not a b-value of a complete sample: moment magnitudes are only assigned to larger events and that sample's own Mc is 5.2-5.6. Drop b_common_threshold and its pair tests for the Mw-only check; keep b at its own Mc. (3) Record that Mc = 4.5 (maxc, gft90, gft95 for 1996-2025) equals the load floor (M>=4.5): the estimate is censored there, Mc may be lower; add a field saying so. No other method change."
+          },
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "08fae36a5119f3a5314a3859616ed97fbdb369bb9256f0addf0752912ffb8316"
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "08fae36a5119f3a5314a3859616ed97fbdb369bb9256f0addf0752912ffb8316"
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "1e8bfae8a363e17ddebd26de2320dfcee5b9b757d2afb59e324ed87dbbc36dc6"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "figure_data",
+          "segment": 6,
+          "passed": false,
+          "enforced": true,
+          "at": "2026-10-14T16:47:45Z",
+          "detail": "fig_magtype_mix.pdf names no 'source' (a data.db table and columns, or a results path)"
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "figures_before_draft",
+          "segment": 6,
+          "passed": false,
+          "enforced": true,
+          "halted": true,
+          "at": "2026-10-14T16:47:45Z",
+          "detail": "fig_magtype_mix.pdf names no 'source' (a data.db table and columns, or a results path)"
+        },
+        {
+          "type": "researcher",
+          "action": "send_back",
+          "phase": "initial",
+          "step": "figures_before_draft",
+          "at": "2026-10-14T16:48:03Z",
+          "target": "data_analyst",
+          "remark": "figure_spec.json only: fig_magtype_mix.pdf has no source. Give it a re-readable source - the shares are in estimation_results.json (magtype_mix_m5_by_decade, 'Mw family' share per decade) - so the figure check can re-read them; the values must equal those shares. Note the econometrics specialist re-ran run_estimation.py: M>=5 counts now use mag >= 5.0 (83,469 events), matching eq_annual_counts; check that every figure value still matches. Change nothing else.",
+          "then": "check_runs_again",
+          "segment": 6
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "data_analyst",
+          "segment": 7,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:48:03Z",
+          "ended": "2026-10-14T16:48:42Z",
+          "accepted": true,
+          "sent_back": {
+            "at": "2026-10-14T16:48:03Z",
+            "remark": "figure_spec.json only: fig_magtype_mix.pdf has no source. Give it a re-readable source - the shares are in estimation_results.json (magtype_mix_m5_by_decade, 'Mw family' share per decade) - so the figure check can re-read them; the values must equal those shares. Note the econometrics specialist re-ran run_estimation.py: M>=5 counts now use mag >= 5.0 (83,469 events), matching eq_annual_counts; check that every figure value still matches. Change nothing else."
+          },
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "31c4527b131323c832d50a301b29f35214898f8091423844a2c06403552b8f45",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "31c4527b131323c832d50a301b29f35214898f8091423844a2c06403552b8f45",
+              "unchanged": true
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "70ab63a6a67779a23d0307d335f05fce5a2b2e6d36152a3242b899572466b9f7",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "4f0e3757e4444aa8bfd35ac178de0ad48d1265f4b95574a73e4cb429ce3e6c4a"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "data_quality",
+          "segment": 7,
+          "passed": true,
+          "enforced": true,
+          "at": "2026-10-14T16:48:44Z"
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "figure_data",
+          "segment": 7,
+          "passed": false,
+          "enforced": true,
+          "at": "2026-10-14T16:48:44Z",
+          "detail": "fig_magtype_mix.pdf: estimation_results.json has no list of entries at magtype_mix_m5_by_decade"
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "figures_before_draft",
+          "segment": 7,
+          "passed": false,
+          "enforced": true,
+          "halted": true,
+          "at": "2026-10-14T16:48:44Z",
+          "detail": "fig_magtype_mix.pdf: estimation_results.json has no list of entries at magtype_mix_m5_by_decade"
+        },
+        {
+          "type": "researcher",
+          "action": "send_back",
+          "phase": "initial",
+          "step": "figures_before_draft",
+          "at": "2026-10-14T16:49:00Z",
+          "target": "econometrics_specialist",
+          "remark": "Layout only, no number changes: the figure check reads results only from a LIST of entries. Have run_estimation.py also write magtype_mix_m5_by_decade_list = [{\"decade\": \"1976-1985\", \"mw_family_share\": <share>}, ...] (the same five Mw-family shares as magtype_mix_m5_by_decade), run the script, and point fig_magtype_mix.pdf's source in figure_spec.json at it: {\"results\": \"magtype_mix_m5_by_decade_list\", \"fields\": {\"categories\": \"decade\", \"values\": \"mw_family_share\"}}.",
+          "then": "check_runs_again",
+          "segment": 7
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "econometrics_specialist",
+          "segment": 8,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:49:00Z",
+          "ended": "2026-10-14T16:49:36Z",
+          "accepted": true,
+          "sent_back": {
+            "at": "2026-10-14T16:49:00Z",
+            "remark": "Layout only, no number changes: the figure check reads results only from a LIST of entries. Have run_estimation.py also write magtype_mix_m5_by_decade_list = [{\"decade\": \"1976-1985\", \"mw_family_share\": <share>}, ...] (the same five Mw-family shares as magtype_mix_m5_by_decade), run the script, and point fig_magtype_mix.pdf's source in figure_spec.json at it: {\"results\": \"magtype_mix_m5_by_decade_list\", \"fields\": {\"categories\": \"decade\", \"values\": \"mw_family_share\"}}."
+          },
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "08fae36a5119f3a5314a3859616ed97fbdb369bb9256f0addf0752912ffb8316",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "08fae36a5119f3a5314a3859616ed97fbdb369bb9256f0addf0752912ffb8316",
+              "unchanged": true
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "5c9d6e0b6259ef0512ae091616e987f8955afac74c86bff313d455787d85a78f"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "figure_data",
+          "segment": 8,
+          "passed": true,
+          "enforced": true,
+          "at": "2026-10-14T16:49:36Z"
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "abstract_writer",
+          "segment": 8,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:49:36Z",
+          "ended": "2026-10-14T16:49:58Z",
+          "accepted": true,
+          "output": {
+            "file": "paper/abstract.tex",
+            "sha256": "49ab20b8356cce96117acdba8e9c6cc1c9137e341e89fef6c42875988cbc90d3"
+          }
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "contracts",
+          "segment": 8,
+          "passed": false,
+          "enforced": true,
+          "at": "2026-10-14T16:55:12Z",
+          "detail": "paper_draft.tex: 3 construction(s) the researcher does not accept in a paper: \"Against this background\" in: Against this background, this paper asks how the yearly number of earthquakes of magnitude 5 and larger worldwide changed from 1976 to 2025, and whether the $b$-value is stable across decades once the completeness magnitude ($M_c$) of the catalogue is taken into account. (pivot to the contribution directly (for instance: To keep these quantities apart, we propose ...)); \"not X but Y\" in: The precision of the estimate depends on the number of events \\citep{kamer2014minimum}, which is large in every decade of our sample; the practical limit is therefore not sampling error in the usual sense but the assumptions behind it, chiefly that events are independent and the sample homogeneous. (state the positive claim and stop); \"not X but Y\" in: Since the two samples are estimated at different thresholds, the estimates are not directly comparable, but the contrast is consistent with the interpretation that the recent rise in the full-sample $b$-value is tied to events between about 4.7 and 5.2, where the catalogue relies on body-wave mag... (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content"
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "paper_drafter",
+          "segment": 8,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:49:36Z",
+          "ended": "2026-10-14T16:55:12Z",
+          "accepted": false,
+          "stopped_by": "contract violation: paper_draft.tex: 3 construction(s) the researcher does not accept in a paper: \"Against this background\" in: Against this background, this paper asks how the yearly number of earthquakes of magnitude 5 and larger worldwide changed from 1976 to 2025, and whether the $b$-value is stable across decades once the completeness magnitude ($M_c$) of the catalogue is taken into account. (pivot to the contribution directly (for instance: To keep these quantities apart, we propose ...)); \"not X but Y\" in: The precision of the estimate depends on the number of events \\citep{kamer2014minimum}, which is large in every decade of our sample; the practical limit is therefore not sampling error in the usual sense but the assumptions behind it, chiefly that events are independent and the sample homogeneous. (state the positive claim and stop); \"not X but Y\" in: Since the two samples are estimated at different thresholds, the estimates are not directly comparable, but the contrast is consistent with the interpretation that the recent rise in the full-sample $b$-value is tied to events between about 4.7 and 5.2, where the catalogue relies on body-wave mag... (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "9db2d154496c26421fbabefe6b2bdeae14a16ab69fdfbb855c2c44ded090bc3e"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "9db2d154496c26421fbabefe6b2bdeae14a16ab69fdfbb855c2c44ded090bc3e"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "20bf0d3a4859e2c5cbf0ecaabf61c51fee20210fafc646db0332b2bae83370ca"
+            }
+          ]
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "paper_drafter",
+          "segment": 8,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:55:12Z",
+          "ended": "2026-10-14T16:55:34Z",
+          "accepted": true,
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "56c2c84bf10327faacdd405e4c3cb0df4b05658819b8a8183358bf4015f35404"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "56c2c84bf10327faacdd405e4c3cb0df4b05658819b8a8183358bf4015f35404"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "20bf0d3a4859e2c5cbf0ecaabf61c51fee20210fafc646db0332b2bae83370ca",
+              "unchanged": true
+            }
+          ]
+        },
+        {
+          "type": "specialist",
+          "phase": "iterative",
+          "specialist": "data_analyst",
+          "segment": 8,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:55:44Z",
+          "ended": "2026-10-14T16:56:04Z",
+          "accepted": true,
+          "round": 1,
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "31c4527b131323c832d50a301b29f35214898f8091423844a2c06403552b8f45",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "31c4527b131323c832d50a301b29f35214898f8091423844a2c06403552b8f45",
+              "unchanged": true
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "70ab63a6a67779a23d0307d335f05fce5a2b2e6d36152a3242b899572466b9f7",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "99184c14aed49be1ffdf308c4f276e62e4ab0f8564b10cf09bde7a7222d47e49",
+              "unchanged": true
+            }
+          ]
+        },
+        {
+          "type": "specialist",
+          "phase": "iterative",
+          "specialist": "econometrics_specialist",
+          "segment": 8,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:56:04Z",
+          "ended": "2026-10-14T16:56:29Z",
+          "accepted": true,
+          "round": 1,
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "08fae36a5119f3a5314a3859616ed97fbdb369bb9256f0addf0752912ffb8316",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "08fae36a5119f3a5314a3859616ed97fbdb369bb9256f0addf0752912ffb8316",
+              "unchanged": true
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "5c9d6e0b6259ef0512ae091616e987f8955afac74c86bff313d455787d85a78f",
+              "unchanged": true
+            }
+          ]
+        },
+        {
+          "type": "specialist",
+          "phase": "iterative",
+          "specialist": "data_analyst",
+          "segment": 8,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:56:48Z",
+          "ended": "2026-10-14T16:57:07Z",
+          "accepted": true,
+          "round": 2,
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "31c4527b131323c832d50a301b29f35214898f8091423844a2c06403552b8f45",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "31c4527b131323c832d50a301b29f35214898f8091423844a2c06403552b8f45",
+              "unchanged": true
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "70ab63a6a67779a23d0307d335f05fce5a2b2e6d36152a3242b899572466b9f7",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "99184c14aed49be1ffdf308c4f276e62e4ab0f8564b10cf09bde7a7222d47e49",
+              "unchanged": true
+            }
+          ]
+        },
+        {
+          "type": "specialist",
+          "phase": "iterative",
+          "specialist": "econometrics_specialist",
+          "segment": 8,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:57:07Z",
+          "ended": "2026-10-14T16:57:44Z",
+          "accepted": true,
+          "round": 2,
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "08fae36a5119f3a5314a3859616ed97fbdb369bb9256f0addf0752912ffb8316",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "08fae36a5119f3a5314a3859616ed97fbdb369bb9256f0addf0752912ffb8316",
+              "unchanged": true
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "5c9d6e0b6259ef0512ae091616e987f8955afac74c86bff313d455787d85a78f",
+              "unchanged": true
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "phase": "estimation_gate",
+          "check": "estimation",
+          "segment": 8,
+          "passed": true,
+          "enforced": true,
+          "at": "2026-10-14T16:57:51Z"
+        },
+        {
+          "type": "check",
+          "phase": "figure_gate",
+          "check": "figure_data",
+          "segment": 8,
+          "passed": true,
+          "enforced": true,
+          "at": "2026-10-14T16:57:51Z"
+        },
+        {
+          "type": "researcher",
+          "action": "send_back",
+          "phase": "figure_gate",
+          "step": "review_draft",
+          "at": "2026-10-14T16:58:56Z",
+          "target": "paper_drafter",
+          "remark": "Seven corrections, no new analysis: (1) Data section: 'published to one decimal' is false - 909 events carry two-decimal magnitudes (96 of them between 4.9 and 5.0). Say counts use the published magnitude and Mc/b use magnitudes binned to 0.1. (2) Counts at 4.9: delete the sentence attributing the difference to the M>=5 counts to events 'incompletely recorded in the first decades'. The extra events are simply those between 4.9 and 5.0, which the Gutenberg-Richter relation makes numerous, and our own Mc (max curvature +0.2) is at most 4.9 in every decade. Report the rank correlation 0.51 at 4.9 vs 0.27 at 5.0 without an explanation. (3) Pairwise tests at maxc+0.2: 'rejects equality for eight of ten pairs' is misleading. Write: the likelihood-ratio test rejects equality at the 1 percent level in nine of ten pairs; the exception is 2006-2015 vs 2016-2025 (2.4, p = 0.119); bootstrap intervals overlap for that pair and for 1976-1985 vs 2006-2015 (7.6, p = 0.006). Make the abstracts say 'nine of ten pairs'. (4) Common threshold: every decade uses the same threshold, not 'the same events'. (5) Delete 'the size of the differences, between 0.1 and 0.3, is small relative to the changes in magnitude-type composition' (b-units and type shares cannot be compared), and say 'all full-sample variants' (the Mw-only estimates for the two latest decades are 0.921 and 0.995). (6) Do not lean toward the magnitude-procedure reading: in Results drop 'consistent with the interpretation that the recent rise ... is tied to events between about 4.7 and 5.2', and in the Discussion drop 'which is what we observe'. The Mw-only sample has Mc 5.2-5.6 and far fewer events, so the contrast cannot separate a physical change from a catalogue change; state both as open. (7) Delete 'Each of these is a scope condition and not a flaw of the description: it bounds what the record can say.'",
+          "segment": 8
+        },
+        {
+          "type": "check",
+          "phase": "figure_gate",
+          "check": "figure_data",
+          "segment": 9,
+          "passed": true,
+          "enforced": true,
+          "at": "2026-10-14T16:58:56Z"
+        },
+        {
+          "type": "specialist",
+          "phase": "figure_gate",
+          "specialist": "paper_drafter",
+          "segment": 9,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T16:58:56Z",
+          "ended": "2026-10-14T16:59:42Z",
+          "accepted": true,
+          "sent_back": {
+            "at": "2026-10-14T16:58:56Z",
+            "remark": "Seven corrections, no new analysis: (1) Data section: 'published to one decimal' is false - 909 events carry two-decimal magnitudes (96 of them between 4.9 and 5.0). Say counts use the published magnitude and Mc/b use magnitudes binned to 0.1. (2) Counts at 4.9: delete the sentence attributing the difference to the M>=5 counts to events 'incompletely recorded in the first decades'. The extra events are simply those between 4.9 and 5.0, which the Gutenberg-Richter relation makes numerous, and our own Mc (max curvature +0.2) is at most 4.9 in every decade. Report the rank correlation 0.51 at 4.9 vs 0.27 at 5.0 without an explanation. (3) Pairwise tests at maxc+0.2: 'rejects equality for eight of ten pairs' is misleading. Write: the likelihood-ratio test rejects equality at the 1 percent level in nine of ten pairs; the exception is 2006-2015 vs 2016-2025 (2.4, p = 0.119); bootstrap intervals overlap for that pair and for 1976-1985 vs 2006-2015 (7.6, p = 0.006). Make the abstracts say 'nine of ten pairs'. (4) Common threshold: every decade uses the same threshold, not 'the same events'. (5) Delete 'the size of the differences, between 0.1 and 0.3, is small relative to the changes in magnitude-type composition' (b-units and type shares cannot be compared), and say 'all full-sample variants' (the Mw-only estimates for the two latest decades are 0.921 and 0.995). (6) Do not lean toward the magnitude-procedure reading: in Results drop 'consistent with the interpretation that the recent rise ... is tied to events between about 4.7 and 5.2', and in the Discussion drop 'which is what we observe'. The Mw-only sample has Mc 5.2-5.6 and far fewer events, so the contrast cannot separate a physical change from a catalogue change; state both as open. (7) Delete 'Each of these is a scope condition and not a flaw of the description: it bounds what the record can say.'"
+          },
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "b8fad2f40ff6bcd5c4dcb50c0705dae653d032004164312fce8c9c441edb3e45"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "b8fad2f40ff6bcd5c4dcb50c0705dae653d032004164312fce8c9c441edb3e45"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "46f12d93db87b8e069f11372e4adf2bafe6b014ca7b49c2bc3509b26b92ffc2a"
+            }
+          ]
+        },
+        {
+          "type": "researcher",
+          "action": "approve",
+          "phase": "figure_gate",
+          "step": "review_draft",
+          "at": "2026-10-14T16:59:57Z",
+          "segment": 9
+        },
+        {
+          "type": "check",
+          "phase": "estimation_gate",
+          "check": "estimation",
+          "segment": 10,
+          "passed": true,
+          "enforced": true,
+          "at": "2026-10-14T16:59:57Z"
+        },
+        {
+          "type": "check",
+          "phase": "figure_gate",
+          "check": "figure_data",
+          "segment": 10,
+          "passed": true,
+          "enforced": true,
+          "at": "2026-10-14T16:59:57Z"
+        },
+        {
+          "type": "check",
+          "phase": "review",
+          "check": "numbers",
+          "segment": 10,
+          "passed": true,
+          "enforced": true,
+          "at": "2026-10-14T17:00:54Z"
+        },
+        {
+          "type": "check",
+          "phase": "review",
+          "check": "citations",
+          "segment": 10,
+          "passed": true,
+          "enforced": true,
+          "at": "2026-10-14T17:00:57Z"
+        },
+        {
+          "type": "specialist",
+          "phase": "review",
+          "specialist": "literature_reviewer",
+          "segment": 10,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:00:57Z",
+          "ended": "2026-10-14T17:01:36Z",
+          "accepted": true,
+          "output": {
+            "file": "reviews/review_literature.md",
+            "sha256": "4ebd2629a869e4d1c628059f0d59980a33e4aca7e26f5b21c17943668a61aa69"
+          }
+        },
+        {
+          "type": "specialist",
+          "phase": "review",
+          "specialist": "writing_reviewer",
+          "segment": 10,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:00:57Z",
+          "ended": "2026-10-14T17:02:38Z",
+          "accepted": true,
+          "output": {
+            "file": "reviews/review_writing.md",
+            "sha256": "6fb7371b4459d727b4efd5c4c290871bfad7eeb2bd95234dd6f377c5eeef1c3d"
+          }
+        },
+        {
+          "type": "specialist",
+          "phase": "review",
+          "specialist": "data_reviewer",
+          "segment": 10,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:00:57Z",
+          "ended": "2026-10-14T17:03:45Z",
+          "accepted": true,
+          "output": {
+            "file": "reviews/review_data.md",
+            "sha256": "1f03891fed3d284746867923e3e05392880b4809f88518868234574fc09b0eaa"
+          }
+        },
+        {
+          "type": "specialist",
+          "phase": "review",
+          "specialist": "methods_reviewer",
+          "segment": 10,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:01:36Z",
+          "ended": "2026-10-14T17:04:24Z",
+          "accepted": true,
+          "output": {
+            "file": "reviews/review_methods.md",
+            "sha256": "446dbffe146265add72d04f2fac4e96574489b726c546f9bfcbb904d05150901"
+          }
+        },
+        {
+          "type": "specialist",
+          "phase": "review",
+          "specialist": "plausibility_reviewer",
+          "segment": 10,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:02:38Z",
+          "ended": "2026-10-14T17:04:54Z",
+          "accepted": true,
+          "output": {
+            "file": "reviews/review_plausibility.md",
+            "sha256": "6ec69c4ad549732cb9607fc1e3ca183eac52f863a137d9014399e868a759f3d7"
+          }
+        },
+        {
+          "type": "specialist",
+          "phase": "revision",
+          "specialist": "patch_revisor",
+          "segment": 10,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:04:54Z",
+          "ended": "2026-10-14T17:06:00Z",
+          "accepted": true,
+          "output": {
+            "file": "misc/paper_draft.tex.edits.json",
+            "sha256": "1184c1f17270a94bc9b5b84bfcd5c7252759b23dc30d9535724444f3cdb0c964"
+          }
+        },
+        {
+          "type": "specialist",
+          "phase": "replication",
+          "specialist": "replication_packager",
+          "segment": 10,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:06:00Z",
+          "ended": "2026-10-14T17:06:57Z",
+          "accepted": true,
+          "output": {
+            "file": "replication/estimation.py",
+            "sha256": "8fa489f086f7d5a83271bdd6149eaa3b0fadde439f2b3edae2f805b0aa9b6b14"
+          }
+        }
+      ],
+      "availability": {
+        "data": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        },
+        "code": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        }
+      },
+      "purpose": "demonstration"
+    }
+  }
+}

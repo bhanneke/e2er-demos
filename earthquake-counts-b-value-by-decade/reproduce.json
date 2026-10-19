@@ -1,0 +1,69 @@
+{
+  "schema": "e2er-reproduce/1",
+  "about": "Written by e2er at export (2026-10-15) from what the run recorded: the scripts that wrote estimation_results.json, from the estimation script on, in the order the run ran them (its script log); the files they read; and the packages they import. code/requirements.txt pins 18 package(s) at the versions the run used.",
+  "python": "3.14",
+  "requirements": "code/requirements.txt",
+  "files": {
+    "run_estimation.py": "code/run_estimation.py",
+    "data.db": "data/data.db",
+    "fig_annual_counts_m5.pdf": "results/figures/fig_annual_counts_m5.pdf",
+    "fig_magtype_mix.pdf": "results/figures/fig_magtype_mix.pdf"
+  },
+  "steps": [
+    {
+      "run": [
+        "python",
+        "run_estimation.py"
+      ],
+      "about": "the estimation script"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data.db",
+      "sha256": "8b1cfbf8e9d5d951aa327394d9d39570ebdb8109785ba7fcd4f612dd04056d2b",
+      "source": "the study's database, tables: eq_annual_counts (made by the study during the run); eq_bvalue_windows (made by the study during the run); eq_clean_m45 (made by the study during the run); usgs_raw_1976_1985 (ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey, earthquakes of magnitude 4.5 and above worldwide, 1976-01-01 to 1986-01-01, loaded 2026-10-14); usgs_raw_1986_1995 (ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey, earthquakes of magnitude 4.5 and above worldwide, 1986-01-01 to 1996-01-01, loaded 2026-10-14); usgs_raw_1996_2005 (ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey, earthquakes of magnitude 4.5 and above worldwide, 1996-01-01 to 2006-01-01, loaded 2026-10-14); usgs_raw_2006_2015 (ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey, earthquakes of magnitude 4.5 and above worldwide, 2006-01-01 to 2016-01-01, loaded 2026-10-14); usgs_raw_2016_2025 (ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey, earthquakes of magnitude 4.5 and above worldwide, 2016-01-01 to 2026-01-01, loaded 2026-10-14)",
+      "tables": {
+        "eq_annual_counts": {
+          "rows": 50,
+          "content_sha256": "9a4504eded4a6c7e2f29ecb9ce75803744a3fbd922a4a5181c0c3393d6bdde5d"
+        },
+        "eq_bvalue_windows": {
+          "rows": 5,
+          "content_sha256": "eb11809988912be240760e890204374cb9f033608e695e814acedfd0cc3ba4a8"
+        },
+        "eq_clean_m45": {
+          "rows": 277946,
+          "content_sha256": "57a3fcdcea3e92cda4ad82437da08d38219b8d7415c4fc2bd938aef1406c14c4"
+        },
+        "usgs_raw_1976_1985": {
+          "rows": 37121,
+          "content_sha256": "8576c00f7f7feec78458180e1a1f9c2a39f701bb8c9e3620531e7cb233c9a62a"
+        },
+        "usgs_raw_1986_1995": {
+          "rows": 42573,
+          "content_sha256": "06a3f58f6fb2bc2c8c30b0a9d371d5e6e5ca42681f1950a71a6a8e87c4920b86"
+        },
+        "usgs_raw_1996_2005": {
+          "rows": 50984,
+          "content_sha256": "1e365378f6ca6dd59e614663226f63d8cf8e0c6b1ea94b2c4b3424596bc714a7"
+        },
+        "usgs_raw_2006_2015": {
+          "rows": 73394,
+          "content_sha256": "5b11060f19870fbad189bc3e082217cbbace1174faffec98f82a3d2da7264b73"
+        },
+        "usgs_raw_2016_2025": {
+          "rows": 74436,
+          "content_sha256": "89325902ca51136b8c7939d2b98e0e11dd36456cde45616e10e702dc99217c1c"
+        }
+      }
+    }
+  ],
+  "compare": [
+    {
+      "published": "results/estimation_results.json",
+      "produced": "estimation_results.json"
+    }
+  ],
+  "notes": []
+}

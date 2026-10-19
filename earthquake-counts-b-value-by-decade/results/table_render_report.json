@@ -1,0 +1,21 @@
+{
+  "rendered": [
+    "summary.tex",
+    "counts_m5.tex",
+    "counts_common.tex",
+    "magtype_mix.tex",
+    "completeness.tex",
+    "bvalues_common.tex",
+    "bvalues_gft95.tex",
+    "mc_shift.tex",
+    "tests_common.tex",
+    "tests_gft95.tex",
+    "check_mw.tex",
+    "check_shallow.tex"
+  ],
+  "unresolved": [],
+  "normalized": [],
+  "errors": [],
+  "skipped_reason": null,
+  "set_aside": []
+}

@@ -1,0 +1,293 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage[authoryear]{natbib}
+\onehalfspacing
+
+\title{How Has the Yearly Number of Magnitude 5 and Larger Earthquakes Changed, 1976--2025? Counts and the Stability of the Gutenberg--Richter $b$-Value Across Decades}
+\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/2710da27da3a6d1b}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent We describe how the yearly number of earthquakes of magnitude 5 and larger worldwide changed between 1976 and 2025, and whether the Gutenberg--Richter $b$-value is stable across decades once the completeness magnitude of the catalogue is taken into account. The data are 277,946 earthquakes of magnitude 4.5 and larger from the USGS ComCat catalogue, including aftershocks, with the catalogue's preferred magnitude for each event. The yearly count of events of magnitude 5 and larger averages about 1,670, but decade means do not move in one direction: they fall from 1,617 in 1986--1995 to 1,391 in 1996--2005, peak at 1,993 in 2006--2015, and reach 1,750 in 2016--2025. The preferred magnitude type shifts from body-wave magnitudes (78 percent of events in 1976--1985) to moment magnitudes (77 percent in 1996--2005), so counts are not on a single magnitude scale. Maximum-likelihood $b$-values at decade-specific completeness magnitudes lie between 1.02 and 1.16 and differ across decades (Utsu's likelihood-ratio test rejects equality at the 1 percent level in nine of ten pairs); at a common threshold they range from 0.92 to 1.22. We conclude that neither the counts nor the $b$-value is stable across decades in ComCat, and that the data cannot separate physical change from catalogue change.
+\end{abstract}
+
+\noindent\textbf{Keywords:} earthquake catalogue; Gutenberg--Richter law; $b$-value; magnitude of completeness; yearly earthquake counts; ComCat
+
+\section{Introduction}
+
+Public discussion periodically holds that earthquakes are becoming more frequent. The claim is easy to make and easy to get wrong, because the number of earthquakes a catalogue lists depends on how many events were detected, which magnitude scale was used to size them, and how many large events happened to produce long aftershock sequences in a given year. A rise in a raw count can therefore reflect a change in the Earth, a change in the catalogue, or a handful of great earthquakes; the count alone does not say which. Seismological theory predicts a roughly stable long-run rate of large events with strongly clustered annual counts, and the size distribution of earthquakes is described by the Gutenberg--Richter relation, in which the logarithm of the number of events above a magnitude falls linearly with magnitude and the slope is the $b$-value. If the catalogue were homogeneous and complete above a fixed magnitude, a trend in counts or a drift in the $b$-value would be informative; if it is not, both can arise from the measurement process alone, a concern that related work on extreme-value inference for magnitudes with a time-varying measurement process makes explicit \citep{varty2021inference}, although that work addresses a different problem from the stability of the $b$-value.
+
+This paper asks how the yearly number of earthquakes of magnitude 5 and larger worldwide changed from 1976 to 2025, and whether the $b$-value is stable across decades once the completeness magnitude ($M_c$) of the catalogue is taken into account. The study is descriptive. We use the global catalogue of the U.S. Geological Survey \citep{USGS_ComCat}, keep one preferred magnitude per event, keep aftershocks, and report counts by year and decade together with $b$-values estimated by maximum likelihood at completeness magnitudes that we estimate separately for each decade. We make no causal claim: the aim is to say what the catalogue shows, how much it depends on the choices an analyst must make, and what it cannot show.
+
+The sample comprises 277,946 earthquakes of magnitude 4.5 and larger, of which 83,469 have magnitude 5 or larger.
+% src: estimation_results.json#sample.n_observations
+% src: estimation_results.json#counts.m5.summary.overall.total
+The yearly count of events of magnitude 5 and larger averages about 1,670, with a range from 1,077 to 2,701 across the 50 years.
+% src: estimation_results.json#statistics.annual_count_m5.mean
+% src: estimation_results.json#statistics.annual_count_m5.min
+% src: estimation_results.json#statistics.annual_count_m5.max
+Decade means do not increase steadily: they are 1,596 in 1976--1985 and 1,617 in 1986--1995, fall to 1,391 in 1996--2005, reach 1,993 in 2006--2015, and are 1,750 in 2016--2025.
+% src: estimation_results.json#counts.m5.summary.decades.1976-1985.mean
+% src: estimation_results.json#counts.m5.summary.decades.1986-1995.mean
+% src: estimation_results.json#counts.m5.summary.decades.1996-2005.mean
+% src: estimation_results.json#counts.m5.summary.decades.2006-2015.mean
+% src: estimation_results.json#counts.m5.summary.decades.2016-2025.mean
+The catalogue's preferred magnitude type changes strongly over the same period: body-wave magnitudes account for 78 percent of the events of magnitude 5 and larger in 1976--1985, and the moment-magnitude family for 77 percent in 1996--2005.
+% src: estimation_results.json#magtype_mix_m5_by_decade.1976-1985.mb.share
+% src: estimation_results.json#magtype_mix_m5_by_decade.1996-2005.Mw family.share
+The $b$-value is not stable either. At the completeness magnitude of each decade, the estimates lie between 1.02 and 1.16, and decades differ by more than their sampling error implies; at one common threshold they range from 0.92 to 1.22, with the lowest value in 1996--2005 and the highest in 2016--2025.
+% src: estimation_results.json#b_values.decade_mc_maxc_plus_0.2.1986-1995.b
+% src: estimation_results.json#b_values.decade_mc_maxc_plus_0.2.2016-2025.b
+% src: estimation_results.json#b_values.decade_common_threshold.1996-2005.b
+% src: estimation_results.json#b_values.decade_common_threshold.2016-2025.b
+A check on shallow events reproduces this variation, whereas the full-sample increase of $b$ in the two latest decades does not appear in the moment-magnitude sample, whose completeness magnitude is higher and whose size is much smaller.
+
+Our study makes three contributions. First, it provides a transparent, reproducible description of yearly counts and decade means for the full 50-year ComCat record, with the mix of magnitude types reported for each decade, so that readers can see how far a count of one threshold is a count on one scale. Second, it shows how the decade-specific $b$-value responds to the choice of completeness rule, to a common threshold, and to shifts of $M_c$, and it reports pairwise decade comparisons exactly as computed, including the pairs for which the likelihood-ratio test and bootstrap intervals point in different directions. Third, it states which features of the record the data cannot resolve. These contributions are descriptive and do not claim to be the first on global rate stationarity; the question whether the global rate of large earthquakes has risen has been examined for the largest events \citep{shearer2011global}, and our analysis concerns the far more numerous events of magnitude 5 and above and their size distribution.
+
+The remainder of this study is structured as follows: In the next section, we place the study relative to the literature on completeness and $b$-value estimation. Afterward, we describe the catalogue and its construction. Then, we present the estimation methods, followed by the results on yearly counts, the $b$-value by decade, and sensitivity checks. The final sections discuss limitations and conclude.
+
+\section{Related Literature}
+
+Three strands of work frame the study. The first concerns the magnitude of completeness. A catalogue is complete above $M_c$ if it contains all events above that magnitude, and a frequency--magnitude distribution estimated below $M_c$ is flattened by missing small events, which lowers the estimated $b$. Wiemer and Wyss (\citeyear{wiemer2000minimum}) examined how to estimate the minimum magnitude of completeness from the frequency--magnitude distribution and showed that it varies in space and time; Woessner and Wiemer (\citeyear{woessner2005assessing}) quantified the uncertainty of such estimates; more recent comparisons of catalogue-based completeness methods \citep{wang2025estimating} and proposals to derive an incompleteness magnitude from an unbiased estimate of $b$ \citep{godano2023evaluating} indicate that the choice of rule remains consequential. We use two of the established rules, maximum curvature with a correction of 0.2 (which places the threshold above the mode of the magnitude distribution and is therefore the more conservative choice) and a goodness-of-fit criterion, and we report how far results move when the rule or the threshold changes. Our study differs in that it applies them decade by decade to a single global catalogue whose magnitude scale itself changes. Because completeness varies in space, a single value per decade averages over regions with different detection capability; our $M_c$ values describe the global catalogue and are not regional completeness estimates.
+
+The second strand concerns the estimation and precision of the $b$-value. The standard maximum-likelihood estimator of the $b$-value, due to Aki and Utsu (we name the estimator and the likelihood-ratio test attributed to Utsu in words, because their original papers could not be verified in the reference database used for this study), uses the mean magnitude above $M_c$ with a correction for magnitudes reported in bins; \citet{shi1982the} derived a standard error that accounts for the dispersion of magnitudes and differs from the simpler $b/\sqrt{N}$ attributed to Aki. The precision of the estimate depends on the number of events \citep{kamer2014minimum}, which is large in every decade of our sample, so sampling error in the strict sense is small; the practical limit is therefore the set of assumptions behind the standard error, chiefly that events are independent and the sample homogeneous. Aftershock sequences violate the first assumption, and the literature on clustering and $b$-value inference, including declustering, lies outside this descriptive study, which keeps aftershocks; our standard errors and test statistics are therefore conditional on independence and understate uncertainty. We take up this point in the discussion.
+
+The third strand concerns whether rates of large earthquakes have changed. \citet{shearer2011global} found no evidence that the global risk of big earthquakes has recently increased, and regional studies report increases of high-magnitude events in specific arcs after 2004 \citep{srivastava2021sundaarc}, a regional result that does not test the global hypothesis. We do not test clustering of the largest events. Instead, we describe the counts of all events of magnitude 5 and above, the mix of magnitude types in which they are reported, and the dependence of the $b$-value on the completeness threshold, all of which determine how a count can be compared across decades.
+
+\section{Data and Catalogue Construction}
+
+We use the U.S. Geological Survey's Comprehensive Catalog \citep{USGS_ComCat}, accessed through its event service for 1976--2025 in five decade files, loaded for magnitude 4.5 and larger. The lower limit follows from the aim: the completeness magnitude in every decade turns out to be at or below about 5, so events down to 4.5 suffice to estimate it, whereas the worldwide catalogue below 4.5 is far from complete and dominated by events from regional networks. The unit of observation is one earthquake. We use the catalogue's preferred magnitude, one per event, and we do not convert between magnitude types. Counts use the magnitude as published, whereas the completeness magnitude and the $b$-value use magnitudes binned to 0.1; 909 events carry magnitudes with two decimals, 96 of them between 4.9 and 5.0.
+
+The five decade files contain 278,508 events with magnitude 4.5 and larger.
+% src: estimation_results.json#sample.raw_rows_loaded
+We removed 562 rows: events typed in the catalogue as other than earthquakes (mostly nuclear explosions in the first two decades and some volcanic and other explosions later) and one row with no usable magnitude, which leaves 277,946 earthquakes.
+% src: estimation_results.json#sample.rows_dropped_in_cleaning
+% src: estimation_results.json#sample.n_observations
+The data check found no repeated event identifiers. The number of events per decade rises from 36,781 in 1976--1985 to 42,441, 50,975, 73,390 and 74,359 in the later decades.
+% src: estimation_results.json#distributions.events_by_decade.categories
+Aftershocks are kept and not removed, so the counts describe what the catalogue records and not a declustered background rate. Table~\ref{tab:summary} summarizes the sample. Magnitudes range up to 9.1 and the median depth is 33 km; 77 percent of events have a depth of 70 km or less.
+% src: estimation_results.json#statistics.magnitude_all.max
+% src: estimation_results.json#statistics.depth_km.median
+% src: estimation_results.json#statistics.share_shallow_le_70km.share
+
+\input{tables/summary.tex}
+
+The catalogue is not a census of the Earth's earthquakes. Its contributing networks, instruments and magnitude procedures changed over 50 years, and the type of the preferred magnitude changed with them (Table~\ref{tab:magtype_mix}). Among events of magnitude 5 and larger, 10 percent carry a moment magnitude in 1976--1985, 48 percent in 1986--1995, 77 percent in 1996--2005, 63 percent in 2006--2015 and 59 percent in 2016--2025; body-wave magnitudes make up the rest, with surface-wave magnitudes reaching 12 percent in the first decade and almost none after 2005.
+% src: estimation_results.json#magtype_mix_m5_by_decade_list
+% src: estimation_results.json#magtype_mix_m5_by_decade.1976-1985.ms.share
+Over the whole period, 51 percent of the 83,469 events of magnitude 5 and larger carry a moment-magnitude type.
+% src: estimation_results.json#statistics.share_m5_mw_family.share
+Counts at one threshold are therefore counts on a mixture of scales whose composition shifts across decades. Figure~\ref{fig:magtype_mix} shows the moment-magnitude share by decade.
+
+\input{tables/magtype_mix.tex}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.7\textwidth]{fig_magtype_mix.pdf}
+\caption{Share of events of magnitude 5 and larger with a moment-magnitude type, by decade, USGS ComCat.}
+\label{fig:magtype_mix}
+\end{figure}
+
+\section{Methods}
+
+\subsection{Counts}
+
+Yearly counts are the number of events in a calendar year (UTC) with published magnitude at or above a threshold. We report the threshold 5 as the focus, 6 and 7 for comparison, and one common threshold equal to the largest decade-specific completeness magnitude, so that counts at that threshold are comparable in principle across decades. For each threshold we report decade means, standard deviations and the dispersion index (variance divided by mean), which equals one for Poisson counts. We describe a change in counts only where the decade means show it. As a summary of direction we also report the slope of a log-linear regression of yearly counts on calendar year, estimated as Poisson regression with heteroskedasticity-robust standard errors and as negative-binomial regression, and Spearman's rank correlation \citep{spearman1904proof} between count and year. These summaries are descriptive and are not used to test a hypothesis. Quartiles in the summary table use linear interpolation between order statistics \citep{hyndman1996sample}.
+
+\subsection{Completeness magnitude}
+
+For each decade we construct the frequency--magnitude distribution in bins of 0.1 magnitude units from events of magnitude 4.5 and larger and estimate $M_c$ by two rules. The maximum-curvature rule takes the magnitude bin with the highest count and adds a correction of 0.2, which compensates the tendency of the unadjusted rule to underestimate $M_c$ \citep{wiemer2000minimum, woessner2005assessing}. The goodness-of-fit rule takes the smallest magnitude at which a Gutenberg--Richter model fitted above it reproduces the observed distribution with a fit of at least 90 or 95 percent \citep{wiemer2000minimum}. Because events below 4.5 were not loaded, an estimate of 4.5 equals the lower limit of the data: the estimate is censored there and the true $M_c$ may be lower. The common threshold is the largest of the decade-specific maximum-curvature values with the correction.
+
+\subsection{The $b$-value and its precision}
+
+Given $N$ events with magnitude $M_i \geq M_c$, the maximum-likelihood estimate with correction for binning of width $\Delta M = 0.1$ is
+\begin{equation}
+\hat b = \frac{\log_{10} e}{\bar M - (M_c - \Delta M/2)},
+\label{eq:bvalue}
+\end{equation}
+where $\bar M$ is the mean magnitude of the sample. This is the estimator of Aki and Utsu. We report the standard error of \citet{shi1982the},
+\begin{equation}
+\hat\sigma_b = 2.30\,\hat b^{2}\sqrt{\frac{\sum_{i=1}^{N}(M_i-\bar M)^2}{N(N-1)}},
+\label{eq:sebolt}
+\end{equation}
+and, labelled as such, the simpler standard error of Aki, $\hat b/\sqrt{N}$. We also report bootstrap 95 percent intervals from 1,000 resamples with a fixed seed.
+% src: estimation_results.json#b_values.method
+To compare two decades we use Utsu's likelihood-ratio test of equal $b$-values, reporting the likelihood-ratio statistic, Utsu's $\Delta$AIC (the statistic minus two) and whether the two bootstrap intervals overlap; we report both because they can disagree.
+
+\subsection{Checks}
+
+We repeat the estimation on two subsamples: events with a moment-magnitude type, to see whether the mixture of scales drives the result, and events with a depth of 70 km or less, to see whether the composition of shallow and deep events does. For each subsample, $M_c$ is estimated within the subsample and $b$ is reported at that sample's own $M_c$. We do not report $b$ for the moment-magnitude sample at the common threshold, because moment magnitudes are assigned mainly to larger events and the sample is not complete there. Finally, we shift the decade-specific $M_c$ by $-0.3$ to $+0.3$ magnitude units and re-estimate $b$ to show how far results depend on the threshold.
+
+\section{Results}
+
+\subsection{Yearly counts}
+
+The yearly count of events of magnitude 5 and larger shows no steady rise or fall; it shows a dip and a peak. Figure~\ref{fig:annual_counts} plots the 50 yearly counts, and Table~\ref{tab:counts_m5} gives the decade means. The mean is 1,596 events per year in 1976--1985 and 1,617 in 1986--1995, 1,391 in 1996--2005, 1,993 in 2006--2015, and 1,750 in 2016--2025.
+% src: estimation_results.json#counts.m5.summary.decades
+The lowest yearly count in the record is 1,077 and falls in the 1996--2005 decade; the highest is 2,701 and falls in 2006--2015.
+% src: estimation_results.json#counts.m5.summary.decades.1996-2005.min
+% src: estimation_results.json#counts.m5.summary.decades.2006-2015.max
+Relative to 1976--1985, the 2006--2015 decade is about a quarter higher, but 2016--2025 is lower again, and the decades before 2006 do not rise in time order. Under the rule that a change is described only where decade means show it, the data show a lower decade in 1996--2005 and a higher decade in 2006--2015, not a persistent increase.
+% computed: 1992.8 (counts.m5.summary.decades.2006-2015.mean) / 1595.9 (counts.m5.summary.decades.1976-1985.mean) - 1 = 0.249
+
+\input{tables/counts_m5.tex}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.85\textwidth]{fig_annual_counts_m5.pdf}
+\caption{Yearly number of earthquakes of magnitude 5 and larger (with magnitude 6 and larger for comparison), USGS ComCat preferred magnitude, 1976--2025. Aftershocks are included.}
+\label{fig:annual_counts}
+\end{figure}
+
+Year-to-year variation is far larger than a Poisson process would produce. The dispersion index of the 50 yearly counts is 56.7, and it ranges from 5.4 in 1986--1995 to 69.2 in 2006--2015.
+% src: estimation_results.json#counts.m5.summary.overall.dispersion_index
+% src: estimation_results.json#counts.m5.summary.decades.1986-1995.dispersion_index
+% src: estimation_results.json#counts.m5.summary.decades.2006-2015.dispersion_index
+The years with the largest counts, 2,397 in 2010 and 2,701 in 2011, coincide with the aftershock sequences of the largest earthquakes of the period, which we have not removed; we do not test this attribution.
+% src: figure_spec.json#figures.0.series.0.y
+A log-linear summary of the direction gives a slope of 0.40 percent per year (robust 95 percent interval 0.13 to 0.68), the negative-binomial slope is almost identical at 0.40 percent per year (0.06 to 0.73), and Spearman's rank correlation between count and year is 0.27 ($p = 0.053$).
+% src: estimation_results.json#counts.m5.trend.poisson.slope_pct_per_year
+% src: estimation_results.json#counts.m5.trend.poisson.ci_lo
+% src: estimation_results.json#counts.m5.trend.poisson.ci_hi
+% src: estimation_results.json#counts.m5.trend.negbin.slope_pct_per_year
+% src: estimation_results.json#counts.m5.trend.negbin.ci_lo
+% src: estimation_results.json#counts.m5.trend.negbin.ci_hi
+% src: estimation_results.json#counts.m5.trend.spearman_year.rho
+% src: estimation_results.json#counts.m5.trend.spearman_year.p_value
+These summaries indicate a small positive drift, but they average over a record that falls and then rises, and the interval widths understate uncertainty because the counts are overdispersed and serially clustered. The small positive slope is an association with calendar time that depends on the threshold (rank correlation 0.27 at 5.0 and 0.51 at 4.9), so we describe it as such and do not read it as a secular trend.
+
+Counts at higher thresholds share the peak in 2006--2015 and the fall in 2016--2025, but differ in the first decades and in the 1996--2005 dip. The decade means of events of magnitude 6 and larger are 106 in 1976--1985, 154 in 1986--1995, 145 in 1996--2005, 165 in 2006--2015 and 133 in 2016--2025, so the lowest decade is the first, not the third.
+% src: estimation_results.json#counts.m6.summary.decades
+For magnitude 7 and larger the means are 11.2, 13.6, 14.6, 16.8 and 13.4, against an overall mean of 13.9 events per year.
+% src: estimation_results.json#counts.m7.summary.decades
+% src: estimation_results.json#counts.m7.summary.overall.mean
+The low early count at magnitude 6 coincides with the period in which body-wave magnitudes dominate (Table~\ref{tab:magtype_mix}), whereas the low count at magnitude 5 falls in the decade with the highest moment-magnitude share. Counts at different thresholds therefore share the peak in 2006--2015 but differ in the first decades and in the 1996--2005 dip. This pattern is compatible with a change of magnitude scale and with aftershock clustering that weights thresholds differently, and it is also compatible with a common change of the rate; the catalogue alone cannot separate these readings.
+
+At the common threshold of magnitude 4.9, Table~\ref{tab:counts_common} shows the same shape with larger numbers: the decade means are 2,002, 2,056, 1,716, 2,634 and 2,449, and the rank correlation with year is 0.51, against 0.27 at the threshold of 5.0.
+% src: estimation_results.json#counts.common.summary.decades
+% src: estimation_results.json#counts.common.trend.spearman_year.rho
+% src: estimation_results.json#counts.m5.trend.spearman_year.rho
+
+\input{tables/counts_common.tex}
+
+\subsection{Completeness magnitude by decade}
+
+Table~\ref{tab:completeness} reports the estimates. The maximum-curvature rule gives 4.7 in the first two decades and 4.5, the lower limit of the data, in the last three; with the correction of 0.2 these become 4.9 and 4.7. The 95 percent goodness-of-fit rule gives 4.9, 4.7, 4.5, 4.5 and 4.5, and the 90 percent rule gives 4.7 followed by 4.5 in all later decades.
+% src: estimation_results.json#completeness.per_decade
+For the later decades the estimates sit at the lower limit of the data and are therefore censored: the catalogue may be complete below 4.5 in these decades, which we cannot tell without loading smaller events. For the focus threshold the conclusion is comfortable. At a magnitude of 5.0 the goodness-of-fit measure ranges from 94.0 percent to 98.8 percent across decades, so the 90 percent criterion is met at the level used for the yearly counts in every decade, whereas the 95 percent criterion is not met in one decade (94.0 percent). The goodness-of-fit measure assesses how well a straight line fits the distribution above a threshold; it does not show that events were never missed.
+% src: estimation_results.json#completeness.per_decade.1996-2005.gft_r_at_5.0
+% src: estimation_results.json#completeness.per_decade.1986-1995.gft_r_at_5.0
+The largest decade-specific value of maximum curvature plus 0.2 is 4.9, which we use as the common threshold.
+% src: estimation_results.json#completeness.common_threshold
+
+\input{tables/completeness.tex}
+
+\subsection{The $b$-value across decades}
+
+With decade-specific completeness magnitudes (maximum curvature plus 0.2), $\hat b$ is 1.123 in 1976--1985 ($M_c = 4.9$, $N$ = 20,023), 1.020 in 1986--1995 ($M_c = 4.9$, $N$ = 20,569), 1.055 in 1996--2005 ($M_c = 4.7$, $N$ = 31,143), 1.149 in 2006--2015 ($M_c = 4.7$, $N$ = 44,987) and 1.162 in 2016--2025 ($M_c = 4.7$, $N$ = 40,291).
+% src: estimation_results.json#b_values.decade_mc_maxc_plus_0.2
+The Shi--Bolt standard errors are between 0.006 and 0.008, and the bootstrap intervals are narrow, for example 1.006 to 1.034 in 1986--1995 and 1.151 to 1.173 in 2016--2025.
+% src: estimation_results.json#b_values.decade_mc_maxc_plus_0.2.1986-1995.boot_lo
+% src: estimation_results.json#b_values.decade_mc_maxc_plus_0.2.1986-1995.boot_hi
+% src: estimation_results.json#b_values.decade_mc_maxc_plus_0.2.2016-2025.boot_lo
+% src: estimation_results.json#b_values.decade_mc_maxc_plus_0.2.2016-2025.boot_hi
+The Aki standard error, $\hat b/\sqrt{N}$, is close to the Shi--Bolt value in every decade, for example 0.0059 against 0.0063 in 1996--2005.
+% src: estimation_results.json#b_values.decade_mc_maxc_plus_0.2.1996-2005.se_aki
+% src: estimation_results.json#b_values.decade_mc_maxc_plus_0.2.1996-2005.se_shi_bolt
+Under this rule the sequence is a low value in 1986--1995 and values near 1.15 in the two most recent decades, a difference of about 0.14 between the lowest and highest decade. The likelihood-ratio test of Utsu rejects equality at the 1 percent level in nine of ten decade pairs; the exception is 2006--2015 against 2016--2025 (statistic 2.4, $p = 0.119$). The bootstrap intervals overlap for that pair and for 1976--1985 against 2006--2015 (statistic 7.6, $p = 0.006$).
+% src: estimation_results.json#b_equality_tests.maxc_plus_0.2
+For the second of these pairs the likelihood-ratio test thus rejects equality at the one percent level while the bootstrap intervals overlap; we report both as computed. Overlap of two 95 percent intervals is not a second test, since non-overlap corresponds to a test stricter than 5 percent, so this difference is expected. No correction for multiple comparisons is applied across the ten pairs, and pairs compared at each decade's own $M_c$ differ in their truncation point (4.9 against 4.7), so only the comparisons at a common threshold compare the same part of the distribution.
+
+At the common threshold of 4.9 (Table~\ref{tab:bvalues_common}) the decade estimates are 1.123, 1.020, 0.924, 1.145 and 1.220, and the dip moves from 1986--1995 to 1996--2005. Because every decade now uses the same threshold of 4.9, differences cannot be traced to different thresholds, and the spread between lowest and highest decade widens to about 0.30.
+% src: estimation_results.json#b_values.decade_common_threshold
+% computed: 1.2201 (decade_common_threshold.2016-2025.b) - 0.9236 (decade_common_threshold.1996-2005.b) = 0.2965
+Table~\ref{tab:tests_common} shows that nine of the ten pairs are separated by both criteria, with likelihood-ratio statistics from 51.2 to 792.6; the exception is 1976--1985 against 2006--2015, where the statistic is 4.4 ($p = 0.036$) and the bootstrap intervals overlap.
+% src: estimation_results.json#b_equality_tests.common_threshold
+With the 95 percent goodness-of-fit rule (Table~\ref{tab:bvalues_gft95}) the estimates are 1.123, 0.981, 1.055, 1.108 and 1.226, and again only 1976--1985 against 2006--2015 overlaps (Table~\ref{tab:tests_gft95}; statistic 2.6, $p = 0.106$). With the 90 percent rule the values are 0.996, 0.863, 1.055, 1.108 and 1.226. For the three most recent decades the goodness-of-fit rules return a completeness magnitude at the lower limit of the data, so their $b$-values use all loaded events and rest on the assumption that the catalogue is complete at 4.5.
+% src: estimation_results.json#b_values.decade_mc_gft95
+% src: estimation_results.json#b_values.decade_mc_gft90
+% src: estimation_results.json#b_equality_tests.gft95
+% src: estimation_results.json#completeness.mc_censored_at_load_floor.decades_at_floor_by_rule
+
+\input{tables/bvalues_common.tex}
+\input{tables/tests_common.tex}
+\input{tables/bvalues_gft95.tex}
+\input{tables/tests_gft95.tex}
+
+At a fixed threshold of 5.0, which rests only on events that are complete under all of our rules, the estimates are 1.166, 1.015, 0.927, 1.129 and 1.150, again with a minimum in 1996--2005 and a maximum in 1976--1985, and two pairs whose bootstrap intervals overlap: 1976--1985 against 2016--2025 (statistic 1.5, $p = 0.220$) and 2006--2015 against 2016--2025 (statistic 3.4, $p = 0.064$).
+% src: estimation_results.json#b_values.decade_fixed_mc_5.0
+% src: estimation_results.json#b_equality_tests.fixed_5.0
+Together, these results show that the $b$-value is not stable across decades in ComCat at the precision that the sampling error implies. Two features are shared by all full-sample variants: the estimate for 1986--1995 lies below 1.03, and the estimates for the two most recent decades lie above 1.10. Which decade is lowest and by how much, however, depends on the rule.
+
+\subsection{Sensitivity to the completeness magnitude}
+
+Table~\ref{tab:mc_shift} varies $M_c$ around the baseline. Incompleteness below $M_c$ lowers the estimated $b$, so estimates that rise as $M_c$ rises indicate that the lower threshold is within the incomplete range. In 1976--1985 the estimate rises from 0.912 at a shift of $-0.3$ to 1.191 at $+0.2$ and is 1.175 at $+0.3$; in 2016--2025 it rises from 0.956 to 1.220 at $+0.2$ and is 1.150 at $+0.3$.
+% src: estimation_results.json#mc_sensitivity_shift.-0.3.1976-1985.b
+% src: estimation_results.json#mc_sensitivity_shift.+0.2.1976-1985.b
+% src: estimation_results.json#mc_sensitivity_shift.+0.3.1976-1985.b
+% src: estimation_results.json#mc_sensitivity_shift.-0.3.2016-2025.b
+% src: estimation_results.json#mc_sensitivity_shift.+0.2.2016-2025.b
+% src: estimation_results.json#mc_sensitivity_shift.+0.3.2016-2025.b
+The entries at a shift of $-0.3$ for the three latest decades should not be read as estimates for a complete sample, because the nominal $M_c$ of 4.4 lies below the smallest loaded event and the binning correction in Equation~\eqref{eq:bvalue} then shifts the estimate downward by construction. In the first decade the estimates level off between $+0.2$ and $+0.3$, as expected when the threshold has passed $M_c$. In 1996--2005 the pattern differs: the estimate falls from 1.055 at the baseline to 0.924 at $+0.2$ and 0.927 at $+0.3$, although incompleteness alone would raise it with the threshold.
+% src: estimation_results.json#mc_sensitivity_shift.+0.0.1996-2005.b
+% src: estimation_results.json#mc_sensitivity_shift.+0.2.1996-2005.b
+% src: estimation_results.json#mc_sensitivity_shift.+0.3.1996-2005.b
+This indicates a distribution whose slope changes near magnitude 5 in that decade, in which the moment-magnitude share is at its maximum, and we cannot attribute it further with the present data. The 1996--2005 estimate is already the lowest of the five decades at a shift of $+0.1$ (1.003, against 1.015 in 1986--1995).
+% src: estimation_results.json#mc_sensitivity_shift.+0.1.1986-1995.b
+% src: estimation_results.json#mc_sensitivity_shift.+0.1.1996-2005.b
+
+\input{tables/mc_shift.tex}
+
+\subsection{Subsample checks}
+
+Restricting the sample to events with a moment-magnitude type removes the mixture of scales but leaves a sample whose own completeness magnitude is high, between 5.2 and 5.6 across decades (Table~\ref{tab:check_mw}). The estimates are 0.835 in 1976--1985 ($N$ = 857), 0.975 in 1986--1995, 1.032 in 1996--2005, 0.921 in 2006--2015 and 0.995 in 2016--2025.
+% src: estimation_results.json#checks.mw_family_only.b_own_mc
+This sample contains 50,274 events of which 42,956 have magnitude 5 or larger.
+% src: estimation_results.json#checks.mw_family_only.n_events
+% src: estimation_results.json#checks.mw_family_only.n_events_m5plus
+The increase of $b$ to 1.15--1.22 in the two latest decades that we find in the full sample does not appear: the moment-magnitude estimates in these decades are 0.921 and 0.995. The two samples are estimated at different thresholds, so the contrast is descriptive; a higher threshold combined with the few giant events can lower $b$ without any change in the magnitude procedures, and we have not computed the full-sample $b$ at the thresholds of the moment-magnitude sample. Because the moment-magnitude sample has a completeness magnitude of 5.2 to 5.6 and far fewer events, the contrast cannot separate a physical change in the size distribution from a change in the catalogue's magnitude procedures; both remain open.
+
+\input{tables/check_mw.tex}
+
+Restricting the sample to events with a depth of 70 km or less (214,156 events, of which 66,433 have magnitude 5 or larger) reproduces the full-sample pattern. At the common threshold of 4.9 the estimates are 1.086, 0.995, 0.933, 1.152 and 1.239, and at each decade's own $M_c$ they are 1.086, 0.995, 1.045, 1.134 and 1.164 (Table~\ref{tab:check_shallow}).
+% src: estimation_results.json#checks.shallow_depth_le_70km.b_common_threshold
+% src: estimation_results.json#checks.shallow_depth_le_70km.b_own_mc
+% src: estimation_results.json#checks.shallow_depth_le_70km.n_events
+% src: estimation_results.json#checks.shallow_depth_le_70km.n_events_m5plus
+All ten pairwise comparisons at the common threshold are separated by the likelihood-ratio test and by the bootstrap intervals. The mix of shallow and deep events therefore does not explain the variation across decades.
+% src: estimation_results.json#checks.shallow_depth_le_70km.pair_tests_common
+
+\input{tables/check_shallow.tex}
+
+\section{Discussion}
+
+The yearly number of events of magnitude 5 and larger in ComCat has no persistent direction over 1976--2025. The catalogue records a mean of about 1,670 events per year, a lower decade in 1996--2005 and a higher decade in 2006--2015, and the counts at magnitudes 6 and 7 share the peak in 2006--2015 but not the dip in 1996--2005. The popular statement that earthquakes are increasing is therefore not supported by decade means of the counts at magnitude 5 and larger, although the small positive log-linear slope and the high decade of 2006--2015 show where such a statement could come from. These years contain the aftershock sequences of the largest events, and the preferred magnitude type changes from body-wave to moment magnitudes within the same window.
+
+The $b$-value is not stable across decades in the full sample once $M_c$ is estimated per decade, and the instability survives a common threshold, a fixed threshold, and the restriction to shallow events. It does not survive in the same form in the moment-magnitude sample. Two readings are open to us. A physical change in the size distribution and a change in how magnitudes are determined for events between 4.7 and 5.2 could each produce the variation in the full sample; the moment-magnitude sample is estimated at a higher threshold and so does not reach the events at which the two readings differ. The moment-magnitude sample has a completeness magnitude of 5.2 to 5.6 and far fewer events, so the contrast cannot separate the two readings; both remain open, and we do not claim either. What the analysis does establish is that a $b$-value estimated from ComCat in one decade cannot be transferred to another decade without reference to the completeness threshold and the magnitude types involved.
+
+The practical implications follow directly. A reader who compares a count of events of magnitude 5 and larger across decades compares counts on different magnitude scales, and a hazard analyst who uses a decade-specific $b$-value should report the threshold. The comparison of results across rules shows that the choice of $M_c$ moves the estimates by amounts comparable to the differences between decades, so decade-by-decade claims should be accompanied by the sensitivity analysis shown in Table~\ref{tab:mc_shift}.
+
+Several scope conditions apply. First, the catalogue is heterogeneous. We loaded events from magnitude 4.5, so completeness magnitudes at that value are censored and the true completeness may be lower in the later decades; loading smaller events would settle this. Second, the preferred magnitude type changes over time and we use it as published, without conversion, so the composition of the count at any threshold differs between decades; a homogeneous moment-magnitude catalogue is not available for the full period at the thresholds of interest. Third, aftershocks are included. They make events dependent, which violates the independence assumption behind both the standard errors and Utsu's test, so reported intervals and $p$-values are too narrow and should be read as descriptions of the sample and not as measures of uncertainty about a stable process. A fourth point is that the check on moment-magnitude events leaves the sample too small and too high in $M_c$ to be compared with the full sample.
+Future work could answer two specific questions with the same data. First, does a declustered or locally homogenized sample at the same threshold reproduce the variation of $b$ by decade, and by how much? Second, does the slope change near magnitude 5 that we see in 1996--2005 appear in the other decades once events below 4.5 are added, and does it coincide with the transition between body-wave and moment magnitudes?
+
+\section{Conclusion}
+
+The yearly number of earthquakes of magnitude 5 and larger in the USGS ComCat catalogue averages about 1,670 per year between 1976 and 2025 and shows a dip in 1996--2005 and a peak in 2006--2015, not a sustained increase. The Gutenberg--Richter $b$-value is not stable across decades: at decade-specific completeness magnitudes it lies between 1.02 and 1.16, at a common threshold between 0.92 and 1.22, and Utsu's likelihood-ratio test rejects equality at the 1 percent level in nine of ten pairs at decade-specific completeness magnitudes, with the exception reported above. The variation depends on the completeness rule and on the threshold; in the moment-magnitude sample, which is estimated at a higher completeness magnitude, the two latest decades show lower values, a contrast that is not on equal thresholds and therefore cannot be read as the removal of the variation. The record is therefore best read as a combined product of the Earth and of the measurement process; it does not show a secular rise in the rate of large earthquakes, and it does not show a stable $b$-value either.
+% src: estimation_results.json#statistics.annual_count_m5.mean
+% src: estimation_results.json#b_values.decade_mc_maxc_plus_0.2
+% src: estimation_results.json#b_values.decade_common_threshold
+
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}

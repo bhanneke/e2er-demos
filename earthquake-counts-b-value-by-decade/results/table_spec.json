@@ -1,0 +1,228 @@
+{
+  "tables": [
+    {
+      "filename": "summary.tex",
+      "label": "tab:summary",
+      "caption": "Summary statistics of the catalogue sample and the yearly counts, 1976--2025",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "statistics",
+      "rows": ["magnitude_all", "depth_km", "annual_count_m5", "annual_count_m6", "annual_count_m7"],
+      "row_labels": {
+        "magnitude_all": "Magnitude (events $M\\geq 4.5$)",
+        "depth_km": "Depth (km)",
+        "annual_count_m5": "Yearly count, $M\\geq 5$",
+        "annual_count_m6": "Yearly count, $M\\geq 6$",
+        "annual_count_m7": "Yearly count, $M\\geq 7$"
+      },
+      "row_header": "Variable",
+      "columns": [
+        {"field": "n", "header": "$N$", "decimals": 0},
+        {"field": "mean", "header": "Mean", "decimals": 2},
+        {"field": "sd", "header": "SD", "decimals": 2},
+        {"field": "min", "header": "Min", "decimals": 1},
+        {"field": "p25", "header": "Q1", "decimals": 2},
+        {"field": "median", "header": "Median", "decimals": 2},
+        {"field": "p75", "header": "Q3", "decimals": 2},
+        {"field": "max", "header": "Max", "decimals": 1}
+      ],
+      "notes": "Quartiles use linear interpolation between order statistics (Hyndman--Fan type 7). Yearly counts have $N=50$ calendar years; magnitude and depth are per event."
+    },
+    {
+      "filename": "counts_m5.tex",
+      "label": "tab:counts_m5",
+      "caption": "Yearly number of earthquakes with $M\\geq 5$ by decade",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "counts.m5.summary.decades",
+      "row_header": "Decade",
+      "columns": [
+        {"field": "n_years", "header": "Years", "decimals": 0},
+        {"field": "mean", "header": "Mean", "decimals": 1},
+        {"field": "sd", "header": "SD", "decimals": 1},
+        {"field": "min", "header": "Min", "decimals": 0},
+        {"field": "max", "header": "Max", "decimals": 0},
+        {"field": "dispersion_index", "header": "Variance/mean", "decimals": 1}
+      ],
+      "notes": "Preferred ComCat magnitude as published; aftershocks are included."
+    },
+    {
+      "filename": "counts_common.tex",
+      "label": "tab:counts_common",
+      "caption": "Yearly number of earthquakes at the common threshold $M\\geq 4.9$ by decade",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "counts.common.summary.decades",
+      "row_header": "Decade",
+      "columns": [
+        {"field": "n_years", "header": "Years", "decimals": 0},
+        {"field": "mean", "header": "Mean", "decimals": 1},
+        {"field": "sd", "header": "SD", "decimals": 1},
+        {"field": "min", "header": "Min", "decimals": 0},
+        {"field": "max", "header": "Max", "decimals": 0},
+        {"field": "dispersion_index", "header": "Variance/mean", "decimals": 1}
+      ],
+      "notes": "The threshold equals the largest decade-specific completeness magnitude (maximum curvature plus 0.2)."
+    },
+    {
+      "filename": "magtype_mix.tex",
+      "label": "tab:magtype_mix",
+      "caption": "Magnitude types of the $M\\geq 5$ events by decade (shares of events)",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "magtype_mix_m5_by_decade",
+      "row_header": "Decade",
+      "columns": [
+        {"field": "n", "header": "$N$", "decimals": 0},
+        {"field": "mb.share", "header": "$m_b$", "decimals": 3},
+        {"field": "Mw family.share", "header": "$M_w$ family", "decimals": 3},
+        {"field": "other.share", "header": "Other", "decimals": 3}
+      ],
+      "notes": "The remainder in each decade is the share of $M_s$ events (none in 2016--2025). The $M_w$ family collects all moment-magnitude variants (mw, mww, mwc, mwb, mwr, mwp)."
+    },
+    {
+      "filename": "completeness.tex",
+      "label": "tab:completeness",
+      "caption": "Completeness magnitude $M_c$ by decade and rule",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "completeness.per_decade",
+      "row_header": "Decade",
+      "columns": [
+        {"field": "maxc", "header": "Max. curvature", "decimals": 1},
+        {"field": "gft90", "header": "GFT 90\\%", "decimals": 1},
+        {"field": "gft95", "header": "GFT 95\\%", "decimals": 1}
+      ],
+      "notes": "Estimated from events with $M\\geq 4.5$. A value of 4.5 equals the load floor, so the estimate is censored there and the true $M_c$ may be lower."
+    },
+    {
+      "filename": "bvalues_common.tex",
+      "label": "tab:bvalues_common",
+      "caption": "Maximum-likelihood $b$-value by decade at the common threshold $M_c=4.9$",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "b_values.decade_common_threshold",
+      "row_header": "Decade",
+      "columns": [
+        {"field": "mc", "header": "$M_c$", "decimals": 1},
+        {"field": "n", "header": "$N$", "decimals": 0},
+        {"field": "b", "header": "$\\hat b$", "decimals": 3},
+        {"field": "se_shi_bolt", "header": "SE (Shi--Bolt)", "decimals": 4},
+        {"field": "boot_lo", "header": "Boot. 2.5\\%", "decimals": 3},
+        {"field": "boot_hi", "header": "Boot. 97.5\\%", "decimals": 3}
+      ],
+      "notes": "Aki--Utsu estimator with bin correction ($\\Delta M=0.1$); bootstrap intervals from 1,000 resamples; all decades use events with $M\\geq 4.9$."
+    },
+    {
+      "filename": "bvalues_gft95.tex",
+      "label": "tab:bvalues_gft95",
+      "caption": "Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% goodness-of-fit rule",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "b_values.decade_mc_gft95",
+      "row_header": "Decade",
+      "columns": [
+        {"field": "mc", "header": "$M_c$", "decimals": 1},
+        {"field": "n", "header": "$N$", "decimals": 0},
+        {"field": "b", "header": "$\\hat b$", "decimals": 3},
+        {"field": "se_shi_bolt", "header": "SE (Shi--Bolt)", "decimals": 4},
+        {"field": "boot_lo", "header": "Boot. 2.5\\%", "decimals": 3},
+        {"field": "boot_hi", "header": "Boot. 97.5\\%", "decimals": 3}
+      ],
+      "notes": "An $M_c$ of 4.5 equals the load floor and is censored there."
+    },
+    {
+      "filename": "mc_shift.tex",
+      "label": "tab:mc_shift",
+      "caption": "Sensitivity of the $b$-value to shifts of the maximum-curvature $M_c$",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "mc_sensitivity_shift",
+      "rows": ["-0.3", "-0.2", "-0.1", "+0.0", "+0.1", "+0.2", "+0.3"],
+      "row_labels": {"-0.3": "$-0.3$", "-0.2": "$-0.2$", "-0.1": "$-0.1$", "+0.0": "$0.0$", "+0.1": "$+0.1$", "+0.2": "$+0.2$", "+0.3": "$+0.3$"},
+      "row_header": "Shift in $M_c$",
+      "columns": [
+        {"field": "1976-1985.b", "header": "1976--85", "decimals": 3},
+        {"field": "1986-1995.b", "header": "1986--95", "decimals": 3},
+        {"field": "1996-2005.b", "header": "1996--2005", "decimals": 3},
+        {"field": "2006-2015.b", "header": "2006--15", "decimals": 3},
+        {"field": "2016-2025.b", "header": "2016--25", "decimals": 3}
+      ],
+      "notes": "Entries are $\\hat b$. The shift is added to the decade-specific maximum-curvature $M_c$ plus 0.2 (the row $0.0$ is the baseline); shifted values below 4.5 use all loaded events."
+    },
+    {
+      "filename": "tests_common.tex",
+      "label": "tab:tests_common",
+      "caption": "Pairwise Utsu tests of equal $b$ at the common threshold $M_c=4.9$",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "b_equality_tests.common_threshold",
+      "row_header": "Pair",
+      "columns": [
+        {"field": "decade_a", "header": "Decade A"},
+        {"field": "decade_b", "header": "Decade B"},
+        {"field": "b_a", "header": "$\\hat b_A$", "decimals": 3},
+        {"field": "b_b", "header": "$\\hat b_B$", "decimals": 3},
+        {"field": "lr_stat", "header": "LR", "decimals": 1},
+        {"field": "delta_aic_utsu", "header": "$\\Delta$AIC", "decimals": 1},
+        {"field": "bootstrap_ci_overlap", "header": "CIs overlap"}
+      ],
+      "notes": "LR is the likelihood-ratio statistic, $\\Delta$AIC = LR $-2$ (Utsu's statistic). Positive values favour different $b$-values."
+    },
+    {
+      "filename": "tests_gft95.tex",
+      "label": "tab:tests_gft95",
+      "caption": "Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ (95\\% goodness-of-fit rule)",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "b_equality_tests.gft95",
+      "row_header": "Pair",
+      "columns": [
+        {"field": "decade_a", "header": "Decade A"},
+        {"field": "decade_b", "header": "Decade B"},
+        {"field": "b_a", "header": "$\\hat b_A$", "decimals": 3},
+        {"field": "b_b", "header": "$\\hat b_B$", "decimals": 3},
+        {"field": "lr_stat", "header": "LR", "decimals": 1},
+        {"field": "delta_aic_utsu", "header": "$\\Delta$AIC", "decimals": 1},
+        {"field": "bootstrap_ci_overlap", "header": "CIs overlap"}
+      ],
+      "notes": "LR is the likelihood-ratio statistic, $\\Delta$AIC = LR $-2$ (Utsu's statistic)."
+    },
+    {
+      "filename": "check_mw.tex",
+      "label": "tab:check_mw",
+      "caption": "Check: $b$-value of the moment-magnitude-family sample at its own $M_c$",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "checks.mw_family_only.b_own_mc",
+      "row_header": "Decade",
+      "columns": [
+        {"field": "mc", "header": "$M_c$", "decimals": 1},
+        {"field": "n", "header": "$N$", "decimals": 0},
+        {"field": "b", "header": "$\\hat b$", "decimals": 3},
+        {"field": "se_shi_bolt", "header": "SE (Shi--Bolt)", "decimals": 4},
+        {"field": "boot_lo", "header": "Boot. 2.5\\%", "decimals": 3},
+        {"field": "boot_hi", "header": "Boot. 97.5\\%", "decimals": 3}
+      ],
+      "notes": "Events with an $M_w$-family magnitude only; $M_c$ by maximum curvature plus 0.2 within this sample."
+    },
+    {
+      "filename": "check_shallow.tex",
+      "label": "tab:check_shallow",
+      "caption": "Check: $b$-value of shallow events (depth $\\leq 70$ km) at their own $M_c$",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "checks.shallow_depth_le_70km.b_own_mc",
+      "row_header": "Decade",
+      "columns": [
+        {"field": "mc", "header": "$M_c$", "decimals": 1},
+        {"field": "n", "header": "$N$", "decimals": 0},
+        {"field": "b", "header": "$\\hat b$", "decimals": 3},
+        {"field": "se_shi_bolt", "header": "SE (Shi--Bolt)", "decimals": 4},
+        {"field": "boot_lo", "header": "Boot. 2.5\\%", "decimals": 3},
+        {"field": "boot_hi", "header": "Boot. 97.5\\%", "decimals": 3}
+      ],
+      "notes": "Shallow events only; $M_c$ by maximum curvature plus 0.2 within this sample."
+    }
+  ]
+}

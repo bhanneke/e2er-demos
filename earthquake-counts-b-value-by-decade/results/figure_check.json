@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "figures": [
+    {
+      "figure": "fig_annual_counts_m5.pdf series M>=5",
+      "source": {
+        "table": "eq_annual_counts",
+        "columns": {
+          "x": "year",
+          "y": "n_m50"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_annual_counts_m5.pdf series M>=6",
+      "source": {
+        "table": "eq_annual_counts",
+        "columns": {
+          "x": "year",
+          "y": "n_m60"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_annual_counts_m7.pdf series M>=7",
+      "source": {
+        "table": "eq_annual_counts",
+        "columns": {
+          "x": "year",
+          "y": "n_m70"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_magtype_mix.pdf",
+      "source": {
+        "results": "magtype_mix_m5_by_decade_list",
+        "fields": {
+          "categories": "decade",
+          "values": "mw_family_share"
+        }
+      },
+      "matches": true
+    }
+  ],
+  "problems": []
+}

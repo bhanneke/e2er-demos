@@ -1,0 +1,235 @@
+{
+  "$comment": "Written by e2er-data: one entry per external-source load, with the source version, the URL and SHA-256 of every file read.",
+  "loads": [
+    {
+      "connector": "usgs",
+      "dataset": "ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey",
+      "terms_summary": "USGS-authored or produced data are in the U.S. public domain; USGS asks that proper credit be given.",
+      "licence": "U.S. public domain (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits): \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain.\" USGS asks \"that proper credit be given\". Cite the catalogue: U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "terms": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+      "series": "earthquakes of magnitude 4.5 and above worldwide, 1976-01-01 to 1986-01-01",
+      "link": "https://earthquake.usgs.gov/earthquakes/search/",
+      "retrieved_at": "2026-10-14T16:13:23Z",
+      "citation": "U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "citation_by": "source",
+      "cite_key": "USGS_ComCat",
+      "query": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1976-01-01T00%3A00%3A00&endtime=1986-01-01T00%3A00%3A00",
+      "files": [
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1976-01-01T00%3A00%3A00&endtime=1980-12-31T12%3A00%3A00",
+          "sha256": "57883ff433407fbae9cacbb50fa1692a17ee9560235e561b1482c4661e18d76c"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1980-12-31T12%3A00%3A00&endtime=1986-01-01T00%3A00%3A00",
+          "sha256": "bb6fdb8d5662068931bda9c738bda406d9fb4701067435d7049f864e225f9d47"
+        }
+      ],
+      "request": {
+        "command": "events",
+        "start": "1976-01-01",
+        "end": "1986-01-01",
+        "min_magnitude": 4.5
+      },
+      "service_version": "2.8.1",
+      "windows": 2,
+      "frequency": "event",
+      "table": "usgs_raw_1976_1985",
+      "table_rows": 37121,
+      "saved_to": "data/usgs_raw_1976_1985.csv",
+      "rows": 37121,
+      "specialist": "data_analyst"
+    },
+    {
+      "connector": "usgs",
+      "dataset": "ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey",
+      "terms_summary": "USGS-authored or produced data are in the U.S. public domain; USGS asks that proper credit be given.",
+      "licence": "U.S. public domain (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits): \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain.\" USGS asks \"that proper credit be given\". Cite the catalogue: U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "terms": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+      "series": "earthquakes of magnitude 4.5 and above worldwide, 1986-01-01 to 1996-01-01",
+      "link": "https://earthquake.usgs.gov/earthquakes/search/",
+      "retrieved_at": "2026-10-14T16:18:28Z",
+      "citation": "U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "citation_by": "source",
+      "cite_key": "USGS_ComCat",
+      "query": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1986-01-01T00%3A00%3A00&endtime=1996-01-01T00%3A00%3A00",
+      "files": [
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1986-01-01T00%3A00%3A00&endtime=1988-07-02T00%3A00%3A00",
+          "sha256": "2985e3844e924bb31443f159b3655292dacdf96c1135a42ee8c7244165b4bf6b"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1988-07-02T00%3A00%3A00&endtime=1991-01-01T00%3A00%3A00",
+          "sha256": "f6370b5bf4359b6a6aabb9846124a30bdebd3d81f2b403268b98a49d0184d344"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1991-01-01T00%3A00%3A00&endtime=1993-07-02T00%3A00%3A00",
+          "sha256": "564903fd967fd552acc9cca186216905c0e6619b2e2506a6b21ca6b22d2b8a9b"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1993-07-02T00%3A00%3A00&endtime=1996-01-01T00%3A00%3A00",
+          "sha256": "ab51eacb38fff8d49fdd05e4ecb326a815e08171bdaa42204992017bf2b8bb12"
+        }
+      ],
+      "request": {
+        "command": "events",
+        "start": "1986-01-01",
+        "end": "1996-01-01",
+        "min_magnitude": 4.5
+      },
+      "service_version": "2.8.1",
+      "windows": 4,
+      "frequency": "event",
+      "table": "usgs_raw_1986_1995",
+      "table_rows": 42573,
+      "saved_to": "data/usgs_raw_1986_1995.csv",
+      "rows": 42573,
+      "specialist": "data_analyst"
+    },
+    {
+      "connector": "usgs",
+      "dataset": "ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey",
+      "terms_summary": "USGS-authored or produced data are in the U.S. public domain; USGS asks that proper credit be given.",
+      "licence": "U.S. public domain (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits): \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain.\" USGS asks \"that proper credit be given\". Cite the catalogue: U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "terms": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+      "series": "earthquakes of magnitude 4.5 and above worldwide, 1996-01-01 to 2006-01-01",
+      "link": "https://earthquake.usgs.gov/earthquakes/search/",
+      "retrieved_at": "2026-10-14T16:24:35Z",
+      "citation": "U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "citation_by": "source",
+      "cite_key": "USGS_ComCat",
+      "query": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1996-01-01T00%3A00%3A00&endtime=2006-01-01T00%3A00%3A00",
+      "files": [
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1996-01-01T00%3A00%3A00&endtime=1998-07-02T06%3A00%3A00",
+          "sha256": "251527d65d72730a549cc4617b02b90a476854e7ccdd39820c62f94fad6b1a86"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=1998-07-02T06%3A00%3A00&endtime=2000-12-31T12%3A00%3A00",
+          "sha256": "780dd4e289a2e9c7210c8dadcd24f072690f921c809c20adc2968557ce03c4a8"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2000-12-31T12%3A00%3A00&endtime=2003-07-02T18%3A00%3A00",
+          "sha256": "ea75b8d00d21c514004dcdc275e54b47237f7792d94f2f60d66799c7894f658f"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2003-07-02T18%3A00%3A00&endtime=2006-01-01T00%3A00%3A00",
+          "sha256": "058480955f15f8ab0b8c4a0f8c27310d94039416724ceb4fbe79c98c3152d652"
+        }
+      ],
+      "request": {
+        "command": "events",
+        "start": "1996-01-01",
+        "end": "2006-01-01",
+        "min_magnitude": 4.5
+      },
+      "service_version": "2.8.1",
+      "windows": 4,
+      "frequency": "event",
+      "table": "usgs_raw_1996_2005",
+      "table_rows": 50984,
+      "saved_to": "data/usgs_raw_1996_2005.csv",
+      "rows": 50984,
+      "specialist": "data_analyst"
+    },
+    {
+      "connector": "usgs",
+      "dataset": "ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey",
+      "terms_summary": "USGS-authored or produced data are in the U.S. public domain; USGS asks that proper credit be given.",
+      "licence": "U.S. public domain (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits): \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain.\" USGS asks \"that proper credit be given\". Cite the catalogue: U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "terms": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+      "series": "earthquakes of magnitude 4.5 and above worldwide, 2006-01-01 to 2016-01-01",
+      "link": "https://earthquake.usgs.gov/earthquakes/search/",
+      "retrieved_at": "2026-10-14T16:32:12Z",
+      "citation": "U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "citation_by": "source",
+      "cite_key": "USGS_ComCat",
+      "query": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2006-01-01T00%3A00%3A00&endtime=2016-01-01T00%3A00%3A00",
+      "files": [
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2006-01-01T00%3A00%3A00&endtime=2008-07-02T00%3A00%3A00",
+          "sha256": "c14aded8e744ff95eddb9c741021d0325c0c16a22c42e8883f82f4057b90813e"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2008-07-02T00%3A00%3A00&endtime=2011-01-01T00%3A00%3A00",
+          "sha256": "917bef1459665a1691488c068568750d268978a42af03944d94baf64e1455957"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2011-01-01T00%3A00%3A00&endtime=2012-04-01T12%3A00%3A00",
+          "sha256": "0f64a3bdb8ba8ba5b59f0754d6c11e6e66201be48b11e554917ac125ed83b1c0"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2012-04-01T12%3A00%3A00&endtime=2013-07-02T00%3A00%3A00",
+          "sha256": "8036aa5263d88ba708f0d51e577f252548edd4cb20d68e17d50d06f07b88ca79"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2013-07-02T00%3A00%3A00&endtime=2016-01-01T00%3A00%3A00",
+          "sha256": "f7d729fd260942f051548dcbc3c705f65d20f2b3c8259d3723dda01408eb9d02"
+        }
+      ],
+      "request": {
+        "command": "events",
+        "start": "2006-01-01",
+        "end": "2016-01-01",
+        "min_magnitude": 4.5
+      },
+      "service_version": "2.8.1",
+      "windows": 5,
+      "frequency": "event",
+      "table": "usgs_raw_2006_2015",
+      "table_rows": 73394,
+      "saved_to": "data/usgs_raw_2006_2015.csv",
+      "rows": 73394,
+      "specialist": "data_analyst"
+    },
+    {
+      "connector": "usgs",
+      "dataset": "ANSS Comprehensive Earthquake Catalog (ComCat), U.S. Geological Survey",
+      "terms_summary": "USGS-authored or produced data are in the U.S. public domain; USGS asks that proper credit be given.",
+      "licence": "U.S. public domain (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits): \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain.\" USGS asks \"that proper credit be given\". Cite the catalogue: U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "terms": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+      "series": "earthquakes of magnitude 4.5 and above worldwide, 2016-01-01 to 2026-01-01",
+      "link": "https://earthquake.usgs.gov/earthquakes/search/",
+      "retrieved_at": "2026-10-14T16:39:30Z",
+      "citation": "U.S. Geological Survey. (2017). Advanced National Seismic System (ANSS) Comprehensive Catalog. U.S. Geological Survey. https://doi.org/10.5066/F7MS3QZH",
+      "citation_by": "source",
+      "cite_key": "USGS_ComCat",
+      "query": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2016-01-01T00%3A00%3A00&endtime=2026-01-01T00%3A00%3A00",
+      "files": [
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2016-01-01T00%3A00%3A00&endtime=2018-07-02T06%3A00%3A00",
+          "sha256": "8630e87d9b1a06d168b7b111e460fddee16a1bcb343f5d2e8d555d30ca33b52e"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2018-07-02T06%3A00%3A00&endtime=2020-12-31T12%3A00%3A00",
+          "sha256": "a1d734977c8f3d0c71291c919640a515734a66a366d3a6e04fa38e4dfe563f62"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2020-12-31T12%3A00%3A00&endtime=2022-04-02T03%3A00%3A00",
+          "sha256": "90f12f6c4aafe995d32c7095217130a89a510000a0dcaa3ac6dbc23cd7aeadbc"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2022-04-02T03%3A00%3A00&endtime=2023-07-02T18%3A00%3A00",
+          "sha256": "9508fceef77a5d181896b8654afa65c75a90a4ed73221b71a7a2d9aa9e0c735c"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?minmagnitude=4.5&format=csv&orderby=time-asc&starttime=2023-07-02T18%3A00%3A00&endtime=2026-01-01T00%3A00%3A00",
+          "sha256": "0ab0a066d6315aef0e8ad2339dcdbbc8372dea13786879f913ab56dfb7dad54d"
+        }
+      ],
+      "request": {
+        "command": "events",
+        "start": "2016-01-01",
+        "end": "2026-01-01",
+        "min_magnitude": 4.5
+      },
+      "service_version": "2.8.1",
+      "windows": 5,
+      "frequency": "event",
+      "table": "usgs_raw_2016_2025",
+      "table_rows": 74436,
+      "saved_to": "data/usgs_raw_2016_2025.csv",
+      "rows": 74436,
+      "specialist": "data_analyst"
+    }
+  ]
+}

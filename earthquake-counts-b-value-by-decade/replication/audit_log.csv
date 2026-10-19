@@ -1,0 +1,9 @@
+id,query_type,query_sql,fields_requested,aggregation_level,estimated_rows,actual_rows,validation_status,approved_by,approved_at,executed_at,created_at
+cd573a12-0b37-4c00-91ef-8ccb09129488,feasibility,select * from eq_bvalue_windows,[],local_data_db,,5,pending,,,2026-10-14 16:44:01,2026-10-14 16:44:01
+e35de79a-2def-4cb3-8dd6-56092d5ed5c0,feasibility,select group_concat(n_m70) from (select n_m70 from eq_annual_counts order by year),[],local_data_db,,1,pending,,,2026-10-14 16:44:09,2026-10-14 16:44:09
+c5eb6183-04d4-457e-8b9a-3f5cced8a02b,feasibility,"SELECT magType, COUNT(*) n, MIN(year), MAX(year) FROM eq_clean_m45 GROUP BY magType ORDER BY n DESC",[],local_data_db,,21,pending,,,2026-10-14 16:44:29,2026-10-14 16:44:29
+c7c4d4e6-3b9c-47d9-9113-469a25d5e492,feasibility,SELECT * FROM eq_bvalue_windows,[],local_data_db,,5,pending,,,2026-10-14 16:44:30,2026-10-14 16:44:30
+e08c128a-9c38-4a78-b254-3e9e263c58ed,feasibility,"SELECT type,COUNT(*) FROM eq_clean_m45 GROUP BY type",[],local_data_db,,1,pending,,,2026-10-14 16:44:30,2026-10-14 16:44:30
+cbe472e8-3fc1-438b-b449-1baf09ddad38,feasibility,"SELECT MIN(mag),MAX(mag),COUNT(*),SUM(depth IS NULL) FROM eq_clean_m45",[],local_data_db,,1,pending,,,2026-10-14 16:44:30,2026-10-14 16:44:30
+3414f105-7834-49d3-a942-883e08529b71,feasibility,"SELECT SUM(n_m50), SUM(n_m60), SUM(n_m70) FROM eq_annual_counts",[],local_data_db,,1,pending,,,2026-10-14 16:55:57,2026-10-14 16:55:57
+42eb83a3-0abb-4187-ab12-24897e9e9d5d,feasibility,"SELECT year,n_m50,n_m60,n_m70 FROM eq_annual_counts ORDER BY year",[],local_data_db,,50,pending,,,2026-10-14 16:57:00,2026-10-14 16:57:00

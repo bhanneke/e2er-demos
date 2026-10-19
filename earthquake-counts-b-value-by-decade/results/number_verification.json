@@ -1,0 +1,2029 @@
+{
+  "passed": false,
+  "total_values_in_tables": 396,
+  "matched": 392,
+  "mismatched": 1,
+  "unverifiable": 3,
+  "coverage": 0.9924242424242424,
+  "mismatches": [
+    {
+      "draft_value": "0.2",
+      "source_key": "data_quality.json.tables.usgs_raw_1986_1995.columns.magNst.missing_share",
+      "source_value": "0.1922",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 7, col 1",
+      "severity": "major"
+    }
+  ],
+  "matched_cells": [
+    {
+      "draft_value": "277,946",
+      "source_key": "summary_statistics.json.n_observations",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 2, col 2"
+    },
+    {
+      "draft_value": "4.87",
+      "source_key": "summary_statistics.json.outcome.mag.mean",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 2, col 3"
+    },
+    {
+      "draft_value": "0.40",
+      "source_key": "summary_statistics.json.outcome.mag.sd",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 2, col 4"
+    },
+    {
+      "draft_value": "4.5",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 2, col 5"
+    },
+    {
+      "draft_value": "4.60",
+      "source_key": "summary_statistics.json.outcome.mag.p25",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 2, col 6"
+    },
+    {
+      "draft_value": "4.80",
+      "source_key": "summary_statistics.json.outcome.mag.median",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 2, col 7"
+    },
+    {
+      "draft_value": "5.00",
+      "source_key": "summary_statistics.json.outcome.mag.p75",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 2, col 8"
+    },
+    {
+      "draft_value": "9.1",
+      "source_key": "summary_statistics.json.outcome.mag.max",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 2, col 9"
+    },
+    {
+      "draft_value": "277,946",
+      "source_key": "summary_statistics.json.n_observations",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 3, col 2"
+    },
+    {
+      "draft_value": "70.76",
+      "source_key": "summary_statistics.json.outcome.depth_km.mean",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 3, col 3"
+    },
+    {
+      "draft_value": "117.10",
+      "source_key": "summary_statistics.json.outcome.depth_km.sd",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 3, col 4"
+    },
+    {
+      "draft_value": "-3.0",
+      "source_key": "summary_statistics.json.outcome.depth_km.min",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 3, col 5"
+    },
+    {
+      "draft_value": "10.00",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 3, col 6"
+    },
+    {
+      "draft_value": "33.00",
+      "source_key": "summary_statistics.json.outcome.depth_km.median",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 3, col 7"
+    },
+    {
+      "draft_value": "63.20",
+      "source_key": "estimation_results.json.statistics.depth_km.p75",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 3, col 8"
+    },
+    {
+      "draft_value": "700.9",
+      "source_key": "summary_statistics.json.outcome.depth_km.max",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 3, col 9"
+    },
+    {
+      "draft_value": "50",
+      "source_key": "summary_statistics.json.time_coverage.n_periods",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 4, col 2"
+    },
+    {
+      "draft_value": "1669.38",
+      "source_key": "summary_statistics.json.outcome.annual_count_m50.mean",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 4, col 3"
+    },
+    {
+      "draft_value": "307.76",
+      "source_key": "summary_statistics.json.outcome.annual_count_m50.sd",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 4, col 4"
+    },
+    {
+      "draft_value": "1077.0",
+      "source_key": "summary_statistics.json.outcome.annual_count_m50.min",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 4, col 5"
+    },
+    {
+      "draft_value": "1494.25",
+      "source_key": "estimation_results.json.statistics.annual_count_m5.p25",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 4, col 6"
+    },
+    {
+      "draft_value": "1648.50",
+      "source_key": "summary_statistics.json.outcome.annual_count_m50.median",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 4, col 7"
+    },
+    {
+      "draft_value": "1768.00",
+      "source_key": "estimation_results.json.statistics.annual_count_m5.p75",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 4, col 8"
+    },
+    {
+      "draft_value": "2701.0",
+      "source_key": "summary_statistics.json.outcome.annual_count_m50.max",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 4, col 9"
+    },
+    {
+      "draft_value": "50",
+      "source_key": "summary_statistics.json.time_coverage.n_periods",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 5, col 2"
+    },
+    {
+      "draft_value": "140.62",
+      "source_key": "estimation_results.json.statistics.annual_count_m6.mean",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 5, col 3"
+    },
+    {
+      "draft_value": "29.03",
+      "source_key": "estimation_results.json.statistics.annual_count_m6.sd",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 5, col 4"
+    },
+    {
+      "draft_value": "83.0",
+      "source_key": "estimation_results.json.statistics.annual_count_m6.min",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 5, col 5"
+    },
+    {
+      "draft_value": "128.50",
+      "source_key": "estimation_results.json.statistics.annual_count_m6.p25",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 5, col 6"
+    },
+    {
+      "draft_value": "143.50",
+      "source_key": "estimation_results.json.statistics.annual_count_m6.median",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 5, col 7"
+    },
+    {
+      "draft_value": "157.00",
+      "source_key": "estimation_results.json.statistics.annual_count_m6.p75",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 5, col 8"
+    },
+    {
+      "draft_value": "207.0",
+      "source_key": "estimation_results.json.statistics.annual_count_m6.max",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 5, col 9"
+    },
+    {
+      "draft_value": "50",
+      "source_key": "summary_statistics.json.time_coverage.n_periods",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 6, col 2"
+    },
+    {
+      "draft_value": "13.92",
+      "source_key": "estimation_results.json.statistics.annual_count_m7.mean",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 6, col 3"
+    },
+    {
+      "draft_value": "3.90",
+      "source_key": "estimation_results.json.statistics.annual_count_m7.sd",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 6, col 4"
+    },
+    {
+      "draft_value": "6.0",
+      "source_key": "summary_statistics.json.type_by_decade.1996-2005.nuclear explosion",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 6, col 5"
+    },
+    {
+      "draft_value": "11.00",
+      "source_key": "summary_statistics.json.removed_by_type_all_decades.explosion",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 6, col 6"
+    },
+    {
+      "draft_value": "14.00",
+      "source_key": "summary_statistics.json.magtype_counts_by_decade.1986-1995.mwc",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 6, col 7"
+    },
+    {
+      "draft_value": "16.75",
+      "source_key": "summary_statistics.json.by_decade.2006-2015.mean_annual_m70",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 6, col 8"
+    },
+    {
+      "draft_value": "24.0",
+      "source_key": "estimation_results.json.statistics.annual_count_m7.max",
+      "table_context": "tab:summary (Summary statistics of the catalogue sample and the yearly co...), row 6, col 9"
+    },
+    {
+      "draft_value": "15,959",
+      "source_key": "summary_statistics.json.by_decade.1976-1985.n_m50",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 2, col 2"
+    },
+    {
+      "draft_value": "0.775",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1986-1995.mb",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 2, col 3"
+    },
+    {
+      "draft_value": "0.103",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.1976-1985.mw_family",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 2, col 4"
+    },
+    {
+      "draft_value": "0.006",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 2, col 5"
+    },
+    {
+      "draft_value": "16,174",
+      "source_key": "summary_statistics.json.by_decade.1986-1995.n_m50",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 3, col 2"
+    },
+    {
+      "draft_value": "0.476",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.1986-1995.mb",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 3, col 3"
+    },
+    {
+      "draft_value": "0.480",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.1986-1995.mb",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 3, col 4"
+    },
+    {
+      "draft_value": "0.006",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 3, col 5"
+    },
+    {
+      "draft_value": "13,906",
+      "source_key": "summary_statistics.json.by_decade.1996-2005.n_m50",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 4, col 2"
+    },
+    {
+      "draft_value": "0.220",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.1996-2005.mb",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 4, col 3"
+    },
+    {
+      "draft_value": "0.766",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.1996-2005.mw_family",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 4, col 4"
+    },
+    {
+      "draft_value": "0.003",
+      "source_key": "summary_statistics.json.sample_flow[0].dropped",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 4, col 5"
+    },
+    {
+      "draft_value": "19,928",
+      "source_key": "summary_statistics.json.by_decade.2006-2015.n_m50",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 5, col 2"
+    },
+    {
+      "draft_value": "0.362",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.2006-2015.mb",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 5, col 3"
+    },
+    {
+      "draft_value": "0.634",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.2006-2015.mw_family",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 5, col 4"
+    },
+    {
+      "draft_value": "0.003",
+      "source_key": "summary_statistics.json.sample_flow[0].dropped",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 5, col 5"
+    },
+    {
+      "draft_value": "17,502",
+      "source_key": "summary_statistics.json.by_decade.2016-2025.n_m50",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 6, col 2"
+    },
+    {
+      "draft_value": "0.410",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.2016-2025.mb",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 6, col 3"
+    },
+    {
+      "draft_value": "0.586",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.2016-2025.mw_family",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 6, col 4"
+    },
+    {
+      "draft_value": "0.004",
+      "source_key": "summary_statistics.json.sample_flow[0].dropped",
+      "table_context": "tab:magtype_mix (Magnitude types of the $M\\geq 5$ events by decade (shares of...), row 6, col 5"
+    },
+    {
+      "draft_value": "10",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 2, col 2"
+    },
+    {
+      "draft_value": "1595.9",
+      "source_key": "summary_statistics.json.by_decade.1976-1985.mean_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 2, col 3"
+    },
+    {
+      "draft_value": "187.9",
+      "source_key": "summary_statistics.json.by_decade.1976-1985.sd_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 2, col 4"
+    },
+    {
+      "draft_value": "1,259",
+      "source_key": "summary_statistics.json.by_decade.1976-1985.min_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 2, col 5"
+    },
+    {
+      "draft_value": "1,790",
+      "source_key": "summary_statistics.json.by_decade.1976-1985.max_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 2, col 6"
+    },
+    {
+      "draft_value": "22.1",
+      "source_key": "estimation_results.json.counts.m5.summary.decades.1976-1985.dispersion_index",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 2, col 7"
+    },
+    {
+      "draft_value": "10",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 3, col 2"
+    },
+    {
+      "draft_value": "1617.4",
+      "source_key": "summary_statistics.json.by_decade.1976-1985.median_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 3, col 3"
+    },
+    {
+      "draft_value": "93.1",
+      "source_key": "summary_statistics.json.by_decade.1986-1995.sd_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 3, col 4"
+    },
+    {
+      "draft_value": "1,495",
+      "source_key": "summary_statistics.json.by_decade.1986-1995.min_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 3, col 5"
+    },
+    {
+      "draft_value": "1,757",
+      "source_key": "summary_statistics.json.by_decade.1986-1995.max_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 3, col 6"
+    },
+    {
+      "draft_value": "5.4",
+      "source_key": "estimation_results.json.checks.mw_family_only.mc_maxc_plus_0.2.1996-2005",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 3, col 7"
+    },
+    {
+      "draft_value": "10",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 4, col 2"
+    },
+    {
+      "draft_value": "1390.6",
+      "source_key": "summary_statistics.json.by_decade.1996-2005.mean_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 4, col 3"
+    },
+    {
+      "draft_value": "227.5",
+      "source_key": "summary_statistics.json.by_decade.1996-2005.sd_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 4, col 4"
+    },
+    {
+      "draft_value": "1,077",
+      "source_key": "summary_statistics.json.outcome.annual_count_m50.min",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 4, col 5"
+    },
+    {
+      "draft_value": "1,844",
+      "source_key": "summary_statistics.json.by_decade.1996-2005.max_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 4, col 6"
+    },
+    {
+      "draft_value": "37.2",
+      "source_key": "estimation_results.json.counts.m5.summary.decades.1996-2005.dispersion_index",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 4, col 7"
+    },
+    {
+      "draft_value": "10",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 5, col 2"
+    },
+    {
+      "draft_value": "1992.8",
+      "source_key": "summary_statistics.json.by_decade.2006-2015.mean_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 5, col 3"
+    },
+    {
+      "draft_value": "371.4",
+      "source_key": "summary_statistics.json.by_decade.2006-2015.sd_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 5, col 4"
+    },
+    {
+      "draft_value": "1,571",
+      "source_key": "summary_statistics.json.by_decade.2006-2015.min_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 5, col 5"
+    },
+    {
+      "draft_value": "2,701",
+      "source_key": "summary_statistics.json.outcome.annual_count_m50.max",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 5, col 6"
+    },
+    {
+      "draft_value": "69.2",
+      "source_key": "estimation_results.json.counts.m5.summary.decades.2006-2015.dispersion_index",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 5, col 7"
+    },
+    {
+      "draft_value": "10",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 6, col 2"
+    },
+    {
+      "draft_value": "1750.2",
+      "source_key": "summary_statistics.json.by_decade.2016-2025.mean_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 6, col 3"
+    },
+    {
+      "draft_value": "251.2",
+      "source_key": "summary_statistics.json.by_decade.2016-2025.sd_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 6, col 4"
+    },
+    {
+      "draft_value": "1,450",
+      "source_key": "summary_statistics.json.by_decade.2016-2025.min_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 6, col 5"
+    },
+    {
+      "draft_value": "2,227",
+      "source_key": "summary_statistics.json.by_decade.2016-2025.max_annual_m50",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 6, col 6"
+    },
+    {
+      "draft_value": "36.1",
+      "source_key": "estimation_results.json.counts.m5.summary.decades.2016-2025.dispersion_index",
+      "table_context": "tab:counts_m5 (Yearly number of earthquakes with $M\\geq 5$ by decade...), row 6, col 7"
+    },
+    {
+      "draft_value": "10",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 2, col 2"
+    },
+    {
+      "draft_value": "2002.2",
+      "source_key": "summary_statistics.json.by_decade.2006-2015.mean_annual_m50",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 2, col 3"
+    },
+    {
+      "draft_value": "236.8",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1976-1985.sd",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 2, col 4"
+    },
+    {
+      "draft_value": "1,587",
+      "source_key": "estimation_results.json.statistics.annual_count_common_m4.9.p5",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 2, col 5"
+    },
+    {
+      "draft_value": "2,312",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1976-1985.max",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 2, col 6"
+    },
+    {
+      "draft_value": "28.0",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1976-1985.dispersion_index",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 2, col 7"
+    },
+    {
+      "draft_value": "10",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 3, col 2"
+    },
+    {
+      "draft_value": "2056.2",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1986-1995.mean",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 3, col 3"
+    },
+    {
+      "draft_value": "126.1",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1986-1995.sd",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 3, col 4"
+    },
+    {
+      "draft_value": "1,852",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1986-1995.min",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 3, col 5"
+    },
+    {
+      "draft_value": "2,256",
+      "source_key": "estimation_results.json.statistics.annual_count_m5.p95",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 3, col 6"
+    },
+    {
+      "draft_value": "7.7",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1986-1995.dispersion_index",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 3, col 7"
+    },
+    {
+      "draft_value": "10",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 4, col 2"
+    },
+    {
+      "draft_value": "1716.0",
+      "source_key": "summary_statistics.json.by_decade.2016-2025.median_annual_m50",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 4, col 3"
+    },
+    {
+      "draft_value": "298.5",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1996-2005.sd",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 4, col 4"
+    },
+    {
+      "draft_value": "1,285",
+      "source_key": "estimation_results.json.statistics.annual_count_common_m4.9.min",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 4, col 5"
+    },
+    {
+      "draft_value": "2,338",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1996-2005.max",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 4, col 6"
+    },
+    {
+      "draft_value": "51.9",
+      "source_key": "estimation_results.json.counts.common.summary.decades.1996-2005.dispersion_index",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 4, col 7"
+    },
+    {
+      "draft_value": "10",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 5, col 2"
+    },
+    {
+      "draft_value": "2633.7",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2006-2015.mean",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 5, col 3"
+    },
+    {
+      "draft_value": "465.5",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2006-2015.sd",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 5, col 4"
+    },
+    {
+      "draft_value": "2,099",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2006-2015.min",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 5, col 5"
+    },
+    {
+      "draft_value": "3,622",
+      "source_key": "estimation_results.json.statistics.annual_count_common_m4.9.max",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 5, col 6"
+    },
+    {
+      "draft_value": "82.3",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2006-2015.dispersion_index",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 5, col 7"
+    },
+    {
+      "draft_value": "10",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 6, col 2"
+    },
+    {
+      "draft_value": "2448.8",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2016-2025.mean",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 6, col 3"
+    },
+    {
+      "draft_value": "341.6",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2016-2025.sd",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 6, col 4"
+    },
+    {
+      "draft_value": "2,092",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2016-2025.min",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 6, col 5"
+    },
+    {
+      "draft_value": "3,099",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2016-2025.max",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 6, col 6"
+    },
+    {
+      "draft_value": "47.7",
+      "source_key": "estimation_results.json.counts.common.summary.decades.2016-2025.dispersion_index",
+      "table_context": "tab:counts_common (Yearly number of earthquakes at the common threshold $M\\geq ...), row 6, col 7"
+    },
+    {
+      "draft_value": "4.7",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 2, col 2"
+    },
+    {
+      "draft_value": "4.7",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 2, col 3"
+    },
+    {
+      "draft_value": "4.9",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 2, col 4"
+    },
+    {
+      "draft_value": "4.7",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 3, col 2"
+    },
+    {
+      "draft_value": "4.5",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 3, col 3"
+    },
+    {
+      "draft_value": "4.7",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 3, col 4"
+    },
+    {
+      "draft_value": "4.5",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 4, col 2"
+    },
+    {
+      "draft_value": "4.5",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 4, col 3"
+    },
+    {
+      "draft_value": "4.5",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 4, col 4"
+    },
+    {
+      "draft_value": "4.5",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 5, col 2"
+    },
+    {
+      "draft_value": "4.5",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 5, col 3"
+    },
+    {
+      "draft_value": "4.5",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 5, col 4"
+    },
+    {
+      "draft_value": "4.5",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 6, col 2"
+    },
+    {
+      "draft_value": "4.5",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 6, col 3"
+    },
+    {
+      "draft_value": "4.5",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "table_context": "tab:completeness (Completeness magnitude $M_c$ by decade and rule...), row 6, col 4"
+    },
+    {
+      "draft_value": "4.9",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 2, col 2"
+    },
+    {
+      "draft_value": "20,023",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.n",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 2, col 3"
+    },
+    {
+      "draft_value": "1.123",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 2, col 4"
+    },
+    {
+      "draft_value": "0.0077",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 2, col 5"
+    },
+    {
+      "draft_value": "1.107",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 2, col 6"
+    },
+    {
+      "draft_value": "1.138",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_hi",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 2, col 7"
+    },
+    {
+      "draft_value": "4.9",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 3, col 2"
+    },
+    {
+      "draft_value": "20,569",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.n",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 3, col 3"
+    },
+    {
+      "draft_value": "1.020",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 3, col 4"
+    },
+    {
+      "draft_value": "0.0070",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 3, col 5"
+    },
+    {
+      "draft_value": "1.006",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.boot_lo",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 3, col 6"
+    },
+    {
+      "draft_value": "1.034",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.boot_hi",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 3, col 7"
+    },
+    {
+      "draft_value": "4.9",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 4, col 2"
+    },
+    {
+      "draft_value": "17,169",
+      "source_key": "estimation_results.json.b_values.decade_common_threshold.1996-2005.n",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 4, col 3"
+    },
+    {
+      "draft_value": "0.924",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 4, col 4"
+    },
+    {
+      "draft_value": "0.0065",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 4, col 5"
+    },
+    {
+      "draft_value": "0.912",
+      "source_key": "estimation_results.json.b_values.decade_common_threshold.1996-2005.boot_lo",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 4, col 6"
+    },
+    {
+      "draft_value": "0.936",
+      "source_key": "estimation_results.json.b_values.decade_common_threshold.1996-2005.boot_hi",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 4, col 7"
+    },
+    {
+      "draft_value": "4.9",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 5, col 2"
+    },
+    {
+      "draft_value": "26,344",
+      "source_key": "estimation_results.json.b_values.decade_common_threshold.2006-2015.n",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 5, col 3"
+    },
+    {
+      "draft_value": "1.145",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 5, col 4"
+    },
+    {
+      "draft_value": "0.0075",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 5, col 5"
+    },
+    {
+      "draft_value": "1.130",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 5, col 6"
+    },
+    {
+      "draft_value": "1.160",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.boot_hi",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 5, col 7"
+    },
+    {
+      "draft_value": "4.9",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 6, col 2"
+    },
+    {
+      "draft_value": "24,495",
+      "source_key": "estimation_results.json.b_values.decade_common_threshold.2016-2025.n",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 6, col 3"
+    },
+    {
+      "draft_value": "1.220",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_lo",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 6, col 4"
+    },
+    {
+      "draft_value": "0.0085",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 6, col 5"
+    },
+    {
+      "draft_value": "1.204",
+      "source_key": "estimation_results.json.b_values.decade_common_threshold.2016-2025.boot_lo",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 6, col 6"
+    },
+    {
+      "draft_value": "1.236",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_hi",
+      "table_context": "tab:bvalues_common (Maximum-likelihood $b$-value by decade at the common thresho...), row 6, col 7"
+    },
+    {
+      "draft_value": "1",
+      "source_key": "summary_statistics.json.sample_flow[3].dropped",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 2, col 1"
+    },
+    {
+      "draft_value": "1.123",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 2, col 4"
+    },
+    {
+      "draft_value": "1.020",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 2, col 5"
+    },
+    {
+      "draft_value": "93.5",
+      "source_key": "summary_statistics.json.by_decade.1986-1995.sd_annual_m50",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 2, col 6"
+    },
+    {
+      "draft_value": "91.5",
+      "source_key": "estimation_results.json.b_equality_tests.maxc_plus_0.2[0].delta_aic_utsu",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 2, col 7"
+    },
+    {
+      "draft_value": "2",
+      "source_key": "summary_statistics.json.removed_by_type_all_decades.landslide",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 3, col 1"
+    },
+    {
+      "draft_value": "1.123",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 3, col 4"
+    },
+    {
+      "draft_value": "0.924",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 3, col 5"
+    },
+    {
+      "draft_value": "353.3",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[1].lr_stat",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 3, col 6"
+    },
+    {
+      "draft_value": "351.3",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[1].delta_aic_utsu",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 3, col 7"
+    },
+    {
+      "draft_value": "3",
+      "source_key": "summary_statistics.json.removed_by_type_all_decades.rock burst",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 4, col 1"
+    },
+    {
+      "draft_value": "1.123",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 4, col 4"
+    },
+    {
+      "draft_value": "1.145",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 4, col 5"
+    },
+    {
+      "draft_value": "4.4",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[2].lr_stat",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 4, col 6"
+    },
+    {
+      "draft_value": "2.4",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[2].delta_aic_utsu",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 4, col 7"
+    },
+    {
+      "draft_value": "4",
+      "source_key": "summary_statistics.json.removed_by_type_all_decades.mine collapse",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 5, col 1"
+    },
+    {
+      "draft_value": "1.123",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 5, col 4"
+    },
+    {
+      "draft_value": "1.220",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_lo",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 5, col 5"
+    },
+    {
+      "draft_value": "76.5",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[3].lr_stat",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 5, col 6"
+    },
+    {
+      "draft_value": "74.5",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[3].delta_aic_utsu",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 5, col 7"
+    },
+    {
+      "draft_value": "5",
+      "source_key": "summary_statistics.json.outcome.mag.p75",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 6, col 1"
+    },
+    {
+      "draft_value": "1.020",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 6, col 4"
+    },
+    {
+      "draft_value": "0.924",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 6, col 5"
+    },
+    {
+      "draft_value": "92.2",
+      "source_key": "estimation_results.json.counts.common.summary.overall.dispersion_index",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 6, col 6"
+    },
+    {
+      "draft_value": "90.2",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[4].delta_aic_utsu",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 6, col 7"
+    },
+    {
+      "draft_value": "6",
+      "source_key": "summary_statistics.json.type_by_decade.1996-2005.nuclear explosion",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 7, col 1"
+    },
+    {
+      "draft_value": "1.020",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 7, col 4"
+    },
+    {
+      "draft_value": "1.145",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 7, col 5"
+    },
+    {
+      "draft_value": "155.2",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[5].lr_stat",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 7, col 6"
+    },
+    {
+      "draft_value": "153.2",
+      "source_key": "summary_statistics.json.by_decade.1986-1995.mean_annual_m60",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 7, col 7"
+    },
+    {
+      "draft_value": "7",
+      "source_key": "estimation_results.json.distributions.annual_count_m5.bins[6].count",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 8, col 1"
+    },
+    {
+      "draft_value": "1.020",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 8, col 4"
+    },
+    {
+      "draft_value": "1.220",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_lo",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 8, col 5"
+    },
+    {
+      "draft_value": "360.5",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[6].lr_stat",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 8, col 6"
+    },
+    {
+      "draft_value": "358.5",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[6].delta_aic_utsu",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 8, col 7"
+    },
+    {
+      "draft_value": "8",
+      "source_key": "summary_statistics.json.magtype_counts_by_decade.2016-2025.mwp",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 9, col 1"
+    },
+    {
+      "draft_value": "0.924",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 9, col 4"
+    },
+    {
+      "draft_value": "1.145",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 9, col 5"
+    },
+    {
+      "draft_value": "486.1",
+      "source_key": "summary_statistics.json.by_decade.1996-2005.mean_annual_m55",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 9, col 6"
+    },
+    {
+      "draft_value": "484.1",
+      "source_key": "summary_statistics.json.by_decade.1996-2005.mean_annual_m55",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 9, col 7"
+    },
+    {
+      "draft_value": "9",
+      "source_key": "summary_statistics.json.type_by_decade.1976-1985.explosion",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 10, col 1"
+    },
+    {
+      "draft_value": "0.924",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 10, col 4"
+    },
+    {
+      "draft_value": "1.220",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_lo",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 10, col 5"
+    },
+    {
+      "draft_value": "792.6",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[8].delta_aic_utsu",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 10, col 6"
+    },
+    {
+      "draft_value": "790.6",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[8].delta_aic_utsu",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 10, col 7"
+    },
+    {
+      "draft_value": "10",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 11, col 1"
+    },
+    {
+      "draft_value": "1.145",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 11, col 4"
+    },
+    {
+      "draft_value": "1.220",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_lo",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 11, col 5"
+    },
+    {
+      "draft_value": "51.2",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[9].lr_stat",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 11, col 6"
+    },
+    {
+      "draft_value": "49.2",
+      "source_key": "estimation_results.json.b_equality_tests.common_threshold[9].delta_aic_utsu",
+      "table_context": "tab:tests_common (Pairwise Utsu tests of equal $b$ at the common threshold $M_...), row 11, col 7"
+    },
+    {
+      "draft_value": "4.9",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 2, col 2"
+    },
+    {
+      "draft_value": "20,023",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.n",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 2, col 3"
+    },
+    {
+      "draft_value": "1.123",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 2, col 4"
+    },
+    {
+      "draft_value": "0.0077",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 2, col 5"
+    },
+    {
+      "draft_value": "1.108",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 2, col 6"
+    },
+    {
+      "draft_value": "1.138",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_hi",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 2, col 7"
+    },
+    {
+      "draft_value": "4.7",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 3, col 2"
+    },
+    {
+      "draft_value": "31,521",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.1986-1995.n",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 3, col 3"
+    },
+    {
+      "draft_value": "0.981",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.1986-1995.dispersion_index",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 3, col 4"
+    },
+    {
+      "draft_value": "0.0053",
+      "source_key": "summary_statistics.json.missingness_pct.magType",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 3, col 5"
+    },
+    {
+      "draft_value": "0.971",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.1986-1995.boot_lo",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 3, col 6"
+    },
+    {
+      "draft_value": "0.992",
+      "source_key": "summary_statistics.json.reviewed_share_by_year_min",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 3, col 7"
+    },
+    {
+      "draft_value": "4.5",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 4, col 2"
+    },
+    {
+      "draft_value": "50,975",
+      "source_key": "summary_statistics.json.by_decade.1996-2005.n_events_m45",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 4, col 3"
+    },
+    {
+      "draft_value": "1.055",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 4, col 4"
+    },
+    {
+      "draft_value": "0.0048",
+      "source_key": "summary_statistics.json.sample_flow[0].dropped",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 4, col 5"
+    },
+    {
+      "draft_value": "1.046",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.boot_lo",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 4, col 6"
+    },
+    {
+      "draft_value": "1.066",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.boot_hi",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 4, col 7"
+    },
+    {
+      "draft_value": "4.5",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 5, col 2"
+    },
+    {
+      "draft_value": "73,390",
+      "source_key": "summary_statistics.json.type_by_decade.2006-2015.earthquake",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 5, col 3"
+    },
+    {
+      "draft_value": "1.108",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 5, col 4"
+    },
+    {
+      "draft_value": "0.0040",
+      "source_key": "summary_statistics.json.sample_flow[0].dropped",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 5, col 5"
+    },
+    {
+      "draft_value": "1.100",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2006-2015.boot_lo",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 5, col 6"
+    },
+    {
+      "draft_value": "1.116",
+      "source_key": "estimation_results.json.counts.m7.trend.negbin.ci_hi",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 5, col 7"
+    },
+    {
+      "draft_value": "4.5",
+      "source_key": "summary_statistics.json.outcome.mag.min",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 6, col 2"
+    },
+    {
+      "draft_value": "74,359",
+      "source_key": "summary_statistics.json.type_by_decade.2016-2025.earthquake",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 6, col 3"
+    },
+    {
+      "draft_value": "1.226",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.b",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 6, col 4"
+    },
+    {
+      "draft_value": "0.0047",
+      "source_key": "summary_statistics.json.sample_flow[0].dropped",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 6, col 5"
+    },
+    {
+      "draft_value": "1.218",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_lo",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 6, col 6"
+    },
+    {
+      "draft_value": "1.235",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_hi",
+      "table_context": "tab:bvalues_gft95 (Maximum-likelihood $b$-value by decade, $M_c$ from the 95\\% ...), row 6, col 7"
+    },
+    {
+      "draft_value": "1",
+      "source_key": "summary_statistics.json.sample_flow[3].dropped",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 2, col 1"
+    },
+    {
+      "draft_value": "1.123",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 2, col 4"
+    },
+    {
+      "draft_value": "0.981",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.1986-1995.dispersion_index",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 2, col 5"
+    },
+    {
+      "draft_value": "219.7",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[0].lr_stat",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 2, col 6"
+    },
+    {
+      "draft_value": "217.7",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[0].delta_aic_utsu",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 2, col 7"
+    },
+    {
+      "draft_value": "2",
+      "source_key": "summary_statistics.json.removed_by_type_all_decades.landslide",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 3, col 1"
+    },
+    {
+      "draft_value": "1.123",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 3, col 4"
+    },
+    {
+      "draft_value": "1.055",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 3, col 5"
+    },
+    {
+      "draft_value": "54.3",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[1].lr_stat",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 3, col 6"
+    },
+    {
+      "draft_value": "52.3",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[1].delta_aic_utsu",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 3, col 7"
+    },
+    {
+      "draft_value": "3",
+      "source_key": "summary_statistics.json.removed_by_type_all_decades.rock burst",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 4, col 1"
+    },
+    {
+      "draft_value": "1.123",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 4, col 4"
+    },
+    {
+      "draft_value": "1.108",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 4, col 5"
+    },
+    {
+      "draft_value": "2.6",
+      "source_key": "estimation_results.json.counts.m6.summary.decades.2016-2025.dispersion_index",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 4, col 6"
+    },
+    {
+      "draft_value": "0.6",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.slope_pct_per_year",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 4, col 7"
+    },
+    {
+      "draft_value": "4",
+      "source_key": "summary_statistics.json.removed_by_type_all_decades.mine collapse",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 5, col 1"
+    },
+    {
+      "draft_value": "1.123",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 5, col 4"
+    },
+    {
+      "draft_value": "1.226",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.b",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 5, col 5"
+    },
+    {
+      "draft_value": "124.8",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[3].lr_stat",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 5, col 6"
+    },
+    {
+      "draft_value": "122.8",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[3].delta_aic_utsu",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 5, col 7"
+    },
+    {
+      "draft_value": "5",
+      "source_key": "summary_statistics.json.outcome.mag.p75",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 6, col 1"
+    },
+    {
+      "draft_value": "0.981",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.1986-1995.dispersion_index",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 6, col 4"
+    },
+    {
+      "draft_value": "1.055",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 6, col 5"
+    },
+    {
+      "draft_value": "104.2",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[4].lr_stat",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 6, col 6"
+    },
+    {
+      "draft_value": "102.2",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[4].delta_aic_utsu",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 6, col 7"
+    },
+    {
+      "draft_value": "6",
+      "source_key": "summary_statistics.json.type_by_decade.1996-2005.nuclear explosion",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 7, col 1"
+    },
+    {
+      "draft_value": "0.981",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.1986-1995.dispersion_index",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 7, col 4"
+    },
+    {
+      "draft_value": "1.108",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 7, col 5"
+    },
+    {
+      "draft_value": "332.2",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[5].lr_stat",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 7, col 6"
+    },
+    {
+      "draft_value": "330.2",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[5].delta_aic_utsu",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 7, col 7"
+    },
+    {
+      "draft_value": "7",
+      "source_key": "estimation_results.json.distributions.annual_count_m5.bins[6].count",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 8, col 1"
+    },
+    {
+      "draft_value": "0.981",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.1986-1995.dispersion_index",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 8, col 4"
+    },
+    {
+      "draft_value": "1.226",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.b",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 8, col 5"
+    },
+    {
+      "draft_value": "1131.5",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[6].delta_aic_utsu",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 8, col 6"
+    },
+    {
+      "draft_value": "1129.5",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[6].delta_aic_utsu",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 8, col 7"
+    },
+    {
+      "draft_value": "8",
+      "source_key": "summary_statistics.json.magtype_counts_by_decade.2016-2025.mwp",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 9, col 1"
+    },
+    {
+      "draft_value": "1.055",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 9, col 4"
+    },
+    {
+      "draft_value": "1.108",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 9, col 5"
+    },
+    {
+      "draft_value": "71.9",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[7].lr_stat",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 9, col 6"
+    },
+    {
+      "draft_value": "69.9",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[7].delta_aic_utsu",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 9, col 7"
+    },
+    {
+      "draft_value": "9",
+      "source_key": "summary_statistics.json.type_by_decade.1976-1985.explosion",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 10, col 1"
+    },
+    {
+      "draft_value": "1.055",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 10, col 4"
+    },
+    {
+      "draft_value": "1.226",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.b",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 10, col 5"
+    },
+    {
+      "draft_value": "685.7",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[8].delta_aic_utsu",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 10, col 6"
+    },
+    {
+      "draft_value": "683.7",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[8].delta_aic_utsu",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 10, col 7"
+    },
+    {
+      "draft_value": "10",
+      "source_key": "estimation_results.json.statistics.depth_km.p5",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 11, col 1"
+    },
+    {
+      "draft_value": "1.108",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 11, col 4"
+    },
+    {
+      "draft_value": "1.226",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.b",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 11, col 5"
+    },
+    {
+      "draft_value": "377.5",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[9].lr_stat",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 11, col 6"
+    },
+    {
+      "draft_value": "375.5",
+      "source_key": "estimation_results.json.b_equality_tests.gft95[9].delta_aic_utsu",
+      "table_context": "tab:tests_gft95 (Pairwise Utsu tests of equal $b$ with decade-specific $M_c$ ...), row 11, col 7"
+    },
+    {
+      "draft_value": "0.912",
+      "source_key": "estimation_results.json.b_values.decade_common_threshold.1996-2005.boot_lo",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 2, col 2"
+    },
+    {
+      "draft_value": "0.927",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 2, col 3"
+    },
+    {
+      "draft_value": "0.849",
+      "source_key": "estimation_results.json.mc_sensitivity_shift.-0.3.1996-2005.b",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 2, col 4"
+    },
+    {
+      "draft_value": "0.883",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.mb",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 2, col 5"
+    },
+    {
+      "draft_value": "0.956",
+      "source_key": "estimation_results.json.mc_sensitivity_shift.-0.3.2016-2025.b",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 2, col 6"
+    },
+    {
+      "draft_value": "0.996",
+      "source_key": "summary_statistics.json.sample_flow[3].dropped",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 3, col 2"
+    },
+    {
+      "draft_value": "0.981",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.1986-1995.dispersion_index",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 3, col 3"
+    },
+    {
+      "draft_value": "1.055",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 3, col 4"
+    },
+    {
+      "draft_value": "1.108",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 3, col 5"
+    },
+    {
+      "draft_value": "1.226",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.b",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 3, col 6"
+    },
+    {
+      "draft_value": "1.066",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.boot_hi",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 4, col 2"
+    },
+    {
+      "draft_value": "1.014",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 4, col 3"
+    },
+    {
+      "draft_value": "1.072",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.boot_hi",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 4, col 4"
+    },
+    {
+      "draft_value": "1.144",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 4, col 5"
+    },
+    {
+      "draft_value": "1.212",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_lo",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 4, col 6"
+    },
+    {
+      "draft_value": "1.123",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 5, col 2"
+    },
+    {
+      "draft_value": "1.020",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 5, col 3"
+    },
+    {
+      "draft_value": "1.055",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 5, col 4"
+    },
+    {
+      "draft_value": "1.149",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 5, col 5"
+    },
+    {
+      "draft_value": "1.162",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.boot_hi",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 5, col 6"
+    },
+    {
+      "draft_value": "0.1",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.1976-1985.mw_family",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 6, col 1"
+    },
+    {
+      "draft_value": "1.166",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.boot_hi",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 6, col 2"
+    },
+    {
+      "draft_value": "1.015",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 6, col 3"
+    },
+    {
+      "draft_value": "1.003",
+      "source_key": "summary_statistics.json.sample_flow[3].dropped",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 6, col 4"
+    },
+    {
+      "draft_value": "1.147",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 6, col 5"
+    },
+    {
+      "draft_value": "1.173",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2016-2025.boot_hi",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 6, col 6"
+    },
+    {
+      "draft_value": "1.191",
+      "source_key": "estimation_results.json.mc_sensitivity_shift.+0.1.2016-2025.boot_hi",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 7, col 2"
+    },
+    {
+      "draft_value": "1.019",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 7, col 3"
+    },
+    {
+      "draft_value": "0.924",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 7, col 4"
+    },
+    {
+      "draft_value": "1.145",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 7, col 5"
+    },
+    {
+      "draft_value": "1.220",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.2016-2025.boot_lo",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 7, col 6"
+    },
+    {
+      "draft_value": "0.3",
+      "source_key": "estimation_results.json.counts.m7.trend.spearman_year.rho",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 8, col 1"
+    },
+    {
+      "draft_value": "1.175",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2016-2025.boot_hi",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 8, col 2"
+    },
+    {
+      "draft_value": "1.035",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.boot_hi",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 8, col 3"
+    },
+    {
+      "draft_value": "0.927",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 8, col 4"
+    },
+    {
+      "draft_value": "1.129",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 8, col 5"
+    },
+    {
+      "draft_value": "1.150",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "table_context": "tab:mc_shift (Sensitivity of the $b$-value to shifts of the maximum-curvat...), row 8, col 6"
+    },
+    {
+      "draft_value": "5.6",
+      "source_key": "estimation_results.json.b_equality_tests.maxc_plus_0.2[2].delta_aic_utsu",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 2, col 2"
+    },
+    {
+      "draft_value": "857",
+      "source_key": "estimation_results.json.checks.mw_family_only.b_own_mc.1976-1985.n",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 2, col 3"
+    },
+    {
+      "draft_value": "0.835",
+      "source_key": "estimation_results.json.checks.mw_family_only.b_own_mc.1976-1985.b",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 2, col 4"
+    },
+    {
+      "draft_value": "0.0251",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1986-1995.ms",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 2, col 5"
+    },
+    {
+      "draft_value": "0.790",
+      "source_key": "estimation_results.json.checks.mw_family_only.b_own_mc.1976-1985.boot_lo",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 2, col 6"
+    },
+    {
+      "draft_value": "0.883",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.mb",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 2, col 7"
+    },
+    {
+      "draft_value": "5.6",
+      "source_key": "estimation_results.json.b_equality_tests.maxc_plus_0.2[2].delta_aic_utsu",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 3, col 2"
+    },
+    {
+      "draft_value": "3,522",
+      "source_key": "estimation_results.json.checks.mw_family_only.b_own_mc.1986-1995.n",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 3, col 3"
+    },
+    {
+      "draft_value": "0.975",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.1986-1995.boot_lo",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 3, col 4"
+    },
+    {
+      "draft_value": "0.0155",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 3, col 5"
+    },
+    {
+      "draft_value": "0.947",
+      "source_key": "estimation_results.json.counts.common.trend.poisson.ci_hi",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 3, col 6"
+    },
+    {
+      "draft_value": "1.006",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.boot_lo",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 3, col 7"
+    },
+    {
+      "draft_value": "5.4",
+      "source_key": "estimation_results.json.checks.mw_family_only.mc_maxc_plus_0.2.1996-2005",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 4, col 2"
+    },
+    {
+      "draft_value": "5,922",
+      "source_key": "estimation_results.json.checks.mw_family_only.b_own_mc.1996-2005.n",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 4, col 3"
+    },
+    {
+      "draft_value": "1.032",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.boot_hi",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 4, col 4"
+    },
+    {
+      "draft_value": "0.0135",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 4, col 5"
+    },
+    {
+      "draft_value": "1.006",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.boot_lo",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 4, col 6"
+    },
+    {
+      "draft_value": "1.059",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 4, col 7"
+    },
+    {
+      "draft_value": "5.2",
+      "source_key": "estimation_results.json.mc_sensitivity_shift.+0.3.1976-1985.mc",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 5, col 2"
+    },
+    {
+      "draft_value": "8,788",
+      "source_key": "estimation_results.json.checks.mw_family_only.b_own_mc.2006-2015.n",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 5, col 3"
+    },
+    {
+      "draft_value": "0.921",
+      "source_key": "estimation_results.json.counts.m6.trend.negbin.ci_hi",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 5, col 4"
+    },
+    {
+      "draft_value": "0.0094",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 5, col 5"
+    },
+    {
+      "draft_value": "0.904",
+      "source_key": "estimation_results.json.mc_sensitivity_shift.-0.3.1976-1985.boot_lo",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 5, col 6"
+    },
+    {
+      "draft_value": "0.939",
+      "source_key": "estimation_results.json.counts.common.trend.poisson.ci_hi",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 5, col 7"
+    },
+    {
+      "draft_value": "5.4",
+      "source_key": "estimation_results.json.checks.mw_family_only.mc_maxc_plus_0.2.1996-2005",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 6, col 2"
+    },
+    {
+      "draft_value": "5,288",
+      "source_key": "estimation_results.json.checks.mw_family_only.b_own_mc.2016-2025.n",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 6, col 3"
+    },
+    {
+      "draft_value": "0.995",
+      "source_key": "summary_statistics.json.reviewed_share_by_year_min",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 6, col 4"
+    },
+    {
+      "draft_value": "0.0133",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 6, col 5"
+    },
+    {
+      "draft_value": "0.970",
+      "source_key": "estimation_results.json.b_values.decade_mc_gft95.1986-1995.boot_lo",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 6, col 6"
+    },
+    {
+      "draft_value": "1.023",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.b",
+      "table_context": "tab:check_mw (Check: $b$-value of the moment-magnitude-family sample at it...), row 6, col 7"
+    },
+    {
+      "draft_value": "4.9",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 2, col 2"
+    },
+    {
+      "draft_value": "14,635",
+      "source_key": "estimation_results.json.checks.shallow_depth_le_70km.b_common_threshold.1976-1985.n",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 2, col 3"
+    },
+    {
+      "draft_value": "1.086",
+      "source_key": "estimation_results.json.counts.m7.summary.overall.dispersion_index",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 2, col 4"
+    },
+    {
+      "draft_value": "0.0088",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 2, col 5"
+    },
+    {
+      "draft_value": "1.069",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.boot_hi",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 2, col 6"
+    },
+    {
+      "draft_value": "1.103",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_lo",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 2, col 7"
+    },
+    {
+      "draft_value": "4.9",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc_plus_0.2",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 3, col 2"
+    },
+    {
+      "draft_value": "15,356",
+      "source_key": "estimation_results.json.checks.shallow_depth_le_70km.b_common_threshold.1986-1995.n",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 3, col 3"
+    },
+    {
+      "draft_value": "0.995",
+      "source_key": "summary_statistics.json.reviewed_share_by_year_min",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 3, col 4"
+    },
+    {
+      "draft_value": "0.0078",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 3, col 5"
+    },
+    {
+      "draft_value": "0.979",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.1986-1995.dispersion_index",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 3, col 6"
+    },
+    {
+      "draft_value": "1.012",
+      "source_key": "estimation_results.json.counts.m7.summary.decades.2006-2015.dispersion_index",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 3, col 7"
+    },
+    {
+      "draft_value": "4.7",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 4, col 2"
+    },
+    {
+      "draft_value": "24,878",
+      "source_key": "estimation_results.json.checks.shallow_depth_le_70km.b_own_mc.1996-2005.n",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 4, col 3"
+    },
+    {
+      "draft_value": "1.045",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.boot_lo",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 4, col 4"
+    },
+    {
+      "draft_value": "0.0068",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 4, col 5"
+    },
+    {
+      "draft_value": "1.031",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1986-1995.boot_hi",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 4, col 6"
+    },
+    {
+      "draft_value": "1.058",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1996-2005.b",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 4, col 7"
+    },
+    {
+      "draft_value": "4.7",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 5, col 2"
+    },
+    {
+      "draft_value": "36,609",
+      "source_key": "estimation_results.json.checks.shallow_depth_le_70km.b_own_mc.2006-2015.n",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 5, col 3"
+    },
+    {
+      "draft_value": "1.134",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.1976-1985.boot_hi",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 5, col 4"
+    },
+    {
+      "draft_value": "0.0060",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 5, col 5"
+    },
+    {
+      "draft_value": "1.122",
+      "source_key": "estimation_results.json.counts.m7.trend.poisson.ci_hi",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 5, col 6"
+    },
+    {
+      "draft_value": "1.146",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 5, col 7"
+    },
+    {
+      "draft_value": "4.7",
+      "source_key": "estimation_results.json.completeness.per_decade.1976-1985.maxc",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 6, col 2"
+    },
+    {
+      "draft_value": "33,086",
+      "source_key": "estimation_results.json.checks.shallow_depth_le_70km.b_own_mc.2016-2025.n",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 6, col 3"
+    },
+    {
+      "draft_value": "1.164",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.boot_hi",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 6, col 4"
+    },
+    {
+      "draft_value": "0.0064",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m45.1976-1985.ml_md",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 6, col 5"
+    },
+    {
+      "draft_value": "1.152",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2006-2015.b",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 6, col 6"
+    },
+    {
+      "draft_value": "1.176",
+      "source_key": "estimation_results.json.b_values.decade_mc_maxc_plus_0.2.2016-2025.boot_hi",
+      "table_context": "tab:check_shallow (Check: $b$-value of shallow events (depth $\\leq 70$ km) at t...), row 6, col 7"
+    }
+  ],
+  "source_files_found": [
+    "/private/tmp/e2er-demos3/studies/workspaces/2026-10-14-how-has-the-yearly-number-of-magnitude-5/data_quality.json",
+    "/private/tmp/e2er-demos3/studies/workspaces/2026-10-14-how-has-the-yearly-number-of-magnitude-5/estimation_results.json",
+    "/private/tmp/e2er-demos3/studies/workspaces/2026-10-14-how-has-the-yearly-number-of-magnitude-5/figure_spec.json",
+    "/private/tmp/e2er-demos3/studies/workspaces/2026-10-14-how-has-the-yearly-number-of-magnitude-5/summary_statistics.json"
+  ],
+  "source_files_missing": [
+    "robustness_results.json"
+  ],
+  "skipped_reason": null,
+  "prose_total": 251,
+  "prose_matched": 248,
+  "prose_mismatched": 2,
+  "prose_unverifiable": 1,
+  "prose_excluded": 97,
+  "prose_mismatches": [
+    {
+      "draft_value": "909",
+      "source_key": "estimation_results.json.distributions.magnitude.bins[5].count",
+      "source_value": "478.0",
+      "table_context": "prose: \u2026use magnitudes binned to 0.1; 909 events carry magnit\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "0.14",
+      "source_key": "summary_statistics.json.magclass_share_by_decade_m50.1976-1985.ms",
+      "source_value": "0.11611003195688953",
+      "table_context": "prose: \u2026ecades, a difference of about 0.14 between the lowest\u2026",
+      "severity": "major"
+    }
+  ],
+  "table_spec_unresolved": [],
+  "rendered_tables": [
+    "bvalues_common.tex",
+    "bvalues_gft95.tex",
+    "check_mw.tex",
+    "check_shallow.tex",
+    "completeness.tex",
+    "counts_common.tex",
+    "counts_m5.tex",
+    "magtype_mix.tex",
+    "mc_shift.tex",
+    "summary.tex",
+    "tests_common.tex",
+    "tests_gft95.tex"
+  ],
+  "rendered_tables_not_in_draft": [],
+  "conclusive": true,
+  "tables_untraced": false,
+  "untraced_reason": ""
+}

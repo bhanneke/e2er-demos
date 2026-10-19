@@ -1,0 +1,434 @@
+{
+ "n_observations": 277946,
+ "n_units": 277946,
+ "time_coverage": {
+  "start_iso": "1976-01-01",
+  "end_iso": "2025-12-31",
+  "n_periods": 50,
+  "first_event": "1976-01-01T00:04:05.400Z",
+  "last_event": "2025-12-31T23:04:28.213Z"
+ },
+ "outcome": {
+  "mag": {
+   "mean": 4.86974520279546,
+   "sd": 0.4045058257094348,
+   "min": 4.5,
+   "p25": 4.6,
+   "median": 4.8,
+   "p75": 5.0,
+   "max": 9.1,
+   "n": 277946
+  },
+  "depth_km": {
+   "mean": 70.75828991388578,
+   "sd": 117.10425341656781,
+   "min": -3.0,
+   "median": 33.0,
+   "max": 700.9,
+   "n": 277946
+  },
+  "annual_count_m50": {
+   "mean": 1669.38,
+   "sd": 307.75599200055376,
+   "min": 1077,
+   "median": 1648.5,
+   "max": 2701,
+   "n_years": 50,
+   "total": 83469
+  }
+ },
+ "sample_flow": [
+  {
+   "step": "raw rows (5 tables, M>=4.5)",
+   "n": 278508,
+   "dropped": 0
+  },
+  {
+   "step": "drop repeated ids",
+   "n": 278508,
+   "dropped": 0
+  },
+  {
+   "step": "keep type == 'earthquake'",
+   "n": 277947,
+   "dropped": 561
+  },
+  {
+   "step": "drop null mag / mag < 4.5",
+   "n": 277946,
+   "dropped": 1
+  },
+  {
+   "step": "origin time within 1976-2025",
+   "n": 277946,
+   "dropped": 0
+  }
+ ],
+ "raw_rows_by_table": {
+  "usgs_raw_1976_1985": 37121,
+  "usgs_raw_1986_1995": 42573,
+  "usgs_raw_1996_2005": 50984,
+  "usgs_raw_2006_2015": 73394,
+  "usgs_raw_2016_2025": 74436
+ },
+ "removed_by_type_all_decades": {
+  "earthquake": 277947,
+  "nuclear explosion": 470,
+  "volcanic eruption": 71,
+  "explosion": 11,
+  "mine collapse": 4,
+  "rock burst": 3,
+  "landslide": 2
+ },
+ "type_by_decade": {
+  "1976-1985": {
+   "earthquake": 36781,
+   "explosion": 9,
+   "landslide": 0,
+   "mine collapse": 2,
+   "nuclear explosion": 329,
+   "rock burst": 0,
+   "volcanic eruption": 0
+  },
+  "1986-1995": {
+   "earthquake": 42441,
+   "explosion": 0,
+   "landslide": 0,
+   "mine collapse": 1,
+   "nuclear explosion": 130,
+   "rock burst": 1,
+   "volcanic eruption": 0
+  },
+  "1996-2005": {
+   "earthquake": 50976,
+   "explosion": 1,
+   "landslide": 0,
+   "mine collapse": 0,
+   "nuclear explosion": 6,
+   "rock burst": 1,
+   "volcanic eruption": 0
+  },
+  "2006-2015": {
+   "earthquake": 73390,
+   "explosion": 1,
+   "landslide": 0,
+   "mine collapse": 0,
+   "nuclear explosion": 2,
+   "rock burst": 1,
+   "volcanic eruption": 0
+  },
+  "2016-2025": {
+   "earthquake": 74359,
+   "explosion": 0,
+   "landslide": 2,
+   "mine collapse": 1,
+   "nuclear explosion": 3,
+   "rock burst": 0,
+   "volcanic eruption": 71
+  }
+ },
+ "duplicates": {
+  "repeated_ids": 0,
+  "near_duplicate_pairs_flagged": 211,
+  "near_duplicate_by_net_pair": {
+   "us-us": 192,
+   "ci-ci": 6,
+   "ak-us": 6,
+   "ak-ak": 4,
+   "ci-us": 1,
+   "nc-nc": 1,
+   "nn-nn": 1
+  }
+ },
+ "missingness_counts_after_cleaning": {
+  "time": 0,
+  "latitude": 0,
+  "longitude": 0,
+  "depth": 0,
+  "mag": 0,
+  "magType": 1,
+  "net": 0
+ },
+ "missingness_pct": {
+  "time": 0.0,
+  "latitude": 0.0,
+  "longitude": 0.0,
+  "depth": 0.0,
+  "mag": 0.0,
+  "magType": 0.00035978211595058036,
+  "net": 0.0
+ },
+ "null_mag_after_dedup_and_type": 0,
+ "range_checks": {
+  "lat_out": 0,
+  "lon_out": 0,
+  "depth_out_of_[-5,800]": 0,
+  "depth_negative": 128,
+  "mag_gt_10": 0
+ },
+ "magtype_counts_by_decade": {
+  "1976-1985": {
+   "m": 0,
+   "ma": 2,
+   "mb": 32601,
+   "mb_lg": 0,
+   "mblg": 0,
+   "mc": 1,
+   "md": 113,
+   "mh": 2,
+   "ml": 277,
+   "ml(texnet)": 0,
+   "mlg": 0,
+   "mlr": 0,
+   "ms": 2132,
+   "ms_20": 0,
+   "mw": 1651,
+   "mwb": 0,
+   "mwc": 1,
+   "mwp": 0,
+   "mwr": 0,
+   "mww": 0
+  },
+  "1986-1995": {
+   "m": 4,
+   "ma": 0,
+   "mb": 32931,
+   "mb_lg": 1,
+   "mblg": 1,
+   "mc": 3,
+   "md": 198,
+   "mh": 5,
+   "ml": 319,
+   "ml(texnet)": 0,
+   "mlg": 0,
+   "mlr": 0,
+   "ms": 1167,
+   "ms_20": 0,
+   "mw": 7479,
+   "mwb": 319,
+   "mwc": 14,
+   "mwp": 0,
+   "mwr": 0,
+   "mww": 0
+  },
+  "1996-2005": {
+   "m": 51,
+   "ma": 0,
+   "mb": 38036,
+   "mb_lg": 0,
+   "mblg": 14,
+   "mc": 0,
+   "md": 328,
+   "mh": 3,
+   "ml": 390,
+   "ml(texnet)": 0,
+   "mlg": 2,
+   "mlr": 0,
+   "ms": 397,
+   "ms_20": 0,
+   "mw": 335,
+   "mwb": 1183,
+   "mwc": 10011,
+   "mwp": 0,
+   "mwr": 221,
+   "mww": 4
+  },
+  "2006-2015": {
+   "m": 247,
+   "ma": 0,
+   "mb": 56965,
+   "mb_lg": 1,
+   "mblg": 5,
+   "mc": 1,
+   "md": 135,
+   "mh": 5,
+   "ml": 515,
+   "ml(texnet)": 0,
+   "mlg": 1,
+   "mlr": 0,
+   "ms": 30,
+   "ms_20": 2,
+   "mw": 403,
+   "mwb": 1544,
+   "mwc": 10305,
+   "mwp": 0,
+   "mwr": 1283,
+   "mww": 1948
+  },
+  "2016-2025": {
+   "m": 0,
+   "ma": 0,
+   "mb": 60432,
+   "mb_lg": 0,
+   "mblg": 0,
+   "mc": 0,
+   "md": 20,
+   "mh": 0,
+   "ml": 319,
+   "ml(texnet)": 1,
+   "mlg": 0,
+   "mlr": 14,
+   "ms": 0,
+   "ms_20": 0,
+   "mw": 286,
+   "mwb": 127,
+   "mwc": 38,
+   "mwp": 8,
+   "mwr": 1915,
+   "mww": 11199
+  }
+ },
+ "magclass_share_by_decade_m45": {
+  "1976-1985": {
+   "mb": 0.8863543677442157,
+   "missing": 2.718795030042685e-05,
+   "ml_md": 0.010603300617166472,
+   "ms": 0.05796471004051005,
+   "mw_family": 0.044914493896305155,
+   "other": 0.00013593975150213424
+  },
+  "1986-1995": {
+   "mb": 0.7759477863386819,
+   "missing": 0.0,
+   "ml_md": 0.012181616832779624,
+   "ms": 0.02749699582950449,
+   "mw_family": 0.18406729341909944,
+   "other": 0.0003063075799344973
+  },
+  "1996-2005": {
+   "mb": 0.7461696910250123,
+   "missing": 0.0,
+   "ml_md": 0.014085335948994606,
+   "ms": 0.007788131436978912,
+   "mw_family": 0.23058361942128494,
+   "other": 0.0013732221677292791
+  },
+  "2006-2015": {
+   "mb": 0.7762092928191852,
+   "missing": 0.0,
+   "ml_md": 0.008856792478539311,
+   "ms": 0.00043602670663578147,
+   "mw_family": 0.21096879683880637,
+   "other": 0.003529091156833356
+  },
+  "2016-2025": {
+   "mb": 0.8127059266531287,
+   "missing": 0.0,
+   "ml_md": 0.004558963945184846,
+   "ms": 0.0,
+   "mw_family": 0.1825333853333154,
+   "other": 0.00020172406837101092
+  }
+ },
+ "magclass_share_by_decade_m50": {
+  "1976-1985": {
+   "mb": 0.775111222507676,
+   "ml_md": 0.005388808822607932,
+   "ms": 0.11611003195688953,
+   "mw_family": 0.10320195500971238,
+   "other": 0.0001879817031142302
+  },
+  "1986-1995": {
+   "mb": 0.47632001978483984,
+   "ml_md": 0.005317175714109064,
+   "ms": 0.03808581674292074,
+   "mw_family": 0.48002967725979967,
+   "other": 0.00024731049833065413
+  },
+  "1996-2005": {
+   "mb": 0.22033654537609665,
+   "ml_md": 0.0028764562059542644,
+   "ms": 0.010139508125988782,
+   "mw_family": 0.7663598446713649,
+   "other": 0.00028764562059542645
+  },
+  "2006-2015": {
+   "mb": 0.3618024889602569,
+   "ml_md": 0.002057406663990365,
+   "ms": 0.0012043356081894822,
+   "mw_family": 0.6339321557607387,
+   "other": 0.0010036130068245685
+  },
+  "2016-2025": {
+   "mb": 0.4103531025025711,
+   "ml_md": 0.003656724945720489,
+   "ms": 0.0,
+   "mw_family": 0.5859330362244315,
+   "other": 5.713632727688264e-05
+  }
+ },
+ "reviewed_share_by_year_min": 0.9945481579382125,
+ "reviewed_share_2025": 1.0,
+ "by_decade": {
+  "1976-1985": {
+   "n_events_m45": 36781,
+   "n_m50": 15959,
+   "mean_annual_m50": 1595.9,
+   "sd_annual_m50": 187.94470226934064,
+   "median_annual_m50": 1625.5,
+   "min_annual_m50": 1259,
+   "max_annual_m50": 1790,
+   "mean_annual_m55": 396.1,
+   "mean_annual_m60": 106.4,
+   "mean_annual_m70": 11.2,
+   "mean_mag": 4.973100785731764,
+   "median_depth_km": 33.0
+  },
+  "1986-1995": {
+   "n_events_m45": 42441,
+   "n_m50": 16174,
+   "mean_annual_m50": 1617.4,
+   "sd_annual_m50": 93.08920452984867,
+   "median_annual_m50": 1576.0,
+   "min_annual_m50": 1495,
+   "max_annual_m50": 1757,
+   "mean_annual_m55": 493.1,
+   "mean_annual_m60": 153.7,
+   "mean_annual_m70": 13.6,
+   "mean_mag": 4.953252750877689,
+   "median_depth_km": 33.0
+  },
+  "1996-2005": {
+   "n_events_m45": 50975,
+   "n_m50": 13906,
+   "mean_annual_m50": 1390.6,
+   "sd_annual_m50": 227.4848957134908,
+   "median_annual_m50": 1357.5,
+   "min_annual_m50": 1077,
+   "max_annual_m50": 1844,
+   "mean_annual_m55": 484.4,
+   "mean_annual_m60": 145.3,
+   "mean_annual_m70": 14.6,
+   "mean_mag": 4.861457969592938,
+   "median_depth_km": 33.0
+  },
+  "2006-2015": {
+   "n_events_m45": 73390,
+   "n_m50": 19928,
+   "mean_annual_m50": 1992.8,
+   "sd_annual_m50": 371.4361916190242,
+   "median_annual_m50": 1922.0,
+   "min_annual_m50": 1571,
+   "max_annual_m50": 2701,
+   "mean_annual_m55": 524.2,
+   "mean_annual_m60": 164.5,
+   "mean_annual_m70": 16.8,
+   "mean_mag": 4.841851887178089,
+   "median_depth_km": 33.23
+  },
+  "2016-2025": {
+   "n_events_m45": 74359,
+   "n_m50": 17502,
+   "mean_annual_m50": 1750.2,
+   "sd_annual_m50": 251.24746543774106,
+   "median_annual_m50": 1715.5,
+   "min_annual_m50": 1450,
+   "max_annual_m50": 2227,
+   "mean_annual_m55": 458.3,
+   "mean_annual_m60": 133.2,
+   "mean_annual_m70": 13.4,
+   "mean_mag": 4.804169638324708,
+   "median_depth_km": 11.369
+  }
+ }
+}
