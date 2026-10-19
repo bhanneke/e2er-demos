@@ -1,0 +1,455 @@
+{
+  "passed": true,
+  "total_values_in_tables": 72,
+  "matched": 72,
+  "mismatched": 0,
+  "unverifiable": 0,
+  "coverage": 1.0,
+  "mismatches": [],
+  "matched_cells": [
+    {
+      "draft_value": "0.621",
+      "source_key": "estimation_results.json.trend.seasonal_training_1981_2022.DJF.slope_per_decade",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 2, col 2"
+    },
+    {
+      "draft_value": "0.195",
+      "source_key": "estimation_results.json.trend.seasonal_training_1981_2022.DJF.se_per_decade",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 2, col 3"
+    },
+    {
+      "draft_value": "0.238",
+      "source_key": "estimation_results.json.trend.seasonal_training_1981_2022.DJF.ci_lower_per_decade",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 2, col 4"
+    },
+    {
+      "draft_value": "1.003",
+      "source_key": "summary_statistics.json.n_units",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 2, col 5"
+    },
+    {
+      "draft_value": "41",
+      "source_key": "estimation_results.json.trend.seasonal_training_1981_2022.DJF.n",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 2, col 6"
+    },
+    {
+      "draft_value": "0.377",
+      "source_key": "estimation_results.json.trend.seasonal_training_1981_2022.MAM.slope_per_decade",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 3, col 2"
+    },
+    {
+      "draft_value": "0.123",
+      "source_key": "estimation_results.json.trend.seasonal_training_1981_2022.MAM.se_per_decade",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 3, col 3"
+    },
+    {
+      "draft_value": "0.136",
+      "source_key": "estimation_results.json.trend.seasonal_training_1981_2022.MAM.ci_lower_per_decade",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 3, col 4"
+    },
+    {
+      "draft_value": "0.619",
+      "source_key": "estimation_results.json.trend.seasonal_training_1981_2022.DJF.slope_per_decade",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 3, col 5"
+    },
+    {
+      "draft_value": "42",
+      "source_key": "estimation_results.json.diagnostics.mann_kendall_annual.n_years",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 3, col 6"
+    },
+    {
+      "draft_value": "0.607",
+      "source_key": "estimation_results.json.trend.seasonal_training_1981_2022.JJA.slope_per_decade",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 4, col 2"
+    },
+    {
+      "draft_value": "0.133",
+      "source_key": "estimation_results.json.trend.seasonal_training_1981_2022.MAM.ci_lower_per_decade",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 4, col 3"
+    },
+    {
+      "draft_value": "0.347",
+      "source_key": "estimation_results.json.trend.deseasonalised_monthly_training_1981_2022.ci_lower_per_decade",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 4, col 4"
+    },
+    {
+      "draft_value": "0.867",
+      "source_key": "estimation_results.json.trend.seasonal_training_1981_2022.JJA.ci_upper_per_decade",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 4, col 5"
+    },
+    {
+      "draft_value": "42",
+      "source_key": "estimation_results.json.diagnostics.mann_kendall_annual.n_years",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 4, col 6"
+    },
+    {
+      "draft_value": "0.389",
+      "source_key": "estimation_results.json.trend.seasonal_training_1981_2022.SON.slope_per_decade",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 5, col 2"
+    },
+    {
+      "draft_value": "0.105",
+      "source_key": "estimation_results.json.trend.deseasonalised_monthly_training_1981_2022.r2",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 5, col 3"
+    },
+    {
+      "draft_value": "0.183",
+      "source_key": "estimation_results.json.trend.seasonal_training_1981_2022.SON.ci_lower_per_decade",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 5, col 4"
+    },
+    {
+      "draft_value": "0.595",
+      "source_key": "estimation_results.json.trend.seasonal_training_1981_2022.SON.ci_upper_per_decade",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 5, col 5"
+    },
+    {
+      "draft_value": "42",
+      "source_key": "estimation_results.json.diagnostics.mann_kendall_annual.n_years",
+      "table_context": "tab:seasons (Seasonal trends, training years 1981--2022, degrees Celsius ...), row 5, col 6"
+    },
+    {
+      "draft_value": "-6.868",
+      "source_key": "estimation_results.json.diagnostics.adf_seasonally_adjusted.statistic",
+      "table_context": "tab:diag (Stationarity and trend diagnostics on the training period (s...), row 2, col 2"
+    },
+    {
+      "draft_value": "1.987",
+      "source_key": "summary_statistics.json.climatology_train_1981_2022.sd.dec",
+      "table_context": "tab:diag (Stationarity and trend diagnostics on the training period (s...), row 3, col 2"
+    },
+    {
+      "draft_value": "0.0100",
+      "source_key": "estimation_results.json.diagnostics.kpss_level.p_value",
+      "table_context": "tab:diag (Stationarity and trend diagnostics on the training period (s...), row 3, col 3"
+    },
+    {
+      "draft_value": "4.476",
+      "source_key": "estimation_results.json.diagnostics.mann_kendall_annual.statistic",
+      "table_context": "tab:diag (Stationarity and trend diagnostics on the training period (s...), row 4, col 2"
+    },
+    {
+      "draft_value": "1.917",
+      "source_key": "estimation_results.json.out_of_sample.seasonal_naive_test.rmse",
+      "table_context": "tab:oos, row 2, col 2"
+    },
+    {
+      "draft_value": "1.640",
+      "source_key": "summary_statistics.json.anomaly_full.p75",
+      "table_context": "tab:oos, row 2, col 3"
+    },
+    {
+      "draft_value": "0.803",
+      "source_key": "estimation_results.json.out_of_sample.seasonal_naive_test.mase",
+      "table_context": "tab:oos, row 2, col 4"
+    },
+    {
+      "draft_value": "1.000",
+      "source_key": "summary_statistics.json.n_units",
+      "table_context": "tab:oos, row 2, col 5"
+    },
+    {
+      "draft_value": "14.21",
+      "source_key": "estimation_results.json.forecasts.ets_ana_2026_2028.points[27].upper",
+      "table_context": "tab:oos, row 2, col 6"
+    },
+    {
+      "draft_value": "12.058",
+      "source_key": "estimation_results.json.forecasts.seasonal_naive_2026_2028.points[22].upper",
+      "table_context": "tab:oos, row 3, col 2"
+    },
+    {
+      "draft_value": "9.784",
+      "source_key": "summary_statistics.json.outcome_train.T2M.mean",
+      "table_context": "tab:oos, row 3, col 3"
+    },
+    {
+      "draft_value": "4.790",
+      "source_key": "estimation_results.json.forecasts.harmonic_trend_2026_2028.points[12].upper",
+      "table_context": "tab:oos, row 3, col 4"
+    },
+    {
+      "draft_value": "1.000",
+      "source_key": "summary_statistics.json.n_units",
+      "table_context": "tab:oos, row 3, col 5"
+    },
+    {
+      "draft_value": "71.44",
+      "source_key": "estimation_results.json.out_of_sample.naive_test.mean_interval_width",
+      "table_context": "tab:oos, row 3, col 6"
+    },
+    {
+      "draft_value": "1.301",
+      "source_key": "estimation_results.json.out_of_sample.ets_ana_test.rmse",
+      "table_context": "tab:oos, row 4, col 2"
+    },
+    {
+      "draft_value": "0.976",
+      "source_key": "estimation_results.json.out_of_sample.ets_ana_test.mae",
+      "table_context": "tab:oos, row 4, col 3"
+    },
+    {
+      "draft_value": "0.478",
+      "source_key": "estimation_results.json.out_of_sample.ets_ana_test.mase",
+      "table_context": "tab:oos, row 4, col 4"
+    },
+    {
+      "draft_value": "0.972",
+      "source_key": "estimation_results.json.out_of_sample.ets_ana_test.mae",
+      "table_context": "tab:oos, row 4, col 5"
+    },
+    {
+      "draft_value": "7.34",
+      "source_key": "estimation_results.json.out_of_sample.ets_ana_test.mean_interval_width",
+      "table_context": "tab:oos, row 4, col 6"
+    },
+    {
+      "draft_value": "1.300",
+      "source_key": "estimation_results.json.out_of_sample.ets_ana_test.rmse",
+      "table_context": "tab:oos, row 5, col 2"
+    },
+    {
+      "draft_value": "0.976",
+      "source_key": "estimation_results.json.out_of_sample.ets_ana_test.mae",
+      "table_context": "tab:oos, row 5, col 3"
+    },
+    {
+      "draft_value": "0.478",
+      "source_key": "estimation_results.json.out_of_sample.ets_ana_test.mase",
+      "table_context": "tab:oos, row 5, col 4"
+    },
+    {
+      "draft_value": "0.972",
+      "source_key": "estimation_results.json.out_of_sample.ets_ana_test.mae",
+      "table_context": "tab:oos, row 5, col 5"
+    },
+    {
+      "draft_value": "7.34",
+      "source_key": "estimation_results.json.out_of_sample.ets_ana_test.mean_interval_width",
+      "table_context": "tab:oos, row 5, col 6"
+    },
+    {
+      "draft_value": "1.369",
+      "source_key": "estimation_results.json.out_of_sample.seasonal_naive_test.predictions[15].lower",
+      "table_context": "tab:oos, row 6, col 2"
+    },
+    {
+      "draft_value": "1.002",
+      "source_key": "summary_statistics.json.n_units",
+      "table_context": "tab:oos, row 6, col 3"
+    },
+    {
+      "draft_value": "0.490",
+      "source_key": "summary_statistics.json.anomaly_full.median",
+      "table_context": "tab:oos, row 6, col 4"
+    },
+    {
+      "draft_value": "0.972",
+      "source_key": "estimation_results.json.out_of_sample.ets_ana_test.mae",
+      "table_context": "tab:oos, row 6, col 5"
+    },
+    {
+      "draft_value": "7.18",
+      "source_key": "estimation_results.json.out_of_sample.seasonal_naive_test.predictions[0].upper",
+      "table_context": "tab:oos, row 6, col 6"
+    },
+    {
+      "draft_value": "1.362",
+      "source_key": "estimation_results.json.forecasts.ets_aada_2026_2028.points[0].forecast",
+      "table_context": "tab:oos, row 7, col 2"
+    },
+    {
+      "draft_value": "1.029",
+      "source_key": "estimation_results.json.out_of_sample.harmonic_trend_test.mae",
+      "table_context": "tab:oos, row 7, col 3"
+    },
+    {
+      "draft_value": "0.504",
+      "source_key": "estimation_results.json.diagnostics.mann_kendall_annual.sen_slope_per_decade",
+      "table_context": "tab:oos, row 7, col 4"
+    },
+    {
+      "draft_value": "0.972",
+      "source_key": "estimation_results.json.out_of_sample.ets_ana_test.mae",
+      "table_context": "tab:oos, row 7, col 5"
+    },
+    {
+      "draft_value": "7.19",
+      "source_key": "estimation_results.json.out_of_sample.seasonal_naive_test.predictions[0].upper",
+      "table_context": "tab:oos, row 7, col 6"
+    },
+    {
+      "draft_value": "-8.298",
+      "source_key": "estimation_results.json.out_of_sample.naive_test.dm_vs_seasonal_naive.squared_h12.statistic",
+      "table_context": "tab:dm, row 2, col 2"
+    },
+    {
+      "draft_value": "-9.866",
+      "source_key": "estimation_results.json.out_of_sample.naive_test.dm_vs_seasonal_naive.absolute_h12.statistic",
+      "table_context": "tab:dm, row 2, col 4"
+    },
+    {
+      "draft_value": "2.746",
+      "source_key": "estimation_results.json.forecasts.sarima_2026_2028.points[14].lower",
+      "table_context": "tab:dm, row 3, col 2"
+    },
+    {
+      "draft_value": "0.0095",
+      "source_key": "estimation_results.json.diagnostics.kpss_level.p_value",
+      "table_context": "tab:dm, row 3, col 3"
+    },
+    {
+      "draft_value": "2.589",
+      "source_key": "estimation_results.json.models.seasonal_naive_full.parameters.seasonal_lag_diff_sd.estimate",
+      "table_context": "tab:dm, row 3, col 4"
+    },
+    {
+      "draft_value": "0.0139",
+      "source_key": "estimation_results.json.diagnostics.kpss_level.p_value",
+      "table_context": "tab:dm, row 3, col 5"
+    },
+    {
+      "draft_value": "2.753",
+      "source_key": "estimation_results.json.forecasts.sarima_2026_2028.points[14].lower",
+      "table_context": "tab:dm, row 4, col 2"
+    },
+    {
+      "draft_value": "0.0093",
+      "source_key": "estimation_results.json.diagnostics.kpss_level.p_value",
+      "table_context": "tab:dm, row 4, col 3"
+    },
+    {
+      "draft_value": "2.589",
+      "source_key": "estimation_results.json.models.seasonal_naive_full.parameters.seasonal_lag_diff_sd.estimate",
+      "table_context": "tab:dm, row 4, col 4"
+    },
+    {
+      "draft_value": "0.0139",
+      "source_key": "estimation_results.json.diagnostics.kpss_level.p_value",
+      "table_context": "tab:dm, row 4, col 5"
+    },
+    {
+      "draft_value": "2.167",
+      "source_key": "estimation_results.json.forecasts.sarima_2026_2028.points[10].lower",
+      "table_context": "tab:dm, row 5, col 2"
+    },
+    {
+      "draft_value": "0.0372",
+      "source_key": "estimation_results.json.trend.seasonal_training_1981_2022.MAM.slope_per_year",
+      "table_context": "tab:dm, row 5, col 3"
+    },
+    {
+      "draft_value": "2.243",
+      "source_key": "estimation_results.json.forecasts.sarima_2026_2028.points[22].lower",
+      "table_context": "tab:dm, row 5, col 4"
+    },
+    {
+      "draft_value": "0.0314",
+      "source_key": "estimation_results.json.out_of_sample.sarima_test.dm_vs_seasonal_naive.absolute_h12.p_value",
+      "table_context": "tab:dm, row 5, col 5"
+    },
+    {
+      "draft_value": "2.466",
+      "source_key": "estimation_results.json.out_of_sample.harmonic_trend_test.dm_vs_seasonal_naive.squared_h12.statistic",
+      "table_context": "tab:dm, row 6, col 2"
+    },
+    {
+      "draft_value": "0.0187",
+      "source_key": "estimation_results.json.models.sarima.parameters.intercept.estimate",
+      "table_context": "tab:dm, row 6, col 3"
+    },
+    {
+      "draft_value": "2.519",
+      "source_key": "estimation_results.json.out_of_sample.harmonic_trend_test.dm_vs_seasonal_naive.absolute_h12.statistic",
+      "table_context": "tab:dm, row 6, col 4"
+    },
+    {
+      "draft_value": "0.0165",
+      "source_key": "estimation_results.json.models.sarima.parameters.intercept.estimate",
+      "table_context": "tab:dm, row 6, col 5"
+    }
+  ],
+  "source_files_found": [
+    "/private/tmp/e2er-demos/studies/workspaces/2026-10-13-how-has-the-monthly-mean-air-temperature/estimation_results.json",
+    "/private/tmp/e2er-demos/studies/workspaces/2026-10-13-how-has-the-monthly-mean-air-temperature/figure_spec.json",
+    "/private/tmp/e2er-demos/studies/workspaces/2026-10-13-how-has-the-monthly-mean-air-temperature/forecast_check.json",
+    "/private/tmp/e2er-demos/studies/workspaces/2026-10-13-how-has-the-monthly-mean-air-temperature/summary_statistics.json"
+  ],
+  "source_files_missing": [
+    "robustness_results.json"
+  ],
+  "skipped_reason": null,
+  "prose_total": 109,
+  "prose_matched": 94,
+  "prose_mismatched": 8,
+  "prose_unverifiable": 7,
+  "prose_excluded": 54,
+  "prose_mismatches": [
+    {
+      "draft_value": "95",
+      "source_key": "estimation_results.json.out_of_sample.naive_test.mean_interval_width",
+      "source_value": "71.43625282910577",
+      "table_context": "prose: \u2026ediction intervals are at the 95 percent level, and\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "95",
+      "source_key": "estimation_results.json.out_of_sample.naive_test.mean_interval_width",
+      "source_value": "71.43625282910577",
+      "table_context": "prose: \u2026r (HAC standard error 0.08, 95 percent confidence\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "95",
+      "source_key": "estimation_results.json.out_of_sample.naive_test.mean_interval_width",
+      "source_value": "71.43625282910577",
+      "table_context": "prose: \u2026on{Prediction intervals} The 95 percent intervals o\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "100",
+      "source_key": "estimation_results.json.out_of_sample.naive_test.mean_interval_width",
+      "source_value": "71.43625282910577",
+      "table_context": "prose: \u202636 hold-out values (coverage 100 percent), but they\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "35",
+      "source_key": "estimation_results.json.models.naive.fit.sigma2",
+      "source_value": "19.97283071768592",
+      "table_context": "prose: \u2026The candidate models cover 35 of the 36 values (9\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "97.2",
+      "source_key": "estimation_results.json.out_of_sample.naive_test.mean_interval_width",
+      "source_value": "71.43625282910577",
+      "table_context": "prose: \u2026els cover 35 of the 36 values (97.2 percent) with inter\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "46",
+      "source_key": "estimation_results.json.out_of_sample.naive_test.predictions[25].upper",
+      "source_value": "46.423687432877884",
+      "table_context": "prose: \u2026ere their RMSE is about 43 to 46 percent of the base\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "95",
+      "source_key": "estimation_results.json.out_of_sample.naive_test.mean_interval_width",
+      "source_value": "71.43625282910577",
+      "table_context": "prose: \u2026dels in the results file with 95 percent intervals.\u2026",
+      "severity": "major"
+    }
+  ],
+  "table_spec_unresolved": [],
+  "rendered_tables": [
+    "diag.tex",
+    "dm.tex",
+    "oos.tex",
+    "seasons.tex"
+  ],
+  "rendered_tables_not_in_draft": [],
+  "conclusive": true,
+  "tables_untraced": false,
+  "untraced_reason": ""
+}

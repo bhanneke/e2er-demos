@@ -1,0 +1,33 @@
+{
+  "series": {"table": "frankfurt_t2m_monthly", "time_column": "date", "value_column": "T2M",
+             "name": "monthly mean 2 m air temperature, Frankfurt am Main (NASA POWER, 50.11 N, 8.68 E)",
+             "frequency": "monthly", "unit": "degrees C"},
+  "seasonal_period": 12,
+  "transformation": "none",
+  "holdout": {"start": "2023-01", "end": "2025-12", "n_periods": 36},
+  "horizon": 36,
+  "interval_level": 0.95,
+  "baselines": [
+    {"model": "seasonal_naive", "method": "seasonal naive (value 12 months earlier); intervals from seasonal-lag residual sd widened by number of seasonal cycles"},
+    {"model": "naive", "method": "naive (last value); random-walk intervals"}
+  ],
+  "candidates": [
+    {"model": "ets_ana", "method": "ETS(A,N,A), additive Holt-Winters without trend"},
+    {"model": "ets_aada", "method": "ETS(A,Ad,A), additive damped-trend Holt-Winters"},
+    {"model": "sarima", "method": "seasonal ARIMA(p,d,q)(P,D,Q)[12], orders chosen by AICc on the training window (p,q<=3; P,Q<=2; d,D in {0,1}), drift if d+D=1"},
+    {"model": "harmonic_trend", "method": "linear trend plus K annual harmonics (K chosen by AICc, 1 to 4), OLS, normal prediction intervals"}
+  ],
+  "diagnostics": [
+    {"name": "kpss_level", "kind": "stationarity", "test": "KPSS (level) on the seasonally adjusted training series, sample end 2022-12"},
+    {"name": "adf_seasonally_adjusted", "kind": "stationarity", "test": "ADF (constant, lag by AIC) on the seasonally adjusted training series, sample end 2022-12"},
+    {"name": "mann_kendall_annual", "kind": "trend", "test": "Mann-Kendall with Sen's slope on annual means of the training years 1981 to 2022; autocorrelation-corrected variant reported alongside"}
+  ],
+  "evaluation": {"scheme": "fixed origin",
+                 "metrics": ["rmse", "mae", "mase"],
+                 "origin": "2022-12",
+                 "horizons": "1 to 36",
+                 "supplementary": "rolling origin inside the training window (annual origins 2000-12 to 2019-12, 36-month horizon) for model choice and horizon/season skill",
+                 "comparison": "Diebold-Mariano with Harvey-Leybourne-Newbold correction against seasonal_naive; hold-out interval coverage reported per model",
+                 "mase_scale": "in-sample MAE of seasonal naive (lag 12) on 1981-01 to 2022-12"},
+  "training": {"start": "1981-01", "end": "2022-12", "n_periods": 504}
+}

@@ -1,0 +1,462 @@
+{
+  "contents": [
+    {
+      "bytes": 4387,
+      "part": "study",
+      "path": "README.md",
+      "sha256": "6af5e6712d5b60a19fb5f969008a4eafd7c6480b9b3ed41ff049add0f319cb6a"
+    },
+    {
+      "bytes": 303,
+      "part": "study",
+      "path": "code/requirements.txt",
+      "sha256": "a51cd39a33828334971c419b103ac9da10f726811acf1e670d41959d3e838e27"
+    },
+    {
+      "bytes": 27761,
+      "part": "study",
+      "path": "code/run_estimation.py",
+      "sha256": "ad4c757b2bd83260bb70ec6c0136a91ce9517c37ec0bd409d0d222dc64c55eab"
+    },
+    {
+      "bytes": 6129,
+      "part": "study",
+      "path": "code/scratch/clean_describe.py",
+      "sha256": "d3f7fa87dd28cbe2520f127a6f8e271e590837301c10968a3d991381aafec18c"
+    },
+    {
+      "bytes": 22326,
+      "part": "study",
+      "path": "code/scratch/paper_draft.log",
+      "sha256": "1736950c3ba493af74bfc56cfcc8bc11cde55a84e85c2994ffef8f0bffeb72e7"
+    },
+    {
+      "bytes": 77824,
+      "part": "study",
+      "path": "data/data.db",
+      "sha256": "36eec22a2b7c7bc6c6bfb7cbe2e1fc7d6fa13f2be67a05abaf3a9125b07aa970"
+    },
+    {
+      "bytes": 7132,
+      "part": "study",
+      "path": "data/data_dictionary.json",
+      "sha256": "8ebfa4eee54821178c8d2ce1d8a3c9fac28da75849761509b6c7d16577804615"
+    },
+    {
+      "bytes": 3390,
+      "part": "study",
+      "path": "data/data_sources.json",
+      "sha256": "13647c22e4e61242c773eefc68fad7abd21626056c2f0db930e05a78583b139c"
+    },
+    {
+      "bytes": 3502,
+      "part": "study",
+      "path": "data/data_summary.md",
+      "sha256": "22beac907d9ca9d930dbc8f600a8eba27bdab919631e1c14c581e9ef57de053f"
+    },
+    {
+      "bytes": 4606,
+      "part": "study",
+      "path": "design/econometric_spec.md",
+      "sha256": "728034061cfb0c2d81c87f1d8201165d54dcd41bd5f0510f20a67d651adeaf28"
+    },
+    {
+      "bytes": 2405,
+      "part": "study",
+      "path": "design/forecast_design.json",
+      "sha256": "73cdec2dd9c71dab061e5c04b391bd35b0cfb39d881dc520bf3eabbf4bb9f917"
+    },
+    {
+      "bytes": 7862,
+      "part": "study",
+      "path": "design/forecast_design.md",
+      "sha256": "27558e2647415945bf46e09b2d7d8e754ef1741d444fc7942db6b371d770ab09"
+    },
+    {
+      "bytes": 4782,
+      "part": "study",
+      "path": "design/holdout_freeze.json",
+      "sha256": "845ca53e8d254d467502389aa705d345db0adced375bec77e491958b485ea5f3"
+    },
+    {
+      "bytes": 12622,
+      "part": "study",
+      "path": "design/literature_review.md",
+      "sha256": "cc9db2990c62dcc919cf805e94ae53ad0135c8eafc2a4dfd75384368a463c5d7"
+    },
+    {
+      "bytes": 18678,
+      "part": "study",
+      "path": "design/paper_plan.md",
+      "sha256": "12edb685802f619ac2c8e128a95dd12442f8e9a861dec526caf3567bf4bcfade"
+    },
+    {
+      "bytes": 1046,
+      "part": "study",
+      "path": "design/preregistration.lock.json",
+      "sha256": "1c5db38be29cf8eb6eebf4b3bc758799b43583018dc7dcb17a8a1154d6e7fe0e"
+    },
+    {
+      "bytes": 31203,
+      "part": "study",
+      "path": "design/preregistration.md",
+      "sha256": "06aa1494d793c80b3fe700d4813da0e178a4aaf5f9aa6b8f6ea46702ad7f6583"
+    },
+    {
+      "bytes": 1759,
+      "part": "study",
+      "path": "design/researcher_instructions.md",
+      "sha256": "82252ff4cce3b4212c0946d83fe44bd63dc0023522a5dca3862bb4a228200ab5"
+    },
+    {
+      "bytes": 30893,
+      "part": "package",
+      "path": "e2er-package/requirements.lock.txt",
+      "sha256": "b83bd9d4821ef67c98cc69737e2f88ab38bf7678c83df4090dad72f160c5501a"
+    },
+    {
+      "bytes": 98691,
+      "part": "study",
+      "path": "e2er.json",
+      "sha256": "89006a448b45345e853da4e2ed848a91a092a094fb19303b0350071802311d43"
+    },
+    {
+      "bytes": 13583,
+      "part": "study",
+      "path": "misc/fig_annual_means.pdf",
+      "sha256": "06d9b99a46adcde44e921b693488c072208bf884e2e0ef070411fe83bb1a7404"
+    },
+    {
+      "bytes": 20808,
+      "part": "study",
+      "path": "misc/fig_anomalies.pdf",
+      "sha256": "6cd32898a3c5358398695a690906d0b11d7857d7a022e11726d0401f8bacec1a"
+    },
+    {
+      "bytes": 20748,
+      "part": "study",
+      "path": "misc/fig_monthly_t2m.pdf",
+      "sha256": "5de3ee74df322ed211d9ef8e4f476603cd1aa500e0a6578d9c59b6cd0f5bfc66"
+    },
+    {
+      "bytes": 16668,
+      "part": "study",
+      "path": "misc/fig_seasonal_profile.pdf",
+      "sha256": "0f33685db2d120a08efc60e55a2066293d7a4b4daecaa2a40794bb8c9e3578fc"
+    },
+    {
+      "bytes": 230,
+      "part": "study",
+      "path": "misc/figure_render_report.json",
+      "sha256": "1e0cbf00e28e0ac486e50d0db8224283506bdc9469ca8513d8ae6fa487be1f99"
+    },
+    {
+      "bytes": 256,
+      "part": "study",
+      "path": "misc/paper_draft.blg",
+      "sha256": "c3ceaae132f73e7988a3f920aa9d466977a9325c4615fbdc3785bb56045a1217"
+    },
+    {
+      "bytes": 23564,
+      "part": "study",
+      "path": "misc/paper_draft.body.tex",
+      "sha256": "e8a447f6e886ab88923e7988e276927302dbfb3e8766d5784169e423fd43c225"
+    },
+    {
+      "bytes": 27265,
+      "part": "study",
+      "path": "misc/paper_draft.tex.applied.diff",
+      "sha256": "b04161a48ba8b5b982a02a4462908d630726b1187e6fcc193ce1e12f169cc991"
+    },
+    {
+      "bytes": 13089,
+      "part": "study",
+      "path": "misc/paper_draft.tex.edits.json",
+      "sha256": "a5190b0d942b681b99eeefcb7550baa37345fb6026f8f13bf66575c75552dbb1"
+    },
+    {
+      "bytes": 11259,
+      "part": "study",
+      "path": "misc/refs.bib",
+      "sha256": "55c9206a0b9fb9b4b0181a084e2db79497e6706bdb2bcfe51274444203162054"
+    },
+    {
+      "bytes": 2089,
+      "part": "study",
+      "path": "paper/abstract.tex",
+      "sha256": "f0bef6b8b8f99851107ba0f6ae81b54581484368787c3fc78e81741deb7d00e8"
+    },
+    {
+      "bytes": 111954,
+      "part": "study",
+      "path": "paper/paper.pdf",
+      "sha256": "a81c0c43ac35e64f03828fab629e78936f50df0c092b08c88001f6928fd2a6aa"
+    },
+    {
+      "bytes": 28283,
+      "part": "study",
+      "path": "paper/paper.tex",
+      "sha256": "4dc09831eab1c83ce2d00cad44e92bdb812685e4e1e34c8cb8b55e6ffa3f6a6f"
+    },
+    {
+      "bytes": 11259,
+      "part": "study",
+      "path": "paper/refs.bib",
+      "sha256": "55c9206a0b9fb9b4b0181a084e2db79497e6706bdb2bcfe51274444203162054"
+    },
+    {
+      "bytes": 483,
+      "part": "study",
+      "path": "paper/tables/diag.tex",
+      "sha256": "ae9a77dfd0e25aa08d805918078cac065e36bb726046dec84a05ececb3d84e53"
+    },
+    {
+      "bytes": 702,
+      "part": "study",
+      "path": "paper/tables/dm.tex",
+      "sha256": "6b88a6dc134204078cd1685e1869404aebbe53de67485f748bbebbd1869e3454"
+    },
+    {
+      "bytes": 756,
+      "part": "study",
+      "path": "paper/tables/oos.tex",
+      "sha256": "59115e2d6ed998a681f7de625511f085c55c9330188b187bd6d197bfc0b4d2b1"
+    },
+    {
+      "bytes": 621,
+      "part": "study",
+      "path": "paper/tables/seasons.tex",
+      "sha256": "197d938c481c279ec641e83f29a1e054d596a6a5c694f55928d9cb344bfc0e03"
+    },
+    {
+      "bytes": 38328,
+      "part": "study",
+      "path": "provenance.json",
+      "sha256": "3a1ea11a621536e0f03c716cee2135654ada8f37ce533c728d50e9dba504bda9"
+    },
+    {
+      "bytes": 4997,
+      "part": "study",
+      "path": "replication/README.md",
+      "sha256": "0aad8cbc14eb96c0a50340408f6a59581f98417a6f59b897eb34475404367717"
+    },
+    {
+      "bytes": 1428,
+      "part": "study",
+      "path": "replication/audit_log.csv",
+      "sha256": "fb94173e03584f372b76843abcc12cf6b5527e6beb058844b5fb0f4e8e8bb201"
+    },
+    {
+      "bytes": 137,
+      "part": "study",
+      "path": "replication/data_queries.sql",
+      "sha256": "c584c4317260f4218b3d65b6034aea98963c22406450ef573a729e3faa8e234f"
+    },
+    {
+      "bytes": 34202,
+      "part": "study",
+      "path": "replication/estimation.py",
+      "sha256": "eb6acc1decd284e52751757c80272293e668b6ce219cc5e9a309029a8b77146e"
+    },
+    {
+      "bytes": 17737,
+      "part": "study",
+      "path": "report.html",
+      "sha256": "c0ae43fed736a1791c60f19b790f17fe00a24a4385acbb2a693e0e1047e02359"
+    },
+    {
+      "bytes": 2016,
+      "part": "study",
+      "path": "reproduce.json",
+      "sha256": "76e215112e924fb8e1bf0931f2d759b1dd74725b899500066f4019a0b1dac414"
+    },
+    {
+      "bytes": 118625,
+      "part": "study",
+      "path": "results/estimation_results.json",
+      "sha256": "d98ac474f5e65896596af9b2f30976c5bb8ce0b38dedcad2c97b3bd3b1df7959"
+    },
+    {
+      "bytes": 1031,
+      "part": "study",
+      "path": "results/figure_check.json",
+      "sha256": "e16895728556fc1daed7097af0273454518c041446eedfd6d2f4ae6ea1c4e7d0"
+    },
+    {
+      "bytes": 28605,
+      "part": "study",
+      "path": "results/figure_spec.json",
+      "sha256": "96226e2de2048a729e4f7e12f542ec2d40f6386246cd3c95f12c32deb60d5431"
+    },
+    {
+      "bytes": 13583,
+      "part": "study",
+      "path": "results/figures/fig_annual_means.pdf",
+      "sha256": "06d9b99a46adcde44e921b693488c072208bf884e2e0ef070411fe83bb1a7404"
+    },
+    {
+      "bytes": 20808,
+      "part": "study",
+      "path": "results/figures/fig_anomalies.pdf",
+      "sha256": "6cd32898a3c5358398695a690906d0b11d7857d7a022e11726d0401f8bacec1a"
+    },
+    {
+      "bytes": 20748,
+      "part": "study",
+      "path": "results/figures/fig_monthly_t2m.pdf",
+      "sha256": "5de3ee74df322ed211d9ef8e4f476603cd1aa500e0a6578d9c59b6cd0f5bfc66"
+    },
+    {
+      "bytes": 16668,
+      "part": "study",
+      "path": "results/figures/fig_seasonal_profile.pdf",
+      "sha256": "0f33685db2d120a08efc60e55a2066293d7a4b4daecaa2a40794bb8c9e3578fc"
+    },
+    {
+      "bytes": 1585,
+      "part": "study",
+      "path": "results/forecast_check.json",
+      "sha256": "1594398afad39a190c15d9e977a0499c8511d284b3b0cacee959ab2839f52ace"
+    },
+    {
+      "bytes": 18224,
+      "part": "study",
+      "path": "results/number_verification.json",
+      "sha256": "0d8addfbc1b248cad91a6de0c8481efe3a40495c399292adb641839f64dcc999"
+    },
+    {
+      "bytes": 3524,
+      "part": "study",
+      "path": "results/summary_statistics.json",
+      "sha256": "0104f829e88068b9a3593b08c6199e52d871ab1dac0452546f48a45b3bcfa30e"
+    },
+    {
+      "bytes": 187,
+      "part": "study",
+      "path": "results/table_render_report.json",
+      "sha256": "915d44aa8eb4334beebe6f321630e969172b692e38cfbc6db9804e74cf218e84"
+    },
+    {
+      "bytes": 4020,
+      "part": "study",
+      "path": "results/table_spec.json",
+      "sha256": "c0706427a4c3d46c17d4f4748aa7743acceafd697346d05b6fba622fa79466a9"
+    },
+    {
+      "bytes": 6276,
+      "part": "study",
+      "path": "reviews/citation_integrity.json",
+      "sha256": "1f0801aed28afed8bf9f9aff75600cd668e96965f64ba5485deee77246349aec"
+    },
+    {
+      "bytes": 4989,
+      "part": "study",
+      "path": "reviews/polish_corrections.json",
+      "sha256": "3bceca4542fb7cbf39fc7295d4c4a89d1741011a6711de9a10bf5286266fac2c"
+    },
+    {
+      "bytes": 12375,
+      "part": "study",
+      "path": "reviews/polish_formula.md",
+      "sha256": "301ffc50aed74c4a40d80c64d295a2f2ae03de4923cd08ad771d70fab7cce72d"
+    },
+    {
+      "bytes": 1517,
+      "part": "study",
+      "path": "reviews/review_aggregation.json",
+      "sha256": "37ff4fb1621ed7b72e9dda8b275c0f9ba08bfd5fd85ebdc0ac88e1ba3a8b7546"
+    },
+    {
+      "bytes": 18687,
+      "part": "study",
+      "path": "reviews/review_data.md",
+      "sha256": "3128ba87481bd6c13f55745f338aeabd3d4cf0441892371c4b7b855195eb3986"
+    },
+    {
+      "bytes": 11191,
+      "part": "study",
+      "path": "reviews/review_literature.md",
+      "sha256": "c6a11b51acad5bcc17f2da7d5848890197f119ecd5fe0074f263201acbcd9478"
+    },
+    {
+      "bytes": 16487,
+      "part": "study",
+      "path": "reviews/review_methods.md",
+      "sha256": "ba27a0d0a735bcec58d3981f1224e0aee66528d9952d774a6ef0138b448b82cf"
+    },
+    {
+      "bytes": 13251,
+      "part": "study",
+      "path": "reviews/review_plausibility.md",
+      "sha256": "f1e085593a2fe93402e8a79a702ee082f641263fd009276af6749dcf69c9c5bb"
+    },
+    {
+      "bytes": 17305,
+      "part": "study",
+      "path": "reviews/review_technical.md",
+      "sha256": "531b5a528419baff1884e8fddde7388e781297ebda8a8635b1dd6ce95ac8f3bf"
+    },
+    {
+      "bytes": 18980,
+      "part": "study",
+      "path": "reviews/review_writing.md",
+      "sha256": "061e91db30b4fb14357d70cba3e9d20a9ca4a3893189735978bb0741862d1046"
+    },
+    {
+      "bytes": 45,
+      "part": "study",
+      "path": "reviews/self_attack_report.json",
+      "sha256": "b685817ad96942941002ac01c77b9ba1a12561c23e637354adc5ccc3d72be895"
+    }
+  ],
+  "created": "20261015",
+  "e2er_version": "0.17.1",
+  "environment": {
+    "hashes": true,
+    "lock": "e2er-package/requirements.lock.txt",
+    "note": "e2er-package/requirements.lock.txt pins every package with its hashes; `e2er reproduce` installs from it.",
+    "python": "3.12",
+    "resolved_as_of": "2026-10-16"
+  },
+  "fingerprint": "sha256:94ecd01c0195d92fa057b3387119f8dec34a873dcab21e9eb6574b3103a240d0",
+  "format": "e2er-package/1",
+  "left_out": [],
+  "notes": [],
+  "rebuild": [],
+  "recipe": {
+    "compare": [
+      "results/estimation_results.json"
+    ],
+    "inputs": [
+      {
+        "path": "data.db",
+        "reload": null,
+        "source": "the study's database, tables: frankfurt_t2m_annual (made by the study during the run); frankfurt_t2m_clean (made by the study during the run); frankfurt_t2m_monthly (NASA Prediction Of Worldwide Energy Resources (POWER), NASA Langley Research Center, NASA POWER monthly T2M at lat 50.11, lon 8.68, 1981–2025, release v2.10.0, loaded 2026-10-13)"
+      }
+    ],
+    "present": true,
+    "python": "3.12",
+    "requirements": "code/requirements.txt",
+    "steps": [
+      {
+        "about": "the estimation script",
+        "run": [
+          "python",
+          "run_estimation.py"
+        ]
+      }
+    ]
+  },
+  "study": {
+    "authors": [],
+    "e2er_version": "0.17.0",
+    "exported_at": "20261015",
+    "folder": "how-has-the-monthly-mean-air-temperature-at-2-metres-in-fran-20261015-01",
+    "id": "ad0dbdfc-655c-424a-bd3a-e01575743567",
+    "purpose": "demonstration",
+    "question": "How has the monthly mean air temperature at 2 metres in Frankfurt am Main (NASA POWER, 50.11 N, 8.68 E) changed since 1981, and how well do seasonal forecasting models predict the next 36 months compared with a seasonal naive baseline?",
+    "template": "time-series-forecasting",
+    "title": "Warming and Forecast Skill in Monthly Temperature: Frankfurt am Main, 1981–2025"
+  },
+  "wheels": null
+}

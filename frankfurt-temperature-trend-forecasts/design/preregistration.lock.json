@@ -1,0 +1,22 @@
+{
+  "file": "preregistration.md",
+  "sha256": "06aa1494d793c80b3fe700d4813da0e178a4aaf5f9aa6b8f6ea46702ad7f6583",
+  "frozen_at": "2026-10-13T21:52:59Z",
+  "plan_files": {
+    "forecast_design.json": "73cdec2dd9c71dab061e5c04b391bd35b0cfb39d881dc520bf3eabbf4bb9f917"
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "statement": "the linear trend in annual mean T2M is positive, on the order of +0.3 to +0.5 °C/decade (prior from regional literature; the estimate itself is data-driven)."
+    },
+    {
+      "id": "H2",
+      "statement": "models with an explicit trend or level adjustment beat seasonal naive on RMSE at long horizons mainly because seasonal naive carries one year of noise; averaging over many years in the seasonal component reduces variance. Gains are modest (MASE about 0.75 to 0.95)."
+    },
+    {
+      "id": "H3",
+      "statement": "ETS and SARIMA with unconstrained adaptive level will not clearly beat the harmonic regression; DM tests will often be insignificant for pairs among the non-naive models."
+    }
+  ]
+}

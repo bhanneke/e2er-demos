@@ -1,0 +1,7 @@
+# The packages the study's scripts import, at the versions of the Python environment
+# e2er ran the study in (Python 3.12.12 at export; the run recorded none), written by e2er at export. `e2er reproduce` installs
+# them in a new environment.
+numpy==2.5.4
+pandas==2.3.3
+scipy==1.18.1
+statsmodels==0.15.0

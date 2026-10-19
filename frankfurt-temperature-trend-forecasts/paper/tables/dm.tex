@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\begin{threeparttable}
+\caption{Diebold--Mariano tests against the seasonal naive baseline on the hold-out (Harvey--Leybourne--Newbold correction, $t(35)$, truncation 12). Positive statistics mean the model has lower loss than seasonal naive}
+\label{tab:dm}
+\begin{tabular}{lcccc}
+\toprule
+Model & Squared, stat. & Squared, $p$ & Absolute, stat. & Absolute, $p$ \\
+\midrule
+Naive & -8.298 & 0.0000 & -9.866 & 0.0000 \\
+ETS(A,N,A) & 2.746 & 0.0095 & 2.589 & 0.0139 \\
+ETS(A,Ad,A) & 2.753 & 0.0093 & 2.589 & 0.0139 \\
+SARIMA & 2.167 & 0.0372 & 2.243 & 0.0314 \\
+Trend + harmonics & 2.466 & 0.0187 & 2.519 & 0.0165 \\
+\bottomrule
+\end{tabular}
+\end{threeparttable}
+\end{table}

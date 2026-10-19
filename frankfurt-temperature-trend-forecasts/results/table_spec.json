@@ -1,0 +1,89 @@
+{
+  "tables": [
+    {
+      "filename": "seasons.tex",
+      "label": "tab:seasons",
+      "caption": "Seasonal trends, training years 1981--2022, degrees Celsius per decade. HAC (Newey--West) standard errors; associations with calendar time, not causal effects",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "trend.seasonal_training_1981_2022",
+      "rows": ["DJF", "MAM", "JJA", "SON"],
+      "row_labels": {"DJF": "December--February", "MAM": "March--May", "JJA": "June--August", "SON": "September--November"},
+      "row_header": "Season",
+      "columns": [
+        {"field": "slope_per_decade", "header": "Slope", "decimals": 3},
+        {"field": "se_per_decade", "header": "HAC s.e.", "decimals": 3},
+        {"field": "ci_lower_per_decade", "header": "CI lower", "decimals": 3},
+        {"field": "ci_upper_per_decade", "header": "CI upper", "decimals": 3},
+        {"field": "n", "header": "$N$", "decimals": 0}
+      ]
+    },
+    {
+      "filename": "diag.tex",
+      "label": "tab:diag",
+      "caption": "Stationarity and trend diagnostics on the training period (sample end 2022-12). KPSS $p$-value is bounded at 0.01 by the table",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "diagnostics",
+      "rows": ["adf_seasonally_adjusted", "kpss_level", "mann_kendall_annual"],
+      "row_labels": {
+        "adf_seasonally_adjusted": "ADF, seasonally adjusted",
+        "kpss_level": "KPSS (level), seasonally adjusted",
+        "mann_kendall_annual": "Mann--Kendall, annual means"
+      },
+      "row_header": "Test",
+      "columns": [
+        {"field": "statistic", "header": "Statistic", "decimals": 3},
+        {"field": "p_value", "header": "$p$-value", "decimals": 4}
+      ]
+    },
+    {
+      "filename": "oos.tex",
+      "label": "tab:oos",
+      "caption": "Out-of-sample accuracy on the 36-month hold-out, 2023-01 to 2025-12. RMSE and MAE in degrees Celsius; MASE scaled by the in-sample seasonal naive MAE; nominal interval level 95\\%",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "out_of_sample",
+      "rows": ["seasonal_naive_test", "naive_test", "ets_ana_test", "ets_aada_test", "sarima_test", "harmonic_trend_test"],
+      "row_labels": {
+        "seasonal_naive_test": "Seasonal naive (baseline)",
+        "naive_test": "Naive (baseline)",
+        "ets_ana_test": "ETS(A,N,A)",
+        "ets_aada_test": "ETS(A,Ad,A)",
+        "sarima_test": "SARIMA",
+        "harmonic_trend_test": "Trend + harmonics"
+      },
+      "row_header": "Model",
+      "columns": [
+        {"field": "rmse", "header": "RMSE", "decimals": 3},
+        {"field": "mae", "header": "MAE", "decimals": 3},
+        {"field": "mase", "header": "MASE", "decimals": 3},
+        {"field": "coverage", "header": "Coverage", "decimals": 3},
+        {"field": "mean_interval_width", "header": "Mean width", "decimals": 2}
+      ]
+    },
+    {
+      "filename": "dm.tex",
+      "label": "tab:dm",
+      "caption": "Diebold--Mariano tests against the seasonal naive baseline on the hold-out (Harvey--Leybourne--Newbold correction, $t(35)$, truncation 12). Positive statistics mean the model has lower loss than seasonal naive",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "dm_tests",
+      "rows": ["naive", "ets_ana", "ets_aada", "sarima", "harmonic_trend"],
+      "row_labels": {
+        "naive": "Naive",
+        "ets_ana": "ETS(A,N,A)",
+        "ets_aada": "ETS(A,Ad,A)",
+        "sarima": "SARIMA",
+        "harmonic_trend": "Trend + harmonics"
+      },
+      "row_header": "Model",
+      "columns": [
+        {"field": "squared_h12.statistic", "header": "Squared, stat.", "decimals": 3},
+        {"field": "squared_h12.p_value", "header": "Squared, $p$", "decimals": 4},
+        {"field": "absolute_h12.statistic", "header": "Absolute, stat.", "decimals": 3},
+        {"field": "absolute_h12.p_value", "header": "Absolute, $p$", "decimals": 4}
+      ]
+    }
+  ]
+}

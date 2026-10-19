@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "holdout": {
+    "start": "2023-01",
+    "end": "2025-12",
+    "n_periods": 36,
+    "train_end": "2022-12"
+  },
+  "best_baseline_rmse": 1.9174353531040709,
+  "out_of_sample": {
+    "seasonal_naive_test": {
+      "model": "seasonal_naive",
+      "rmse": 1.9174353531040709,
+      "mae": 1.639722222222222,
+      "n_test": 36,
+      "interval_coverage": 1.0,
+      "relative_rmse": 1.0
+    },
+    "naive_test": {
+      "model": "naive",
+      "rmse": 12.058471895080421,
+      "mae": 9.784444444444444,
+      "n_test": 36,
+      "interval_coverage": 1.0,
+      "relative_rmse": 6.2888544719692225
+    },
+    "ets_ana_test": {
+      "model": "ets_ana",
+      "rmse": 1.3010594766465666,
+      "mae": 0.9759709233449416,
+      "n_test": 36,
+      "interval_coverage": 0.9722222222222222,
+      "relative_rmse": 0.6785415083435933
+    },
+    "ets_aada_test": {
+      "model": "ets_aada",
+      "rmse": 1.3002133668170135,
+      "mae": 0.9756126344688624,
+      "n_test": 36,
+      "interval_coverage": 0.9722222222222222,
+      "relative_rmse": 0.6781002367105323
+    },
+    "sarima_test": {
+      "model": "sarima",
+      "rmse": 1.3693603273581973,
+      "mae": 1.0018163442974575,
+      "n_test": 36,
+      "interval_coverage": 0.9722222222222222,
+      "relative_rmse": 0.7141624488885043
+    },
+    "harmonic_trend_test": {
+      "model": "harmonic_trend",
+      "rmse": 1.3621614859651998,
+      "mae": 1.0291933318153939,
+      "n_test": 36,
+      "interval_coverage": 0.9722222222222222,
+      "relative_rmse": 0.7104080373609691
+    }
+  },
+  "problems": []
+}

@@ -1,0 +1,126 @@
+{
+  "study": "Monthly mean 2 m air temperature in Frankfurt am Main, 1981 to 2025: trend, seasonality and 36-month forecast skill",
+  "tables": [
+    {
+      "name": "frankfurt_t2m_monthly",
+      "source": "nasa_power",
+      "series": "NASA POWER monthly T2M at lat 50.11, lon 8.68, 1981–2025",
+      "frequency": "monthly",
+      "role": "target series: monthly mean air temperature at 2 m, Frankfurt am Main grid cell",
+      "load_command": "e2er-data nasa_power point --lat 50.11 --lon 8.68 --parameters T2M --temporal monthly --community RE --start 1981 --end 2025 --save-to frankfurt_t2m_monthly.csv --table frankfurt_t2m_monthly",
+      "api": {
+        "service": "NASA POWER (Prediction Of Worldwide Energy Resources), monthly point API",
+        "endpoint": "https://power.larc.nasa.gov/api/temporal/monthly/point",
+        "community": "RE",
+        "parameters": [
+          "T2M"
+        ],
+        "latitude": 50.11,
+        "longitude": 8.68,
+        "start_year": 1981,
+        "end_year": 2025,
+        "note": "The monthly API is requested by whole years and runs to the previous year, so the latest complete month available on 2026-10-13 is 2025-12. The API version, data sources (MERRA-2) and access date are recorded by the loader in data_sources.json."
+      },
+      "columns": [
+        {
+          "name": "date",
+          "type": "text",
+          "format": "YYYY-MM",
+          "description": "Monthly time index (ISO year-month). Unique, sorted, no gaps expected: 45 years x 12 = 540 months, 1981-01 to 2025-12."
+        },
+        {
+          "name": "year",
+          "type": "integer",
+          "description": "Calendar year, 1981 to 2025."
+        },
+        {
+          "name": "month",
+          "type": "integer",
+          "description": "Calendar month 1 to 12. Any month-13 (annual mean) row POWER returns is not part of the monthly series and is excluded in cleaning."
+        },
+        {
+          "name": "T2M",
+          "type": "float",
+          "unit": "degrees Celsius",
+          "description": "Monthly mean air temperature at 2 m, MERRA-2 grid-cell estimate (0.5 deg lat x 0.625 deg lon), not a station measurement.",
+          "min_non_null": 0.9
+        }
+      ],
+      "min_non_null": 0.9,
+      "fill_value_handling": "POWER's fill value -999 is stored as an empty cell (NULL), never as -999. Cleaning verifies that no T2M value equals -999 and reports the count of missing months. Missing months are not imputed in the raw table; if any occur, the analyst reports them and the forecast designer decides on handling before the freeze.",
+      "licence": "No licence stated by POWER; NASA's Earth science data use guidance (https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance): \"Unless the content is marked with a use restriction or license, data provided from a NASA-led mission are licensed as Creative Commons Zero (CC0). While there are no restrictions on the use of these data, data users are very strongly urged to cite the data used in their work products.\" POWER's referencing guide (https://power.larc.nasa.gov/docs/referencing/): \"When POWER data products are used in a publication include both POWER's Reference and POWER's Data Reference in any work product or publication\" and \"the Project requests notification if POWER data is transmitted to other researchers.\"",
+      "citation": "NASA Langley Research Center (LaRC) POWER Project. Prediction Of Worldwide Energy Resources (POWER), https://power.larc.nasa.gov/. The data was obtained from National Aeronautics and Space Administration (NASA) Langley Research Center's Prediction Of Worldwide Energy Resources (POWER) project funded through the NASA Earth Science Division. Data reference: The data was obtained from the POWER Monthly and Annual API version 2.10.0 on 2026/10/13.",
+      "provenance": "NASA Prediction Of Worldwide Energy Resources (POWER), NASA Langley Research Center (https://power.larc.nasa.gov/), release v2.10.0",
+      "version": "v2.10.0",
+      "source_files": [
+        {
+          "url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M&community=RE&latitude=50.11&longitude=8.68&start=1981&end=2025&format=JSON",
+          "sha256": "3471530b3a0442bffb1a945bbdbba67d72dbf7c5eb795e846d384922a200cc94"
+        }
+      ],
+      "cite_key": "NASA_POWER"
+    }
+  ],
+  "derived_fields": {
+    "note": "Derived by the data analyst in a cleaning script into a separate table (frankfurt_t2m_clean). The raw table is never overwritten. No estimation is done at this step.",
+    "table": "frankfurt_t2m_clean",
+    "fields": [
+      {
+        "name": "date",
+        "definition": "copy of raw date, YYYY-MM"
+      },
+      {
+        "name": "year",
+        "definition": "calendar year from date"
+      },
+      {
+        "name": "month",
+        "definition": "calendar month 1 to 12 from date"
+      },
+      {
+        "name": "T2M",
+        "unit": "degrees Celsius",
+        "definition": "raw monthly mean, -999 set to NULL"
+      },
+      {
+        "name": "clim_1981_2010",
+        "unit": "degrees Celsius",
+        "definition": "arithmetic mean of T2M for each calendar month over 1981-01 to 2010-12 (30 values per month); 12 values, repeated for every year. The window lies wholly inside the training period, so it does not use hold-out information."
+      },
+      {
+        "name": "anomaly",
+        "unit": "degrees Celsius",
+        "definition": "T2M minus clim_1981_2010 of the same calendar month"
+      },
+      {
+        "name": "split",
+        "definition": "'train' for 1981-01 to 2022-12, 'holdout' for 2023-01 to 2025-12"
+      }
+    ]
+  },
+  "split": {
+    "train": {
+      "start": "1981-01",
+      "end": "2022-12",
+      "n_periods": 504
+    },
+    "holdout": {
+      "start": "2023-01",
+      "end": "2025-12",
+      "n_periods": 36
+    },
+    "rule": "The hold-out is the last 36 months of the series (3 full seasonal cycles, equal to the 36-month forecast horizon of the research question). It is fixed by the series length and horizon in advance, not by model performance. All diagnostics, decompositions, model selection and climatology are computed on the training periods only; the final forecast beyond the data uses a model refitted on all 540 months and is not evaluated on the hold-out. Final dates are confirmed against the actual last month in data.db and frozen by the forecast_design check."
+  },
+  "seasonal_period": 12,
+  "units": {
+    "T2M": "degrees Celsius",
+    "anomaly": "degrees Celsius",
+    "trend": "degrees Celsius per decade (reported by the analysis step)"
+  },
+  "caveats": [
+    "POWER values are modelled MERRA-2 grid-cell means, not station records; they smooth urban heat island effects and local extremes. The paper must say so and may compare with a station series only if one becomes available (NOAA CDO is not available in this study).",
+    "POWER revises data with new versions; the load records the API version and access date.",
+    "The Frankfurt grid cell is one cell; spatial representativeness is not examined."
+  ],
+  "unavailable": []
+}

@@ -1,0 +1,13 @@
+{
+  "rendered": [
+    "fig_monthly_t2m.pdf",
+    "fig_seasonal_profile.pdf",
+    "fig_annual_means.pdf",
+    "fig_anomalies.pdf"
+  ],
+  "skipped": [],
+  "errors": [],
+  "placeholders": [],
+  "notes": [],
+  "skipped_reason": null
+}

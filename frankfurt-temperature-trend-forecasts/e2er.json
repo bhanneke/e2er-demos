@@ -1,0 +1,2768 @@
+{
+  "schema": "e2er-research-object/0.1",
+  "id": "bhanneke/frankfurt-temperature-trend-forecasts",
+  "content_id": "sha256:3a1ea11a621536e0f03c716cee2135654ada8f37ce533c728d50e9dba504bda9",
+  "title": "How has the monthly mean air temperature at 2 metres in Frankfurt am Main (NA...",
+  "question": "How has the monthly mean air temperature at 2 metres in Frankfurt am Main (NASA POWER, 50.11 N, 8.68 E) changed since 1981, and how well do seasonal forecasting models predict the next 36 months compared with a seasonal naive baseline?",
+  "contributors": [
+    {
+      "name": "Björn Hanneke",
+      "github": "bhanneke",
+      "roles": [
+        "conceptualization",
+        "investigation"
+      ]
+    }
+  ],
+  "ai": {
+    "backend": "claude_code",
+    "model": "sonnet",
+    "agents": [
+      "literature_scanner",
+      "idea_developer",
+      "data_architect",
+      "data_analyst",
+      "forecast_designer",
+      "econometrics_specialist",
+      "abstract_writer",
+      "paper_drafter",
+      "polish_formula",
+      "patch_revisor",
+      "literature_reviewer",
+      "writing_reviewer",
+      "data_reviewer",
+      "technical_reviewer",
+      "methods_reviewer",
+      "plausibility_reviewer",
+      "replication_packager"
+    ],
+    "agents_source": "recorded",
+    "usage": [
+      {
+        "agent": "strategist:decide",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 2,
+        "input_tokens": 4,
+        "output_tokens": 2559,
+        "cache_read_tokens": 28716,
+        "cache_write_tokens": 43278,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:27:45",
+        "last": "2026-10-13 22:00:19"
+      },
+      {
+        "agent": "literature_scanner",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 7123,
+        "cache_read_tokens": 47367,
+        "cache_write_tokens": 29114,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:28:46",
+        "last": "2026-10-13 21:28:46"
+      },
+      {
+        "agent": "idea_developer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 7941,
+        "cache_read_tokens": 47580,
+        "cache_write_tokens": 29703,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:28:54",
+        "last": "2026-10-13 21:28:54"
+      },
+      {
+        "agent": "data_architect",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 2874,
+        "cache_read_tokens": 81566,
+        "cache_write_tokens": 55285,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:29:23",
+        "last": "2026-10-13 21:29:23"
+      },
+      {
+        "agent": "data_analyst",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 2,
+        "input_tokens": 36,
+        "output_tokens": 12459,
+        "cache_read_tokens": 1490328,
+        "cache_write_tokens": 170458,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:30:36",
+        "last": "2026-10-13 22:08:39"
+      },
+      {
+        "agent": "forecast_designer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 10,
+        "output_tokens": 5939,
+        "cache_read_tokens": 184040,
+        "cache_write_tokens": 31413,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:31:27",
+        "last": "2026-10-13 21:31:27"
+      },
+      {
+        "agent": "econometrics_specialist",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 5,
+        "input_tokens": 94,
+        "output_tokens": 33480,
+        "cache_read_tokens": 2436384,
+        "cache_write_tokens": 208035,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:55:35",
+        "last": "2026-10-13 22:01:20"
+      },
+      {
+        "agent": "abstract_writer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 12,
+        "output_tokens": 2796,
+        "cache_read_tokens": 315335,
+        "cache_write_tokens": 63658,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 22:01:53",
+        "last": "2026-10-13 22:01:53"
+      },
+      {
+        "agent": "paper_drafter",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 2,
+        "input_tokens": 38,
+        "output_tokens": 19027,
+        "cache_read_tokens": 1131377,
+        "cache_write_tokens": 118966,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 22:03:28",
+        "last": "2026-10-13 22:03:43"
+      },
+      {
+        "agent": "strategist:ceiling_check",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 2,
+        "output_tokens": 326,
+        "cache_read_tokens": 14358,
+        "cache_write_tokens": 20231,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 22:03:53",
+        "last": "2026-10-13 22:03:53"
+      },
+      {
+        "agent": "strategist:self_attack",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 2,
+        "output_tokens": 5291,
+        "cache_read_tokens": 14358,
+        "cache_write_tokens": 17224,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 22:10:13",
+        "last": "2026-10-13 22:10:13"
+      },
+      {
+        "agent": "polish_formula",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 22,
+        "output_tokens": 9252,
+        "cache_read_tokens": 538054,
+        "cache_write_tokens": 51009,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 22:11:29",
+        "last": "2026-10-13 22:11:29"
+      },
+      {
+        "agent": "patch_revisor",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 2,
+        "input_tokens": 24,
+        "output_tokens": 14144,
+        "cache_read_tokens": 636067,
+        "cache_write_tokens": 115769,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 22:11:59",
+        "last": "2026-10-13 22:17:59"
+      },
+      {
+        "agent": "literature_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 5225,
+        "cache_read_tokens": 74937,
+        "cache_write_tokens": 51020,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 22:12:48",
+        "last": "2026-10-13 22:12:48"
+      },
+      {
+        "agent": "writing_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 13353,
+        "cache_read_tokens": 78132,
+        "cache_write_tokens": 62019,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 22:13:51",
+        "last": "2026-10-13 22:13:51"
+      },
+      {
+        "agent": "data_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 10766,
+        "cache_read_tokens": 81151,
+        "cache_write_tokens": 62679,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 22:14:19",
+        "last": "2026-10-13 22:14:19"
+      },
+      {
+        "agent": "technical_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 18136,
+        "cache_read_tokens": 82069,
+        "cache_write_tokens": 70789,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 22:14:26",
+        "last": "2026-10-13 22:14:26"
+      },
+      {
+        "agent": "methods_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 12773,
+        "cache_read_tokens": 80631,
+        "cache_write_tokens": 63977,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 22:15:37",
+        "last": "2026-10-13 22:15:37"
+      },
+      {
+        "agent": "plausibility_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 17920,
+        "cache_read_tokens": 76164,
+        "cache_write_tokens": 64710,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 22:16:41",
+        "last": "2026-10-13 22:16:41"
+      },
+      {
+        "agent": "replication_packager",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 12,
+        "output_tokens": 28941,
+        "cache_read_tokens": 308816,
+        "cache_write_tokens": 80039,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 22:20:54",
+        "last": "2026-10-13 22:20:54"
+      }
+    ]
+  },
+  "process": {
+    "template": "time-series-forecasting",
+    "mode": "iterative",
+    "methodology": "empirical",
+    "governance": "full",
+    "e2er_version": "0.17.0",
+    "exported": "20261015"
+  },
+  "components": {
+    "skills": {
+      "literature_scanner": [
+        "base/researcher",
+        "synthesis/context-builder"
+      ],
+      "idea_developer": [
+        "base/researcher",
+        "reasoning/creative-ideation",
+        "reasoning/novelty"
+      ],
+      "data_architect": [
+        "data/data-tables",
+        "data/query-data",
+        "base/researcher",
+        "data/yfinance",
+        "data/fred",
+        "data/gmd",
+        "data/usgs",
+        "data/exoplanets",
+        "data/gaia",
+        "data/nasa_power",
+        "data/noaa",
+        "data/worldbank",
+        "data/eurostat",
+        "data/owid",
+        "data/who_gho",
+        "data/gutenberg",
+        "data/github",
+        "data/gisco",
+        "data/naturalearth",
+        "methods/time-series-forecasting"
+      ],
+      "data_analyst": [
+        "data/data-tables",
+        "data/query-data",
+        "data/cleaning",
+        "data/figure-spec",
+        "econometrics/panel-data",
+        "data/yfinance",
+        "data/fred",
+        "data/gmd",
+        "data/summary-statistics-schema",
+        "data/usgs",
+        "data/exoplanets",
+        "data/gaia",
+        "data/nasa_power",
+        "data/noaa",
+        "data/worldbank",
+        "data/eurostat",
+        "data/owid",
+        "data/who_gho",
+        "data/gutenberg",
+        "data/github",
+        "data/gisco",
+        "data/naturalearth",
+        "methods/time-series-forecasting"
+      ],
+      "forecast_designer": [
+        "base/researcher",
+        "methods/time-series-forecasting",
+        "data/data-tables",
+        "data/query-data"
+      ],
+      "econometrics_specialist": [
+        "data/query-data",
+        "econometrics/time-series",
+        "data/figure-spec",
+        "data/timeseries-results-schema",
+        "methods/time-series-forecasting"
+      ],
+      "abstract_writer": [
+        "writing/abstract",
+        "reasoning/anti-slop",
+        "writing/cite-numbers-by-source"
+      ],
+      "paper_drafter": [
+        "writing/paper-structure",
+        "writing/personal-style",
+        "base/researcher",
+        "writing/cite-numbers-by-source",
+        "data/table-spec",
+        "methods/time-series-forecasting"
+      ],
+      "polish_formula": [
+        "latex/econ-model",
+        "math/optimization-verification"
+      ],
+      "patch_revisor": [
+        "writing/scoped-revision",
+        "writing/cite-numbers-by-source",
+        "writing/personal-style",
+        "reasoning/anti-slop"
+      ],
+      "literature_reviewer": [
+        "review/referee-simulation",
+        "synthesis/context-builder"
+      ],
+      "writing_reviewer": [
+        "review/writing-quality",
+        "reasoning/anti-slop"
+      ],
+      "data_reviewer": [
+        "review/data-quality",
+        "data/cleaning"
+      ],
+      "technical_reviewer": [
+        "review/technical-review",
+        "review/consistency-check",
+        "methods/time-series-forecasting"
+      ],
+      "methods_reviewer": [
+        "review/methods-review",
+        "review/consistency-check",
+        "methods/time-series-forecasting"
+      ],
+      "plausibility_reviewer": [
+        "review/domain-plausibility",
+        "review/consistency-check"
+      ],
+      "replication_packager": [
+        "data/cleaning",
+        "base/researcher",
+        "synthesis/replication-package"
+      ]
+    },
+    "skills_source": "recorded"
+  },
+  "literature": [
+    {
+      "cite_key": "NASA_POWER",
+      "doi": null,
+      "status": "unverifiable",
+      "verified_by": null
+    },
+    {
+      "cite_key": "mann1945nonparametric",
+      "doi": "10.2307/1907187",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "sen1968estimates",
+      "doi": "10.1080/01621459.1968.10480934",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "dickey1979distribution",
+      "doi": "10.1080/01621459.1979.10482531",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "kwiatkowski1992testing",
+      "doi": "10.1016/0304-4076(92)90104-Y",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "hyndman2021forecasting",
+      "doi": null,
+      "status": "unverifiable",
+      "verified_by": null
+    },
+    {
+      "cite_key": "box2008time",
+      "doi": "10.1002/9781118619193",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "hyndman2008automatic",
+      "doi": "10.18637/JSS.V027.I03",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "tashman2000out",
+      "doi": "10.1016/S0169-2070(00)00065-0",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "hyndman2006another",
+      "doi": "10.1016/J.IJFORECAST.2006.03.001",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "diebold1995comparing",
+      "doi": "10.1080/07350015.1995.10524599",
+      "status": "verified_doi",
+      "verified_by": "crossref"
+    },
+    {
+      "cite_key": "harvey1997testing",
+      "doi": "10.1016/S0169-2070(96)00719-4",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    }
+  ],
+  "data": [
+    {
+      "path": "data/data.db",
+      "sha256": "36eec22a2b7c7bc6c6bfb7cbe2e1fc7d6fa13f2be67a05abaf3a9125b07aa970",
+      "bytes": 77824
+    },
+    {
+      "path": "data/data_dictionary.json",
+      "sha256": "8ebfa4eee54821178c8d2ce1d8a3c9fac28da75849761509b6c7d16577804615",
+      "bytes": 7132
+    },
+    {
+      "path": "data/data_sources.json",
+      "sha256": "13647c22e4e61242c773eefc68fad7abd21626056c2f0db930e05a78583b139c",
+      "bytes": 3390
+    },
+    {
+      "path": "data/data_summary.md",
+      "sha256": "22beac907d9ca9d930dbc8f600a8eba27bdab919631e1c14c581e9ef57de053f",
+      "bytes": 3502
+    }
+  ],
+  "outputs": [
+    {
+      "path": "paper/abstract.tex",
+      "sha256": "f0bef6b8b8f99851107ba0f6ae81b54581484368787c3fc78e81741deb7d00e8"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256": "a81c0c43ac35e64f03828fab629e78936f50df0c092b08c88001f6928fd2a6aa"
+    },
+    {
+      "path": "paper/paper.tex",
+      "sha256": "4dc09831eab1c83ce2d00cad44e92bdb812685e4e1e34c8cb8b55e6ffa3f6a6f"
+    },
+    {
+      "path": "paper/refs.bib",
+      "sha256": "55c9206a0b9fb9b4b0181a084e2db79497e6706bdb2bcfe51274444203162054"
+    },
+    {
+      "path": "paper/tables/diag.tex",
+      "sha256": "ae9a77dfd0e25aa08d805918078cac065e36bb726046dec84a05ececb3d84e53"
+    },
+    {
+      "path": "paper/tables/dm.tex",
+      "sha256": "6b88a6dc134204078cd1685e1869404aebbe53de67485f748bbebbd1869e3454"
+    },
+    {
+      "path": "paper/tables/oos.tex",
+      "sha256": "59115e2d6ed998a681f7de625511f085c55c9330188b187bd6d197bfc0b4d2b1"
+    },
+    {
+      "path": "paper/tables/seasons.tex",
+      "sha256": "197d938c481c279ec641e83f29a1e054d596a6a5c694f55928d9cb344bfc0e03"
+    },
+    {
+      "path": "replication/README.md",
+      "sha256": "0aad8cbc14eb96c0a50340408f6a59581f98417a6f59b897eb34475404367717"
+    },
+    {
+      "path": "replication/audit_log.csv",
+      "sha256": "fb94173e03584f372b76843abcc12cf6b5527e6beb058844b5fb0f4e8e8bb201"
+    },
+    {
+      "path": "replication/data_queries.sql",
+      "sha256": "c584c4317260f4218b3d65b6034aea98963c22406450ef573a729e3faa8e234f"
+    },
+    {
+      "path": "replication/estimation.py",
+      "sha256": "eb6acc1decd284e52751757c80272293e668b6ce219cc5e9a309029a8b77146e"
+    },
+    {
+      "path": "results/estimation_results.json",
+      "sha256": "d98ac474f5e65896596af9b2f30976c5bb8ce0b38dedcad2c97b3bd3b1df7959"
+    },
+    {
+      "path": "results/figure_check.json",
+      "sha256": "e16895728556fc1daed7097af0273454518c041446eedfd6d2f4ae6ea1c4e7d0"
+    },
+    {
+      "path": "results/figure_spec.json",
+      "sha256": "96226e2de2048a729e4f7e12f542ec2d40f6386246cd3c95f12c32deb60d5431"
+    },
+    {
+      "path": "results/figures/fig_annual_means.pdf",
+      "sha256": "06d9b99a46adcde44e921b693488c072208bf884e2e0ef070411fe83bb1a7404"
+    },
+    {
+      "path": "results/figures/fig_anomalies.pdf",
+      "sha256": "6cd32898a3c5358398695a690906d0b11d7857d7a022e11726d0401f8bacec1a"
+    },
+    {
+      "path": "results/figures/fig_monthly_t2m.pdf",
+      "sha256": "5de3ee74df322ed211d9ef8e4f476603cd1aa500e0a6578d9c59b6cd0f5bfc66"
+    },
+    {
+      "path": "results/figures/fig_seasonal_profile.pdf",
+      "sha256": "0f33685db2d120a08efc60e55a2066293d7a4b4daecaa2a40794bb8c9e3578fc"
+    },
+    {
+      "path": "results/forecast_check.json",
+      "sha256": "1594398afad39a190c15d9e977a0499c8511d284b3b0cacee959ab2839f52ace"
+    },
+    {
+      "path": "results/number_verification.json",
+      "sha256": "0d8addfbc1b248cad91a6de0c8481efe3a40495c399292adb641839f64dcc999"
+    },
+    {
+      "path": "results/summary_statistics.json",
+      "sha256": "0104f829e88068b9a3593b08c6199e52d871ab1dac0452546f48a45b3bcfa30e"
+    },
+    {
+      "path": "results/table_render_report.json",
+      "sha256": "915d44aa8eb4334beebe6f321630e969172b692e38cfbc6db9804e74cf218e84"
+    },
+    {
+      "path": "results/table_spec.json",
+      "sha256": "c0706427a4c3d46c17d4f4748aa7743acceafd697346d05b6fba622fa79466a9"
+    }
+  ],
+  "provenance": {
+    "files": 65,
+    "edges": {
+      "citation": 12,
+      "data": 1,
+      "estimation": 1,
+      "figure": 4,
+      "table_cell": 72
+    }
+  },
+  "verification": [
+    {
+      "check": "integrity",
+      "status": "PASS",
+      "detail": "65 files hash-verified against provenance.json; 72 table cell(s) traced in the derivation graph; 5 change(s) after export recorded as amendments (README.md, paper/paper.pdf, paper/paper.tex)"
+    },
+    {
+      "check": "numbers",
+      "status": "PASS",
+      "detail": "76 table cell(s) are source values at the precision shown; text (not gating): 127 of 128 number(s) are source values, 0 differ from the quantity named nearby, 1 untraced"
+    },
+    {
+      "check": "tables",
+      "status": "PASS",
+      "detail": "4 table(s) reproduce byte-identically from the sidecars"
+    },
+    {
+      "check": "spec",
+      "status": "SKIP",
+      "detail": "no design/identification_spec.json"
+    },
+    {
+      "check": "results contract",
+      "status": "PASS",
+      "detail": "timeseries results (time-series models, forecasts and out-of-sample errors) are complete and consistent"
+    },
+    {
+      "check": "citations",
+      "status": "PASS",
+      "detail": "12 cite key(s) resolve in refs.bib; snapshot: 10 verified, 2 unverifiable at run time"
+    },
+    {
+      "check": "results from code",
+      "status": "SKIP",
+      "detail": "not checked: the run predates output records"
+    },
+    {
+      "check": "preregistration",
+      "status": "PASS",
+      "detail": "estimation follows the pre-registered plan (frozen 2026-10-13); every pre-registered hypothesis has a result (H1, H2, H3)"
+    }
+  ],
+  "dependencies": {
+    "uses": [
+      "template:time-series-forecasting",
+      "agent:literature_scanner",
+      "agent:idea_developer",
+      "agent:data_architect",
+      "agent:data_analyst",
+      "agent:forecast_designer",
+      "agent:econometrics_specialist",
+      "agent:abstract_writer",
+      "agent:paper_drafter",
+      "agent:polish_formula",
+      "agent:patch_revisor",
+      "agent:literature_reviewer",
+      "agent:writing_reviewer",
+      "agent:data_reviewer",
+      "agent:technical_reviewer",
+      "agent:methods_reviewer",
+      "agent:plausibility_reviewer",
+      "agent:replication_packager",
+      "skill:e2er/base/researcher",
+      "skill:e2er/data/cleaning",
+      "skill:e2er/data/data-tables",
+      "skill:e2er/data/eurostat",
+      "skill:e2er/data/exoplanets",
+      "skill:e2er/data/figure-spec",
+      "skill:e2er/data/fred",
+      "skill:e2er/data/gaia",
+      "skill:e2er/data/gisco",
+      "skill:e2er/data/github",
+      "skill:e2er/data/gmd",
+      "skill:e2er/data/gutenberg",
+      "skill:e2er/data/nasa_power",
+      "skill:e2er/data/naturalearth",
+      "skill:e2er/data/noaa",
+      "skill:e2er/data/owid",
+      "skill:e2er/data/query-data",
+      "skill:e2er/data/summary-statistics-schema",
+      "skill:e2er/data/table-spec",
+      "skill:e2er/data/timeseries-results-schema",
+      "skill:e2er/data/usgs",
+      "skill:e2er/data/who_gho",
+      "skill:e2er/data/worldbank",
+      "skill:e2er/data/yfinance",
+      "skill:e2er/econometrics/panel-data",
+      "skill:e2er/econometrics/time-series",
+      "skill:e2er/latex/econ-model",
+      "skill:e2er/math/optimization-verification",
+      "skill:e2er/methods/time-series-forecasting",
+      "skill:e2er/reasoning/anti-slop",
+      "skill:e2er/reasoning/creative-ideation",
+      "skill:e2er/reasoning/novelty",
+      "skill:e2er/review/consistency-check",
+      "skill:e2er/review/data-quality",
+      "skill:e2er/review/domain-plausibility",
+      "skill:e2er/review/methods-review",
+      "skill:e2er/review/referee-simulation",
+      "skill:e2er/review/technical-review",
+      "skill:e2er/review/writing-quality",
+      "skill:e2er/synthesis/context-builder",
+      "skill:e2er/synthesis/replication-package",
+      "skill:e2er/writing/abstract",
+      "skill:e2er/writing/cite-numbers-by-source",
+      "skill:e2er/writing/paper-structure",
+      "skill:e2er/writing/personal-style",
+      "skill:e2er/writing/scoped-revision"
+    ],
+    "derived_from": []
+  },
+  "repository": {
+    "url": "https://github.com/bhanneke/e2er-demos",
+    "path": "frankfurt-temperature-trend-forecasts",
+    "host": "github",
+    "left_out": []
+  },
+  "license": null,
+  "purpose": "demonstration",
+  "availability": {
+    "data": {
+      "access": "public",
+      "url": "https://github.com/bhanneke/e2er-demos"
+    },
+    "code": {
+      "access": "public",
+      "url": "https://github.com/bhanneke/e2er-demos"
+    }
+  },
+  "dossier": {
+    "id": "sha256:c985731bebd416627892828103bd10b1f5c56b65ab97a6b399f143696a425c80",
+    "url": "https://e2er.org/d/c985731bebd41662",
+    "doc": {
+      "components": [
+        {
+          "id": "agent:abstract_writer",
+          "kind": "agent",
+          "name": "abstract_writer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:data_analyst",
+          "kind": "agent",
+          "name": "data_analyst",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:data_architect",
+          "kind": "agent",
+          "name": "data_architect",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:data_reviewer",
+          "kind": "agent",
+          "name": "data_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:econometrics_specialist",
+          "kind": "agent",
+          "name": "econometrics_specialist",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:forecast_designer",
+          "kind": "agent",
+          "name": "forecast_designer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:idea_developer",
+          "kind": "agent",
+          "name": "idea_developer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:literature_reviewer",
+          "kind": "agent",
+          "name": "literature_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:literature_scanner",
+          "kind": "agent",
+          "name": "literature_scanner",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:methods_reviewer",
+          "kind": "agent",
+          "name": "methods_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:paper_drafter",
+          "kind": "agent",
+          "name": "paper_drafter",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:patch_revisor",
+          "kind": "agent",
+          "name": "patch_revisor",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:plausibility_reviewer",
+          "kind": "agent",
+          "name": "plausibility_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:polish_formula",
+          "kind": "agent",
+          "name": "polish_formula",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:replication_packager",
+          "kind": "agent",
+          "name": "replication_packager",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:technical_reviewer",
+          "kind": "agent",
+          "name": "technical_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:writing_reviewer",
+          "kind": "agent",
+          "name": "writing_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "connector:claude-code",
+          "kind": "connector",
+          "name": "claude-code",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/modules/llm/claude_code.py"
+          }
+        },
+        {
+          "id": "skill:e2er/base/researcher",
+          "kind": "skill",
+          "name": "researcher",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/base/researcher.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/cleaning",
+          "kind": "skill",
+          "name": "cleaning",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/cleaning.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/data-tables",
+          "kind": "skill",
+          "name": "data-tables",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/data-tables.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/eurostat",
+          "kind": "skill",
+          "name": "eurostat",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/eurostat.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/exoplanets",
+          "kind": "skill",
+          "name": "exoplanets",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/exoplanets.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/figure-spec",
+          "kind": "skill",
+          "name": "figure-spec",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/figure-spec.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/fred",
+          "kind": "skill",
+          "name": "fred",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/fred.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gaia",
+          "kind": "skill",
+          "name": "gaia",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/gaia.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gisco",
+          "kind": "skill",
+          "name": "gisco",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/gisco.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/github",
+          "kind": "skill",
+          "name": "github",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/github.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gmd",
+          "kind": "skill",
+          "name": "gmd",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/gmd.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gutenberg",
+          "kind": "skill",
+          "name": "gutenberg",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/gutenberg.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/nasa_power",
+          "kind": "skill",
+          "name": "nasa_power",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/nasa_power.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/naturalearth",
+          "kind": "skill",
+          "name": "naturalearth",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/naturalearth.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/noaa",
+          "kind": "skill",
+          "name": "noaa",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/noaa.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/owid",
+          "kind": "skill",
+          "name": "owid",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/owid.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/query-data",
+          "kind": "skill",
+          "name": "query-data",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/query-data.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/summary-statistics-schema",
+          "kind": "skill",
+          "name": "summary-statistics-schema",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/summary-statistics-schema.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/table-spec",
+          "kind": "skill",
+          "name": "table-spec",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/table-spec.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/timeseries-results-schema",
+          "kind": "skill",
+          "name": "timeseries-results-schema",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/timeseries-results-schema.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/usgs",
+          "kind": "skill",
+          "name": "usgs",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/usgs.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/who_gho",
+          "kind": "skill",
+          "name": "who_gho",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/who_gho.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/worldbank",
+          "kind": "skill",
+          "name": "worldbank",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/worldbank.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/yfinance",
+          "kind": "skill",
+          "name": "yfinance",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/yfinance.md"
+          }
+        },
+        {
+          "id": "skill:e2er/econometrics/panel-data",
+          "kind": "skill",
+          "name": "panel-data",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/econometrics/panel-data.md"
+          }
+        },
+        {
+          "id": "skill:e2er/econometrics/time-series",
+          "kind": "skill",
+          "name": "time-series",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/econometrics/time-series.md"
+          }
+        },
+        {
+          "id": "skill:e2er/latex/econ-model",
+          "kind": "skill",
+          "name": "econ-model",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/latex/econ-model.md"
+          }
+        },
+        {
+          "id": "skill:e2er/math/optimization-verification",
+          "kind": "skill",
+          "name": "optimization-verification",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/math/optimization-verification.md"
+          }
+        },
+        {
+          "id": "skill:e2er/methods/time-series-forecasting",
+          "kind": "skill",
+          "name": "time-series-forecasting",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/methods/time-series-forecasting.md"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/anti-slop",
+          "kind": "skill",
+          "name": "anti-slop",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/reasoning/anti-slop.md"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/creative-ideation",
+          "kind": "skill",
+          "name": "creative-ideation",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/reasoning/creative-ideation.md"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/novelty",
+          "kind": "skill",
+          "name": "novelty",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/reasoning/novelty.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/consistency-check",
+          "kind": "skill",
+          "name": "consistency-check",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/consistency-check.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/data-quality",
+          "kind": "skill",
+          "name": "data-quality",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/data-quality.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/domain-plausibility",
+          "kind": "skill",
+          "name": "domain-plausibility",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/domain-plausibility.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/methods-review",
+          "kind": "skill",
+          "name": "methods-review",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/methods-review.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/referee-simulation",
+          "kind": "skill",
+          "name": "referee-simulation",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/referee-simulation.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/technical-review",
+          "kind": "skill",
+          "name": "technical-review",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/technical-review.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/writing-quality",
+          "kind": "skill",
+          "name": "writing-quality",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/writing-quality.md"
+          }
+        },
+        {
+          "id": "skill:e2er/synthesis/context-builder",
+          "kind": "skill",
+          "name": "context-builder",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/synthesis/context-builder.md"
+          }
+        },
+        {
+          "id": "skill:e2er/synthesis/replication-package",
+          "kind": "skill",
+          "name": "replication-package",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/synthesis/replication-package.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/abstract",
+          "kind": "skill",
+          "name": "abstract",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/abstract.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/cite-numbers-by-source",
+          "kind": "skill",
+          "name": "cite-numbers-by-source",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/cite-numbers-by-source.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/paper-structure",
+          "kind": "skill",
+          "name": "paper-structure",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/paper-structure.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/personal-style",
+          "kind": "skill",
+          "name": "personal-style",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/personal-style.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/scoped-revision",
+          "kind": "skill",
+          "name": "scoped-revision",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/scoped-revision.md"
+          }
+        },
+        {
+          "id": "template:time-series-forecasting",
+          "kind": "template",
+          "name": "time-series-forecasting",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "pipelines/time-series-forecasting.toml"
+          }
+        }
+      ],
+      "credit": {
+        "entries": [
+          {
+            "accessed": "2026-10-11",
+            "creator": "George E. P. Box, Gwilym M. Jenkins and Gregory C. Reinsel",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "book",
+            "note": "ARIMA modelling and the identify-estimate-check cycle.",
+            "publisher": "Wiley",
+            "relation": "cites",
+            "role": "method",
+            "title": "Time Series Analysis: Forecasting and Control (4th edition)",
+            "url": "https://doi.org/10.1002/9781118619193",
+            "year": 2008
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Rob J. Hyndman and George Athanasopoulos",
+            "found_via": "the book's website (no DOI)",
+            "kind": "book",
+            "note": "Forecasting practice: baselines (naive, seasonal naive, mean, drift), decomposition, ETS and ARIMA, time-series cross-validation, prediction intervals and accuracy measures.",
+            "publisher": "OTexts, Melbourne",
+            "relation": "cites",
+            "role": "method",
+            "title": "Forecasting: Principles and Practice (3rd edition)",
+            "url": "https://otexts.com/fpp3/",
+            "year": 2021
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Rob J. Hyndman and Yeasmin Khandakar",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Automatic ETS and ARIMA selection on the training periods.",
+            "publisher": "Journal of Statistical Software 27(3)",
+            "relation": "cites",
+            "role": "method",
+            "title": "Automatic Time Series Forecasting: The forecast Package for R",
+            "url": "https://doi.org/10.18637/jss.v027.i03",
+            "year": 2008
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Rob J. Hyndman and Anne B. Koehler",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Forecast accuracy measures (MASE scaled by the seasonal naive method).",
+            "publisher": "International Journal of Forecasting 22(4), 679-688",
+            "relation": "cites",
+            "role": "method",
+            "title": "Another look at measures of forecast accuracy",
+            "url": "https://doi.org/10.1016/j.ijforecast.2006.03.001",
+            "year": 2006
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Leonard J. Tashman",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Out-of-sample evaluation and rolling-origin cross-validation.",
+            "publisher": "International Journal of Forecasting 16(4), 437-450",
+            "relation": "cites",
+            "role": "method",
+            "title": "Out-of-sample tests of forecasting accuracy: an analysis and review",
+            "url": "https://doi.org/10.1016/S0169-2070(00)00065-0",
+            "year": 2000
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Francis X. Diebold and Roberto S. Mariano",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Testing whether one forecast is more accurate than another.",
+            "publisher": "Journal of Business & Economic Statistics 13(3), 253-263",
+            "relation": "cites",
+            "role": "method",
+            "title": "Comparing Predictive Accuracy",
+            "url": "https://doi.org/10.1080/07350015.1995.10524599",
+            "year": 1995
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "David Harvey, Stephen Leybourne and Paul Newbold",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Small-sample correction of the Diebold-Mariano test.",
+            "publisher": "International Journal of Forecasting 13(2), 281-291",
+            "relation": "cites",
+            "role": "method",
+            "title": "Testing the equality of prediction mean squared errors",
+            "url": "https://doi.org/10.1016/S0169-2070(96)00719-4",
+            "year": 1997
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "David A. Dickey and Wayne A. Fuller",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Unit-root test (ADF) among the stationarity diagnostics.",
+            "publisher": "Journal of the American Statistical Association 74(366a), 427-431",
+            "relation": "cites",
+            "role": "method",
+            "title": "Distribution of the Estimators for Autoregressive Time Series with a Unit Root",
+            "url": "https://doi.org/10.1080/01621459.1979.10482531",
+            "year": 1979
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Denis Kwiatkowski, Peter C.B. Phillips, Peter Schmidt and Yongcheol Shin",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Stationarity test (KPSS) among the stationarity diagnostics.",
+            "publisher": "Journal of Econometrics 54(1-3), 159-178",
+            "relation": "cites",
+            "role": "method",
+            "title": "Testing the null hypothesis of stationarity against the alternative of a unit root",
+            "url": "https://doi.org/10.1016/0304-4076(92)90104-Y",
+            "year": 1992
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Henry B. Mann",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Mann-Kendall trend test among the trend diagnostics.",
+            "publisher": "Econometrica 13(3), 245-259",
+            "relation": "cites",
+            "role": "method",
+            "title": "Nonparametric Tests Against Trend",
+            "url": "https://doi.org/10.2307/1907187",
+            "year": 1945
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Pranab Kumar Sen",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Sen's slope, the size of a monotone trend.",
+            "publisher": "Journal of the American Statistical Association 63(324), 1379-1389",
+            "relation": "cites",
+            "role": "method",
+            "title": "Estimates of the Regression Coefficient Based on Kendall's Tau",
+            "url": "https://doi.org/10.1080/01621459.1968.10480934",
+            "year": 1968
+          }
+        ],
+        "template": "time-series-forecasting"
+      },
+      "data": [
+        {
+          "path": "data/data.db",
+          "sha256": "36eec22a2b7c7bc6c6bfb7cbe2e1fc7d6fa13f2be67a05abaf3a9125b07aa970"
+        },
+        {
+          "path": "data/data_dictionary.json",
+          "sha256": "8ebfa4eee54821178c8d2ce1d8a3c9fac28da75849761509b6c7d16577804615"
+        },
+        {
+          "path": "data/data_sources.json",
+          "sha256": "13647c22e4e61242c773eefc68fad7abd21626056c2f0db930e05a78583b139c"
+        },
+        {
+          "path": "data/data_summary.md",
+          "sha256": "22beac907d9ca9d930dbc8f600a8eba27bdab919631e1c14c581e9ef57de053f"
+        }
+      ],
+      "data_sources": [
+        {
+          "citation": "NASA Langley Research Center (LaRC) POWER Project. Prediction Of Worldwide Energy Resources (POWER), https://power.larc.nasa.gov/. The data was obtained from National Aeronautics and Space Administration (NASA) Langley Research Center's Prediction Of Worldwide Energy Resources (POWER) project funded through the NASA Earth Science Division. Data reference: The data was obtained from the POWER Monthly and Annual API version 2.10.0 on 2026/10/13.",
+          "citation_by": "source",
+          "cite_key": "NASA_POWER",
+          "connector": "nasa_power",
+          "dataset": "NASA Prediction Of Worldwide Energy Resources (POWER), NASA Langley Research Center",
+          "files": [
+            {
+              "sha256": "3471530b3a0442bffb1a945bbdbba67d72dbf7c5eb795e846d384922a200cc94",
+              "url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M&community=RE&latitude=50.11&longitude=8.68&start=1981&end=2025&format=JSON"
+            }
+          ],
+          "licence": "No licence stated by POWER; NASA's Earth science data use guidance (https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance): \"Unless the content is marked with a use restriction or license, data provided from a NASA-led mission are licensed as Creative Commons Zero (CC0). While there are no restrictions on the use of these data, data users are very strongly urged to cite the data used in their work products.\" POWER's referencing guide (https://power.larc.nasa.gov/docs/referencing/): \"When POWER data products are used in a publication include both POWER's Reference and POWER's Data Reference in any work product or publication\" and \"the Project requests notification if POWER data is transmitted to other researchers.\"",
+          "link": "https://power.larc.nasa.gov/data-access-viewer/",
+          "retrieved_at": "2026-10-13T21:29:34Z",
+          "saved_to": "data/frankfurt_t2m_monthly.csv",
+          "series": "NASA POWER monthly T2M at lat 50.11, lon 8.68, 1981–2025",
+          "table": "frankfurt_t2m_monthly",
+          "terms": "https://power.larc.nasa.gov/docs/referencing/",
+          "terms_summary": "Free and keyless; NASA data without a marked restriction are CC0. POWER asks publications to give its reference with the API version and access date, and asks to be told when data are passed to others.",
+          "version": "v2.10.0"
+        }
+      ],
+      "e2er": {
+        "commit": null,
+        "exported_with": "0.17.0",
+        "repository": null,
+        "segments": [
+          {
+            "commit": null,
+            "from": "2026-10-13T21:27:27Z",
+            "skills": "recorded at dispatch",
+            "steps": 7,
+            "template": "time-series-forecasting",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T21:32:02Z",
+            "steps": 3,
+            "template": "time-series-forecasting",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T21:52:59Z",
+            "skills": "recorded at dispatch",
+            "steps": 10,
+            "template": "time-series-forecasting",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T21:59:14Z",
+            "skills": "recorded at dispatch",
+            "steps": 13,
+            "template": "time-series-forecasting",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T22:08:07Z",
+            "skills": "recorded at dispatch",
+            "steps": 7,
+            "template": "time-series-forecasting",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T22:09:28Z",
+            "skills": "recorded at dispatch",
+            "steps": 16,
+            "template": "time-series-forecasting",
+            "version": "0.16.0"
+          }
+        ],
+        "uncommitted_changes": false,
+        "version": "0.16.0"
+      },
+      "preregistration": {
+        "file": "design/preregistration.md",
+        "frozen_at": "2026-10-13T21:52:59Z",
+        "plan_files": {
+          "forecast_design.json": "73cdec2dd9c71dab061e5c04b391bd35b0cfb39d881dc520bf3eabbf4bb9f917"
+        },
+        "sha256": "06aa1494d793c80b3fe700d4813da0e178a4aaf5f9aa6b8f6ea46702ad7f6583"
+      },
+      "references": [
+        {
+          "key": "NASA_POWER",
+          "source": "web",
+          "title": "Prediction Of Worldwide Energy Resources (POWER)"
+        },
+        {
+          "doi": "10.2307/1907187",
+          "key": "mann1945nonparametric",
+          "source": "template",
+          "title": "Nonparametric Tests Against Trend",
+          "year": "1945"
+        },
+        {
+          "doi": "10.1080/01621459.1968.10480934",
+          "key": "sen1968estimates",
+          "source": "template",
+          "title": "Estimates of the Regression Coefficient Based on Kendall's Tau",
+          "year": "1968"
+        },
+        {
+          "doi": "10.1080/01621459.1979.10482531",
+          "key": "dickey1979distribution",
+          "source": "template",
+          "title": "Distribution of the Estimators for Autoregressive Time Series with a Unit Root",
+          "year": "1979"
+        },
+        {
+          "doi": "10.1016/0304-4076(92)90104-Y",
+          "key": "kwiatkowski1992testing",
+          "source": "template",
+          "title": "Testing the null hypothesis of stationarity against the alternative of a unit root",
+          "year": "1992"
+        },
+        {
+          "key": "hyndman2021forecasting",
+          "source": "template",
+          "title": "Forecasting: Principles and Practice (3rd edition)",
+          "year": "2021"
+        },
+        {
+          "doi": "10.1002/9781118619193",
+          "key": "box2008time",
+          "source": "template",
+          "title": "Time Series Analysis: Forecasting and Control (4th edition)",
+          "year": "2008"
+        },
+        {
+          "doi": "10.18637/jss.v027.i03",
+          "key": "hyndman2008automatic",
+          "source": "template",
+          "title": "Automatic Time Series Forecasting: The forecast Package for R",
+          "year": "2008"
+        },
+        {
+          "doi": "10.1016/S0169-2070(00)00065-0",
+          "key": "tashman2000out",
+          "source": "template",
+          "title": "Out-of-sample tests of forecasting accuracy: an analysis and review",
+          "year": "2000"
+        },
+        {
+          "doi": "10.1016/j.ijforecast.2006.03.001",
+          "key": "hyndman2006another",
+          "source": "template",
+          "title": "Another look at measures of forecast accuracy",
+          "year": "2006"
+        },
+        {
+          "doi": "10.1080/07350015.1995.10524599",
+          "key": "diebold1995comparing",
+          "source": "template",
+          "title": "Comparing Predictive Accuracy",
+          "year": "1995"
+        },
+        {
+          "doi": "10.1016/S0169-2070(96)00719-4",
+          "key": "harvey1997testing",
+          "source": "template",
+          "title": "Testing the equality of prediction mean squared errors",
+          "year": "1997"
+        }
+      ],
+      "run": {
+        "backend": "claude_code",
+        "events": [
+          {
+            "at": "2026-10-13T21:27:27Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "sonnet",
+            "segment": 0
+          },
+          {
+            "at": "2026-10-13T21:27:27Z",
+            "event": "method_sources",
+            "keys": [
+              "box2008time",
+              "hyndman2021forecasting",
+              "hyndman2008automatic",
+              "hyndman2006another",
+              "tashman2000out",
+              "diebold1995comparing",
+              "harvey1997testing",
+              "dickey1979distribution",
+              "kwiatkowski1992testing",
+              "mann1945nonparametric",
+              "sen1968estimates"
+            ],
+            "segment": 0
+          },
+          {
+            "at": "2026-10-13T21:31:27Z",
+            "event": "awaiting_review",
+            "segment": 0,
+            "stage": "review_design",
+            "step": "review_design"
+          },
+          {
+            "at": "2026-10-13T21:32:02Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "sonnet",
+            "segment": 1
+          },
+          {
+            "at": "2026-10-13T21:32:02Z",
+            "event": "awaiting_review",
+            "segment": 1,
+            "stage": "preregister",
+            "step": "preregister"
+          },
+          {
+            "at": "2026-10-13T21:52:59Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "sonnet",
+            "segment": 2
+          },
+          {
+            "at": "2026-10-13T21:52:59Z",
+            "event": "preregistration_frozen",
+            "file": "preregistration.md",
+            "frozen_at": "2026-10-13T21:52:59Z",
+            "hypotheses": [
+              {
+                "id": "H1",
+                "statement": "the linear trend in annual mean T2M is positive, on the order of +0.3 to +0.5 °C/decade (prior from regional literature; the estimate itself is data-driven)."
+              },
+              {
+                "id": "H2",
+                "statement": "models with an explicit trend or level adjustment beat seasonal naive on RMSE at long horizons mainly because seasonal naive carries one year of noise; averaging over many years in the seasonal component reduces variance. Gains are modest (MASE about 0.75 to 0.95)."
+              },
+              {
+                "id": "H3",
+                "statement": "ETS and SARIMA with unconstrained adaptive level will not clearly beat the harmonic regression; DM tests will often be insignificant for pairs among the non-naive models."
+              }
+            ],
+            "plan_files": {
+              "forecast_design.json": "73cdec2dd9c71dab061e5c04b391bd35b0cfb39d881dc520bf3eabbf4bb9f917"
+            },
+            "segment": 2,
+            "sha256": "06aa1494d793c80b3fe700d4813da0e178a4aaf5f9aa6b8f6ea46702ad7f6583",
+            "step": "preregister"
+          },
+          {
+            "at": "2026-10-13T21:59:14Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "sonnet",
+            "segment": 3
+          },
+          {
+            "at": "2026-10-13T22:08:07Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "sonnet",
+            "segment": 4
+          },
+          {
+            "at": "2026-10-13T22:08:39Z",
+            "event": "awaiting_review",
+            "segment": 4,
+            "stage": "review_draft",
+            "step": "review_draft"
+          },
+          {
+            "at": "2026-10-13T22:09:28Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "sonnet",
+            "segment": 5
+          },
+          {
+            "at": "2026-10-13T22:10:13Z",
+            "categories": [],
+            "event": "self_critique",
+            "findings": 0,
+            "label": "Self-critique",
+            "max_severity": 0,
+            "segment": 5,
+            "serious": 0,
+            "step": "self_attack"
+          },
+          {
+            "at": "2026-10-13T22:11:59Z",
+            "changes_made": 2,
+            "decision": "applied",
+            "event": "polish_applied",
+            "label": "Polish notes considered",
+            "notes": [
+              "polish_formula"
+            ],
+            "segment": 5,
+            "step": "polish"
+          }
+        ],
+        "exported": "20261015",
+        "governance": "full",
+        "internal_review": {
+          "combined": "weighted average",
+          "reviewers": {
+            "data_reviewer": 6.5,
+            "literature_reviewer": 4.6,
+            "methods_reviewer": 6,
+            "plausibility_reviewer": 6.5,
+            "technical_reviewer": 6,
+            "writing_reviewer": 5.5
+          },
+          "rounds": 1,
+          "scale": 10,
+          "score": 5.93,
+          "weights": {
+            "data_reviewer": 1,
+            "literature_reviewer": 0.75,
+            "methods_reviewer": 1.5,
+            "plausibility_reviewer": 1,
+            "technical_reviewer": 1.25,
+            "writing_reviewer": 0.75
+          }
+        },
+        "mode": "iterative",
+        "models": [
+          {
+            "backend": "claude_code",
+            "model": "sonnet"
+          }
+        ],
+        "outcome": {
+          "at": "2026-10-13T22:20:54Z",
+          "status": "completed"
+        },
+        "rounds": [
+          {
+            "ceiling_check": {
+              "at": "2026-10-13T22:03:53Z",
+              "decision": "ready for review",
+              "reason": "The draft is already complete and internally coherent: the forecast setup was frozen before estimation (train 1981-2022, 36-month hold-out 2023-2025), all declared models are reported against the seasonal naive and naive baselines, and the results cover trend, seasonal trends, amplitude and phase, Diebold-Mariano tests and interval calibration. The remaining gaps are the short hold-out, which limits power, and the grid-cell rather than station nature of the data. Targeted work cannot fix either of these, because the hold-out is frozen and the data are fixed. Further drafting on iteration 1 would give less than 5% qualitative improvement, and the review panel (technical, literature, writing, data, methods, plausibility) is better placed to find residual issues, such as checking the reported ~30 percent RMSE reduction against estimation_results.json and the rolling-origin evidence behind the claims.",
+              "verdict": "proceed_to_review"
+            },
+            "label": "Round 1",
+            "reason": "Data and forecast design are done and frozen. The only open step is the researcher-mandated layout fix to estimation_results.json (h1_result, h2_result, h3_result as top-level dicts). After that, the evaluation check runs and the draft and abstract can follow.",
+            "round": 1,
+            "segment": 3,
+            "specialist_labels": [
+              "Estimation",
+              "Paper draft",
+              "Abstract"
+            ],
+            "specialists": [
+              "econometrics_specialist",
+              "paper_drafter",
+              "abstract_writer"
+            ],
+            "started": "2026-10-13T22:00:19Z"
+          }
+        ],
+        "template": "time-series-forecasting"
+      },
+      "schema": "e2er-dossier/0.6",
+      "study": {
+        "title": "How has the monthly mean air temperature at 2 metres in Frankfurt am Main (NA..."
+      },
+      "workflow": [
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:28:46Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/literature_review.md",
+            "sha256": "cc9db2990c62dcc919cf805e94ae53ad0135c8eafc2a4dfd75384368a463c5d7"
+          },
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "literature_scanner",
+          "started": "2026-10-13T21:27:45Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:28:54Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/paper_plan.md",
+            "sha256": "12edb685802f619ac2c8e128a95dd12442f8e9a861dec526caf3567bf4bcfade"
+          },
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "idea_developer",
+          "started": "2026-10-13T21:27:45Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:29:23Z",
+          "model": "sonnet",
+          "output": {
+            "file": "data/data_dictionary.json",
+            "sha256": "eb1588b8e8d5462b3b4a4fd95c601aa3c0188e5a2b5e0ca86f64a5fe4cebe6fe"
+          },
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "data_architect",
+          "started": "2026-10-13T21:28:54Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:30:36Z",
+          "model": "sonnet",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "22beac907d9ca9d930dbc8f600a8eba27bdab919631e1c14c581e9ef57de053f"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "22beac907d9ca9d930dbc8f600a8eba27bdab919631e1c14c581e9ef57de053f"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "0104f829e88068b9a3593b08c6199e52d871ab1dac0452546f48a45b3bcfa30e"
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "bbe5bb2aa6847382dcec6693962673c9340454a1cdb80cb5086cd0844b9e2bcf"
+            }
+          ],
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T21:29:23Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:31:27Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/forecast_design.md",
+            "sha256": "27558e2647415945bf46e09b2d7d8e754ef1741d444fc7942db6b371d770ab09"
+          },
+          "outputs": [
+            {
+              "file": "design/forecast_design.md",
+              "sha256": "27558e2647415945bf46e09b2d7d8e754ef1741d444fc7942db6b371d770ab09"
+            },
+            {
+              "file": "design/forecast_design.json",
+              "sha256": "73cdec2dd9c71dab061e5c04b391bd35b0cfb39d881dc520bf3eabbf4bb9f917"
+            }
+          ],
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "forecast_designer",
+          "started": "2026-10-13T21:30:36Z",
+          "type": "specialist"
+        },
+        {
+          "action": "instruction",
+          "at": "2026-10-13T21:32:02Z",
+          "phase": "initial",
+          "segment": 0,
+          "step": "review_design",
+          "text": "Researcher decisions at the design review: the forecast setup in forecast_design.json (training 1981-01 to 2022-12, hold-out 2023-01 to 2025-12, seasonal naive and naive baselines, ETS(A,N,A), ETS(A,Ad,A), SARIMA, harmonic trend) is the design; the forecast beyond the data covers 2026-01 to 2028-12. Drop the optional ML model and the DWD station comparison (no DWD data are loaded in this study); name the station comparison as future work only. The data end in 2025-12 because the POWER monthly load covers whole years; say so. Report every declared model, including those that lose to the seasonal naive baseline.",
+          "type": "researcher"
+        },
+        {
+          "action": "approve",
+          "at": "2026-10-13T21:32:02Z",
+          "phase": "initial",
+          "segment": 0,
+          "step": "review_design",
+          "type": "researcher"
+        },
+        {
+          "at": "2026-10-13T21:32:02Z",
+          "check": "preregistration",
+          "enforced": true,
+          "passed": true,
+          "phase": "initial",
+          "segment": 1,
+          "type": "check"
+        },
+        {
+          "action": "edit",
+          "at": "2026-10-13T21:52:56Z",
+          "file": "preregistration.md",
+          "phase": "initial",
+          "segment": 1,
+          "sha256_after": "06aa1494d793c80b3fe700d4813da0e178a4aaf5f9aa6b8f6ea46702ad7f6583",
+          "sha256_before": "a05acdae61bfbdede417425ed8b653cba23dc96613589b5806ad0d4960f691a9",
+          "step": "preregister",
+          "type": "researcher"
+        },
+        {
+          "action": "approve",
+          "at": "2026-10-13T21:52:59Z",
+          "phase": "initial",
+          "segment": 1,
+          "step": "preregister",
+          "type": "researcher"
+        },
+        {
+          "at": "2026-10-13T21:52:59Z",
+          "check": "preregistration",
+          "enforced": true,
+          "passed": true,
+          "phase": "initial",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T21:52:59Z",
+          "check": "forecast_design",
+          "enforced": true,
+          "passed": true,
+          "phase": "initial",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T21:55:35Z",
+          "check": "contracts",
+          "detail": "estimation_results.json: pre-registration: pre-registered hypotheses without a result: H1, H2, H3 (each result entry names the hypothesis it tests in a 'hypothesis' field). The hypotheses and sample size are frozen in preregistration.lock.json (and in the machine-readable block of preregistration.md).",
+          "enforced": true,
+          "passed": false,
+          "phase": "initial",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": false,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:55:35Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "08430c68dced741dc6d0cf957c311bbecb95fff76744169a7559e7688ac87ed6"
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "08430c68dced741dc6d0cf957c311bbecb95fff76744169a7559e7688ac87ed6"
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "ccb4dfdfdd5e109409fc0e3fa2c79f949fb127ce4466a1fad6364208c29d6910"
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "econometrics_specialist",
+          "started": "2026-10-13T21:52:59Z",
+          "stopped_by": "contract violation: estimation_results.json: pre-registration: pre-registered hypotheses without a result: H1, H2, H3 (each result entry names the hypothesis it tests in a 'hypothesis' field). The hypotheses and sample size are frozen in preregistration.lock.json (and in the machine-readable block of preregistration.md).",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:56:53Z",
+          "check": "contracts",
+          "detail": "estimation_results.json: pre-registration: pre-registered hypotheses without a result: H1, H2, H3 (each result entry names the hypothesis it tests in a 'hypothesis' field). The hypotheses and sample size are frozen in preregistration.lock.json (and in the machine-readable block of preregistration.md).",
+          "enforced": true,
+          "passed": false,
+          "phase": "initial",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": false,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:56:53Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "a5615d45a665e51d3e90c1dc4c35fd2b7604a5dbcc27cda3abdbdfad7587fc32"
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "a5615d45a665e51d3e90c1dc4c35fd2b7604a5dbcc27cda3abdbdfad7587fc32"
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "e4c206661a26a630a12cc9a4d0875d1092a0b6b4ebe6d4994a1096ae4761e173"
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "econometrics_specialist",
+          "started": "2026-10-13T21:55:35Z",
+          "stopped_by": "contract violation: estimation_results.json: pre-registration: pre-registered hypotheses without a result: H1, H2, H3 (each result entry names the hypothesis it tests in a 'hypothesis' field). The hypotheses and sample size are frozen in preregistration.lock.json (and in the machine-readable block of preregistration.md).",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:58:15Z",
+          "check": "contracts",
+          "detail": "estimation_results.json: pre-registration: pre-registered hypotheses without a result: H1, H2, H3 (each result entry names the hypothesis it tests in a 'hypothesis' field). The hypotheses and sample size are frozen in preregistration.lock.json (and in the machine-readable block of preregistration.md).",
+          "enforced": true,
+          "passed": false,
+          "phase": "initial",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": false,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:58:15Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "a5615d45a665e51d3e90c1dc4c35fd2b7604a5dbcc27cda3abdbdfad7587fc32",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "a5615d45a665e51d3e90c1dc4c35fd2b7604a5dbcc27cda3abdbdfad7587fc32",
+              "unchanged": true
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "25a6ace9e350a5dd1653119a5483a6c9fc5448a7bd3059b98d82f363ccf5849f"
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "econometrics_specialist",
+          "started": "2026-10-13T21:56:53Z",
+          "stopped_by": "contract violation: estimation_results.json: pre-registration: pre-registered hypotheses without a result: H1, H2, H3 (each result entry names the hypothesis it tests in a 'hypothesis' field). The hypotheses and sample size are frozen in preregistration.lock.json (and in the machine-readable block of preregistration.md).",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:58:15Z",
+          "check": "output_contract",
+          "enforced": true,
+          "halted": true,
+          "passed": false,
+          "phase": "initial",
+          "segment": 2,
+          "specialists": [
+            {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "error": "contract violation: estimation_results.json: pre-registration: pre-registered hypotheses without a result: H1, H2, H3 (each result entry names the hypothesis it tests in a 'hypothesis' field). The hypotheses and sample size are frozen in preregistration.lock.json (and in the machine-readable block of preregistration.md).",
+                  "violations": [
+                    "estimation_results.json: pre-registration: pre-registered hypotheses without a result: H1, H2, H3 (each result entry names the hypothesis it tests in a 'hypothesis' field). The hypotheses and sample size are frozen in preregistration.lock.json (and in the machine-readable block of preregistration.md)."
+                  ]
+                },
+                {
+                  "attempt": 2,
+                  "error": "contract violation: estimation_results.json: pre-registration: pre-registered hypotheses without a result: H1, H2, H3 (each result entry names the hypothesis it tests in a 'hypothesis' field). The hypotheses and sample size are frozen in preregistration.lock.json (and in the machine-readable block of preregistration.md).",
+                  "violations": [
+                    "estimation_results.json: pre-registration: pre-registered hypotheses without a result: H1, H2, H3 (each result entry names the hypothesis it tests in a 'hypothesis' field). The hypotheses and sample size are frozen in preregistration.lock.json (and in the machine-readable block of preregistration.md)."
+                  ]
+                },
+                {
+                  "attempt": 3,
+                  "error": "contract violation: estimation_results.json: pre-registration: pre-registered hypotheses without a result: H1, H2, H3 (each result entry names the hypothesis it tests in a 'hypothesis' field). The hypotheses and sample size are frozen in preregistration.lock.json (and in the machine-readable block of preregistration.md).",
+                  "violations": [
+                    "estimation_results.json: pre-registration: pre-registered hypotheses without a result: H1, H2, H3 (each result entry names the hypothesis it tests in a 'hypothesis' field). The hypotheses and sample size are frozen in preregistration.lock.json (and in the machine-readable block of preregistration.md)."
+                  ]
+                }
+              ],
+              "files": [
+                "econometric_spec.md",
+                "estimation_results.json"
+              ],
+              "specialist": "econometrics_specialist"
+            }
+          ],
+          "type": "check"
+        },
+        {
+          "action": "send_back",
+          "at": "2026-10-13T21:59:14Z",
+          "phase": "initial",
+          "remark": "Your results do name H1, H2 and H3, but e2er 0.16.0 reads the 'hypothesis' field only on dictionaries at the top level of estimation_results.json; a top-level list (hypothesis_results) and the nested trend entries are not read (an e2er defect, recorded by the researcher). Change only the layout, no number: replace the list hypothesis_results by three top-level dictionaries h1_result, h2_result and h3_result, each holding the content of its former list entry with its 'hypothesis' field, and update any table_spec or figure paths that pointed into hypothesis_results. Keep everything else as it is.",
+          "segment": 2,
+          "step": "output_contract",
+          "target": "econometrics_specialist",
+          "type": "researcher"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:00:06Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "728034061cfb0c2d81c87f1d8201165d54dcd41bd5f0510f20a67d651adeaf28"
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "728034061cfb0c2d81c87f1d8201165d54dcd41bd5f0510f20a67d651adeaf28"
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "d98ac474f5e65896596af9b2f30976c5bb8ce0b38dedcad2c97b3bd3b1df7959"
+            }
+          ],
+          "phase": "initial",
+          "segment": 3,
+          "sent_back": {
+            "at": "2026-10-13T21:59:14Z",
+            "remark": "Your results do name H1, H2 and H3, but e2er 0.16.0 reads the 'hypothesis' field only on dictionaries at the top level of estimation_results.json; a top-level list (hypothesis_results) and the nested trend entries are not read (an e2er defect, recorded by the researcher). Change only the layout, no number: replace the list hypothesis_results by three top-level dictionaries h1_result, h2_result and h3_result, each holding the content of its former list entry with its 'hypothesis' field, and update any table_spec or figure paths that pointed into hypothesis_results. Keep everything else as it is."
+          },
+          "specialist": "econometrics_specialist",
+          "started": "2026-10-13T21:59:14Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T22:00:06Z",
+          "check": "forecast_evaluation",
+          "enforced": true,
+          "passed": true,
+          "phase": "initial",
+          "segment": 3,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:01:20Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "728034061cfb0c2d81c87f1d8201165d54dcd41bd5f0510f20a67d651adeaf28",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "728034061cfb0c2d81c87f1d8201165d54dcd41bd5f0510f20a67d651adeaf28",
+              "unchanged": true
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "d98ac474f5e65896596af9b2f30976c5bb8ce0b38dedcad2c97b3bd3b1df7959",
+              "unchanged": true
+            }
+          ],
+          "phase": "iterative",
+          "round": 1,
+          "segment": 3,
+          "specialist": "econometrics_specialist",
+          "started": "2026-10-13T22:00:19Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:01:53Z",
+          "model": "sonnet",
+          "output": {
+            "file": "paper/abstract.tex",
+            "sha256": "f0bef6b8b8f99851107ba0f6ae81b54581484368787c3fc78e81741deb7d00e8"
+          },
+          "phase": "iterative",
+          "round": 1,
+          "segment": 3,
+          "specialist": "abstract_writer",
+          "started": "2026-10-13T22:01:20Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T22:03:28Z",
+          "check": "contracts",
+          "detail": "paper_draft.tex: 1 construction(s) the researcher does not accept in a paper: \"Against this background\" in: Against this background, this paper addresses two descriptive and predictive questions. (pivot to the contribution directly (for instance: To keep these quantities apart, we propose ...)). Rewrite each of these sentences without the construction; keep its content",
+          "enforced": true,
+          "passed": false,
+          "phase": "iterative",
+          "segment": 3,
+          "type": "check"
+        },
+        {
+          "accepted": false,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:03:28Z",
+          "model": "sonnet",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "689c5e2fc695f368373080c2a091b071e90734aa9c660aa03c9a9e59b6a6f744"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "689c5e2fc695f368373080c2a091b071e90734aa9c660aa03c9a9e59b6a6f744"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "c0706427a4c3d46c17d4f4748aa7743acceafd697346d05b6fba622fa79466a9"
+            }
+          ],
+          "phase": "iterative",
+          "round": 1,
+          "segment": 3,
+          "specialist": "paper_drafter",
+          "started": "2026-10-13T22:01:20Z",
+          "stopped_by": "contract violation: paper_draft.tex: 1 construction(s) the researcher does not accept in a paper: \"Against this background\" in: Against this background, this paper addresses two descriptive and predictive questions. (pivot to the contribution directly (for instance: To keep these quantities apart, we propose ...)). Rewrite each of these sentences without the construction; keep its content",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:03:43Z",
+          "model": "sonnet",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "e8a447f6e886ab88923e7988e276927302dbfb3e8766d5784169e423fd43c225"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "e8a447f6e886ab88923e7988e276927302dbfb3e8766d5784169e423fd43c225"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "c0706427a4c3d46c17d4f4748aa7743acceafd697346d05b6fba622fa79466a9",
+              "unchanged": true
+            }
+          ],
+          "phase": "iterative",
+          "round": 1,
+          "segment": 3,
+          "specialist": "paper_drafter",
+          "started": "2026-10-13T22:03:28Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T22:03:53Z",
+          "check": "preregistration",
+          "deviations": [],
+          "enforced": true,
+          "frozen_at": "2026-10-13T21:52:59Z",
+          "passed": true,
+          "phase": "estimation_gate",
+          "segment": 3,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T22:03:53Z",
+          "check": "estimation",
+          "enforced": true,
+          "passed": true,
+          "phase": "estimation_gate",
+          "segment": 3,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T22:03:53Z",
+          "check": "forecast_evaluation",
+          "enforced": true,
+          "passed": true,
+          "phase": "forecast_gate",
+          "segment": 3,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T22:03:53Z",
+          "check": "figure_data",
+          "detail": "fig_seasonal_profile.pdf names no 'source' (a data.db table and columns, or a results path)",
+          "enforced": true,
+          "passed": false,
+          "phase": "figure_gate",
+          "segment": 3,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T22:03:53Z",
+          "check": "figure_gate",
+          "detail": "fig_seasonal_profile.pdf names no 'source' (a data.db table and columns, or a results path)",
+          "enforced": true,
+          "halted": true,
+          "passed": false,
+          "phase": "figure_gate",
+          "segment": 3,
+          "type": "check"
+        },
+        {
+          "action": "send_back",
+          "at": "2026-10-13T22:08:07Z",
+          "phase": "figure_gate",
+          "remark": "Only one fix: in figure_spec.json, fig_seasonal_profile.pdf has no 'source'. Give it the source its bars come from (the 1981-2010 calendar-month climatology: a data.db table with its columns, or the path in summary_statistics.json), at the precision the values are stated. Do not change the data, the other figures or any result.",
+          "segment": 3,
+          "step": "figure_gate",
+          "target": "data_analyst",
+          "then": "check_runs_again",
+          "type": "researcher"
+        },
+        {
+          "at": "2026-10-13T22:08:07Z",
+          "check": "forecast_evaluation",
+          "enforced": true,
+          "passed": true,
+          "phase": "figure_gate",
+          "segment": 4,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:08:39Z",
+          "model": "sonnet",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "22beac907d9ca9d930dbc8f600a8eba27bdab919631e1c14c581e9ef57de053f",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "22beac907d9ca9d930dbc8f600a8eba27bdab919631e1c14c581e9ef57de053f",
+              "unchanged": true
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "0104f829e88068b9a3593b08c6199e52d871ab1dac0452546f48a45b3bcfa30e",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "96226e2de2048a729e4f7e12f542ec2d40f6386246cd3c95f12c32deb60d5431"
+            }
+          ],
+          "phase": "figure_gate",
+          "segment": 4,
+          "sent_back": {
+            "at": "2026-10-13T22:08:07Z",
+            "remark": "Only one fix: in figure_spec.json, fig_seasonal_profile.pdf has no 'source'. Give it the source its bars come from (the 1981-2010 calendar-month climatology: a data.db table with its columns, or the path in summary_statistics.json), at the precision the values are stated. Do not change the data, the other figures or any result."
+          },
+          "specialist": "data_analyst",
+          "started": "2026-10-13T22:08:07Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T22:08:39Z",
+          "check": "preregistration",
+          "deviations": [],
+          "enforced": true,
+          "frozen_at": "2026-10-13T21:52:59Z",
+          "passed": true,
+          "phase": "estimation_gate",
+          "segment": 4,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T22:08:39Z",
+          "check": "estimation",
+          "enforced": true,
+          "passed": true,
+          "phase": "estimation_gate",
+          "segment": 4,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T22:08:39Z",
+          "check": "forecast_evaluation",
+          "enforced": true,
+          "passed": true,
+          "phase": "forecast_gate",
+          "segment": 4,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T22:08:39Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "figure_gate",
+          "segment": 4,
+          "type": "check"
+        },
+        {
+          "action": "approve",
+          "at": "2026-10-13T22:09:28Z",
+          "phase": "figure_gate",
+          "segment": 4,
+          "step": "review_draft",
+          "type": "researcher"
+        },
+        {
+          "at": "2026-10-13T22:09:28Z",
+          "check": "preregistration",
+          "deviations": [],
+          "enforced": true,
+          "frozen_at": "2026-10-13T21:52:59Z",
+          "passed": true,
+          "phase": "estimation_gate",
+          "segment": 5,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T22:09:28Z",
+          "check": "estimation",
+          "enforced": true,
+          "passed": true,
+          "phase": "estimation_gate",
+          "segment": 5,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T22:09:28Z",
+          "check": "forecast_evaluation",
+          "enforced": true,
+          "passed": true,
+          "phase": "forecast_gate",
+          "segment": 5,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T22:09:28Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "figure_gate",
+          "segment": 5,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:11:29Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/polish_formula.md",
+            "sha256": "301ffc50aed74c4a40d80c64d295a2f2ae03de4923cd08ad771d70fab7cce72d"
+          },
+          "phase": "polish",
+          "segment": 5,
+          "specialist": "polish_formula",
+          "started": "2026-10-13T22:10:13Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:11:59Z",
+          "model": "sonnet",
+          "output": {
+            "file": "misc/paper_draft.tex.edits.json",
+            "sha256": "35c571b35028be97ae7698ac6b7416be708ecf23dbb97f87a6887fbee3281617"
+          },
+          "phase": "polish",
+          "segment": 5,
+          "specialist": "patch_revisor",
+          "started": "2026-10-13T22:11:29Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T22:11:59Z",
+          "check": "numbers",
+          "enforced": true,
+          "passed": true,
+          "phase": "review",
+          "segment": 5,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T22:12:02Z",
+          "check": "citations",
+          "enforced": true,
+          "passed": true,
+          "phase": "review",
+          "segment": 5,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:12:48Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/review_literature.md",
+            "sha256": "c6a11b51acad5bcc17f2da7d5848890197f119ecd5fe0074f263201acbcd9478"
+          },
+          "phase": "review",
+          "segment": 5,
+          "specialist": "literature_reviewer",
+          "started": "2026-10-13T22:12:02Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:13:51Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/review_writing.md",
+            "sha256": "061e91db30b4fb14357d70cba3e9d20a9ca4a3893189735978bb0741862d1046"
+          },
+          "phase": "review",
+          "segment": 5,
+          "specialist": "writing_reviewer",
+          "started": "2026-10-13T22:12:02Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:14:19Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/review_data.md",
+            "sha256": "3128ba87481bd6c13f55745f338aeabd3d4cf0441892371c4b7b855195eb3986"
+          },
+          "phase": "review",
+          "segment": 5,
+          "specialist": "data_reviewer",
+          "started": "2026-10-13T22:12:48Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:14:26Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/review_technical.md",
+            "sha256": "531b5a528419baff1884e8fddde7388e781297ebda8a8635b1dd6ce95ac8f3bf"
+          },
+          "phase": "review",
+          "segment": 5,
+          "specialist": "technical_reviewer",
+          "started": "2026-10-13T22:12:02Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:15:37Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/review_methods.md",
+            "sha256": "ba27a0d0a735bcec58d3981f1224e0aee66528d9952d774a6ef0138b448b82cf"
+          },
+          "phase": "review",
+          "segment": 5,
+          "specialist": "methods_reviewer",
+          "started": "2026-10-13T22:13:51Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:16:41Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/review_plausibility.md",
+            "sha256": "f1e085593a2fe93402e8a79a702ee082f641263fd009276af6749dcf69c9c5bb"
+          },
+          "phase": "review",
+          "segment": 5,
+          "specialist": "plausibility_reviewer",
+          "started": "2026-10-13T22:14:19Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:17:59Z",
+          "model": "sonnet",
+          "output": {
+            "file": "misc/paper_draft.tex.edits.json",
+            "sha256": "a5190b0d942b681b99eeefcb7550baa37345fb6026f8f13bf66575c75552dbb1"
+          },
+          "phase": "revision",
+          "segment": 5,
+          "specialist": "patch_revisor",
+          "started": "2026-10-13T22:16:41Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:20:54Z",
+          "model": "sonnet",
+          "output": {
+            "file": "replication/estimation.py",
+            "sha256": "eb6acc1decd284e52751757c80272293e668b6ce219cc5e9a309029a8b77146e"
+          },
+          "phase": "replication",
+          "segment": 5,
+          "specialist": "replication_packager",
+          "started": "2026-10-13T22:17:59Z",
+          "type": "specialist"
+        }
+      ],
+      "availability": {
+        "data": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        },
+        "code": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        }
+      },
+      "purpose": "demonstration",
+      "amendments": [
+        {
+          "path": "e2er.json",
+          "kind": "carried_over",
+          "sha256_before": "8d64506a61c6db25e862c511f1f3245e7e5aa9010436aeb3c28e3a7fe5bedde0",
+          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 1 (https://e2er.org/d/a6ba92eccb530a5b). Its steps are the ones that version recorded; none was added or rebuilt.",
+          "at": "2026-10-19T22:45:21Z",
+          "from_version": 1,
+          "from_dossier": "sha256:a6ba92eccb530a5b395e50b8e3797a41859dbb1ce55b787f5844eff431505409",
+          "e2er_version": "0.17.1"
+        }
+      ]
+    }
+  }
+}

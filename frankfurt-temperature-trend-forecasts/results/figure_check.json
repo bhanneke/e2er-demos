@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "figures": [
+    {
+      "figure": "fig_monthly_t2m.pdf series Monthly mean T2M",
+      "source": {
+        "table": "frankfurt_t2m_clean",
+        "columns": {
+          "x": "date",
+          "y": "T2M"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_seasonal_profile.pdf",
+      "source": {
+        "table": "frankfurt_t2m_clean",
+        "columns": {
+          "values": "clim_1981_2010"
+        },
+        "where": "year = 1981"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_annual_means.pdf series Annual mean T2M",
+      "source": {
+        "table": "frankfurt_t2m_annual",
+        "columns": {
+          "x": "year",
+          "y": "T2M"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_anomalies.pdf series Anomaly vs 1981-2010",
+      "source": {
+        "table": "frankfurt_t2m_clean",
+        "columns": {
+          "x": "date",
+          "y": "anomaly"
+        }
+      },
+      "matches": true
+    }
+  ],
+  "problems": []
+}

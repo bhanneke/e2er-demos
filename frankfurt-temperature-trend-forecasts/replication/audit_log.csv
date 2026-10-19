@@ -1,0 +1,7 @@
+id,query_type,query_sql,fields_requested,aggregation_level,estimated_rows,actual_rows,validation_status,approved_by,approved_at,executed_at,created_at
+8a9bfcde-d177-4769-a776-6b910d2280e6,feasibility,"SELECT COUNT(*), MIN(date), MAX(date), SUM(T2M IS NULL), MIN(month), MAX(month), MIN(T2M), MAX(T2M) FROM frankfurt_t2m_monthly",[],local_data_db,,1,pending,,,2026-10-13 21:29:37,2026-10-13 21:29:37
+3b422998-759c-4c52-b65c-6e6cb257ee75,feasibility,SELECT COUNT(*) FROM frankfurt_t2m_monthly WHERE month=13,[],local_data_db,,1,pending,,,2026-10-13 21:29:38,2026-10-13 21:29:38
+d5aa6a98-e191-441b-b19e-ac3c43a1d165,feasibility,"SELECT MIN(date),MAX(date),COUNT(*),COUNT(T2M),COUNT(DISTINCT date) FROM frankfurt_t2m_monthly",[],local_data_db,,1,pending,,,2026-10-13 21:30:45,2026-10-13 21:30:45
+af0b1b69-1e7b-4606-acd0-337599a1f0ff,feasibility,"SELECT split,MIN(date),MAX(date),COUNT(*) FROM frankfurt_t2m_clean GROUP BY split",[],local_data_db,,2,pending,,,2026-10-13 21:30:45,2026-10-13 21:30:45
+f5bf7e7b-8bfd-488a-a7dd-a98933c56199,feasibility,"SELECT COUNT(*),SUM(T2M IS NULL),MIN(date),MAX(date) FROM frankfurt_t2m_monthly",[],local_data_db,,1,pending,,,2026-10-13 21:53:25,2026-10-13 21:53:25
+949727c0-179f-4d56-8134-d38f29d1ea20,feasibility,"SELECT month, AVG(clim_1981_2010) c, COUNT(*) n FROM frankfurt_t2m_clean GROUP BY month ORDER BY month",[],local_data_db,,12,pending,,,2026-10-13 22:08:20,2026-10-13 22:08:20
