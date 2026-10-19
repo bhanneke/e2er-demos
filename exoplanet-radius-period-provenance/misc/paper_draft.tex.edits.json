@@ -1,0 +1,42 @@
+[
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "has become the standard summary of what is known about planetary systems beyond the Solar System \\cite{Christiansen2025_NEA,cloutier2024exoplanet}.",
+    "replace": "is a common summary of what is known about planetary systems beyond the Solar System \\cite{Christiansen2025_NEA}.",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "the archive calculates their radius from a measured mass or minimum mass through an assumed mass-radius relation. Both kinds",
+    "replace": "the archive calculates their radius from a measured mass or minimum mass through an assumed mass-radius relation \\cite{chen2016probabilistic}, and marks these radii as calculated values in its documentation \\cite{akeson2013the,Christiansen2025_NEA}. Both kinds",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "every pattern we report is a pattern in the confirmed-planet table.\n\nOur analysis yields",
+    "replace": "every pattern we report is a pattern in the confirmed-planet table.\n\nThe structures in the diagram are the subject of a large literature on planet populations. The gap in the radius distribution of small planets between super-Earths and sub-Neptunes \\cite{fulton2017the,fulton2018the,eylen2018an} has been explained by photoevaporation \\cite{owen2013kepler,owen2017the} and by core-powered mass loss \\cite{ginzburg2018corepowered}, and the scarcity of Neptune-sized planets on short orbits has been described as a desert in the period-mass and period-radius planes \\cite{szabo2011a,mazeh2016dearth,lundkvist2016hot,owen2018photoevaporation}. These studies work with samples of transiting planets with homogeneous radii and with explicit treatment of completeness; we do neither. Our paper does not test any explanation of these features. It asks a prior question about the archive table itself: which of its radii are measured and which follow from a mass-radius relation. We do not claim that the literature lacks such a tabulation; we provide it as a reproducible reference for the version of the archive we used. The terms ``calculated'' and ``mass-derived'' denote the same radii, and we use ``calculated'' because it is the archive's term.\n\nOur analysis yields",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "The transit method favours large planets on short orbits, and radial-velocity surveys favour massive planets and need long baselines to detect long periods \\cite{foremanmackey2016the}.",
+    "replace": "The transit method favours large planets on short orbits \\cite{foremanmackey2016the}, and radial-velocity surveys favour massive planets and need long baselines to detect long periods.",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "rest on a minimum mass, so the true mass and radius may be larger.",
+    "replace": "rest on a minimum mass, so the true mass is at least as large as the one used. The direction of the effect on the radius is not fixed, because the relation of Chen and Kipping \\cite{chen2016probabilistic} is not increasing over the full mass range and a larger mass can give a similar radius at the high-mass end.",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  }
+]

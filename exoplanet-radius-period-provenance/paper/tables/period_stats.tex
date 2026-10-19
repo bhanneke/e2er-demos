@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\begin{threeparttable}
+\caption{Orbital period (days) by radius provenance}
+\label{tab:period_stats}
+\begin{tabular}{lcccccc}
+\toprule
+Group & $N$ & Q1 & Median & Q3 & Min & Max \\
+\midrule
+Calculated from mass & 1,215 & 31.33 & 358.62 & 1277.23 & 0.32 & 7300000.0 \\
+Measured, transiting & 4,810 & 3.79 & 7.97 & 18.80 & 0.11 & 3650.0 \\
+Measured, not transiting & 20 & 49.81 & 15957.80 & 81000.00 & 0.24 & 402000000.0 \\
+All & 6,045 & 4.27 & 10.61 & 37.87 & 0.11 & 402000000.0 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Quartiles use linear interpolation between order statistics (Hyndman--Fan type 7).
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

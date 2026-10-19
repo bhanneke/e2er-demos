@@ -1,0 +1,2369 @@
+{
+  "schema": "e2er-research-object/0.1",
+  "id": "bhanneke/exoplanet-radius-period-provenance",
+  "content_id": "sha256:96072a373cf1e176e440b4d638ed5315ca6316835f1c28d4c496f9bfe945c28a",
+  "title": "How are confirmed exoplanets distributed in planet radius and orbital period,...",
+  "question": "How are confirmed exoplanets distributed in planet radius and orbital period, and how does that distribution change when radii measured from transits are separated from radii calculated from planet mass?",
+  "contributors": [
+    {
+      "name": "Björn Hanneke",
+      "github": "bhanneke",
+      "roles": [
+        "conceptualization",
+        "investigation"
+      ]
+    }
+  ],
+  "ai": {
+    "backend": "claude_code",
+    "model": "sonnet",
+    "agents": [
+      "idea_developer",
+      "literature_scanner",
+      "data_architect",
+      "data_analyst",
+      "econometrics_specialist",
+      "abstract_writer",
+      "paper_drafter",
+      "literature_reviewer",
+      "data_reviewer",
+      "methods_reviewer",
+      "writing_reviewer",
+      "plausibility_reviewer",
+      "patch_revisor",
+      "replication_packager"
+    ],
+    "agents_source": "recorded",
+    "usage": [
+      {
+        "agent": "strategist:decide",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 2,
+        "input_tokens": 4,
+        "output_tokens": 3240,
+        "cache_read_tokens": 26924,
+        "cache_write_tokens": 46711,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:19:58",
+        "last": "2026-10-13 20:42:44"
+      },
+      {
+        "agent": "idea_developer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 7120,
+        "cache_read_tokens": 47424,
+        "cache_write_tokens": 28965,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:21:03",
+        "last": "2026-10-13 20:21:03"
+      },
+      {
+        "agent": "literature_scanner",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 2,
+        "input_tokens": 34,
+        "output_tokens": 18476,
+        "cache_read_tokens": 843370,
+        "cache_write_tokens": 82957,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:21:13",
+        "last": "2026-10-13 20:44:10"
+      },
+      {
+        "agent": "data_architect",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 3,
+        "input_tokens": 18,
+        "output_tokens": 21069,
+        "cache_read_tokens": 475699,
+        "cache_write_tokens": 192185,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:22:04",
+        "last": "2026-10-13 20:43:49"
+      },
+      {
+        "agent": "data_analyst",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 5,
+        "input_tokens": 106,
+        "output_tokens": 31001,
+        "cache_read_tokens": 4519114,
+        "cache_write_tokens": 423697,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:35:30",
+        "last": "2026-10-13 20:45:46"
+      },
+      {
+        "agent": "econometrics_specialist",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 2,
+        "input_tokens": 34,
+        "output_tokens": 12734,
+        "cache_read_tokens": 849752,
+        "cache_write_tokens": 91445,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:38:35",
+        "last": "2026-10-13 20:46:27"
+      },
+      {
+        "agent": "abstract_writer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 2,
+        "input_tokens": 24,
+        "output_tokens": 4305,
+        "cache_read_tokens": 645620,
+        "cache_write_tokens": 121615,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:39:06",
+        "last": "2026-10-13 20:46:52"
+      },
+      {
+        "agent": "paper_drafter",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 4,
+        "input_tokens": 74,
+        "output_tokens": 26107,
+        "cache_read_tokens": 2429252,
+        "cache_write_tokens": 249189,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:42:10",
+        "last": "2026-10-13 20:48:59"
+      },
+      {
+        "agent": "strategist:ceiling_check",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 2,
+        "output_tokens": 148,
+        "cache_read_tokens": 14358,
+        "cache_write_tokens": 22722,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:47:28",
+        "last": "2026-10-13 20:47:28"
+      },
+      {
+        "agent": "strategist:self_attack",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 2,
+        "output_tokens": 7072,
+        "cache_read_tokens": 14358,
+        "cache_write_tokens": 16777,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:51:15",
+        "last": "2026-10-13 20:51:15"
+      },
+      {
+        "agent": "literature_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 3757,
+        "cache_read_tokens": 72927,
+        "cache_write_tokens": 47528,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:51:58",
+        "last": "2026-10-13 20:51:58"
+      },
+      {
+        "agent": "data_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 15344,
+        "cache_read_tokens": 81666,
+        "cache_write_tokens": 67574,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:53:29",
+        "last": "2026-10-13 20:53:29"
+      },
+      {
+        "agent": "methods_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 12312,
+        "cache_read_tokens": 76890,
+        "cache_write_tokens": 59930,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:53:44",
+        "last": "2026-10-13 20:53:44"
+      },
+      {
+        "agent": "writing_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 20646,
+        "cache_read_tokens": 76122,
+        "cache_write_tokens": 67298,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:54:04",
+        "last": "2026-10-13 20:54:04"
+      },
+      {
+        "agent": "plausibility_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 13095,
+        "cache_read_tokens": 74154,
+        "cache_write_tokens": 57897,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:55:18",
+        "last": "2026-10-13 20:55:18"
+      },
+      {
+        "agent": "patch_revisor",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 10,
+        "output_tokens": 3984,
+        "cache_read_tokens": 239528,
+        "cache_write_tokens": 48868,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:55:56",
+        "last": "2026-10-13 20:55:56"
+      },
+      {
+        "agent": "replication_packager",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 8,
+        "output_tokens": 8481,
+        "cache_read_tokens": 165607,
+        "cache_write_tokens": 50800,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:56:51",
+        "last": "2026-10-13 20:56:51"
+      }
+    ]
+  },
+  "process": {
+    "template": "descriptive-study",
+    "mode": "iterative",
+    "methodology": "empirical",
+    "governance": "full",
+    "e2er_version": "0.17.0",
+    "exported": "20261015"
+  },
+  "components": {
+    "skills": {
+      "idea_developer": [
+        "base/researcher",
+        "reasoning/creative-ideation",
+        "reasoning/novelty"
+      ],
+      "literature_scanner": [
+        "base/researcher",
+        "synthesis/context-builder"
+      ],
+      "data_architect": [
+        "data/data-tables",
+        "data/query-data",
+        "base/researcher",
+        "data/yfinance",
+        "data/fred",
+        "data/gmd",
+        "data/usgs",
+        "data/exoplanets",
+        "data/gaia",
+        "data/nasa_power",
+        "data/noaa",
+        "data/worldbank",
+        "data/eurostat",
+        "data/owid",
+        "data/who_gho",
+        "data/gutenberg",
+        "data/github",
+        "data/gisco",
+        "data/naturalearth",
+        "methods/descriptive-analysis"
+      ],
+      "data_analyst": [
+        "data/data-tables",
+        "data/query-data",
+        "data/cleaning",
+        "data/figure-spec",
+        "econometrics/panel-data",
+        "data/yfinance",
+        "data/fred",
+        "data/gmd",
+        "data/summary-statistics-schema",
+        "data/usgs",
+        "data/exoplanets",
+        "data/gaia",
+        "data/nasa_power",
+        "data/noaa",
+        "data/worldbank",
+        "data/eurostat",
+        "data/owid",
+        "data/who_gho",
+        "data/gutenberg",
+        "data/github",
+        "data/gisco",
+        "data/naturalearth",
+        "methods/descriptive-analysis"
+      ],
+      "econometrics_specialist": [
+        "data/query-data",
+        "data/cleaning",
+        "data/figure-spec",
+        "data/descriptive-results-schema",
+        "methods/descriptive-analysis"
+      ],
+      "abstract_writer": [
+        "writing/abstract",
+        "reasoning/anti-slop",
+        "writing/cite-numbers-by-source"
+      ],
+      "paper_drafter": [
+        "writing/paper-structure",
+        "writing/personal-style",
+        "base/researcher",
+        "writing/cite-numbers-by-source",
+        "data/table-spec",
+        "methods/descriptive-analysis"
+      ],
+      "literature_reviewer": [
+        "review/referee-simulation",
+        "synthesis/context-builder"
+      ],
+      "data_reviewer": [
+        "review/data-quality",
+        "data/cleaning",
+        "methods/descriptive-analysis"
+      ],
+      "methods_reviewer": [
+        "review/methods-review",
+        "review/consistency-check",
+        "methods/descriptive-analysis"
+      ],
+      "writing_reviewer": [
+        "review/writing-quality",
+        "reasoning/anti-slop"
+      ],
+      "plausibility_reviewer": [
+        "review/domain-plausibility",
+        "review/consistency-check"
+      ],
+      "patch_revisor": [
+        "writing/scoped-revision",
+        "writing/cite-numbers-by-source",
+        "writing/personal-style",
+        "reasoning/anti-slop"
+      ],
+      "replication_packager": [
+        "data/cleaning",
+        "base/researcher",
+        "synthesis/replication-package"
+      ]
+    },
+    "skills_source": "recorded"
+  },
+  "literature": [
+    {
+      "cite_key": "Christiansen2025_NEA",
+      "doi": "10.3847/psj/ade3c2",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "cloutier2024exoplanet",
+      "doi": "10.48550/arxiv.2409.13062",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "berger2018revised",
+      "doi": "10.3847/1538-4357/aada83",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "NEA_PSCompPars",
+      "doi": "10.26133/nea13",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "little2019statistical",
+      "doi": "10.1002/9781119482260",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "hyndman1996sample",
+      "doi": "10.1080/00031305.1996.10473566",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "spearman1904proof",
+      "doi": "10.2307/1412159",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "foremanmackey2016the",
+      "doi": "10.3847/0004-6256/152/6/206",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "nielsen2019the",
+      "doi": "10.3847/1538-3881/ab16e9",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    }
+  ],
+  "data": [
+    {
+      "path": "data/data.db",
+      "sha256": "06f493141df7a85f6413ad8a9939020812d6e46519089ba0648ad1feccc38373",
+      "bytes": 6897664
+    },
+    {
+      "path": "data/data_dictionary.json",
+      "sha256": "2dde9e4ef51abd266d1a7443544beb297c9d1b909382e10343fb112076a28777",
+      "bytes": 15786
+    },
+    {
+      "path": "data/data_sources.json",
+      "sha256": "cb87d08e49687e60a71fc917894f3b36f58b08a11df953f182adae36a9feaac8",
+      "bytes": 4668
+    },
+    {
+      "path": "data/data_summary.md",
+      "sha256": "bcafeb0cfce3bcf263b9603c028187f36dbd627e845a8d6e2348ae26038c96d5",
+      "bytes": 7790
+    }
+  ],
+  "outputs": [
+    {
+      "path": "paper/abstract.tex",
+      "sha256": "791b69545b82e12daabed78f7c871a340bd20762ba89ad0d9a88265821d2e6ab"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256": "de42bb51ce30df8059e93b09dad82b720e667e7ea304d6fced7c6933af32bb47"
+    },
+    {
+      "path": "paper/paper.tex",
+      "sha256": "7152a7bbbb3cfd43d2040a3264beb7cc9fdb81f18160eb66f55637d621252a4f"
+    },
+    {
+      "path": "paper/refs.bib",
+      "sha256": "3cfd43990ad30434043e6564d7b3a899335bad727db63914e863ce4414d9054b"
+    },
+    {
+      "path": "paper/tables/associations.tex",
+      "sha256": "902ffa24a6f75a15570e073759f99e71246c5093f2bb4817cdc5f47f4c17cdad"
+    },
+    {
+      "path": "paper/tables/groups.tex",
+      "sha256": "f9a3bc8301fc13129e6817ea11dcaf04ff79a8b2d44cb498c69ca30e4f57f355"
+    },
+    {
+      "path": "paper/tables/period_stats.tex",
+      "sha256": "9dd46ff88dc47f61be09be6e7bdef76b612abc99c9219b737959412e75c85163"
+    },
+    {
+      "path": "paper/tables/radius_stats.tex",
+      "sha256": "8c43311cad34b89ac8167616e947e29f21b9dcfa058578f6955008349dcff416"
+    },
+    {
+      "path": "replication/README.md",
+      "sha256": "16a913586d78ef96495281ffa45610f2a9db5911ee6b800245d1b2c229632f5e"
+    },
+    {
+      "path": "replication/analysis_prep.py",
+      "sha256": "72acb2aa26356ea2b4eda1aa8d870488f96605ee5df3266ddd2d48da8144a440"
+    },
+    {
+      "path": "replication/audit_log.csv",
+      "sha256": "1a8bd028a9961f25a2ebe3b85fcf7990c670913a371f0da02f8a35991d372b30"
+    },
+    {
+      "path": "replication/chk_fig.py",
+      "sha256": "4b9b9ba5764a7a318bc53682f641de8ce5060a81497a2f0f892b43165b272161"
+    },
+    {
+      "path": "replication/data_queries.sql",
+      "sha256": "2df575d5c7759ca890b2ef0e4273a8dbfe927521ead035ff59d183afeed9470c"
+    },
+    {
+      "path": "replication/estimation.py",
+      "sha256": "6e0cb311f197e4f33a24e4329b9b0ebd7df2b260313697cf24d3e701105d5c6a"
+    },
+    {
+      "path": "results/data_quality.json",
+      "sha256": "7c66cb046528d5e0ae0194c42041490c5fd3b23ad45c39bcce91e5e09088f4db"
+    },
+    {
+      "path": "results/data_quality.md",
+      "sha256": "3ef65e9f7c5cf9fa0f9de5c750ef59b4324aac3dbbcc440276404b503db7ef1b"
+    },
+    {
+      "path": "results/estimation_results.json",
+      "sha256": "9dd8881c7709d48b6a234c314711bdea508514f464bfca61a6344140294d3f7d"
+    },
+    {
+      "path": "results/figure_check.json",
+      "sha256": "4b1dfc0dc6001bde3ea369b80585ca5aef513097c2f2e9833958cfee0d776230"
+    },
+    {
+      "path": "results/figure_spec.json",
+      "sha256": "a6c256751dd47e79b5207d87dd0f46094f50139c36ec7e458219c502bb9ba052"
+    },
+    {
+      "path": "results/figures/fig_marginals_by_group.pdf",
+      "sha256": "73a8d2ea9f037becbd08260a9fa3495232094535d5d42203371fe6add08ed1f9"
+    },
+    {
+      "path": "results/figures/fig_mass_radius_calculated.pdf",
+      "sha256": "253214a29c191db7230d40b995ad5c84a3c794ffe3ac801b2458953fac317fca"
+    },
+    {
+      "path": "results/figures/fig_radius_period_all.pdf",
+      "sha256": "3a6b06ccf9df582a1c837bc7ff9671e61eedd7bcc87e72b6d2551f193fdbec8e"
+    },
+    {
+      "path": "results/figures/fig_radius_period_by_group.pdf",
+      "sha256": "b5420f461c8962ce6eadb733a99693684c307ad300082f217843d5245a6221de"
+    },
+    {
+      "path": "results/number_verification.json",
+      "sha256": "a75dac4a8b96237a1913cec5805e7af0cbbccd3577d586037b435cd089f3c35b"
+    },
+    {
+      "path": "results/summary_statistics.json",
+      "sha256": "7096ec02f24f3e89a7e6824825e27cea86ce01c3f76d93810e948192d6576816"
+    },
+    {
+      "path": "results/table_render_report.json",
+      "sha256": "5300c07150bbf22c75232b92b2eb02ed83758496b0b88ad2b0343317755cfbef"
+    },
+    {
+      "path": "results/table_spec.json",
+      "sha256": "8ff1d15be0190f9d5cb1bd6d92736868784f3abb5d44f09ead97347d63af5396"
+    }
+  ],
+  "provenance": {
+    "files": 59,
+    "edges": {
+      "citation": 9,
+      "data": 1,
+      "estimation": 1,
+      "figure": 4,
+      "table_cell": 76
+    }
+  },
+  "verification": [
+    {
+      "check": "integrity",
+      "status": "PASS",
+      "detail": "59 files hash-verified against provenance.json; 76 table cell(s) traced in the derivation graph; 5 change(s) after export recorded as amendments (README.md, paper/paper.pdf, paper/paper.tex)"
+    },
+    {
+      "check": "numbers",
+      "status": "PASS",
+      "detail": "76 table cell(s) are source values at the precision shown; text (not gating): 142 of 142 number(s) are source values, 0 differ from the quantity named nearby, 0 untraced"
+    },
+    {
+      "check": "tables",
+      "status": "PASS",
+      "detail": "4 table(s) reproduce byte-identically from the sidecars"
+    },
+    {
+      "check": "spec",
+      "status": "SKIP",
+      "detail": "no design/identification_spec.json"
+    },
+    {
+      "check": "results contract",
+      "status": "PASS",
+      "detail": "descriptive results (descriptive statistics and distributions) are complete and consistent"
+    },
+    {
+      "check": "citations",
+      "status": "PASS",
+      "detail": "9 cite key(s) resolve in refs.bib; snapshot: 9 verified, 0 unverifiable at run time"
+    },
+    {
+      "check": "results from code",
+      "status": "SKIP",
+      "detail": "not checked: the run predates output records"
+    }
+  ],
+  "dependencies": {
+    "uses": [
+      "template:descriptive-study",
+      "agent:idea_developer",
+      "agent:literature_scanner",
+      "agent:data_architect",
+      "agent:data_analyst",
+      "agent:econometrics_specialist",
+      "agent:abstract_writer",
+      "agent:paper_drafter",
+      "agent:literature_reviewer",
+      "agent:data_reviewer",
+      "agent:methods_reviewer",
+      "agent:writing_reviewer",
+      "agent:plausibility_reviewer",
+      "agent:patch_revisor",
+      "agent:replication_packager",
+      "skill:e2er/base/researcher",
+      "skill:e2er/data/cleaning",
+      "skill:e2er/data/data-tables",
+      "skill:e2er/data/descriptive-results-schema",
+      "skill:e2er/data/eurostat",
+      "skill:e2er/data/exoplanets",
+      "skill:e2er/data/figure-spec",
+      "skill:e2er/data/fred",
+      "skill:e2er/data/gaia",
+      "skill:e2er/data/gisco",
+      "skill:e2er/data/github",
+      "skill:e2er/data/gmd",
+      "skill:e2er/data/gutenberg",
+      "skill:e2er/data/nasa_power",
+      "skill:e2er/data/naturalearth",
+      "skill:e2er/data/noaa",
+      "skill:e2er/data/owid",
+      "skill:e2er/data/query-data",
+      "skill:e2er/data/summary-statistics-schema",
+      "skill:e2er/data/table-spec",
+      "skill:e2er/data/usgs",
+      "skill:e2er/data/who_gho",
+      "skill:e2er/data/worldbank",
+      "skill:e2er/data/yfinance",
+      "skill:e2er/econometrics/panel-data",
+      "skill:e2er/methods/descriptive-analysis",
+      "skill:e2er/reasoning/anti-slop",
+      "skill:e2er/reasoning/creative-ideation",
+      "skill:e2er/reasoning/novelty",
+      "skill:e2er/review/consistency-check",
+      "skill:e2er/review/data-quality",
+      "skill:e2er/review/domain-plausibility",
+      "skill:e2er/review/methods-review",
+      "skill:e2er/review/referee-simulation",
+      "skill:e2er/review/writing-quality",
+      "skill:e2er/synthesis/context-builder",
+      "skill:e2er/synthesis/replication-package",
+      "skill:e2er/writing/abstract",
+      "skill:e2er/writing/cite-numbers-by-source",
+      "skill:e2er/writing/paper-structure",
+      "skill:e2er/writing/personal-style",
+      "skill:e2er/writing/scoped-revision"
+    ],
+    "derived_from": []
+  },
+  "repository": {
+    "url": "https://github.com/bhanneke/e2er-demos",
+    "path": "exoplanet-radius-period-provenance",
+    "host": "github",
+    "left_out": []
+  },
+  "license": null,
+  "purpose": "demonstration",
+  "availability": {
+    "data": {
+      "access": "public",
+      "url": "https://github.com/bhanneke/e2er-demos"
+    },
+    "code": {
+      "access": "public",
+      "url": "https://github.com/bhanneke/e2er-demos"
+    }
+  },
+  "dossier": {
+    "id": "sha256:4b37c8f62f137839e64d88c04652fe7addacbaa7c3e98b9a94418102de1371d2",
+    "url": "https://e2er.org/d/4b37c8f62f137839",
+    "doc": {
+      "components": [
+        {
+          "id": "agent:abstract_writer",
+          "kind": "agent",
+          "name": "abstract_writer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:data_analyst",
+          "kind": "agent",
+          "name": "data_analyst",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:data_architect",
+          "kind": "agent",
+          "name": "data_architect",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:data_reviewer",
+          "kind": "agent",
+          "name": "data_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:econometrics_specialist",
+          "kind": "agent",
+          "name": "econometrics_specialist",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:idea_developer",
+          "kind": "agent",
+          "name": "idea_developer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:literature_reviewer",
+          "kind": "agent",
+          "name": "literature_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:literature_scanner",
+          "kind": "agent",
+          "name": "literature_scanner",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:methods_reviewer",
+          "kind": "agent",
+          "name": "methods_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:paper_drafter",
+          "kind": "agent",
+          "name": "paper_drafter",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:patch_revisor",
+          "kind": "agent",
+          "name": "patch_revisor",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:plausibility_reviewer",
+          "kind": "agent",
+          "name": "plausibility_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:replication_packager",
+          "kind": "agent",
+          "name": "replication_packager",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:writing_reviewer",
+          "kind": "agent",
+          "name": "writing_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "connector:claude-code",
+          "kind": "connector",
+          "name": "claude-code",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/modules/llm/claude_code.py"
+          }
+        },
+        {
+          "id": "skill:e2er/base/researcher",
+          "kind": "skill",
+          "name": "researcher",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/base/researcher.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/cleaning",
+          "kind": "skill",
+          "name": "cleaning",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/cleaning.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/data-tables",
+          "kind": "skill",
+          "name": "data-tables",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/data-tables.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/descriptive-results-schema",
+          "kind": "skill",
+          "name": "descriptive-results-schema",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/descriptive-results-schema.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/eurostat",
+          "kind": "skill",
+          "name": "eurostat",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/eurostat.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/exoplanets",
+          "kind": "skill",
+          "name": "exoplanets",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/exoplanets.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/figure-spec",
+          "kind": "skill",
+          "name": "figure-spec",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/figure-spec.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/fred",
+          "kind": "skill",
+          "name": "fred",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/fred.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gaia",
+          "kind": "skill",
+          "name": "gaia",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/gaia.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gisco",
+          "kind": "skill",
+          "name": "gisco",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/gisco.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/github",
+          "kind": "skill",
+          "name": "github",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/github.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gmd",
+          "kind": "skill",
+          "name": "gmd",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/gmd.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gutenberg",
+          "kind": "skill",
+          "name": "gutenberg",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/gutenberg.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/nasa_power",
+          "kind": "skill",
+          "name": "nasa_power",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/nasa_power.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/naturalearth",
+          "kind": "skill",
+          "name": "naturalearth",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/naturalearth.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/noaa",
+          "kind": "skill",
+          "name": "noaa",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/noaa.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/owid",
+          "kind": "skill",
+          "name": "owid",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/owid.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/query-data",
+          "kind": "skill",
+          "name": "query-data",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/query-data.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/summary-statistics-schema",
+          "kind": "skill",
+          "name": "summary-statistics-schema",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/summary-statistics-schema.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/table-spec",
+          "kind": "skill",
+          "name": "table-spec",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/table-spec.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/usgs",
+          "kind": "skill",
+          "name": "usgs",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/usgs.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/who_gho",
+          "kind": "skill",
+          "name": "who_gho",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/who_gho.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/worldbank",
+          "kind": "skill",
+          "name": "worldbank",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/worldbank.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/yfinance",
+          "kind": "skill",
+          "name": "yfinance",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/yfinance.md"
+          }
+        },
+        {
+          "id": "skill:e2er/econometrics/panel-data",
+          "kind": "skill",
+          "name": "panel-data",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/econometrics/panel-data.md"
+          }
+        },
+        {
+          "id": "skill:e2er/methods/descriptive-analysis",
+          "kind": "skill",
+          "name": "descriptive-analysis",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/methods/descriptive-analysis.md"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/anti-slop",
+          "kind": "skill",
+          "name": "anti-slop",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/reasoning/anti-slop.md"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/creative-ideation",
+          "kind": "skill",
+          "name": "creative-ideation",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/reasoning/creative-ideation.md"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/novelty",
+          "kind": "skill",
+          "name": "novelty",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/reasoning/novelty.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/consistency-check",
+          "kind": "skill",
+          "name": "consistency-check",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/consistency-check.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/data-quality",
+          "kind": "skill",
+          "name": "data-quality",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/data-quality.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/domain-plausibility",
+          "kind": "skill",
+          "name": "domain-plausibility",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/domain-plausibility.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/methods-review",
+          "kind": "skill",
+          "name": "methods-review",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/methods-review.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/referee-simulation",
+          "kind": "skill",
+          "name": "referee-simulation",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/referee-simulation.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/writing-quality",
+          "kind": "skill",
+          "name": "writing-quality",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/writing-quality.md"
+          }
+        },
+        {
+          "id": "skill:e2er/synthesis/context-builder",
+          "kind": "skill",
+          "name": "context-builder",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/synthesis/context-builder.md"
+          }
+        },
+        {
+          "id": "skill:e2er/synthesis/replication-package",
+          "kind": "skill",
+          "name": "replication-package",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/synthesis/replication-package.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/abstract",
+          "kind": "skill",
+          "name": "abstract",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/abstract.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/cite-numbers-by-source",
+          "kind": "skill",
+          "name": "cite-numbers-by-source",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/cite-numbers-by-source.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/paper-structure",
+          "kind": "skill",
+          "name": "paper-structure",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/paper-structure.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/personal-style",
+          "kind": "skill",
+          "name": "personal-style",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/personal-style.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/scoped-revision",
+          "kind": "skill",
+          "name": "scoped-revision",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/scoped-revision.md"
+          }
+        },
+        {
+          "id": "template:descriptive-study",
+          "kind": "template",
+          "name": "descriptive-study",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "pipelines/descriptive-study.toml"
+          }
+        }
+      ],
+      "credit": {
+        "entries": [
+          {
+            "accessed": "2026-10-11",
+            "creator": "John D. Emerson and Graham A. Colditz",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Evidence that descriptive statistics carry much of a field's empirical work (58% of NEJM articles readable with descriptives alone).",
+            "publisher": "New England Journal of Medicine 309(12), 709-713",
+            "relation": "cites",
+            "role": "related work",
+            "title": "Use of Statistical Analysis in The New England Journal of Medicine",
+            "url": "https://doi.org/10.1056/NEJM198309223091206",
+            "year": 1983
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "David Freedman and Persi Diaconis",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Histogram bin width (Freedman-Diaconis rule) in the descriptive-analysis skill.",
+            "publisher": "Zeitschrift für Wahrscheinlichkeitstheorie und Verwandte Gebiete 57(4), 453-476",
+            "relation": "cites",
+            "role": "method",
+            "title": "On the histogram as a density estimator: L2 theory",
+            "url": "https://doi.org/10.1007/BF01025868",
+            "year": 1981
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Rob J. Hyndman and Yanan Fan",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Quantile definitions (type 7, linear interpolation) the skill asks studies to state.",
+            "publisher": "The American Statistician 50(4), 361-365",
+            "relation": "cites",
+            "role": "method",
+            "title": "Sample Quantiles in Statistical Packages",
+            "url": "https://doi.org/10.1080/00031305.1996.10473566",
+            "year": 1996
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Charles Spearman",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Rank correlation (Spearman's rho) for associations in skewed data.",
+            "publisher": "The American Journal of Psychology 15(1), 72-101",
+            "relation": "cites",
+            "role": "method",
+            "title": "The Proof and Measurement of Association between Two Things",
+            "url": "https://doi.org/10.2307/1412159",
+            "year": 1904
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Roderick Little and Donald Rubin",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "book",
+            "note": "Reporting and treating missing values, which the data check asks the dictionary to explain.",
+            "publisher": "Wiley",
+            "relation": "cites",
+            "role": "method",
+            "title": "Statistical Analysis with Missing Data (3rd edition)",
+            "url": "https://doi.org/10.1002/9781119482260",
+            "year": 2019
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Hadley Wickham",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "One row per unit, one column per variable: the shape the data check reads.",
+            "publisher": "Journal of Statistical Software 59(10)",
+            "relation": "cites",
+            "role": "method",
+            "title": "Tidy Data",
+            "url": "https://doi.org/10.18637/jss.v059.i10",
+            "year": 2014
+          }
+        ],
+        "template": "descriptive-study"
+      },
+      "data": [
+        {
+          "path": "data/data.db",
+          "sha256": "06f493141df7a85f6413ad8a9939020812d6e46519089ba0648ad1feccc38373"
+        },
+        {
+          "path": "data/data_dictionary.json",
+          "sha256": "2dde9e4ef51abd266d1a7443544beb297c9d1b909382e10343fb112076a28777"
+        },
+        {
+          "path": "data/data_sources.json",
+          "sha256": "cb87d08e49687e60a71fc917894f3b36f58b08a11df953f182adae36a9feaac8"
+        },
+        {
+          "path": "data/data_summary.md",
+          "sha256": "bcafeb0cfce3bcf263b9603c028187f36dbd627e845a8d6e2348ae26038c96d5"
+        }
+      ],
+      "data_sources": [
+        {
+          "citation": "Christiansen, J. L., McElroy, D. L., Harbut, M., et al. (2025). The NASA Exoplanet Archive and Exoplanet Follow-up Observing Program: Data, Tools, and Usage. The Planetary Science Journal, 6(8), 186. https://doi.org/10.3847/PSJ/ade3c2. Data: NASA Exoplanet Science Institute (2020), Planetary Systems Composite Table, IPAC, https://doi.org/10.26133/NEA13, or Planetary Systems Table, https://doi.org/10.26133/NEA12. Acknowledgement: This research has made use of the NASA Exoplanet Archive, which is operated by the California Institute of Technology, under contract with the National Aeronautics and Space Administration under the Exoplanet Exploration Program.",
+          "citation_by": "source",
+          "cite_key": "Christiansen2025_NEA",
+          "connector": "exoplanets",
+          "dataset": "NASA Exoplanet Archive (NASA Exoplanet Science Institute, IPAC/Caltech): Planetary Systems tables",
+          "files": [
+            {
+              "sha256": "2d66daacb3404319913e6b5987a2d0ba83a0d25ebc9a923cef5e917fee5c13d9",
+              "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=select+pl_name%2C+hostname%2C+discoverymethod%2C+disc_year%2C+pl_orbper%2C+pl_orbperlim%2C+pl_orbper_reflink%2C+pl_rade%2C+pl_radelim%2C+pl_rade_reflink%2C+pl_radj%2C+pl_bmasse%2C+pl_bmassj%2C+pl_bmassprov%2C+pl_bmasse_reflink%2C+tran_flag%2C+rv_flag%2C+sy_snum%2C+sy_pnum%2C+st_teff%2C+sy_dist+from+pscomppars+order+by+pl_name&MAXREC=100001"
+            }
+          ],
+          "licence": "No licence stated. The acknowledgement page (https://exoplanetarchive.ipac.caltech.edu/docs/acknowledge.html) asks: \"Please include the following standard acknowledgment in any published material that makes use of the NASA Exoplanet Archive's services. This research has made use of the NASA Exoplanet Archive, which is operated by the California Institute of Technology, under contract with the National Aeronautics and Space Administration under the Exoplanet Exploration Program.\" and \"if you use data from a specific literature reference, please acknowledge that reference directly\", and to \"cite Christiansen et al. (2025)\". The TAP page (https://exoplanetarchive.ipac.caltech.edu/docs/TAP/usingTAP.html) asks: \"If you use any of the following data sets for your research, please cite the archive's DOI for the data.\"",
+          "link": "https://exoplanetarchive.ipac.caltech.edu/",
+          "retrieved_at": "2026-10-13T20:34:02Z",
+          "saved_to": "data/planets.csv",
+          "series": "confirmed exoplanets, NASA Exoplanet Archive Planetary Systems Composite Table (pscomppars)",
+          "table": "planets",
+          "terms": "https://exoplanetarchive.ipac.caltech.edu/docs/acknowledge.html",
+          "terms_summary": "Free and keyless. NASA asks for its standard acknowledgement and a citation of the archive paper (Christiansen et al. 2025) and the table's DOI, plus the literature reference of any value used. The archive states no licence."
+        }
+      ],
+      "e2er": {
+        "commit": null,
+        "exported_with": "0.17.0",
+        "repository": null,
+        "segments": [
+          {
+            "commit": null,
+            "from": "2026-10-13T20:19:42Z",
+            "skills": "recorded at dispatch",
+            "steps": 4,
+            "template": "descriptive-study",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T20:26:15Z",
+            "skills": "recorded at dispatch",
+            "steps": 3,
+            "template": "descriptive-study",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T20:33:40Z",
+            "skills": "recorded at dispatch",
+            "steps": 21,
+            "template": "descriptive-study",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T20:48:30Z",
+            "skills": "recorded at dispatch",
+            "steps": 3,
+            "template": "descriptive-study",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T20:50:16Z",
+            "skills": "recorded at dispatch",
+            "steps": 11,
+            "template": "descriptive-study",
+            "version": "0.16.0"
+          }
+        ],
+        "uncommitted_changes": false,
+        "version": "0.16.0"
+      },
+      "references": [
+        {
+          "doi": "10.3847/PSJ/ade3c2",
+          "key": "Christiansen2025_NEA",
+          "source": "web",
+          "title": "The NASA Exoplanet Archive and Exoplanet Follow-up Observing Program: Data, Tools, and Usage",
+          "year": "2025"
+        },
+        {
+          "doi": "10.48550/arxiv.2409.13062",
+          "key": "cloutier2024exoplanet",
+          "source": "web",
+          "title": "Exoplanet Demographics: Physical and Orbital Properties",
+          "year": "2024"
+        },
+        {
+          "doi": "10.3847/1538-4357/aada83",
+          "key": "berger2018revised",
+          "source": "web",
+          "title": "Revised Radii of Kepler Stars and Planets Using Gaia Data Release 2",
+          "year": "2018"
+        },
+        {
+          "doi": "10.26133/NEA13",
+          "key": "NEA_PSCompPars",
+          "source": "web",
+          "title": "Planetary Systems Composite Table",
+          "year": "2020"
+        },
+        {
+          "doi": "10.1002/9781119482260",
+          "key": "little2019statistical",
+          "source": "template",
+          "title": "Statistical Analysis with Missing Data (3rd edition)",
+          "year": "2019"
+        },
+        {
+          "doi": "10.1080/00031305.1996.10473566",
+          "key": "hyndman1996sample",
+          "source": "template",
+          "title": "Sample Quantiles in Statistical Packages",
+          "year": "1996"
+        },
+        {
+          "doi": "10.2307/1412159",
+          "key": "spearman1904proof",
+          "source": "template",
+          "title": "The Proof and Measurement of Association between Two Things",
+          "year": "1904"
+        },
+        {
+          "doi": "10.3847/0004-6256/152/6/206",
+          "key": "foremanmackey2016the",
+          "source": "web",
+          "title": "THE POPULATION OF LONG-PERIOD TRANSITING EXOPLANETS",
+          "year": "2016"
+        },
+        {
+          "doi": "10.3847/1538-3881/ab16e9",
+          "key": "nielsen2019the",
+          "source": "web",
+          "title": "The Gemini Planet Imager Exoplanet Survey: Giant Planet and Brown Dwarf Demographics from 10 to 100 au",
+          "year": "2019"
+        }
+      ],
+      "run": {
+        "backend": "claude_code",
+        "events": [
+          {
+            "at": "2026-10-13T20:19:42Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "sonnet",
+            "segment": 0
+          },
+          {
+            "at": "2026-10-13T20:19:42Z",
+            "event": "method_sources",
+            "keys": [
+              "emerson1983statistical",
+              "freedman1981histogram",
+              "hyndman1996sample",
+              "spearman1904proof",
+              "little2019statistical",
+              "wickham2014tidy"
+            ],
+            "segment": 0
+          },
+          {
+            "at": "2026-10-13T20:22:04Z",
+            "event": "awaiting_review",
+            "segment": 0,
+            "stage": "review_design",
+            "step": "review_design"
+          },
+          {
+            "at": "2026-10-13T20:26:15Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "sonnet",
+            "segment": 1
+          },
+          {
+            "at": "2026-10-13T20:26:50Z",
+            "event": "awaiting_review",
+            "segment": 1,
+            "stage": "review_design",
+            "step": "review_design"
+          },
+          {
+            "at": "2026-10-13T20:33:40Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "sonnet",
+            "segment": 2
+          },
+          {
+            "at": "2026-10-13T20:47:28Z",
+            "event": "awaiting_review",
+            "segment": 2,
+            "stage": "review_draft",
+            "step": "review_draft"
+          },
+          {
+            "at": "2026-10-13T20:48:30Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "sonnet",
+            "segment": 3
+          },
+          {
+            "at": "2026-10-13T20:48:59Z",
+            "event": "awaiting_review",
+            "segment": 3,
+            "stage": "review_draft",
+            "step": "review_draft"
+          },
+          {
+            "at": "2026-10-13T20:50:16Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "sonnet",
+            "segment": 4
+          },
+          {
+            "at": "2026-10-13T20:51:15Z",
+            "categories": [],
+            "event": "self_critique",
+            "findings": 0,
+            "label": "Self-critique",
+            "max_severity": 0,
+            "segment": 4,
+            "serious": 0,
+            "step": "self_attack"
+          },
+          {
+            "at": "2026-10-13T20:55:56Z",
+            "edits_failed": 5,
+            "event": "revision_not_applied",
+            "first_failures": "[paper:full] target 'paper:full' not in work order findings: ['section:literature']; [paper:full] target 'paper:full' not in work order findings: ['section:literature']; [paper:full] target 'paper:full' not in work order findings: ['section:literature']",
+            "segment": 4,
+            "step": "revision"
+          }
+        ],
+        "exported": "20261015",
+        "governance": "full",
+        "internal_review": {
+          "combined": "weighted average",
+          "reviewers": {
+            "data_reviewer": 6.5,
+            "literature_reviewer": 4.6,
+            "methods_reviewer": 6,
+            "plausibility_reviewer": 6,
+            "writing_reviewer": 6
+          },
+          "rounds": 1,
+          "scale": 10,
+          "score": 5.92,
+          "weights": {
+            "data_reviewer": 1.25,
+            "literature_reviewer": 0.75,
+            "methods_reviewer": 1.5,
+            "plausibility_reviewer": 1.25,
+            "writing_reviewer": 0.75
+          }
+        },
+        "mode": "iterative",
+        "models": [
+          {
+            "backend": "claude_code",
+            "model": "sonnet"
+          }
+        ],
+        "outcome": {
+          "at": "2026-10-13T20:56:51Z",
+          "status": "completed"
+        },
+        "rounds": [
+          {
+            "ceiling_check": {
+              "at": "2026-10-13T20:47:28Z",
+              "decision": "ready for review",
+              "reason": "The draft already has a complete structure with abstract, introduction, three quantified findings tied to estimation_results.json source comments, and clear scope limits. This is a descriptive study with no causal claim, so there is little left to add through further design work. The remaining gaps are prose polish and numeric verification, and the review and polish phases handle both. Another iteration would add little.",
+              "verdict": "proceed_to_review"
+            },
+            "label": "Round 1",
+            "reason": "Descriptive template. The architect and analyst run first for the data_quality check, then the econometrics specialist, then the analyst's figure_data check, then the drafting pass. No identification or theory specialists are needed. The literature scanner registers the unresolved citations.",
+            "round": 1,
+            "segment": 2,
+            "specialist_labels": [
+              "Literature review",
+              "Data plan",
+              "Data and descriptive analysis",
+              "Estimation",
+              "Data and descriptive analysis",
+              "Paper draft",
+              "Abstract"
+            ],
+            "specialists": [
+              "literature_scanner",
+              "data_architect",
+              "data_analyst",
+              "econometrics_specialist",
+              "data_analyst",
+              "paper_drafter",
+              "abstract_writer"
+            ],
+            "started": "2026-10-13T20:42:44Z"
+          }
+        ],
+        "template": "descriptive-study"
+      },
+      "schema": "e2er-dossier/0.6",
+      "study": {
+        "title": "How are confirmed exoplanets distributed in planet radius and orbital period,..."
+      },
+      "workflow": [
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:21:03Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/paper_plan.md",
+            "sha256": "4078504f8b0341519d6018ce0a7011cc424b56849c8f89b06a074aa854cb87c4"
+          },
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "idea_developer",
+          "started": "2026-10-13T20:19:58Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:21:13Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/literature_review.md",
+            "sha256": "cf76d6c056d355b4b25699500051cfe591e3770f73a4574eafbc7346846a9160"
+          },
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "literature_scanner",
+          "started": "2026-10-13T20:19:58Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:22:04Z",
+          "model": "sonnet",
+          "output": {
+            "file": "data/data_dictionary.json",
+            "sha256": "cf6a5a3a49a7b3c58f13ca649e3eaa8912b50a0c35c97c609336e413a5c60b54"
+          },
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "data_architect",
+          "started": "2026-10-13T20:21:13Z",
+          "type": "specialist"
+        },
+        {
+          "action": "send_back",
+          "at": "2026-10-13T20:26:15Z",
+          "phase": "initial",
+          "remark": "Two corrections from the researcher. (1) The NASA Exoplanet Archive column is tran_flag, not tr_flag; tr_flag does not exist in pscomppars or ps, so the declared loads would fail. Use tran_flag in both tables. (2) Radius provenance: the archive itself labels radii it calculated from mass. In pscomppars, pl_rade_reflink contains refstr=CALCULATED_VALUE (link text 'Calculated Value', documented at https://exoplanetarchive.ipac.caltech.edu/docs/pscp_calc.html, mass-radius relation of Chen and Kipping 2017) for these radii. A probe on 2026-10-13 found 1,537 such rows, all with tran_flag = 0, out of 1,634 planets with tran_flag = 0. Make the primary rule: calculated = pl_rade_reflink contains CALCULATED_VALUE; measured otherwise. Cross-tabulate it against tran_flag and discoverymethod, and report the non-transiting planets whose radius is not marked calculated (about 97: imaging, timing and other methods) as their own group, not as measured-from-transit. Load pl_radelim and pl_orbperlim as well. Drop the reference-by-reference hand coding and the 50-planet manual validation: they cannot be done or checked in this run. Keep the ps default-solution table only if it can be classified with the same rule; otherwise leave it out and say so.",
+          "segment": 0,
+          "step": "review_design",
+          "target": "data_architect",
+          "type": "researcher"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:26:50Z",
+          "model": "sonnet",
+          "output": {
+            "file": "data/data_dictionary.json",
+            "sha256": "3cc1e7872f4e655e359dd9eae06fa30b2cf91207d9ae865da5d0c994c5bcc412"
+          },
+          "phase": "initial",
+          "segment": 1,
+          "sent_back": {
+            "at": "2026-10-13T20:26:15Z",
+            "remark": "Two corrections from the researcher. (1) The NASA Exoplanet Archive column is tran_flag, not tr_flag; tr_flag does not exist in pscomppars or ps, so the declared loads would fail. Use tran_flag in both tables. (2) Radius provenance: the archive itself labels radii it calculated from mass. In pscomppars, pl_rade_reflink contains refstr=CALCULATED_VALUE (link text 'Calculated Value', documented at https://exoplanetarchive.ipac.caltech.edu/docs/pscp_calc.html, mass-radius relation of Chen and Kipping 2017) for these radii. A probe on 2026-10-13 found 1,537 such rows, all with tran_flag = 0, out of 1,634 planets with tran_flag = 0. Make the primary rule: calculated = pl_rade_reflink contains CALCULATED_VALUE; measured otherwise. Cross-tabulate it against tran_flag and discoverymethod, and report the non-transiting planets whose radius is not marked calculated (about 97: imaging, timing and other methods) as their own group, not as measured-from-transit. Load pl_radelim and pl_orbperlim as well. Drop the reference-by-reference hand coding and the 50-planet manual validation: they cannot be done or checked in this run. Keep the ps default-solution table only if it can be classified with the same rule; otherwise leave it out and say so."
+          },
+          "specialist": "data_architect",
+          "started": "2026-10-13T20:26:15Z",
+          "type": "specialist"
+        },
+        {
+          "action": "instruction",
+          "at": "2026-10-13T20:33:33Z",
+          "phase": "initial",
+          "segment": 1,
+          "step": "review_design",
+          "text": "Researcher decisions at the design review: the radius-provenance rule in data_dictionary.json (the archive's CALCULATED_VALUE label in pl_rade_reflink; groups calculated, measured_transiting, measured_non_transiting, no_radius) replaces Section 4 of paper_plan.md. There is no reference-level hand coding, no 50-planet manual validation and no ps default-solution robustness table. pl_controv_flag is not loaded, so controversial planets are not excluded; say so in the sample description. Main comparison: calculated versus measured_transiting; report measured_non_transiting separately and never describe it as measured from a transit. Keep the paper short: the main tables, figures 1 to 4 and the mass-radius diagnostic for the calculated group.",
+          "type": "researcher"
+        },
+        {
+          "action": "approve",
+          "at": "2026-10-13T20:33:40Z",
+          "phase": "initial",
+          "segment": 1,
+          "step": "review_design",
+          "type": "researcher"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:35:30Z",
+          "model": "sonnet",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "8ad3e17567dd9f94caf578f63b3a2c571de5c20dd06959589500810e73a09295"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "8ad3e17567dd9f94caf578f63b3a2c571de5c20dd06959589500810e73a09295"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "7096ec02f24f3e89a7e6824825e27cea86ce01c3f76d93810e948192d6576816"
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "fb10ae47501076c1c9746fb52cb94f5914e9c1eb6e6afd740e22d49c42761e75"
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T20:33:40Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T20:35:30Z",
+          "check": "data_quality",
+          "detail": "table planets: column(s) pl_orbper_reflink (353 of 6445, 5%) miss more than 5% of their values; say in data_dictionary.json why and how the analysis treats them (\"missing\": \"...\"); planets.pl_orbper: 5% missing (a few planets (mostly imaged or microlensing) have no period; period statistics use rows with a value, share reported); planets.pl_orbperlim: 5% missing (empty where the archive gives no flag; treated as 0 only after the count of empty cells is reported)",
+          "enforced": true,
+          "passed": false,
+          "phase": "initial",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:36:00Z",
+          "model": "sonnet",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "9b08e3ef5cbf01d1c192388704d66034076aad7253041174e92b55cf82c59e92"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "9b08e3ef5cbf01d1c192388704d66034076aad7253041174e92b55cf82c59e92"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "7096ec02f24f3e89a7e6824825e27cea86ce01c3f76d93810e948192d6576816",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "fb10ae47501076c1c9746fb52cb94f5914e9c1eb6e6afd740e22d49c42761e75",
+              "unchanged": true
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T20:35:30Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T20:36:00Z",
+          "check": "data_quality",
+          "enforced": true,
+          "passed": true,
+          "phase": "initial",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:36:44Z",
+          "model": "sonnet",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "df666dc72955fbd3745abc1dd9868e72c85edbbce53370269dd6493222138c42"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "df666dc72955fbd3745abc1dd9868e72c85edbbce53370269dd6493222138c42"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "7096ec02f24f3e89a7e6824825e27cea86ce01c3f76d93810e948192d6576816",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "fb10ae47501076c1c9746fb52cb94f5914e9c1eb6e6afd740e22d49c42761e75",
+              "unchanged": true
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T20:36:00Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:38:35Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "28afb2d2b5b4b195a8a03d87edc899913112df0fd01c9077150caf5dc63fbed9"
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "28afb2d2b5b4b195a8a03d87edc899913112df0fd01c9077150caf5dc63fbed9"
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "9dd8881c7709d48b6a234c314711bdea508514f464bfca61a6344140294d3f7d"
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "econometrics_specialist",
+          "started": "2026-10-13T20:36:44Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T20:38:35Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "initial",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:39:06Z",
+          "model": "sonnet",
+          "output": {
+            "file": "paper/abstract.tex",
+            "sha256": "e265a3e6a099d1fbbc1da202c746e3166d7c548ee8404085fa5277026a399d90"
+          },
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "abstract_writer",
+          "started": "2026-10-13T20:38:35Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T20:42:10Z",
+          "check": "contracts",
+          "detail": "paper_draft.tex: 2 construction(s) the researcher does not accept in a paper: \"Against this background\" in: Against this background, this paper asks how confirmed exoplanets are distributed in planet radius and orbital period, and how that distribution changes when radii measured from transits are separated from radii calculated from planet mass. (pivot to the contribution directly (for instance: To keep these quantities apart, we propose ...)); \"rather than\" in: Third, the radius-period association is weak among transit-measured planets and clearly positive among planets with calculated radii, so the pooled association is a mixture of two provenances rather than a property of either. (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content",
+          "enforced": true,
+          "passed": false,
+          "phase": "initial",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": false,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:42:10Z",
+          "model": "sonnet",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "88ac742f33baea1da5eaac3376ec142e4de234795b2132be3c692acc2b480490"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "88ac742f33baea1da5eaac3376ec142e4de234795b2132be3c692acc2b480490"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "8ff1d15be0190f9d5cb1bd6d92736868784f3abb5d44f09ead97347d63af5396"
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "paper_drafter",
+          "started": "2026-10-13T20:38:35Z",
+          "stopped_by": "contract violation: paper_draft.tex: 2 construction(s) the researcher does not accept in a paper: \"Against this background\" in: Against this background, this paper asks how confirmed exoplanets are distributed in planet radius and orbital period, and how that distribution changes when radii measured from transits are separated from radii calculated from planet mass. (pivot to the contribution directly (for instance: To keep these quantities apart, we propose ...)); \"rather than\" in: Third, the radius-period association is weak among transit-measured planets and clearly positive among planets with calculated radii, so the pooled association is a mixture of two provenances rather than a property of either. (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:42:27Z",
+          "model": "sonnet",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "e7dfd7df8787745d555dab5a375e3952c34d114d7952b3d4d7c1f621ae76ce33"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "e7dfd7df8787745d555dab5a375e3952c34d114d7952b3d4d7c1f621ae76ce33"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "8ff1d15be0190f9d5cb1bd6d92736868784f3abb5d44f09ead97347d63af5396",
+              "unchanged": true
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "paper_drafter",
+          "started": "2026-10-13T20:42:10Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:43:49Z",
+          "model": "sonnet",
+          "output": {
+            "file": "data/data_dictionary.json",
+            "sha256": "2dde9e4ef51abd266d1a7443544beb297c9d1b909382e10343fb112076a28777"
+          },
+          "phase": "iterative",
+          "round": 1,
+          "segment": 2,
+          "specialist": "data_architect",
+          "started": "2026-10-13T20:42:44Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:44:10Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/literature_review.md",
+            "sha256": "6dea2f51e2d700937064c1caeacb7502bbb5332798845784dcd0c3a4db18fcb5"
+          },
+          "phase": "iterative",
+          "round": 1,
+          "segment": 2,
+          "specialist": "literature_scanner",
+          "started": "2026-10-13T20:42:44Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:44:41Z",
+          "model": "sonnet",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "df666dc72955fbd3745abc1dd9868e72c85edbbce53370269dd6493222138c42",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "df666dc72955fbd3745abc1dd9868e72c85edbbce53370269dd6493222138c42",
+              "unchanged": true
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "7096ec02f24f3e89a7e6824825e27cea86ce01c3f76d93810e948192d6576816",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "fb10ae47501076c1c9746fb52cb94f5914e9c1eb6e6afd740e22d49c42761e75",
+              "unchanged": true
+            }
+          ],
+          "phase": "iterative",
+          "round": 1,
+          "segment": 2,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T20:44:10Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:45:46Z",
+          "model": "sonnet",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "bcafeb0cfce3bcf263b9603c028187f36dbd627e845a8d6e2348ae26038c96d5"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "bcafeb0cfce3bcf263b9603c028187f36dbd627e845a8d6e2348ae26038c96d5"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "7096ec02f24f3e89a7e6824825e27cea86ce01c3f76d93810e948192d6576816",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "a6c256751dd47e79b5207d87dd0f46094f50139c36ec7e458219c502bb9ba052"
+            }
+          ],
+          "phase": "iterative",
+          "round": 1,
+          "segment": 2,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T20:44:41Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:46:27Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "28afb2d2b5b4b195a8a03d87edc899913112df0fd01c9077150caf5dc63fbed9",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "28afb2d2b5b4b195a8a03d87edc899913112df0fd01c9077150caf5dc63fbed9",
+              "unchanged": true
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "9dd8881c7709d48b6a234c314711bdea508514f464bfca61a6344140294d3f7d",
+              "unchanged": true
+            }
+          ],
+          "phase": "iterative",
+          "round": 1,
+          "segment": 2,
+          "specialist": "econometrics_specialist",
+          "started": "2026-10-13T20:45:46Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:46:52Z",
+          "model": "sonnet",
+          "output": {
+            "file": "paper/abstract.tex",
+            "sha256": "791b69545b82e12daabed78f7c871a340bd20762ba89ad0d9a88265821d2e6ab"
+          },
+          "phase": "iterative",
+          "round": 1,
+          "segment": 2,
+          "specialist": "abstract_writer",
+          "started": "2026-10-13T20:46:27Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:47:19Z",
+          "model": "sonnet",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "dc454206eb02c04e7fe6731e4d38961d6cdfd180fafafedbc468f7a7da35d4f0"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "dc454206eb02c04e7fe6731e4d38961d6cdfd180fafafedbc468f7a7da35d4f0"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "8ff1d15be0190f9d5cb1bd6d92736868784f3abb5d44f09ead97347d63af5396",
+              "unchanged": true
+            }
+          ],
+          "phase": "iterative",
+          "round": 1,
+          "segment": 2,
+          "specialist": "paper_drafter",
+          "started": "2026-10-13T20:46:27Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T20:47:28Z",
+          "check": "estimation",
+          "enforced": true,
+          "passed": true,
+          "phase": "estimation_gate",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T20:47:28Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "figure_gate",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "action": "send_back",
+          "at": "2026-10-13T20:48:30Z",
+          "phase": "figure_gate",
+          "remark": "One substantive error in the conclusion. It says the pattern of two radius humps 'belongs mostly to the 80 percent of the sample with transit-measured radii'. That holds for the hump at 2 to 4 Earth radii (1,901 of 2,090) but not for the hump at 8 to 15 Earth radii: 846 of its 1,529 planets have calculated radii, more than half. So the giant-planet hump of the pooled diagram is largely made of radii the archive calculated from mass. State this in the results (where the two humps are described), in the abstract and in the conclusion, using the counts already in the results (846 of 1,529; 1,901 of 2,090). Do not add any other claims. Keep everything else as it is.",
+          "segment": 2,
+          "step": "review_draft",
+          "target": "paper_drafter",
+          "type": "researcher"
+        },
+        {
+          "at": "2026-10-13T20:48:30Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "figure_gate",
+          "segment": 3,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:48:59Z",
+          "model": "sonnet",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "93eec512dbb509fb50411f1bde94c43101091a98217e9301b5250587c6a4eda6"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "93eec512dbb509fb50411f1bde94c43101091a98217e9301b5250587c6a4eda6"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "8ff1d15be0190f9d5cb1bd6d92736868784f3abb5d44f09ead97347d63af5396",
+              "unchanged": true
+            }
+          ],
+          "phase": "figure_gate",
+          "segment": 3,
+          "sent_back": {
+            "at": "2026-10-13T20:48:30Z",
+            "remark": "One substantive error in the conclusion. It says the pattern of two radius humps 'belongs mostly to the 80 percent of the sample with transit-measured radii'. That holds for the hump at 2 to 4 Earth radii (1,901 of 2,090) but not for the hump at 8 to 15 Earth radii: 846 of its 1,529 planets have calculated radii, more than half. So the giant-planet hump of the pooled diagram is largely made of radii the archive calculated from mass. State this in the results (where the two humps are described), in the abstract and in the conclusion, using the counts already in the results (846 of 1,529; 1,901 of 2,090). Do not add any other claims. Keep everything else as it is."
+          },
+          "specialist": "paper_drafter",
+          "started": "2026-10-13T20:48:30Z",
+          "type": "specialist"
+        },
+        {
+          "action": "approve",
+          "at": "2026-10-13T20:50:16Z",
+          "phase": "figure_gate",
+          "segment": 3,
+          "step": "review_draft",
+          "type": "researcher"
+        },
+        {
+          "at": "2026-10-13T20:50:16Z",
+          "check": "estimation",
+          "enforced": true,
+          "passed": true,
+          "phase": "estimation_gate",
+          "segment": 4,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T20:50:16Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "figure_gate",
+          "segment": 4,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T20:51:16Z",
+          "check": "numbers",
+          "enforced": true,
+          "passed": true,
+          "phase": "review",
+          "segment": 4,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T20:51:18Z",
+          "check": "citations",
+          "enforced": true,
+          "passed": true,
+          "phase": "review",
+          "segment": 4,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:51:58Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/review_literature.md",
+            "sha256": "7811af32c4045878ada063e4f3ba3adce8c8b01857e0d1ae19c5b6ba4cc105e2"
+          },
+          "phase": "review",
+          "segment": 4,
+          "specialist": "literature_reviewer",
+          "started": "2026-10-13T20:51:18Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:53:29Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/review_data.md",
+            "sha256": "17d9eb8eddcc31d80eb0c9613907269678a1eb0ccd38640eec9e99b423408d2d"
+          },
+          "phase": "review",
+          "segment": 4,
+          "specialist": "data_reviewer",
+          "started": "2026-10-13T20:51:18Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:53:44Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/review_methods.md",
+            "sha256": "28165286d5b8658e98bec808e690300da2e2e8e57e06d087fa2d238a3f4c7ec4"
+          },
+          "phase": "review",
+          "segment": 4,
+          "specialist": "methods_reviewer",
+          "started": "2026-10-13T20:51:58Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:54:04Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/review_writing.md",
+            "sha256": "201e58e5a4697eab8cc11f8b9db30ec620650d5a7d5a31355e0994972a045d75"
+          },
+          "phase": "review",
+          "segment": 4,
+          "specialist": "writing_reviewer",
+          "started": "2026-10-13T20:51:18Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:55:18Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/review_plausibility.md",
+            "sha256": "0c16a305d6f85a74908dd3437ea7124c3c82101d3750fd617d473fc50fca5822"
+          },
+          "phase": "review",
+          "segment": 4,
+          "specialist": "plausibility_reviewer",
+          "started": "2026-10-13T20:53:29Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:55:56Z",
+          "model": "sonnet",
+          "output": {
+            "file": "misc/paper_draft.tex.edits.json",
+            "sha256": "9d5b47bbcf574ccd4919f7c1f0e002d9e7dda3b1eb544b4ebd1f6e0825f9b70e"
+          },
+          "phase": "revision",
+          "segment": 4,
+          "specialist": "patch_revisor",
+          "started": "2026-10-13T20:55:18Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:56:51Z",
+          "model": "sonnet",
+          "output": {
+            "file": "replication/estimation.py",
+            "sha256": "6e0cb311f197e4f33a24e4329b9b0ebd7df2b260313697cf24d3e701105d5c6a"
+          },
+          "phase": "replication",
+          "segment": 4,
+          "specialist": "replication_packager",
+          "started": "2026-10-13T20:55:56Z",
+          "type": "specialist"
+        }
+      ],
+      "availability": {
+        "data": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        },
+        "code": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        }
+      },
+      "purpose": "demonstration",
+      "amendments": [
+        {
+          "path": "e2er.json",
+          "kind": "carried_over",
+          "sha256_before": "eb59749b5a442bbcfb6a5848ef5cf286461ec422bdb863de1dc9f575016dfb55",
+          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 1 (https://e2er.org/d/4968c2075e30009d). Its steps are the ones that version recorded; none was added or rebuilt.",
+          "at": "2026-10-19T22:44:09Z",
+          "from_version": 1,
+          "from_dossier": "sha256:4968c2075e30009dbf1a3868b94ee6aa05ac6aca888293ae5c88473a5b18bfb9",
+          "e2er_version": "0.17.1"
+        }
+      ]
+    }
+  }
+}

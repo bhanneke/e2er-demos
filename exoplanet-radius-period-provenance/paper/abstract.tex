@@ -1,0 +1,14 @@
+\begin{abstract}
+The radius--period diagram of confirmed exoplanets mixes radii measured from transit depth with radii the NASA Exoplanet Archive calculates from planet mass. How does the distribution differ between the two?
+We describe 6,045 catalogued planets with both radius and period, split by the archive's own label for calculated radii.
+% src: estimation_results.json#sample.n_observations
+Of these, 1,215 (20\%) have calculated radii and 4,810 (80\%) have radii measured on transiting planets; 20 non-transiting planets with measured radii are reported separately.
+% src: estimation_results.json#groups.calculated.n, groups.measured_transiting.n, groups.measured_non_transiting.n
+Calculated radii have a median of 12.6 Earth radii and 359 days, against 2.5 Earth radii and 8.0 days for transit-measured radii.
+% src: estimation_results.json#statistics.radius_calculated.median, statistics.period_calculated.median, statistics.radius_measured_transiting.median, statistics.period_measured_transiting.median
+The rank correlation between radius and period is 0.30 overall, 0.40 among calculated radii and 0.08 among transit-measured radii.
+% src: estimation_results.json#associations.radius_period_all.estimate, associations.radius_period_calculated.estimate, associations.radius_period_measured_transiting.estimate
+These are patterns in the catalogue, not in the planet population, and the study makes no causal claim.
+\end{abstract}
+
+\noindent\textbf{Keywords:} exoplanets; planet radius; orbital period; radius provenance; descriptive statistics

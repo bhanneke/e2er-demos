@@ -1,0 +1,418 @@
+{
+  "passed": true,
+  "total_values_in_tables": 76,
+  "matched": 76,
+  "mismatched": 0,
+  "unverifiable": 0,
+  "coverage": 1.0,
+  "mismatches": [],
+  "matched_cells": [
+    {
+      "draft_value": "1,215",
+      "source_key": "summary_statistics.json.by_group.calculated.n",
+      "table_context": "tab:groups (Radius provenance groups in the analysis sample (confirmed p...), row 2, col 2"
+    },
+    {
+      "draft_value": "0.201",
+      "source_key": "estimation_results.json.statistics.share_calculated.share",
+      "table_context": "tab:groups (Radius provenance groups in the analysis sample (confirmed p...), row 2, col 3"
+    },
+    {
+      "draft_value": "4,810",
+      "source_key": "summary_statistics.json.radius_group_counts_all.measured_transiting",
+      "table_context": "tab:groups (Radius provenance groups in the analysis sample (confirmed p...), row 3, col 2"
+    },
+    {
+      "draft_value": "0.796",
+      "source_key": "summary_statistics.json.by_group.measured_non_transiting.log10_radius.p25",
+      "table_context": "tab:groups (Radius provenance groups in the analysis sample (confirmed p...), row 3, col 3"
+    },
+    {
+      "draft_value": "20",
+      "source_key": "summary_statistics.json.by_group.measured_non_transiting.n",
+      "table_context": "tab:groups (Radius provenance groups in the analysis sample (confirmed p...), row 4, col 2"
+    },
+    {
+      "draft_value": "0.003",
+      "source_key": "summary_statistics.json.sample_flow[0].dropped",
+      "table_context": "tab:groups (Radius provenance groups in the analysis sample (confirmed p...), row 4, col 3"
+    },
+    {
+      "draft_value": "6,045",
+      "source_key": "summary_statistics.json.n_observations",
+      "table_context": "tab:groups (Radius provenance groups in the analysis sample (confirmed p...), row 5, col 2"
+    },
+    {
+      "draft_value": "1.000",
+      "source_key": "summary_statistics.json.crosstab_group_by_tran_flag.no_radius.1",
+      "table_context": "tab:groups (Radius provenance groups in the analysis sample (confirmed p...), row 5, col 3"
+    },
+    {
+      "draft_value": "1,215",
+      "source_key": "summary_statistics.json.by_group.calculated.n",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 2, col 2"
+    },
+    {
+      "draft_value": "4.42",
+      "source_key": "summary_statistics.json.by_group.calculated.radius_earth.p25",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 2, col 3"
+    },
+    {
+      "draft_value": "12.60",
+      "source_key": "summary_statistics.json.by_group.calculated.radius_earth.median",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 2, col 4"
+    },
+    {
+      "draft_value": "13.40",
+      "source_key": "summary_statistics.json.by_group.calculated.radius_earth.p75",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 2, col 5"
+    },
+    {
+      "draft_value": "0.34",
+      "source_key": "summary_statistics.json.by_group.calculated.radius_earth.min",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 2, col 6"
+    },
+    {
+      "draft_value": "14.30",
+      "source_key": "summary_statistics.json.outcome.radius_earth.p95",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 2, col 7"
+    },
+    {
+      "draft_value": "4,810",
+      "source_key": "summary_statistics.json.radius_group_counts_all.measured_transiting",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 3, col 2"
+    },
+    {
+      "draft_value": "1.64",
+      "source_key": "summary_statistics.json.by_group.measured_transiting.radius_earth.p25",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 3, col 3"
+    },
+    {
+      "draft_value": "2.46",
+      "source_key": "summary_statistics.json.outcome.period_days.p10",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 3, col 4"
+    },
+    {
+      "draft_value": "4.10",
+      "source_key": "summary_statistics.json.by_group.calculated.period_days.p5",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 3, col 5"
+    },
+    {
+      "draft_value": "0.31",
+      "source_key": "summary_statistics.json.outcome.radius_earth.min",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 3, col 6"
+    },
+    {
+      "draft_value": "32.60",
+      "source_key": "summary_statistics.json.outcome.radius_earth.max",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 3, col 7"
+    },
+    {
+      "draft_value": "20",
+      "source_key": "summary_statistics.json.by_group.measured_non_transiting.n",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 4, col 2"
+    },
+    {
+      "draft_value": "6.96",
+      "source_key": "summary_statistics.json.by_group.measured_non_transiting.radius_earth.p25",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 4, col 3"
+    },
+    {
+      "draft_value": "13.00",
+      "source_key": "summary_statistics.json.by_group.measured_non_transiting.radius_earth.median",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 4, col 4"
+    },
+    {
+      "draft_value": "14.52",
+      "source_key": "summary_statistics.json.by_group.measured_non_transiting.radius_earth.p75",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 4, col 5"
+    },
+    {
+      "draft_value": "0.76",
+      "source_key": "summary_statistics.json.by_group.measured_non_transiting.radius_earth.min",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 4, col 6"
+    },
+    {
+      "draft_value": "21.97",
+      "source_key": "summary_statistics.json.by_group.measured_non_transiting.radius_earth.max",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 4, col 7"
+    },
+    {
+      "draft_value": "6,045",
+      "source_key": "summary_statistics.json.n_observations",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 5, col 2"
+    },
+    {
+      "draft_value": "1.79",
+      "source_key": "summary_statistics.json.outcome.radius_earth.p25",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 5, col 3"
+    },
+    {
+      "draft_value": "2.75",
+      "source_key": "summary_statistics.json.outcome.radius_earth.median",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 5, col 4"
+    },
+    {
+      "draft_value": "10.86",
+      "source_key": "summary_statistics.json.outcome.radius_earth.p75",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 5, col 5"
+    },
+    {
+      "draft_value": "0.31",
+      "source_key": "summary_statistics.json.outcome.radius_earth.min",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 5, col 6"
+    },
+    {
+      "draft_value": "32.60",
+      "source_key": "summary_statistics.json.outcome.radius_earth.max",
+      "table_context": "fig:groups (Planet radius (Earth radii) by radius provenance...), row 5, col 7"
+    },
+    {
+      "draft_value": "1,215",
+      "source_key": "summary_statistics.json.by_group.calculated.n",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 2, col 2"
+    },
+    {
+      "draft_value": "31.33",
+      "source_key": "summary_statistics.json.by_group.calculated.period_days.p25",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 2, col 3"
+    },
+    {
+      "draft_value": "358.62",
+      "source_key": "summary_statistics.json.by_group.calculated.period_days.median",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 2, col 4"
+    },
+    {
+      "draft_value": "1277.23",
+      "source_key": "summary_statistics.json.by_group.calculated.period_days.p75",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 2, col 5"
+    },
+    {
+      "draft_value": "0.32",
+      "source_key": "summary_statistics.json.by_group.calculated.period_days.min",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 2, col 6"
+    },
+    {
+      "draft_value": "7300000.0",
+      "source_key": "summary_statistics.json.by_group.calculated.period_days.max",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 2, col 7"
+    },
+    {
+      "draft_value": "4,810",
+      "source_key": "summary_statistics.json.radius_group_counts_all.measured_transiting",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 3, col 2"
+    },
+    {
+      "draft_value": "3.79",
+      "source_key": "summary_statistics.json.by_group.measured_transiting.period_days.p25",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 3, col 3"
+    },
+    {
+      "draft_value": "7.97",
+      "source_key": "summary_statistics.json.by_group.measured_transiting.period_days.median",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 3, col 4"
+    },
+    {
+      "draft_value": "18.80",
+      "source_key": "summary_statistics.json.by_group.measured_transiting.period_days.p75",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 3, col 5"
+    },
+    {
+      "draft_value": "0.11",
+      "source_key": "summary_statistics.json.outcome.period_days.min",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 3, col 6"
+    },
+    {
+      "draft_value": "3650.0",
+      "source_key": "summary_statistics.json.by_group.measured_transiting.period_days.max",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 3, col 7"
+    },
+    {
+      "draft_value": "20",
+      "source_key": "summary_statistics.json.by_group.measured_non_transiting.n",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 4, col 2"
+    },
+    {
+      "draft_value": "49.81",
+      "source_key": "summary_statistics.json.by_group.measured_non_transiting.period_days.p25",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 4, col 3"
+    },
+    {
+      "draft_value": "15957.80",
+      "source_key": "summary_statistics.json.by_group.measured_non_transiting.period_days.median",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 4, col 4"
+    },
+    {
+      "draft_value": "81000.00",
+      "source_key": "summary_statistics.json.by_group.measured_non_transiting.period_days.p75",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 4, col 5"
+    },
+    {
+      "draft_value": "0.24",
+      "source_key": "summary_statistics.json.by_group.measured_non_transiting.period_days.min",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 4, col 6"
+    },
+    {
+      "draft_value": "402000000.0",
+      "source_key": "summary_statistics.json.outcome.period_days.max",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 4, col 7"
+    },
+    {
+      "draft_value": "6,045",
+      "source_key": "summary_statistics.json.n_observations",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 5, col 2"
+    },
+    {
+      "draft_value": "4.27",
+      "source_key": "summary_statistics.json.outcome.period_days.p25",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 5, col 3"
+    },
+    {
+      "draft_value": "10.61",
+      "source_key": "summary_statistics.json.outcome.period_days.median",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 5, col 4"
+    },
+    {
+      "draft_value": "37.87",
+      "source_key": "summary_statistics.json.outcome.period_days.p75",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 5, col 5"
+    },
+    {
+      "draft_value": "0.11",
+      "source_key": "summary_statistics.json.outcome.period_days.min",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 5, col 6"
+    },
+    {
+      "draft_value": "402000000.0",
+      "source_key": "summary_statistics.json.outcome.period_days.max",
+      "table_context": "tab:period_stats (Orbital period (days) by radius provenance...), row 5, col 7"
+    },
+    {
+      "draft_value": "6,045",
+      "source_key": "summary_statistics.json.n_observations",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 2, col 2"
+    },
+    {
+      "draft_value": "0.304",
+      "source_key": "estimation_results.json.distributions.log10_radius_fine_all.bins[8].upper",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 2, col 3"
+    },
+    {
+      "draft_value": "0.276",
+      "source_key": "estimation_results.json.associations.radius_period_all.ci_lower",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 2, col 4"
+    },
+    {
+      "draft_value": "0.330",
+      "source_key": "summary_statistics.json.by_group.calculated.log10_period.p1",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 2, col 5"
+    },
+    {
+      "draft_value": "1,215",
+      "source_key": "summary_statistics.json.by_group.calculated.n",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 3, col 2"
+    },
+    {
+      "draft_value": "0.404",
+      "source_key": "estimation_results.json.distributions.log10_radius_fine_all.bins[9].upper",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 3, col 3"
+    },
+    {
+      "draft_value": "0.347",
+      "source_key": "estimation_results.json.associations.radius_period_calculated.ci_lower",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 3, col 4"
+    },
+    {
+      "draft_value": "0.459",
+      "source_key": "estimation_results.json.associations.radius_period_calculated.ci_upper",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 3, col 5"
+    },
+    {
+      "draft_value": "4,810",
+      "source_key": "summary_statistics.json.radius_group_counts_all.measured_transiting",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 4, col 2"
+    },
+    {
+      "draft_value": "0.081",
+      "source_key": "summary_statistics.json.by_group.measured_transiting.log10_radius.p10",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 4, col 3"
+    },
+    {
+      "draft_value": "0.049",
+      "source_key": "summary_statistics.json.missing.st_teff.share_missing",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 4, col 4"
+    },
+    {
+      "draft_value": "0.112",
+      "source_key": "summary_statistics.json.outcome.period_days.min",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 4, col 5"
+    },
+    {
+      "draft_value": "20",
+      "source_key": "summary_statistics.json.by_group.measured_non_transiting.n",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 5, col 2"
+    },
+    {
+      "draft_value": "0.627",
+      "source_key": "estimation_results.json.statistics.log10_period_all.p25",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 5, col 3"
+    },
+    {
+      "draft_value": "0.162",
+      "source_key": "estimation_results.json.associations.radius_period_measured_non_transiting.ci_lower",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 5, col 4"
+    },
+    {
+      "draft_value": "0.872",
+      "source_key": "estimation_results.json.associations.radius_period_measured_non_transiting.ci_upper",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 5, col 5"
+    },
+    {
+      "draft_value": "1,215",
+      "source_key": "summary_statistics.json.by_group.calculated.n",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 6, col 2"
+    },
+    {
+      "draft_value": "0.467",
+      "source_key": "summary_statistics.json.by_group.measured_transiting.log10_radius.mean",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 6, col 3"
+    },
+    {
+      "draft_value": "0.397",
+      "source_key": "estimation_results.json.statistics.log10_radius_all.sd",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 6, col 4"
+    },
+    {
+      "draft_value": "0.531",
+      "source_key": "estimation_results.json.associations.mass_radius_calculated.ci_upper",
+      "table_context": "tab:associations (Spearman rank correlations between log radius and log period...), row 6, col 5"
+    }
+  ],
+  "source_files_found": [
+    "/private/tmp/e2er-demos/studies/workspaces/2026-10-13-how-are-confirmed-exoplanets-distributed/data_quality.json",
+    "/private/tmp/e2er-demos/studies/workspaces/2026-10-13-how-are-confirmed-exoplanets-distributed/estimation_results.json",
+    "/private/tmp/e2er-demos/studies/workspaces/2026-10-13-how-are-confirmed-exoplanets-distributed/figure_spec.json",
+    "/private/tmp/e2er-demos/studies/workspaces/2026-10-13-how-are-confirmed-exoplanets-distributed/summary_statistics.json"
+  ],
+  "source_files_missing": [
+    "robustness_results.json"
+  ],
+  "skipped_reason": null,
+  "prose_total": 143,
+  "prose_matched": 143,
+  "prose_mismatched": 0,
+  "prose_unverifiable": 0,
+  "prose_excluded": 22,
+  "prose_mismatches": [],
+  "table_spec_unresolved": [],
+  "rendered_tables": [
+    "associations.tex",
+    "groups.tex",
+    "period_stats.tex",
+    "radius_stats.tex"
+  ],
+  "rendered_tables_not_in_draft": [],
+  "conclusive": true,
+  "tables_untraced": false,
+  "untraced_reason": ""
+}

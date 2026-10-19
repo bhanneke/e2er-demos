@@ -1,0 +1,167 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+
+\title{How Are Confirmed Exoplanets Distributed in Planet Radius and Orbital Period? A Descriptive Decomposition by Radius Provenance}
+\date{}
+
+\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/4b37c8f62f137839}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent The catalogue of confirmed exoplanets is routinely read as a map of where planets are, yet its radii come from two routes: transit depth, and a mass-radius relation applied to planets without a transit. We separate these routes using the label that the NASA Exoplanet Archive attaches to each radius and describe the joint distribution of radius and orbital period for each group. Planets with radii calculated from mass are larger and sit on much longer orbits than planets with transit-measured radii, and the two groups overlap little in the radius-period plane. Of the two humps in the pooled radius distribution, the one at 2 to 4 Earth radii consists mostly of transit-measured radii (1,901 of 2,090 planets), whereas more than half of the giant-planet hump at 8 to 15 Earth radii consists of radii calculated from mass (846 of 1,529). The study is purely descriptive: it documents patterns in the catalogue, not in the planet population, and makes no causal claim.
+\end{abstract}
+
+\section{Introduction}
+
+The NASA Exoplanet Archive lists several thousand confirmed planets, and its radius-period diagram has become the standard summary of what is known about planetary systems beyond the Solar System \cite{Christiansen2025_NEA,cloutier2024exoplanet}. A dense cloud of short-period planets with radii of a few Earth radii, a population of giant planets, and a sparse region at long periods are visible at a glance. Readers tend to interpret this picture as a statement about planets. However, the radii behind it are of two kinds. Most are measured from the depth of a transit, which requires an estimate of the stellar radius \cite{berger2018revised}; a smaller group, mostly planets found by radial velocity, has no transit, and the archive calculates their radius from a measured mass or minimum mass through an assumed mass-radius relation. Both kinds are plotted on one axis.
+
+This paper asks how confirmed exoplanets are distributed in planet radius and orbital period, and how that distribution changes when radii measured from transits are separated from radii calculated from planet mass. We answer with descriptive statistics, histograms, joint counts and rank correlations for each radius-provenance group, using the archive's own label for calculated radii as the grouping rule. We do not estimate effects, and we do not correct for detection biases; every pattern we report is a pattern in the confirmed-planet table.
+
+Our analysis yields three main findings. First, the sample of 6,045 planets with a radius and a period splits into a large group with transit-measured radii (about 80 percent), a group with radii calculated from mass (about 20 percent), and a very small residual group of non-transiting planets with directly measured radii. Second, the typical calculated radius is about five times the typical transit-measured radius, and the typical calculated period is about 45 times longer. Third, the radius-period association is weak among transit-measured planets and clearly positive among planets with calculated radii, so the pooled association mixes two provenances and describes neither.
+% src: estimation_results.json#sample.n_observations
+% src: estimation_results.json#groups.measured_transiting.share_of_sample
+% src: estimation_results.json#groups.calculated.share_of_sample
+% src: estimation_results.json#comparisons.calculated_minus_measured_transiting.lr_median_diff.ratio_10_pow
+% src: estimation_results.json#comparisons.calculated_minus_measured_transiting.lp_median_diff.ratio_10_pow
+
+Our study makes three contributions. First, we provide a documented decomposition of the catalogue by radius provenance, based on a label that the archive itself supplies, which makes the decomposition reproducible without hand coding of references. Second, we quantify where the two groups differ in radius and period, with bootstrap intervals for differences in quantiles. Third, we show that the region in which the groups do not overlap is informative about discovery method, not about planets: the calculated group consists almost entirely of radial-velocity discoveries. The remainder of this study is structured as follows. In the next section, we present the data, the sample construction and the provenance rule. Afterward, we report the distributions and the comparison of the groups. Then, we discuss limitations arising from detection and selection and from the mass-radius assumption, and conclude.
+
+\section{Data}
+
+\subsection{Archive and sample construction}
+
+We use the Planetary Systems Composite Parameters table of the NASA Exoplanet Archive \cite{NEA_PSCompPars,Christiansen2025_NEA}, which holds one row per confirmed planet and fills gaps in the parameters of each planet with values from different references. The unit of observation is a confirmed planet. The table contains 6,445 planets. We drop 50 planets without a radius and 353 planets without an orbital period; some planets lack both, so 6,045 planets remain with a radius and a period.
+% src: estimation_results.json#sample.n_raw
+% src: estimation_results.json#sample.n_missing_radius
+% src: estimation_results.json#sample.n_missing_period
+% src: estimation_results.json#sample.n_observations
+We use the planets with a value for each statistic and report the number of planets next to every statistic; we do not impute missing values \cite{little2019statistical}. The result describes the planets that have a radius and a period, which is not the same as all confirmed planets. We did not load the archive's controversial-planet flag (\texttt{pl\_controv\_flag}), so controversial planets are not excluded. We also report no robustness table based on the archive's table of all parameter sets (\texttt{ps}), and we did not code radius references by hand or validate the archive's label manually. We keep values that the archive flags as limits in the main sample (a robustness check removes them). Quantiles follow the linear-interpolation definition (Hyndman and Fan type 7) \cite{hyndman1996sample}, and rank correlations are Spearman's $\rho$ \cite{spearman1904proof} with percentile bootstrap intervals from 2,000 resamples.
+% src: estimation_results.json#bootstrap.resamples
+
+\subsection{Radius provenance rule}
+
+The archive labels radii that it calculated from mass: the reference of the radius carries the label CALCULATED\_VALUE, documented by the archive as the application of a mass-radius relation to the planet's mass or minimum mass. Our primary rule classifies a planet as \emph{calculated} if its radius reference carries this label, and as \emph{measured} otherwise. We cross-tabulate the rule against the archive's transit flag. Among the 6,445 planets, 1,537 have a calculated radius, all without a transit; 4,810 have a measured radius and a transit; 48 have a measured radius but no transit (for example, planets found by direct imaging or timing methods); and 50 have no radius.
+% src: estimation_results.json#distributions.radius_group_by_tran_flag_all6445.categories
+We label the 48 planets \emph{measured, not transiting} and never describe them as measured from a transit. The main comparison contrasts the calculated group with the measured, transiting group. Table~\ref{tab:groups} gives the group sizes in the analysis sample, where the groups contain 1,215, 4,810 and 20 planets.
+% src: estimation_results.json#groups
+\input{tables/groups.tex}
+
+The calculated group is dominated by radial-velocity discoveries: 1,133 of its 1,215 planets were found by this method, and only two were found by transit. Among the 1,215 calculated radii, 876 are based on a minimum mass (Msini), 326 on a mass, and 13 on a minimum mass corrected by the sine of the inclination.
+% src: estimation_results.json#distributions.method_calculated.categories
+% src: estimation_results.json#distributions.mass_provenance_calculated.categories
+The measured, transiting group consists of 4,778 transit discoveries and 32 planets found by other methods but observed in transit.
+% src: estimation_results.json#distributions.method_measured_transiting.categories
+
+\section{Results}
+
+\subsection{Distribution in radius and period}
+
+Figure~\ref{fig:all} shows the radius-period diagram of the full sample. The median planet has a radius of 2.75 Earth radii and an orbital period of 10.6 days, and the quartiles span 1.79 to 10.9 Earth radii and 4.27 to 37.9 days.
+% src: estimation_results.json#statistics.radius_all
+% src: estimation_results.json#statistics.period_all
+The radius distribution has two humps: 2,090 planets have radii between 2 and 4 Earth radii and 1,529 between 8 and 15, whereas only 421 fall between 4 and 8. The two humps differ in provenance: 1,901 of the 2,090 planets in the lower hump have transit-measured radii, but 846 of the 1,529 planets in the giant-planet hump have radii calculated from mass, more than half.
+% src: estimation_results.json#distributions.radius_bins_all.bins
+% src: estimation_results.json#distributions.radius_bins_calculated.bins
+% src: estimation_results.json#distributions.radius_bins_measured_transiting.bins
+Periods are concentrated at short values: 2,085 planets have periods between 3 and 10 days and 1,430 between 10 and 30 days, while 189 have periods above 3,000 days.
+% src: estimation_results.json#distributions.period_bins_all.bins
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.85\textwidth]{fig_radius_period_all.pdf}
+\caption{Radius against orbital period for the 6,045 confirmed planets with both values (logarithmic axes).}
+\label{fig:all}
+\end{figure}
+
+Separating the groups changes this picture considerably (Figure~\ref{fig:groups} and Tables~\ref{tab:radius_stats} and~\ref{tab:period_stats}). Transit-measured planets have a median radius of 2.46 Earth radii and a median period of 7.97 days, with 90 percent of them below 46.9 days. Planets with calculated radii have a median radius of 12.6 Earth radii and a median period of 358.6 days, and their quartiles for radius (4.43 to 13.4) and period (31.3 to 1,277 days) lie far above those of the transit-measured group.
+% src: estimation_results.json#statistics.radius_measured_transiting
+% src: estimation_results.json#statistics.period_measured_transiting
+% src: estimation_results.json#statistics.radius_calculated
+% src: estimation_results.json#statistics.period_calculated
+The calculated radii are bounded above at 14.3 Earth radii, whereas transit-measured radii reach 32.6.
+% src: estimation_results.json#statistics.radius_calculated.max
+% src: estimation_results.json#statistics.radius_measured_transiting.max
+In counts, 846 of the 1,215 calculated radii lie between 8 and 15 Earth radii and none above 15, while the transit-measured group has 1,901 planets between 2 and 4 Earth radii and 220 above 15.
+% src: estimation_results.json#distributions.radius_bins_calculated.bins
+% src: estimation_results.json#distributions.radius_bins_measured_transiting.bins
+For periods, 276 calculated planets fall between 300 and 1,000 days, 186 between 1,000 and 3,000 days and 176 above 3,000 days, against 26, 5 and 1 transit-measured planets in the same bins.
+% src: estimation_results.json#distributions.period_bins_calculated.bins
+% src: estimation_results.json#distributions.period_bins_measured_transiting.bins
+The 20 measured, non-transiting planets are too few for distributional statements; their median period is 15,958 days and their median radius 13.0 Earth radii, and we report them only for completeness.
+% src: estimation_results.json#statistics.period_measured_non_transiting.median
+% src: estimation_results.json#statistics.radius_measured_non_transiting.median
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.85\textwidth]{fig_radius_period_by_group.pdf}
+\caption{Radius against orbital period by radius provenance (logarithmic axes).}
+\label{fig:groups}
+\end{figure}
+\input{tables/radius_stats.tex}
+\input{tables/period_stats.tex}
+
+Figure~\ref{fig:marginals} compares the marginal distributions of the two main groups. The two radius distributions differ by a Kolmogorov-Smirnov distance of 0.53 and the two period distributions by 0.61, so the groups overlap little in either dimension.
+% src: estimation_results.json#comparisons.calculated_minus_measured_transiting.lr_ks_distance
+% src: estimation_results.json#comparisons.calculated_minus_measured_transiting.lp_ks_distance
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.85\textwidth]{fig_marginals_by_group.pdf}
+\caption{Marginal distributions of log radius and log period for the calculated and the measured, transiting group.}
+\label{fig:marginals}
+\end{figure}
+
+\subsection{Calculated versus transit-measured radii}
+
+We compare quantiles of the logarithm of radius and period between the calculated and the measured, transiting group, with bootstrap percentile intervals from 2,000 resamples. The median log radius is higher in the calculated group by 0.71 (95 percent interval 0.70 to 0.72), a factor of 5.1, and the median log period by 1.65 (1.56 to 1.72), a factor of 45. The differences are largest in the upper-middle part of the period distribution, where the 75th and 90th percentiles differ by factors of 68 and 102, and smallest at the upper end of the radius distribution, where the 90th percentile differs by a factor of 1.1 because giant planets occur in both groups.
+% src: estimation_results.json#comparisons.calculated_minus_measured_transiting.lr_median_diff
+% src: estimation_results.json#comparisons.calculated_minus_measured_transiting.lp_median_diff
+% src: estimation_results.json#comparisons.calculated_minus_measured_transiting.lp_p75_diff.ratio_10_pow
+% src: estimation_results.json#comparisons.calculated_minus_measured_transiting.lp_p90_diff.ratio_10_pow
+% src: estimation_results.json#comparisons.calculated_minus_measured_transiting.lr_p90_diff.ratio_10_pow
+
+Removing the planets whose radius or period the archive flags as a limit leaves 1,213 calculated and 4,807 transit-measured planets and leaves the median differences unchanged at 0.71 in radius and 1.65 in period. Restricting both groups to periods of at most 1,000 days, which gives 855 calculated and 4,804 transit-measured planets, narrows the median period difference to 1.07 (a factor of 11.7) while the median radius difference stays at 0.70 (a factor of 5.0). The period gap therefore partly reflects the long-period tail of the calculated group, but a gap remains within the range that transit surveys cover.
+% src: estimation_results.json#comparisons.robust_excl_limit_flagged
+% src: estimation_results.json#comparisons.robust_period_le_1000d
+
+Table~\ref{tab:associations} reports rank correlations between log radius and log period (and, for the calculated group, log mass). In the pooled sample, the correlation is 0.30 (interval 0.28 to 0.33). Among transit-measured planets it is only 0.08 (0.05 to 0.11), whereas among planets with calculated radii it is 0.40 (0.35 to 0.46). The pooled association thus mixes two groups with different locations in the diagram, and it exceeds the association within the transit-measured group, which holds 80 percent of the sample. The 20 measured, non-transiting planets show a correlation of 0.63 with a wide interval (0.16 to 0.87).
+% src: estimation_results.json#associations.radius_period_all
+% src: estimation_results.json#associations.radius_period_measured_transiting
+% src: estimation_results.json#associations.radius_period_calculated
+% src: estimation_results.json#associations.radius_period_measured_non_transiting
+\input{tables/associations.tex}
+
+\subsection{Mass-radius diagnostic for the calculated group}
+
+A calculated radius is a function of mass and an assumed relation, so its distribution mirrors the distribution of masses and the shape of that relation. Figure~\ref{fig:massradius} plots radius against mass for the calculated group. The rank correlation between log mass and log radius is 0.47 (0.40 to 0.53) for the 1,215 calculated planets, against 0.93 for the 4,786 transit-measured planets with a mass. The weaker association in the calculated group is consistent with a relation that is not increasing over the full mass range; the calculated radii cluster below the upper bound of 14.3 Earth radii, as Table~\ref{tab:radius_stats} shows. This diagnostic describes the calculated radii; it does not validate them against measured radii.
+% src: estimation_results.json#associations.mass_radius_calculated
+% src: estimation_results.json#associations.mass_radius_measured_transiting
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.85\textwidth]{fig_mass_radius_calculated.pdf}
+\caption{Calculated radius against planet mass for the calculated group (logarithmic axes).}
+\label{fig:massradius}
+\end{figure}
+
+\section{Limitations}
+
+Our description is subject to detection and selection conditions that we do not model. The transit method favours large planets on short orbits, and radial-velocity surveys favour massive planets and need long baselines to detect long periods \cite{foremanmackey2016the}. The difference between the groups therefore combines the properties of planets with the properties of the two discovery methods, and the 1,133 radial-velocity planets in the calculated group show that provenance and method are nearly the same split. Imaging surveys probe wide orbits \cite{nielsen2019the}, which affects the small non-transiting group. The sample is further restricted to planets with a radius and a period, and the archive's composite table mixes references, so planet parameters come from heterogeneous analyses.
+
+Calculated radii inherit the assumptions of the mass-radius relation and, for 876 planets, rest on a minimum mass, so the true mass and radius may be larger. We therefore interpret the calculated group as a description of what the archive lists, not as a measurement of radii. We did not exclude controversial planets, and we did not validate the archive's label against the underlying references. Extending the comparison to planets with both a measured transit radius and a mass would test how far calculated radii depart from measured ones.
+% src: estimation_results.json#distributions.mass_provenance_calculated.categories
+
+\section{Conclusion}
+
+Confirmed exoplanets are concentrated at short periods and at radii of a few Earth radii and of about ten Earth radii, but the two radius humps differ in provenance. The hump at 2 to 4 Earth radii belongs mostly to planets with transit-measured radii (1,901 of 2,090), whereas the giant-planet hump at 8 to 15 Earth radii is largely made of radii calculated from mass (846 of 1,529). The one fifth of planets with radii calculated from mass have a median radius about five times and a median period about 45 times those of the transit-measured planets, and their radii are bounded by the mass-radius relation. Readers of the radius-period diagram should therefore treat the two provenances separately, and report the group when a radius is quoted from the archive.
+% src: estimation_results.json#comparisons.calculated_minus_measured_transiting.lr_median_diff.ratio_10_pow
+% src: estimation_results.json#comparisons.calculated_minus_measured_transiting.lp_median_diff.ratio_10_pow
+
+Two questions follow from the description. How many of the calculated radii would change a planet's position in the diagram if replaced by transit-measured radii for planets that have both? And does the radius-period association within each group persist when planets are matched on discovery method?
+
+\bibliographystyle{plain}
+\bibliography{refs}
+
+\end{document}

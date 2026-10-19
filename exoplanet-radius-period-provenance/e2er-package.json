@@ -1,0 +1,426 @@
+{
+  "contents": [
+    {
+      "bytes": 4637,
+      "part": "study",
+      "path": "README.md",
+      "sha256": "21a9b406cf83f67267716f4f706e353a7fdbcf45dce53646db7919daccb1f9d8"
+    },
+    {
+      "bytes": 283,
+      "part": "study",
+      "path": "code/requirements.txt",
+      "sha256": "6dbafabfc7fc1099128ad56e7d8c2ed67ccabf43943ac1338f788cc7255cba1b"
+    },
+    {
+      "bytes": 9440,
+      "part": "study",
+      "path": "code/run_estimation.py",
+      "sha256": "87a035fec9d92dcd006dc8e04c8e9a1b966222bc701ef391e3cbed7a3d326060"
+    },
+    {
+      "bytes": 1003,
+      "part": "study",
+      "path": "code/scratch/chk_tmp.py",
+      "sha256": "68bae432de185accac1b6d4347014e09fabaad87c2b1f51f0939f7467c66899c"
+    },
+    {
+      "bytes": 16162,
+      "part": "study",
+      "path": "code/scratch/paper_draft.log",
+      "sha256": "fb6b137941c9451f6960ac5d300b435075de343e50f4736ffcaa9d13fed21dad"
+    },
+    {
+      "bytes": 6897664,
+      "part": "study",
+      "path": "data/data.db",
+      "sha256": "06f493141df7a85f6413ad8a9939020812d6e46519089ba0648ad1feccc38373"
+    },
+    {
+      "bytes": 15786,
+      "part": "study",
+      "path": "data/data_dictionary.json",
+      "sha256": "2dde9e4ef51abd266d1a7443544beb297c9d1b909382e10343fb112076a28777"
+    },
+    {
+      "bytes": 4668,
+      "part": "study",
+      "path": "data/data_sources.json",
+      "sha256": "cb87d08e49687e60a71fc917894f3b36f58b08a11df953f182adae36a9feaac8"
+    },
+    {
+      "bytes": 7790,
+      "part": "study",
+      "path": "data/data_summary.md",
+      "sha256": "bcafeb0cfce3bcf263b9603c028187f36dbd627e845a8d6e2348ae26038c96d5"
+    },
+    {
+      "bytes": 3968,
+      "part": "study",
+      "path": "design/econometric_spec.md",
+      "sha256": "28afb2d2b5b4b195a8a03d87edc899913112df0fd01c9077150caf5dc63fbed9"
+    },
+    {
+      "bytes": 4684,
+      "part": "study",
+      "path": "design/literature_review.md",
+      "sha256": "6dea2f51e2d700937064c1caeacb7502bbb5332798845784dcd0c3a4db18fcb5"
+    },
+    {
+      "bytes": 16346,
+      "part": "study",
+      "path": "design/paper_plan.md",
+      "sha256": "4078504f8b0341519d6018ce0a7011cc424b56849c8f89b06a074aa854cb87c4"
+    },
+    {
+      "bytes": 2870,
+      "part": "study",
+      "path": "design/researcher_instructions.md",
+      "sha256": "92397aad1819d493831a2fba266def1acc3b79ec58b17b0abc699fbb71750eeb"
+    },
+    {
+      "bytes": 16469,
+      "part": "package",
+      "path": "e2er-package/requirements.lock.txt",
+      "sha256": "745b6c5da9133f919d3ada6a65afcfd2c6ad9ea3e040b501d89ba05af60a6302"
+    },
+    {
+      "bytes": 85205,
+      "part": "study",
+      "path": "e2er.json",
+      "sha256": "c588bfe730548d8b0d19b861d5cb449c4fe656eca7fde4c00c6869575708123c"
+    },
+    {
+      "bytes": 19473,
+      "part": "study",
+      "path": "misc/fig_marginals_by_group.pdf",
+      "sha256": "73a8d2ea9f037becbd08260a9fa3495232094535d5d42203371fe6add08ed1f9"
+    },
+    {
+      "bytes": 34092,
+      "part": "study",
+      "path": "misc/fig_mass_radius_calculated.pdf",
+      "sha256": "253214a29c191db7230d40b995ad5c84a3c794ffe3ac801b2458953fac317fca"
+    },
+    {
+      "bytes": 105827,
+      "part": "study",
+      "path": "misc/fig_radius_period_all.pdf",
+      "sha256": "3a6b06ccf9df582a1c837bc7ff9671e61eedd7bcc87e72b6d2551f193fdbec8e"
+    },
+    {
+      "bytes": 109567,
+      "part": "study",
+      "path": "misc/fig_radius_period_by_group.pdf",
+      "sha256": "b5420f461c8962ce6eadb733a99693684c307ad300082f217843d5245a6221de"
+    },
+    {
+      "bytes": 261,
+      "part": "study",
+      "path": "misc/figure_render_report.json",
+      "sha256": "29c6c0f781ac776ffb0716f37045640e5b52f611a62e8da511691b3dd556b3e1"
+    },
+    {
+      "bytes": 198,
+      "part": "study",
+      "path": "misc/paper_draft.blg",
+      "sha256": "6c605fd46edaa7da80da005b82a41ee2c1bbb7aa486ec20c6763f5901fa3ece3"
+    },
+    {
+      "bytes": 0,
+      "part": "study",
+      "path": "misc/paper_draft.tex.applied.diff",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3589,
+      "part": "study",
+      "path": "misc/paper_draft.tex.edits.json",
+      "sha256": "9d5b47bbcf574ccd4919f7c1f0e002d9e7dda3b1eb544b4ebd1f6e0825f9b70e"
+    },
+    {
+      "bytes": 30464,
+      "part": "study",
+      "path": "misc/refs.bib",
+      "sha256": "b4b61471f3a726a23cfbf15830e791fe4594e290430fd3aa1d429447e7215437"
+    },
+    {
+      "bytes": 1556,
+      "part": "study",
+      "path": "paper/abstract.tex",
+      "sha256": "791b69545b82e12daabed78f7c871a340bd20762ba89ad0d9a88265821d2e6ab"
+    },
+    {
+      "bytes": 55982,
+      "part": "study",
+      "path": "paper/paper.pdf",
+      "sha256": "de42bb51ce30df8059e93b09dad82b720e667e7ea304d6fced7c6933af32bb47"
+    },
+    {
+      "bytes": 20510,
+      "part": "study",
+      "path": "paper/paper.tex",
+      "sha256": "7152a7bbbb3cfd43d2040a3264beb7cc9fdb81f18160eb66f55637d621252a4f"
+    },
+    {
+      "bytes": 30483,
+      "part": "study",
+      "path": "paper/refs.bib",
+      "sha256": "3cfd43990ad30434043e6564d7b3a899335bad727db63914e863ce4414d9054b"
+    },
+    {
+      "bytes": 869,
+      "part": "study",
+      "path": "paper/tables/associations.tex",
+      "sha256": "902ffa24a6f75a15570e073759f99e71246c5093f2bb4817cdc5f47f4c17cdad"
+    },
+    {
+      "bytes": 711,
+      "part": "study",
+      "path": "paper/tables/groups.tex",
+      "sha256": "f9a3bc8301fc13129e6817ea11dcaf04ff79a8b2d44cb498c69ca30e4f57f355"
+    },
+    {
+      "bytes": 718,
+      "part": "study",
+      "path": "paper/tables/period_stats.tex",
+      "sha256": "9dd46ff88dc47f61be09be6e7bdef76b612abc99c9219b737959412e75c85163"
+    },
+    {
+      "bytes": 694,
+      "part": "study",
+      "path": "paper/tables/radius_stats.tex",
+      "sha256": "8c43311cad34b89ac8167616e947e29f21b9dcfa058578f6955008349dcff416"
+    },
+    {
+      "bytes": 40303,
+      "part": "study",
+      "path": "provenance.json",
+      "sha256": "96072a373cf1e176e440b4d638ed5315ca6316835f1c28d4c496f9bfe945c28a"
+    },
+    {
+      "bytes": 3462,
+      "part": "study",
+      "path": "replication/README.md",
+      "sha256": "16a913586d78ef96495281ffa45610f2a9db5911ee6b800245d1b2c229632f5e"
+    },
+    {
+      "bytes": 10094,
+      "part": "study",
+      "path": "replication/analysis_prep.py",
+      "sha256": "72acb2aa26356ea2b4eda1aa8d870488f96605ee5df3266ddd2d48da8144a440"
+    },
+    {
+      "bytes": 4497,
+      "part": "study",
+      "path": "replication/audit_log.csv",
+      "sha256": "1a8bd028a9961f25a2ebe3b85fcf7990c670913a371f0da02f8a35991d372b30"
+    },
+    {
+      "bytes": 1604,
+      "part": "study",
+      "path": "replication/chk_fig.py",
+      "sha256": "4b9b9ba5764a7a318bc53682f641de8ce5060a81497a2f0f892b43165b272161"
+    },
+    {
+      "bytes": 137,
+      "part": "study",
+      "path": "replication/data_queries.sql",
+      "sha256": "2df575d5c7759ca890b2ef0e4273a8dbfe927521ead035ff59d183afeed9470c"
+    },
+    {
+      "bytes": 13001,
+      "part": "study",
+      "path": "replication/estimation.py",
+      "sha256": "6e0cb311f197e4f33a24e4329b9b0ebd7df2b260313697cf24d3e701105d5c6a"
+    },
+    {
+      "bytes": 16520,
+      "part": "study",
+      "path": "report.html",
+      "sha256": "3393f75f4f902e03b4d7bf029dd3dd99b434b6cbfd992a629e48076a7e886092"
+    },
+    {
+      "bytes": 2133,
+      "part": "study",
+      "path": "reproduce.json",
+      "sha256": "30fe64cf69c1dcc607dee77fae77f5ec5ec1404f778d5a03a743d10d3add1f44"
+    },
+    {
+      "bytes": 5042,
+      "part": "study",
+      "path": "results/data_quality.json",
+      "sha256": "7c66cb046528d5e0ae0194c42041490c5fd3b23ad45c39bcce91e5e09088f4db"
+    },
+    {
+      "bytes": 3587,
+      "part": "study",
+      "path": "results/data_quality.md",
+      "sha256": "3ef65e9f7c5cf9fa0f9de5c750ef59b4324aac3dbbcc440276404b503db7ef1b"
+    },
+    {
+      "bytes": 107776,
+      "part": "study",
+      "path": "results/estimation_results.json",
+      "sha256": "9dd8881c7709d48b6a234c314711bdea508514f464bfca61a6344140294d3f7d"
+    },
+    {
+      "bytes": 2085,
+      "part": "study",
+      "path": "results/figure_check.json",
+      "sha256": "4b1dfc0dc6001bde3ea369b80585ca5aef513097c2f2e9833958cfee0d776230"
+    },
+    {
+      "bytes": 375348,
+      "part": "study",
+      "path": "results/figure_spec.json",
+      "sha256": "a6c256751dd47e79b5207d87dd0f46094f50139c36ec7e458219c502bb9ba052"
+    },
+    {
+      "bytes": 19473,
+      "part": "study",
+      "path": "results/figures/fig_marginals_by_group.pdf",
+      "sha256": "73a8d2ea9f037becbd08260a9fa3495232094535d5d42203371fe6add08ed1f9"
+    },
+    {
+      "bytes": 34092,
+      "part": "study",
+      "path": "results/figures/fig_mass_radius_calculated.pdf",
+      "sha256": "253214a29c191db7230d40b995ad5c84a3c794ffe3ac801b2458953fac317fca"
+    },
+    {
+      "bytes": 105827,
+      "part": "study",
+      "path": "results/figures/fig_radius_period_all.pdf",
+      "sha256": "3a6b06ccf9df582a1c837bc7ff9671e61eedd7bcc87e72b6d2551f193fdbec8e"
+    },
+    {
+      "bytes": 109567,
+      "part": "study",
+      "path": "results/figures/fig_radius_period_by_group.pdf",
+      "sha256": "b5420f461c8962ce6eadb733a99693684c307ad300082f217843d5245a6221de"
+    },
+    {
+      "bytes": 19114,
+      "part": "study",
+      "path": "results/number_verification.json",
+      "sha256": "a75dac4a8b96237a1913cec5805e7af0cbbccd3577d586037b435cd089f3c35b"
+    },
+    {
+      "bytes": 19097,
+      "part": "study",
+      "path": "results/summary_statistics.json",
+      "sha256": "7096ec02f24f3e89a7e6824825e27cea86ce01c3f76d93810e948192d6576816"
+    },
+    {
+      "bytes": 213,
+      "part": "study",
+      "path": "results/table_render_report.json",
+      "sha256": "5300c07150bbf22c75232b92b2eb02ed83758496b0b88ad2b0343317755cfbef"
+    },
+    {
+      "bytes": 4592,
+      "part": "study",
+      "path": "results/table_spec.json",
+      "sha256": "8ff1d15be0190f9d5cb1bd6d92736868784f3abb5d44f09ead97347d63af5396"
+    },
+    {
+      "bytes": 5770,
+      "part": "study",
+      "path": "reviews/citation_integrity.json",
+      "sha256": "096165f60096d86176dfe41c19ec0c1c368012ac7c1e4ede5677da9bfb68e81f"
+    },
+    {
+      "bytes": 1333,
+      "part": "study",
+      "path": "reviews/review_aggregation.json",
+      "sha256": "de96e8d5b51368bd40abcbeeeead23ecf276bf66d7e0ea12a49cfad5997da880"
+    },
+    {
+      "bytes": 17045,
+      "part": "study",
+      "path": "reviews/review_data.md",
+      "sha256": "17d9eb8eddcc31d80eb0c9613907269678a1eb0ccd38640eec9e99b423408d2d"
+    },
+    {
+      "bytes": 9427,
+      "part": "study",
+      "path": "reviews/review_literature.md",
+      "sha256": "7811af32c4045878ada063e4f3ba3adce8c8b01857e0d1ae19c5b6ba4cc105e2"
+    },
+    {
+      "bytes": 12477,
+      "part": "study",
+      "path": "reviews/review_methods.md",
+      "sha256": "28165286d5b8658e98bec808e690300da2e2e8e57e06d087fa2d238a3f4c7ec4"
+    },
+    {
+      "bytes": 13147,
+      "part": "study",
+      "path": "reviews/review_plausibility.md",
+      "sha256": "0c16a305d6f85a74908dd3437ea7124c3c82101d3750fd617d473fc50fca5822"
+    },
+    {
+      "bytes": 18511,
+      "part": "study",
+      "path": "reviews/review_writing.md",
+      "sha256": "201e58e5a4697eab8cc11f8b9db30ec620650d5a7d5a31355e0994972a045d75"
+    },
+    {
+      "bytes": 45,
+      "part": "study",
+      "path": "reviews/self_attack_report.json",
+      "sha256": "b685817ad96942941002ac01c77b9ba1a12561c23e637354adc5ccc3d72be895"
+    }
+  ],
+  "created": "20261015",
+  "e2er_version": "0.17.1",
+  "environment": {
+    "hashes": true,
+    "lock": "e2er-package/requirements.lock.txt",
+    "note": "e2er-package/requirements.lock.txt pins every package with its hashes; `e2er reproduce` installs from it.",
+    "python": "3.12",
+    "resolved_as_of": "2026-10-16"
+  },
+  "fingerprint": "sha256:64902d877f4fb1904d77fc77db5e28acfd162f087e4cb351674298ae7076c7d1",
+  "format": "e2er-package/1",
+  "left_out": [],
+  "notes": [],
+  "rebuild": [],
+  "recipe": {
+    "compare": [
+      "results/estimation_results.json"
+    ],
+    "inputs": [
+      {
+        "path": "data.db",
+        "reload": null,
+        "source": "the study's database, tables: planets (NASA Exoplanet Archive (NASA Exoplanet Science Institute, IPAC/Caltech): Planetary Systems tables, confirmed exoplanets, NASA Exoplanet Archive Planetary Systems Composite Table (pscomppars), loaded 2026-10-13); planets_classified (made by the study during the run)"
+      }
+    ],
+    "present": true,
+    "python": "3.12",
+    "requirements": "code/requirements.txt",
+    "steps": [
+      {
+        "about": "the estimation script",
+        "run": [
+          "python",
+          "run_estimation.py"
+        ]
+      }
+    ]
+  },
+  "study": {
+    "authors": [],
+    "e2er_version": "0.17.0",
+    "exported_at": "20261015",
+    "folder": "how-are-confirmed-exoplanets-distributed-in-planet-radius-an-20261015-01",
+    "id": "29deb64e-4eb2-4135-979e-35327f8fd7ec",
+    "purpose": "demonstration",
+    "question": "How are confirmed exoplanets distributed in planet radius and orbital period, and how does that distribution change when radii measured from transits are separated from radii calculated from planet mass?",
+    "template": "descriptive-study",
+    "title": "How Are Confirmed Exoplanets Distributed in Planet Radius and Orbital Period? A Descriptive Decomposition by Radius Provenance"
+  },
+  "wheels": null
+}

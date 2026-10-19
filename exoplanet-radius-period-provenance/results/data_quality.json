@@ -1,0 +1,166 @@
+{
+  "max_missing_share": 0.05,
+  "tables": {
+    "planets": {
+      "rows": 6445,
+      "columns": {
+        "pl_name": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "hostname": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "discoverymethod": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "disc_year": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "year"
+        },
+        "pl_orbper": {
+          "type": "REAL",
+          "missing": 353,
+          "missing_share": 0.0548,
+          "unit": "days",
+          "missing_note": "a few planets (mostly imaged or microlensing) have no period; period statistics use rows with a value, share reported"
+        },
+        "pl_orbperlim": {
+          "type": "INTEGER",
+          "missing": 353,
+          "missing_share": 0.0548,
+          "unit": "none",
+          "missing_note": "empty where the archive gives no flag; treated as 0 only after the count of empty cells is reported"
+        },
+        "pl_orbper_reflink": {
+          "type": "TEXT",
+          "missing": 353,
+          "missing_share": 0.0548,
+          "unit": "none",
+          "missing_note": "empty exactly where pl_orbper is empty (353 of 6,445 planets: 280 microlensing, 71 imaging, 1 pulsar timing, 1 disk kinematics), because no period has been published for them. The column is a provenance label only; it is not analysed. Period statistics use the planets with a period, with n and the share missing reported; nothing is filled in."
+        },
+        "pl_rade": {
+          "type": "REAL",
+          "missing": 50,
+          "missing_share": 0.0078,
+          "unit": "Earth radii",
+          "missing_note": "no radius for most radial-velocity-only, microlensing and astrometry planets; radius statistics use the planets with a radius, share reported"
+        },
+        "pl_radelim": {
+          "type": "INTEGER",
+          "missing": 50,
+          "missing_share": 0.0078,
+          "unit": "none",
+          "missing_note": "empty where the archive gives no flag; rows with a limit flag are reported and handled as stated in the plan"
+        },
+        "pl_rade_reflink": {
+          "type": "TEXT",
+          "missing": 50,
+          "missing_share": 0.0078,
+          "unit": "none",
+          "missing_note": "empty exactly where pl_rade is empty"
+        },
+        "pl_radj": {
+          "type": "REAL",
+          "missing": 50,
+          "missing_share": 0.0078,
+          "unit": "Jupiter radii",
+          "missing_note": "as pl_rade"
+        },
+        "pl_bmasse": {
+          "type": "REAL",
+          "missing": 31,
+          "missing_share": 0.0048,
+          "unit": "Earth masses",
+          "missing_note": "no mass for most transit-only planets; mass statistics use the planets with a mass, share reported"
+        },
+        "pl_bmassj": {
+          "type": "REAL",
+          "missing": 31,
+          "missing_share": 0.0048,
+          "unit": "Jupiter masses",
+          "missing_note": "as pl_bmasse"
+        },
+        "pl_bmassprov": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none",
+          "missing_note": "empty where pl_bmasse is empty"
+        },
+        "pl_bmasse_reflink": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none",
+          "missing_note": "empty where pl_bmasse is empty"
+        },
+        "tran_flag": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "rv_flag": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "sy_snum": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "sy_pnum": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "st_teff": {
+          "type": "REAL",
+          "missing": 307,
+          "missing_share": 0.0476,
+          "unit": "K",
+          "missing_note": "a few hosts (e.g. brown dwarfs, pulsars) lack a temperature; used only for host-type splits with rows that have a value"
+        },
+        "sy_dist": {
+          "type": "REAL",
+          "missing": 28,
+          "missing_share": 0.0043,
+          "unit": "pc",
+          "missing_note": "uses rows with a value"
+        }
+      },
+      "key": [
+        "pl_name"
+      ],
+      "duplicate_rows": 0,
+      "coverage": {
+        "column": "disc_year",
+        "declared": [
+          1992,
+          2026
+        ],
+        "found": [
+          1992,
+          2026
+        ]
+      }
+    }
+  },
+  "passed": true,
+  "problems": []
+}

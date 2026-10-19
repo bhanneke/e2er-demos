@@ -1,0 +1,5157 @@
+{
+ "result_kind": "descriptive",
+ "sample": {
+  "n_observations": 6045,
+  "unit": "confirmed planet",
+  "source": "data.db table planets_classified (NASA Exoplanet Archive pscomppars)",
+  "sample_flow": [
+   {
+    "step": "raw rows",
+    "n": 6445
+   },
+   {
+    "step": "missing radius dropped",
+    "dropped": 50
+   },
+   {
+    "step": "missing period dropped (some also lack radius)",
+    "dropped_period_missing": 353
+   },
+   {
+    "step": "radius and period present",
+    "n": 6045
+   }
+  ],
+  "n_raw": 6445,
+  "n_missing_radius": 50,
+  "n_missing_period": 353,
+  "note": "pl_controv_flag not loaded; controversial planets not excluded. Limit-flagged values kept in main sample."
+ },
+ "statistics": {
+  "radius_all": {
+   "n": 6045,
+   "mean": 5.53161603516129,
+   "sd": 5.122640179814985,
+   "min": 0.3098,
+   "p5": 1.06,
+   "p10": 1.26,
+   "p25": 1.79426276,
+   "median": 2.75,
+   "p75": 10.861521,
+   "p90": 13.56288066,
+   "p95": 14.3,
+   "max": 32.6,
+   "unit": "Earth radii"
+  },
+  "period_all": {
+   "n": 6045,
+   "mean": 70813.46686974952,
+   "sd": 5172864.980263863,
+   "min": 0.1120067,
+   "p5": 1.5699115616000001,
+   "p10": 2.45482362,
+   "p25": 4.272250175,
+   "median": 10.613839,
+   "p75": 37.866281,
+   "p90": 422.09200000000067,
+   "p95": 1477.2800000000038,
+   "max": 402000000.0,
+   "unit": "days"
+  },
+  "log10_radius_all": {
+   "n": 6045,
+   "mean": 0.55936541914198,
+   "sd": 0.39781762239525487,
+   "min": -0.5089185865768128,
+   "p5": 0.02530586526477026,
+   "p10": 0.10037054511756291,
+   "p25": 0.25388604342484095,
+   "median": 0.43933269383026263,
+   "p75": 1.0358906462154167,
+   "p90": 1.132351940406645,
+   "p95": 1.1553360374650619,
+   "max": 1.513217600067939,
+   "unit": "log10(Earth radii)"
+  },
+  "log10_period_all": {
+   "n": 6045,
+   "mean": 1.2435372032795342,
+   "sd": 0.9084923124636377,
+   "min": -0.9507559979905431,
+   "p5": 0.1958749364253496,
+   "p10": 0.3900202892134111,
+   "p25": 0.6306566762397857,
+   "median": 1.0258724955845013,
+   "p75": 1.5782526534046826,
+   "p90": 2.625406151462815,
+   "p95": 3.169455346627176,
+   "max": 8.60422605308447,
+   "unit": "log10(days)"
+  },
+  "geomean_radius_all": {
+   "n": 6045,
+   "mean": 3.62547921080154,
+   "unit": "Earth radii (geometric mean)"
+  },
+  "geomean_period_all": {
+   "n": 6045,
+   "mean": 17.52012511684122,
+   "unit": "days (geometric mean)"
+  },
+  "share_all": {
+   "n": 6045,
+   "count": 6045,
+   "share": 1.0
+  },
+  "radius_calculated": {
+   "n": 1215,
+   "mean": 9.957874897119341,
+   "sd": 4.681848234450999,
+   "min": 0.338,
+   "p5": 1.651,
+   "p10": 2.28,
+   "p25": 4.425,
+   "median": 12.6,
+   "p75": 13.4,
+   "p90": 13.9,
+   "p95": 14.1,
+   "max": 14.3,
+   "unit": "Earth radii"
+  },
+  "period_calculated": {
+   "n": 1215,
+   "mean": 9546.612577127815,
+   "sd": 215610.41199166302,
+   "min": 0.322963997,
+   "p5": 4.08625,
+   "p10": 6.704940000000001,
+   "p25": 31.330613999999997,
+   "median": 358.62,
+   "p75": 1277.23,
+   "p90": 4795.349188000001,
+   "p95": 10145.892837,
+   "max": 7300000.0,
+   "unit": "days"
+  },
+  "log10_radius_calculated": {
+   "n": 1215,
+   "mean": 0.9060436364184743,
+   "sd": 0.3359854254328813,
+   "min": -0.47108329972234525,
+   "p5": 0.2177319429492259,
+   "p10": 0.35793484700045375,
+   "p25": 0.6459129977860807,
+   "median": 1.100370545117563,
+   "p75": 1.1271047983648077,
+   "p90": 1.1430148002540952,
+   "p95": 1.14921911265538,
+   "max": 1.1553360374650619,
+   "unit": "log10(Earth radii)"
+  },
+  "log10_period_calculated": {
+   "n": 1215,
+   "mean": 2.3675180782088407,
+   "sd": 1.0668445751481574,
+   "min": -0.4908458887392378,
+   "p5": 0.6113249165168092,
+   "p10": 0.8263911205009075,
+   "p25": 1.4959618088990791,
+   "median": 2.5546345062173255,
+   "p75": 3.1062690319174946,
+   "p90": 3.6808200482973383,
+   "p95": 4.0062901000638185,
+   "max": 6.863322860120456,
+   "unit": "log10(days)"
+  },
+  "geomean_radius_calculated": {
+   "n": 1215,
+   "mean": 8.054593669252263,
+   "unit": "Earth radii (geometric mean)"
+  },
+  "geomean_period_calculated": {
+   "n": 1215,
+   "mean": 233.08701394952405,
+   "unit": "days (geometric mean)"
+  },
+  "share_calculated": {
+   "n": 6045,
+   "count": 1215,
+   "share": 0.20099255583126552
+  },
+  "radius_measured_transiting": {
+   "n": 4810,
+   "mean": 4.389198250962578,
+   "sd": 4.56898416599291,
+   "min": 0.3098,
+   "p5": 1.0159,
+   "p10": 1.21,
+   "p25": 1.64,
+   "median": 2.46,
+   "p75": 4.0997581825,
+   "p90": 12.451400000000005,
+   "p95": 14.795868534,
+   "max": 32.6,
+   "unit": "Earth radii"
+  },
+  "period_measured_transiting": {
+   "n": 4810,
+   "mean": 23.86938448743065,
+   "sd": 88.90599590049636,
+   "min": 0.1120067,
+   "p5": 1.387651874,
+   "p10": 2.1778423,
+   "p25": 3.792793,
+   "median": 7.9701121464,
+   "p75": 18.799730699999998,
+   "p90": 46.90830800000003,
+   "p95": 86.66465545000001,
+   "max": 3650.0,
+   "unit": "days"
+  },
+  "log10_radius_measured_transiting": {
+   "n": 4810,
+   "mean": 0.47039813796415225,
+   "sd": 0.3615709825269192,
+   "min": -0.5089185865768128,
+   "p5": 0.006850752052312489,
+   "p10": 0.08278537031645007,
+   "p25": 0.21484384804769785,
+   "median": 0.39093510710337914,
+   "p75": 0.6127582390621841,
+   "p90": 1.0952181603214286,
+   "p95": 1.1701404638156754,
+   "max": 1.513217600067939,
+   "unit": "log10(Earth radii)"
+  },
+  "log10_period_measured_transiting": {
+   "n": 4810,
+   "mean": 0.949454068391365,
+   "sd": 0.5440060654805502,
+   "min": -0.9507559979905431,
+   "p5": 0.14228038906393572,
+   "p10": 0.33802641855725546,
+   "p25": 0.5789591394512041,
+   "median": 0.9014644321469414,
+   "p75": 1.27415162521179,
+   "p90": 1.671249736242486,
+   "p95": 1.937842007914183,
+   "max": 3.5622928644564746,
+   "unit": "log10(days)"
+  },
+  "geomean_radius_measured_transiting": {
+   "n": 4810,
+   "mean": 2.953915978030232,
+   "unit": "Earth radii (geometric mean)"
+  },
+  "geomean_period_measured_transiting": {
+   "n": 4810,
+   "mean": 8.901312914669548,
+   "unit": "days (geometric mean)"
+  },
+  "share_measured_transiting": {
+   "n": 6045,
+   "count": 4810,
+   "share": 0.7956989247311828
+  },
+  "radius_measured_non_transiting": {
+   "n": 20,
+   "mean": 11.387867271000001,
+   "sd": 6.626856146115602,
+   "min": 0.759,
+   "p5": 0.8616,
+   "p10": 1.2657,
+   "p25": 6.9575000000000005,
+   "median": 13.0,
+   "p75": 14.515630004999998,
+   "p90": 18.730235410000002,
+   "p95": 20.9047490035,
+   "max": 21.96960217,
+   "unit": "Earth radii"
+  },
+  "period_measured_non_transiting": {
+   "n": 20,
+   "mean": 20817673.06035205,
+   "sd": 89746667.93938541,
+   "min": 0.240104,
+   "p5": 0.33774785,
+   "p10": 2.5705337000000004,
+   "p25": 49.81475,
+   "median": 15957.8,
+   "p75": 81000.0,
+   "p90": 6024000.000000003,
+   "p95": 27738000.00000028,
+   "max": 402000000.0,
+   "unit": "days"
+  },
+  "log10_radius_measured_non_transiting": {
+   "n": 20,
+   "mean": 0.8952948428625183,
+   "sd": 0.4823316050239039,
+   "min": -0.11975822410451964,
+   "p5": -0.0648697686028262,
+   "p10": 0.0993460758378089,
+   "p25": 0.7981984016688508,
+   "median": 1.1139433523068367,
+   "p75": 1.1613760390940544,
+   "p90": 1.2722536385965721,
+   "p95": 1.3202162219157372,
+   "max": 1.3418221926993883,
+   "unit": "log10(Earth radii)"
+  },
+  "log10_period_measured_non_transiting": {
+   "n": 20,
+   "mean": 3.6886929919288596,
+   "sd": 2.4391199129676395,
+   "min": -0.6196006047765532,
+   "p5": -0.47258656137008004,
+   "p10": 0.35846892697030325,
+   "p25": 1.6970960382747828,
+   "median": 4.181855956263281,
+   "p75": 4.896183283489482,
+   "p90": 6.777610799081488,
+   "p95": 6.990204548965253,
+   "max": 8.60422605308447,
+   "unit": "log10(days)"
+  },
+  "geomean_radius_measured_non_transiting": {
+   "n": 20,
+   "mean": 7.85768912695872,
+   "unit": "Earth radii (geometric mean)"
+  },
+  "geomean_period_measured_non_transiting": {
+   "n": 20,
+   "mean": 4883.070470916312,
+   "unit": "days (geometric mean)"
+  },
+  "share_measured_non_transiting": {
+   "n": 6045,
+   "count": 20,
+   "share": 0.0033085194375516956
+  }
+ },
+ "distributions": {
+  "period_bins_all": {
+   "variable": "pl_orbper (days)",
+   "n": 6045,
+   "bins": [
+    {
+     "lower": 0.05,
+     "upper": 1.0,
+     "count": 162
+    },
+    {
+     "lower": 1.0,
+     "upper": 3.0,
+     "count": 670
+    },
+    {
+     "lower": 3.0,
+     "upper": 10.0,
+     "count": 2085
+    },
+    {
+     "lower": 10.0,
+     "upper": 30.0,
+     "count": 1430
+    },
+    {
+     "lower": 30.0,
+     "upper": 100.0,
+     "count": 706
+    },
+    {
+     "lower": 100.0,
+     "upper": 300.0,
+     "count": 308
+    },
+    {
+     "lower": 300.0,
+     "upper": 1000.0,
+     "count": 303
+    },
+    {
+     "lower": 1000.0,
+     "upper": 3000.0,
+     "count": 192
+    },
+    {
+     "lower": 3000.0,
+     "upper": 1000000000.0,
+     "count": 189
+    }
+   ]
+  },
+  "radius_bins_all": {
+   "variable": "pl_rade (Earth radii)",
+   "n": 6045,
+   "bins": [
+    {
+     "lower": 0.0,
+     "upper": 1.0,
+     "count": 231
+    },
+    {
+     "lower": 1.0,
+     "upper": 1.5,
+     "count": 774
+    },
+    {
+     "lower": 1.5,
+     "upper": 2.0,
+     "count": 775
+    },
+    {
+     "lower": 2.0,
+     "upper": 4.0,
+     "count": 2090
+    },
+    {
+     "lower": 4.0,
+     "upper": 8.0,
+     "count": 421
+    },
+    {
+     "lower": 8.0,
+     "upper": 15.0,
+     "count": 1529
+    },
+    {
+     "lower": 15.0,
+     "upper": 33.0,
+     "count": 225
+    }
+   ]
+  },
+  "log10_period_fine_all": {
+   "variable": "log10 pl_orbper",
+   "n": 6045,
+   "bins": [
+    {
+     "lower": -1.0,
+     "upper": -0.75,
+     "count": 2
+    },
+    {
+     "lower": -0.75,
+     "upper": -0.5,
+     "count": 9
+    },
+    {
+     "lower": -0.5,
+     "upper": -0.25,
+     "count": 30
+    },
+    {
+     "lower": -0.25,
+     "upper": 0.0,
+     "count": 121
+    },
+    {
+     "lower": 0.0,
+     "upper": 0.25,
+     "count": 207
+    },
+    {
+     "lower": 0.25,
+     "upper": 0.5,
+     "count": 545
+    },
+    {
+     "lower": 0.5,
+     "upper": 0.75,
+     "count": 1063
+    },
+    {
+     "lower": 0.75,
+     "upper": 1.0,
+     "count": 940
+    },
+    {
+     "lower": 1.0,
+     "upper": 1.25,
+     "count": 873
+    },
+    {
+     "lower": 1.25,
+     "upper": 1.5,
+     "count": 604
+    },
+    {
+     "lower": 1.5,
+     "upper": 1.75,
+     "count": 414
+    },
+    {
+     "lower": 1.75,
+     "upper": 2.0,
+     "count": 245
+    },
+    {
+     "lower": 2.0,
+     "upper": 2.25,
+     "count": 174
+    },
+    {
+     "lower": 2.25,
+     "upper": 2.5,
+     "count": 143
+    },
+    {
+     "lower": 2.5,
+     "upper": 2.75,
+     "count": 155
+    },
+    {
+     "lower": 2.75,
+     "upper": 3.0,
+     "count": 139
+    },
+    {
+     "lower": 3.0,
+     "upper": 3.25,
+     "count": 104
+    },
+    {
+     "lower": 3.25,
+     "upper": 3.5,
+     "count": 95
+    },
+    {
+     "lower": 3.5,
+     "upper": 3.75,
+     "count": 73
+    },
+    {
+     "lower": 3.75,
+     "upper": 4.0,
+     "count": 34
+    },
+    {
+     "lower": 4.0,
+     "upper": 4.25,
+     "count": 34
+    },
+    {
+     "lower": 4.25,
+     "upper": 4.5,
+     "count": 21
+    },
+    {
+     "lower": 4.5,
+     "upper": 4.75,
+     "count": 9
+    },
+    {
+     "lower": 4.75,
+     "upper": 5.0,
+     "count": 3
+    },
+    {
+     "lower": 5.0,
+     "upper": 5.25,
+     "count": 3
+    },
+    {
+     "lower": 5.25,
+     "upper": 5.5,
+     "count": 0
+    },
+    {
+     "lower": 5.5,
+     "upper": 5.75,
+     "count": 0
+    },
+    {
+     "lower": 5.75,
+     "upper": 6.0,
+     "count": 0
+    },
+    {
+     "lower": 6.0,
+     "upper": 6.25,
+     "count": 0
+    },
+    {
+     "lower": 6.25,
+     "upper": 6.5,
+     "count": 1
+    },
+    {
+     "lower": 6.5,
+     "upper": 6.75,
+     "count": 0
+    },
+    {
+     "lower": 6.75,
+     "upper": 7.0,
+     "count": 3
+    },
+    {
+     "lower": 7.0,
+     "upper": 7.25,
+     "count": 0
+    },
+    {
+     "lower": 7.25,
+     "upper": 7.5,
+     "count": 0
+    },
+    {
+     "lower": 7.5,
+     "upper": 7.75,
+     "count": 0
+    },
+    {
+     "lower": 7.75,
+     "upper": 8.0,
+     "count": 0
+    },
+    {
+     "lower": 8.0,
+     "upper": 8.25,
+     "count": 0
+    },
+    {
+     "lower": 8.25,
+     "upper": 8.5,
+     "count": 0
+    },
+    {
+     "lower": 8.5,
+     "upper": 8.75,
+     "count": 1
+    }
+   ]
+  },
+  "log10_radius_fine_all": {
+   "variable": "log10 pl_rade",
+   "n": 6045,
+   "bins": [
+    {
+     "lower": -0.6,
+     "upper": -0.5,
+     "count": 1
+    },
+    {
+     "lower": -0.5,
+     "upper": -0.4,
+     "count": 2
+    },
+    {
+     "lower": -0.4,
+     "upper": -0.30000000000000004,
+     "count": 5
+    },
+    {
+     "lower": -0.30000000000000004,
+     "upper": -0.20000000000000007,
+     "count": 17
+    },
+    {
+     "lower": -0.20000000000000007,
+     "upper": -0.10000000000000009,
+     "count": 61
+    },
+    {
+     "lower": -0.10000000000000009,
+     "upper": -1.1102230246251565e-16,
+     "count": 145
+    },
+    {
+     "lower": -1.1102230246251565e-16,
+     "upper": 0.09999999999999987,
+     "count": 366
+    },
+    {
+     "lower": 0.09999999999999987,
+     "upper": 0.19999999999999984,
+     "count": 575
+    },
+    {
+     "lower": 0.19999999999999984,
+     "upper": 0.2999999999999998,
+     "count": 607
+    },
+    {
+     "lower": 0.2999999999999998,
+     "upper": 0.3999999999999998,
+     "count": 872
+    },
+    {
+     "lower": 0.3999999999999998,
+     "upper": 0.4999999999999998,
+     "count": 823
+    },
+    {
+     "lower": 0.4999999999999998,
+     "upper": 0.5999999999999998,
+     "count": 395
+    },
+    {
+     "lower": 0.5999999999999998,
+     "upper": 0.6999999999999997,
+     "count": 191
+    },
+    {
+     "lower": 0.6999999999999997,
+     "upper": 0.7999999999999997,
+     "count": 132
+    },
+    {
+     "lower": 0.7999999999999997,
+     "upper": 0.8999999999999997,
+     "count": 97
+    },
+    {
+     "lower": 0.8999999999999997,
+     "upper": 0.9999999999999997,
+     "count": 150
+    },
+    {
+     "lower": 0.9999999999999997,
+     "upper": 1.0999999999999996,
+     "count": 497
+    },
+    {
+     "lower": 1.0999999999999996,
+     "upper": 1.1999999999999997,
+     "count": 944
+    },
+    {
+     "lower": 1.1999999999999997,
+     "upper": 1.2999999999999996,
+     "count": 140
+    },
+    {
+     "lower": 1.2999999999999996,
+     "upper": 1.3999999999999995,
+     "count": 23
+    },
+    {
+     "lower": 1.3999999999999995,
+     "upper": 1.4999999999999996,
+     "count": 1
+    },
+    {
+     "lower": 1.4999999999999996,
+     "upper": 1.5999999999999996,
+     "count": 1
+    }
+   ]
+  },
+  "method_all": {
+   "variable": "discoverymethod",
+   "n": 6045,
+   "categories": [
+    {
+     "category": "Transit",
+     "count": 4780
+    },
+    {
+     "category": "Radial Velocity",
+     "count": 1166
+    },
+    {
+     "category": "Transit Timing Variations",
+     "count": 28
+    },
+    {
+     "category": "Imaging",
+     "count": 25
+    },
+    {
+     "category": "Eclipse Timing Variations",
+     "count": 15
+    },
+    {
+     "category": "Microlensing",
+     "count": 12
+    },
+    {
+     "category": "Astrometry",
+     "count": 6
+    },
+    {
+     "category": "Orbital Brightness Modulation",
+     "count": 6
+    },
+    {
+     "category": "Pulsar Timing",
+     "count": 5
+    },
+    {
+     "category": "Pulsation Timing Variations",
+     "count": 2
+    }
+   ]
+  },
+  "joint_cells_all": {
+   "variable": "radius bin x period bin",
+   "n": 6045,
+   "categories": [
+    {
+     "category": "R 0-1 Re | P 0.05-1 d",
+     "count": 38,
+     "share": 0.006286186931348222,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 0-1 Re | P 1-3 d",
+     "count": 55,
+     "share": 0.009098428453267164,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 0-1 Re | P 3-10 d",
+     "count": 102,
+     "share": 0.01687344913151365,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 0-1 Re | P 10-30 d",
+     "count": 33,
+     "share": 0.005459057071960298,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 0-1 Re | P 30-100 d",
+     "count": 3,
+     "share": 0.0004962779156327543,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 0-1 Re | P 100-300 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 0-1 Re | P 300-1000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 0-1 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 0-1 Re | P 3000-1e+09 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 1-1.5 Re | P 0.05-1 d",
+     "count": 64,
+     "share": 0.010587262200165426,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 1-1.5 Re | P 1-3 d",
+     "count": 158,
+     "share": 0.026137303556658397,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 1-1.5 Re | P 3-10 d",
+     "count": 348,
+     "share": 0.05756823821339951,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 1-1.5 Re | P 10-30 d",
+     "count": 162,
+     "share": 0.026799007444168736,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 1-1.5 Re | P 30-100 d",
+     "count": 34,
+     "share": 0.0056244830438378825,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 1-1.5 Re | P 100-300 d",
+     "count": 6,
+     "share": 0.0009925558312655087,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 1-1.5 Re | P 300-1000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 1-1.5 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 1-1.5 Re | P 3000-1e+09 d",
+     "count": 2,
+     "share": 0.00033085194375516956,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 1.5-2 Re | P 0.05-1 d",
+     "count": 36,
+     "share": 0.005955334987593052,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 1.5-2 Re | P 1-3 d",
+     "count": 108,
+     "share": 0.017866004962779156,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 1.5-2 Re | P 3-10 d",
+     "count": 319,
+     "share": 0.05277088502894955,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 1.5-2 Re | P 10-30 d",
+     "count": 231,
+     "share": 0.03821339950372209,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 1.5-2 Re | P 30-100 d",
+     "count": 66,
+     "share": 0.010918114143920596,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 1.5-2 Re | P 100-300 d",
+     "count": 13,
+     "share": 0.002150537634408602,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 1.5-2 Re | P 300-1000 d",
+     "count": 2,
+     "share": 0.00033085194375516956,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 1.5-2 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 1.5-2 Re | P 3000-1e+09 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 2-4 Re | P 0.05-1 d",
+     "count": 7,
+     "share": 0.0011579818031430935,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 2-4 Re | P 1-3 d",
+     "count": 94,
+     "share": 0.01555004135649297,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 2-4 Re | P 3-10 d",
+     "count": 664,
+     "share": 0.1098428453267163,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 2-4 Re | P 10-30 d",
+     "count": 796,
+     "share": 0.1316790736145575,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 2-4 Re | P 30-100 d",
+     "count": 405,
+     "share": 0.06699751861042183,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 2-4 Re | P 100-300 d",
+     "count": 107,
+     "share": 0.01770057899090157,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 2-4 Re | P 300-1000 d",
+     "count": 13,
+     "share": 0.002150537634408602,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 2-4 Re | P 1000-3000 d",
+     "count": 3,
+     "share": 0.0004962779156327543,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 2-4 Re | P 3000-1e+09 d",
+     "count": 1,
+     "share": 0.00016542597187758478,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 4-8 Re | P 0.05-1 d",
+     "count": 3,
+     "share": 0.0004962779156327543,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 4-8 Re | P 1-3 d",
+     "count": 17,
+     "share": 0.0028122415219189413,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 4-8 Re | P 3-10 d",
+     "count": 140,
+     "share": 0.02315963606286187,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 4-8 Re | P 10-30 d",
+     "count": 103,
+     "share": 0.01703887510339123,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 4-8 Re | P 30-100 d",
+     "count": 99,
+     "share": 0.016377171215880892,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 4-8 Re | P 100-300 d",
+     "count": 40,
+     "share": 0.006617038875103391,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 4-8 Re | P 300-1000 d",
+     "count": 14,
+     "share": 0.002315963606286187,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 4-8 Re | P 1000-3000 d",
+     "count": 2,
+     "share": 0.00033085194375516956,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 4-8 Re | P 3000-1e+09 d",
+     "count": 3,
+     "share": 0.0004962779156327543,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 8-15 Re | P 0.05-1 d",
+     "count": 9,
+     "share": 0.001488833746898263,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 8-15 Re | P 1-3 d",
+     "count": 152,
+     "share": 0.025144747725392887,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 8-15 Re | P 3-10 d",
+     "count": 386,
+     "share": 0.06385442514474772,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 8-15 Re | P 10-30 d",
+     "count": 104,
+     "share": 0.017204301075268817,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 8-15 Re | P 30-100 d",
+     "count": 98,
+     "share": 0.01621174524400331,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 8-15 Re | P 100-300 d",
+     "count": 141,
+     "share": 0.023325062034739455,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 8-15 Re | P 300-1000 d",
+     "count": 274,
+     "share": 0.04532671629445823,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 8-15 Re | P 1000-3000 d",
+     "count": 186,
+     "share": 0.03076923076923077,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 8-15 Re | P 3000-1e+09 d",
+     "count": 179,
+     "share": 0.029611248966087675,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 15-33 Re | P 0.05-1 d",
+     "count": 5,
+     "share": 0.0008271298593879239,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 15-33 Re | P 1-3 d",
+     "count": 86,
+     "share": 0.014226633581472291,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 15-33 Re | P 3-10 d",
+     "count": 126,
+     "share": 0.020843672456575684,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 15-33 Re | P 10-30 d",
+     "count": 1,
+     "share": 0.00016542597187758478,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 15-33 Re | P 30-100 d",
+     "count": 1,
+     "share": 0.00016542597187758478,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 15-33 Re | P 100-300 d",
+     "count": 1,
+     "share": 0.00016542597187758478,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 15-33 Re | P 300-1000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 15-33 Re | P 1000-3000 d",
+     "count": 1,
+     "share": 0.00016542597187758478,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 15-33 Re | P 3000-1e+09 d",
+     "count": 4,
+     "share": 0.0006617038875103391,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    }
+   ]
+  },
+  "period_bins_calculated": {
+   "variable": "pl_orbper (days)",
+   "n": 1215,
+   "bins": [
+    {
+     "lower": 0.05,
+     "upper": 1.0,
+     "count": 1
+    },
+    {
+     "lower": 1.0,
+     "upper": 3.0,
+     "count": 28
+    },
+    {
+     "lower": 3.0,
+     "upper": 10.0,
+     "count": 135
+    },
+    {
+     "lower": 10.0,
+     "upper": 30.0,
+     "count": 131
+    },
+    {
+     "lower": 30.0,
+     "upper": 100.0,
+     "count": 140
+    },
+    {
+     "lower": 100.0,
+     "upper": 300.0,
+     "count": 142
+    },
+    {
+     "lower": 300.0,
+     "upper": 1000.0,
+     "count": 276
+    },
+    {
+     "lower": 1000.0,
+     "upper": 3000.0,
+     "count": 186
+    },
+    {
+     "lower": 3000.0,
+     "upper": 1000000000.0,
+     "count": 176
+    }
+   ]
+  },
+  "radius_bins_calculated": {
+   "variable": "pl_rade (Earth radii)",
+   "n": 1215,
+   "bins": [
+    {
+     "lower": 0.0,
+     "upper": 1.0,
+     "count": 9
+    },
+    {
+     "lower": 1.0,
+     "upper": 1.5,
+     "count": 45
+    },
+    {
+     "lower": 1.5,
+     "upper": 2.0,
+     "count": 38
+    },
+    {
+     "lower": 2.0,
+     "upper": 4.0,
+     "count": 188
+    },
+    {
+     "lower": 4.0,
+     "upper": 8.0,
+     "count": 89
+    },
+    {
+     "lower": 8.0,
+     "upper": 15.0,
+     "count": 846
+    },
+    {
+     "lower": 15.0,
+     "upper": 33.0,
+     "count": 0
+    }
+   ]
+  },
+  "log10_period_fine_calculated": {
+   "variable": "log10 pl_orbper",
+   "n": 1215,
+   "bins": [
+    {
+     "lower": -1.0,
+     "upper": -0.75,
+     "count": 0
+    },
+    {
+     "lower": -0.75,
+     "upper": -0.5,
+     "count": 0
+    },
+    {
+     "lower": -0.5,
+     "upper": -0.25,
+     "count": 1
+    },
+    {
+     "lower": -0.25,
+     "upper": 0.0,
+     "count": 0
+    },
+    {
+     "lower": 0.0,
+     "upper": 0.25,
+     "count": 5
+    },
+    {
+     "lower": 0.25,
+     "upper": 0.5,
+     "count": 31
+    },
+    {
+     "lower": 0.5,
+     "upper": 0.75,
+     "count": 68
+    },
+    {
+     "lower": 0.75,
+     "upper": 1.0,
+     "count": 59
+    },
+    {
+     "lower": 1.0,
+     "upper": 1.25,
+     "count": 79
+    },
+    {
+     "lower": 1.25,
+     "upper": 1.5,
+     "count": 63
+    },
+    {
+     "lower": 1.5,
+     "upper": 1.75,
+     "count": 71
+    },
+    {
+     "lower": 1.75,
+     "upper": 2.0,
+     "count": 58
+    },
+    {
+     "lower": 2.0,
+     "upper": 2.25,
+     "count": 65
+    },
+    {
+     "lower": 2.25,
+     "upper": 2.5,
+     "count": 84
+    },
+    {
+     "lower": 2.5,
+     "upper": 2.75,
+     "count": 137
+    },
+    {
+     "lower": 2.75,
+     "upper": 3.0,
+     "count": 132
+    },
+    {
+     "lower": 3.0,
+     "upper": 3.25,
+     "count": 100
+    },
+    {
+     "lower": 3.25,
+     "upper": 3.5,
+     "count": 93
+    },
+    {
+     "lower": 3.5,
+     "upper": 3.75,
+     "count": 72
+    },
+    {
+     "lower": 3.75,
+     "upper": 4.0,
+     "count": 33
+    },
+    {
+     "lower": 4.0,
+     "upper": 4.25,
+     "count": 33
+    },
+    {
+     "lower": 4.25,
+     "upper": 4.5,
+     "count": 20
+    },
+    {
+     "lower": 4.5,
+     "upper": 4.75,
+     "count": 6
+    },
+    {
+     "lower": 4.75,
+     "upper": 5.0,
+     "count": 2
+    },
+    {
+     "lower": 5.0,
+     "upper": 5.25,
+     "count": 1
+    },
+    {
+     "lower": 5.25,
+     "upper": 5.5,
+     "count": 0
+    },
+    {
+     "lower": 5.5,
+     "upper": 5.75,
+     "count": 0
+    },
+    {
+     "lower": 5.75,
+     "upper": 6.0,
+     "count": 0
+    },
+    {
+     "lower": 6.0,
+     "upper": 6.25,
+     "count": 0
+    },
+    {
+     "lower": 6.25,
+     "upper": 6.5,
+     "count": 1
+    },
+    {
+     "lower": 6.5,
+     "upper": 6.75,
+     "count": 0
+    },
+    {
+     "lower": 6.75,
+     "upper": 7.0,
+     "count": 1
+    },
+    {
+     "lower": 7.0,
+     "upper": 7.25,
+     "count": 0
+    },
+    {
+     "lower": 7.25,
+     "upper": 7.5,
+     "count": 0
+    },
+    {
+     "lower": 7.5,
+     "upper": 7.75,
+     "count": 0
+    },
+    {
+     "lower": 7.75,
+     "upper": 8.0,
+     "count": 0
+    },
+    {
+     "lower": 8.0,
+     "upper": 8.25,
+     "count": 0
+    },
+    {
+     "lower": 8.25,
+     "upper": 8.5,
+     "count": 0
+    },
+    {
+     "lower": 8.5,
+     "upper": 8.75,
+     "count": 0
+    }
+   ]
+  },
+  "log10_radius_fine_calculated": {
+   "variable": "log10 pl_rade",
+   "n": 1215,
+   "bins": [
+    {
+     "lower": -0.6,
+     "upper": -0.5,
+     "count": 0
+    },
+    {
+     "lower": -0.5,
+     "upper": -0.4,
+     "count": 1
+    },
+    {
+     "lower": -0.4,
+     "upper": -0.30000000000000004,
+     "count": 0
+    },
+    {
+     "lower": -0.30000000000000004,
+     "upper": -0.20000000000000007,
+     "count": 0
+    },
+    {
+     "lower": -0.20000000000000007,
+     "upper": -0.10000000000000009,
+     "count": 5
+    },
+    {
+     "lower": -0.10000000000000009,
+     "upper": -1.1102230246251565e-16,
+     "count": 3
+    },
+    {
+     "lower": -1.1102230246251565e-16,
+     "upper": 0.09999999999999987,
+     "count": 28
+    },
+    {
+     "lower": 0.09999999999999987,
+     "upper": 0.19999999999999984,
+     "count": 23
+    },
+    {
+     "lower": 0.19999999999999984,
+     "upper": 0.2999999999999998,
+     "count": 32
+    },
+    {
+     "lower": 0.2999999999999998,
+     "upper": 0.3999999999999998,
+     "count": 59
+    },
+    {
+     "lower": 0.3999999999999998,
+     "upper": 0.4999999999999998,
+     "count": 53
+    },
+    {
+     "lower": 0.4999999999999998,
+     "upper": 0.5999999999999998,
+     "count": 75
+    },
+    {
+     "lower": 0.5999999999999998,
+     "upper": 0.6999999999999997,
+     "count": 46
+    },
+    {
+     "lower": 0.6999999999999997,
+     "upper": 0.7999999999999997,
+     "count": 30
+    },
+    {
+     "lower": 0.7999999999999997,
+     "upper": 0.8999999999999997,
+     "count": 14
+    },
+    {
+     "lower": 0.8999999999999997,
+     "upper": 0.9999999999999997,
+     "count": 27
+    },
+    {
+     "lower": 0.9999999999999997,
+     "upper": 1.0999999999999996,
+     "count": 190
+    },
+    {
+     "lower": 1.0999999999999996,
+     "upper": 1.1999999999999997,
+     "count": 629
+    },
+    {
+     "lower": 1.1999999999999997,
+     "upper": 1.2999999999999996,
+     "count": 0
+    },
+    {
+     "lower": 1.2999999999999996,
+     "upper": 1.3999999999999995,
+     "count": 0
+    },
+    {
+     "lower": 1.3999999999999995,
+     "upper": 1.4999999999999996,
+     "count": 0
+    },
+    {
+     "lower": 1.4999999999999996,
+     "upper": 1.5999999999999996,
+     "count": 0
+    }
+   ]
+  },
+  "method_calculated": {
+   "variable": "discoverymethod",
+   "n": 1215,
+   "categories": [
+    {
+     "category": "Radial Velocity",
+     "count": 1133
+    },
+    {
+     "category": "Transit Timing Variations",
+     "count": 25
+    },
+    {
+     "category": "Eclipse Timing Variations",
+     "count": 15
+    },
+    {
+     "category": "Imaging",
+     "count": 12
+    },
+    {
+     "category": "Microlensing",
+     "count": 12
+    },
+    {
+     "category": "Astrometry",
+     "count": 6
+    },
+    {
+     "category": "Pulsar Timing",
+     "count": 5
+    },
+    {
+     "category": "Orbital Brightness Modulation",
+     "count": 3
+    },
+    {
+     "category": "Pulsation Timing Variations",
+     "count": 2
+    },
+    {
+     "category": "Transit",
+     "count": 2
+    }
+   ]
+  },
+  "joint_cells_calculated": {
+   "variable": "radius bin x period bin",
+   "n": 1215,
+   "categories": [
+    {
+     "category": "R 0-1 Re | P 0.05-1 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 0-1 Re | P 1-3 d",
+     "count": 2,
+     "share": 0.0016460905349794238,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 0-1 Re | P 3-10 d",
+     "count": 4,
+     "share": 0.0032921810699588477,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 0-1 Re | P 10-30 d",
+     "count": 2,
+     "share": 0.0016460905349794238,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 0-1 Re | P 30-100 d",
+     "count": 1,
+     "share": 0.0008230452674897119,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 0-1 Re | P 100-300 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 0-1 Re | P 300-1000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 0-1 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 0-1 Re | P 3000-1e+09 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 1-1.5 Re | P 0.05-1 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 1-1.5 Re | P 1-3 d",
+     "count": 6,
+     "share": 0.0049382716049382715,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 1-1.5 Re | P 3-10 d",
+     "count": 18,
+     "share": 0.014814814814814815,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 1-1.5 Re | P 10-30 d",
+     "count": 15,
+     "share": 0.012345679012345678,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 1-1.5 Re | P 30-100 d",
+     "count": 4,
+     "share": 0.0032921810699588477,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 1-1.5 Re | P 100-300 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 1-1.5 Re | P 300-1000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 1-1.5 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 1-1.5 Re | P 3000-1e+09 d",
+     "count": 2,
+     "share": 0.0016460905349794238,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 1.5-2 Re | P 0.05-1 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 1.5-2 Re | P 1-3 d",
+     "count": 4,
+     "share": 0.0032921810699588477,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 1.5-2 Re | P 3-10 d",
+     "count": 14,
+     "share": 0.011522633744855968,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 1.5-2 Re | P 10-30 d",
+     "count": 13,
+     "share": 0.010699588477366255,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 1.5-2 Re | P 30-100 d",
+     "count": 5,
+     "share": 0.00411522633744856,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 1.5-2 Re | P 100-300 d",
+     "count": 1,
+     "share": 0.0008230452674897119,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 1.5-2 Re | P 300-1000 d",
+     "count": 1,
+     "share": 0.0008230452674897119,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 1.5-2 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 1.5-2 Re | P 3000-1e+09 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 2-4 Re | P 0.05-1 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 2-4 Re | P 1-3 d",
+     "count": 6,
+     "share": 0.0049382716049382715,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 2-4 Re | P 3-10 d",
+     "count": 51,
+     "share": 0.04197530864197531,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 2-4 Re | P 10-30 d",
+     "count": 56,
+     "share": 0.04609053497942387,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 2-4 Re | P 30-100 d",
+     "count": 46,
+     "share": 0.03786008230452675,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 2-4 Re | P 100-300 d",
+     "count": 22,
+     "share": 0.01810699588477366,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 2-4 Re | P 300-1000 d",
+     "count": 3,
+     "share": 0.0024691358024691358,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 2-4 Re | P 1000-3000 d",
+     "count": 3,
+     "share": 0.0024691358024691358,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 2-4 Re | P 3000-1e+09 d",
+     "count": 1,
+     "share": 0.0008230452674897119,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 4-8 Re | P 0.05-1 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 4-8 Re | P 1-3 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 4-8 Re | P 3-10 d",
+     "count": 12,
+     "share": 0.009876543209876543,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 4-8 Re | P 10-30 d",
+     "count": 17,
+     "share": 0.013991769547325103,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 4-8 Re | P 30-100 d",
+     "count": 37,
+     "share": 0.030452674897119343,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 4-8 Re | P 100-300 d",
+     "count": 11,
+     "share": 0.00905349794238683,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 4-8 Re | P 300-1000 d",
+     "count": 8,
+     "share": 0.006584362139917695,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 4-8 Re | P 1000-3000 d",
+     "count": 1,
+     "share": 0.0008230452674897119,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 4-8 Re | P 3000-1e+09 d",
+     "count": 3,
+     "share": 0.0024691358024691358,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 8-15 Re | P 0.05-1 d",
+     "count": 1,
+     "share": 0.0008230452674897119,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 8-15 Re | P 1-3 d",
+     "count": 10,
+     "share": 0.00823045267489712,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 8-15 Re | P 3-10 d",
+     "count": 36,
+     "share": 0.02962962962962963,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 8-15 Re | P 10-30 d",
+     "count": 28,
+     "share": 0.023045267489711935,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 8-15 Re | P 30-100 d",
+     "count": 47,
+     "share": 0.03868312757201646,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 8-15 Re | P 100-300 d",
+     "count": 108,
+     "share": 0.08888888888888889,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 8-15 Re | P 300-1000 d",
+     "count": 264,
+     "share": 0.21728395061728395,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 8-15 Re | P 1000-3000 d",
+     "count": 182,
+     "share": 0.14979423868312758,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 8-15 Re | P 3000-1e+09 d",
+     "count": 170,
+     "share": 0.13991769547325103,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 15-33 Re | P 0.05-1 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 15-33 Re | P 1-3 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 15-33 Re | P 3-10 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 15-33 Re | P 10-30 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 15-33 Re | P 30-100 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 15-33 Re | P 100-300 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 15-33 Re | P 300-1000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 15-33 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 15-33 Re | P 3000-1e+09 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    }
+   ]
+  },
+  "period_bins_measured_transiting": {
+   "variable": "pl_orbper (days)",
+   "n": 4810,
+   "bins": [
+    {
+     "lower": 0.05,
+     "upper": 1.0,
+     "count": 159
+    },
+    {
+     "lower": 1.0,
+     "upper": 3.0,
+     "count": 641
+    },
+    {
+     "lower": 3.0,
+     "upper": 10.0,
+     "count": 1950
+    },
+    {
+     "lower": 10.0,
+     "upper": 30.0,
+     "count": 1298
+    },
+    {
+     "lower": 30.0,
+     "upper": 100.0,
+     "count": 564
+    },
+    {
+     "lower": 100.0,
+     "upper": 300.0,
+     "count": 166
+    },
+    {
+     "lower": 300.0,
+     "upper": 1000.0,
+     "count": 26
+    },
+    {
+     "lower": 1000.0,
+     "upper": 3000.0,
+     "count": 5
+    },
+    {
+     "lower": 3000.0,
+     "upper": 1000000000.0,
+     "count": 1
+    }
+   ]
+  },
+  "radius_bins_measured_transiting": {
+   "variable": "pl_rade (Earth radii)",
+   "n": 4810,
+   "bins": [
+    {
+     "lower": 0.0,
+     "upper": 1.0,
+     "count": 220
+    },
+    {
+     "lower": 1.0,
+     "upper": 1.5,
+     "count": 728
+    },
+    {
+     "lower": 1.5,
+     "upper": 2.0,
+     "count": 736
+    },
+    {
+     "lower": 2.0,
+     "upper": 4.0,
+     "count": 1901
+    },
+    {
+     "lower": 4.0,
+     "upper": 8.0,
+     "count": 332
+    },
+    {
+     "lower": 8.0,
+     "upper": 15.0,
+     "count": 673
+    },
+    {
+     "lower": 15.0,
+     "upper": 33.0,
+     "count": 220
+    }
+   ]
+  },
+  "log10_period_fine_measured_transiting": {
+   "variable": "log10 pl_orbper",
+   "n": 4810,
+   "bins": [
+    {
+     "lower": -1.0,
+     "upper": -0.75,
+     "count": 2
+    },
+    {
+     "lower": -0.75,
+     "upper": -0.5,
+     "count": 8
+    },
+    {
+     "lower": -0.5,
+     "upper": -0.25,
+     "count": 28
+    },
+    {
+     "lower": -0.25,
+     "upper": 0.0,
+     "count": 121
+    },
+    {
+     "lower": 0.0,
+     "upper": 0.25,
+     "count": 202
+    },
+    {
+     "lower": 0.25,
+     "upper": 0.5,
+     "count": 513
+    },
+    {
+     "lower": 0.5,
+     "upper": 0.75,
+     "count": 995
+    },
+    {
+     "lower": 0.75,
+     "upper": 1.0,
+     "count": 881
+    },
+    {
+     "lower": 1.0,
+     "upper": 1.25,
+     "count": 794
+    },
+    {
+     "lower": 1.25,
+     "upper": 1.5,
+     "count": 540
+    },
+    {
+     "lower": 1.5,
+     "upper": 1.75,
+     "count": 341
+    },
+    {
+     "lower": 1.75,
+     "upper": 2.0,
+     "count": 187
+    },
+    {
+     "lower": 2.0,
+     "upper": 2.25,
+     "count": 109
+    },
+    {
+     "lower": 2.25,
+     "upper": 2.5,
+     "count": 59
+    },
+    {
+     "lower": 2.5,
+     "upper": 2.75,
+     "count": 18
+    },
+    {
+     "lower": 2.75,
+     "upper": 3.0,
+     "count": 6
+    },
+    {
+     "lower": 3.0,
+     "upper": 3.25,
+     "count": 4
+    },
+    {
+     "lower": 3.25,
+     "upper": 3.5,
+     "count": 1
+    },
+    {
+     "lower": 3.5,
+     "upper": 3.75,
+     "count": 1
+    },
+    {
+     "lower": 3.75,
+     "upper": 4.0,
+     "count": 0
+    },
+    {
+     "lower": 4.0,
+     "upper": 4.25,
+     "count": 0
+    },
+    {
+     "lower": 4.25,
+     "upper": 4.5,
+     "count": 0
+    },
+    {
+     "lower": 4.5,
+     "upper": 4.75,
+     "count": 0
+    },
+    {
+     "lower": 4.75,
+     "upper": 5.0,
+     "count": 0
+    },
+    {
+     "lower": 5.0,
+     "upper": 5.25,
+     "count": 0
+    },
+    {
+     "lower": 5.25,
+     "upper": 5.5,
+     "count": 0
+    },
+    {
+     "lower": 5.5,
+     "upper": 5.75,
+     "count": 0
+    },
+    {
+     "lower": 5.75,
+     "upper": 6.0,
+     "count": 0
+    },
+    {
+     "lower": 6.0,
+     "upper": 6.25,
+     "count": 0
+    },
+    {
+     "lower": 6.25,
+     "upper": 6.5,
+     "count": 0
+    },
+    {
+     "lower": 6.5,
+     "upper": 6.75,
+     "count": 0
+    },
+    {
+     "lower": 6.75,
+     "upper": 7.0,
+     "count": 0
+    },
+    {
+     "lower": 7.0,
+     "upper": 7.25,
+     "count": 0
+    },
+    {
+     "lower": 7.25,
+     "upper": 7.5,
+     "count": 0
+    },
+    {
+     "lower": 7.5,
+     "upper": 7.75,
+     "count": 0
+    },
+    {
+     "lower": 7.75,
+     "upper": 8.0,
+     "count": 0
+    },
+    {
+     "lower": 8.0,
+     "upper": 8.25,
+     "count": 0
+    },
+    {
+     "lower": 8.25,
+     "upper": 8.5,
+     "count": 0
+    },
+    {
+     "lower": 8.5,
+     "upper": 8.75,
+     "count": 0
+    }
+   ]
+  },
+  "log10_radius_fine_measured_transiting": {
+   "variable": "log10 pl_rade",
+   "n": 4810,
+   "bins": [
+    {
+     "lower": -0.6,
+     "upper": -0.5,
+     "count": 1
+    },
+    {
+     "lower": -0.5,
+     "upper": -0.4,
+     "count": 1
+    },
+    {
+     "lower": -0.4,
+     "upper": -0.30000000000000004,
+     "count": 5
+    },
+    {
+     "lower": -0.30000000000000004,
+     "upper": -0.20000000000000007,
+     "count": 17
+    },
+    {
+     "lower": -0.20000000000000007,
+     "upper": -0.10000000000000009,
+     "count": 55
+    },
+    {
+     "lower": -0.10000000000000009,
+     "upper": -1.1102230246251565e-16,
+     "count": 141
+    },
+    {
+     "lower": -1.1102230246251565e-16,
+     "upper": 0.09999999999999987,
+     "count": 338
+    },
+    {
+     "lower": 0.09999999999999987,
+     "upper": 0.19999999999999984,
+     "count": 551
+    },
+    {
+     "lower": 0.19999999999999984,
+     "upper": 0.2999999999999998,
+     "count": 574
+    },
+    {
+     "lower": 0.2999999999999998,
+     "upper": 0.3999999999999998,
+     "count": 813
+    },
+    {
+     "lower": 0.3999999999999998,
+     "upper": 0.4999999999999998,
+     "count": 769
+    },
+    {
+     "lower": 0.4999999999999998,
+     "upper": 0.5999999999999998,
+     "count": 320
+    },
+    {
+     "lower": 0.5999999999999998,
+     "upper": 0.6999999999999997,
+     "count": 145
+    },
+    {
+     "lower": 0.6999999999999997,
+     "upper": 0.7999999999999997,
+     "count": 102
+    },
+    {
+     "lower": 0.7999999999999997,
+     "upper": 0.8999999999999997,
+     "count": 83
+    },
+    {
+     "lower": 0.8999999999999997,
+     "upper": 0.9999999999999997,
+     "count": 122
+    },
+    {
+     "lower": 0.9999999999999997,
+     "upper": 1.0999999999999996,
+     "count": 305
+    },
+    {
+     "lower": 1.0999999999999996,
+     "upper": 1.1999999999999997,
+     "count": 307
+    },
+    {
+     "lower": 1.1999999999999997,
+     "upper": 1.2999999999999996,
+     "count": 138
+    },
+    {
+     "lower": 1.2999999999999996,
+     "upper": 1.3999999999999995,
+     "count": 21
+    },
+    {
+     "lower": 1.3999999999999995,
+     "upper": 1.4999999999999996,
+     "count": 1
+    },
+    {
+     "lower": 1.4999999999999996,
+     "upper": 1.5999999999999996,
+     "count": 1
+    }
+   ]
+  },
+  "method_measured_transiting": {
+   "variable": "discoverymethod",
+   "n": 4810,
+   "categories": [
+    {
+     "category": "Transit",
+     "count": 4778
+    },
+    {
+     "category": "Radial Velocity",
+     "count": 28
+    },
+    {
+     "category": "Transit Timing Variations",
+     "count": 3
+    },
+    {
+     "category": "Orbital Brightness Modulation",
+     "count": 1
+    }
+   ]
+  },
+  "joint_cells_measured_transiting": {
+   "variable": "radius bin x period bin",
+   "n": 4810,
+   "categories": [
+    {
+     "category": "R 0-1 Re | P 0.05-1 d",
+     "count": 36,
+     "share": 0.007484407484407485,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 0-1 Re | P 1-3 d",
+     "count": 53,
+     "share": 0.01101871101871102,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 0-1 Re | P 3-10 d",
+     "count": 98,
+     "share": 0.020374220374220375,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 0-1 Re | P 10-30 d",
+     "count": 31,
+     "share": 0.006444906444906445,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 0-1 Re | P 30-100 d",
+     "count": 2,
+     "share": 0.0004158004158004158,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 0-1 Re | P 100-300 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 0-1 Re | P 300-1000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 0-1 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 0-1 Re | P 3000-1e+09 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 1-1.5 Re | P 0.05-1 d",
+     "count": 64,
+     "share": 0.013305613305613306,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 1-1.5 Re | P 1-3 d",
+     "count": 152,
+     "share": 0.0316008316008316,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 1-1.5 Re | P 3-10 d",
+     "count": 330,
+     "share": 0.06860706860706861,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 1-1.5 Re | P 10-30 d",
+     "count": 146,
+     "share": 0.030353430353430355,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 1-1.5 Re | P 30-100 d",
+     "count": 30,
+     "share": 0.006237006237006237,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 1-1.5 Re | P 100-300 d",
+     "count": 6,
+     "share": 0.0012474012474012475,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 1-1.5 Re | P 300-1000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 1-1.5 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 1-1.5 Re | P 3000-1e+09 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 1.5-2 Re | P 0.05-1 d",
+     "count": 36,
+     "share": 0.007484407484407485,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 1.5-2 Re | P 1-3 d",
+     "count": 104,
+     "share": 0.021621621621621623,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 1.5-2 Re | P 3-10 d",
+     "count": 305,
+     "share": 0.06340956340956341,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 1.5-2 Re | P 10-30 d",
+     "count": 218,
+     "share": 0.045322245322245325,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 1.5-2 Re | P 30-100 d",
+     "count": 60,
+     "share": 0.012474012474012475,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 1.5-2 Re | P 100-300 d",
+     "count": 12,
+     "share": 0.002494802494802495,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 1.5-2 Re | P 300-1000 d",
+     "count": 1,
+     "share": 0.0002079002079002079,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 1.5-2 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 1.5-2 Re | P 3000-1e+09 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 2-4 Re | P 0.05-1 d",
+     "count": 7,
+     "share": 0.0014553014553014554,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 2-4 Re | P 1-3 d",
+     "count": 88,
+     "share": 0.018295218295218296,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 2-4 Re | P 3-10 d",
+     "count": 613,
+     "share": 0.12744282744282745,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 2-4 Re | P 10-30 d",
+     "count": 740,
+     "share": 0.15384615384615385,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 2-4 Re | P 30-100 d",
+     "count": 358,
+     "share": 0.07442827442827443,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 2-4 Re | P 100-300 d",
+     "count": 85,
+     "share": 0.017671517671517672,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 2-4 Re | P 300-1000 d",
+     "count": 10,
+     "share": 0.002079002079002079,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 2-4 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 2-4 Re | P 3000-1e+09 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 4-8 Re | P 0.05-1 d",
+     "count": 3,
+     "share": 0.0006237006237006237,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 4-8 Re | P 1-3 d",
+     "count": 17,
+     "share": 0.0035343035343035345,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 4-8 Re | P 3-10 d",
+     "count": 128,
+     "share": 0.026611226611226613,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 4-8 Re | P 10-30 d",
+     "count": 86,
+     "share": 0.01787941787941788,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 4-8 Re | P 30-100 d",
+     "count": 62,
+     "share": 0.01288981288981289,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 4-8 Re | P 100-300 d",
+     "count": 29,
+     "share": 0.0060291060291060294,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 4-8 Re | P 300-1000 d",
+     "count": 6,
+     "share": 0.0012474012474012475,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 4-8 Re | P 1000-3000 d",
+     "count": 1,
+     "share": 0.0002079002079002079,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 4-8 Re | P 3000-1e+09 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 8-15 Re | P 0.05-1 d",
+     "count": 8,
+     "share": 0.0016632016632016633,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 8-15 Re | P 1-3 d",
+     "count": 141,
+     "share": 0.029313929313929316,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 8-15 Re | P 3-10 d",
+     "count": 350,
+     "share": 0.07276507276507277,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 8-15 Re | P 10-30 d",
+     "count": 76,
+     "share": 0.0158004158004158,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 8-15 Re | P 30-100 d",
+     "count": 51,
+     "share": 0.010602910602910603,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 8-15 Re | P 100-300 d",
+     "count": 33,
+     "share": 0.006860706860706861,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 8-15 Re | P 300-1000 d",
+     "count": 9,
+     "share": 0.0018711018711018712,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 8-15 Re | P 1000-3000 d",
+     "count": 4,
+     "share": 0.0008316008316008316,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 8-15 Re | P 3000-1e+09 d",
+     "count": 1,
+     "share": 0.0002079002079002079,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 15-33 Re | P 0.05-1 d",
+     "count": 5,
+     "share": 0.0010395010395010396,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 15-33 Re | P 1-3 d",
+     "count": 86,
+     "share": 0.01787941787941788,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 15-33 Re | P 3-10 d",
+     "count": 126,
+     "share": 0.026195426195426197,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 15-33 Re | P 10-30 d",
+     "count": 1,
+     "share": 0.0002079002079002079,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 15-33 Re | P 30-100 d",
+     "count": 1,
+     "share": 0.0002079002079002079,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 15-33 Re | P 100-300 d",
+     "count": 1,
+     "share": 0.0002079002079002079,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 15-33 Re | P 300-1000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 15-33 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 15-33 Re | P 3000-1e+09 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    }
+   ]
+  },
+  "period_bins_measured_non_transiting": {
+   "variable": "pl_orbper (days)",
+   "n": 20,
+   "bins": [
+    {
+     "lower": 0.05,
+     "upper": 1.0,
+     "count": 2
+    },
+    {
+     "lower": 1.0,
+     "upper": 3.0,
+     "count": 1
+    },
+    {
+     "lower": 3.0,
+     "upper": 10.0,
+     "count": 0
+    },
+    {
+     "lower": 10.0,
+     "upper": 30.0,
+     "count": 1
+    },
+    {
+     "lower": 30.0,
+     "upper": 100.0,
+     "count": 2
+    },
+    {
+     "lower": 100.0,
+     "upper": 300.0,
+     "count": 0
+    },
+    {
+     "lower": 300.0,
+     "upper": 1000.0,
+     "count": 1
+    },
+    {
+     "lower": 1000.0,
+     "upper": 3000.0,
+     "count": 1
+    },
+    {
+     "lower": 3000.0,
+     "upper": 1000000000.0,
+     "count": 12
+    }
+   ]
+  },
+  "radius_bins_measured_non_transiting": {
+   "variable": "pl_rade (Earth radii)",
+   "n": 20,
+   "bins": [
+    {
+     "lower": 0.0,
+     "upper": 1.0,
+     "count": 2
+    },
+    {
+     "lower": 1.0,
+     "upper": 1.5,
+     "count": 1
+    },
+    {
+     "lower": 1.5,
+     "upper": 2.0,
+     "count": 1
+    },
+    {
+     "lower": 2.0,
+     "upper": 4.0,
+     "count": 1
+    },
+    {
+     "lower": 4.0,
+     "upper": 8.0,
+     "count": 0
+    },
+    {
+     "lower": 8.0,
+     "upper": 15.0,
+     "count": 10
+    },
+    {
+     "lower": 15.0,
+     "upper": 33.0,
+     "count": 5
+    }
+   ]
+  },
+  "log10_period_fine_measured_non_transiting": {
+   "variable": "log10 pl_orbper",
+   "n": 20,
+   "bins": [
+    {
+     "lower": -1.0,
+     "upper": -0.75,
+     "count": 0
+    },
+    {
+     "lower": -0.75,
+     "upper": -0.5,
+     "count": 1
+    },
+    {
+     "lower": -0.5,
+     "upper": -0.25,
+     "count": 1
+    },
+    {
+     "lower": -0.25,
+     "upper": 0.0,
+     "count": 0
+    },
+    {
+     "lower": 0.0,
+     "upper": 0.25,
+     "count": 0
+    },
+    {
+     "lower": 0.25,
+     "upper": 0.5,
+     "count": 1
+    },
+    {
+     "lower": 0.5,
+     "upper": 0.75,
+     "count": 0
+    },
+    {
+     "lower": 0.75,
+     "upper": 1.0,
+     "count": 0
+    },
+    {
+     "lower": 1.0,
+     "upper": 1.25,
+     "count": 0
+    },
+    {
+     "lower": 1.25,
+     "upper": 1.5,
+     "count": 1
+    },
+    {
+     "lower": 1.5,
+     "upper": 1.75,
+     "count": 2
+    },
+    {
+     "lower": 1.75,
+     "upper": 2.0,
+     "count": 0
+    },
+    {
+     "lower": 2.0,
+     "upper": 2.25,
+     "count": 0
+    },
+    {
+     "lower": 2.25,
+     "upper": 2.5,
+     "count": 0
+    },
+    {
+     "lower": 2.5,
+     "upper": 2.75,
+     "count": 0
+    },
+    {
+     "lower": 2.75,
+     "upper": 3.0,
+     "count": 1
+    },
+    {
+     "lower": 3.0,
+     "upper": 3.25,
+     "count": 0
+    },
+    {
+     "lower": 3.25,
+     "upper": 3.5,
+     "count": 1
+    },
+    {
+     "lower": 3.5,
+     "upper": 3.75,
+     "count": 0
+    },
+    {
+     "lower": 3.75,
+     "upper": 4.0,
+     "count": 1
+    },
+    {
+     "lower": 4.0,
+     "upper": 4.25,
+     "count": 1
+    },
+    {
+     "lower": 4.25,
+     "upper": 4.5,
+     "count": 1
+    },
+    {
+     "lower": 4.5,
+     "upper": 4.75,
+     "count": 3
+    },
+    {
+     "lower": 4.75,
+     "upper": 5.0,
+     "count": 1
+    },
+    {
+     "lower": 5.0,
+     "upper": 5.25,
+     "count": 2
+    },
+    {
+     "lower": 5.25,
+     "upper": 5.5,
+     "count": 0
+    },
+    {
+     "lower": 5.5,
+     "upper": 5.75,
+     "count": 0
+    },
+    {
+     "lower": 5.75,
+     "upper": 6.0,
+     "count": 0
+    },
+    {
+     "lower": 6.0,
+     "upper": 6.25,
+     "count": 0
+    },
+    {
+     "lower": 6.25,
+     "upper": 6.5,
+     "count": 0
+    },
+    {
+     "lower": 6.5,
+     "upper": 6.75,
+     "count": 0
+    },
+    {
+     "lower": 6.75,
+     "upper": 7.0,
+     "count": 2
+    },
+    {
+     "lower": 7.0,
+     "upper": 7.25,
+     "count": 0
+    },
+    {
+     "lower": 7.25,
+     "upper": 7.5,
+     "count": 0
+    },
+    {
+     "lower": 7.5,
+     "upper": 7.75,
+     "count": 0
+    },
+    {
+     "lower": 7.75,
+     "upper": 8.0,
+     "count": 0
+    },
+    {
+     "lower": 8.0,
+     "upper": 8.25,
+     "count": 0
+    },
+    {
+     "lower": 8.25,
+     "upper": 8.5,
+     "count": 0
+    },
+    {
+     "lower": 8.5,
+     "upper": 8.75,
+     "count": 1
+    }
+   ]
+  },
+  "log10_radius_fine_measured_non_transiting": {
+   "variable": "log10 pl_rade",
+   "n": 20,
+   "bins": [
+    {
+     "lower": -0.6,
+     "upper": -0.5,
+     "count": 0
+    },
+    {
+     "lower": -0.5,
+     "upper": -0.4,
+     "count": 0
+    },
+    {
+     "lower": -0.4,
+     "upper": -0.30000000000000004,
+     "count": 0
+    },
+    {
+     "lower": -0.30000000000000004,
+     "upper": -0.20000000000000007,
+     "count": 0
+    },
+    {
+     "lower": -0.20000000000000007,
+     "upper": -0.10000000000000009,
+     "count": 1
+    },
+    {
+     "lower": -0.10000000000000009,
+     "upper": -1.1102230246251565e-16,
+     "count": 1
+    },
+    {
+     "lower": -1.1102230246251565e-16,
+     "upper": 0.09999999999999987,
+     "count": 0
+    },
+    {
+     "lower": 0.09999999999999987,
+     "upper": 0.19999999999999984,
+     "count": 1
+    },
+    {
+     "lower": 0.19999999999999984,
+     "upper": 0.2999999999999998,
+     "count": 1
+    },
+    {
+     "lower": 0.2999999999999998,
+     "upper": 0.3999999999999998,
+     "count": 0
+    },
+    {
+     "lower": 0.3999999999999998,
+     "upper": 0.4999999999999998,
+     "count": 1
+    },
+    {
+     "lower": 0.4999999999999998,
+     "upper": 0.5999999999999998,
+     "count": 0
+    },
+    {
+     "lower": 0.5999999999999998,
+     "upper": 0.6999999999999997,
+     "count": 0
+    },
+    {
+     "lower": 0.6999999999999997,
+     "upper": 0.7999999999999997,
+     "count": 0
+    },
+    {
+     "lower": 0.7999999999999997,
+     "upper": 0.8999999999999997,
+     "count": 0
+    },
+    {
+     "lower": 0.8999999999999997,
+     "upper": 0.9999999999999997,
+     "count": 1
+    },
+    {
+     "lower": 0.9999999999999997,
+     "upper": 1.0999999999999996,
+     "count": 2
+    },
+    {
+     "lower": 1.0999999999999996,
+     "upper": 1.1999999999999997,
+     "count": 8
+    },
+    {
+     "lower": 1.1999999999999997,
+     "upper": 1.2999999999999996,
+     "count": 2
+    },
+    {
+     "lower": 1.2999999999999996,
+     "upper": 1.3999999999999995,
+     "count": 2
+    },
+    {
+     "lower": 1.3999999999999995,
+     "upper": 1.4999999999999996,
+     "count": 0
+    },
+    {
+     "lower": 1.4999999999999996,
+     "upper": 1.5999999999999996,
+     "count": 0
+    }
+   ]
+  },
+  "method_measured_non_transiting": {
+   "variable": "discoverymethod",
+   "n": 20,
+   "categories": [
+    {
+     "category": "Imaging",
+     "count": 13
+    },
+    {
+     "category": "Radial Velocity",
+     "count": 5
+    },
+    {
+     "category": "Orbital Brightness Modulation",
+     "count": 2
+    }
+   ]
+  },
+  "joint_cells_measured_non_transiting": {
+   "variable": "radius bin x period bin",
+   "n": 20,
+   "categories": [
+    {
+     "category": "R 0-1 Re | P 0.05-1 d",
+     "count": 2,
+     "share": 0.1,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 0-1 Re | P 1-3 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 0-1 Re | P 3-10 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 0-1 Re | P 10-30 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 0-1 Re | P 30-100 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 0-1 Re | P 100-300 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 0-1 Re | P 300-1000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 0-1 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 0-1 Re | P 3000-1e+09 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 0.0,
+     "radius_upper": 1,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 1-1.5 Re | P 0.05-1 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 1-1.5 Re | P 1-3 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 1-1.5 Re | P 3-10 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 1-1.5 Re | P 10-30 d",
+     "count": 1,
+     "share": 0.05,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 1-1.5 Re | P 30-100 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 1-1.5 Re | P 100-300 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 1-1.5 Re | P 300-1000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 1-1.5 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 1-1.5 Re | P 3000-1e+09 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1,
+     "radius_upper": 1.5,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 1.5-2 Re | P 0.05-1 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 1.5-2 Re | P 1-3 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 1.5-2 Re | P 3-10 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 1.5-2 Re | P 10-30 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 1.5-2 Re | P 30-100 d",
+     "count": 1,
+     "share": 0.05,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 1.5-2 Re | P 100-300 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 1.5-2 Re | P 300-1000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 1.5-2 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 1.5-2 Re | P 3000-1e+09 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 1.5,
+     "radius_upper": 2,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 2-4 Re | P 0.05-1 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 2-4 Re | P 1-3 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 2-4 Re | P 3-10 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 2-4 Re | P 10-30 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 2-4 Re | P 30-100 d",
+     "count": 1,
+     "share": 0.05,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 2-4 Re | P 100-300 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 2-4 Re | P 300-1000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 2-4 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 2-4 Re | P 3000-1e+09 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 2,
+     "radius_upper": 4,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 4-8 Re | P 0.05-1 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 4-8 Re | P 1-3 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 4-8 Re | P 3-10 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 4-8 Re | P 10-30 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 4-8 Re | P 30-100 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 4-8 Re | P 100-300 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 4-8 Re | P 300-1000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 4-8 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 4-8 Re | P 3000-1e+09 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 4,
+     "radius_upper": 8,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 8-15 Re | P 0.05-1 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 8-15 Re | P 1-3 d",
+     "count": 1,
+     "share": 0.05,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 8-15 Re | P 3-10 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 8-15 Re | P 10-30 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 8-15 Re | P 30-100 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 8-15 Re | P 100-300 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 8-15 Re | P 300-1000 d",
+     "count": 1,
+     "share": 0.05,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 8-15 Re | P 1000-3000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 8-15 Re | P 3000-1e+09 d",
+     "count": 8,
+     "share": 0.4,
+     "radius_lower": 8,
+     "radius_upper": 15,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    },
+    {
+     "category": "R 15-33 Re | P 0.05-1 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 0.05,
+     "period_upper": 1
+    },
+    {
+     "category": "R 15-33 Re | P 1-3 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 1,
+     "period_upper": 3
+    },
+    {
+     "category": "R 15-33 Re | P 3-10 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 3,
+     "period_upper": 10
+    },
+    {
+     "category": "R 15-33 Re | P 10-30 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 10,
+     "period_upper": 30
+    },
+    {
+     "category": "R 15-33 Re | P 30-100 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 30,
+     "period_upper": 100
+    },
+    {
+     "category": "R 15-33 Re | P 100-300 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 100,
+     "period_upper": 300
+    },
+    {
+     "category": "R 15-33 Re | P 300-1000 d",
+     "count": 0,
+     "share": 0.0,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 300,
+     "period_upper": 1000
+    },
+    {
+     "category": "R 15-33 Re | P 1000-3000 d",
+     "count": 1,
+     "share": 0.05,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 1000,
+     "period_upper": 3000
+    },
+    {
+     "category": "R 15-33 Re | P 3000-1e+09 d",
+     "count": 4,
+     "share": 0.2,
+     "radius_lower": 15,
+     "radius_upper": 33.0,
+     "period_lower": 3000,
+     "period_upper": 1000000000.0
+    }
+   ]
+  },
+  "radius_group_by_tran_flag_all6445": {
+   "variable": "radius_group x tran_flag",
+   "n": 6445,
+   "categories": [
+    {
+     "category": "calculated | tran_flag=0",
+     "count": 1537
+    },
+    {
+     "category": "measured_non_transiting | tran_flag=0",
+     "count": 48
+    },
+    {
+     "category": "measured_transiting | tran_flag=1",
+     "count": 4810
+    },
+    {
+     "category": "no_radius | tran_flag=0",
+     "count": 49
+    },
+    {
+     "category": "no_radius | tran_flag=1",
+     "count": 1
+    }
+   ]
+  },
+  "method_all_catalogue": {
+   "variable": "discoverymethod (all 6,445)",
+   "n": 6445,
+   "categories": [
+    {
+     "category": "Transit",
+     "count": 4781
+    },
+    {
+     "category": "Radial Velocity",
+     "count": 1203
+    },
+    {
+     "category": "Microlensing",
+     "count": 292
+    },
+    {
+     "category": "Imaging",
+     "count": 97
+    },
+    {
+     "category": "Transit Timing Variations",
+     "count": 29
+    },
+    {
+     "category": "Eclipse Timing Variations",
+     "count": 17
+    },
+    {
+     "category": "Orbital Brightness Modulation",
+     "count": 9
+    },
+    {
+     "category": "Pulsar Timing",
+     "count": 8
+    },
+    {
+     "category": "Astrometry",
+     "count": 6
+    },
+    {
+     "category": "Pulsation Timing Variations",
+     "count": 2
+    },
+    {
+     "category": "Disk Kinematics",
+     "count": 1
+    }
+   ]
+  },
+  "mass_provenance_calculated": {
+   "variable": "pl_bmassprov",
+   "n": 1215,
+   "categories": [
+    {
+     "category": "Msini",
+     "count": 876
+    },
+    {
+     "category": "Mass",
+     "count": 326
+    },
+    {
+     "category": "Msin(i)/sin(i)",
+     "count": 13
+    }
+   ]
+  }
+ },
+ "associations": {
+  "radius_period_all": {
+   "x": "log10 pl_orbper",
+   "y": "log10 pl_rade",
+   "method": "spearman",
+   "estimate": 0.3035123351906445,
+   "n": 6045,
+   "ci_lower": 0.2757610927617977,
+   "ci_upper": 0.329930518501747
+  },
+  "radius_period_calculated": {
+   "x": "log10 pl_orbper",
+   "y": "log10 pl_rade",
+   "method": "spearman",
+   "estimate": 0.4035947719178183,
+   "n": 1215,
+   "ci_lower": 0.3465373531761177,
+   "ci_upper": 0.4589662197091007
+  },
+  "radius_period_measured_transiting": {
+   "x": "log10 pl_orbper",
+   "y": "log10 pl_rade",
+   "method": "spearman",
+   "estimate": 0.08061674180871568,
+   "n": 4810,
+   "ci_lower": 0.048955191605088585,
+   "ci_upper": 0.11184624162636549
+  },
+  "radius_period_measured_non_transiting": {
+   "x": "log10 pl_orbper",
+   "y": "log10 pl_rade",
+   "method": "spearman",
+   "estimate": 0.6265067345894381,
+   "n": 20,
+   "ci_lower": 0.16195294051925305,
+   "ci_upper": 0.8717174845860715
+  },
+  "mass_radius_calculated": {
+   "x": "log10 pl_bmasse (Earth masses)",
+   "y": "log10 pl_rade",
+   "method": "spearman",
+   "estimate": 0.4666766133756856,
+   "n": 1215,
+   "ci_lower": 0.39702989200174105,
+   "ci_upper": 0.5307312154721965
+  },
+  "mass_radius_measured_transiting": {
+   "x": "log10 pl_bmasse (Earth masses)",
+   "y": "log10 pl_rade",
+   "method": "spearman",
+   "estimate": 0.9306588407546644,
+   "n": 4786
+  }
+ },
+ "groups": {
+  "all": {
+   "n": 6045,
+   "share_of_sample": 1.0,
+   "count": 6045
+  },
+  "calculated": {
+   "n": 1215,
+   "share_of_sample": 0.20099255583126552,
+   "count": 1215
+  },
+  "measured_transiting": {
+   "n": 4810,
+   "share_of_sample": 0.7956989247311828,
+   "count": 4810
+  },
+  "measured_non_transiting": {
+   "n": 20,
+   "share_of_sample": 0.0033085194375516956,
+   "count": 20
+  }
+ },
+ "comparisons": {
+  "calculated_minus_measured_transiting": {
+   "n_calculated": 1215,
+   "n_measured_transiting": 4810,
+   "lr_median_diff": {
+    "estimate": 0.7094354380141839,
+    "ci_lower": 0.7024305364455253,
+    "ci_upper": 0.7186202287574198,
+    "ratio_10_pow": 5.121951219512196
+   },
+   "lr_p10_diff": {
+    "estimate": 0.2751494766840037,
+    "ci_lower": 0.24096075224329333,
+    "ci_upper": 0.3113136900052073,
+    "ratio_10_pow": 1.884297520661157
+   },
+   "lr_p25_diff": {
+    "estimate": 0.43106914973838284,
+    "ci_lower": 0.37818510163741714,
+    "ci_upper": 0.5123008459269646,
+    "ratio_10_pow": 2.6981690092319153
+   },
+   "lr_p75_diff": {
+    "estimate": 0.5143465593026236,
+    "ci_lower": 0.48259385526368787,
+    "ci_upper": 0.543906024396185,
+    "ratio_10_pow": 3.2684854748586467
+   },
+   "lr_p90_diff": {
+    "estimate": 0.047796639932666585,
+    "ci_lower": 0.03488595096511511,
+    "ci_upper": 0.05627144078205748,
+    "ratio_10_pow": 1.116340394677741
+   },
+   "lr_ks_distance": 0.5343796788241233,
+   "lp_median_diff": {
+    "estimate": 1.653170074070384,
+    "ci_lower": 1.5621505382696186,
+    "ci_upper": 1.7230292431121688,
+    "ratio_10_pow": 44.995602768414905
+   },
+   "lp_p10_diff": {
+    "estimate": 0.488364701943652,
+    "ci_lower": 0.3959327462076298,
+    "ci_upper": 0.5823306893941299,
+    "ratio_10_pow": 3.0786810742932706
+   },
+   "lp_p25_diff": {
+    "estimate": 0.917002669447875,
+    "ci_lower": 0.8060811659321284,
+    "ci_upper": 1.0056715048260578,
+    "ratio_10_pow": 8.260430269431549
+   },
+   "lp_p75_diff": {
+    "estimate": 1.8321174067057047,
+    "ci_lower": 1.7748952231243222,
+    "ci_upper": 1.9422974208834747,
+    "ratio_10_pow": 67.93872726221346
+   },
+   "lp_p90_diff": {
+    "estimate": 2.0095703120548523,
+    "ci_lower": 1.9117579912130467,
+    "ci_upper": 2.0722167628138957,
+    "ratio_10_pow": 102.22810539836867
+   },
+   "lp_ks_distance": 0.6125809570254015
+  },
+  "cell_share_differences": [
+   {
+    "cell": "R 0-1 Re | P 0.05-1 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.007484407484407485,
+    "diff_pp": -0.7484407484407485
+   },
+   {
+    "cell": "R 0-1 Re | P 1-3 d",
+    "share_calculated": 0.0016460905349794238,
+    "share_measured_transiting": 0.01101871101871102,
+    "diff_pp": -0.9372620483731595
+   },
+   {
+    "cell": "R 0-1 Re | P 3-10 d",
+    "share_calculated": 0.0032921810699588477,
+    "share_measured_transiting": 0.020374220374220375,
+    "diff_pp": -1.7082039304261527
+   },
+   {
+    "cell": "R 0-1 Re | P 10-30 d",
+    "share_calculated": 0.0016460905349794238,
+    "share_measured_transiting": 0.006444906444906445,
+    "diff_pp": -0.47988159099270217
+   },
+   {
+    "cell": "R 0-1 Re | P 30-100 d",
+    "share_calculated": 0.0008230452674897119,
+    "share_measured_transiting": 0.0004158004158004158,
+    "diff_pp": 0.04072448516892961
+   },
+   {
+    "cell": "R 0-1 Re | P 100-300 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0,
+    "diff_pp": 0.0
+   },
+   {
+    "cell": "R 0-1 Re | P 300-1000 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0,
+    "diff_pp": 0.0
+   },
+   {
+    "cell": "R 0-1 Re | P 1000-3000 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0,
+    "diff_pp": 0.0
+   },
+   {
+    "cell": "R 0-1 Re | P 3000-1e+09 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0,
+    "diff_pp": 0.0
+   },
+   {
+    "cell": "R 1-1.5 Re | P 0.05-1 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.013305613305613306,
+    "diff_pp": -1.3305613305613306
+   },
+   {
+    "cell": "R 1-1.5 Re | P 1-3 d",
+    "share_calculated": 0.0049382716049382715,
+    "share_measured_transiting": 0.0316008316008316,
+    "diff_pp": -2.666255999589333
+   },
+   {
+    "cell": "R 1-1.5 Re | P 3-10 d",
+    "share_calculated": 0.014814814814814815,
+    "share_measured_transiting": 0.06860706860706861,
+    "diff_pp": -5.37922537922538
+   },
+   {
+    "cell": "R 1-1.5 Re | P 10-30 d",
+    "share_calculated": 0.012345679012345678,
+    "share_measured_transiting": 0.030353430353430355,
+    "diff_pp": -1.8007751341084677
+   },
+   {
+    "cell": "R 1-1.5 Re | P 30-100 d",
+    "share_calculated": 0.0032921810699588477,
+    "share_measured_transiting": 0.006237006237006237,
+    "diff_pp": -0.29448251670473896
+   },
+   {
+    "cell": "R 1-1.5 Re | P 100-300 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0012474012474012475,
+    "diff_pp": -0.12474012474012475
+   },
+   {
+    "cell": "R 1-1.5 Re | P 300-1000 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0,
+    "diff_pp": 0.0
+   },
+   {
+    "cell": "R 1-1.5 Re | P 1000-3000 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0,
+    "diff_pp": 0.0
+   },
+   {
+    "cell": "R 1-1.5 Re | P 3000-1e+09 d",
+    "share_calculated": 0.0016460905349794238,
+    "share_measured_transiting": 0.0,
+    "diff_pp": 0.1646090534979424
+   },
+   {
+    "cell": "R 1.5-2 Re | P 0.05-1 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.007484407484407485,
+    "diff_pp": -0.7484407484407485
+   },
+   {
+    "cell": "R 1.5-2 Re | P 1-3 d",
+    "share_calculated": 0.0032921810699588477,
+    "share_measured_transiting": 0.021621621621621623,
+    "diff_pp": -1.8329440551662772
+   },
+   {
+    "cell": "R 1.5-2 Re | P 3-10 d",
+    "share_calculated": 0.011522633744855968,
+    "share_measured_transiting": 0.06340956340956341,
+    "diff_pp": -5.188692966470745
+   },
+   {
+    "cell": "R 1.5-2 Re | P 10-30 d",
+    "share_calculated": 0.010699588477366255,
+    "share_measured_transiting": 0.045322245322245325,
+    "diff_pp": -3.462265684487907
+   },
+   {
+    "cell": "R 1.5-2 Re | P 30-100 d",
+    "share_calculated": 0.00411522633744856,
+    "share_measured_transiting": 0.012474012474012475,
+    "diff_pp": -0.8358786136563915
+   },
+   {
+    "cell": "R 1.5-2 Re | P 100-300 d",
+    "share_calculated": 0.0008230452674897119,
+    "share_measured_transiting": 0.002494802494802495,
+    "diff_pp": -0.16717572273127831
+   },
+   {
+    "cell": "R 1.5-2 Re | P 300-1000 d",
+    "share_calculated": 0.0008230452674897119,
+    "share_measured_transiting": 0.0002079002079002079,
+    "diff_pp": 0.0615145059589504
+   },
+   {
+    "cell": "R 1.5-2 Re | P 1000-3000 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0,
+    "diff_pp": 0.0
+   },
+   {
+    "cell": "R 1.5-2 Re | P 3000-1e+09 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0,
+    "diff_pp": 0.0
+   },
+   {
+    "cell": "R 2-4 Re | P 0.05-1 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0014553014553014554,
+    "diff_pp": -0.14553014553014554
+   },
+   {
+    "cell": "R 2-4 Re | P 1-3 d",
+    "share_calculated": 0.0049382716049382715,
+    "share_measured_transiting": 0.018295218295218296,
+    "diff_pp": -1.3356946690280025
+   },
+   {
+    "cell": "R 2-4 Re | P 3-10 d",
+    "share_calculated": 0.04197530864197531,
+    "share_measured_transiting": 0.12744282744282745,
+    "diff_pp": -8.546751880085214
+   },
+   {
+    "cell": "R 2-4 Re | P 10-30 d",
+    "share_calculated": 0.04609053497942387,
+    "share_measured_transiting": 0.15384615384615385,
+    "diff_pp": -10.775561886673
+   },
+   {
+    "cell": "R 2-4 Re | P 30-100 d",
+    "share_calculated": 0.03786008230452675,
+    "share_measured_transiting": 0.07442827442827443,
+    "diff_pp": -3.6568192123747685
+   },
+   {
+    "cell": "R 2-4 Re | P 100-300 d",
+    "share_calculated": 0.01810699588477366,
+    "share_measured_transiting": 0.017671517671517672,
+    "diff_pp": 0.04354782132559888
+   },
+   {
+    "cell": "R 2-4 Re | P 300-1000 d",
+    "share_calculated": 0.0024691358024691358,
+    "share_measured_transiting": 0.002079002079002079,
+    "diff_pp": 0.03901337234670566
+   },
+   {
+    "cell": "R 2-4 Re | P 1000-3000 d",
+    "share_calculated": 0.0024691358024691358,
+    "share_measured_transiting": 0.0,
+    "diff_pp": 0.24691358024691357
+   },
+   {
+    "cell": "R 2-4 Re | P 3000-1e+09 d",
+    "share_calculated": 0.0008230452674897119,
+    "share_measured_transiting": 0.0,
+    "diff_pp": 0.0823045267489712
+   },
+   {
+    "cell": "R 4-8 Re | P 0.05-1 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0006237006237006237,
+    "diff_pp": -0.062370062370062374
+   },
+   {
+    "cell": "R 4-8 Re | P 1-3 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0035343035343035345,
+    "diff_pp": -0.35343035343035345
+   },
+   {
+    "cell": "R 4-8 Re | P 3-10 d",
+    "share_calculated": 0.009876543209876543,
+    "share_measured_transiting": 0.026611226611226613,
+    "diff_pp": -1.6734683401350072
+   },
+   {
+    "cell": "R 4-8 Re | P 10-30 d",
+    "share_calculated": 0.013991769547325103,
+    "share_measured_transiting": 0.01787941787941788,
+    "diff_pp": -0.38876483320927774
+   },
+   {
+    "cell": "R 4-8 Re | P 30-100 d",
+    "share_calculated": 0.030452674897119343,
+    "share_measured_transiting": 0.01288981288981289,
+    "diff_pp": 1.7562862007306452
+   },
+   {
+    "cell": "R 4-8 Re | P 100-300 d",
+    "share_calculated": 0.00905349794238683,
+    "share_measured_transiting": 0.0060291060291060294,
+    "diff_pp": 0.3024391913280801
+   },
+   {
+    "cell": "R 4-8 Re | P 300-1000 d",
+    "share_calculated": 0.006584362139917695,
+    "share_measured_transiting": 0.0012474012474012475,
+    "diff_pp": 0.5336960892516448
+   },
+   {
+    "cell": "R 4-8 Re | P 1000-3000 d",
+    "share_calculated": 0.0008230452674897119,
+    "share_measured_transiting": 0.0002079002079002079,
+    "diff_pp": 0.0615145059589504
+   },
+   {
+    "cell": "R 4-8 Re | P 3000-1e+09 d",
+    "share_calculated": 0.0024691358024691358,
+    "share_measured_transiting": 0.0,
+    "diff_pp": 0.24691358024691357
+   },
+   {
+    "cell": "R 8-15 Re | P 0.05-1 d",
+    "share_calculated": 0.0008230452674897119,
+    "share_measured_transiting": 0.0016632016632016633,
+    "diff_pp": -0.08401563957119514
+   },
+   {
+    "cell": "R 8-15 Re | P 1-3 d",
+    "share_calculated": 0.00823045267489712,
+    "share_measured_transiting": 0.029313929313929316,
+    "diff_pp": -2.1083476639032197
+   },
+   {
+    "cell": "R 8-15 Re | P 3-10 d",
+    "share_calculated": 0.02962962962962963,
+    "share_measured_transiting": 0.07276507276507277,
+    "diff_pp": -4.3135443135443134
+   },
+   {
+    "cell": "R 8-15 Re | P 10-30 d",
+    "share_calculated": 0.023045267489711935,
+    "share_measured_transiting": 0.0158004158004158,
+    "diff_pp": 0.7244851689296135
+   },
+   {
+    "cell": "R 8-15 Re | P 30-100 d",
+    "share_calculated": 0.03868312757201646,
+    "share_measured_transiting": 0.010602910602910603,
+    "diff_pp": 2.808021696910586
+   },
+   {
+    "cell": "R 8-15 Re | P 100-300 d",
+    "share_calculated": 0.08888888888888889,
+    "share_measured_transiting": 0.006860706860706861,
+    "diff_pp": 8.202818202818204
+   },
+   {
+    "cell": "R 8-15 Re | P 300-1000 d",
+    "share_calculated": 0.21728395061728395,
+    "share_measured_transiting": 0.0018711018711018712,
+    "diff_pp": 21.541284874618206
+   },
+   {
+    "cell": "R 8-15 Re | P 1000-3000 d",
+    "share_calculated": 0.14979423868312758,
+    "share_measured_transiting": 0.0008316008316008316,
+    "diff_pp": 14.896263785152675
+   },
+   {
+    "cell": "R 8-15 Re | P 3000-1e+09 d",
+    "share_calculated": 0.13991769547325103,
+    "share_measured_transiting": 0.0002079002079002079,
+    "diff_pp": 13.970979526535082
+   },
+   {
+    "cell": "R 15-33 Re | P 0.05-1 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0010395010395010396,
+    "diff_pp": -0.10395010395010396
+   },
+   {
+    "cell": "R 15-33 Re | P 1-3 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.01787941787941788,
+    "diff_pp": -1.787941787941788
+   },
+   {
+    "cell": "R 15-33 Re | P 3-10 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.026195426195426197,
+    "diff_pp": -2.61954261954262
+   },
+   {
+    "cell": "R 15-33 Re | P 10-30 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0002079002079002079,
+    "diff_pp": -0.02079002079002079
+   },
+   {
+    "cell": "R 15-33 Re | P 30-100 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0002079002079002079,
+    "diff_pp": -0.02079002079002079
+   },
+   {
+    "cell": "R 15-33 Re | P 100-300 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0002079002079002079,
+    "diff_pp": -0.02079002079002079
+   },
+   {
+    "cell": "R 15-33 Re | P 300-1000 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0,
+    "diff_pp": 0.0
+   },
+   {
+    "cell": "R 15-33 Re | P 1000-3000 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0,
+    "diff_pp": 0.0
+   },
+   {
+    "cell": "R 15-33 Re | P 3000-1e+09 d",
+    "share_calculated": 0.0,
+    "share_measured_transiting": 0.0,
+    "diff_pp": 0.0
+   }
+  ],
+  "robust_excl_limit_flagged": {
+   "n_calculated": 1213,
+   "n_measured_transiting": 4807,
+   "lr_median_diff": {
+    "estimate": 0.7094354380141839,
+    "ci_lower": 0.7024305364455253,
+    "ci_upper": 0.7196918170458008,
+    "ratio_10_pow": 5.121951219512196
+   },
+   "lr_p10_diff": {
+    "estimate": 0.2751494766840037,
+    "ci_lower": 0.24190776610745435,
+    "ci_upper": 0.3081497367869291,
+    "ratio_10_pow": 1.884297520661157
+   },
+   "lr_p25_diff": {
+    "estimate": 0.430578421301394,
+    "ci_lower": 0.37668002202538753,
+    "ci_upper": 0.508833659369194,
+    "ratio_10_pow": 2.6951219512195124
+   },
+   "lr_p75_diff": {
+    "estimate": 0.5159130628161969,
+    "ci_lower": 0.48349659750911456,
+    "ci_upper": 0.543906024396185,
+    "ratio_10_pow": 3.2802962148420756
+   },
+   "lr_p90_diff": {
+    "estimate": 0.048124603247444275,
+    "ci_lower": 0.03620339783561244,
+    "ci_upper": 0.05629913630921268,
+    "ratio_10_pow": 1.1171837325188876
+   },
+   "lr_ks_distance": 0.5341492406563593,
+   "lp_median_diff": {
+    "estimate": 1.652733073727801,
+    "ci_lower": 1.5632629871227652,
+    "ci_upper": 1.717874056917649,
+    "ratio_10_pow": 44.95034959307269
+   },
+   "lp_p10_diff": {
+    "estimate": 0.48771999764166535,
+    "ci_lower": 0.3979854505777669,
+    "ci_upper": 0.5784206639839709,
+    "ratio_10_pow": 3.0741142043211673
+   },
+   "lp_p25_diff": {
+    "estimate": 0.914500244592652,
+    "ci_lower": 0.8074318591590918,
+    "ci_upper": 1.0059971766241662,
+    "ratio_10_pow": 8.212970153851206
+   },
+   "lp_p75_diff": {
+    "estimate": 1.8323302706800098,
+    "ci_lower": 1.7776346546620012,
+    "ci_upper": 1.939253991034571,
+    "ratio_10_pow": 67.97203473626179
+   },
+   "lp_p90_diff": {
+    "estimate": 2.0095694303676885,
+    "ci_lower": 1.9182508719520313,
+    "ci_upper": 2.0737794154087568,
+    "ratio_10_pow": 102.22789785919751
+   },
+   "lp_ks_distance": 0.6120212159685372,
+   "n_dropped": 7
+  },
+  "robust_period_le_1000d": {
+   "n_calculated": 855,
+   "n_measured_transiting": 4804,
+   "lr_median_diff": {
+    "estimate": 0.698970004336019,
+    "ci_lower": 0.6532022481523282,
+    "ci_upper": 0.7113037394097442,
+    "ratio_10_pow": 5.000000000000002
+   },
+   "lr_p10_diff": {
+    "estimate": 0.19824799693127748,
+    "ci_lower": 0.16451950675765128,
+    "ci_upper": 0.24919950831017093,
+    "ratio_10_pow": 1.578512396694215
+   },
+   "lr_p25_diff": {
+    "estimate": 0.2970395129311765,
+    "ci_lower": 0.257058681995379,
+    "ci_upper": 0.33311246176954346,
+    "ratio_10_pow": 1.9817073170731707
+   },
+   "lr_p75_diff": {
+    "estimate": 0.5175103891395877,
+    "ci_lower": 0.48855922407398905,
+    "ci_upper": 0.5484868336517621,
+    "ratio_10_pow": 3.292383292383293
+   },
+   "lr_p90_diff": {
+    "estimate": 0.047503786594626174,
+    "ci_lower": 0.03569916086367124,
+    "ci_upper": 0.05707350669022904,
+    "ratio_10_pow": 1.1155878780704505
+   },
+   "lr_ks_distance": 0.44635878483330166,
+   "lp_median_diff": {
+    "estimate": 1.069199310101646,
+    "ci_lower": 0.9265372897290286,
+    "ci_upper": 1.1880866264765233,
+    "ratio_10_pow": 11.7273344283258
+   },
+   "lp_p10_diff": {
+    "estimate": 0.36012070754613845,
+    "ci_lower": 0.3013412337863313,
+    "ci_upper": 0.4110581921642461,
+    "ratio_10_pow": 2.291504463633616
+   },
+   "lp_p25_diff": {
+    "estimate": 0.5749730319415505,
+    "ci_lower": 0.5241885673803071,
+    "ci_upper": 0.650563899757264,
+    "ratio_10_pow": 3.7581406691985286
+   },
+   "lp_p75_diff": {
+    "estimate": 1.3461485780218465,
+    "ci_lower": 1.2969672333300923,
+    "ci_upper": 1.394299370758342,
+    "ratio_10_pow": 22.189554246514458
+   },
+   "lp_p90_diff": {
+    "estimate": 1.1644583830236737,
+    "ci_lower": 1.1207879079652237,
+    "ci_upper": 1.2203319663237886,
+    "ratio_10_pow": 14.60354801858136
+   },
+   "lp_ks_distance": 0.4976019009499881
+  }
+ },
+ "bootstrap": {
+  "resamples": 2000,
+  "seed": 20261013,
+  "method": "percentile"
+ },
+ "quantile_definition": "numpy default (Hyndman-Fan type 7)",
+ "figures": [
+  "fig_radius_period_all.pdf",
+  "fig_radius_period_by_group.pdf",
+  "fig_marginals_by_group.pdf",
+  "fig_mass_radius_calculated.pdf"
+ ]
+}

@@ -1,0 +1,145 @@
+{
+  "study": "Distribution of confirmed exoplanets in planet radius and orbital period; transit-measured versus mass-calculated radii",
+  "declared_on": "2026-10-13",
+  "tables": [
+    {
+      "name": "planets",
+      "source": "exoplanets",
+      "catalogue": "pscomppars",
+      "series": "confirmed exoplanets, NASA Exoplanet Archive Planetary Systems Composite Parameters (pscomppars)",
+      "frequency": "static snapshot (no releases; load date recorded in data_sources.json)",
+      "role": "raw table: one row per confirmed planet, archive-preferred value per column. Never overwritten.",
+      "load": "e2er-data exoplanets planets --catalogue pscomppars --columns pl_name,hostname,discoverymethod,disc_year,pl_orbper,pl_orbperlim,pl_orbper_reflink,pl_rade,pl_radelim,pl_rade_reflink,pl_radj,pl_bmasse,pl_bmassj,pl_bmassprov,pl_bmasse_reflink,tran_flag,rv_flag,sy_snum,sy_pnum,st_teff,sy_dist --table planets --save-to planets.csv",
+      "key": ["pl_name"],
+      "coverage": {"column": "disc_year", "from": 1992, "to": 2026},
+      "columns": [
+        {"name": "pl_name", "type": "TEXT", "unit": "none", "description": "planet name (unique in pscomppars)"},
+        {"name": "hostname", "type": "TEXT", "unit": "none", "description": "name of the host star"},
+        {"name": "discoverymethod", "type": "TEXT", "unit": "none", "description": "discovery method as the archive writes it (Transit, Radial Velocity, Microlensing, Imaging, Transit Timing Variations, Astrometry, ...); case-sensitive"},
+        {"name": "disc_year", "type": "INTEGER", "unit": "year", "description": "year of discovery", "expected_range": [1992, 2026]},
+        {"name": "pl_orbper", "type": "REAL", "unit": "days", "description": "orbital period", "expected_range": [0.09, 402000000],
+         "min_non_null": 0.9,
+         "missing": "353 of 6,445 planets have no period (microlensing, imaging, pulsar timing, disk kinematics: none published). Period statistics use the planets with a period; n and the share missing are reported; nothing is filled in."},
+        {"name": "pl_orbperlim", "type": "INTEGER", "unit": "none", "description": "limit flag of the period: 1 = upper limit, -1 = lower limit, 0 = value", "expected_range": [-1, 1],
+         "min_non_null": 0.9,
+         "missing": "empty exactly where pl_orbper is empty (353 planets), because there is no period to flag. Nonzero flags (6 planets) are counted and handled as stated in the plan; empty cells are not recoded to 0."},
+        {"name": "pl_orbper_reflink", "type": "TEXT", "unit": "none", "description": "reference (HTML link text) of the paper giving the period; provenance label only",
+         "min_non_null": 0.9,
+         "missing": "empty exactly where pl_orbper is empty (353 planets); not analysed"},
+        {"name": "pl_rade", "type": "REAL", "unit": "Earth radii", "description": "planet radius; the archive's preferred value, either measured or calculated from mass (see radius_provenance)", "expected_range": [0.3, 90],
+         "min_non_null": 0.9,
+         "missing": "50 of 6,445 planets have no radius (group no_radius: mostly radial-velocity-only planets without a usable mass-radius calculation). Radius statistics use the planets with a radius; share reported."},
+        {"name": "pl_radelim", "type": "INTEGER", "unit": "none", "description": "limit flag of the radius: 1 = upper limit, -1 = lower limit, 0 = value", "expected_range": [-1, 1],
+         "min_non_null": 0.9,
+         "missing": "empty exactly where pl_rade is empty (50 planets). Nonzero flags (5 planets) are counted and handled as stated in the plan."},
+        {"name": "pl_rade_reflink", "type": "TEXT", "unit": "none", "description": "reference of the radius, HTML text; contains refstr=CALCULATED_VALUE (link text 'Calculated Value') where the archive calculated the radius from mass; basis of the primary provenance rule",
+         "min_non_null": 0.9,
+         "missing": "empty exactly where pl_rade is empty (50 planets)"},
+        {"name": "pl_radj", "type": "REAL", "unit": "Jupiter radii", "description": "planet radius in Jupiter radii (pl_rade / 11.209); cross-check only", "expected_range": [0.03, 8],
+         "min_non_null": 0.9,
+         "missing": "as pl_rade"},
+        {"name": "pl_bmasse", "type": "REAL", "unit": "Earth masses", "description": "best mass estimate: true mass, M*sin(i), or a mass from a mass-radius relation (see pl_bmassprov)", "expected_range": [0.02, 13000],
+         "min_non_null": 0.9,
+         "missing": "31 of 6,445 planets have no mass; mass-radius diagnostic uses the planets with a mass, n reported"},
+        {"name": "pl_bmassj", "type": "REAL", "unit": "Jupiter masses", "description": "pl_bmasse in Jupiter masses (divide by 317.83)", "expected_range": [6e-05, 40],
+         "min_non_null": 0.9,
+         "missing": "as pl_bmasse"},
+        {"name": "pl_bmassprov", "type": "TEXT", "unit": "none", "description": "provenance of pl_bmasse: 'Mass', 'Msini', 'Msin(i)/sin(i)'. Not to be mixed silently in the mass-radius diagnostic."},
+        {"name": "pl_bmasse_reflink", "type": "TEXT", "unit": "none", "description": "reference of the paper giving the mass",
+         "min_non_null": 0.9,
+         "missing": "empty where pl_bmasse is empty (31 planets)"},
+        {"name": "tran_flag", "type": "INTEGER", "unit": "none", "description": "1 if the planet is known to transit, 0 otherwise (archive column tran_flag; not tr_flag, which does not exist)", "expected_range": [0, 1]},
+        {"name": "rv_flag", "type": "INTEGER", "unit": "none", "description": "1 if the planet has radial-velocity data, 0 otherwise", "expected_range": [0, 1]},
+        {"name": "sy_snum", "type": "INTEGER", "unit": "none", "description": "number of stars in the system", "expected_range": [1, 4]},
+        {"name": "sy_pnum", "type": "INTEGER", "unit": "none", "description": "number of confirmed planets in the system", "expected_range": [1, 8]},
+        {"name": "st_teff", "type": "REAL", "unit": "K", "description": "host effective temperature", "expected_range": [400, 57000],
+         "min_non_null": 0.9,
+         "missing": "307 hosts lack a temperature (brown dwarfs, pulsars, some microlensing hosts); used only for host-type splits, with n reported"},
+        {"name": "sy_dist", "type": "REAL", "unit": "pc", "description": "distance to the system", "expected_range": [1, 9000],
+         "min_non_null": 0.9,
+         "missing": "28 planets lack a distance; used with rows that have a value"}
+      ],
+      "dedup": "pscomppars has one row per planet; verified: 6,445 rows, 6,445 distinct pl_name. Nothing removed.",
+      "licence": "No licence stated. Acknowledgement page (https://exoplanetarchive.ipac.caltech.edu/docs/acknowledge.html) asks for the standard acknowledgement (see top-level 'acknowledgement'), for citing Christiansen et al. (2025), and for acknowledging specific literature references directly.",
+      "citation": "Christiansen, J. L., McElroy, D. L., Harbut, M., et al. (2025). The NASA Exoplanet Archive and Exoplanet Follow-up Observing Program: Data, Tools, and Usage. The Planetary Science Journal, 6(8), 186. https://doi.org/10.3847/PSJ/ade3c2. Data: NASA Exoplanet Science Institute, Planetary Systems Composite Parameters, IPAC, https://doi.org/10.26133/NEA13.",
+      "provenance": "NASA Exoplanet Archive (NASA Exoplanet Science Institute, IPAC/Caltech), TAP service, table pscomppars",
+      "source_files": [
+        {
+          "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=select+pl_name%2C+hostname%2C+discoverymethod%2C+disc_year%2C+pl_orbper%2C+pl_orbperlim%2C+pl_orbper_reflink%2C+pl_rade%2C+pl_radelim%2C+pl_rade_reflink%2C+pl_radj%2C+pl_bmasse%2C+pl_bmassj%2C+pl_bmassprov%2C+pl_bmasse_reflink%2C+tran_flag%2C+rv_flag%2C+sy_snum%2C+sy_pnum%2C+st_teff%2C+sy_dist+from+pscomppars+order+by+pl_name&MAXREC=100001",
+          "sha256": "2d66daacb3404319913e6b5987a2d0ba83a0d25ebc9a923cef5e917fee5c13d9"
+        }
+      ],
+      "cite_key": "Christiansen2025_NEA"
+    },
+    {
+      "name": "planets_classified",
+      "source": "exoplanets",
+      "derived_from": "planets",
+      "catalogue": "pscomppars",
+      "series": "planets plus derived radius-provenance group, limit-flag indicators, sample indicator and log10 columns",
+      "frequency": "static snapshot (same as planets)",
+      "role": "analysis table: all columns of planets, unchanged, plus derived columns. Built from the raw table by a cleaning script; planets is not overwritten. No further web data.",
+      "key": ["pl_name"],
+      "coverage": {"column": "disc_year", "from": 1992, "to": 2026},
+      "inherited_columns": "pl_name, hostname, discoverymethod, disc_year, pl_orbper, pl_orbperlim, pl_orbper_reflink, pl_rade, pl_radelim, pl_rade_reflink, pl_radj, pl_bmasse, pl_bmassj, pl_bmassprov, pl_bmasse_reflink, tran_flag, rv_flag, sy_snum, sy_pnum, st_teff, sy_dist: definitions, units and missing-value notes as in planets (same values, 6,445 rows)",
+      "columns": [
+        {"name": "pl_name", "type": "TEXT", "unit": "none", "description": "planet name"},
+        {"name": "pl_orbper", "type": "REAL", "unit": "days", "description": "orbital period (as planets)", "min_non_null": 0.9,
+         "missing": "353 planets without period, as planets"},
+        {"name": "pl_rade", "type": "REAL", "unit": "Earth radii", "description": "planet radius (as planets)", "min_non_null": 0.9,
+         "missing": "50 planets without radius, as planets"},
+        {"name": "radius_group", "type": "TEXT", "unit": "none",
+         "description": "radius provenance, primary rule. calculated: pl_rade_reflink contains CALCULATED_VALUE; measured_transiting: radius not calculated and tran_flag = 1; measured_non_transiting: radius not calculated and tran_flag = 0; no_radius: pl_rade is null. Four values, no missing.",
+         "allowed_values": ["calculated", "measured_transiting", "measured_non_transiting", "no_radius"]},
+        {"name": "rad_limit_flagged", "type": "INTEGER", "unit": "none", "description": "1 if pl_radelim is nonzero (radius is an upper or lower limit), else 0", "expected_range": [0, 1]},
+        {"name": "per_limit_flagged", "type": "INTEGER", "unit": "none", "description": "1 if pl_orbperlim is nonzero (period is a limit), else 0", "expected_range": [0, 1]},
+        {"name": "in_rp_sample", "type": "INTEGER", "unit": "none", "description": "1 if the planet has both pl_rade and pl_orbper (> 0); the radius-period sample (6,045 planets); limit-flagged rows are kept in it and handled as stated in the plan", "expected_range": [0, 1]},
+        {"name": "log10_rade", "type": "REAL", "unit": "log10(Earth radii)", "description": "log10 of pl_rade", "min_non_null": 0.9,
+         "missing": "null exactly where pl_rade is null (50 planets)"},
+        {"name": "log10_orbper", "type": "REAL", "unit": "log10(days)", "description": "log10 of pl_orbper", "min_non_null": 0.9,
+         "missing": "null exactly where pl_orbper is null (353 planets)"}
+      ],
+      "dedup": "one row per pl_name as in planets: 6,445 rows",
+      "cite_key": "Christiansen2025_NEA"
+    }
+  ],
+  "radius_provenance": {
+    "primary_rule": "calculated = pl_rade IS NOT NULL AND pl_rade_reflink contains 'CALCULATED_VALUE' (the archive's own label, documented at https://exoplanetarchive.ipac.caltech.edu/docs/pscp_calc.html; mass-radius relation of Chen and Kipping 2017). Otherwise a radius is measured: measured_transiting if tran_flag = 1, measured_non_transiting if tran_flag = 0. no_radius = pl_rade IS NULL. This rule replaces Section 4 of paper_plan.md.",
+    "groups_and_counts_in_data_db": {
+      "calculated": "1,537 (all tran_flag = 0; 1,215 of them have a period and so are in the radius-period sample; 322 have no period)",
+      "measured_transiting": "4,810 (all in the radius-period sample)",
+      "measured_non_transiting": "48 (imaging 41, orbital brightness modulation 2, radial velocity 5); 20 have a period. Reported as its own group; never described as measured from a transit.",
+      "no_radius": "50 (49 with tran_flag = 0, 1 with tran_flag = 1); excluded from radius statistics but counted",
+      "radius_period_sample": "6,045 planets with radius and period"
+    },
+    "note_on_probe": "The researcher's probe expected about 97 non-transiting planets with a measured radius; data.db holds 48 in measured_non_transiting plus 49 with tran_flag = 0 and no radius (48 + 49 = 97). The paper uses the counts from data.db.",
+    "cross_tabulation": "Report planets by radius_group x tran_flag and by radius_group x discoverymethod, including no_radius.",
+    "main_comparison": "calculated versus measured_transiting",
+    "supporting_fields": ["tran_flag", "discoverymethod", "pl_rade_reflink", "pl_bmassprov"],
+    "no_hand_coding": "No reference-by-reference hand coding and no manual validation sample: the rule is mechanical and uses only the archive's label.",
+    "limit_flags": "pl_radelim and pl_orbperlim are loaded. Nonzero flags: radius 5 planets, period 6 planets; 7 planets in the radius-period sample carry at least one. They are counted and handled in the analysis as stated there."
+  },
+  "excluded_tables": {
+    "ps": "Not loaded. The ps table (default_flag = 1) has no per-parameter radius reference column like pscomppars.pl_rade_reflink, only one pl_refname per solution, so the CALCULATED_VALUE rule cannot be applied to it. It is left out rather than classified by a different rule; there is no ps robustness table.",
+    "pl_controv_flag": "Not loaded."
+  },
+  "sample_notes": [
+    "Controversial planets are not excluded: pl_controv_flag is not loaded, so planets the archive marks as controversial stay in the sample. The paper says so in the sample description.",
+    "The sample is the confirmed-planet table of the archive as of the load date (6,445 planets), not a random sample of planets and not the planet population.",
+    "pscomppars takes each column from the preferred paper, so radius, mass and period of one planet can come from different papers (see the *_reflink columns); the paper states this as a limit."
+  ],
+  "mass_handling": {
+    "pl_bmasse": "Best mass. Do not mix kinds silently: split by pl_bmassprov. 'Msini' values are lower limits on the true mass; 'Mass' values are true masses. Used only in the mass-radius diagnostic for the calculated group.",
+    "limit_columns": "pl_bmasselim is not loaded."
+  },
+  "deduplication": {
+    "unit": "one planet = one pl_name",
+    "primary": "planets (pscomppars): one row per planet; verified 6,445 rows and 6,445 distinct names.",
+    "forbidden": "ps with --all-solutions (several rows per planet) must not be used for counts."
+  },
+  "units_note": "pl_orbper days; pl_rade Earth radii (1 R_Jup = 11.209 R_Earth); pl_bmasse Earth masses (1 M_Jup = 317.83 M_Earth); st_teff K; sy_dist pc. Observed ranges in data.db: pl_orbper 0.0907 to 4.02e8 d, pl_rade 0.31 to 87.2 R_Earth, pl_bmasse 0.02 to 9,535 M_Earth.",
+  "selection_effects": "Transits favour short periods and large planets; radial velocity favours massive planets and short periods; imaging favours wide, young, massive planets. Calculated radii exist for planets with a mass, mostly found by radial velocity or microlensing, so the two radius groups differ systematically in method and in the planets they reach. The distributions describe the confirmed-planet table, not the planet population.",
+  "citations": ["Christiansen2025_NEA", "NEA_PSCompPars"],
+  "acknowledgement": "This research has made use of the NASA Exoplanet Archive, which is operated by the California Institute of Technology, under contract with the National Aeronautics and Space Administration under the Exoplanet Exploration Program.",
+  "unavailable": []
+}

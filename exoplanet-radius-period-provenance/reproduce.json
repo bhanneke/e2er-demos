@@ -1,0 +1,49 @@
+{
+  "schema": "e2er-reproduce/1",
+  "about": "Written by e2er at export (2026-10-15) from what the run recorded: the scripts that wrote estimation_results.json, from the estimation script on, in the order the run ran them (its script log); the files they read; and the packages they import. code/requirements.txt pins 3 package(s) at the versions the run used.",
+  "python": "3.12",
+  "requirements": "code/requirements.txt",
+  "files": {
+    "run_estimation.py": "code/run_estimation.py",
+    "data.db": "data/data.db",
+    "fig_marginals_by_group.pdf": "results/figures/fig_marginals_by_group.pdf",
+    "fig_mass_radius_calculated.pdf": "results/figures/fig_mass_radius_calculated.pdf",
+    "fig_radius_period_all.pdf": "results/figures/fig_radius_period_all.pdf",
+    "fig_radius_period_by_group.pdf": "results/figures/fig_radius_period_by_group.pdf"
+  },
+  "steps": [
+    {
+      "run": [
+        "python",
+        "run_estimation.py"
+      ],
+      "about": "the estimation script"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data.db",
+      "sha256": "06f493141df7a85f6413ad8a9939020812d6e46519089ba0648ad1feccc38373",
+      "source": "the study's database, tables: planets (NASA Exoplanet Archive (NASA Exoplanet Science Institute, IPAC/Caltech): Planetary Systems tables, confirmed exoplanets, NASA Exoplanet Archive Planetary Systems Composite Table (pscomppars), loaded 2026-10-13); planets_classified (made by the study during the run)",
+      "tables": {
+        "planets": {
+          "rows": 6445,
+          "content_sha256": "e912ae1502b01a895864d3827844b0571264b49926dab2294b340563a3c81b44"
+        },
+        "planets_classified": {
+          "rows": 6445,
+          "content_sha256": "cf83a49d3e8a39838896f95adaecd55144b9810e2c04bc4a50b287b9349ff3be"
+        }
+      }
+    }
+  ],
+  "compare": [
+    {
+      "published": "results/estimation_results.json",
+      "produced": "estimation_results.json"
+    }
+  ],
+  "notes": [
+    "The run recorded no Python version for its scripts (e2er up to 0.16.0), so the recipe names the Python e2er exported the study with (3.12.12); the study may have run on another."
+  ]
+}

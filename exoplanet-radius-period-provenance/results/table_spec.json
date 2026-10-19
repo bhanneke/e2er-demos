@@ -1,0 +1,99 @@
+{
+  "tables": [
+    {
+      "filename": "groups.tex",
+      "label": "tab:groups",
+      "caption": "Radius provenance groups in the analysis sample (confirmed planets with a radius and an orbital period)",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "groups",
+      "rows": ["calculated", "measured_transiting", "measured_non_transiting", "all"],
+      "row_labels": {
+        "calculated": "Calculated from mass",
+        "measured_transiting": "Measured, transiting",
+        "measured_non_transiting": "Measured, not transiting",
+        "all": "All"
+      },
+      "row_header": "Radius provenance",
+      "columns": [
+        {"field": "count", "header": "$N$", "decimals": 0},
+        {"field": "share_of_sample", "header": "Share of sample", "decimals": 3}
+      ],
+      "notes": "Groups follow the archive's CALCULATED\\_VALUE label in the radius reference and the transit flag. Shares are fractions of the 6,045 planets with both a radius and a period."
+    },
+    {
+      "filename": "radius_stats.tex",
+      "label": "tab:radius_stats",
+      "caption": "Planet radius (Earth radii) by radius provenance",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "statistics",
+      "rows": ["radius_calculated", "radius_measured_transiting", "radius_measured_non_transiting", "radius_all"],
+      "row_labels": {
+        "radius_calculated": "Calculated from mass",
+        "radius_measured_transiting": "Measured, transiting",
+        "radius_measured_non_transiting": "Measured, not transiting",
+        "radius_all": "All"
+      },
+      "row_header": "Group",
+      "columns": [
+        {"field": "n", "header": "$N$", "decimals": 0},
+        {"field": "p25", "header": "Q1", "decimals": 2},
+        {"field": "median", "header": "Median", "decimals": 2},
+        {"field": "p75", "header": "Q3", "decimals": 2},
+        {"field": "min", "header": "Min", "decimals": 2},
+        {"field": "max", "header": "Max", "decimals": 2}
+      ],
+      "notes": "Quartiles use linear interpolation between order statistics (Hyndman--Fan type 7)."
+    },
+    {
+      "filename": "period_stats.tex",
+      "label": "tab:period_stats",
+      "caption": "Orbital period (days) by radius provenance",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "statistics",
+      "rows": ["period_calculated", "period_measured_transiting", "period_measured_non_transiting", "period_all"],
+      "row_labels": {
+        "period_calculated": "Calculated from mass",
+        "period_measured_transiting": "Measured, transiting",
+        "period_measured_non_transiting": "Measured, not transiting",
+        "period_all": "All"
+      },
+      "row_header": "Group",
+      "columns": [
+        {"field": "n", "header": "$N$", "decimals": 0},
+        {"field": "p25", "header": "Q1", "decimals": 2},
+        {"field": "median", "header": "Median", "decimals": 2},
+        {"field": "p75", "header": "Q3", "decimals": 2},
+        {"field": "min", "header": "Min", "decimals": 2},
+        {"field": "max", "header": "Max", "decimals": 1}
+      ],
+      "notes": "Quartiles use linear interpolation between order statistics (Hyndman--Fan type 7)."
+    },
+    {
+      "filename": "associations.tex",
+      "label": "tab:associations",
+      "caption": "Spearman rank correlations between log radius and log period, and between log radius and log mass",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "associations",
+      "rows": ["radius_period_all", "radius_period_calculated", "radius_period_measured_transiting", "radius_period_measured_non_transiting", "mass_radius_calculated"],
+      "row_labels": {
+        "radius_period_all": "Radius--period, all",
+        "radius_period_calculated": "Radius--period, calculated",
+        "radius_period_measured_transiting": "Radius--period, measured transiting",
+        "radius_period_measured_non_transiting": "Radius--period, measured not transiting",
+        "mass_radius_calculated": "Mass--radius, calculated"
+      },
+      "row_header": "Association",
+      "columns": [
+        {"field": "n", "header": "$N$", "decimals": 0},
+        {"field": "estimate", "header": "Spearman $\\rho$", "decimals": 3},
+        {"field": "ci_lower", "header": "95\\% CI low", "decimals": 3},
+        {"field": "ci_upper", "header": "95\\% CI high", "decimals": 3}
+      ],
+      "notes": "Bootstrap percentile intervals (2,000 resamples, seed 20261013); the transiting mass--radius correlation is reported in the text."
+    }
+  ]
+}

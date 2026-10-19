@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "figures": [
+    {
+      "figure": "fig_radius_period_all.pdf",
+      "source": {
+        "table": "planets_classified",
+        "columns": {
+          "x": "pl_orbper",
+          "y": "pl_rade",
+          "groups": "radius_group"
+        },
+        "where": "in_rp_sample = 1"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_radius_period_by_group.pdf panel 1",
+      "source": {
+        "table": "planets_classified",
+        "columns": {
+          "x": "pl_orbper",
+          "y": "pl_rade"
+        },
+        "where": "in_rp_sample = 1 AND radius_group = 'calculated'"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_radius_period_by_group.pdf panel 2",
+      "source": {
+        "table": "planets_classified",
+        "columns": {
+          "x": "pl_orbper",
+          "y": "pl_rade"
+        },
+        "where": "in_rp_sample = 1 AND radius_group = 'measured_transiting'"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_marginals_by_group.pdf panel 1",
+      "source": {
+        "results": "distributions.log10_radius_fine_calculated.bins"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_marginals_by_group.pdf panel 2",
+      "source": {
+        "results": "distributions.log10_radius_fine_measured_transiting.bins"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_marginals_by_group.pdf panel 3",
+      "source": {
+        "results": "distributions.log10_period_fine_calculated.bins"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_marginals_by_group.pdf panel 4",
+      "source": {
+        "results": "distributions.log10_period_fine_measured_transiting.bins"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_mass_radius_calculated.pdf",
+      "source": {
+        "table": "planets_classified",
+        "columns": {
+          "x": "pl_bmasse",
+          "y": "pl_rade"
+        },
+        "where": "radius_group = 'calculated' AND pl_bmasse IS NOT NULL AND pl_rade IS NOT NULL"
+      },
+      "matches": true
+    }
+  ],
+  "problems": []
+}

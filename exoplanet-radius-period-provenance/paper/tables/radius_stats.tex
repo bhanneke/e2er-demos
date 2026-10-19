@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\begin{threeparttable}
+\caption{Planet radius (Earth radii) by radius provenance}
+\label{tab:radius_stats}
+\begin{tabular}{lcccccc}
+\toprule
+Group & $N$ & Q1 & Median & Q3 & Min & Max \\
+\midrule
+Calculated from mass & 1,215 & 4.42 & 12.60 & 13.40 & 0.34 & 14.30 \\
+Measured, transiting & 4,810 & 1.64 & 2.46 & 4.10 & 0.31 & 32.60 \\
+Measured, not transiting & 20 & 6.96 & 13.00 & 14.52 & 0.76 & 21.97 \\
+All & 6,045 & 1.79 & 2.75 & 10.86 & 0.31 & 32.60 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Quartiles use linear interpolation between order statistics (Hyndman--Fan type 7).
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

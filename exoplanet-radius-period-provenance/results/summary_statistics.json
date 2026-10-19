@@ -1,0 +1,1008 @@
+{
+ "n_observations": 6045,
+ "n_units": 6045,
+ "time_coverage": {
+  "start_iso": "1992",
+  "end_iso": "2026",
+  "n_periods": 35
+ },
+ "outcome": {
+  "radius_earth": {
+   "n": 6045,
+   "mean": 5.53161603516129,
+   "sd": 5.122640179814985,
+   "min": 0.3098,
+   "p1": 0.75,
+   "p5": 1.06,
+   "p10": 1.26,
+   "p25": 1.79426276,
+   "median": 2.75,
+   "p75": 10.861521,
+   "p90": 13.56288066,
+   "p95": 14.3,
+   "p99": 18.15858,
+   "max": 32.6
+  },
+  "period_days": {
+   "n": 6045,
+   "mean": 70813.46686974952,
+   "sd": 5172864.980263863,
+   "min": 0.1120067,
+   "p1": 0.6557405603199999,
+   "p5": 1.5699115616000001,
+   "p10": 2.45482362,
+   "p25": 4.272250175,
+   "median": 10.613839,
+   "p75": 37.866281,
+   "p90": 422.09200000000067,
+   "p95": 1477.2800000000038,
+   "p99": 13556.557622400333,
+   "max": 402000000.0
+  }
+ },
+ "sample_flow": [
+  {
+   "step": "raw rows in planets (pscomppars)",
+   "n": 6445,
+   "dropped": 0
+  },
+  {
+   "step": "remove duplicate pl_name",
+   "n": 6445,
+   "dropped": 0
+  },
+  {
+   "step": "pl_rade not missing",
+   "n": 6395,
+   "dropped": 50
+  },
+  {
+   "step": "pl_orbper not missing",
+   "n": 6045,
+   "dropped": 350
+  },
+  {
+   "step": "pl_rade > 0 and pl_orbper > 0 (radius-period sample)",
+   "n": 6045,
+   "dropped": 0
+  }
+ ],
+ "duplicates_pl_name": 0,
+ "missing": {
+  "pl_orbper": {
+   "n_missing": 353,
+   "share_missing": 0.0547711404189294
+  },
+  "pl_orbperlim": {
+   "n_missing": 353,
+   "share_missing": 0.0547711404189294
+  },
+  "pl_rade": {
+   "n_missing": 50,
+   "share_missing": 0.007757951900698216
+  },
+  "pl_radelim": {
+   "n_missing": 50,
+   "share_missing": 0.007757951900698216
+  },
+  "pl_rade_reflink": {
+   "n_missing": 50,
+   "share_missing": 0.007757951900698216
+  },
+  "pl_bmasse": {
+   "n_missing": 31,
+   "share_missing": 0.004809930178432894
+  },
+  "pl_bmassprov": {
+   "n_missing": 0,
+   "share_missing": 0.0
+  },
+  "st_teff": {
+   "n_missing": 307,
+   "share_missing": 0.047633824670287046
+  },
+  "sy_dist": {
+   "n_missing": 28,
+   "share_missing": 0.004344453064391001
+  },
+  "tran_flag": {
+   "n_missing": 0,
+   "share_missing": 0.0
+  },
+  "disc_year": {
+   "n_missing": 0,
+   "share_missing": 0.0
+  }
+ },
+ "radius_group_counts_all": {
+  "calculated": 1537,
+  "measured_transiting": 4810,
+  "measured_non_transiting": 48,
+  "no_radius": 50
+ },
+ "by_group": {
+  "calculated": {
+   "n": 1215,
+   "radius_earth": {
+    "n": 1215,
+    "mean": 9.957874897119341,
+    "sd": 4.681848234450999,
+    "min": 0.338,
+    "p1": 1.0214,
+    "p5": 1.651,
+    "p10": 2.28,
+    "p25": 4.425,
+    "median": 12.6,
+    "p75": 13.4,
+    "p90": 13.9,
+    "p95": 14.1,
+    "p99": 14.3,
+    "max": 14.3
+   },
+   "period_days": {
+    "n": 1215,
+    "mean": 9546.612577127815,
+    "sd": 215610.41199166302,
+    "min": 0.322963997,
+    "p1": 2.1389990660000002,
+    "p5": 4.08625,
+    "p10": 6.704940000000001,
+    "p25": 31.330613999999997,
+    "median": 358.62,
+    "p75": 1277.23,
+    "p90": 4795.349188000001,
+    "p95": 10145.892837,
+    "p99": 28704.879170399803,
+    "max": 7300000.0
+   },
+   "log10_radius": {
+    "n": 1215,
+    "mean": 0.9060436364184743,
+    "sd": 0.3359854254328813,
+    "min": -0.47108329972234525,
+    "p1": 0.009193359173973223,
+    "p5": 0.2177319429492259,
+    "p10": 0.35793484700045375,
+    "p25": 0.6459129977860807,
+    "median": 1.100370545117563,
+    "p75": 1.1271047983648077,
+    "p90": 1.1430148002540952,
+    "p95": 1.14921911265538,
+    "p99": 1.1553360374650619,
+    "max": 1.1553360374650619
+   },
+   "log10_period": {
+    "n": 1215,
+    "mean": 2.3675180782088407,
+    "sd": 1.0668445751481574,
+    "min": -0.4908458887392378,
+    "p1": 0.3302102060783282,
+    "p5": 0.6113249165168092,
+    "p10": 0.8263911205009075,
+    "p25": 1.4959618088990791,
+    "median": 2.5546345062173255,
+    "p75": 3.1062690319174946,
+    "p90": 3.6808200482973383,
+    "p95": 4.0062901000638185,
+    "p99": 4.457826691920973,
+    "max": 6.863322860120456
+   },
+   "n_radius_limit_flagged": 0,
+   "n_period_limit_flagged": 2
+  },
+  "measured_transiting": {
+   "n": 4810,
+   "radius_earth": {
+    "n": 4810,
+    "mean": 4.389198250962578,
+    "sd": 4.56898416599291,
+    "min": 0.3098,
+    "p1": 0.73636,
+    "p5": 1.0159,
+    "p10": 1.21,
+    "p25": 1.64,
+    "median": 2.46,
+    "p75": 4.0997581825,
+    "p90": 12.451400000000005,
+    "p95": 14.795868534,
+    "p99": 18.413331713899993,
+    "max": 32.6
+   },
+   "period_days": {
+    "n": 4810,
+    "mean": 23.86938448743065,
+    "sd": 88.90599590049636,
+    "min": 0.1120067,
+    "p1": 0.60667220694,
+    "p5": 1.387651874,
+    "p10": 2.1778423,
+    "p25": 3.792793,
+    "median": 7.9701121464,
+    "p75": 18.799730699999998,
+    "p90": 46.90830800000003,
+    "p95": 86.66465545000001,
+    "p99": 234.60026999999994,
+    "max": 3650.0
+   },
+   "log10_radius": {
+    "n": 4810,
+    "mean": 0.47039813796415225,
+    "sd": 0.3615709825269192,
+    "min": -0.5089185865768128,
+    "p1": -0.13291033417708817,
+    "p5": 0.006850752052312489,
+    "p10": 0.08278537031645007,
+    "p25": 0.21484384804769785,
+    "median": 0.39093510710337914,
+    "p75": 0.6127582390621841,
+    "p90": 1.0952181603214286,
+    "p95": 1.1701404638156754,
+    "p99": 1.2651323177308993,
+    "max": 1.513217600067939
+   },
+   "log10_period": {
+    "n": 4810,
+    "mean": 0.949454068391365,
+    "sd": 0.5440060654805502,
+    "min": -0.9507559979905431,
+    "p1": -0.2170679132903626,
+    "p5": 0.14228038906393572,
+    "p10": 0.33802641855725546,
+    "p25": 0.5789591394512041,
+    "median": 0.9014644321469414,
+    "p75": 1.27415162521179,
+    "p90": 1.671249736242486,
+    "p95": 1.937842007914183,
+    "p99": 2.3703284566308067,
+    "max": 3.5622928644564746
+   },
+   "n_radius_limit_flagged": 3,
+   "n_period_limit_flagged": 0
+  },
+  "measured_non_transiting": {
+   "n": 20,
+   "radius_earth": {
+    "n": 20,
+    "mean": 11.387867271000001,
+    "sd": 6.626856146115602,
+    "min": 0.759,
+    "p1": 0.77952,
+    "p5": 0.8616,
+    "p10": 1.2657,
+    "p25": 6.9575000000000005,
+    "median": 13.0,
+    "p75": 14.515630004999998,
+    "p90": 18.730235410000002,
+    "p95": 20.9047490035,
+    "p99": 21.7566315367,
+    "max": 21.96960217
+   },
+   "period_days": {
+    "n": 20,
+    "mean": 20817673.06035205,
+    "sd": 89746667.93938541,
+    "min": 0.240104,
+    "p1": 0.25963277,
+    "p5": 0.33774785,
+    "p10": 2.5705337000000004,
+    "p25": 49.81475,
+    "median": 15957.8,
+    "p75": 81000.0,
+    "p90": 6024000.000000003,
+    "p95": 27738000.00000028,
+    "p99": 327147599.9999995,
+    "max": 402000000.0
+   },
+   "log10_radius": {
+    "n": 20,
+    "mean": 0.8952948428625183,
+    "sd": 0.4823316050239039,
+    "min": -0.11975822410451964,
+    "p1": -0.10878053300418095,
+    "p5": -0.0648697686028262,
+    "p10": 0.0993460758378089,
+    "p25": 0.7981984016688508,
+    "median": 1.1139433523068367,
+    "p75": 1.1613760390940544,
+    "p90": 1.2722536385965721,
+    "p95": 1.3202162219157372,
+    "p99": 1.337500998542658,
+    "max": 1.3418221926993883
+   },
+   "log10_period": {
+    "n": 20,
+    "mean": 3.6886929919288596,
+    "sd": 2.4391199129676395,
+    "min": -0.6196006047765532,
+    "p1": -0.5901977960952586,
+    "p5": -0.47258656137008004,
+    "p10": 0.35846892697030325,
+    "p25": 1.6970960382747828,
+    "median": 4.181855956263281,
+    "p75": 4.896183283489482,
+    "p90": 6.777610799081488,
+    "p95": 6.990204548965253,
+    "p99": 8.281421752260625,
+    "max": 8.60422605308447
+   },
+   "n_radius_limit_flagged": 2,
+   "n_period_limit_flagged": 0
+  }
+ },
+ "n_not_in_rp_sample_by_group": {
+  "calculated": 322,
+  "measured_transiting": 0,
+  "measured_non_transiting": 28,
+  "no_radius": 50
+ },
+ "limit_flags": {
+  "radius_nonzero": 5,
+  "period_nonzero": 6,
+  "radius_flag_empty": 50,
+  "period_flag_empty": 353
+ },
+ "crosstab_group_by_tran_flag": {
+  "calculated": {
+   "0": 1537,
+   "1": 0
+  },
+  "measured_transiting": {
+   "0": 0,
+   "1": 4810
+  },
+  "measured_non_transiting": {
+   "0": 48,
+   "1": 0
+  },
+  "no_radius": {
+   "0": 49,
+   "1": 1
+  }
+ },
+ "discovery_method_counts": {
+  "Transit": 4781,
+  "Radial Velocity": 1203,
+  "Microlensing": 292,
+  "Imaging": 97,
+  "Transit Timing Variations": 29,
+  "Eclipse Timing Variations": 17,
+  "Orbital Brightness Modulation": 9,
+  "Pulsar Timing": 8,
+  "Astrometry": 6,
+  "Pulsation Timing Variations": 2,
+  "Disk Kinematics": 1
+ },
+ "crosstab_group_by_method": {
+  "calculated": {
+   "Transit": 2,
+   "Radial Velocity": 1133,
+   "Microlensing": 292,
+   "Imaging": 52,
+   "Transit Timing Variations": 25,
+   "Eclipse Timing Variations": 15,
+   "Orbital Brightness Modulation": 3,
+   "Pulsar Timing": 6,
+   "Astrometry": 6,
+   "Pulsation Timing Variations": 2,
+   "Disk Kinematics": 1
+  },
+  "measured_transiting": {
+   "Transit": 4778,
+   "Radial Velocity": 28,
+   "Microlensing": 0,
+   "Imaging": 0,
+   "Transit Timing Variations": 3,
+   "Eclipse Timing Variations": 0,
+   "Orbital Brightness Modulation": 1,
+   "Pulsar Timing": 0,
+   "Astrometry": 0,
+   "Pulsation Timing Variations": 0,
+   "Disk Kinematics": 0
+  },
+  "measured_non_transiting": {
+   "Transit": 0,
+   "Radial Velocity": 5,
+   "Microlensing": 0,
+   "Imaging": 41,
+   "Transit Timing Variations": 0,
+   "Eclipse Timing Variations": 0,
+   "Orbital Brightness Modulation": 2,
+   "Pulsar Timing": 0,
+   "Astrometry": 0,
+   "Pulsation Timing Variations": 0,
+   "Disk Kinematics": 0
+  },
+  "no_radius": {
+   "Transit": 1,
+   "Radial Velocity": 37,
+   "Microlensing": 0,
+   "Imaging": 4,
+   "Transit Timing Variations": 1,
+   "Eclipse Timing Variations": 2,
+   "Orbital Brightness Modulation": 3,
+   "Pulsar Timing": 2,
+   "Astrometry": 0,
+   "Pulsation Timing Variations": 0,
+   "Disk Kinematics": 0
+  }
+ },
+ "calculated_with_tran_flag_1": 0,
+ "tran_flag_0_total": 1634,
+ "calculated_bmassprov": {
+  "Msini": 876,
+  "Mass": 648,
+  "Msin(i)/sin(i)": 13
+ },
+ "calculated_without_mass": 0,
+ "plausibility": {
+  "radius_gt_25": 6,
+  "radius_le_0": 0,
+  "radius_lt_0p3": 0,
+  "period_lt_0p09": 0,
+  "period_gt_1e6": 5,
+  "period_le_0": 0,
+  "mass_gt_13000": 0
+ },
+ "unit_check_rade_over_radj": {
+  "n": 6395,
+  "median": 11.208999675544902,
+  "min": 10.833333333333334,
+  "max": 11.538461538461538,
+  "n_outside_11p0_11p4": 11
+ },
+ "unit_check_mass": {
+  "n": 6414,
+  "median": 317.828407,
+  "min": 285.7142857142857,
+  "max": 378.0
+ },
+ "disc_year_counts": {
+  "1992": 2,
+  "1994": 1,
+  "1995": 1,
+  "1996": 6,
+  "1997": 1,
+  "1998": 6,
+  "1999": 13,
+  "2000": 16,
+  "2001": 12,
+  "2002": 29,
+  "2003": 22,
+  "2004": 27,
+  "2005": 36,
+  "2006": 32,
+  "2007": 52,
+  "2008": 62,
+  "2009": 87,
+  "2010": 93,
+  "2011": 141,
+  "2012": 144,
+  "2013": 128,
+  "2014": 872,
+  "2015": 155,
+  "2016": 1504,
+  "2017": 152,
+  "2018": 308,
+  "2019": 194,
+  "2020": 234,
+  "2021": 564,
+  "2022": 367,
+  "2023": 323,
+  "2024": 260,
+  "2025": 246,
+  "2026": 355
+ },
+ "distributions": {
+  "bin_rule": "equal width 0.25 dex in log10; counts sum to n of the group; lower/upper in Earth radii or days",
+  "radius_calculated": {
+   "n": 1215,
+   "bins": [
+    {
+     "lower": 0.177828,
+     "upper": 0.316228,
+     "count": 0
+    },
+    {
+     "lower": 0.316228,
+     "upper": 0.562341,
+     "count": 1
+    },
+    {
+     "lower": 0.562341,
+     "upper": 1.0,
+     "count": 8
+    },
+    {
+     "lower": 1.0,
+     "upper": 1.778279,
+     "count": 64
+    },
+    {
+     "lower": 1.778279,
+     "upper": 3.162278,
+     "count": 131
+    },
+    {
+     "lower": 3.162278,
+     "upper": 5.623413,
+     "count": 137
+    },
+    {
+     "lower": 5.623413,
+     "upper": 10.0,
+     "count": 55
+    },
+    {
+     "lower": 10.0,
+     "upper": 17.782794,
+     "count": 819
+    },
+    {
+     "lower": 17.782794,
+     "upper": 31.622777,
+     "count": 0
+    },
+    {
+     "lower": 31.622777,
+     "upper": 56.234133,
+     "count": 0
+    }
+   ]
+  },
+  "period_calculated": {
+   "n": 1215,
+   "bins": [
+    {
+     "lower": 0.1,
+     "upper": 0.177828,
+     "count": 0
+    },
+    {
+     "lower": 0.177828,
+     "upper": 0.316228,
+     "count": 0
+    },
+    {
+     "lower": 0.316228,
+     "upper": 0.562341,
+     "count": 1
+    },
+    {
+     "lower": 0.562341,
+     "upper": 1.0,
+     "count": 0
+    },
+    {
+     "lower": 1.0,
+     "upper": 1.778279,
+     "count": 5
+    },
+    {
+     "lower": 1.778279,
+     "upper": 3.162278,
+     "count": 31
+    },
+    {
+     "lower": 3.162278,
+     "upper": 5.623413,
+     "count": 68
+    },
+    {
+     "lower": 5.623413,
+     "upper": 10.0,
+     "count": 59
+    },
+    {
+     "lower": 10.0,
+     "upper": 17.782794,
+     "count": 79
+    },
+    {
+     "lower": 17.782794,
+     "upper": 31.622777,
+     "count": 63
+    },
+    {
+     "lower": 31.622777,
+     "upper": 56.234133,
+     "count": 71
+    },
+    {
+     "lower": 56.234133,
+     "upper": 100.0,
+     "count": 58
+    },
+    {
+     "lower": 100.0,
+     "upper": 177.827941,
+     "count": 65
+    },
+    {
+     "lower": 177.827941,
+     "upper": 316.227766,
+     "count": 84
+    },
+    {
+     "lower": 316.227766,
+     "upper": 562.341325,
+     "count": 137
+    },
+    {
+     "lower": 562.341325,
+     "upper": 1000.0,
+     "count": 132
+    },
+    {
+     "lower": 1000.0,
+     "upper": 1778.27941,
+     "count": 100
+    },
+    {
+     "lower": 1778.27941,
+     "upper": 3162.27766,
+     "count": 93
+    },
+    {
+     "lower": 3162.27766,
+     "upper": 5623.413252,
+     "count": 72
+    },
+    {
+     "lower": 5623.413252,
+     "upper": 10000.0,
+     "count": 33
+    },
+    {
+     "lower": 10000.0,
+     "upper": 17782.7941,
+     "count": 33
+    },
+    {
+     "lower": 17782.7941,
+     "upper": 31622.776602,
+     "count": 20
+    },
+    {
+     "lower": 31622.776602,
+     "upper": 56234.132519,
+     "count": 6
+    },
+    {
+     "lower": 56234.132519,
+     "upper": 100000.0,
+     "count": 2
+    },
+    {
+     "lower": 100000.0,
+     "upper": 177827.941004,
+     "count": 1
+    },
+    {
+     "lower": 177827.941004,
+     "upper": 316227.766017,
+     "count": 0
+    },
+    {
+     "lower": 316227.766017,
+     "upper": 562341.32519,
+     "count": 0
+    },
+    {
+     "lower": 562341.32519,
+     "upper": 1000000.0,
+     "count": 0
+    },
+    {
+     "lower": 1000000.0,
+     "upper": 1778279.410039,
+     "count": 0
+    },
+    {
+     "lower": 1778279.410039,
+     "upper": 3162277.660168,
+     "count": 1
+    },
+    {
+     "lower": 3162277.660168,
+     "upper": 5623413.251903,
+     "count": 0
+    },
+    {
+     "lower": 5623413.251903,
+     "upper": 10000000.0,
+     "count": 1
+    },
+    {
+     "lower": 10000000.0,
+     "upper": 17782794.100389,
+     "count": 0
+    },
+    {
+     "lower": 17782794.100389,
+     "upper": 31622776.601684,
+     "count": 0
+    },
+    {
+     "lower": 31622776.601684,
+     "upper": 56234132.519035,
+     "count": 0
+    },
+    {
+     "lower": 56234132.519035,
+     "upper": 100000000.0,
+     "count": 0
+    },
+    {
+     "lower": 100000000.0,
+     "upper": 177827941.003892,
+     "count": 0
+    },
+    {
+     "lower": 177827941.003892,
+     "upper": 316227766.016838,
+     "count": 0
+    },
+    {
+     "lower": 316227766.016838,
+     "upper": 562341325.190349,
+     "count": 0
+    }
+   ]
+  },
+  "radius_measured_transiting": {
+   "n": 4810,
+   "bins": [
+    {
+     "lower": 0.177828,
+     "upper": 0.316228,
+     "count": 1
+    },
+    {
+     "lower": 0.316228,
+     "upper": 0.562341,
+     "count": 13
+    },
+    {
+     "lower": 0.562341,
+     "upper": 1.0,
+     "count": 206
+    },
+    {
+     "lower": 1.0,
+     "upper": 1.778279,
+     "count": 1191
+    },
+    {
+     "lower": 1.778279,
+     "upper": 3.162278,
+     "count": 1854
+    },
+    {
+     "lower": 3.162278,
+     "upper": 5.623413,
+     "count": 520
+    },
+    {
+     "lower": 5.623413,
+     "upper": 10.0,
+     "count": 252
+    },
+    {
+     "lower": 10.0,
+     "upper": 17.782794,
+     "count": 698
+    },
+    {
+     "lower": 17.782794,
+     "upper": 31.622777,
+     "count": 74
+    },
+    {
+     "lower": 31.622777,
+     "upper": 56.234133,
+     "count": 1
+    }
+   ]
+  },
+  "period_measured_transiting": {
+   "n": 4810,
+   "bins": [
+    {
+     "lower": 0.1,
+     "upper": 0.177828,
+     "count": 2
+    },
+    {
+     "lower": 0.177828,
+     "upper": 0.316228,
+     "count": 8
+    },
+    {
+     "lower": 0.316228,
+     "upper": 0.562341,
+     "count": 28
+    },
+    {
+     "lower": 0.562341,
+     "upper": 1.0,
+     "count": 121
+    },
+    {
+     "lower": 1.0,
+     "upper": 1.778279,
+     "count": 202
+    },
+    {
+     "lower": 1.778279,
+     "upper": 3.162278,
+     "count": 513
+    },
+    {
+     "lower": 3.162278,
+     "upper": 5.623413,
+     "count": 995
+    },
+    {
+     "lower": 5.623413,
+     "upper": 10.0,
+     "count": 881
+    },
+    {
+     "lower": 10.0,
+     "upper": 17.782794,
+     "count": 794
+    },
+    {
+     "lower": 17.782794,
+     "upper": 31.622777,
+     "count": 540
+    },
+    {
+     "lower": 31.622777,
+     "upper": 56.234133,
+     "count": 341
+    },
+    {
+     "lower": 56.234133,
+     "upper": 100.0,
+     "count": 187
+    },
+    {
+     "lower": 100.0,
+     "upper": 177.827941,
+     "count": 109
+    },
+    {
+     "lower": 177.827941,
+     "upper": 316.227766,
+     "count": 59
+    },
+    {
+     "lower": 316.227766,
+     "upper": 562.341325,
+     "count": 18
+    },
+    {
+     "lower": 562.341325,
+     "upper": 1000.0,
+     "count": 6
+    },
+    {
+     "lower": 1000.0,
+     "upper": 1778.27941,
+     "count": 4
+    },
+    {
+     "lower": 1778.27941,
+     "upper": 3162.27766,
+     "count": 1
+    },
+    {
+     "lower": 3162.27766,
+     "upper": 5623.413252,
+     "count": 1
+    },
+    {
+     "lower": 5623.413252,
+     "upper": 10000.0,
+     "count": 0
+    },
+    {
+     "lower": 10000.0,
+     "upper": 17782.7941,
+     "count": 0
+    },
+    {
+     "lower": 17782.7941,
+     "upper": 31622.776602,
+     "count": 0
+    },
+    {
+     "lower": 31622.776602,
+     "upper": 56234.132519,
+     "count": 0
+    },
+    {
+     "lower": 56234.132519,
+     "upper": 100000.0,
+     "count": 0
+    },
+    {
+     "lower": 100000.0,
+     "upper": 177827.941004,
+     "count": 0
+    },
+    {
+     "lower": 177827.941004,
+     "upper": 316227.766017,
+     "count": 0
+    },
+    {
+     "lower": 316227.766017,
+     "upper": 562341.32519,
+     "count": 0
+    },
+    {
+     "lower": 562341.32519,
+     "upper": 1000000.0,
+     "count": 0
+    },
+    {
+     "lower": 1000000.0,
+     "upper": 1778279.410039,
+     "count": 0
+    },
+    {
+     "lower": 1778279.410039,
+     "upper": 3162277.660168,
+     "count": 0
+    },
+    {
+     "lower": 3162277.660168,
+     "upper": 5623413.251903,
+     "count": 0
+    },
+    {
+     "lower": 5623413.251903,
+     "upper": 10000000.0,
+     "count": 0
+    },
+    {
+     "lower": 10000000.0,
+     "upper": 17782794.100389,
+     "count": 0
+    },
+    {
+     "lower": 17782794.100389,
+     "upper": 31622776.601684,
+     "count": 0
+    },
+    {
+     "lower": 31622776.601684,
+     "upper": 56234132.519035,
+     "count": 0
+    },
+    {
+     "lower": 56234132.519035,
+     "upper": 100000000.0,
+     "count": 0
+    },
+    {
+     "lower": 100000000.0,
+     "upper": 177827941.003892,
+     "count": 0
+    },
+    {
+     "lower": 177827941.003892,
+     "upper": 316227766.016838,
+     "count": 0
+    },
+    {
+     "lower": 316227766.016838,
+     "upper": 562341325.190349,
+     "count": 0
+    }
+   ]
+  }
+ }
+}
