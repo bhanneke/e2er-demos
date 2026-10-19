@@ -1,0 +1,186 @@
+{
+  "indicator": {
+    "code": "RS_198",
+    "name": "Estimated road traffic death rate",
+    "unit": "deaths per 100,000 population",
+    "year": 2021,
+    "source_check": "Confirm from the GHO metadata whether the published RS_198 series is age-standardised; the paper must state which version is used. The API response carries no age-standardisation field."
+  },
+  "tables": [
+    {
+      "name": "who_rs198_2021",
+      "source": "who_gho",
+      "series": "WHO GHO RS_198: Estimated road traffic death rate (per 100 000 population) (all locations, 2021–2021)",
+      "frequency": "annual",
+      "role": "country-level estimated road traffic death rate, 2021, one row per location; the file also holds WHO region (AFR, AMR, SEAR, EUR, EMR, WPR) and global aggregate rows (spatial_type REGION or GLOBAL), which the data analyst filters out with spatial_type = 'COUNTRY' before any country-level statistic",
+      "load": "e2er-data who_gho data --indicator RS_198 --start 2021 --end 2021 --table who_rs198_2021",
+      "unit": "deaths per 100,000 population",
+      "expected_coverage": "about 180 WHO Member States with a published 2021 estimate; the count of COUNTRY rows is reported in data_summary.md as the actual number",
+      "key": [
+        "location",
+        "year"
+      ],
+      "columns": [
+        {
+          "name": "location",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "ISO3 country code (or WHO region / global code for aggregate rows)"
+        },
+        {
+          "name": "spatial_type",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "COUNTRY, REGION or GLOBAL; filter to COUNTRY"
+        },
+        {
+          "name": "parent_location",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "WHO region name of the country (e.g. Eastern Mediterranean, Europe); the source for the country-to-region mapping"
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "unit": "year",
+          "description": "calendar year, 2021"
+        },
+        {
+          "name": "value",
+          "type": "REAL",
+          "unit": "deaths per 100,000 population",
+          "description": "WHO point estimate of the road traffic death rate"
+        },
+        {
+          "name": "low",
+          "type": "REAL",
+          "unit": "deaths per 100,000 population",
+          "min_non_null": 0.0,
+          "missing": "the GHO API returned no lower bound for the first rows checked (e.g. AFG, AGO, ALB); the share with a bound is reported, not assumed. Source check: confirm whether WHO publishes uncertainty bounds for RS_198 at all.",
+          "description": "lower uncertainty bound, if published"
+        },
+        {
+          "name": "high",
+          "type": "REAL",
+          "unit": "deaths per 100,000 population",
+          "min_non_null": 0.0,
+          "missing": "same as low: the first rows checked carry no upper bound. Source check: confirm whether WHO publishes uncertainty bounds for RS_198 at all.",
+          "description": "upper uncertainty bound, if published"
+        },
+        {
+          "name": "updated",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "time WHO last updated the record (the load's version)"
+        }
+      ],
+      "source_checks": [
+        "value: confirm the unit is deaths per 100,000 population and whether the series is age-standardised",
+        "low, high: confirm whether GHO publishes bounds for this indicator; if not, drop the bound columns from the analysis and say so",
+        "country_name: not returned by the GHO data endpoint; join it from country_names (see below) and report any location without a name"
+      ],
+      "licence": "WHO, Terms and conditions of use for WHO data compilations, aggregations, evaluations and analyses (https://www.who.int/about/policies/publishing/data-policy/terms-and-conditions): \"Licensed Use. Subject to these Terms and Conditions, WHO grants to you the royalty-free, worldwide, non-exclusive right to use, reproduce, extract, download, copy, distribute, display or include the Datasets and data contained therein in other products for public health purposes.\" \"Any other alteration or modification of the Datasets (including abbreviations, additions, or deletions) may be made only with the prior written authorization of WHO.\" \"You will not sell or otherwise transfer the Datasets and/or data contained therein to any third party, except within the Licensed Use.\" Attribution \"in the following format: WHO, title of dataset, year, date of access, acknowledgement of the country or countries having provided the underlying data.\"",
+      "citation": "WHO, Global Health Observatory: Estimated road traffic death rate (per 100 000 population) (RS_198), 2026, accessed 2026-10-13. Underlying data provided by the countries concerned (all WHO Member States reporting it).",
+      "provenance": "Global Health Observatory (GHO) data repository, World Health Organization (https://www.who.int/data/gho), release 2024-04-15",
+      "version": "2024-04-15",
+      "source_files": [
+        {
+          "url": "https://ghoapi.azureedge.net/api/RS_198?%24filter=TimeDim+ge+2021+and+TimeDim+le+2021",
+          "sha256": "5c37f3aeb037aa1e0131bfd07c54961b64cfe423d7773eba2e6014aa6aaef567"
+        }
+      ],
+      "cite_key": "WHO_GHO"
+    },
+    {
+      "name": "country_names",
+      "source": "naturalearth",
+      "series": "countries of the world, Natural Earth v5.1.2, 1:50 million, EPSG:4326",
+      "frequency": "static",
+      "role": "country name lookup, joined to who_rs198_2021 on ISO3 (iso_a3_eh or adm0_a3) to supply country_name; the 110m scale omits some small states, so the 50m scale is preferred",
+      "load": "e2er-data naturalearth countries --scale 50m --table country_names",
+      "unit": "none",
+      "expected_coverage": "about 240 polities; WHO Member States not matched are listed in data_summary.md",
+      "key": [
+        "adm0_a3"
+      ],
+      "columns": [
+        {
+          "name": "adm0_a3",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "ISO3 code"
+        },
+        {
+          "name": "iso_a3_eh",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "ISO3 code with disputed-territory corrections; join key"
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "short country name"
+        },
+        {
+          "name": "name_long",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "full country name"
+        }
+      ],
+      "source_checks": [
+        "Some WHO Member States (small island states, and cases where the ISO3 code differs) may not join; the unmatched codes are reported, not filled by hand"
+      ],
+      "licence": "Public domain (https://www.naturalearthdata.com/about/terms-of-use/): \"All versions of Natural Earth raster + vector map data found on this website are in the public domain. You may use the maps in any manner, including modifying the content and design, electronic dissemination, and offset printing. ... No permission is needed to use Natural Earth. Crediting the authors is unnecessary.\" Suggested credit: Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
+      "citation": "Natural Earth (release v5.1.2). Admin 0 – Countries. https://www.naturalearthdata.com/. Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
+      "provenance": "Natural Earth vector data: Admin 0 – Countries (https://www.naturalearthdata.com/), release v5.1.2",
+      "version": "v5.1.2",
+      "source_files": [
+        {
+          "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_50m_admin_0_countries.geojson",
+          "sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb"
+        }
+      ],
+      "cite_key": "NaturalEarth"
+    },
+    {
+      "name": "who_region_lookup",
+      "source": "who_gho",
+      "series": "RS_198",
+      "frequency": "annual",
+      "role": "WHO region code and name lookup for the six WHO regions, taken from the REGION rows of the same RS_198 load; the country-to-region mapping comes from parent_location of who_rs198_2021, and this table is checked against it",
+      "load": "e2er-data who_gho data --indicator RS_198 --start 2021 --end 2021 --table who_region_lookup",
+      "unit": "none",
+      "expected_coverage": "6 WHO regions (AFR, AMR, SEAR, EUR, EMR, WPR)",
+      "key": [
+        "region_code"
+      ],
+      "columns": [
+        {
+          "name": "region_code",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "WHO region code (location of REGION rows)"
+        },
+        {
+          "name": "region_name",
+          "type": "TEXT",
+          "unit": "none",
+          "description": "WHO region name as written in parent_location"
+        },
+        {
+          "name": "value",
+          "type": "REAL",
+          "unit": "deaths per 100,000 population",
+          "description": "WHO regional estimate of the road traffic death rate, 2021"
+        }
+      ],
+      "source_checks": [
+        "The GHO data endpoint does not return a region dictionary: the region names are read from the parent_location text of the country rows; confirm the six codes against the WHO regional office list before the paper names them",
+        "Confirm that the regional value is an estimate for the region and not an unweighted average of countries"
+      ]
+    }
+  ],
+  "unavailable": []
+}

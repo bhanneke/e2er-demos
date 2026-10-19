@@ -1,0 +1,47 @@
+[
+  {
+    "id": "F2-regional-weighting",
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "reports the distribution within each WHO region.",
+    "replace": "reports the distribution within each WHO region. The regional means and medians are unweighted averages across countries, so each country counts equally regardless of population.",
+    "find_must_be_unique": true,
+    "source_finding": "F2"
+  },
+  {
+    "id": "F2-western-pacific",
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "The Americas (mean 14.1) and the Western Pacific (mean 10.8) sit in the middle of the range.",
+    "replace": "The Americas (mean 14.1) sit in the middle of the range. The Western Pacific (mean 10.8) ranks fifth of six on this unweighted measure, and WHO's published regional aggregate for it differs from this figure. The paper has not yet reconciled the two, so the Western Pacific's position in the ordering should be read with caution.",
+    "find_must_be_unique": true,
+    "source_finding": "F2"
+  },
+  {
+    "id": "F2-skewness",
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "and the mean of 13.3 lies slightly above it, which is consistent with a right tail.",
+    "replace": "and the mean of 13.3 lies slightly above it. That gap is the only evidence on skewness in this section. The paper reports no skewness statistic, so the upper tail is described from the histogram and is not measured.",
+    "find_must_be_unique": true,
+    "source_finding": "F2"
+  },
+  {
+    "id": "F2-eta-squared",
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "Regional membership accounts for about 39 percent of the total variation in national rates, measured as the share of the total sum of squares that lies between regions.",
+    "replace": "The between-region sum of squares is about 39 percent of the total sum of squares in national rates. This is a descriptive partition of this sample. Eta-squared rises mechanically with the number of groups, so the share overstates how much variation regions explain under a different grouping.",
+    "find_must_be_unique": true,
+    "source_finding": "F2"
+  },
+  {
+    "id": "F2-zero-values",
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "and both are very small populations, where a zero in one year is more plausible than in a large country. We keep both in the analysis as published and flag them here, because a rate of zero is an unusual model output and the lower tail of the distribution depends on them.",
+    "replace": "and the paper does not attribute them to population size. We keep both in the analysis as published and flag them here, because a rate of zero is an unusual model output. Whether the lower tail depends on them has not been tested, so the minimum and the 5th percentile should be read with that in mind.",
+    "find_must_be_unique": true,
+    "source_finding": "F2"
+  }
+]

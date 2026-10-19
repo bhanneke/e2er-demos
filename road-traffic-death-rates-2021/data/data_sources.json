@@ -1,0 +1,109 @@
+{
+  "$comment": "Written by e2er-data: one entry per external-source load, with the source version, the URL and SHA-256 of every file read.",
+  "loads": [
+    {
+      "connector": "who_gho",
+      "dataset": "Global Health Observatory (GHO) data repository, World Health Organization",
+      "terms_summary": "WHO grants use, reproduction and distribution for public health purposes; other changes to the data need WHO's written authorization, and the data may not be sold. Not an open licence: a published study reloads the data instead of shipping them.",
+      "licence": "WHO, Terms and conditions of use for WHO data compilations, aggregations, evaluations and analyses (https://www.who.int/about/policies/publishing/data-policy/terms-and-conditions): \"Licensed Use. Subject to these Terms and Conditions, WHO grants to you the royalty-free, worldwide, non-exclusive right to use, reproduce, extract, download, copy, distribute, display or include the Datasets and data contained therein in other products for public health purposes.\" \"Any other alteration or modification of the Datasets (including abbreviations, additions, or deletions) may be made only with the prior written authorization of WHO.\" \"You will not sell or otherwise transfer the Datasets and/or data contained therein to any third party, except within the Licensed Use.\" Attribution \"in the following format: WHO, title of dataset, year, date of access, acknowledgement of the country or countries having provided the underlying data.\"",
+      "terms": "https://www.who.int/about/policies/publishing/data-policy/terms-and-conditions",
+      "series": "WHO GHO RS_198: Estimated road traffic death rate (per 100 000 population) (all locations, 2021–2021)",
+      "link": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/RS_198",
+      "retrieved_at": "2026-10-13T20:59:49Z",
+      "citation": "WHO, Global Health Observatory: Estimated road traffic death rate (per 100 000 population) (RS_198), 2026, accessed 2026-10-13. Underlying data provided by the countries concerned (all WHO Member States reporting it).",
+      "citation_by": "source",
+      "cite_key": "WHO_GHO",
+      "version": "2024-04-15",
+      "query": "https://ghoapi.azureedge.net/api/RS_198?%24filter=TimeDim+ge+2021+and+TimeDim+le+2021",
+      "files": [
+        {
+          "url": "https://ghoapi.azureedge.net/api/RS_198?%24filter=TimeDim+ge+2021+and+TimeDim+le+2021",
+          "sha256": "5c37f3aeb037aa1e0131bfd07c54961b64cfe423d7773eba2e6014aa6aaef567",
+          "pages": 1
+        }
+      ],
+      "request": {
+        "command": "data",
+        "indicator": "RS_198",
+        "start": "2021",
+        "end": "2021"
+      },
+      "indicator_code": "RS_198",
+      "indicator_name": "Estimated road traffic death rate (per 100 000 population)",
+      "frequency": "annual",
+      "table": "road_deaths_2021",
+      "table_rows": 204,
+      "rows": 204,
+      "specialist": "data_architect"
+    },
+    {
+      "connector": "who_gho",
+      "dataset": "Global Health Observatory (GHO) data repository, World Health Organization",
+      "terms_summary": "WHO grants use, reproduction and distribution for public health purposes; other changes to the data need WHO's written authorization, and the data may not be sold. Not an open licence: a published study reloads the data instead of shipping them.",
+      "licence": "WHO, Terms and conditions of use for WHO data compilations, aggregations, evaluations and analyses (https://www.who.int/about/policies/publishing/data-policy/terms-and-conditions): \"Licensed Use. Subject to these Terms and Conditions, WHO grants to you the royalty-free, worldwide, non-exclusive right to use, reproduce, extract, download, copy, distribute, display or include the Datasets and data contained therein in other products for public health purposes.\" \"Any other alteration or modification of the Datasets (including abbreviations, additions, or deletions) may be made only with the prior written authorization of WHO.\" \"You will not sell or otherwise transfer the Datasets and/or data contained therein to any third party, except within the Licensed Use.\" Attribution \"in the following format: WHO, title of dataset, year, date of access, acknowledgement of the country or countries having provided the underlying data.\"",
+      "terms": "https://www.who.int/about/policies/publishing/data-policy/terms-and-conditions",
+      "series": "WHO GHO RS_198: Estimated road traffic death rate (per 100 000 population) (all locations, 2021–2021)",
+      "link": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/RS_198",
+      "retrieved_at": "2026-10-13T21:10:05Z",
+      "citation": "WHO, Global Health Observatory: Estimated road traffic death rate (per 100 000 population) (RS_198), 2026, accessed 2026-10-13. Underlying data provided by the countries concerned (all WHO Member States reporting it).",
+      "citation_by": "source",
+      "cite_key": "WHO_GHO",
+      "version": "2024-04-15",
+      "query": "https://ghoapi.azureedge.net/api/RS_198?%24filter=TimeDim+ge+2021+and+TimeDim+le+2021",
+      "files": [
+        {
+          "url": "https://ghoapi.azureedge.net/api/RS_198?%24filter=TimeDim+ge+2021+and+TimeDim+le+2021",
+          "sha256": "5c37f3aeb037aa1e0131bfd07c54961b64cfe423d7773eba2e6014aa6aaef567",
+          "pages": 1
+        }
+      ],
+      "request": {
+        "command": "data",
+        "indicator": "RS_198",
+        "start": "2021",
+        "end": "2021"
+      },
+      "indicator_code": "RS_198",
+      "indicator_name": "Estimated road traffic death rate (per 100 000 population)",
+      "frequency": "annual",
+      "table": "who_rs198_2021",
+      "table_rows": 204,
+      "saved_to": "data/who_rs198_2021.csv",
+      "rows": 204,
+      "specialist": "data_analyst"
+    },
+    {
+      "connector": "naturalearth",
+      "dataset": "Natural Earth vector data: Admin 0 – Countries",
+      "terms_summary": "Public domain; no permission is needed and crediting the authors is unnecessary.",
+      "licence": "Public domain (https://www.naturalearthdata.com/about/terms-of-use/): \"All versions of Natural Earth raster + vector map data found on this website are in the public domain. You may use the maps in any manner, including modifying the content and design, electronic dissemination, and offset printing. ... No permission is needed to use Natural Earth. Crediting the authors is unnecessary.\" Suggested credit: Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
+      "terms": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "series": "countries of the world, Natural Earth v5.1.2, 1:50 million, EPSG:4326",
+      "link": "https://www.naturalearthdata.com/downloads/",
+      "retrieved_at": "2026-10-13T21:10:07Z",
+      "citation": "Natural Earth (release v5.1.2). Admin 0 – Countries. https://www.naturalearthdata.com/. Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
+      "citation_by": "source",
+      "cite_key": "NaturalEarth",
+      "version": "v5.1.2",
+      "query": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_50m_admin_0_countries.geojson",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_50m_admin_0_countries.geojson",
+          "sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb"
+        }
+      ],
+      "request": {
+        "command": "countries",
+        "scale": "50m"
+      },
+      "scale": "50m",
+      "crs": "EPSG:4326",
+      "attribution": "Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
+      "frequency": "static",
+      "table": "country_names",
+      "table_rows": 242,
+      "rows": 242,
+      "specialist": "data_analyst"
+    }
+  ]
+}

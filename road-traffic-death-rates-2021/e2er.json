@@ -1,0 +1,1973 @@
+{
+  "schema": "e2er-research-object/0.1",
+  "id": "bhanneke/road-traffic-death-rates-2021",
+  "content_id": "sha256:1ad19e8138ed9d932335a3775c2bb6fe2ac9b4c3ab8efa105c47696f80eee620",
+  "title": "How do estimated road traffic death rates per 100,000 people vary across coun...",
+  "question": "How do estimated road traffic death rates per 100,000 people vary across countries and WHO regions in 2021? A descriptive study with the WHO Global Health Observatory indicator RS_198.",
+  "contributors": [
+    {
+      "name": "Björn Hanneke",
+      "github": "bhanneke",
+      "roles": [
+        "conceptualization",
+        "investigation"
+      ]
+    }
+  ],
+  "ai": {
+    "backend": "claude_code",
+    "model": "haiku",
+    "agents": [
+      "idea_developer",
+      "literature_scanner",
+      "data_architect",
+      "data_analyst",
+      "econometrics_specialist",
+      "paper_drafter",
+      "literature_reviewer",
+      "data_reviewer",
+      "writing_reviewer",
+      "methods_reviewer",
+      "plausibility_reviewer",
+      "patch_revisor",
+      "replication_packager"
+    ],
+    "agents_source": "recorded",
+    "usage": [
+      {
+        "agent": "strategist:decide",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 1,
+        "input_tokens": 2,
+        "output_tokens": 2086,
+        "cache_read_tokens": 12566,
+        "cache_write_tokens": 19294,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:59:10",
+        "last": "2026-10-13 20:59:10"
+      },
+      {
+        "agent": "idea_developer",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 3958,
+        "cache_read_tokens": 48259,
+        "cache_write_tokens": 26978,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:59:37",
+        "last": "2026-10-13 20:59:37"
+      },
+      {
+        "agent": "literature_scanner",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 1,
+        "input_tokens": 12,
+        "output_tokens": 3519,
+        "cache_read_tokens": 184934,
+        "cache_write_tokens": 25256,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:59:39",
+        "last": "2026-10-13 20:59:39"
+      },
+      {
+        "agent": "data_architect",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 1,
+        "input_tokens": 6,
+        "output_tokens": 5577,
+        "cache_read_tokens": 149532,
+        "cache_write_tokens": 57497,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:00:14",
+        "last": "2026-10-13 21:00:14"
+      },
+      {
+        "agent": "data_analyst",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 2,
+        "input_tokens": 34,
+        "output_tokens": 19932,
+        "cache_read_tokens": 1418114,
+        "cache_write_tokens": 172498,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:11:10",
+        "last": "2026-10-13 21:11:45"
+      },
+      {
+        "agent": "econometrics_specialist",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 2,
+        "input_tokens": 26,
+        "output_tokens": 17043,
+        "cache_read_tokens": 669769,
+        "cache_write_tokens": 97204,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:12:43",
+        "last": "2026-10-13 21:13:19"
+      },
+      {
+        "agent": "paper_drafter",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 3,
+        "input_tokens": 44,
+        "output_tokens": 24592,
+        "cache_read_tokens": 1250312,
+        "cache_write_tokens": 163097,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:14:52",
+        "last": "2026-10-13 21:29:13"
+      },
+      {
+        "agent": "literature_reviewer",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 9543,
+        "cache_read_tokens": 64725,
+        "cache_write_tokens": 43429,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:32:23",
+        "last": "2026-10-13 21:32:23"
+      },
+      {
+        "agent": "data_reviewer",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 12317,
+        "cache_read_tokens": 73588,
+        "cache_write_tokens": 55635,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:32:28",
+        "last": "2026-10-13 21:32:28"
+      },
+      {
+        "agent": "writing_reviewer",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 12402,
+        "cache_read_tokens": 67796,
+        "cache_write_tokens": 49452,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:32:35",
+        "last": "2026-10-13 21:32:35"
+      },
+      {
+        "agent": "methods_reviewer",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 11225,
+        "cache_read_tokens": 68688,
+        "cache_write_tokens": 49642,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:33:26",
+        "last": "2026-10-13 21:33:26"
+      },
+      {
+        "agent": "plausibility_reviewer",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 19719,
+        "cache_read_tokens": 65952,
+        "cache_write_tokens": 54968,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:34:05",
+        "last": "2026-10-13 21:34:05"
+      },
+      {
+        "agent": "patch_revisor",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 2,
+        "input_tokens": 20,
+        "output_tokens": 14424,
+        "cache_read_tokens": 481048,
+        "cache_write_tokens": 102651,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:35:08",
+        "last": "2026-10-13 21:35:27"
+      },
+      {
+        "agent": "replication_packager",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 1,
+        "input_tokens": 12,
+        "output_tokens": 6916,
+        "cache_read_tokens": 277720,
+        "cache_write_tokens": 46464,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:36:07",
+        "last": "2026-10-13 21:36:07"
+      }
+    ]
+  },
+  "process": {
+    "template": "descriptive-study",
+    "mode": "single_pass",
+    "methodology": "empirical",
+    "governance": "full",
+    "e2er_version": "0.17.0",
+    "exported": "20261015"
+  },
+  "components": {
+    "skills": {
+      "idea_developer": [
+        "base/researcher",
+        "reasoning/creative-ideation",
+        "reasoning/novelty"
+      ],
+      "literature_scanner": [
+        "base/researcher",
+        "synthesis/context-builder"
+      ],
+      "data_architect": [
+        "data/data-tables",
+        "data/query-data",
+        "base/researcher",
+        "data/yfinance",
+        "data/fred",
+        "data/gmd",
+        "data/usgs",
+        "data/exoplanets",
+        "data/gaia",
+        "data/nasa_power",
+        "data/noaa",
+        "data/worldbank",
+        "data/eurostat",
+        "data/owid",
+        "data/who_gho",
+        "data/gutenberg",
+        "data/github",
+        "data/gisco",
+        "data/naturalearth",
+        "methods/descriptive-analysis"
+      ],
+      "data_analyst": [
+        "data/data-tables",
+        "data/query-data",
+        "data/cleaning",
+        "data/figure-spec",
+        "econometrics/panel-data",
+        "data/yfinance",
+        "data/fred",
+        "data/gmd",
+        "data/summary-statistics-schema",
+        "data/usgs",
+        "data/exoplanets",
+        "data/gaia",
+        "data/nasa_power",
+        "data/noaa",
+        "data/worldbank",
+        "data/eurostat",
+        "data/owid",
+        "data/who_gho",
+        "data/gutenberg",
+        "data/github",
+        "data/gisco",
+        "data/naturalearth",
+        "methods/descriptive-analysis"
+      ],
+      "econometrics_specialist": [
+        "data/query-data",
+        "data/cleaning",
+        "data/figure-spec",
+        "data/descriptive-results-schema",
+        "methods/descriptive-analysis"
+      ],
+      "paper_drafter": [
+        "writing/paper-structure",
+        "writing/personal-style",
+        "base/researcher",
+        "writing/cite-numbers-by-source",
+        "data/table-spec",
+        "methods/descriptive-analysis"
+      ],
+      "literature_reviewer": [
+        "review/referee-simulation",
+        "synthesis/context-builder"
+      ],
+      "data_reviewer": [
+        "review/data-quality",
+        "data/cleaning",
+        "methods/descriptive-analysis"
+      ],
+      "writing_reviewer": [
+        "review/writing-quality",
+        "reasoning/anti-slop"
+      ],
+      "methods_reviewer": [
+        "review/methods-review",
+        "review/consistency-check",
+        "methods/descriptive-analysis"
+      ],
+      "plausibility_reviewer": [
+        "review/domain-plausibility",
+        "review/consistency-check"
+      ],
+      "patch_revisor": [
+        "writing/scoped-revision",
+        "writing/cite-numbers-by-source",
+        "writing/personal-style",
+        "reasoning/anti-slop"
+      ],
+      "replication_packager": [
+        "data/cleaning",
+        "base/researcher",
+        "synthesis/replication-package"
+      ]
+    },
+    "skills_source": "recorded"
+  },
+  "literature": [
+    {
+      "cite_key": "WHO_GHO",
+      "doi": "10.1080/02763869.2019.1693231",
+      "status": "verified_title",
+      "verified_by": "crossref"
+    },
+    {
+      "cite_key": "NaturalEarth",
+      "doi": null,
+      "status": "unverifiable",
+      "verified_by": null
+    },
+    {
+      "cite_key": "little2019statistical",
+      "doi": "10.1002/9781119482260",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "hyndman1996sample",
+      "doi": "10.1080/00031305.1996.10473566",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    }
+  ],
+  "data": [
+    {
+      "path": "data/data.db",
+      "sha256": "a82954ffa3ef6641ab9c082119c1135a809d24fd07a9bb89e0aec67a01ae2080",
+      "bytes": 2486272,
+      "source": "WHO Global Health Observatory (WHO GHO), release 2024-04-15",
+      "terms": "Holds data from the WHO Global Health Observatory (WHO GHO), release 2024-04-15, used under its terms. WHO, Terms and conditions of use for WHO data compilations, aggregations, evaluations and analyses (https://www.who.int/about/policies/publishing/data-policy/terms-and-conditions): \"Licensed Use. Subject to these Terms and Conditions, WHO grants to you the royalty-free, worldwide, non-exclusive right to use, reproduce, extract, download, copy, distribute, display or include the Datasets and data contained therein in other products for public health purposes.\" \"Any other alteration or modification of the Datasets (including abbreviations, additions, or deletions) may be made only with the prior written authorization of WHO.\" \"You will not sell or otherwise transfer the Datasets and/or data contained therein to any third party, except within the Licensed Use.\" Attribution \"in the following format: WHO, title of dataset, year, date of access, acknowledgement of the country or countries having provided the underlying data.\"",
+      "citation": "WHO, Global Health Observatory data repository, [year], [date of access], acknowledgement of the country or countries having provided the underlying data."
+    },
+    {
+      "path": "data/data_dictionary.json",
+      "sha256": "6a7581ce8043fc34daf22f087c63857be299ba0f622a83d4f104b4688c5dbd11",
+      "bytes": 9673
+    },
+    {
+      "path": "data/data_sources.json",
+      "sha256": "13bf77578cf5ec5ebb509df787f0c6b8cf2f56012f5d9967e2ffe18148f39819",
+      "bytes": 7900
+    },
+    {
+      "path": "data/data_summary.md",
+      "sha256": "c13e625de22e7d303c4d2d14f29d43976d158f6a9880adab0a992e6f201633bc",
+      "bytes": 6866
+    }
+  ],
+  "outputs": [
+    {
+      "path": "paper/paper.pdf",
+      "sha256": "e535311752af1ce26cdbd1cbe8839db5493d41b69c4db2a4e95571d7f32b8582"
+    },
+    {
+      "path": "paper/paper.tex",
+      "sha256": "4ac2afe3bcbf9b0feb047be0e2d029d2d91d0894e4205e74645daea29a5dc9ef"
+    },
+    {
+      "path": "paper/refs.bib",
+      "sha256": "741d3d78668f05ae202d401de14f56b8aa51140ebaaf46b00d41662f5f12f971"
+    },
+    {
+      "path": "paper/tables/regions.tex",
+      "sha256": "3498af48c2298a0e47ebbd612486c443273bbb757e5176d730f84cc1efa63922"
+    },
+    {
+      "path": "paper/tables/summary.tex",
+      "sha256": "94073a53d9947e3b0c26c704c0b9e9a55103bc535cb25b875ee7be2931a07484"
+    },
+    {
+      "path": "replication/audit_log.csv",
+      "sha256": "acd4cf1eb94ded01dd7351e992e3821d89c7341c39afadb5961d6bdc28a340af"
+    },
+    {
+      "path": "replication/data_queries.sql",
+      "sha256": "b2dd512beec9ab0498defc38550824c13d688ab5ea8b1ca176091f182be952cb"
+    },
+    {
+      "path": "replication/estimation.py",
+      "sha256": "9fb717ffed1bca38efd2fe0f8fa8fee9238847410806177b3302648b4e22683b"
+    },
+    {
+      "path": "results/data_quality.json",
+      "sha256": "10e2f05a3bbf25b5d3bfc86d5b1ad645c37155fa1ca5b1b9190cb198174262f6"
+    },
+    {
+      "path": "results/data_quality.md",
+      "sha256": "0ee595d6cc9c000c24f5958676820954aa9f9a4ce9a890950a64b8df101157b0"
+    },
+    {
+      "path": "results/estimation_results.json",
+      "sha256": "dc1e598e23475713d6cc8713d0c033690e59c63144dd2efdbfcad6876334da63"
+    },
+    {
+      "path": "results/figure_check.json",
+      "sha256": "1d32cad086a12a016bffe9f4f6a0ad4d025d5a87563eaa2115bb77de210378c9"
+    },
+    {
+      "path": "results/figure_spec.json",
+      "sha256": "76f777655bf7642b5e9dcca0f92a9acf7596ffede9a555c191b9ab14ea4d2dee"
+    },
+    {
+      "path": "results/figures/fig_death_rate_hist.pdf",
+      "sha256": "dd5914df729130a43268e3c293500739e090d8ceb007bd6450c4144a0c94f5b2"
+    },
+    {
+      "path": "results/number_verification.json",
+      "sha256": "7ee554ff1c0d77d51af968dcc1b443b9df12aab3f1b6ce2840a442c7a503442f"
+    },
+    {
+      "path": "results/summary_statistics.json",
+      "sha256": "2df040dc3add00520bbe1049a42219e6f8ec346b2c0878af9a72ef26d5044e94"
+    },
+    {
+      "path": "results/table_render_report.json",
+      "sha256": "8b6bd5c395da666a9b1d852fe85dabab0de510d0efed1d25ff7177bcab9725e3"
+    },
+    {
+      "path": "results/table_spec.json",
+      "sha256": "225fa7c057b50bb0c4f4236ce2687fa044c0343a8468f0ebf796b579ac60a414"
+    }
+  ],
+  "provenance": {
+    "files": 47,
+    "edges": {
+      "citation": 4,
+      "data": 1,
+      "estimation": 1,
+      "figure": 1,
+      "table_cell": 41
+    }
+  },
+  "verification": [
+    {
+      "check": "integrity",
+      "status": "PASS",
+      "detail": "47 files hash-verified against provenance.json; 41 table cell(s) traced in the derivation graph; 5 change(s) after export recorded as amendments (README.md, paper/paper.pdf, paper/paper.tex)"
+    },
+    {
+      "check": "numbers",
+      "status": "PASS",
+      "detail": "44 table cell(s) are source values at the precision shown; text (not gating): 63 of 65 number(s) are source values, 0 differ from the quantity named nearby, 2 untraced"
+    },
+    {
+      "check": "tables",
+      "status": "PASS",
+      "detail": "2 table(s) reproduce byte-identically from the sidecars"
+    },
+    {
+      "check": "spec",
+      "status": "SKIP",
+      "detail": "no design/identification_spec.json"
+    },
+    {
+      "check": "results contract",
+      "status": "PASS",
+      "detail": "descriptive results (descriptive statistics and distributions) are complete and consistent"
+    },
+    {
+      "check": "citations",
+      "status": "PASS",
+      "detail": "4 cite key(s) resolve in refs.bib; snapshot: 3 verified, 1 unverifiable at run time"
+    },
+    {
+      "check": "results from code",
+      "status": "SKIP",
+      "detail": "not checked: the run predates output records"
+    }
+  ],
+  "dependencies": {
+    "uses": [
+      "template:descriptive-study",
+      "agent:idea_developer",
+      "agent:literature_scanner",
+      "agent:data_architect",
+      "agent:data_analyst",
+      "agent:econometrics_specialist",
+      "agent:paper_drafter",
+      "agent:literature_reviewer",
+      "agent:data_reviewer",
+      "agent:writing_reviewer",
+      "agent:methods_reviewer",
+      "agent:plausibility_reviewer",
+      "agent:patch_revisor",
+      "agent:replication_packager",
+      "skill:e2er/base/researcher",
+      "skill:e2er/data/cleaning",
+      "skill:e2er/data/data-tables",
+      "skill:e2er/data/descriptive-results-schema",
+      "skill:e2er/data/eurostat",
+      "skill:e2er/data/exoplanets",
+      "skill:e2er/data/figure-spec",
+      "skill:e2er/data/fred",
+      "skill:e2er/data/gaia",
+      "skill:e2er/data/gisco",
+      "skill:e2er/data/github",
+      "skill:e2er/data/gmd",
+      "skill:e2er/data/gutenberg",
+      "skill:e2er/data/nasa_power",
+      "skill:e2er/data/naturalearth",
+      "skill:e2er/data/noaa",
+      "skill:e2er/data/owid",
+      "skill:e2er/data/query-data",
+      "skill:e2er/data/summary-statistics-schema",
+      "skill:e2er/data/table-spec",
+      "skill:e2er/data/usgs",
+      "skill:e2er/data/who_gho",
+      "skill:e2er/data/worldbank",
+      "skill:e2er/data/yfinance",
+      "skill:e2er/econometrics/panel-data",
+      "skill:e2er/methods/descriptive-analysis",
+      "skill:e2er/reasoning/anti-slop",
+      "skill:e2er/reasoning/creative-ideation",
+      "skill:e2er/reasoning/novelty",
+      "skill:e2er/review/consistency-check",
+      "skill:e2er/review/data-quality",
+      "skill:e2er/review/domain-plausibility",
+      "skill:e2er/review/methods-review",
+      "skill:e2er/review/referee-simulation",
+      "skill:e2er/review/writing-quality",
+      "skill:e2er/synthesis/context-builder",
+      "skill:e2er/synthesis/replication-package",
+      "skill:e2er/writing/cite-numbers-by-source",
+      "skill:e2er/writing/paper-structure",
+      "skill:e2er/writing/personal-style",
+      "skill:e2er/writing/scoped-revision"
+    ],
+    "derived_from": []
+  },
+  "repository": {
+    "url": "https://github.com/bhanneke/e2er-demos",
+    "path": "road-traffic-death-rates-2021",
+    "host": "github",
+    "left_out": [
+      {
+        "path": "data/data.db",
+        "reason": "the terms of the WHO Global Health Observatory (WHO GHO) do not allow passing the data on"
+      }
+    ]
+  },
+  "license": null,
+  "purpose": "demonstration",
+  "availability": {
+    "data": {
+      "access": "private"
+    },
+    "code": {
+      "access": "public",
+      "url": "https://github.com/bhanneke/e2er-demos"
+    }
+  },
+  "dossier": {
+    "id": "sha256:c655a736c75bf6bbca0227142bc52b9270b7ca1c5ee0f79fb91bd84d527b8e2a",
+    "url": "https://e2er.org/d/c655a736c75bf6bb",
+    "doc": {
+      "components": [
+        {
+          "id": "agent:data_analyst",
+          "kind": "agent",
+          "name": "data_analyst",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:data_architect",
+          "kind": "agent",
+          "name": "data_architect",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:data_reviewer",
+          "kind": "agent",
+          "name": "data_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:econometrics_specialist",
+          "kind": "agent",
+          "name": "econometrics_specialist",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:idea_developer",
+          "kind": "agent",
+          "name": "idea_developer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:literature_reviewer",
+          "kind": "agent",
+          "name": "literature_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:literature_scanner",
+          "kind": "agent",
+          "name": "literature_scanner",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:methods_reviewer",
+          "kind": "agent",
+          "name": "methods_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:paper_drafter",
+          "kind": "agent",
+          "name": "paper_drafter",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:patch_revisor",
+          "kind": "agent",
+          "name": "patch_revisor",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:plausibility_reviewer",
+          "kind": "agent",
+          "name": "plausibility_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:replication_packager",
+          "kind": "agent",
+          "name": "replication_packager",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:writing_reviewer",
+          "kind": "agent",
+          "name": "writing_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "connector:claude-code",
+          "kind": "connector",
+          "name": "claude-code",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/modules/llm/claude_code.py"
+          }
+        },
+        {
+          "id": "skill:e2er/base/researcher",
+          "kind": "skill",
+          "name": "researcher",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/base/researcher.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/cleaning",
+          "kind": "skill",
+          "name": "cleaning",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/cleaning.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/data-tables",
+          "kind": "skill",
+          "name": "data-tables",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/data-tables.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/descriptive-results-schema",
+          "kind": "skill",
+          "name": "descriptive-results-schema",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/descriptive-results-schema.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/eurostat",
+          "kind": "skill",
+          "name": "eurostat",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/eurostat.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/exoplanets",
+          "kind": "skill",
+          "name": "exoplanets",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/exoplanets.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/figure-spec",
+          "kind": "skill",
+          "name": "figure-spec",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/figure-spec.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/fred",
+          "kind": "skill",
+          "name": "fred",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/fred.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gaia",
+          "kind": "skill",
+          "name": "gaia",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/gaia.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gisco",
+          "kind": "skill",
+          "name": "gisco",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/gisco.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/github",
+          "kind": "skill",
+          "name": "github",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/github.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gmd",
+          "kind": "skill",
+          "name": "gmd",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/gmd.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gutenberg",
+          "kind": "skill",
+          "name": "gutenberg",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/gutenberg.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/nasa_power",
+          "kind": "skill",
+          "name": "nasa_power",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/nasa_power.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/naturalearth",
+          "kind": "skill",
+          "name": "naturalearth",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/naturalearth.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/noaa",
+          "kind": "skill",
+          "name": "noaa",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/noaa.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/owid",
+          "kind": "skill",
+          "name": "owid",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/owid.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/query-data",
+          "kind": "skill",
+          "name": "query-data",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/query-data.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/summary-statistics-schema",
+          "kind": "skill",
+          "name": "summary-statistics-schema",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/summary-statistics-schema.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/table-spec",
+          "kind": "skill",
+          "name": "table-spec",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/table-spec.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/usgs",
+          "kind": "skill",
+          "name": "usgs",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/usgs.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/who_gho",
+          "kind": "skill",
+          "name": "who_gho",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/who_gho.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/worldbank",
+          "kind": "skill",
+          "name": "worldbank",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/worldbank.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/yfinance",
+          "kind": "skill",
+          "name": "yfinance",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/yfinance.md"
+          }
+        },
+        {
+          "id": "skill:e2er/econometrics/panel-data",
+          "kind": "skill",
+          "name": "panel-data",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/econometrics/panel-data.md"
+          }
+        },
+        {
+          "id": "skill:e2er/methods/descriptive-analysis",
+          "kind": "skill",
+          "name": "descriptive-analysis",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/methods/descriptive-analysis.md"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/anti-slop",
+          "kind": "skill",
+          "name": "anti-slop",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/reasoning/anti-slop.md"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/creative-ideation",
+          "kind": "skill",
+          "name": "creative-ideation",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/reasoning/creative-ideation.md"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/novelty",
+          "kind": "skill",
+          "name": "novelty",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/reasoning/novelty.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/consistency-check",
+          "kind": "skill",
+          "name": "consistency-check",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/consistency-check.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/data-quality",
+          "kind": "skill",
+          "name": "data-quality",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/data-quality.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/domain-plausibility",
+          "kind": "skill",
+          "name": "domain-plausibility",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/domain-plausibility.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/methods-review",
+          "kind": "skill",
+          "name": "methods-review",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/methods-review.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/referee-simulation",
+          "kind": "skill",
+          "name": "referee-simulation",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/referee-simulation.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/writing-quality",
+          "kind": "skill",
+          "name": "writing-quality",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/writing-quality.md"
+          }
+        },
+        {
+          "id": "skill:e2er/synthesis/context-builder",
+          "kind": "skill",
+          "name": "context-builder",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/synthesis/context-builder.md"
+          }
+        },
+        {
+          "id": "skill:e2er/synthesis/replication-package",
+          "kind": "skill",
+          "name": "replication-package",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/synthesis/replication-package.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/cite-numbers-by-source",
+          "kind": "skill",
+          "name": "cite-numbers-by-source",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/cite-numbers-by-source.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/paper-structure",
+          "kind": "skill",
+          "name": "paper-structure",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/paper-structure.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/personal-style",
+          "kind": "skill",
+          "name": "personal-style",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/personal-style.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/scoped-revision",
+          "kind": "skill",
+          "name": "scoped-revision",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/scoped-revision.md"
+          }
+        },
+        {
+          "id": "template:descriptive-study",
+          "kind": "template",
+          "name": "descriptive-study",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "pipelines/descriptive-study.toml"
+          }
+        }
+      ],
+      "credit": {
+        "entries": [
+          {
+            "accessed": "2026-10-11",
+            "creator": "John D. Emerson and Graham A. Colditz",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Evidence that descriptive statistics carry much of a field's empirical work (58% of NEJM articles readable with descriptives alone).",
+            "publisher": "New England Journal of Medicine 309(12), 709-713",
+            "relation": "cites",
+            "role": "related work",
+            "title": "Use of Statistical Analysis in The New England Journal of Medicine",
+            "url": "https://doi.org/10.1056/NEJM198309223091206",
+            "year": 1983
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "David Freedman and Persi Diaconis",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Histogram bin width (Freedman-Diaconis rule) in the descriptive-analysis skill.",
+            "publisher": "Zeitschrift für Wahrscheinlichkeitstheorie und Verwandte Gebiete 57(4), 453-476",
+            "relation": "cites",
+            "role": "method",
+            "title": "On the histogram as a density estimator: L2 theory",
+            "url": "https://doi.org/10.1007/BF01025868",
+            "year": 1981
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Rob J. Hyndman and Yanan Fan",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Quantile definitions (type 7, linear interpolation) the skill asks studies to state.",
+            "publisher": "The American Statistician 50(4), 361-365",
+            "relation": "cites",
+            "role": "method",
+            "title": "Sample Quantiles in Statistical Packages",
+            "url": "https://doi.org/10.1080/00031305.1996.10473566",
+            "year": 1996
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Charles Spearman",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Rank correlation (Spearman's rho) for associations in skewed data.",
+            "publisher": "The American Journal of Psychology 15(1), 72-101",
+            "relation": "cites",
+            "role": "method",
+            "title": "The Proof and Measurement of Association between Two Things",
+            "url": "https://doi.org/10.2307/1412159",
+            "year": 1904
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Roderick Little and Donald Rubin",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "book",
+            "note": "Reporting and treating missing values, which the data check asks the dictionary to explain.",
+            "publisher": "Wiley",
+            "relation": "cites",
+            "role": "method",
+            "title": "Statistical Analysis with Missing Data (3rd edition)",
+            "url": "https://doi.org/10.1002/9781119482260",
+            "year": 2019
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Hadley Wickham",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "One row per unit, one column per variable: the shape the data check reads.",
+            "publisher": "Journal of Statistical Software 59(10)",
+            "relation": "cites",
+            "role": "method",
+            "title": "Tidy Data",
+            "url": "https://doi.org/10.18637/jss.v059.i10",
+            "year": 2014
+          }
+        ],
+        "template": "descriptive-study"
+      },
+      "data": [
+        {
+          "path": "data/data.db",
+          "sha256": "a82954ffa3ef6641ab9c082119c1135a809d24fd07a9bb89e0aec67a01ae2080"
+        },
+        {
+          "path": "data/data_dictionary.json",
+          "sha256": "6a7581ce8043fc34daf22f087c63857be299ba0f622a83d4f104b4688c5dbd11"
+        },
+        {
+          "path": "data/data_sources.json",
+          "sha256": "13bf77578cf5ec5ebb509df787f0c6b8cf2f56012f5d9967e2ffe18148f39819"
+        },
+        {
+          "path": "data/data_summary.md",
+          "sha256": "c13e625de22e7d303c4d2d14f29d43976d158f6a9880adab0a992e6f201633bc"
+        }
+      ],
+      "data_sources": [
+        {
+          "citation": "WHO, Global Health Observatory: Estimated road traffic death rate (per 100 000 population) (RS_198), 2026, accessed 2026-10-13. Underlying data provided by the countries concerned (all WHO Member States reporting it).",
+          "citation_by": "source",
+          "cite_key": "WHO_GHO",
+          "connector": "who_gho",
+          "dataset": "Global Health Observatory (GHO) data repository, World Health Organization",
+          "files": [
+            {
+              "sha256": "5c37f3aeb037aa1e0131bfd07c54961b64cfe423d7773eba2e6014aa6aaef567",
+              "url": "https://ghoapi.azureedge.net/api/RS_198?%24filter=TimeDim+ge+2021+and+TimeDim+le+2021"
+            }
+          ],
+          "licence": "WHO, Terms and conditions of use for WHO data compilations, aggregations, evaluations and analyses (https://www.who.int/about/policies/publishing/data-policy/terms-and-conditions): \"Licensed Use. Subject to these Terms and Conditions, WHO grants to you the royalty-free, worldwide, non-exclusive right to use, reproduce, extract, download, copy, distribute, display or include the Datasets and data contained therein in other products for public health purposes.\" \"Any other alteration or modification of the Datasets (including abbreviations, additions, or deletions) may be made only with the prior written authorization of WHO.\" \"You will not sell or otherwise transfer the Datasets and/or data contained therein to any third party, except within the Licensed Use.\" Attribution \"in the following format: WHO, title of dataset, year, date of access, acknowledgement of the country or countries having provided the underlying data.\"",
+          "link": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/RS_198",
+          "retrieved_at": "2026-10-13T20:59:49Z",
+          "series": "WHO GHO RS_198: Estimated road traffic death rate (per 100 000 population) (all locations, 2021–2021)",
+          "table": "road_deaths_2021",
+          "terms": "https://www.who.int/about/policies/publishing/data-policy/terms-and-conditions",
+          "terms_summary": "WHO grants use, reproduction and distribution for public health purposes; other changes to the data need WHO's written authorization, and the data may not be sold. Not an open licence: a published study reloads the data instead of shipping them.",
+          "version": "2024-04-15"
+        },
+        {
+          "citation": "WHO, Global Health Observatory: Estimated road traffic death rate (per 100 000 population) (RS_198), 2026, accessed 2026-10-13. Underlying data provided by the countries concerned (all WHO Member States reporting it).",
+          "citation_by": "source",
+          "cite_key": "WHO_GHO",
+          "connector": "who_gho",
+          "dataset": "Global Health Observatory (GHO) data repository, World Health Organization",
+          "files": [
+            {
+              "sha256": "5c37f3aeb037aa1e0131bfd07c54961b64cfe423d7773eba2e6014aa6aaef567",
+              "url": "https://ghoapi.azureedge.net/api/RS_198?%24filter=TimeDim+ge+2021+and+TimeDim+le+2021"
+            }
+          ],
+          "licence": "WHO, Terms and conditions of use for WHO data compilations, aggregations, evaluations and analyses (https://www.who.int/about/policies/publishing/data-policy/terms-and-conditions): \"Licensed Use. Subject to these Terms and Conditions, WHO grants to you the royalty-free, worldwide, non-exclusive right to use, reproduce, extract, download, copy, distribute, display or include the Datasets and data contained therein in other products for public health purposes.\" \"Any other alteration or modification of the Datasets (including abbreviations, additions, or deletions) may be made only with the prior written authorization of WHO.\" \"You will not sell or otherwise transfer the Datasets and/or data contained therein to any third party, except within the Licensed Use.\" Attribution \"in the following format: WHO, title of dataset, year, date of access, acknowledgement of the country or countries having provided the underlying data.\"",
+          "link": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/RS_198",
+          "retrieved_at": "2026-10-13T21:10:05Z",
+          "saved_to": "data/who_rs198_2021.csv",
+          "series": "WHO GHO RS_198: Estimated road traffic death rate (per 100 000 population) (all locations, 2021–2021)",
+          "table": "who_rs198_2021",
+          "terms": "https://www.who.int/about/policies/publishing/data-policy/terms-and-conditions",
+          "terms_summary": "WHO grants use, reproduction and distribution for public health purposes; other changes to the data need WHO's written authorization, and the data may not be sold. Not an open licence: a published study reloads the data instead of shipping them.",
+          "version": "2024-04-15"
+        },
+        {
+          "citation": "Natural Earth (release v5.1.2). Admin 0 – Countries. https://www.naturalearthdata.com/. Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
+          "citation_by": "source",
+          "cite_key": "NaturalEarth",
+          "connector": "naturalearth",
+          "dataset": "Natural Earth vector data: Admin 0 – Countries",
+          "files": [
+            {
+              "sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb",
+              "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_50m_admin_0_countries.geojson"
+            }
+          ],
+          "licence": "Public domain (https://www.naturalearthdata.com/about/terms-of-use/): \"All versions of Natural Earth raster + vector map data found on this website are in the public domain. You may use the maps in any manner, including modifying the content and design, electronic dissemination, and offset printing. ... No permission is needed to use Natural Earth. Crediting the authors is unnecessary.\" Suggested credit: Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
+          "link": "https://www.naturalearthdata.com/downloads/",
+          "retrieved_at": "2026-10-13T21:10:07Z",
+          "series": "countries of the world, Natural Earth v5.1.2, 1:50 million, EPSG:4326",
+          "table": "country_names",
+          "terms": "https://www.naturalearthdata.com/about/terms-of-use/",
+          "terms_summary": "Public domain; no permission is needed and crediting the authors is unnecessary.",
+          "version": "v5.1.2"
+        }
+      ],
+      "e2er": {
+        "commit": null,
+        "exported_with": "0.17.0",
+        "repository": null,
+        "segments": [
+          {
+            "commit": null,
+            "from": "2026-10-13T20:58:53Z",
+            "skills": "recorded at dispatch",
+            "steps": 4,
+            "template": "descriptive-study",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T21:09:39Z",
+            "skills": "recorded at dispatch",
+            "steps": 13,
+            "template": "descriptive-study",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T21:28:54Z",
+            "skills": "recorded at dispatch",
+            "steps": 3,
+            "template": "descriptive-study",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T21:31:24Z",
+            "skills": "recorded at dispatch",
+            "steps": 13,
+            "template": "descriptive-study",
+            "version": "0.16.0"
+          }
+        ],
+        "uncommitted_changes": false,
+        "version": "0.16.0"
+      },
+      "references": [
+        {
+          "key": "WHO_GHO",
+          "source": "web",
+          "title": "Global Health Observatory data repository"
+        },
+        {
+          "key": "NaturalEarth",
+          "source": "web",
+          "title": "Natural Earth: Admin 0 -- Countries"
+        },
+        {
+          "doi": "10.1002/9781119482260",
+          "key": "little2019statistical",
+          "source": "template",
+          "title": "Statistical Analysis with Missing Data (3rd edition)",
+          "year": "2019"
+        },
+        {
+          "doi": "10.1080/00031305.1996.10473566",
+          "key": "hyndman1996sample",
+          "source": "template",
+          "title": "Sample Quantiles in Statistical Packages",
+          "year": "1996"
+        }
+      ],
+      "run": {
+        "backend": "claude_code",
+        "events": [
+          {
+            "at": "2026-10-13T20:58:53Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "haiku",
+            "segment": 0
+          },
+          {
+            "at": "2026-10-13T20:58:53Z",
+            "event": "method_sources",
+            "keys": [
+              "emerson1983statistical",
+              "freedman1981histogram",
+              "hyndman1996sample",
+              "spearman1904proof",
+              "little2019statistical",
+              "wickham2014tidy"
+            ],
+            "segment": 0
+          },
+          {
+            "at": "2026-10-13T21:00:14Z",
+            "event": "awaiting_review",
+            "segment": 0,
+            "stage": "review_design",
+            "step": "review_design"
+          },
+          {
+            "at": "2026-10-13T21:09:39Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "haiku",
+            "segment": 1
+          },
+          {
+            "at": "2026-10-13T21:15:19Z",
+            "event": "awaiting_review",
+            "segment": 1,
+            "stage": "review_draft",
+            "step": "review_draft"
+          },
+          {
+            "at": "2026-10-13T21:28:54Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "haiku",
+            "segment": 2
+          },
+          {
+            "at": "2026-10-13T21:29:13Z",
+            "event": "awaiting_review",
+            "segment": 2,
+            "stage": "review_draft",
+            "step": "review_draft"
+          },
+          {
+            "at": "2026-10-13T21:31:24Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "haiku",
+            "segment": 3
+          }
+        ],
+        "exported": "20261015",
+        "governance": "full",
+        "internal_review": {
+          "combined": "weighted average",
+          "reviewers": {
+            "data_reviewer": 6,
+            "literature_reviewer": 5.1,
+            "methods_reviewer": 5,
+            "plausibility_reviewer": 6,
+            "writing_reviewer": 7
+          },
+          "rounds": 1,
+          "scale": 10,
+          "score": 5.74,
+          "weights": {
+            "data_reviewer": 1.25,
+            "literature_reviewer": 0.75,
+            "methods_reviewer": 1.5,
+            "plausibility_reviewer": 1.25,
+            "writing_reviewer": 0.75
+          }
+        },
+        "mode": "single_pass",
+        "models": [
+          {
+            "backend": "claude_code",
+            "model": "haiku"
+          }
+        ],
+        "outcome": {
+          "at": "2026-10-13T21:36:07Z",
+          "status": "completed"
+        },
+        "template": "descriptive-study"
+      },
+      "schema": "e2er-dossier/0.6",
+      "study": {
+        "title": "How do estimated road traffic death rates per 100,000 people vary across coun..."
+      },
+      "workflow": [
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:59:37Z",
+          "model": "haiku",
+          "output": {
+            "file": "design/paper_plan.md",
+            "sha256": "321adf4763034ca84f019e9cda0ce507c36c504bd396c091e96591d91ceaf446"
+          },
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "idea_developer",
+          "started": "2026-10-13T20:59:10Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:59:39Z",
+          "model": "haiku",
+          "output": {
+            "file": "design/literature_review.md",
+            "sha256": "87521eac9bce9af265c04a07f8d15acb738d848f8bb774d5772f6bb15f5020b5"
+          },
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "literature_scanner",
+          "started": "2026-10-13T20:59:10Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:00:14Z",
+          "model": "haiku",
+          "output": {
+            "file": "data/data_dictionary.json",
+            "sha256": "ba6f8c6e74a7e5870c54d78894eff507a057d303577f45301254d4fe81cea104"
+          },
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "data_architect",
+          "started": "2026-10-13T20:59:39Z",
+          "type": "specialist"
+        },
+        {
+          "action": "approve",
+          "at": "2026-10-13T21:09:39Z",
+          "phase": "initial",
+          "segment": 0,
+          "step": "review_design",
+          "type": "researcher"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:11:10Z",
+          "model": "haiku",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "c13e625de22e7d303c4d2d14f29d43976d158f6a9880adab0a992e6f201633bc"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "c13e625de22e7d303c4d2d14f29d43976d158f6a9880adab0a992e6f201633bc"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "2df040dc3add00520bbe1049a42219e6f8ec346b2c0878af9a72ef26d5044e94"
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "f35fcfc3da5345b2b24287c3154925ce61ea243659986085901475fbeb6f9de7"
+            }
+          ],
+          "phase": "initial",
+          "segment": 1,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T21:09:39Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:11:10Z",
+          "check": "data_quality",
+          "enforced": true,
+          "passed": true,
+          "phase": "initial",
+          "segment": 1,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:11:45Z",
+          "model": "haiku",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "c13e625de22e7d303c4d2d14f29d43976d158f6a9880adab0a992e6f201633bc",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "c13e625de22e7d303c4d2d14f29d43976d158f6a9880adab0a992e6f201633bc",
+              "unchanged": true
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "2df040dc3add00520bbe1049a42219e6f8ec346b2c0878af9a72ef26d5044e94",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "f35fcfc3da5345b2b24287c3154925ce61ea243659986085901475fbeb6f9de7",
+              "unchanged": true
+            }
+          ],
+          "phase": "initial",
+          "segment": 1,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T21:11:10Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:12:43Z",
+          "check": "contracts",
+          "detail": "estimation_results.json: descriptive results contract: 'figures' must list the figure_spec.json filenames that show the distributions. This study reports descriptive statistics and distributions; write estimation_results.json as the data/descriptive-results-schema skill specifies (from the script that computes it, never by hand).",
+          "enforced": true,
+          "passed": false,
+          "phase": "initial",
+          "segment": 1,
+          "type": "check"
+        },
+        {
+          "accepted": false,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:12:43Z",
+          "model": "haiku",
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "26e2e65ec8d4f37cec99de87c10d526bc4eacb8d08aa9b3233cf82dc5489a59c"
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "26e2e65ec8d4f37cec99de87c10d526bc4eacb8d08aa9b3233cf82dc5489a59c"
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "3b58068eba250d4bbd8c387f4f3267a154526d99a8d3b6bb0649c69bef5c6f97"
+            }
+          ],
+          "phase": "initial",
+          "segment": 1,
+          "specialist": "econometrics_specialist",
+          "started": "2026-10-13T21:11:45Z",
+          "stopped_by": "contract violation: estimation_results.json: descriptive results contract: 'figures' must list the figure_spec.json filenames that show the distributions. This study reports descriptive statistics and distributions; write estimation_results.json as the data/descriptive-results-schema skill specifies (from the script that computes it, never by hand).",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:13:19Z",
+          "model": "haiku",
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "81daff08afdeeec8ca79df08d04bce83a7abc4d8fb34fd7a91662613eccab0ab"
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "81daff08afdeeec8ca79df08d04bce83a7abc4d8fb34fd7a91662613eccab0ab"
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "dc1e598e23475713d6cc8713d0c033690e59c63144dd2efdbfcad6876334da63"
+            }
+          ],
+          "phase": "initial",
+          "segment": 1,
+          "specialist": "econometrics_specialist",
+          "started": "2026-10-13T21:12:43Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:13:19Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "initial",
+          "segment": 1,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T21:14:52Z",
+          "check": "contracts",
+          "detail": "paper_draft.tex: 5 construction(s) the researcher does not accept in a paper: \"rather than\" in: The values are model-based estimates rather than registered deaths, and the extract analysed here carries no uncertainty bounds. (state the positive claim and stop); \"rather than\" in: Missing values are listed and dropped rather than filled, following the standard practice for descriptive samples with missing data \\citep{little2019statistical}. (state the positive claim and stop); \"rather than\" in: The paper cannot quantify this difference from the data it uses, and its findings should be read as a description of WHO's estimates rather than of the underlying road safety outcome. (state the positive claim and stop); \"rather than\" in: A difference between countries with different age structures may therefore reflect the age composition of the population rather than the road safety environment alone, and the available data cannot separate the two. (state the positive claim and stop); \"rather than\" in: Future work could establish whether the same ordering holds for registered deaths in the countries where registration is complete, which would show how far the estimated gap reflects the estimation method rather than the underlying burden. (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content",
+          "enforced": true,
+          "passed": false,
+          "phase": "initial",
+          "segment": 1,
+          "type": "check"
+        },
+        {
+          "accepted": false,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:14:52Z",
+          "model": "haiku",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "77bb021b5372f12e34936a675ee4d35752d60f579a1c501b473c5ee426f95bbd"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "77bb021b5372f12e34936a675ee4d35752d60f579a1c501b473c5ee426f95bbd"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "225fa7c057b50bb0c4f4236ce2687fa044c0343a8468f0ebf796b579ac60a414"
+            }
+          ],
+          "phase": "initial",
+          "segment": 1,
+          "specialist": "paper_drafter",
+          "started": "2026-10-13T21:13:19Z",
+          "stopped_by": "contract violation: paper_draft.tex: 5 construction(s) the researcher does not accept in a paper: \"rather than\" in: The values are model-based estimates rather than registered deaths, and the extract analysed here carries no uncertainty bounds. (state the positive claim and stop); \"rather than\" in: Missing values are listed and dropped rather than filled, following the standard practice for descriptive samples with missing data \\citep{little2019statistical}. (state the positive claim and stop); \"rather than\" in: The paper cannot quantify this difference from the data it uses, and its findings should be read as a description of WHO's estimates rather than of the underlying road safety outcome. (state the positive claim and stop); \"rather than\" in: A difference between countries with different age structures may therefore reflect the age composition of the population rather than the road safety environment alone, and the available data cannot separate the two. (state the positive claim and stop); \"rather than\" in: Future work could establish whether the same ordering holds for registered deaths in the countries where registration is complete, which would show how far the estimated gap reflects the estimation method rather than the underlying burden. (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:15:19Z",
+          "model": "haiku",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "d964d58e2a39dbd82934515376742033b30e6f87e5a83bcd3339a2c40522fc8d"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "d964d58e2a39dbd82934515376742033b30e6f87e5a83bcd3339a2c40522fc8d"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "225fa7c057b50bb0c4f4236ce2687fa044c0343a8468f0ebf796b579ac60a414",
+              "unchanged": true
+            }
+          ],
+          "phase": "initial",
+          "segment": 1,
+          "specialist": "paper_drafter",
+          "started": "2026-10-13T21:14:52Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:15:19Z",
+          "check": "estimation",
+          "enforced": true,
+          "passed": true,
+          "phase": "estimation_gate",
+          "segment": 1,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T21:15:19Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "figure_gate",
+          "segment": 1,
+          "type": "check"
+        },
+        {
+          "action": "send_back",
+          "at": "2026-10-13T21:28:54Z",
+          "phase": "figure_gate",
+          "remark": "Two changes. (1) The histogram fig_death_rate_hist.pdf is in figure_spec.json but not in the draft: include it as a figure in Section 3.1 (\\includegraphics with the label fig:death_rate_hist and a caption naming WHO GHO RS_198, 2021) and refer to it in the text instead of listing all ten bin counts. (2) 'about four countries exceed 30' is exact data: four countries (Guinea, Libya, Haiti, Guinea-Bissau) exceed 30; say four. Change nothing else.",
+          "segment": 1,
+          "step": "review_draft",
+          "target": "paper_drafter",
+          "type": "researcher"
+        },
+        {
+          "at": "2026-10-13T21:28:54Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "figure_gate",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:29:13Z",
+          "model": "haiku",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "e7b7e1790eaf004916a7eb4e8a15f79544fd046741bc1ae721dc692e7fe66dc8"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "e7b7e1790eaf004916a7eb4e8a15f79544fd046741bc1ae721dc692e7fe66dc8"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "225fa7c057b50bb0c4f4236ce2687fa044c0343a8468f0ebf796b579ac60a414",
+              "unchanged": true
+            }
+          ],
+          "phase": "figure_gate",
+          "segment": 2,
+          "sent_back": {
+            "at": "2026-10-13T21:28:54Z",
+            "remark": "Two changes. (1) The histogram fig_death_rate_hist.pdf is in figure_spec.json but not in the draft: include it as a figure in Section 3.1 (\\includegraphics with the label fig:death_rate_hist and a caption naming WHO GHO RS_198, 2021) and refer to it in the text instead of listing all ten bin counts. (2) 'about four countries exceed 30' is exact data: four countries (Guinea, Libya, Haiti, Guinea-Bissau) exceed 30; say four. Change nothing else."
+          },
+          "specialist": "paper_drafter",
+          "started": "2026-10-13T21:28:54Z",
+          "type": "specialist"
+        },
+        {
+          "action": "approve",
+          "at": "2026-10-13T21:31:24Z",
+          "phase": "figure_gate",
+          "segment": 2,
+          "step": "review_draft",
+          "type": "researcher"
+        },
+        {
+          "at": "2026-10-13T21:31:24Z",
+          "check": "estimation",
+          "enforced": true,
+          "passed": true,
+          "phase": "estimation_gate",
+          "segment": 3,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T21:31:24Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "figure_gate",
+          "segment": 3,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T21:31:24Z",
+          "check": "numbers",
+          "enforced": true,
+          "passed": true,
+          "phase": "review",
+          "segment": 3,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T21:31:26Z",
+          "check": "citations",
+          "enforced": true,
+          "passed": true,
+          "phase": "review",
+          "segment": 3,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:32:23Z",
+          "model": "haiku",
+          "output": {
+            "file": "reviews/review_literature.md",
+            "sha256": "6e5a9fc6b6df3479da866bcc2ec74ec3e583237c5299e89cc5b714a7931986a8"
+          },
+          "phase": "review",
+          "segment": 3,
+          "specialist": "literature_reviewer",
+          "started": "2026-10-13T21:31:26Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:32:28Z",
+          "model": "haiku",
+          "output": {
+            "file": "reviews/review_data.md",
+            "sha256": "b2bcd861e5413cfa2206e3a3ed144589d8715967b79a43d5e74dbc02afeea561"
+          },
+          "phase": "review",
+          "segment": 3,
+          "specialist": "data_reviewer",
+          "started": "2026-10-13T21:31:26Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:32:35Z",
+          "model": "haiku",
+          "output": {
+            "file": "reviews/review_writing.md",
+            "sha256": "53327a0ae3e6f3687d958628d7c0be1868f54a366471d8af41c46d86af52626a"
+          },
+          "phase": "review",
+          "segment": 3,
+          "specialist": "writing_reviewer",
+          "started": "2026-10-13T21:31:26Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:33:26Z",
+          "model": "haiku",
+          "output": {
+            "file": "reviews/review_methods.md",
+            "sha256": "04f13befb6946f1031398558852f8461d69bc6f6f7ac078ff263c8b856234064"
+          },
+          "phase": "review",
+          "segment": 3,
+          "specialist": "methods_reviewer",
+          "started": "2026-10-13T21:32:23Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:34:05Z",
+          "model": "haiku",
+          "output": {
+            "file": "reviews/review_plausibility.md",
+            "sha256": "3fac77043e6efe0168f4f0434179ef2df14c63f2518715eb62340c91457ba5f3"
+          },
+          "phase": "review",
+          "segment": 3,
+          "specialist": "plausibility_reviewer",
+          "started": "2026-10-13T21:32:28Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:35:08Z",
+          "check": "contracts",
+          "detail": "paper_draft.tex.edits.json: 1 construction(s) the researcher does not accept in a paper: \"rather than\" in: The paper reports no skewness statistic, so the upper tail is described from the histogram rather than measured. (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content",
+          "enforced": true,
+          "passed": false,
+          "phase": "revision",
+          "segment": 3,
+          "type": "check"
+        },
+        {
+          "accepted": false,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:35:08Z",
+          "model": "haiku",
+          "output": {
+            "file": "misc/paper_draft.tex.edits.json",
+            "sha256": "8f63d340504788617bd12d2f5b947c76bae3e11084052421b7d8d32c3e3756e5"
+          },
+          "phase": "revision",
+          "segment": 3,
+          "specialist": "patch_revisor",
+          "started": "2026-10-13T21:34:05Z",
+          "stopped_by": "contract violation: paper_draft.tex.edits.json: 1 construction(s) the researcher does not accept in a paper: \"rather than\" in: The paper reports no skewness statistic, so the upper tail is described from the histogram rather than measured. (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:35:27Z",
+          "model": "haiku",
+          "output": {
+            "file": "misc/paper_draft.tex.edits.json",
+            "sha256": "492139a73029d931a2ceeecd3498661c80d08494ae9eded51bdd45099f8551fc"
+          },
+          "phase": "revision",
+          "segment": 3,
+          "specialist": "patch_revisor",
+          "started": "2026-10-13T21:35:08Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:36:07Z",
+          "model": "haiku",
+          "output": {
+            "file": "replication/estimation.py",
+            "sha256": "9fb717ffed1bca38efd2fe0f8fa8fee9238847410806177b3302648b4e22683b"
+          },
+          "phase": "replication",
+          "segment": 3,
+          "specialist": "replication_packager",
+          "started": "2026-10-13T21:35:27Z",
+          "type": "specialist"
+        }
+      ],
+      "availability": {
+        "data": {
+          "access": "private"
+        },
+        "code": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        }
+      },
+      "purpose": "demonstration",
+      "amendments": [
+        {
+          "path": "e2er.json",
+          "kind": "carried_over",
+          "sha256_before": "f16017731422c7d7439da291dc9f1ab0f43013996bc0b9efe1c8f2d10b6b2f02",
+          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 1 (https://e2er.org/d/8a2a519e8cd9d086). Its steps are the ones that version recorded; none was added or rebuilt.",
+          "at": "2026-10-19T22:46:23Z",
+          "from_version": 1,
+          "from_dossier": "sha256:8a2a519e8cd9d086ba1156a9b5f060fafd8fceb342b737bb1dcea0c6bdfc02ce",
+          "e2er_version": "0.17.1"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "max_missing_share": 0.05,
+  "tables": {
+    "who_rs198_2021": {
+      "rows": 204,
+      "columns": {
+        "indicator": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "spatial_type": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "location": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "parent_location": {
+          "type": "TEXT",
+          "missing": 9,
+          "missing_share": 0.0441,
+          "unit": "none"
+        },
+        "time_type": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "year": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "year",
+          "range": [
+            2021,
+            2021
+          ]
+        },
+        "period": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "range": [
+            "2021",
+            "2021"
+          ]
+        },
+        "dim1_type": {
+          "type": "TEXT",
+          "missing": 204,
+          "missing_share": 1.0
+        },
+        "dim1": {
+          "type": "TEXT",
+          "missing": 204,
+          "missing_share": 1.0
+        },
+        "dim2_type": {
+          "type": "TEXT",
+          "missing": 204,
+          "missing_share": 1.0
+        },
+        "dim2": {
+          "type": "TEXT",
+          "missing": 204,
+          "missing_share": 1.0
+        },
+        "dim3_type": {
+          "type": "TEXT",
+          "missing": 204,
+          "missing_share": 1.0
+        },
+        "dim3": {
+          "type": "TEXT",
+          "missing": 204,
+          "missing_share": 1.0
+        },
+        "value": {
+          "type": "REAL",
+          "missing": 2,
+          "missing_share": 0.0098,
+          "unit": "deaths per 100,000 population"
+        },
+        "low": {
+          "type": "REAL",
+          "missing": 204,
+          "missing_share": 1.0,
+          "unit": "deaths per 100,000 population",
+          "missing_note": "the GHO API returned no lower bound for the first rows checked (e.g. AFG, AGO, ALB); the share with a bound is reported, not assumed. Source check: confirm whether WHO publishes uncertainty bounds for RS_198 at all."
+        },
+        "high": {
+          "type": "REAL",
+          "missing": 204,
+          "missing_share": 1.0,
+          "unit": "deaths per 100,000 population",
+          "missing_note": "same as low: the first rows checked carry no upper bound. Source check: confirm whether WHO publishes uncertainty bounds for RS_198 at all."
+        },
+        "value_text": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "comments": {
+          "type": "TEXT",
+          "missing": 204,
+          "missing_share": 1.0
+        },
+        "updated": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        }
+      },
+      "key": [
+        "location",
+        "year"
+      ],
+      "duplicate_rows": 0
+    },
+    "country_names": {
+      "rows": 242,
+      "columns": {
+        "adm0_a3": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "iso_a3_eh": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "iso_a3": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "name": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "name_long": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "continent": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "region_un": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "subregion": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "pop_est": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0
+        },
+        "geometry": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0
+        }
+      },
+      "key": [
+        "adm0_a3"
+      ],
+      "duplicate_rows": 0
+    },
+    "who_region_lookup": {
+      "rows": 6,
+      "columns": {
+        "region_code": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "region_name": {
+          "type": "TEXT",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none"
+        },
+        "value": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "deaths per 100,000 population"
+        }
+      },
+      "key": [
+        "region_code"
+      ],
+      "duplicate_rows": 0
+    }
+  },
+  "passed": true,
+  "problems": []
+}

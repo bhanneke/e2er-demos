@@ -1,0 +1,46 @@
+{
+  "n_observations": 195,
+  "n_units": 195,
+  "n_periods_per_unit_mean": 1.0,
+  "time_coverage": {
+    "start_iso": "2021-01-01",
+    "end_iso": "2021-12-31",
+    "n_periods": 1
+  },
+  "outcome": {
+    "value": {
+      "min": 0.0,
+      "max": 37.4
+    }
+  },
+  "sample_flow": [
+    {"step": "raw rows, RS_198, 2021", "n": 204, "dropped": 0},
+    {"step": "keep spatial_type = COUNTRY", "n": 197, "dropped": 7},
+    {"step": "drop rows with no value (HKG, MAC)", "n": 195, "dropped": 2},
+    {"step": "final analysis sample", "n": 195, "dropped": 0}
+  ],
+  "countries_by_region": {
+    "AFR": 47,
+    "AMR": 36,
+    "EMR": 22,
+    "EUR": 53,
+    "SEAR": 9,
+    "WPR": 28
+  },
+  "missingness": {
+    "value_n_missing": 2,
+    "value_pct_missing": 0.010152,
+    "low_n_missing": 197,
+    "low_pct_missing": 1.0,
+    "high_n_missing": 197,
+    "high_pct_missing": 1.0,
+    "parent_location_n_missing": 2
+  },
+  "quality": {
+    "n_country_rows": 197,
+    "n_values_outside_0_50": 0,
+    "n_duplicate_location_year_rows": 0,
+    "n_zero_values": 2,
+    "n_country_codes_unmatched_to_names": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "total_cites": 4,
+  "verified": 3,
+  "unverifiable": 1,
+  "missing_in_bib": 0,
+  "bibbed_uncited": [
+    "ahanhanzo2018disability",
+    "emerson1983statistical",
+    "freedman1981histogram",
+    "goodarzi2025the",
+    "katw2026validation",
+    "nutbeam2025spinal",
+    "phiri2018impact",
+    "spearman1904proof",
+    "wickham2014tidy"
+  ],
+  "checks": [
+    {
+      "cite_key": "WHO_GHO",
+      "status": "verified_title",
+      "verifier": "crossref",
+      "matched_doi": "10.1080/02763869.2019.1693231",
+      "matched_title": "Global Health Observatory Data Repository",
+      "bib_title": "Global Health Observatory data repository",
+      "bib_year": null,
+      "bib_doi": "",
+      "explanation": ""
+    },
+    {
+      "cite_key": "NaturalEarth",
+      "status": "unverifiable",
+      "verifier": "",
+      "matched_doi": "",
+      "matched_title": "",
+      "bib_title": "Natural Earth: Admin 0 -- Countries",
+      "bib_year": null,
+      "bib_doi": "",
+      "explanation": "no title match (>0.85 similarity) for 'Natural Earth: Admin 0 -- Countries' in any verifier"
+    },
+    {
+      "cite_key": "little2019statistical",
+      "status": "verified_doi",
+      "verifier": "semantic_scholar",
+      "matched_doi": "10.1002/9781119482260",
+      "matched_title": "Statistical Analysis with Missing Data, Third Edition",
+      "bib_title": "Statistical Analysis with Missing Data (3rd edition)",
+      "bib_year": 2019,
+      "bib_doi": "10.1002/9781119482260",
+      "explanation": ""
+    },
+    {
+      "cite_key": "hyndman1996sample",
+      "status": "verified_doi",
+      "verifier": "semantic_scholar",
+      "matched_doi": "10.1080/00031305.1996.10473566",
+      "matched_title": "Sample Quantiles in Statistical Packages",
+      "bib_title": "Sample Quantiles in Statistical Packages",
+      "bib_year": 1996,
+      "bib_doi": "10.1080/00031305.1996.10473566",
+      "explanation": ""
+    }
+  ],
+  "skipped_reason": null,
+  "strict": false,
+  "bibliography_source": "/private/tmp/e2er-demos58/studies/workspaces/2026-10-13-how-do-estimated-road-traffic-death/refs.bib",
+  "conclusive": false
+}

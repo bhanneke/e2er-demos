@@ -1,0 +1,629 @@
+{
+  "schema": "e2er-provenance/1",
+  "run": {
+    "paper_id": "66f43096-d973-4dc0-afaa-d086434dd927",
+    "backend": "claude_code",
+    "model": "haiku",
+    "governance": "full",
+    "template": "descriptive-study",
+    "e2er_version": "0.17.0",
+    "exported_at": "20261015",
+    "purpose": "demonstration",
+    "results_from_code": {
+      "results/estimation_results.json": {
+        "outcome": "not_recorded",
+        "reason": "the run predates output records"
+      }
+    }
+  },
+  "files": {
+    "README.md": {
+      "sha256": "599ab68062261c24df76794ca98201772168815dbb62b91bfe4d763657a8b9e2",
+      "bytes": 5689
+    },
+    "code/get_data.py": {
+      "sha256": "a89c12d65bc2cc2bf53fa5dea67e5109aa6c7bac33fbdc70bca10618d7eeeb7d",
+      "bytes": 4861
+    },
+    "code/requirements.txt": {
+      "sha256": "ddca13c05bc66d1e50a9923707ab92751fed600ef3dfe5525572f194519979d1",
+      "bytes": 269
+    },
+    "code/run_estimation.py": {
+      "sha256": "3082de4dd0459a927f795206ae219fecc09f50ba990f872caab8c6c49985f31a",
+      "bytes": 9065
+    },
+    "code/scratch/clean_rs198.py": {
+      "sha256": "15cf265c03cbd74dd8ab02c8fb49a51328aa629378d3d4559272091018d3030e",
+      "bytes": 5530
+    },
+    "code/scratch/paper_draft.log": {
+      "sha256": "fd37c2a6cbfbb2ef0b390ad31686f21efe21af7ea315c8d06ff35ed80bafa6a4",
+      "bytes": 8663
+    },
+    "data/data.db": {
+      "sha256": "a82954ffa3ef6641ab9c082119c1135a809d24fd07a9bb89e0aec67a01ae2080",
+      "bytes": 2486272
+    },
+    "data/data_dictionary.json": {
+      "sha256": "6a7581ce8043fc34daf22f087c63857be299ba0f622a83d4f104b4688c5dbd11",
+      "bytes": 9673
+    },
+    "data/data_sources.json": {
+      "sha256": "13bf77578cf5ec5ebb509df787f0c6b8cf2f56012f5d9967e2ffe18148f39819",
+      "bytes": 7900
+    },
+    "data/data_summary.md": {
+      "sha256": "c13e625de22e7d303c4d2d14f29d43976d158f6a9880adab0a992e6f201633bc",
+      "bytes": 6866
+    },
+    "design/econometric_spec.md": {
+      "sha256": "81daff08afdeeec8ca79df08d04bce83a7abc4d8fb34fd7a91662613eccab0ab",
+      "bytes": 4553
+    },
+    "design/literature_review.md": {
+      "sha256": "87521eac9bce9af265c04a07f8d15acb738d848f8bb774d5772f6bb15f5020b5",
+      "bytes": 3732
+    },
+    "design/paper_plan.md": {
+      "sha256": "321adf4763034ca84f019e9cda0ce507c36c504bd396c091e96591d91ceaf446",
+      "bytes": 8491
+    },
+    "design/researcher_instructions.md": {
+      "sha256": "dae485f957ddf42e2aec4c872ae9e2070a257c628f191d54bedd14c5a6c3d4f2",
+      "bytes": 522
+    },
+    "misc/fig_death_rate_hist.pdf": {
+      "sha256": "dd5914df729130a43268e3c293500739e090d8ceb007bd6450c4144a0c94f5b2",
+      "bytes": 13142
+    },
+    "misc/figure_render_report.json": {
+      "sha256": "9c7f099f8b9f35edf6bee804b50af20fb13ac8b352a06edc3b9f835e484637bc",
+      "bytes": 149
+    },
+    "misc/paper_draft.blg": {
+      "sha256": "e059bb34127085cc8a96a57fae7ea1d8eac46d9815ab271dcc1fd6d013589b1a",
+      "bytes": 291
+    },
+    "misc/paper_draft.tex.applied.diff": {
+      "sha256": "7e82e52627a8043164de03d8f38cd3e50ed853de069efdaf73e4bac1052bd9ac",
+      "bytes": 5657
+    },
+    "misc/paper_draft.tex.edits.json": {
+      "sha256": "492139a73029d931a2ceeecd3498661c80d08494ae9eded51bdd45099f8551fc",
+      "bytes": 2980
+    },
+    "misc/refs.bib": {
+      "sha256": "741d3d78668f05ae202d401de14f56b8aa51140ebaaf46b00d41662f5f12f971",
+      "bytes": 5437
+    },
+    "paper/paper.pdf": {
+      "sha256": "e535311752af1ce26cdbd1cbe8839db5493d41b69c4db2a4e95571d7f32b8582",
+      "bytes": 51347
+    },
+    "paper/paper.tex": {
+      "sha256": "4ac2afe3bcbf9b0feb047be0e2d029d2d91d0894e4205e74645daea29a5dc9ef",
+      "bytes": 15696
+    },
+    "paper/refs.bib": {
+      "sha256": "741d3d78668f05ae202d401de14f56b8aa51140ebaaf46b00d41662f5f12f971",
+      "bytes": 5437
+    },
+    "paper/tables/regions.tex": {
+      "sha256": "3498af48c2298a0e47ebbd612486c443273bbb757e5176d730f84cc1efa63922",
+      "bytes": 660
+    },
+    "paper/tables/summary.tex": {
+      "sha256": "94073a53d9947e3b0c26c704c0b9e9a55103bc535cb25b875ee7be2931a07484",
+      "bytes": 423
+    },
+    "replication/audit_log.csv": {
+      "sha256": "acd4cf1eb94ded01dd7351e992e3821d89c7341c39afadb5961d6bdc28a340af",
+      "bytes": 7130
+    },
+    "replication/data_queries.sql": {
+      "sha256": "b2dd512beec9ab0498defc38550824c13d688ab5ea8b1ca176091f182be952cb",
+      "bytes": 137
+    },
+    "replication/estimation.py": {
+      "sha256": "9fb717ffed1bca38efd2fe0f8fa8fee9238847410806177b3302648b4e22683b",
+      "bytes": 8396
+    },
+    "report.html": {
+      "sha256": "a5499f269d22f4582a0f01927c8b72fbb1c6032e9c11f3fa8da826e4d47151e8",
+      "bytes": 13122
+    },
+    "reproduce.json": {
+      "sha256": "c585caa98a8bf941255b18167b0e97dff01b0d84dfd62295a8cc2899804d6a94",
+      "bytes": 3827
+    },
+    "results/data_quality.json": {
+      "sha256": "10e2f05a3bbf25b5d3bfc86d5b1ad645c37155fa1ca5b1b9190cb198174262f6",
+      "bytes": 5250
+    },
+    "results/data_quality.md": {
+      "sha256": "0ee595d6cc9c000c24f5958676820954aa9f9a4ce9a890950a64b8df101157b0",
+      "bytes": 2869
+    },
+    "results/estimation_results.json": {
+      "sha256": "dc1e598e23475713d6cc8713d0c033690e59c63144dd2efdbfcad6876334da63",
+      "bytes": 8442
+    },
+    "results/figure_check.json": {
+      "sha256": "1d32cad086a12a016bffe9f4f6a0ad4d025d5a87563eaa2115bb77de210378c9",
+      "bytes": 214
+    },
+    "results/figure_spec.json": {
+      "sha256": "76f777655bf7642b5e9dcca0f92a9acf7596ffede9a555c191b9ab14ea4d2dee",
+      "bytes": 1585
+    },
+    "results/figures/fig_death_rate_hist.pdf": {
+      "sha256": "dd5914df729130a43268e3c293500739e090d8ceb007bd6450c4144a0c94f5b2",
+      "bytes": 13142
+    },
+    "results/number_verification.json": {
+      "sha256": "7ee554ff1c0d77d51af968dcc1b443b9df12aab3f1b6ce2840a442c7a503442f",
+      "bytes": 13415
+    },
+    "results/summary_statistics.json": {
+      "sha256": "2df040dc3add00520bbe1049a42219e6f8ec346b2c0878af9a72ef26d5044e94",
+      "bytes": 1096
+    },
+    "results/table_render_report.json": {
+      "sha256": "8b6bd5c395da666a9b1d852fe85dabab0de510d0efed1d25ff7177bcab9725e3",
+      "bytes": 161
+    },
+    "results/table_spec.json": {
+      "sha256": "225fa7c057b50bb0c4f4236ce2687fa044c0343a8468f0ebf796b579ac60a414",
+      "bytes": 1934
+    },
+    "reviews/citation_integrity.json": {
+      "sha256": "a063fa9351b9928877bd6e8c6a25be3146228a15dcbeae593eaa3334619914a5",
+      "bytes": 2132
+    },
+    "reviews/review_aggregation.json": {
+      "sha256": "963f7de246c754261e54e2e52b7180a5ee9d07cc9753a463455c62f07ef80efb",
+      "bytes": 1333
+    },
+    "reviews/review_data.md": {
+      "sha256": "b2bcd861e5413cfa2206e3a3ed144589d8715967b79a43d5e74dbc02afeea561",
+      "bytes": 7150
+    },
+    "reviews/review_literature.md": {
+      "sha256": "6e5a9fc6b6df3479da866bcc2ec74ec3e583237c5299e89cc5b714a7931986a8",
+      "bytes": 11059
+    },
+    "reviews/review_methods.md": {
+      "sha256": "04f13befb6946f1031398558852f8461d69bc6f6f7ac078ff263c8b856234064",
+      "bytes": 14788
+    },
+    "reviews/review_plausibility.md": {
+      "sha256": "3fac77043e6efe0168f4f0434179ef2df14c63f2518715eb62340c91457ba5f3",
+      "bytes": 11457
+    },
+    "reviews/review_writing.md": {
+      "sha256": "53327a0ae3e6f3687d958628d7c0be1868f54a366471d8af41c46d86af52626a",
+      "bytes": 10519
+    }
+  },
+  "edges": [
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "195",
+      "table_context": "tab:summary (Summary statistics of the estimated road traffic death rate ...), row 2, col 2",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "13.29",
+      "table_context": "tab:summary (Summary statistics of the estimated road traffic death rate ...), row 2, col 3",
+      "source_key": "estimation_results.json.statistics.death_rate.mean",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.78",
+      "table_context": "tab:summary (Summary statistics of the estimated road traffic death rate ...), row 2, col 4",
+      "source_key": "estimation_results.json.statistics.death_rate.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.25",
+      "table_context": "tab:summary (Summary statistics of the estimated road traffic death rate ...), row 2, col 6",
+      "source_key": "estimation_results.json.statistics.death_rate.p25",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "12.30",
+      "table_context": "tab:summary (Summary statistics of the estimated road traffic death rate ...), row 2, col 7",
+      "source_key": "estimation_results.json.statistics.death_rate.median",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "18.10",
+      "table_context": "tab:summary (Summary statistics of the estimated road traffic death rate ...), row 2, col 8",
+      "source_key": "estimation_results.json.statistics.death_rate.p75",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "37.40",
+      "table_context": "tab:summary (Summary statistics of the estimated road traffic death rate ...), row 2, col 9",
+      "source_key": "summary_statistics.json.outcome.value.max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "47",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 2, col 2",
+      "source_key": "summary_statistics.json.countries_by_region.AFR",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "19.44",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 2, col 3",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[0].mean",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "6.71",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 2, col 4",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[0].sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "6.60",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 2, col 5",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[0].min",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "20.10",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 2, col 6",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[0].median",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "37.40",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 2, col 7",
+      "source_key": "summary_statistics.json.outcome.value.max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "36",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 3, col 2",
+      "source_key": "summary_statistics.json.countries_by_region.AMR",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14.11",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 3, col 3",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[1].mean",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "6.35",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 3, col 4",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[1].sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.70",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 3, col 5",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[1].min",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "13.40",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 3, col 6",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[1].median",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "31.30",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 3, col 7",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[1].max",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 4, col 2",
+      "source_key": "summary_statistics.json.countries_by_region.SEAR",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "15.90",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 4, col 3",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[2].mean",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8.09",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 4, col 4",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[2].sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.30",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 4, col 5",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[2].min",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14.60",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 4, col 6",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[2].median",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "28.20",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 4, col 7",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[2].max",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "53",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 5, col 2",
+      "source_key": "summary_statistics.json.countries_by_region.EUR",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "6.70",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 5, col 3",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[0].sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3.85",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 5, col 4",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[3].sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "6.30",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 5, col 6",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[3].median",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "17.20",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 5, col 7",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[3].max",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "22",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 6, col 2",
+      "source_key": "summary_statistics.json.countries_by_region.EMR",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "16.69",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 6, col 3",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[4].mean",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8.33",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 6, col 4",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[4].sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.70",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 6, col 5",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[1].min",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "17.40",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 6, col 6",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[4].median",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "34.00",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 6, col 7",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[4].max",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "28",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 7, col 2",
+      "source_key": "summary_statistics.json.countries_by_region.WPR",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10.85",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 7, col 3",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[5].mean",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.81",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 7, col 4",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[5].sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "11.25",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 7, col 6",
+      "source_key": "estimation_results.json.distributions.death_rate.bins[2].upper",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "22.20",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 7, col 7",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[5].max",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "WHO_GHO",
+      "status": "verified_title",
+      "registry": "crossref",
+      "external_id": "doi:10.1080/02763869.2019.1693231"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "NaturalEarth",
+      "status": "unverifiable",
+      "registry": null,
+      "external_id": null
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "little2019statistical",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.1002/9781119482260"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "hyndman1996sample",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.1080/00031305.1996.10473566"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_death_rate_hist.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "estimation",
+      "output": "results/estimation_results.json",
+      "script": "code/run_estimation.py"
+    },
+    {
+      "type": "data",
+      "output": "data/data.db",
+      "queries": "replication/data_queries.sql",
+      "sources": "data/data_sources.json"
+    }
+  ],
+  "amendments": [
+    {
+      "path": "paper/paper.tex",
+      "sha256_before": "23651f4537049d20b0dd4a9e0d8e5f3c28725925a526f45da3d682752e30224d",
+      "sha256_after": "ad57572e7cf1f9aec969ae62aefcdad7319137d13e0a4be9e8b14fa00e4dc0a5",
+      "reason": "stamped with the dossier link",
+      "at": "2026-10-15T09:20:17Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256_before": "facb179bb80873f02622fc269d680608a97987ab617421de7377fb4c92a1406c",
+      "sha256_after": "b452f514fcbc8874ba2f815cdf573ea9c0b3e95688b32a680be1c5ad893136d0",
+      "reason": "recompiled with the dossier link",
+      "at": "2026-10-15T09:20:17Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "paper/paper.tex",
+      "sha256_before": "ad57572e7cf1f9aec969ae62aefcdad7319137d13e0a4be9e8b14fa00e4dc0a5",
+      "sha256_after": "4ac2afe3bcbf9b0feb047be0e2d029d2d91d0894e4205e74645daea29a5dc9ef",
+      "reason": "stamped with the dossier link",
+      "at": "2026-10-19T22:46:25Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256_before": "b452f514fcbc8874ba2f815cdf573ea9c0b3e95688b32a680be1c5ad893136d0",
+      "sha256_after": "e535311752af1ce26cdbd1cbe8839db5493d41b69c4db2a4e95571d7f32b8582",
+      "reason": "recompiled with the dossier link",
+      "at": "2026-10-19T22:46:25Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "README.md",
+      "sha256_before": "f6ce58a4bb1a3ac3cda47e63b905831441e36516ababf75f96bef852fb7e7a23",
+      "sha256_after": "599ab68062261c24df76794ca98201772168815dbb62b91bfe4d763657a8b9e2",
+      "reason": "the study's summary for its GitHub repository, at the top",
+      "at": "2026-10-19T22:46:25Z",
+      "kind": "readme"
+    }
+  ]
+}

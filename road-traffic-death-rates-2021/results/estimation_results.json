@@ -1,0 +1,376 @@
+{
+  "result_kind": "descriptive",
+  "sample": {
+    "n_observations": 195,
+    "unit": "country",
+    "year": 2021,
+    "source": "who_rs198_2021_clean (GHO RS_198, derived from who_rs198_2021)",
+    "flow": {
+      "raw_rows_all_spatial_types": 204,
+      "raw_country_rows": 197,
+      "dropped_no_value": 2,
+      "countries_with_value": 195,
+      "dropped_not_in_clean_table": 0,
+      "final_n": 195,
+      "excluded_countries": [
+        {
+          "location": "HKG",
+          "value_text": "0.0"
+        },
+        {
+          "location": "MAC",
+          "value_text": "0.0"
+        }
+      ],
+      "duplicate_iso3_rows": 0,
+      "unmapped_who_region": 0,
+      "values_outside_0_50": [],
+      "clean_vs_raw_value_mismatches": 0
+    }
+  },
+  "statistics": {
+    "death_rate": {
+      "n": 195,
+      "mean": 13.285128205128206,
+      "sd": 7.776374102659262,
+      "min": 0.0,
+      "p5": 2.4,
+      "p25": 7.25,
+      "median": 12.3,
+      "p75": 18.1,
+      "p95": 27.919999999999995,
+      "max": 37.4,
+      "unit": "deaths per 100,000 population",
+      "indicator": "RS_198"
+    }
+  },
+  "distributions": {
+    "death_rate": {
+      "variable": "death_rate",
+      "n": 195,
+      "bins": [
+        {
+          "lower": 0.0,
+          "upper": 3.7399999999999998,
+          "count": 18
+        },
+        {
+          "lower": 3.7399999999999998,
+          "upper": 7.4799999999999995,
+          "count": 37
+        },
+        {
+          "lower": 7.4799999999999995,
+          "upper": 11.219999999999999,
+          "count": 31
+        },
+        {
+          "lower": 11.219999999999999,
+          "upper": 14.959999999999999,
+          "count": 33
+        },
+        {
+          "lower": 14.959999999999999,
+          "upper": 18.7,
+          "count": 32
+        },
+        {
+          "lower": 18.7,
+          "upper": 22.439999999999998,
+          "count": 17
+        },
+        {
+          "lower": 22.439999999999998,
+          "upper": 26.18,
+          "count": 14
+        },
+        {
+          "lower": 26.18,
+          "upper": 29.919999999999998,
+          "count": 9
+        },
+        {
+          "lower": 29.919999999999998,
+          "upper": 33.66,
+          "count": 2
+        },
+        {
+          "lower": 33.66,
+          "upper": 37.4,
+          "count": 2
+        }
+      ]
+    },
+    "who_region": {
+      "variable": "who_region",
+      "n": 195,
+      "categories": [
+        {
+          "category": "AFR",
+          "count": 47
+        },
+        {
+          "category": "AMR",
+          "count": 36
+        },
+        {
+          "category": "SEAR",
+          "count": 9
+        },
+        {
+          "category": "EUR",
+          "count": 53
+        },
+        {
+          "category": "EMR",
+          "count": 22
+        },
+        {
+          "category": "WPR",
+          "count": 28
+        }
+      ]
+    }
+  },
+  "groups": {
+    "death_rate_by_who_region": {
+      "variable": "death_rate",
+      "by": "who_region",
+      "groups": [
+        {
+          "group": "AFR",
+          "group_name": "Africa",
+          "n": 47,
+          "mean": 19.440425531914894,
+          "sd": 6.710169426179163,
+          "min": 6.6,
+          "p5": 9.56,
+          "p25": 15.15,
+          "median": 20.1,
+          "p75": 24.6,
+          "p95": 29.629999999999995,
+          "max": 37.4
+        },
+        {
+          "group": "AMR",
+          "group_name": "Americas",
+          "n": 36,
+          "mean": 14.11111111111111,
+          "sd": 6.347768011684007,
+          "min": 4.7,
+          "p5": 4.95,
+          "p25": 9.725,
+          "median": 13.399999999999999,
+          "p75": 17.525,
+          "p95": 24.4,
+          "max": 31.3
+        },
+        {
+          "group": "SEAR",
+          "group_name": "South-East Asia",
+          "n": 9,
+          "mean": 15.899999999999999,
+          "sd": 8.089344843681719,
+          "min": 1.3,
+          "p5": 5.38,
+          "p25": 12.0,
+          "median": 14.6,
+          "p75": 19.3,
+          "p95": 27.08,
+          "max": 28.2
+        },
+        {
+          "group": "EUR",
+          "group_name": "Europe",
+          "n": 53,
+          "mean": 6.69622641509434,
+          "sd": 3.849573516045988,
+          "min": 0.0,
+          "p5": 2.02,
+          "p25": 3.9,
+          "median": 6.3,
+          "p75": 9.1,
+          "p95": 13.639999999999999,
+          "max": 17.2
+        },
+        {
+          "group": "EMR",
+          "group_name": "Eastern Mediterranean",
+          "n": 22,
+          "mean": 16.69090909090909,
+          "sd": 8.326715987362553,
+          "min": 4.7,
+          "p5": 5.970000000000001,
+          "p25": 9.475,
+          "median": 17.4,
+          "p75": 21.275,
+          "p95": 29.895,
+          "max": 34.0
+        },
+        {
+          "group": "WPR",
+          "group_name": "Western Pacific",
+          "n": 28,
+          "mean": 10.846428571428572,
+          "sd": 5.80705076819022,
+          "min": 0.0,
+          "p5": 2.18,
+          "p25": 6.5,
+          "median": 11.25,
+          "p75": 15.275,
+          "p95": 18.485,
+          "max": 22.2
+        }
+      ]
+    }
+  },
+  "variance_decomposition": {
+    "variable": "death_rate",
+    "by": "who_region",
+    "between_region_share": 0.3912052929456172,
+    "ss_between": 4589.451054791611,
+    "ss_total": 11731.566871794872,
+    "note": "Share of the total sum of squares explained by WHO region membership; a description, not a test"
+  },
+  "rankings": {
+    "top10_highest": [
+      {
+        "iso3": "GIN",
+        "country_name": "Guinea",
+        "who_region": "AFR",
+        "value": 37.4
+      },
+      {
+        "iso3": "LBY",
+        "country_name": "Libya",
+        "who_region": "EMR",
+        "value": 34.0
+      },
+      {
+        "iso3": "HTI",
+        "country_name": "Haiti",
+        "who_region": "AMR",
+        "value": 31.3
+      },
+      {
+        "iso3": "GNB",
+        "country_name": "Guinea-Bissau",
+        "who_region": "AFR",
+        "value": 30.5
+      },
+      {
+        "iso3": "SYR",
+        "country_name": "Syria",
+        "who_region": "EMR",
+        "value": 29.9
+      },
+      {
+        "iso3": "ZWE",
+        "country_name": "Zimbabwe",
+        "who_region": "AFR",
+        "value": 29.9
+      },
+      {
+        "iso3": "YEM",
+        "country_name": "Yemen",
+        "who_region": "EMR",
+        "value": 29.8
+      },
+      {
+        "iso3": "COM",
+        "country_name": "Comoros",
+        "who_region": "AFR",
+        "value": 29.0
+      },
+      {
+        "iso3": "KEN",
+        "country_name": "Kenya",
+        "who_region": "AFR",
+        "value": 28.2
+      },
+      {
+        "iso3": "NPL",
+        "country_name": "Nepal",
+        "who_region": "SEAR",
+        "value": 28.2
+      }
+    ],
+    "bottom10_lowest": [
+      {
+        "iso3": "MCO",
+        "country_name": "Monaco",
+        "who_region": "EUR",
+        "value": 0.0
+      },
+      {
+        "iso3": "NIU",
+        "country_name": "Niue",
+        "who_region": "WPR",
+        "value": 0.0
+      },
+      {
+        "iso3": "MDV",
+        "country_name": "Maldives",
+        "who_region": "SEAR",
+        "value": 1.3
+      },
+      {
+        "iso3": "NOR",
+        "country_name": "Norway",
+        "who_region": "EUR",
+        "value": 1.5
+      },
+      {
+        "iso3": "MLT",
+        "country_name": "Malta",
+        "who_region": "EUR",
+        "value": 1.9
+      },
+      {
+        "iso3": "SGP",
+        "country_name": "Singapore",
+        "who_region": "WPR",
+        "value": 1.9
+      },
+      {
+        "iso3": "SWE",
+        "country_name": "Sweden",
+        "who_region": "EUR",
+        "value": 2.1
+      },
+      {
+        "iso3": "DNK",
+        "country_name": "Denmark",
+        "who_region": "EUR",
+        "value": 2.3
+      },
+      {
+        "iso3": "CHE",
+        "country_name": "Switzerland",
+        "who_region": "EUR",
+        "value": 2.4
+      },
+      {
+        "iso3": "GBR",
+        "country_name": "United Kingdom",
+        "who_region": "EUR",
+        "value": 2.4
+      }
+    ],
+    "ties_at_top_cutoff": 2,
+    "ties_at_bottom_cutoff": 3
+  },
+  "associations": {
+    "rate_vs_uncertainty_width": {
+      "x": "death_rate",
+      "y": "uncertainty_width",
+      "method": "spearman",
+      "estimate": null,
+      "n": 0,
+      "note": "Not computed: the GHO low and high bounds are absent for all 195 analysed countries in the warehouse extract"
+    }
+  },
+  "figures": [
+    "fig_death_rate_hist.pdf"
+  ]
+}

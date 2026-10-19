@@ -1,0 +1,44 @@
+--- paper_draft.tex (before)
++++ paper_draft.tex (after)
+@@ -49,7 +49,7 @@
+ 
+ \subsection{The national distribution}
+ 
+-Table~\ref{tab:summary} reports the summary statistics for the 195 countries. The median estimated rate is 12.3 deaths per 100,000 population, and the mean of 13.3 lies slightly above it, which is consistent with a right tail.
++Table~\ref{tab:summary} reports the summary statistics for the 195 countries. The median estimated rate is 12.3 deaths per 100,000 population, and the mean of 13.3 lies slightly above it. That gap is the only evidence on skewness in this section. The paper reports no skewness statistic, so the upper tail is described from the histogram and is not measured.
+ % src: estimation_results.json#statistics.death_rate.median
+ % src: estimation_results.json#statistics.death_rate.mean
+ The interquartile range runs from 7.3 to 18.1, and the 5th and 95th percentiles are 2.4 and 27.9. The central 90 percent of countries therefore span a range of more than an order of magnitude.
+@@ -71,20 +71,20 @@
+ 
+ \subsection{Regional differences}
+ 
+-Table~\ref{tab:regions} reports the distribution within each WHO region. The African region contains 47 countries and has the highest mean, 19.4, and median, 20.1.
++Table~\ref{tab:regions} reports the distribution within each WHO region. The regional means and medians are unweighted averages across countries, so each country counts equally regardless of population. The African region contains 47 countries and has the highest mean, 19.4, and median, 20.1.
+ % src: estimation_results.json#groups.death_rate_by_who_region.groups.0.mean
+ % src: estimation_results.json#groups.death_rate_by_who_region.groups.0.median
+ The Eastern Mediterranean region follows with a mean of 16.7 and a median of 17.4, and South-East Asia has a mean of 15.9 across nine countries.
+ % src: estimation_results.json#groups.death_rate_by_who_region.groups.4.mean
+ % src: estimation_results.json#groups.death_rate_by_who_region.groups.2.mean
+-The Americas (mean 14.1) and the Western Pacific (mean 10.8) sit in the middle of the range.
++The Americas (mean 14.1) sit in the middle of the range. The Western Pacific (mean 10.8) ranks fifth of six on this unweighted measure, and WHO's published regional aggregate for it differs from this figure. The paper has not yet reconciled the two, so the Western Pacific's position in the ordering should be read with caution.
+ % src: estimation_results.json#groups.death_rate_by_who_region.groups.1.mean
+ % src: estimation_results.json#groups.death_rate_by_who_region.groups.5.mean
+ The European region has the lowest mean, 6.7, and the lowest median, 6.3, across 53 countries. The regional mean in Africa is therefore nearly three times the European mean, a ratio computed from the two reported means (19.44 divided by 6.70).
+ % src: estimation_results.json#groups.death_rate_by_who_region.groups.3.mean
+ % computed: groups.death_rate_by_who_region.groups.0.mean (19.44) / groups.death_rate_by_who_region.groups.3.mean (6.70) = 2.9
+ 
+-Regional membership accounts for about 39 percent of the total variation in national rates, measured as the share of the total sum of squares that lies between regions.
++The between-region sum of squares is about 39 percent of the total sum of squares in national rates. This is a descriptive partition of this sample. Eta-squared rises mechanically with the number of groups, so the share overstates how much variation regions explain under a different grouping.
+ % src: estimation_results.json#variance_decomposition.between_region_share
+ This is a description of how countries cluster, not a test of whether regions differ. Within-region spread is also large. The African region ranges from 6.6 to 37.4, and the Eastern Mediterranean region from 4.7 to 34.0, so the regional averages conceal considerable variation among countries that share a region. The European region is the most homogeneous, with a standard deviation of 3.8 around its mean.
+ % src: estimation_results.json#groups.death_rate_by_who_region.groups.0.min
+@@ -104,7 +104,7 @@
+ % src: estimation_results.json#rankings.top10_highest.7.value
+ Of the ten highest-rate countries, five are in the African region, three in the Eastern Mediterranean, and one each in the Americas and South-East Asia. The African region's concentration in the top group is consistent with its high regional mean, although the Eastern Mediterranean region contributes more of the top group than its share of countries would suggest.
+ 
+-At the other end of the distribution, Monaco and Niue report rates of 0.0. These are the only two zero values in the sample, and both are very small populations, where a zero in one year is more plausible than in a large country. We keep both in the analysis as published and flag them here, because a rate of zero is an unusual model output and the lower tail of the distribution depends on them.
++At the other end of the distribution, Monaco and Niue report rates of 0.0. These are the only two zero values in the sample, and the paper does not attribute them to population size. We keep both in the analysis as published and flag them here, because a rate of zero is an unusual model output. Whether the lower tail depends on them has not been tested, so the minimum and the 5th percentile should be read with that in mind.
+ % src: estimation_results.json#rankings.bottom10_lowest.0.value
+ % src: estimation_results.json#rankings.bottom10_lowest.1.value
+ The Maldives (1.3), Norway (1.5), Malta and Singapore (both 1.9), and Sweden (2.1) follow, with Denmark (2.3), Switzerland and the United Kingdom (both 2.4) completing the ten lowest.

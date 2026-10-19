@@ -1,0 +1,81 @@
+{
+  "schema": "e2er-reproduce/1",
+  "about": "Written by e2er at export (2026-10-15) from what the run recorded: the scripts that wrote estimation_results.json, from the estimation script on, in the order the run ran them (its script log); the files they read; and the packages they import. code/requirements.txt pins 2 package(s) at the versions the run used.",
+  "python": "3.12",
+  "requirements": "code/requirements.txt",
+  "files": {
+    "clean_rs198.py": "code/scratch/clean_rs198.py",
+    "run_estimation.py": "code/run_estimation.py",
+    "data.db": "data/data.db",
+    "fig_death_rate_hist.pdf": "results/figures/fig_death_rate_hist.pdf",
+    "figure_spec.json": "results/figure_spec.json",
+    "get_data.py": "code/get_data.py"
+  },
+  "steps": [
+    {
+      "run": [
+        "python",
+        "get_data.py"
+      ],
+      "about": "load the inputs the folder does not ship (if any)"
+    },
+    {
+      "run": [
+        "python",
+        "clean_rs198.py"
+      ],
+      "about": "data preparation: builds the study's tables from the loaded ones",
+      "when_missing": [
+        "data.db"
+      ]
+    },
+    {
+      "run": [
+        "python",
+        "run_estimation.py"
+      ],
+      "about": "the estimation script"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data.db",
+      "sha256": "a82954ffa3ef6641ab9c082119c1135a809d24fd07a9bb89e0aec67a01ae2080",
+      "source": "the study's database, tables: country_names (Natural Earth vector data: Admin 0 – Countries, countries of the world, Natural Earth v5.1.2, 1:50 million, EPSG:4326, release v5.1.2, loaded 2026-10-13); road_deaths_2021 (Global Health Observatory (GHO) data repository, World Health Organization, WHO GHO RS_198: Estimated road traffic death rate (per 100 000 population) (all locations, 2021–2021), release 2024-04-15, loaded 2026-10-13); who_region_lookup (made by the study during the run); who_rs198_2021 (Global Health Observatory (GHO) data repository, World Health Organization, WHO GHO RS_198: Estimated road traffic death rate (per 100 000 population) (all locations, 2021–2021), release 2024-04-15, loaded 2026-10-13); who_rs198_2021_clean (made by the study during the run)",
+      "tables": {
+        "country_names": {
+          "rows": 242,
+          "content_sha256": "f810457fde37f5756dca49eb64ee66c8f73a3d459b75e6898cab227f4d9b5556"
+        },
+        "road_deaths_2021": {
+          "rows": 204,
+          "content_sha256": "10810423479c642767bac0abb8a22868eaf179b305ebd32e9dea3060b081c35e"
+        },
+        "who_region_lookup": {
+          "rows": 6,
+          "content_sha256": "776d577ea7c3d368051485fc791767fe87c41776b9e5b089a86469f05589b812"
+        },
+        "who_rs198_2021": {
+          "rows": 204,
+          "content_sha256": "10810423479c642767bac0abb8a22868eaf179b305ebd32e9dea3060b081c35e"
+        },
+        "who_rs198_2021_clean": {
+          "rows": 195,
+          "content_sha256": "7d760c0da4945585f888d50992f2567af45fde6e222bb14b4db52f11238be723"
+        }
+      },
+      "reload": "get_data.py"
+    }
+  ],
+  "compare": [
+    {
+      "published": "results/estimation_results.json",
+      "produced": "estimation_results.json"
+    }
+  ],
+  "notes": [
+    "When data.db is not in the folder, clean_rs198.py builds the tables the estimation reads (who_region_lookup, who_rs198_2021_clean) again from the tables get_data.py loads, as the run did.",
+    "The WHO Global Health Observatory's terms allow use for public health purposes only, and no changes without WHO's written permission, so a published study may leave its data out. get_data.py loads these data again with e2er-data when the folder lacks them.",
+    "The run recorded no Python version for its scripts (e2er up to 0.16.0), so the recipe names the Python e2er exported the study with (3.12.12); the study may have run on another."
+  ]
+}

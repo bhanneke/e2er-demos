@@ -1,0 +1,52 @@
+{
+  "tables": [
+    {
+      "filename": "summary.tex",
+      "label": "tab:summary",
+      "caption": "Summary statistics of the estimated road traffic death rate across countries, 2021",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "statistics",
+      "rows": ["death_rate"],
+      "row_labels": {"death_rate": "Deaths per 100,000 population"},
+      "row_header": "Variable",
+      "columns": [
+        {"field": "n", "header": "$N$", "decimals": 0},
+        {"field": "mean", "header": "Mean", "decimals": 2},
+        {"field": "sd", "header": "SD", "decimals": 2},
+        {"field": "min", "header": "Min", "decimals": 2},
+        {"field": "p25", "header": "P25", "decimals": 2},
+        {"field": "median", "header": "Median", "decimals": 2},
+        {"field": "p75", "header": "P75", "decimals": 2},
+        {"field": "max", "header": "Max", "decimals": 2}
+      ]
+    },
+    {
+      "filename": "regions.tex",
+      "label": "tab:regions",
+      "caption": "Distribution of the estimated road traffic death rate by WHO region, 2021",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "groups.death_rate_by_who_region.groups",
+      "key_field": "group",
+      "rows": ["AFR", "AMR", "SEAR", "EUR", "EMR", "WPR"],
+      "row_labels": {
+        "AFR": "Africa",
+        "AMR": "Americas",
+        "SEAR": "South-East Asia",
+        "EUR": "Europe",
+        "EMR": "Eastern Mediterranean",
+        "WPR": "Western Pacific"
+      },
+      "row_header": "WHO region",
+      "columns": [
+        {"field": "n", "header": "$N$", "decimals": 0},
+        {"field": "mean", "header": "Mean", "decimals": 2},
+        {"field": "sd", "header": "SD", "decimals": 2},
+        {"field": "min", "header": "Min", "decimals": 2},
+        {"field": "median", "header": "Median", "decimals": 2},
+        {"field": "max", "header": "Max", "decimals": 2}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+\documentclass[12pt]{article}
+\usepackage{booktabs}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\title{Estimated Road Traffic Death Rates across Countries and WHO Regions, 2021}
+\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/c655a736c75bf6bb}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Road traffic deaths remain a major source of preventable mortality, yet the reported burden differs sharply between countries. We describe the distribution of the World Health Organization's estimated road traffic death rate (GHO indicator RS\_198) across 195 countries in 2021, summarise it by the six WHO regions, and identify the countries with the highest and lowest rates. The national median is 12.3 deaths per 100,000 population, and the middle half of countries lie between 7.3 and 18.1. The African region averages 19.4, roughly three times the 6.7 observed in the European region. WHO region membership accounts for about 39 percent of the variation in national rates. The values are model-based estimates that combine observed data with WHO's modelling assumptions, and the extract analysed here carries no uncertainty bounds. The paper makes no causal claims.
+\end{abstract}
+
+\section{Introduction}
+
+Road traffic injuries kill a large number of people each year, and the toll falls unevenly across the world. Estimates of the death rate per 100,000 population are the usual basis for comparing countries, because they scale deaths by population and place countries of very different size on one scale. The World Health Organization (WHO) publishes such estimates through its Global Health Observatory (GHO), where the indicator RS\_198 reports the estimated road traffic death rate for each Member State \citep{WHO_GHO}.
+
+This paper asks how the estimated road traffic death rate varies across countries and WHO regions in 2021. We answer the question descriptively. We report how large the cross-country gap is, how it is structured by region, and which countries sit at the two ends of the distribution. We do not ask why the gap exists, and the descriptions below should not be read as effects of any policy, income level, or infrastructure feature.
+
+The main descriptive findings are as follows. The estimated rate ranges from 0.0 to 37.4 deaths per 100,000 population, with a standard deviation of 7.8 around a mean of 13.3. Regional averages range from 6.7 in Europe to 19.4 in Africa, and WHO region membership explains about 39 percent of the total variance in national rates. Guinea, Libya, and Haiti have the highest estimated rates among the countries analysed, while Monaco and Niue report rates of zero, followed by the Maldives and Norway at 1.3 and 1.5.
+
+The remainder of this paper is structured as follows. Section 2 describes the data source, the estimation method behind the series, and the sample construction. Section 3 reports the national distribution, the regional differences, and the highest and lowest countries. Section 4 sets out the limitations, which concern the difference between estimated and registered deaths and the uncertainty of modelled estimates. Section 5 concludes.
+
+\section{Data}
+
+\subsection{Source and estimation method}
+
+The data come from the WHO Global Health Observatory API, indicator RS\_198, for calendar year 2021 and all reporting locations. The series is a WHO estimate of the road traffic death rate per 100,000 population. It is not a count of deaths registered by national vital registration systems. WHO derives such estimates by modelling the available information on road traffic deaths for each country, so the published figures combine observed data with model assumptions. The GHO response does not state whether the series is age-standardised. The paper therefore does not describe the rates as crude or as age-standardised until the GHO metadata has been checked, and the unit throughout is deaths per 100,000 population.
+
+Country names and ISO3 codes come from the Natural Earth 1:50m admin-0 boundaries \citep{NaturalEarth}. The six WHO regions (Africa, the Americas, South-East Asia, Europe, the Eastern Mediterranean, and the Western Pacific) are taken from the region rows of the same GHO load and are coded AFR, AMR, SEAR, EUR, EMR, and WPR.
+
+\subsection{Sample construction}
+
+The raw extract contains 204 rows for RS\_198 in 2021, covering countries, WHO regions, and the global aggregate. Keeping the country rows leaves 197 observations, which removes the six regional aggregates and the global row.
+% src: estimation_results.json#sample.flow.raw_rows_all_spatial_types
+% src: estimation_results.json#sample.flow.raw_country_rows
+Two countries, Hong Kong SAR and Macao SAR, have no numeric value in the analysis table and are excluded, which leaves 195 countries. No value is imputed.
+% src: estimation_results.json#sample.flow.dropped_no_value
+% src: estimation_results.json#sample.n_observations
+Each analysed country has exactly one WHO region and one row for 2021. The data check finds no duplicate keys, no unmatched country codes, and no value outside the plausibility range of 0 to 50 deaths per 100,000 population. Missing values are listed and dropped, with no value imputed, following the standard practice for descriptive samples with missing data \citep{little2019statistical}. The sample flow and the full data-quality results are reported in the accompanying data quality report.
+
+The analysis reports sample statistics and distributions of the estimated rate and treats each country as one observation. Quantiles follow the type 7 definition, which uses linear interpolation between order statistics and is the default in most statistical software \citep{hyndman1996sample}. Because the study is descriptive, no inferential test is reported.
+
+\section{Results}
+
+\subsection{The national distribution}
+
+Table~\ref{tab:summary} reports the summary statistics for the 195 countries. The median estimated rate is 12.3 deaths per 100,000 population, and the mean of 13.3 lies slightly above it. That gap is the only evidence on skewness in this section. The paper reports no skewness statistic, so the upper tail is described from the histogram and is not measured.
+% src: estimation_results.json#statistics.death_rate.median
+% src: estimation_results.json#statistics.death_rate.mean
+The interquartile range runs from 7.3 to 18.1, and the 5th and 95th percentiles are 2.4 and 27.9. The central 90 percent of countries therefore span a range of more than an order of magnitude.
+% src: estimation_results.json#statistics.death_rate.p25
+% src: estimation_results.json#statistics.death_rate.p75
+% src: estimation_results.json#statistics.death_rate.p5
+% src: estimation_results.json#statistics.death_rate.p95
+The distribution is not concentrated at one value. Figure~\ref{fig:death_rate_hist} shows the histogram in equal-width bins of 3.74 deaths per 100,000 population. Most countries lie between 3.7 and 18.7, and four countries exceed 30.
+% src: estimation_results.json#distributions.death_rate.bins
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\textwidth]{fig_death_rate_hist.pdf}
+\caption{Distribution of the estimated road traffic death rate across countries, 2021. Source: WHO Global Health Observatory, indicator RS\_198, 2021.}
+\label{fig:death_rate_hist}
+\end{figure}
+
+\input{tables/summary.tex}
+
+\subsection{Regional differences}
+
+Table~\ref{tab:regions} reports the distribution within each WHO region. The regional means and medians are unweighted averages across countries, so each country counts equally regardless of population. The African region contains 47 countries and has the highest mean, 19.4, and median, 20.1.
+% src: estimation_results.json#groups.death_rate_by_who_region.groups.0.mean
+% src: estimation_results.json#groups.death_rate_by_who_region.groups.0.median
+The Eastern Mediterranean region follows with a mean of 16.7 and a median of 17.4, and South-East Asia has a mean of 15.9 across nine countries.
+% src: estimation_results.json#groups.death_rate_by_who_region.groups.4.mean
+% src: estimation_results.json#groups.death_rate_by_who_region.groups.2.mean
+The Americas (mean 14.1) sit in the middle of the range. The Western Pacific (mean 10.8) ranks fifth of six on this unweighted measure, and WHO's published regional aggregate for it differs from this figure. The paper has not yet reconciled the two, so the Western Pacific's position in the ordering should be read with caution.
+% src: estimation_results.json#groups.death_rate_by_who_region.groups.1.mean
+% src: estimation_results.json#groups.death_rate_by_who_region.groups.5.mean
+The European region has the lowest mean, 6.7, and the lowest median, 6.3, across 53 countries. The regional mean in Africa is therefore nearly three times the European mean, a ratio computed from the two reported means (19.44 divided by 6.70).
+% src: estimation_results.json#groups.death_rate_by_who_region.groups.3.mean
+% computed: groups.death_rate_by_who_region.groups.0.mean (19.44) / groups.death_rate_by_who_region.groups.3.mean (6.70) = 2.9
+
+The between-region sum of squares is about 39 percent of the total sum of squares in national rates. This is a descriptive partition of this sample. Eta-squared rises mechanically with the number of groups, so the share overstates how much variation regions explain under a different grouping.
+% src: estimation_results.json#variance_decomposition.between_region_share
+This is a description of how countries cluster, not a test of whether regions differ. Within-region spread is also large. The African region ranges from 6.6 to 37.4, and the Eastern Mediterranean region from 4.7 to 34.0, so the regional averages conceal considerable variation among countries that share a region. The European region is the most homogeneous, with a standard deviation of 3.8 around its mean.
+% src: estimation_results.json#groups.death_rate_by_who_region.groups.0.min
+% src: estimation_results.json#groups.death_rate_by_who_region.groups.0.max
+% src: estimation_results.json#groups.death_rate_by_who_region.groups.4.max
+% src: estimation_results.json#groups.death_rate_by_who_region.groups.3.sd
+
+\input{tables/regions.tex}
+
+\subsection{Highest and lowest countries}
+
+Guinea reports the highest estimated rate in the sample at 37.4 deaths per 100,000 population, followed by Libya at 34.0 and Haiti at 31.3. Guinea-Bissau (30.5), Syria and Zimbabwe (both 29.9), Yemen (29.8), and Comoros (29.0) complete the top eight, and Kenya and Nepal tie at 28.2 for the ninth and tenth places.
+% src: estimation_results.json#rankings.top10_highest.0.value
+% src: estimation_results.json#rankings.top10_highest.1.value
+% src: estimation_results.json#rankings.top10_highest.2.value
+% src: estimation_results.json#rankings.top10_highest.3.value
+% src: estimation_results.json#rankings.top10_highest.7.value
+Of the ten highest-rate countries, five are in the African region, three in the Eastern Mediterranean, and one each in the Americas and South-East Asia. The African region's concentration in the top group is consistent with its high regional mean, although the Eastern Mediterranean region contributes more of the top group than its share of countries would suggest.
+
+At the other end of the distribution, Monaco and Niue report rates of 0.0. These are the only two zero values in the sample, and the paper does not attribute them to population size. We keep both in the analysis as published and flag them here, because a rate of zero is an unusual model output. Whether the lower tail depends on them has not been tested, so the minimum and the 5th percentile should be read with that in mind.
+% src: estimation_results.json#rankings.bottom10_lowest.0.value
+% src: estimation_results.json#rankings.bottom10_lowest.1.value
+The Maldives (1.3), Norway (1.5), Malta and Singapore (both 1.9), and Sweden (2.1) follow, with Denmark (2.3), Switzerland and the United Kingdom (both 2.4) completing the ten lowest.
+% src: estimation_results.json#rankings.bottom10_lowest.2.value
+% src: estimation_results.json#rankings.bottom10_lowest.3.value
+Seven of these ten are in the European region. The lowest-rate group is therefore concentrated in Europe, although it is not confined to that region, as the Maldives and the two Western Pacific entries show.
+
+\section{Limitations}
+
+The most important limitation concerns the relation between estimated and registered deaths. The series is a model-based estimate, and the sample does not contain registered counts against which the estimates can be checked. Where registration is complete, estimates and counts should agree closely; where it is incomplete, the estimate reflects the modelling assumptions WHO applies to the available evidence. The national and regional patterns reported here therefore describe the estimates, and the ranking of countries may differ from a ranking based on registered deaths. The paper cannot quantify this difference from the data it uses, and its findings describe WHO's estimates, and they speak to the underlying road safety outcome only to the extent that the estimates track it.
+
+The second limitation concerns the uncertainty of modelled estimates. The GHO extract carries no lower or upper uncertainty bound for any country, so the analysis reports point estimates only and no intervals. Whether WHO publishes uncertainty bounds for RS\_198 at all has not been confirmed from the API, and the paper does not state that they exist. The two zero values for Monaco and Niue illustrate the point, since a point estimate of zero carries no information about its precision. Because the rates are reported without bounds, differences between neighbouring countries in the ranking, several of which are smaller than one death per 100,000 population, should not be read as reliable orderings. The same applies to the regional means, which summarise point estimates whose errors the data do not reveal. A third scope condition is that the series does not state its age standardisation. A difference between countries with different age structures may therefore reflect the age composition of the population as well as the road safety environment, and the available data cannot separate the two.
+
+\section{Conclusion}
+
+The estimated road traffic death rate varies several-fold across countries in 2021. The national distribution is right-skewed, with a median of 12.3 deaths per 100,000 population, and regional membership accounts for a substantial share of the variation. Africa and the Eastern Mediterranean carry the highest regional averages, while Europe has the lowest. The highest-rate countries cluster in Africa and the Eastern Mediterranean, and the lowest-rate countries largely in Europe, with the two zero values as a point that warrants checking against the source. These patterns describe WHO's modelled estimates for a single year. Future work could establish whether the same ordering holds for registered deaths in the countries where registration is complete, which would show how far the estimated gap reflects the estimation method and how far it reflects the underlying burden.
+
+\bibliographystyle{apalike}
+\bibliography{refs}
+
+\end{document}

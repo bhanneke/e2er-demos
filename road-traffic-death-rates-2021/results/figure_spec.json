@@ -1,0 +1,67 @@
+{
+  "figures": [
+    {
+      "filename": "fig_death_rate_hist.pdf",
+      "figure_type": "histogram",
+      "label": "fig:death_rate_hist",
+      "caption_hint": "Distribution of the estimated road traffic death rate across countries, 2021 (WHO GHO RS_198)",
+      "bins": [
+        {
+          "lower": 0.0,
+          "upper": 3.7399999999999998,
+          "count": 18
+        },
+        {
+          "lower": 3.7399999999999998,
+          "upper": 7.4799999999999995,
+          "count": 37
+        },
+        {
+          "lower": 7.4799999999999995,
+          "upper": 11.219999999999999,
+          "count": 31
+        },
+        {
+          "lower": 11.219999999999999,
+          "upper": 14.959999999999999,
+          "count": 33
+        },
+        {
+          "lower": 14.959999999999999,
+          "upper": 18.7,
+          "count": 32
+        },
+        {
+          "lower": 18.7,
+          "upper": 22.439999999999998,
+          "count": 17
+        },
+        {
+          "lower": 22.439999999999998,
+          "upper": 26.18,
+          "count": 14
+        },
+        {
+          "lower": 26.18,
+          "upper": 29.919999999999998,
+          "count": 9
+        },
+        {
+          "lower": 29.919999999999998,
+          "upper": 33.66,
+          "count": 2
+        },
+        {
+          "lower": 33.66,
+          "upper": 37.4,
+          "count": 2
+        }
+      ],
+      "x_label": "Estimated road traffic death rate (deaths per 100,000 population)",
+      "y_label": "Countries",
+      "source": {
+        "results": "distributions.death_rate.bins"
+      }
+    }
+  ]
+}

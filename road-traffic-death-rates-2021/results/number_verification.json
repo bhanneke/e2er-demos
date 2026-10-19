@@ -1,0 +1,298 @@
+{
+  "passed": true,
+  "total_values_in_tables": 41,
+  "matched": 41,
+  "mismatched": 0,
+  "unverifiable": 0,
+  "coverage": 1.0,
+  "mismatches": [],
+  "matched_cells": [
+    {
+      "draft_value": "195",
+      "source_key": "summary_statistics.json.n_observations",
+      "table_context": "tab:summary (Summary statistics of the estimated road traffic death rate ...), row 2, col 2"
+    },
+    {
+      "draft_value": "13.29",
+      "source_key": "estimation_results.json.statistics.death_rate.mean",
+      "table_context": "tab:summary (Summary statistics of the estimated road traffic death rate ...), row 2, col 3"
+    },
+    {
+      "draft_value": "7.78",
+      "source_key": "estimation_results.json.statistics.death_rate.sd",
+      "table_context": "tab:summary (Summary statistics of the estimated road traffic death rate ...), row 2, col 4"
+    },
+    {
+      "draft_value": "7.25",
+      "source_key": "estimation_results.json.statistics.death_rate.p25",
+      "table_context": "tab:summary (Summary statistics of the estimated road traffic death rate ...), row 2, col 6"
+    },
+    {
+      "draft_value": "12.30",
+      "source_key": "estimation_results.json.statistics.death_rate.median",
+      "table_context": "tab:summary (Summary statistics of the estimated road traffic death rate ...), row 2, col 7"
+    },
+    {
+      "draft_value": "18.10",
+      "source_key": "estimation_results.json.statistics.death_rate.p75",
+      "table_context": "tab:summary (Summary statistics of the estimated road traffic death rate ...), row 2, col 8"
+    },
+    {
+      "draft_value": "37.40",
+      "source_key": "summary_statistics.json.outcome.value.max",
+      "table_context": "tab:summary (Summary statistics of the estimated road traffic death rate ...), row 2, col 9"
+    },
+    {
+      "draft_value": "47",
+      "source_key": "summary_statistics.json.countries_by_region.AFR",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 2, col 2"
+    },
+    {
+      "draft_value": "19.44",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[0].mean",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 2, col 3"
+    },
+    {
+      "draft_value": "6.71",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[0].sd",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 2, col 4"
+    },
+    {
+      "draft_value": "6.60",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[0].min",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 2, col 5"
+    },
+    {
+      "draft_value": "20.10",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[0].median",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 2, col 6"
+    },
+    {
+      "draft_value": "37.40",
+      "source_key": "summary_statistics.json.outcome.value.max",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 2, col 7"
+    },
+    {
+      "draft_value": "36",
+      "source_key": "summary_statistics.json.countries_by_region.AMR",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 3, col 2"
+    },
+    {
+      "draft_value": "14.11",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[1].mean",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 3, col 3"
+    },
+    {
+      "draft_value": "6.35",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[1].sd",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 3, col 4"
+    },
+    {
+      "draft_value": "4.70",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[1].min",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 3, col 5"
+    },
+    {
+      "draft_value": "13.40",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[1].median",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 3, col 6"
+    },
+    {
+      "draft_value": "31.30",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[1].max",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 3, col 7"
+    },
+    {
+      "draft_value": "9",
+      "source_key": "summary_statistics.json.countries_by_region.SEAR",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 4, col 2"
+    },
+    {
+      "draft_value": "15.90",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[2].mean",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 4, col 3"
+    },
+    {
+      "draft_value": "8.09",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[2].sd",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 4, col 4"
+    },
+    {
+      "draft_value": "1.30",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[2].min",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 4, col 5"
+    },
+    {
+      "draft_value": "14.60",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[2].median",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 4, col 6"
+    },
+    {
+      "draft_value": "28.20",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[2].max",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 4, col 7"
+    },
+    {
+      "draft_value": "53",
+      "source_key": "summary_statistics.json.countries_by_region.EUR",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 5, col 2"
+    },
+    {
+      "draft_value": "6.70",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[0].sd",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 5, col 3"
+    },
+    {
+      "draft_value": "3.85",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[3].sd",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 5, col 4"
+    },
+    {
+      "draft_value": "6.30",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[3].median",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 5, col 6"
+    },
+    {
+      "draft_value": "17.20",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[3].max",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 5, col 7"
+    },
+    {
+      "draft_value": "22",
+      "source_key": "summary_statistics.json.countries_by_region.EMR",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 6, col 2"
+    },
+    {
+      "draft_value": "16.69",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[4].mean",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 6, col 3"
+    },
+    {
+      "draft_value": "8.33",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[4].sd",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 6, col 4"
+    },
+    {
+      "draft_value": "4.70",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[1].min",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 6, col 5"
+    },
+    {
+      "draft_value": "17.40",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[4].median",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 6, col 6"
+    },
+    {
+      "draft_value": "34.00",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[4].max",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 6, col 7"
+    },
+    {
+      "draft_value": "28",
+      "source_key": "summary_statistics.json.countries_by_region.WPR",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 7, col 2"
+    },
+    {
+      "draft_value": "10.85",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[5].mean",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 7, col 3"
+    },
+    {
+      "draft_value": "5.81",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[5].sd",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 7, col 4"
+    },
+    {
+      "draft_value": "11.25",
+      "source_key": "estimation_results.json.distributions.death_rate.bins[2].upper",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 7, col 6"
+    },
+    {
+      "draft_value": "22.20",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[5].max",
+      "table_context": "tab:regions (Distribution of the estimated road traffic death rate by WHO...), row 7, col 7"
+    }
+  ],
+  "source_files_found": [
+    "/private/tmp/e2er-demos58/studies/workspaces/2026-10-13-how-do-estimated-road-traffic-death/data_quality.json",
+    "/private/tmp/e2er-demos58/studies/workspaces/2026-10-13-how-do-estimated-road-traffic-death/estimation_results.json",
+    "/private/tmp/e2er-demos58/studies/workspaces/2026-10-13-how-do-estimated-road-traffic-death/figure_spec.json",
+    "/private/tmp/e2er-demos58/studies/workspaces/2026-10-13-how-do-estimated-road-traffic-death/summary_statistics.json"
+  ],
+  "source_files_missing": [
+    "robustness_results.json"
+  ],
+  "skipped_reason": null,
+  "prose_total": 84,
+  "prose_matched": 56,
+  "prose_mismatched": 8,
+  "prose_unverifiable": 20,
+  "prose_excluded": 17,
+  "prose_mismatches": [
+    {
+      "draft_value": "198",
+      "source_key": "estimation_results.json.sample.flow.countries_with_value",
+      "source_value": "195.0",
+      "table_context": "prose: \u2026death rate (GHO indicator RS\\_198) across 195 countrie\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "7.3",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[0].sd",
+      "source_value": "6.710169426179163",
+      "table_context": "prose: \u2026half of countries lie between 7.3 and 18.1. The Afric\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "39",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[0].max",
+      "source_value": "37.4",
+      "table_context": "prose: \u2026membership accounts for about 39 percent of the vari\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "39",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[0].max",
+      "source_value": "37.4",
+      "table_context": "prose: \u2026ion membership explains about 39 percent of the tota\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "50",
+      "source_key": "estimation_results.json.distributions.who_region.categories[0].count",
+      "source_value": "47.0",
+      "table_context": "prose: \u2026come from the Natural Earth 1:50m admin-0 boundaries\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "198",
+      "source_key": "summary_statistics.json.quality.n_country_rows",
+      "source_value": "197.0",
+      "table_context": "prose: \u2026act contains 204 rows for RS\\_198 in 2021, covering c\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "50",
+      "source_key": "estimation_results.json.groups.death_rate_by_who_region.groups[0].n",
+      "source_value": "47.0",
+      "table_context": "prose: \u2026he plausibility range of 0 to 50 deaths per 100,000\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "90",
+      "source_key": "summary_statistics.json.countries_by_region.EUR",
+      "source_value": "53.0",
+      "table_context": "prose: \u2026are 2.4 and 27.9. The central 90 percent of countrie\u2026",
+      "severity": "major"
+    }
+  ],
+  "table_spec_unresolved": [],
+  "rendered_tables": [
+    "regions.tex",
+    "summary.tex"
+  ],
+  "rendered_tables_not_in_draft": [],
+  "conclusive": true,
+  "tables_untraced": false,
+  "untraced_reason": ""
+}

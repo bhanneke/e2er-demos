@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "figures": [
+    {
+      "figure": "fig_death_rate_hist.pdf",
+      "source": {
+        "results": "distributions.death_rate.bins"
+      },
+      "matches": true
+    }
+  ],
+  "problems": []
+}
