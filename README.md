@@ -6,19 +6,19 @@ Each folder holds the files of one study made with [e2er](https://e2er.org): the
 
 ## The studies
 
-1. `exoplanet-radius-period-provenance/` (files not in this repository yet) · [study page](https://e2er.org/bhanneke/exoplanet-radius-period-provenance)  
+1. [`exoplanet-radius-period-provenance/`](exoplanet-radius-period-provenance/) · [study page](https://e2er.org/bhanneke/exoplanet-radius-period-provenance) · [dossier](https://e2er.org/d/4b37c8f62f137839)  
    How are confirmed exoplanets distributed in planet radius and orbital period, and how does that distribution change when radii measured from transits are separated from radii calculated from planet mass?
 2. `pleiades-gaia-dr3-members/` (files not in this repository yet) · [study page](https://e2er.org/bhanneke/pleiades-gaia-dr3-members)  
    Which stars within 3 degrees of the Pleiades centre are cluster members by Gaia DR3 parallax and proper motion, and what do their colour-magnitude diagram and parallax distance distribution show about the cluster's distance and main sequence?
 3. [`earthquake-counts-b-value-by-decade/`](earthquake-counts-b-value-by-decade/) · [study page](https://e2er.org/bhanneke/earthquake-counts-b-value-by-decade) · [dossier](https://e2er.org/d/2710da27da3a6d1b)  
    How has the yearly number of magnitude 5 and larger earthquakes worldwide changed from 1976 to 2025, and is the Gutenberg–Richter b-value stable across decades once the catalogue's completeness magnitude is taken into account?
-4. `frankfurt-temperature-trend-forecasts/` (files not in this repository yet) · [study page](https://e2er.org/bhanneke/frankfurt-temperature-trend-forecasts)  
+4. [`frankfurt-temperature-trend-forecasts/`](frankfurt-temperature-trend-forecasts/) · [study page](https://e2er.org/bhanneke/frankfurt-temperature-trend-forecasts) · [dossier](https://e2er.org/d/c985731bebd41662)  
    How has the monthly mean air temperature at 2 metres in Frankfurt am Main (NASA POWER, 50.11 N, 8.68 E) changed since 1981, and how well do seasonal forecasting models predict the next 36 months compared with a seasonal naive baseline?
 5. `school-fee-abolition-enrolment-africa/` (files not in this repository yet) · [study page](https://e2er.org/bhanneke/school-fee-abolition-enrolment-africa)  
    Did abolishing primary-school fees in sub-Saharan African countries (staggered between the mid-1990s and the mid-2000s) raise gross primary enrolment? A difference-in-differences with World Bank enrolment data, comparing countries that abolished fees with countries that had not (yet) abolished them.
 6. `eu-regional-gdp-spatial-clustering/` (files not in this repository yet) · [study page](https://e2er.org/bhanneke/eu-regional-gdp-spatial-clustering)  
    How does GDP per capita in purchasing power standards vary across the EU's NUTS-2 regions in 2024, and how strongly do regions with high and low GDP per capita cluster in space?
-7. `road-traffic-death-rates-2021/` (files not in this repository yet) · [study page](https://e2er.org/bhanneke/road-traffic-death-rates-2021)  
+7. [`road-traffic-death-rates-2021/`](road-traffic-death-rates-2021/) · [study page](https://e2er.org/bhanneke/road-traffic-death-rates-2021) · [dossier](https://e2er.org/d/c655a736c75bf6bb)  
    How do estimated road traffic death rates per 100,000 people vary across countries and WHO regions in 2021? A descriptive study with the WHO Global Health Observatory indicator RS_198.
 8. `weather-words-english-novels/` (files not in this repository yet) · [study page](https://e2er.org/bhanneke/weather-words-english-novels)  
    How did the vocabulary of weather (rain, wind, storm, fog, snow, sun, cloud and related words) vary across English-language novels by authors born in six cohorts, 1770–1799 to 1880–1899?
