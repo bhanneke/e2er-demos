@@ -1,0 +1,1441 @@
+{
+  "schema": "e2er-provenance/1",
+  "run": {
+    "paper_id": "09bc8be0-20c4-4a5d-8241-282ccd2a45b1",
+    "backend": "claude_code",
+    "model": "haiku",
+    "governance": "full",
+    "template": "descriptive-study",
+    "e2er_version": "0.17.0",
+    "exported_at": "20261015",
+    "purpose": "demonstration",
+    "results_from_code": {
+      "results/estimation_results.json": {
+        "outcome": "not_recorded",
+        "reason": "the run predates output records"
+      }
+    },
+    "derived_data": [
+      {
+        "path": "data/gaia_clean.csv",
+        "named": "data/gaia_clean.csv",
+        "connectors": [
+          "gaia"
+        ],
+        "writers": [
+          "code/scratch/clean_gaia.py",
+          "code/scratch/prepare_gaia.py"
+        ]
+      }
+    ]
+  },
+  "files": {
+    "README.md": {
+      "sha256": "3e452a18823defd22e452b8614d3721962c7a50237885af49ecd184427c28844",
+      "bytes": 6131
+    },
+    "code/get_data.py": {
+      "sha256": "6a5ec369a31945bb656853f6d45111d66b3842485f65713b77547fdec43e2ba3",
+      "bytes": 4644
+    },
+    "code/requirements.txt": {
+      "sha256": "ddca13c05bc66d1e50a9923707ab92751fed600ef3dfe5525572f194519979d1",
+      "bytes": 269
+    },
+    "code/run_estimation.py": {
+      "sha256": "ebae02dc2103310f681ddebde1448f3c934fd5f4a33d45fbc77aef53e54363bd",
+      "bytes": 13345
+    },
+    "code/scratch/clean_gaia.py": {
+      "sha256": "b4db38a537977c23fddbff495aa4d9fc1d954741eb3e8b168886713fa4880884",
+      "bytes": 4133
+    },
+    "code/scratch/load_members.py": {
+      "sha256": "6607e58d745d60bd90d861b34f8d725c57d56b8b7539ee35c774a3875fc31456",
+      "bytes": 5915
+    },
+    "code/scratch/make_figures.py": {
+      "sha256": "d5d8e91573264ff55539eeac12126046264aa1fd73d174183f0b5dfe8344f691",
+      "bytes": 5563
+    },
+    "code/scratch/paper_draft.log": {
+      "sha256": "823c452b015c6d89d78e510547e45c42293cf5ba1db6b16b2ce36df0b7a17b22",
+      "bytes": 9252
+    },
+    "code/scratch/prepare_gaia.py": {
+      "sha256": "2e837e55f98a8721a77c222772a68ec0a0f69569911a22df4de1b0f66482e737",
+      "bytes": 3694
+    },
+    "code/scratch/render_fig_cmd.py": {
+      "sha256": "2e6cf65ee76008e5ba9c7d0328e0bc59c8f9d0aa44ba5d4af2fe24e0f9b0b427",
+      "bytes": 322
+    },
+    "code/scratch/update_fig_cmd_spec.py": {
+      "sha256": "c0d4fbf47b0dc4bb389cfcc3b841152ed8492169a49d86b00135669a03f58a0e",
+      "bytes": 1902
+    },
+    "code/scratch/verify_fig_cmd.py": {
+      "sha256": "cbaad3b20ce0953ece1206c44fbc3a5e32bd94fb191cd654919ba8208951092f",
+      "bytes": 1863
+    },
+    "data/data.db": {
+      "sha256": "56ea2a6acff33ff82e907d6fd681be3769db2693717746d9f0af1e4d65ae6749",
+      "bytes": 4177920
+    },
+    "data/data_dictionary.json": {
+      "sha256": "2cc4b7da056012bee3f57b676b7912f25f2e64bca16271c6d507eb70651d9336",
+      "bytes": 14119
+    },
+    "data/data_sources.json": {
+      "sha256": "3b415a6d613550b45524d0e6d29e12452d6dad83a3d4ce47be3ca01cd96b2c8b",
+      "bytes": 5955
+    },
+    "data/data_summary.md": {
+      "sha256": "1e9db8480eb6c729fa78c702ad3069e46226e6e1a5939c8807d941bc5488dbd5",
+      "bytes": 7801
+    },
+    "data/gaia_clean.csv": {
+      "sha256": "28c906d7028fc9db636c5ea30070086910bc935010c629aff2dc66dd910197df",
+      "bytes": 2370419
+    },
+    "design/econometric_spec.md": {
+      "sha256": "f66d8e7d81c2d8906436ac1ba369666123ee6c5f389ae92b5459d0a6ad5a0fb1",
+      "bytes": 9594
+    },
+    "design/literature_review.md": {
+      "sha256": "d14393ba79ce1f574f855ea5efae52d7ea43ad85156147a85ef25f0a88954233",
+      "bytes": 11175
+    },
+    "design/paper_plan.md": {
+      "sha256": "f9ecd45f9928041aad0299cf15fa15f47a323399409cbc07a266a379fb14d264",
+      "bytes": 9410
+    },
+    "design/researcher_instructions.md": {
+      "sha256": "ca885d66bfa5a63910425a1c540bcce76866f1e927a25eb6b1cee2bf28398b7a",
+      "bytes": 3393
+    },
+    "misc/fig_cmd.pdf": {
+      "sha256": "f92d6906069b37e76e0b5d973216cb0cc9be7779540ff5af4f09334904985db7",
+      "bytes": 169452
+    },
+    "misc/fig_cmd_members.pdf": {
+      "sha256": "4364b4139ab708ca7e18a4d70c62a5dc10a8e6657c17551ab13fb2c40fafa60f",
+      "bytes": 169452
+    },
+    "misc/fig_distance_hist.pdf": {
+      "sha256": "c58b2c438e51ff80b278c175f54a2b839031e909ceb7120b8a62c48c9ac53d75",
+      "bytes": 11882
+    },
+    "misc/fig_vpd_pm.pdf": {
+      "sha256": "db11bbb94387d7bd75336c0301180e8f03db2a3492a06e070380675e3abe85c7",
+      "bytes": 157467
+    },
+    "misc/figure_render_report.json": {
+      "sha256": "5cf8d6643745205f3da46226359ca011b4930a8ba7f392266fa16874c627451b",
+      "bytes": 215
+    },
+    "misc/paper_draft.blg": {
+      "sha256": "ac815a57ef7e5086b8ebd0181a0d89f0261b1d0e703a58efe192cc003f7770da",
+      "bytes": 200
+    },
+    "misc/paper_draft.tex.applied.diff": {
+      "sha256": "3dbefd2503299a230a8817436a6d7d0d7483ade1fd9787cd04afe50154a9a9ef",
+      "bytes": 4733
+    },
+    "misc/paper_draft.tex.edits.json": {
+      "sha256": "2b77244e2ee791e2b37e181d996f1e130472858226a56b31996594f1248fd3b5",
+      "bytes": 2771
+    },
+    "misc/refs.bib": {
+      "sha256": "f2a9c68900245aabd50312260fd5c273d7c67d995af247c88f395a47977bc794",
+      "bytes": 11430
+    },
+    "paper/abstract.tex": {
+      "sha256": "5f2e11a14005c2d793cd99902ceeefd3fb8b36df1c48da72f7c98a9dcc152e42",
+      "bytes": 1840
+    },
+    "paper/paper.pdf": {
+      "sha256": "2ec43880ec2c8e574bc60f163de7de1abd54eac56afe985822ba33afda8cb7e1",
+      "bytes": 78634
+    },
+    "paper/paper.tex": {
+      "sha256": "9e32963dc28e255dca76c2a859df77389f2d0d16a991d4729b4e2ffdc83b796c",
+      "bytes": 26035
+    },
+    "paper/refs.bib": {
+      "sha256": "f2a9c68900245aabd50312260fd5c273d7c67d995af247c88f395a47977bc794",
+      "bytes": 11430
+    },
+    "paper/tables/grid.tex": {
+      "sha256": "2514c766e9f623fb57718e6bafa5ed3826164078236291b877b5d5ff27491e9b",
+      "bytes": 781
+    },
+    "paper/tables/locus.tex": {
+      "sha256": "b99c324da906409fee81d302a31a2896647e413e6ac5f762f697713c4f5edce8",
+      "bytes": 704
+    },
+    "paper/tables/summary.tex": {
+      "sha256": "179851cbb95981b99027631175b43b5f20f63f9aaa2266b6be346974c7e8ea8b",
+      "bytes": 738
+    },
+    "replication/audit_log.csv": {
+      "sha256": "b6f38b6733b5d0c4512b7cb3f7d9123443f71e39bfc54c022d0e23fb44c374a4",
+      "bytes": 6954
+    },
+    "replication/data_queries.sql": {
+      "sha256": "2e9a2863bdbbd471f1d75df5e2051aff19e2525efbf2904ed340847326257a24",
+      "bytes": 137
+    },
+    "replication/estimation.py": {
+      "sha256": "1131c2b0c69194d06916adb21b5b35f3f90e903cdbe1837eeb1426ad23df70e4",
+      "bytes": 20318
+    },
+    "report.html": {
+      "sha256": "67f9d2597889bc9f697e737ae82de4aec4afc3783fca02c75c8a4bc67739b550",
+      "bytes": 17168
+    },
+    "reproduce.json": {
+      "sha256": "6849d37697f8f97078baa8d4bcdedf1d6c5f41d9cea28c5b8c06a5b2c9ba6c6d",
+      "bytes": 3352
+    },
+    "results/data_quality.json": {
+      "sha256": "e9df348ef11e90c04de3b62057ad5d210d85c036f6e3f20d77cd8bec2b594853",
+      "bytes": 4843
+    },
+    "results/data_quality.md": {
+      "sha256": "e481615f8ee9e459c998f4f53fafca308542d16185d3ec83633cf6d1f7133746",
+      "bytes": 2945
+    },
+    "results/estimation_results.json": {
+      "sha256": "f29659ad1e9f627f08b7fdf227c01db76bc138f28c4a9e6ecedbab8781c8dddb",
+      "bytes": 33322
+    },
+    "results/figure_check.json": {
+      "sha256": "f09d4cd5ccb06ba5d2fad34235e5581cdea6525731adbe08c5bebe5b14d8a1d8",
+      "bytes": 1189
+    },
+    "results/figure_spec.json": {
+      "sha256": "1212d76fe9eb92dac212a84dca502e9045c1b8d9afc68d85a777ab78387e17b4",
+      "bytes": 1641889
+    },
+    "results/figures/fig_cmd.pdf": {
+      "sha256": "f92d6906069b37e76e0b5d973216cb0cc9be7779540ff5af4f09334904985db7",
+      "bytes": 169452
+    },
+    "results/figures/fig_cmd_members.pdf": {
+      "sha256": "4364b4139ab708ca7e18a4d70c62a5dc10a8e6657c17551ab13fb2c40fafa60f",
+      "bytes": 169452
+    },
+    "results/figures/fig_distance_hist.pdf": {
+      "sha256": "c58b2c438e51ff80b278c175f54a2b839031e909ceb7120b8a62c48c9ac53d75",
+      "bytes": 11882
+    },
+    "results/figures/fig_vpd_pm.pdf": {
+      "sha256": "db11bbb94387d7bd75336c0301180e8f03db2a3492a06e070380675e3abe85c7",
+      "bytes": 157467
+    },
+    "results/number_verification.json": {
+      "sha256": "ac0487f2db8011624e69aa10cc9fc599d8b6073ca4505668a55bcc008606ef30",
+      "bytes": 31725
+    },
+    "results/summary_statistics.json": {
+      "sha256": "7b39bf74928d062740ac33917ab5dda48aa6ddbbdae60ec840f8db2e845da259",
+      "bytes": 3816
+    },
+    "results/table_render_report.json": {
+      "sha256": "d5bac21ad34d5d8b389e4f648cb0a3955477bd4b0e5122ce1f87cfeb07bcd296",
+      "bytes": 175
+    },
+    "results/table_spec.json": {
+      "sha256": "e3bdc6e0b140b617e82f249a00acefdc5728f1263acdcef3f728961345a1a68a",
+      "bytes": 2383
+    },
+    "reviews/citation_integrity.json": {
+      "sha256": "34f43202ebb18e9825dc45c435b266c2eafdd725bf724fafb748790d7c677768",
+      "bytes": 4779
+    },
+    "reviews/review_aggregation.json": {
+      "sha256": "107397a68a37154fe8f2ca16c1e6f611320fb2726d12a348b6c552114fa5bd8b",
+      "bytes": 1333
+    },
+    "reviews/review_data.md": {
+      "sha256": "9b4e9ee29d3fd170fb7e8142b7145334371f73eccb844a5ae87dacd9bf9e8a4f",
+      "bytes": 16432
+    },
+    "reviews/review_literature.md": {
+      "sha256": "39cfcf6c32a45b5eb2f66033f75bc06a973e4a4ca7670546fe332e9184075b08",
+      "bytes": 10216
+    },
+    "reviews/review_methods.md": {
+      "sha256": "56ea529dff6882e4fa25ec5a317929f3f0825ec7404f86a616740bfd3f512dcd",
+      "bytes": 12950
+    },
+    "reviews/review_plausibility.md": {
+      "sha256": "f6d9d0d8e9e63bfc55efa09fa796010ddfa6bd0f3b1a263092114704f4ab1d85",
+      "bytes": 10106
+    },
+    "reviews/review_writing.md": {
+      "sha256": "922135cbd74957dfaeb07bbe02ea92fdee482abc886ebbe3b73a49490e1d71f7",
+      "bytes": 19197
+    },
+    "reviews/self_attack_report.json": {
+      "sha256": "b685817ad96942941002ac01c77b9ba1a12561c23e637354adc5ccc3d72be895",
+      "bytes": 45
+    }
+  },
+  "edges": [
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9,970",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 2, col 2",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,112",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 2, col 3",
+      "source_key": "summary_statistics.json.members.n_members",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.367",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 2, col 4",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9,970",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 3, col 2",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,024",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 3, col 3",
+      "source_key": "estimation_results.json.membership_grid[1].n_members",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.371",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 3, col 4",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9,970",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 4, col 2",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,124",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 4, col 3",
+      "source_key": "estimation_results.json.membership_grid[2].n_members",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.368",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 4, col 4",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9,970",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 5, col 2",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,127",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 5, col 3",
+      "source_key": "estimation_results.json.membership_grid[3].n_members",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.368",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 5, col 4",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9,970",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 6, col 2",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,025",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 6, col 3",
+      "source_key": "estimation_results.json.membership_grid[4].n_members",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.367",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 6, col 4",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9,970",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 7, col 2",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,135",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 7, col 3",
+      "source_key": "estimation_results.json.membership_grid[5].n_members",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.367",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 7, col 4",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9,470",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 8, col 2",
+      "source_key": "estimation_results.json.membership_grid[6].n_quality",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,053",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 8, col 3",
+      "source_key": "estimation_results.json.membership_grid[6].n_members",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.371",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 8, col 4",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "12,722",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 9, col 2",
+      "source_key": "summary_statistics.json.sample_flow[3].n",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,125",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 9, col 3",
+      "source_key": "estimation_results.json.membership_grid[7].n_members",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.366",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 9, col 4",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9,970",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 10, col 2",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,112",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 10, col 3",
+      "source_key": "summary_statistics.json.members.n_members",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.397",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 10, col 4",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9,961",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 11, col 2",
+      "source_key": "estimation_results.json.membership_grid[9].n_quality",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,106",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 11, col 3",
+      "source_key": "estimation_results.json.membership_grid[9].n_members",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.367",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 11, col 4",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "6",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 2, col 1",
+      "source_key": "estimation_results.json.membership_grid[9].g_floor",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 2, col 2",
+      "source_key": "summary_statistics.json.ranges.parallax_over_error.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-0.03",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 2, col 3",
+      "source_key": "estimation_results.json.main_sequence_locus[0].p16_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.02",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 2, col 4",
+      "source_key": "estimation_results.json.main_sequence_locus[0].median_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.05",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 2, col 5",
+      "source_key": "estimation_results.json.main_sequence_locus[0].p84_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 3, col 1",
+      "source_key": "estimation_results.json.distributions.parallax.bins[1].upper",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 3, col 2",
+      "source_key": "estimation_results.json.main_sequence_locus[1].n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.04",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 3, col 3",
+      "source_key": "estimation_results.json.main_sequence_locus[1].p16_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.17",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 3, col 4",
+      "source_key": "estimation_results.json.main_sequence_locus[1].median_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.24",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 3, col 5",
+      "source_key": "estimation_results.json.main_sequence_locus[1].p84_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 4, col 1",
+      "source_key": "estimation_results.json.distributions.parallax.bins[5].upper",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "18",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 4, col 2",
+      "source_key": "summary_statistics.json.ranges.phot_g_mean_mag.p75",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.29",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 4, col 3",
+      "source_key": "estimation_results.json.main_sequence_locus[2].p16_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.40",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 4, col 4",
+      "source_key": "estimation_results.json.main_sequence_locus[2].median_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.53",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 4, col 5",
+      "source_key": "estimation_results.json.main_sequence_locus[2].p84_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 5, col 1",
+      "source_key": "estimation_results.json.distributions.parallax.bins[6].count",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "32",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 5, col 2",
+      "source_key": "estimation_results.json.main_sequence_locus[3].n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.64",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 5, col 3",
+      "source_key": "estimation_results.json.main_sequence_locus[3].p16_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.70",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 5, col 4",
+      "source_key": "estimation_results.json.main_sequence_locus[3].median_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.75",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 5, col 5",
+      "source_key": "estimation_results.json.main_sequence_locus[3].p84_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 6, col 1",
+      "source_key": "summary_statistics.json.ranges.parallax_over_error.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "37",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 6, col 2",
+      "source_key": "estimation_results.json.main_sequence_locus[4].n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.81",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 6, col 3",
+      "source_key": "estimation_results.json.main_sequence_locus[4].p16_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.89",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 6, col 4",
+      "source_key": "estimation_results.json.main_sequence_locus[4].median_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.96",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 6, col 5",
+      "source_key": "estimation_results.json.main_sequence_locus[4].p84_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "11",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 7, col 1",
+      "source_key": "estimation_results.json.distributions.parallax.bins[0].count",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "41",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 7, col 2",
+      "source_key": "estimation_results.json.main_sequence_locus[5].n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.01",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 7, col 3",
+      "source_key": "estimation_results.json.main_sequence_locus[5].p16_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.08",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 7, col 4",
+      "source_key": "estimation_results.json.statistics.pmra_mas_yr.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.20",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 7, col 5",
+      "source_key": "estimation_results.json.membership_grid[6].ruwe_max",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "12",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 8, col 1",
+      "source_key": "estimation_results.json.main_sequence_locus[5].g_upper",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "46",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 8, col 2",
+      "source_key": "estimation_results.json.main_sequence_locus[6].n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.30",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 8, col 3",
+      "source_key": "estimation_results.json.main_sequence_locus[6].p16_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.39",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 8, col 4",
+      "source_key": "estimation_results.json.main_sequence_locus[6].median_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.55",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 8, col 5",
+      "source_key": "estimation_results.json.main_sequence_locus[6].p84_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "13",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 9, col 1",
+      "source_key": "estimation_results.json.main_sequence_locus[6].g_upper",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "65",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 9, col 2",
+      "source_key": "estimation_results.json.main_sequence_locus[7].n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.68",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 9, col 3",
+      "source_key": "estimation_results.json.main_sequence_locus[7].p16_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.81",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 9, col 4",
+      "source_key": "estimation_results.json.main_sequence_locus[7].median_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.90",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 9, col 5",
+      "source_key": "estimation_results.json.main_sequence_locus[7].p84_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 10, col 1",
+      "source_key": "estimation_results.json.main_sequence_locus[1].n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "59",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 10, col 2",
+      "source_key": "estimation_results.json.distributions.parallax.bins[1].count",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.06",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 10, col 3",
+      "source_key": "estimation_results.json.main_sequence_locus[8].p16_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.28",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 10, col 4",
+      "source_key": "estimation_results.json.main_sequence_locus[8].median_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.46",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 10, col 5",
+      "source_key": "estimation_results.json.main_sequence_locus[8].p84_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "15",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 11, col 1",
+      "source_key": "estimation_results.json.main_sequence_locus[8].g_upper",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "142",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 11, col 2",
+      "source_key": "estimation_results.json.main_sequence_locus[9].n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.50",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 11, col 3",
+      "source_key": "estimation_results.json.main_sequence_locus[9].p16_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.67",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 11, col 4",
+      "source_key": "estimation_results.json.main_sequence_locus[9].median_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.80",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 11, col 5",
+      "source_key": "summary_statistics.json.ranges.bp_rp.p75",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "16",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 12, col 1",
+      "source_key": "estimation_results.json.statistics.pmra_mas_yr.min",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "250",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 12, col 2",
+      "source_key": "estimation_results.json.main_sequence_locus[10].n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.89",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 12, col 3",
+      "source_key": "estimation_results.json.main_sequence_locus[10].p16_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.99",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 12, col 4",
+      "source_key": "estimation_results.json.membership_grid[1].pm_radius_mas_yr",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3.11",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 12, col 5",
+      "source_key": "estimation_results.json.main_sequence_locus[10].p84_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "17",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 13, col 1",
+      "source_key": "summary_statistics.json.members.members_without_bp_rp",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "228",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 13, col 2",
+      "source_key": "estimation_results.json.main_sequence_locus[11].n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3.12",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 13, col 3",
+      "source_key": "estimation_results.json.main_sequence_locus[10].p84_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3.25",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 13, col 4",
+      "source_key": "summary_statistics.json.ranges.parallax_mas.median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3.41",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 13, col 5",
+      "source_key": "estimation_results.json.main_sequence_locus[11].p84_bp_rp",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,112",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 2, col 2",
+      "source_key": "summary_statistics.json.members.n_members",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.37",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 2, col 3",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.23",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 2, col 4",
+      "source_key": "estimation_results.json.statistics.parallax_mas.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.24",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 2, col 5",
+      "source_key": "estimation_results.json.statistics.parallax_mas.p25",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.37",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 2, col 6",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.49",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 2, col 7",
+      "source_key": "estimation_results.json.statistics.parallax_mas.p75",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,112",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 3, col 2",
+      "source_key": "summary_statistics.json.members.n_members",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "135.89",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 3, col 3",
+      "source_key": "estimation_results.json.statistics.distance_pc.mean",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "4.27",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 3, col 4",
+      "source_key": "estimation_results.json.statistics.distance_pc.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "133.52",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 3, col 5",
+      "source_key": "estimation_results.json.statistics.distance_pc.p25",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "135.75",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 3, col 6",
+      "source_key": "estimation_results.json.statistics.distance_pc.mean",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "138.06",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 3, col 7",
+      "source_key": "estimation_results.json.statistics.distance_pc.p75",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,112",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 4, col 2",
+      "source_key": "summary_statistics.json.members.n_members",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "19.87",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 4, col 3",
+      "source_key": "summary_statistics.json.members.pm_centre_mas_yr[0]",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.08",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 4, col 4",
+      "source_key": "estimation_results.json.statistics.pmra_mas_yr.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "19.14",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 4, col 5",
+      "source_key": "estimation_results.json.statistics.pmra_mas_yr.p25",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "19.87",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 4, col 6",
+      "source_key": "summary_statistics.json.members.pm_centre_mas_yr[0]",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "20.63",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 4, col 7",
+      "source_key": "estimation_results.json.statistics.pmra_mas_yr.p75",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,112",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 5, col 2",
+      "source_key": "summary_statistics.json.members.n_members",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-45.38",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 5, col 3",
+      "source_key": "summary_statistics.json.members.pm_centre_mas_yr[1]",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.41",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 5, col 4",
+      "source_key": "estimation_results.json.statistics.pmdec_mas_yr.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-46.29",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 5, col 5",
+      "source_key": "estimation_results.json.statistics.pmdec_mas_yr.p25",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-45.40",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 5, col 6",
+      "source_key": "summary_statistics.json.members.pm_centre_mas_yr[1]",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-44.50",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 5, col 7",
+      "source_key": "estimation_results.json.statistics.pmdec_mas_yr.p75",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,111",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 6, col 2",
+      "source_key": "estimation_results.json.statistics.phot_g_mean_mag.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "15.47",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 6, col 3",
+      "source_key": "estimation_results.json.statistics.phot_g_mean_mag.mean",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.92",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 6, col 4",
+      "source_key": "estimation_results.json.statistics.phot_g_mean_mag.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14.15",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 6, col 5",
+      "source_key": "estimation_results.json.statistics.phot_g_mean_mag.p25",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "16.41",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 6, col 6",
+      "source_key": "estimation_results.json.statistics.phot_g_mean_mag.median",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "17.38",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 6, col 7",
+      "source_key": "estimation_results.json.statistics.phot_g_mean_mag.p75",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,095",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 7, col 2",
+      "source_key": "summary_statistics.json.members.cmd_rows_members",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.54",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 7, col 3",
+      "source_key": "estimation_results.json.statistics.bp_rp.mean",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.94",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 7, col 4",
+      "source_key": "estimation_results.json.statistics.bp_rp.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.97",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 7, col 5",
+      "source_key": "estimation_results.json.statistics.bp_rp.p25",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.94",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 7, col 6",
+      "source_key": "estimation_results.json.statistics.bp_rp.median",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3.20",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 7, col 7",
+      "source_key": "estimation_results.json.statistics.bp_rp.p75",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "GaiaMission_Prusti2016",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.1051/0004-6361/201629272"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "GaiaDR3_Vallenari2023",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.1051/0004-6361/202243940"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "cantatgaudin2022milky",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.3390/universe8020111"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "cantatgaudin2024how",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.1016/j.newar.2024.101696"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "little2019statistical",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.1002/9781119482260"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "wickham2014tidy",
+      "status": "verified_doi",
+      "registry": "crossref",
+      "external_id": "doi:10.18637/jss.v059.i10"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "hyndman1996sample",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.1080/00031305.1996.10473566"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "freedman1981histogram",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.1007/BF01025868"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "chelli2016pseudomagnitude",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.1051/0004-6361/201629024"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_cmd.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_cmd_members.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_distance_hist.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_vpd_pm.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "estimation",
+      "output": "results/estimation_results.json",
+      "script": "code/run_estimation.py"
+    },
+    {
+      "type": "data",
+      "output": "data/data.db",
+      "queries": "replication/data_queries.sql",
+      "sources": "data/data_sources.json"
+    }
+  ],
+  "amendments": [
+    {
+      "path": "paper/paper.tex",
+      "sha256_before": "0fffca5e72ec8ddc3c0f8fea91bd9bdf879eaa2ba8670c0a3c4a59b1c208234f",
+      "sha256_after": "1130e71741871ea06af5cd098fcb77443a23e3f858673a030c700d532e5057c8",
+      "reason": "stamped with the dossier link",
+      "at": "2026-10-15T09:19:47Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256_before": "1668d3da2438292787de6f3457bb084146bc18bf0025d08b3ef2a771de5d4c47",
+      "sha256_after": "a5bb1bd67674134c4e0429653519cc08a0c1575033527d08fabb19b0cfb31042",
+      "reason": "recompiled with the dossier link",
+      "at": "2026-10-15T09:19:47Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "paper/paper.tex",
+      "sha256_before": "1130e71741871ea06af5cd098fcb77443a23e3f858673a030c700d532e5057c8",
+      "sha256_after": "9e32963dc28e255dca76c2a859df77389f2d0d16a991d4729b4e2ffdc83b796c",
+      "reason": "stamped with the dossier link",
+      "at": "2026-10-20T00:25:06Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256_before": "a5bb1bd67674134c4e0429653519cc08a0c1575033527d08fabb19b0cfb31042",
+      "sha256_after": "2ec43880ec2c8e574bc60f163de7de1abd54eac56afe985822ba33afda8cb7e1",
+      "reason": "recompiled with the dossier link",
+      "at": "2026-10-20T00:25:06Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "README.md",
+      "sha256_before": "042af698d3fe5a88077d802066d8221503daadeb14489bcfdcadf017276c9a2a",
+      "sha256_after": "3e452a18823defd22e452b8614d3721962c7a50237885af49ecd184427c28844",
+      "reason": "the study's summary for its GitHub repository, at the top",
+      "at": "2026-10-20T00:25:06Z",
+      "kind": "readme"
+    }
+  ]
+}

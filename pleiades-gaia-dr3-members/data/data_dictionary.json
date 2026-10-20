@@ -1,0 +1,207 @@
+{
+  "study": "Pleiades membership and distance from Gaia DR3",
+  "paper_id": "09bc8be0-20c4-4a5d-8241-282ccd2a45b1",
+  "retrieval_date": "2026-10-13",
+  "centre": {
+    "name": "Pleiades (Melotte 22, M45)",
+    "ra_deg": 56.75,
+    "dec_deg": 24.12,
+    "frame": "ICRS",
+    "note": "Catalogue approximation of the cluster centre, 03h47m, +24 07 (RA 56.75 deg, Dec +24.12 deg). UNVERIFIED: this value has not been checked against a cited literature value (no SIMBAD or literature position was retrieved for this extract). The analysis must record the exact value used, cite its source once one is verified, and flag the centre as unverified until then."
+  },
+  "radius_deg": 3.0,
+  "tables": [
+    {
+      "name": "gaia_dr3",
+      "source": "gaia",
+      "series": "Gaia archive ADQL query: SELECT source_id, ra, dec, DISTANCE(POINT('ICRS', ra, dec), POINT('ICRS', 56.75, 24.12)) AS dist_deg, parallax, parallax_error, parallax_over_error, pmra, pmra_error, pmdec, pmdec_error, ruwe, astrometric_params_solved, visibility_periods_used, phot_g_mean_mag, phot_g_mean_flux_over_error, phot_bp_mean_mag, phot_rp_mean_mag, bp_rp FROM gaiadr3.gaia_source WHERE 1 = CONTAINS(POINT('ICRS', ra, dec), CIRCLE('ICRS', 56.75, 24.12, 3)) AND parallax > 2 AND parallax_over_error > 5",
+      "load_command": "e2er-data gaia query --adql \"SELECT source_id, ra, dec, DISTANCE(POINT('ICRS', ra, dec), POINT('ICRS', 56.75, 24.12)) AS dist_deg, parallax, parallax_error, parallax_over_error, pmra, pmra_error, pmdec, pmdec_error, ruwe, astrometric_params_solved, visibility_periods_used, phot_g_mean_mag, phot_g_mean_flux_over_error, phot_bp_mean_mag, phot_rp_mean_mag, bp_rp FROM gaiadr3.gaia_source WHERE 1 = CONTAINS(POINT('ICRS', ra, dec), CIRCLE('ICRS', 56.75, 24.12, 3)) AND parallax > 2 AND parallax_over_error > 5\" --table gaia_dr3 --save-to gaia_dr3.csv",
+      "frequency": "snapshot (single release, DR3)",
+      "pulled": "2026-10-13",
+      "row_count": 14066,
+      "query_description": "Cone CIRCLE('ICRS', 56.75, 24.12, 3) (radius 3 deg) with parallax > 2 mas and parallax_over_error > 5, from gaiadr3.gaia_source; 14,066 rows returned on 2026-10-13. Command recorded below in load_command.",
+      "role": "Gaia DR3 astrometry and photometry of the Pleiades field, restricted at load time to sources with parallax above 2 mas (closer than 500 pc) and parallax_over_error above 5. Membership and the CMD are derived from this table in analysis.",
+      "extract_scope": "Why the cut: the full 3-degree cone holds 255,553 Gaia DR3 sources (count on 2026-10-13), and the anonymous Gaia archive returns at most 50,000 rows with a 10 s time-out, so the full cone cannot be loaded. This pre-filtered pull replaces the plan's instruction to pull the full cone and not a pre-filtered subset, as the researcher decided at design review; the paper states this. The extract keeps parallax above 2 mas and parallax_over_error above 5. Consequences for the analysis: (1) the field background in the CMD is limited to these stars, not the whole cone, so the CMD and any field-star comparison describe the extract and not the cone; (2) every cut of the sensitivity grid must lie inside this extract, meaning its parallax threshold is at least 2 mas and its parallax_over_error threshold is at least 5; a grid cut looser than the extract cannot be evaluated and must be dropped or reported as unavailable; (3) no source with parallax at or below 2 mas (farther than 500 pc) or with parallax_over_error at or below 5 is in the table, so the share of cluster members lost to these cuts cannot be read from it.",
+      "unit_notes": "ra, dec in degrees (ICRS, epoch 2016.0); dist_deg in degrees (angular distance from the cone centre, computed in the ADQL); parallax, parallax_error in mas; pmra, pmdec, pmra_error, pmdec_error in mas/yr (pmra includes cos dec); phot_*_mean_mag and bp_rp in mag (Vega); ruwe, parallax_over_error, phot_g_mean_flux_over_error unitless; visibility_periods_used a count; astrometric_params_solved a code (see its description).",
+      "key": [
+        "source_id"
+      ],
+      "expected_duplicates": "0. source_id is unique in gaia_source; any repeated source_id stops the data check and must be removed at load, not averaged.",
+      "coverage": {
+        "column": "parallax",
+        "from": 2.0002,
+        "to": null
+      },
+      "columns": [
+        {
+          "name": "source_id",
+          "type": "INTEGER",
+          "unit": "none",
+          "description": "Gaia DR3 source identifier; unique key",
+          "missing": "never missing"
+        },
+        {
+          "name": "ra",
+          "type": "REAL",
+          "unit": "deg",
+          "description": "right ascension, ICRS, epoch 2016.0",
+          "missing": "never missing for a Gaia source"
+        },
+        {
+          "name": "dec",
+          "type": "REAL",
+          "unit": "deg",
+          "description": "declination, ICRS, epoch 2016.0",
+          "missing": "never missing for a Gaia source"
+        },
+        {
+          "name": "dist_deg",
+          "type": "REAL",
+          "unit": "deg",
+          "description": "angular distance from the cone centre (56.75, 24.12), computed in the ADQL with DISTANCE",
+          "missing": "never missing"
+        },
+        {
+          "name": "parallax",
+          "type": "REAL",
+          "unit": "mas",
+          "description": "trigonometric parallax, uncorrected for the zero point; above 2 mas in every row of the extract",
+          "missing": "never missing in this extract (the parallax > 2 condition drops rows without one)",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "parallax_error",
+          "type": "REAL",
+          "unit": "mas",
+          "description": "standard error of parallax",
+          "missing": "never missing in this extract (same rows as parallax)",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "parallax_over_error",
+          "type": "REAL",
+          "unit": "none",
+          "description": "parallax divided by its standard error; above 5 in every row of the extract",
+          "missing": "never missing in this extract (same rows as parallax)",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "pmra",
+          "type": "REAL",
+          "unit": "mas/yr",
+          "description": "proper motion in right ascension, includes cos(dec)",
+          "missing": "null only for 2-parameter solutions, which have no parallax and so are not in this extract",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "pmra_error",
+          "type": "REAL",
+          "unit": "mas/yr",
+          "description": "standard error of pmra",
+          "missing": "missing together with pmra",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "pmdec",
+          "type": "REAL",
+          "unit": "mas/yr",
+          "description": "proper motion in declination",
+          "missing": "null only for 2-parameter solutions, which have no parallax and so are not in this extract",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "pmdec_error",
+          "type": "REAL",
+          "unit": "mas/yr",
+          "description": "standard error of pmdec",
+          "missing": "missing together with pmdec",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "ruwe",
+          "type": "REAL",
+          "unit": "none",
+          "description": "renormalised unit weight error; above about 1.4 flags a poor single-star astrometric fit",
+          "missing": "null only for 2-parameter solutions, not in this extract; kept as null, not filled; the analysis reports the RUWE < 1.4 cut separately",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "astrometric_params_solved",
+          "type": "INTEGER",
+          "unit": "none",
+          "description": "which astrometric parameters were solved: 3 = two-parameter (position only), 31 = five-parameter, 95 = six-parameter solution",
+          "missing": "never missing"
+        },
+        {
+          "name": "visibility_periods_used",
+          "type": "INTEGER",
+          "unit": "count",
+          "description": "number of visibility periods used in the astrometric solution",
+          "missing": "never missing"
+        },
+        {
+          "name": "phot_g_mean_mag",
+          "type": "REAL",
+          "unit": "mag",
+          "description": "mean G-band magnitude (Vega)",
+          "missing": "missing only for sources without photometry; not expected in the extract",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "phot_g_mean_flux_over_error",
+          "type": "REAL",
+          "unit": "none",
+          "description": "G-band mean flux divided by its error",
+          "missing": "missing together with G magnitude",
+          "min_non_null": 0.99
+        },
+        {
+          "name": "phot_bp_mean_mag",
+          "type": "REAL",
+          "unit": "mag",
+          "description": "mean BP-band magnitude (Vega)",
+          "missing": "missing for sources without BP photometry, mostly faint or crowded sources; the CMD uses only rows with bp_rp",
+          "min_non_null": 0.7
+        },
+        {
+          "name": "phot_rp_mean_mag",
+          "type": "REAL",
+          "unit": "mag",
+          "description": "mean RP-band magnitude (Vega)",
+          "missing": "missing for sources without RP photometry; same rows as phot_bp_mean_mag",
+          "min_non_null": 0.7
+        },
+        {
+          "name": "bp_rp",
+          "type": "REAL",
+          "unit": "mag",
+          "description": "BP minus RP colour index, not extinction-corrected",
+          "missing": "missing for sources without BP and RP photometry; the CMD shows only rows with bp_rp, and the count dropped is reported",
+          "min_non_null": 0.7
+        }
+      ],
+      "licence": "CC BY-NC 3.0 IGO (https://creativecommons.org/licenses/by-nc/3.0/igo/). The Gaia licence page (https://www.cosmos.esa.int/web/gaia-users/license): \"Gaia data are distributed under the CC BY-NC 3.0 IGO license.\" The ESA archives' terms (https://www.cosmos.esa.int/web/esdc/terms-and-conditions): data \"are open and free to use by the User subject to proper acknowledgment to be given in accordance with the credit lines provided below\" (Gaia: \"Credit: ESA, Gaia DPAC\"), and \"Prior to any commercial use by the User of any Data or Data Product, including any use or application that directly or indirectly generates a financial gain, a detailed request for authorisation/licence shall be made\". Acknowledgement: This work has made use of data from the European Space Agency (ESA) mission Gaia (https://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, https://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement.",
+      "citation": "Gaia Collaboration, Vallenari, A., Brown, A. G. A., Prusti, T., et al. (2023). Gaia Data Release 3: Summary of the content and survey properties. Astronomy & Astrophysics, 674, A1. https://doi.org/10.1051/0004-6361/202243940; and Gaia Collaboration, Prusti, T., de Bruijne, J. H. J., Brown, A. G. A., et al. (2016). The Gaia mission. Astronomy & Astrophysics, 595, A1. https://doi.org/10.1051/0004-6361/201629272. Acknowledgement: This work has made use of data from the European Space Agency (ESA) mission Gaia (https://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, https://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement.",
+      "provenance": "Gaia Data Release 3 (ESA/Gaia/DPAC), Gaia ESA Archive (https://gea.esac.esa.int/archive/), release DR3",
+      "version": "DR3",
+      "source_files": [
+        {
+          "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2C+ra%2C+dec%2C+DISTANCE%28POINT%28%27ICRS%27%2C+ra%2C+dec%29%2C+POINT%28%27ICRS%27%2C+56.75%2C+24.12%29%29+AS+dist_deg%2C+parallax%2C+parallax_error%2C+parallax_over_error%2C+pmra%2C+pmra_error%2C+pmdec%2C+pmdec_error%2C+ruwe%2C+astrometric_params_solved%2C+visibility_periods_used%2C+phot_g_mean_mag%2C+phot_g_mean_flux_over_error%2C+phot_bp_mean_mag%2C+phot_rp_mean_mag%2C+bp_rp+FROM+gaiadr3.gaia_source+WHERE+1+%3D+CONTAINS%28POINT%28%27ICRS%27%2C+ra%2C+dec%29%2C+CIRCLE%28%27ICRS%27%2C+56.75%2C+24.12%2C+3%29%29+AND+parallax+%3E+2+AND+parallax_over_error+%3E+5&MAXREC=50000",
+          "sha256": "1f4ad5ccdb7e4667a618441365dc65490e14322cef85ddc05ae7d8e8e3f3bfd7"
+        }
+      ],
+      "cite_key": "GaiaDR3_Vallenari2023"
+    }
+  ],
+  "cross_match_tables": [],
+  "cross_match_note": "No cross-match table is declared. Membership is decided from parallax and proper motion within the Gaia DR3 extract, and the CMD uses Gaia photometry only. A literature cluster-member list would need its own source and is not in the work order.",
+  "unavailable": [],
+  "citations": {
+    "gaia_dr3": "Gaia Collaboration, Vallenari et al. (2023), A&A 674, A1 (DR3 summary); Gaia Collaboration, Prusti et al. (2016), A&A 595, A1 (mission). Acknowledgement and terms as given by the gaia wrapper; the load adds the BibTeX keys GaiaDR3_Vallenari2023 and GaiaMission_Prusti2016."
+  },
+  "data_check_notes": {
+    "units_check": "Units are declared on every numeric column above; magnitudes in mag, parallaxes in mas, proper motions in mas/yr.",
+    "duplicates_check": "Key is source_id, expected 0 duplicates.",
+    "missing_values_check": "Astrometry columns in the extract are complete by construction (parallax > 2 and parallax_over_error > 5 require a 5- or 6-parameter solution), so their min_non_null is 0.99. Photometric colour columns keep 0.7 because BP and RP are missing for some sources. The remaining columns use the default 0.9 threshold, and the analysis reports each shortfall."
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "n_observations": 9970,
+  "n_units": 9970,
+  "time_coverage": {
+    "start_iso": null,
+    "end_iso": null,
+    "n_periods": null
+  },
+  "sample_flow": [
+    {
+      "step": "raw extract (gaia_dr3, pulled 2026-10-13)",
+      "n": 14066,
+      "dropped": 0
+    },
+    {
+      "step": "drop duplicate source_id",
+      "n": 14066,
+      "dropped": 0
+    },
+    {
+      "step": "5- or 6-parameter solution (31, 95) and non-null parallax and proper motion",
+      "n": 14066,
+      "dropped": 0
+    },
+    {
+      "step": "ruwe < 1.4",
+      "n": 12722,
+      "dropped": 1344
+    },
+    {
+      "step": "parallax_over_error > 10 (final quality sample)",
+      "n": 9970,
+      "dropped": 2752
+    }
+  ],
+  "raw_rows": 14066,
+  "duplicate_source_id_rows": 0,
+  "missing_values_raw": {
+    "source_id": 0,
+    "ra": 0,
+    "dec": 0,
+    "dist_deg": 0,
+    "parallax": 0,
+    "parallax_error": 0,
+    "parallax_over_error": 0,
+    "pmra": 0,
+    "pmra_error": 0,
+    "pmdec": 0,
+    "pmdec_error": 0,
+    "ruwe": 0,
+    "astrometric_params_solved": 0,
+    "visibility_periods_used": 0,
+    "phot_g_mean_mag": 2,
+    "phot_g_mean_flux_over_error": 2,
+    "phot_bp_mean_mag": 169,
+    "phot_rp_mean_mag": 167,
+    "bp_rp": 169
+  },
+  "missing_values_clean": {
+    "source_id": 0,
+    "ra": 0,
+    "dec": 0,
+    "dist_deg": 0,
+    "parallax": 0,
+    "parallax_error": 0,
+    "parallax_over_error": 0,
+    "pmra": 0,
+    "pmra_error": 0,
+    "pmdec": 0,
+    "pmdec_error": 0,
+    "ruwe": 0,
+    "astrometric_params_solved": 0,
+    "visibility_periods_used": 0,
+    "phot_g_mean_mag": 1,
+    "phot_g_mean_flux_over_error": 1,
+    "phot_bp_mean_mag": 107,
+    "phot_rp_mean_mag": 106,
+    "bp_rp": 107
+  },
+  "rows_without_bp_rp_in_clean_sample": 107,
+  "cmd_rows_with_bp_rp": 9863,
+  "ranges": {
+    "parallax_mas": {
+      "min": 2.000156849807191,
+      "p25": 2.483706468874211,
+      "median": 3.261235088942805,
+      "p75": 5.12795125288682,
+      "max": 69.51431432523292,
+      "n": 9970
+    },
+    "pmra_mas_yr": {
+      "min": -199.97612037547583,
+      "p25": -1.4435642804240998,
+      "median": 9.632962162257558,
+      "p75": 20.427853094744513,
+      "max": 872.4843319238057,
+      "n": 9970
+    },
+    "pmdec_mas_yr": {
+      "min": -1157.434442140667,
+      "p25": -33.70568615653353,
+      "median": -15.618253118798734,
+      "p75": -6.504912117679844,
+      "max": 196.93232761940916,
+      "n": 9970
+    },
+    "phot_g_mean_mag": {
+      "min": 5.203287,
+      "p25": 14.745419,
+      "median": 16.8191,
+      "p75": 18.008886,
+      "max": 20.471497,
+      "n": 9969
+    },
+    "bp_rp": {
+      "min": -0.40345383,
+      "p25": 1.6161065,
+      "median": 2.4234467,
+      "p75": 2.8045892500000003,
+      "max": 4.6761217,
+      "n": 9863
+    },
+    "ruwe": {
+      "min": 0.4639984,
+      "p25": 0.9825905575,
+      "median": 1.0202334,
+      "p75": 1.06581145,
+      "max": 1.3988448,
+      "n": 9970
+    },
+    "parallax_over_error": {
+      "min": 10.000451,
+      "p25": 20.4841145,
+      "median": 47.4479085,
+      "p75": 119.709352,
+      "max": 2824.9749,
+      "n": 9970
+    }
+  },
+  "astrometric_params_solved_counts": {
+    "31": 8031,
+    "95": 1939
+  },
+  "outcome": {
+    "mean": null,
+    "sd": null,
+    "min": null,
+    "p25": null,
+    "median": null,
+    "p75": null,
+    "max": null
+  },
+  "members": {
+    "n_members": 1112,
+    "n_quality": 9970,
+    "gaia_clean_rows": 9970,
+    "pleiades_members_rows": 1112,
+    "cmd_rows_members": 1095,
+    "cmd_rows_field": 8768,
+    "cmd_rows_total": 9863,
+    "members_without_bp_rp": 17,
+    "phot_g_min": 5.203287,
+    "phot_g_max": 20.155815,
+    "bp_rp_min": -0.40345383,
+    "bp_rp_max": 4.218689,
+    "parallax_centre_mas": 7.366550455503505,
+    "pm_centre_mas_yr": [
+      19.867312315363534,
+      -45.41617175629843
+    ]
+  }
+}

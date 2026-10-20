@@ -1,0 +1,36 @@
+{
+  "$comment": "Written by e2er-data: one entry per external-source load, with the source version, the URL and SHA-256 of every file read.",
+  "loads": [
+    {
+      "connector": "gaia",
+      "dataset": "Gaia Data Release 3 (ESA/Gaia/DPAC), Gaia ESA Archive",
+      "terms_summary": "Gaia data are distributed under CC BY-NC 3.0 IGO: free to use with credit to ESA/Gaia/DPAC; commercial use needs ESA's authorisation. Cite the Gaia mission and DR3 papers.",
+      "licence": "CC BY-NC 3.0 IGO (https://creativecommons.org/licenses/by-nc/3.0/igo/). The Gaia licence page (https://www.cosmos.esa.int/web/gaia-users/license): \"Gaia data are distributed under the CC BY-NC 3.0 IGO license.\" The ESA archives' terms (https://www.cosmos.esa.int/web/esdc/terms-and-conditions): data \"are open and free to use by the User subject to proper acknowledgment to be given in accordance with the credit lines provided below\" (Gaia: \"Credit: ESA, Gaia DPAC\"), and \"Prior to any commercial use by the User of any Data or Data Product, including any use or application that directly or indirectly generates a financial gain, a detailed request for authorisation/licence shall be made\". Acknowledgement: This work has made use of data from the European Space Agency (ESA) mission Gaia (https://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, https://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement.",
+      "terms": "https://www.cosmos.esa.int/web/gaia-users/license",
+      "series": "Gaia archive ADQL query: SELECT source_id, ra, dec, DISTANCE(POINT('ICRS', ra, dec), POINT('ICRS', 56.75, 24.12)) AS dist_deg, parallax, parallax_error, parallax_over_error, pmra, pmra_error, pmdec, pmdec_error, ruwe, astrometric_params_solved, visibility_periods_used, phot_g_mean_mag, phot_g_mean_flux_over_error, phot_bp_mean_mag, phot_rp_mean_mag, bp_rp FROM gaiadr3.gaia_source WHERE 1 = CONTAINS(POINT('ICRS', ra, dec), CIRCLE('ICRS', 56.75, 24.12, 3)) AND parallax > 2 AND parallax_over_error > 5",
+      "link": "https://gea.esac.esa.int/archive/",
+      "retrieved_at": "2026-10-13T21:02:56Z",
+      "citation": "Gaia Collaboration, Vallenari, A., Brown, A. G. A., Prusti, T., et al. (2023). Gaia Data Release 3: Summary of the content and survey properties. Astronomy & Astrophysics, 674, A1. https://doi.org/10.1051/0004-6361/202243940; and Gaia Collaboration, Prusti, T., de Bruijne, J. H. J., Brown, A. G. A., et al. (2016). The Gaia mission. Astronomy & Astrophysics, 595, A1. https://doi.org/10.1051/0004-6361/201629272. Acknowledgement: This work has made use of data from the European Space Agency (ESA) mission Gaia (https://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, https://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement.",
+      "citation_by": "source",
+      "cite_key": "GaiaDR3_Vallenari2023",
+      "version": "DR3",
+      "query": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2C+ra%2C+dec%2C+DISTANCE%28POINT%28%27ICRS%27%2C+ra%2C+dec%29%2C+POINT%28%27ICRS%27%2C+56.75%2C+24.12%29%29+AS+dist_deg%2C+parallax%2C+parallax_error%2C+parallax_over_error%2C+pmra%2C+pmra_error%2C+pmdec%2C+pmdec_error%2C+ruwe%2C+astrometric_params_solved%2C+visibility_periods_used%2C+phot_g_mean_mag%2C+phot_g_mean_flux_over_error%2C+phot_bp_mean_mag%2C+phot_rp_mean_mag%2C+bp_rp+FROM+gaiadr3.gaia_source+WHERE+1+%3D+CONTAINS%28POINT%28%27ICRS%27%2C+ra%2C+dec%29%2C+CIRCLE%28%27ICRS%27%2C+56.75%2C+24.12%2C+3%29%29+AND+parallax+%3E+2+AND+parallax_over_error+%3E+5&MAXREC=50000",
+      "files": [
+        {
+          "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2C+ra%2C+dec%2C+DISTANCE%28POINT%28%27ICRS%27%2C+ra%2C+dec%29%2C+POINT%28%27ICRS%27%2C+56.75%2C+24.12%29%29+AS+dist_deg%2C+parallax%2C+parallax_error%2C+parallax_over_error%2C+pmra%2C+pmra_error%2C+pmdec%2C+pmdec_error%2C+ruwe%2C+astrometric_params_solved%2C+visibility_periods_used%2C+phot_g_mean_mag%2C+phot_g_mean_flux_over_error%2C+phot_bp_mean_mag%2C+phot_rp_mean_mag%2C+bp_rp+FROM+gaiadr3.gaia_source+WHERE+1+%3D+CONTAINS%28POINT%28%27ICRS%27%2C+ra%2C+dec%29%2C+CIRCLE%28%27ICRS%27%2C+56.75%2C+24.12%2C+3%29%29+AND+parallax+%3E+2+AND+parallax_over_error+%3E+5&MAXREC=50000",
+          "sha256": "1f4ad5ccdb7e4667a618441365dc65490e14322cef85ddc05ae7d8e8e3f3bfd7"
+        }
+      ],
+      "request": {
+        "command": "query",
+        "adql": "SELECT source_id, ra, dec, DISTANCE(POINT('ICRS', ra, dec), POINT('ICRS', 56.75, 24.12)) AS dist_deg, parallax, parallax_error, parallax_over_error, pmra, pmra_error, pmdec, pmdec_error, ruwe, astrometric_params_solved, visibility_periods_used, phot_g_mean_mag, phot_g_mean_flux_over_error, phot_bp_mean_mag, phot_rp_mean_mag, bp_rp FROM gaiadr3.gaia_source WHERE 1 = CONTAINS(POINT('ICRS', ra, dec), CIRCLE('ICRS', 56.75, 24.12, 3)) AND parallax > 2 AND parallax_over_error > 5"
+      },
+      "adql": "SELECT source_id, ra, dec, DISTANCE(POINT('ICRS', ra, dec), POINT('ICRS', 56.75, 24.12)) AS dist_deg, parallax, parallax_error, parallax_over_error, pmra, pmra_error, pmdec, pmdec_error, ruwe, astrometric_params_solved, visibility_periods_used, phot_g_mean_mag, phot_g_mean_flux_over_error, phot_bp_mean_mag, phot_rp_mean_mag, bp_rp FROM gaiadr3.gaia_source WHERE 1 = CONTAINS(POINT('ICRS', ra, dec), CIRCLE('ICRS', 56.75, 24.12, 3)) AND parallax > 2 AND parallax_over_error > 5",
+      "table": "gaia_dr3",
+      "table_rows": 14066,
+      "saved_to": "data/gaia_dr3.csv",
+      "rows": 14066,
+      "specialist": "data_analyst"
+    }
+  ]
+}

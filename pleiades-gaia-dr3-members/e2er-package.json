@@ -1,0 +1,512 @@
+{
+  "contents": [
+    {
+      "bytes": 6131,
+      "part": "study",
+      "path": "README.md",
+      "sha256": "3e452a18823defd22e452b8614d3721962c7a50237885af49ecd184427c28844"
+    },
+    {
+      "bytes": 4644,
+      "part": "study",
+      "path": "code/get_data.py",
+      "sha256": "6a5ec369a31945bb656853f6d45111d66b3842485f65713b77547fdec43e2ba3"
+    },
+    {
+      "bytes": 269,
+      "part": "study",
+      "path": "code/requirements.txt",
+      "sha256": "ddca13c05bc66d1e50a9923707ab92751fed600ef3dfe5525572f194519979d1"
+    },
+    {
+      "bytes": 13345,
+      "part": "study",
+      "path": "code/run_estimation.py",
+      "sha256": "ebae02dc2103310f681ddebde1448f3c934fd5f4a33d45fbc77aef53e54363bd"
+    },
+    {
+      "bytes": 4133,
+      "part": "study",
+      "path": "code/scratch/clean_gaia.py",
+      "sha256": "b4db38a537977c23fddbff495aa4d9fc1d954741eb3e8b168886713fa4880884"
+    },
+    {
+      "bytes": 5915,
+      "part": "study",
+      "path": "code/scratch/load_members.py",
+      "sha256": "6607e58d745d60bd90d861b34f8d725c57d56b8b7539ee35c774a3875fc31456"
+    },
+    {
+      "bytes": 5563,
+      "part": "study",
+      "path": "code/scratch/make_figures.py",
+      "sha256": "d5d8e91573264ff55539eeac12126046264aa1fd73d174183f0b5dfe8344f691"
+    },
+    {
+      "bytes": 9252,
+      "part": "study",
+      "path": "code/scratch/paper_draft.log",
+      "sha256": "823c452b015c6d89d78e510547e45c42293cf5ba1db6b16b2ce36df0b7a17b22"
+    },
+    {
+      "bytes": 3694,
+      "part": "study",
+      "path": "code/scratch/prepare_gaia.py",
+      "sha256": "2e837e55f98a8721a77c222772a68ec0a0f69569911a22df4de1b0f66482e737"
+    },
+    {
+      "bytes": 322,
+      "part": "study",
+      "path": "code/scratch/render_fig_cmd.py",
+      "sha256": "2e6cf65ee76008e5ba9c7d0328e0bc59c8f9d0aa44ba5d4af2fe24e0f9b0b427"
+    },
+    {
+      "bytes": 1902,
+      "part": "study",
+      "path": "code/scratch/update_fig_cmd_spec.py",
+      "sha256": "c0d4fbf47b0dc4bb389cfcc3b841152ed8492169a49d86b00135669a03f58a0e"
+    },
+    {
+      "bytes": 1863,
+      "part": "study",
+      "path": "code/scratch/verify_fig_cmd.py",
+      "sha256": "cbaad3b20ce0953ece1206c44fbc3a5e32bd94fb191cd654919ba8208951092f"
+    },
+    {
+      "bytes": 14119,
+      "part": "study",
+      "path": "data/data_dictionary.json",
+      "sha256": "2cc4b7da056012bee3f57b676b7912f25f2e64bca16271c6d507eb70651d9336"
+    },
+    {
+      "bytes": 5955,
+      "part": "study",
+      "path": "data/data_sources.json",
+      "sha256": "3b415a6d613550b45524d0e6d29e12452d6dad83a3d4ce47be3ca01cd96b2c8b"
+    },
+    {
+      "bytes": 7801,
+      "part": "study",
+      "path": "data/data_summary.md",
+      "sha256": "1e9db8480eb6c729fa78c702ad3069e46226e6e1a5939c8807d941bc5488dbd5"
+    },
+    {
+      "bytes": 9594,
+      "part": "study",
+      "path": "design/econometric_spec.md",
+      "sha256": "f66d8e7d81c2d8906436ac1ba369666123ee6c5f389ae92b5459d0a6ad5a0fb1"
+    },
+    {
+      "bytes": 11175,
+      "part": "study",
+      "path": "design/literature_review.md",
+      "sha256": "d14393ba79ce1f574f855ea5efae52d7ea43ad85156147a85ef25f0a88954233"
+    },
+    {
+      "bytes": 9410,
+      "part": "study",
+      "path": "design/paper_plan.md",
+      "sha256": "f9ecd45f9928041aad0299cf15fa15f47a323399409cbc07a266a379fb14d264"
+    },
+    {
+      "bytes": 3393,
+      "part": "study",
+      "path": "design/researcher_instructions.md",
+      "sha256": "ca885d66bfa5a63910425a1c540bcce76866f1e927a25eb6b1cee2bf28398b7a"
+    },
+    {
+      "bytes": 11270,
+      "part": "package",
+      "path": "e2er-package/requirements.lock.txt",
+      "sha256": "9d183bac94da9d663ccbee8ffe0bfc44e73bc0bd53636603b6fb174d6565e299"
+    },
+    {
+      "bytes": 109537,
+      "part": "study",
+      "path": "e2er.json",
+      "sha256": "f282a2410ac9d423eae50fb7c893e3dfabba6a900c7b27ab71fc25b6a65271a6"
+    },
+    {
+      "bytes": 169452,
+      "part": "study",
+      "path": "misc/fig_cmd.pdf",
+      "sha256": "f92d6906069b37e76e0b5d973216cb0cc9be7779540ff5af4f09334904985db7"
+    },
+    {
+      "bytes": 169452,
+      "part": "study",
+      "path": "misc/fig_cmd_members.pdf",
+      "sha256": "4364b4139ab708ca7e18a4d70c62a5dc10a8e6657c17551ab13fb2c40fafa60f"
+    },
+    {
+      "bytes": 11882,
+      "part": "study",
+      "path": "misc/fig_distance_hist.pdf",
+      "sha256": "c58b2c438e51ff80b278c175f54a2b839031e909ceb7120b8a62c48c9ac53d75"
+    },
+    {
+      "bytes": 157467,
+      "part": "study",
+      "path": "misc/fig_vpd_pm.pdf",
+      "sha256": "db11bbb94387d7bd75336c0301180e8f03db2a3492a06e070380675e3abe85c7"
+    },
+    {
+      "bytes": 215,
+      "part": "study",
+      "path": "misc/figure_render_report.json",
+      "sha256": "5cf8d6643745205f3da46226359ca011b4930a8ba7f392266fa16874c627451b"
+    },
+    {
+      "bytes": 200,
+      "part": "study",
+      "path": "misc/paper_draft.blg",
+      "sha256": "ac815a57ef7e5086b8ebd0181a0d89f0261b1d0e703a58efe192cc003f7770da"
+    },
+    {
+      "bytes": 4733,
+      "part": "study",
+      "path": "misc/paper_draft.tex.applied.diff",
+      "sha256": "3dbefd2503299a230a8817436a6d7d0d7483ade1fd9787cd04afe50154a9a9ef"
+    },
+    {
+      "bytes": 2771,
+      "part": "study",
+      "path": "misc/paper_draft.tex.edits.json",
+      "sha256": "2b77244e2ee791e2b37e181d996f1e130472858226a56b31996594f1248fd3b5"
+    },
+    {
+      "bytes": 11430,
+      "part": "study",
+      "path": "misc/refs.bib",
+      "sha256": "f2a9c68900245aabd50312260fd5c273d7c67d995af247c88f395a47977bc794"
+    },
+    {
+      "bytes": 1840,
+      "part": "study",
+      "path": "paper/abstract.tex",
+      "sha256": "5f2e11a14005c2d793cd99902ceeefd3fb8b36df1c48da72f7c98a9dcc152e42"
+    },
+    {
+      "bytes": 78634,
+      "part": "study",
+      "path": "paper/paper.pdf",
+      "sha256": "2ec43880ec2c8e574bc60f163de7de1abd54eac56afe985822ba33afda8cb7e1"
+    },
+    {
+      "bytes": 26035,
+      "part": "study",
+      "path": "paper/paper.tex",
+      "sha256": "9e32963dc28e255dca76c2a859df77389f2d0d16a991d4729b4e2ffdc83b796c"
+    },
+    {
+      "bytes": 11430,
+      "part": "study",
+      "path": "paper/refs.bib",
+      "sha256": "f2a9c68900245aabd50312260fd5c273d7c67d995af247c88f395a47977bc794"
+    },
+    {
+      "bytes": 781,
+      "part": "study",
+      "path": "paper/tables/grid.tex",
+      "sha256": "2514c766e9f623fb57718e6bafa5ed3826164078236291b877b5d5ff27491e9b"
+    },
+    {
+      "bytes": 704,
+      "part": "study",
+      "path": "paper/tables/locus.tex",
+      "sha256": "b99c324da906409fee81d302a31a2896647e413e6ac5f762f697713c4f5edce8"
+    },
+    {
+      "bytes": 738,
+      "part": "study",
+      "path": "paper/tables/summary.tex",
+      "sha256": "179851cbb95981b99027631175b43b5f20f63f9aaa2266b6be346974c7e8ea8b"
+    },
+    {
+      "bytes": 58084,
+      "part": "study",
+      "path": "provenance.json",
+      "sha256": "1257d5003feae9de1aa3cfc28223ed38079a6745c8c249681a8c51abbcc55976"
+    },
+    {
+      "bytes": 6954,
+      "part": "study",
+      "path": "replication/audit_log.csv",
+      "sha256": "b6f38b6733b5d0c4512b7cb3f7d9123443f71e39bfc54c022d0e23fb44c374a4"
+    },
+    {
+      "bytes": 137,
+      "part": "study",
+      "path": "replication/data_queries.sql",
+      "sha256": "2e9a2863bdbbd471f1d75df5e2051aff19e2525efbf2904ed340847326257a24"
+    },
+    {
+      "bytes": 20318,
+      "part": "study",
+      "path": "replication/estimation.py",
+      "sha256": "1131c2b0c69194d06916adb21b5b35f3f90e903cdbe1837eeb1426ad23df70e4"
+    },
+    {
+      "bytes": 17168,
+      "part": "study",
+      "path": "report.html",
+      "sha256": "67f9d2597889bc9f697e737ae82de4aec4afc3783fca02c75c8a4bc67739b550"
+    },
+    {
+      "bytes": 3352,
+      "part": "study",
+      "path": "reproduce.json",
+      "sha256": "6849d37697f8f97078baa8d4bcdedf1d6c5f41d9cea28c5b8c06a5b2c9ba6c6d"
+    },
+    {
+      "bytes": 4843,
+      "part": "study",
+      "path": "results/data_quality.json",
+      "sha256": "e9df348ef11e90c04de3b62057ad5d210d85c036f6e3f20d77cd8bec2b594853"
+    },
+    {
+      "bytes": 2945,
+      "part": "study",
+      "path": "results/data_quality.md",
+      "sha256": "e481615f8ee9e459c998f4f53fafca308542d16185d3ec83633cf6d1f7133746"
+    },
+    {
+      "bytes": 33322,
+      "part": "study",
+      "path": "results/estimation_results.json",
+      "sha256": "f29659ad1e9f627f08b7fdf227c01db76bc138f28c4a9e6ecedbab8781c8dddb"
+    },
+    {
+      "bytes": 1189,
+      "part": "study",
+      "path": "results/figure_check.json",
+      "sha256": "f09d4cd5ccb06ba5d2fad34235e5581cdea6525731adbe08c5bebe5b14d8a1d8"
+    },
+    {
+      "bytes": 169452,
+      "part": "study",
+      "path": "results/figures/fig_cmd.pdf",
+      "sha256": "f92d6906069b37e76e0b5d973216cb0cc9be7779540ff5af4f09334904985db7"
+    },
+    {
+      "bytes": 169452,
+      "part": "study",
+      "path": "results/figures/fig_cmd_members.pdf",
+      "sha256": "4364b4139ab708ca7e18a4d70c62a5dc10a8e6657c17551ab13fb2c40fafa60f"
+    },
+    {
+      "bytes": 11882,
+      "part": "study",
+      "path": "results/figures/fig_distance_hist.pdf",
+      "sha256": "c58b2c438e51ff80b278c175f54a2b839031e909ceb7120b8a62c48c9ac53d75"
+    },
+    {
+      "bytes": 157467,
+      "part": "study",
+      "path": "results/figures/fig_vpd_pm.pdf",
+      "sha256": "db11bbb94387d7bd75336c0301180e8f03db2a3492a06e070380675e3abe85c7"
+    },
+    {
+      "bytes": 31725,
+      "part": "study",
+      "path": "results/number_verification.json",
+      "sha256": "ac0487f2db8011624e69aa10cc9fc599d8b6073ca4505668a55bcc008606ef30"
+    },
+    {
+      "bytes": 3816,
+      "part": "study",
+      "path": "results/summary_statistics.json",
+      "sha256": "7b39bf74928d062740ac33917ab5dda48aa6ddbbdae60ec840f8db2e845da259"
+    },
+    {
+      "bytes": 175,
+      "part": "study",
+      "path": "results/table_render_report.json",
+      "sha256": "d5bac21ad34d5d8b389e4f648cb0a3955477bd4b0e5122ce1f87cfeb07bcd296"
+    },
+    {
+      "bytes": 2383,
+      "part": "study",
+      "path": "results/table_spec.json",
+      "sha256": "e3bdc6e0b140b617e82f249a00acefdc5728f1263acdcef3f728961345a1a68a"
+    },
+    {
+      "bytes": 4779,
+      "part": "study",
+      "path": "reviews/citation_integrity.json",
+      "sha256": "34f43202ebb18e9825dc45c435b266c2eafdd725bf724fafb748790d7c677768"
+    },
+    {
+      "bytes": 1333,
+      "part": "study",
+      "path": "reviews/review_aggregation.json",
+      "sha256": "107397a68a37154fe8f2ca16c1e6f611320fb2726d12a348b6c552114fa5bd8b"
+    },
+    {
+      "bytes": 16432,
+      "part": "study",
+      "path": "reviews/review_data.md",
+      "sha256": "9b4e9ee29d3fd170fb7e8142b7145334371f73eccb844a5ae87dacd9bf9e8a4f"
+    },
+    {
+      "bytes": 10216,
+      "part": "study",
+      "path": "reviews/review_literature.md",
+      "sha256": "39cfcf6c32a45b5eb2f66033f75bc06a973e4a4ca7670546fe332e9184075b08"
+    },
+    {
+      "bytes": 12950,
+      "part": "study",
+      "path": "reviews/review_methods.md",
+      "sha256": "56ea529dff6882e4fa25ec5a317929f3f0825ec7404f86a616740bfd3f512dcd"
+    },
+    {
+      "bytes": 10106,
+      "part": "study",
+      "path": "reviews/review_plausibility.md",
+      "sha256": "f6d9d0d8e9e63bfc55efa09fa796010ddfa6bd0f3b1a263092114704f4ab1d85"
+    },
+    {
+      "bytes": 19197,
+      "part": "study",
+      "path": "reviews/review_writing.md",
+      "sha256": "922135cbd74957dfaeb07bbe02ea92fdee482abc886ebbe3b73a49490e1d71f7"
+    },
+    {
+      "bytes": 45,
+      "part": "study",
+      "path": "reviews/self_attack_report.json",
+      "sha256": "b685817ad96942941002ac01c77b9ba1a12561c23e637354adc5ccc3d72be895"
+    }
+  ],
+  "created": "20261015",
+  "e2er_version": "0.17.1",
+  "environment": {
+    "hashes": true,
+    "lock": "e2er-package/requirements.lock.txt",
+    "note": "e2er-package/requirements.lock.txt pins every package with its hashes; `e2er reproduce` installs from it.",
+    "python": "3.12",
+    "resolved_as_of": "2026-10-16"
+  },
+  "fingerprint": "sha256:3a90e218225e063149a881121a58e1e8430c799cd5c891ec1bbfc9dd2f5d4b8f",
+  "format": "e2er-package/1",
+  "left_out": [
+    {
+      "content": {
+        "tables": {
+          "gaia_clean": {
+            "content_sha256": "a6fd3090921b53e1b470af89b1b5a7d6f5bc0408bfcd2a7879a5300b1184e546",
+            "numeric_sha256": "2d61392c1ad1fb7f44e4b4af4e840ccec354045f83704e5578882907b0051636",
+            "rows": 9970
+          },
+          "gaia_dr3": {
+            "content_sha256": "e904b39c9f61d9d78c695bcf28eab271e96ff9c999b0bcc4bb70eaba22e43d79",
+            "numeric_sha256": "2988c1e9e4b28accad97043b7b156c1e59978713223bf7bc4a1f2df49116f8ae",
+            "rows": 14066
+          },
+          "pleiades_members": {
+            "content_sha256": "74a6637c24fc5415c91e7ea53c98d0e5f9a69b94af740868ddbe8eac093e4d44",
+            "numeric_sha256": "8aa5c9d8a500924508cbf72b5d230d0a2f54a9dfe31f76f12ce983aaf65d8a46",
+            "rows": 1112
+          }
+        }
+      },
+      "needed": false,
+      "path": "data/data.db",
+      "reason": "the terms of ESA Gaia Data Release 3 (Gaia) do not allow passing the data on",
+      "rebuilt_by": null,
+      "source": "gaia"
+    },
+    {
+      "builds": [
+        {
+          "by": "code/scratch/clean_gaia.py",
+          "what": [
+            "data/gaia_clean.csv"
+          ]
+        }
+      ],
+      "content": {
+        "content_sha256": "b5b318c7e97c18b7927e0cc5c672ca51c06a19f4e40b68b4889f507663bcb919",
+        "numeric_sha256": "9c89ff15f7b039256450565ae4f57694aa0fd4fac50acd304a1577c24cea9a8c",
+        "rows": 9970
+      },
+      "needed": true,
+      "path": "data/gaia_clean.csv",
+      "reason": "built from ESA Gaia Data Release 3 (Gaia) data, whose terms do not allow passing it on",
+      "rebuilt_by": {
+        "by": "code/scratch/clean_gaia.py",
+        "kind": "rebuild",
+        "source": ""
+      },
+      "source": "gaia"
+    },
+    {
+      "needed": false,
+      "path": "results/figure_spec.json",
+      "reason": "built from ESA Gaia Data Release 3 (Gaia) data and holds them row by row (an array of 9,863 values at figures[2].y); its terms do not allow passing them on",
+      "rebuilt_by": null,
+      "source": "gaia"
+    }
+  ],
+  "notes": [],
+  "rebuild": [],
+  "recipe": {
+    "compare": [
+      "results/estimation_results.json"
+    ],
+    "inputs": [
+      {
+        "path": "data/gaia_clean.csv",
+        "reload": null,
+        "source": "a file the study's code reads"
+      },
+      {
+        "path": "data/gaia_dr3.csv",
+        "reload": "get_data.py",
+        "source": "Gaia Data Release 3 (ESA/Gaia/DPAC), Gaia ESA Archive, Gaia archive ADQL query: SELECT source_id, ra, dec, DISTANCE(POINT('ICRS', ra, dec), POINT('ICRS', 56.75, 24.12)) AS dist_deg, parallax, parallax_error, parallax_over_error, pmra, pmra_error, pmdec, pmdec_error, ruwe, astrometric_params_solved, visibility_periods_used, phot_g_mean_mag, phot_g_mean_flux_over_error, phot_bp_mean_mag, phot_rp_mean_mag, bp_rp FROM gaiadr3.gaia_source WHERE 1 = CONTAINS(POINT('ICRS', ra, dec), CIRCLE('ICRS', 56.75, 24.12, 3)) AND parallax > 2 AND parallax_over_error > 5, release DR3, loaded 2026-10-13"
+      }
+    ],
+    "present": true,
+    "python": "3.12",
+    "requirements": "code/requirements.txt",
+    "steps": [
+      {
+        "about": "load the inputs the folder does not ship (if any)",
+        "run": [
+          "python",
+          "get_data.py"
+        ]
+      },
+      {
+        "about": "data preparation: builds data/gaia_clean.csv again from the data loaded again",
+        "run": [
+          "python",
+          "clean_gaia.py"
+        ],
+        "when_missing": [
+          "data/gaia_clean.csv"
+        ]
+      },
+      {
+        "about": "the estimation script",
+        "run": [
+          "python",
+          "run_estimation.py"
+        ]
+      }
+    ]
+  },
+  "study": {
+    "authors": [],
+    "e2er_version": "0.17.0",
+    "exported_at": "20261015",
+    "folder": "which-stars-within-3-degrees-of-the-pleiades-centre-are-clus-20261015-01",
+    "id": "09bc8be0-20c4-4a5d-8241-282ccd2a45b1",
+    "purpose": "demonstration",
+    "question": "Which stars within 3 degrees of the Pleiades centre are cluster members by Gaia DR3 parallax and proper motion, and what do their colour-magnitude diagram and parallax distance distribution show about the cluster's distance and main sequence?",
+    "template": "descriptive-study",
+    "title": "Which Stars within 3 Degrees of the Pleiades Centre Share Its Astrometry? A Descriptive Reading of Gaia DR3 Membership, Parallax Distance and the Colour–Magnitude Diagram"
+  },
+  "wheels": null
+}

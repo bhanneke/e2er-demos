@@ -1,0 +1,19 @@
+\begin{abstract}
+The Pleiades is a standard nearby reference for the main sequence and the distance scale. This paper asks which stars within three degrees of its centre are members by Gaia DR3 parallax and proper motion, and what their colour-magnitude diagram and parallax distances show. Using $9{,}970$ quality-filtered Gaia DR3 sources, we require a RUWE below $1.4$, a parallax over error above $10$, a parallax within three standard deviations of the cluster median, and a proper motion within $5$ mas/yr of the cluster centre.
+% src: estimation_results.json#sample.n_observations
+% src: estimation_results.json#membership_grid.0.ruwe_max
+% src: estimation_results.json#membership_grid.0.parallax_over_error_min
+% src: estimation_results.json#membership_grid.0.pm_radius_mas_yr
+This selection yields $1{,}112$ members, $11.2$ percent of the sample.
+% src: estimation_results.json#membership.stage_counts.pm_radius
+% src: estimation_results.json#statistics.members_share.share
+Their median parallax of $7.37$ mas implies a distance of $135.7$ pc, with a 16th to 84th percentile range of $132.3$ to $139.3$ pc, uncorrected for the parallax zero point.
+% src: estimation_results.json#statistics.parallax_mas.median
+% src: estimation_results.json#distance_summary.distance_pc_median
+% src: estimation_results.json#distance_summary.distance_pc_p16
+% src: estimation_results.json#distance_summary.distance_pc_p84
+Member colours trace a narrow main sequence from $G$ of about $6$ to $18$, with a colour spread of at most $0.4$ mag within each magnitude bin.
+% src: estimation_results.json#main_sequence_locus (g_lower 6 to g_upper 18)
+% computed: max of (p84_bp_rp - p16_bp_rp) over estimation_results.json#main_sequence_locus, which is 0.40 in the G 14 to 15 bin
+The distance interval mostly reflects the membership window.
+\end{abstract}

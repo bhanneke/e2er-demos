@@ -1,0 +1,703 @@
+{
+  "passed": true,
+  "total_values_in_tables": 126,
+  "matched": 126,
+  "mismatched": 0,
+  "unverifiable": 0,
+  "coverage": 1.0,
+  "mismatches": [],
+  "matched_cells": [
+    {
+      "draft_value": "9,970",
+      "source_key": "summary_statistics.json.n_observations",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 2, col 2"
+    },
+    {
+      "draft_value": "1,112",
+      "source_key": "summary_statistics.json.members.n_members",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 2, col 3"
+    },
+    {
+      "draft_value": "7.367",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 2, col 4"
+    },
+    {
+      "draft_value": "9,970",
+      "source_key": "summary_statistics.json.n_observations",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 3, col 2"
+    },
+    {
+      "draft_value": "1,024",
+      "source_key": "estimation_results.json.membership_grid[1].n_members",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 3, col 3"
+    },
+    {
+      "draft_value": "7.371",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 3, col 4"
+    },
+    {
+      "draft_value": "9,970",
+      "source_key": "summary_statistics.json.n_observations",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 4, col 2"
+    },
+    {
+      "draft_value": "1,124",
+      "source_key": "estimation_results.json.membership_grid[2].n_members",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 4, col 3"
+    },
+    {
+      "draft_value": "7.368",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 4, col 4"
+    },
+    {
+      "draft_value": "9,970",
+      "source_key": "summary_statistics.json.n_observations",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 5, col 2"
+    },
+    {
+      "draft_value": "1,127",
+      "source_key": "estimation_results.json.membership_grid[3].n_members",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 5, col 3"
+    },
+    {
+      "draft_value": "7.368",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 5, col 4"
+    },
+    {
+      "draft_value": "9,970",
+      "source_key": "summary_statistics.json.n_observations",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 6, col 2"
+    },
+    {
+      "draft_value": "1,025",
+      "source_key": "estimation_results.json.membership_grid[4].n_members",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 6, col 3"
+    },
+    {
+      "draft_value": "7.367",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 6, col 4"
+    },
+    {
+      "draft_value": "9,970",
+      "source_key": "summary_statistics.json.n_observations",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 7, col 2"
+    },
+    {
+      "draft_value": "1,135",
+      "source_key": "estimation_results.json.membership_grid[5].n_members",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 7, col 3"
+    },
+    {
+      "draft_value": "7.367",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 7, col 4"
+    },
+    {
+      "draft_value": "9,470",
+      "source_key": "estimation_results.json.membership_grid[6].n_quality",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 8, col 2"
+    },
+    {
+      "draft_value": "1,053",
+      "source_key": "estimation_results.json.membership_grid[6].n_members",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 8, col 3"
+    },
+    {
+      "draft_value": "7.371",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 8, col 4"
+    },
+    {
+      "draft_value": "12,722",
+      "source_key": "summary_statistics.json.sample_flow[3].n",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 9, col 2"
+    },
+    {
+      "draft_value": "1,125",
+      "source_key": "estimation_results.json.membership_grid[7].n_members",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 9, col 3"
+    },
+    {
+      "draft_value": "7.366",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 9, col 4"
+    },
+    {
+      "draft_value": "9,970",
+      "source_key": "summary_statistics.json.n_observations",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 10, col 2"
+    },
+    {
+      "draft_value": "1,112",
+      "source_key": "summary_statistics.json.members.n_members",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 10, col 3"
+    },
+    {
+      "draft_value": "7.397",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 10, col 4"
+    },
+    {
+      "draft_value": "9,961",
+      "source_key": "estimation_results.json.membership_grid[9].n_quality",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 11, col 2"
+    },
+    {
+      "draft_value": "1,106",
+      "source_key": "estimation_results.json.membership_grid[9].n_members",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 11, col 3"
+    },
+    {
+      "draft_value": "7.367",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "table_context": "tab:grid (Membership counts across the sensitivity grid (one dimension...), row 11, col 4"
+    },
+    {
+      "draft_value": "6",
+      "source_key": "estimation_results.json.membership_grid[9].g_floor",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 2, col 1"
+    },
+    {
+      "draft_value": "10",
+      "source_key": "summary_statistics.json.ranges.parallax_over_error.min",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 2, col 2"
+    },
+    {
+      "draft_value": "-0.03",
+      "source_key": "estimation_results.json.main_sequence_locus[0].p16_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 2, col 3"
+    },
+    {
+      "draft_value": "0.02",
+      "source_key": "estimation_results.json.main_sequence_locus[0].median_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 2, col 4"
+    },
+    {
+      "draft_value": "0.05",
+      "source_key": "estimation_results.json.main_sequence_locus[0].p84_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 2, col 5"
+    },
+    {
+      "draft_value": "7",
+      "source_key": "estimation_results.json.distributions.parallax.bins[1].upper",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 3, col 1"
+    },
+    {
+      "draft_value": "14",
+      "source_key": "estimation_results.json.main_sequence_locus[1].n",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 3, col 2"
+    },
+    {
+      "draft_value": "0.04",
+      "source_key": "estimation_results.json.main_sequence_locus[1].p16_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 3, col 3"
+    },
+    {
+      "draft_value": "0.17",
+      "source_key": "estimation_results.json.main_sequence_locus[1].median_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 3, col 4"
+    },
+    {
+      "draft_value": "0.24",
+      "source_key": "estimation_results.json.main_sequence_locus[1].p84_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 3, col 5"
+    },
+    {
+      "draft_value": "8",
+      "source_key": "estimation_results.json.distributions.parallax.bins[5].upper",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 4, col 1"
+    },
+    {
+      "draft_value": "18",
+      "source_key": "summary_statistics.json.ranges.phot_g_mean_mag.p75",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 4, col 2"
+    },
+    {
+      "draft_value": "0.29",
+      "source_key": "estimation_results.json.main_sequence_locus[2].p16_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 4, col 3"
+    },
+    {
+      "draft_value": "0.40",
+      "source_key": "estimation_results.json.main_sequence_locus[2].median_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 4, col 4"
+    },
+    {
+      "draft_value": "0.53",
+      "source_key": "estimation_results.json.main_sequence_locus[2].p84_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 4, col 5"
+    },
+    {
+      "draft_value": "9",
+      "source_key": "estimation_results.json.distributions.parallax.bins[6].count",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 5, col 1"
+    },
+    {
+      "draft_value": "32",
+      "source_key": "estimation_results.json.main_sequence_locus[3].n",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 5, col 2"
+    },
+    {
+      "draft_value": "0.64",
+      "source_key": "estimation_results.json.main_sequence_locus[3].p16_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 5, col 3"
+    },
+    {
+      "draft_value": "0.70",
+      "source_key": "estimation_results.json.main_sequence_locus[3].median_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 5, col 4"
+    },
+    {
+      "draft_value": "0.75",
+      "source_key": "estimation_results.json.main_sequence_locus[3].p84_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 5, col 5"
+    },
+    {
+      "draft_value": "10",
+      "source_key": "summary_statistics.json.ranges.parallax_over_error.min",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 6, col 1"
+    },
+    {
+      "draft_value": "37",
+      "source_key": "estimation_results.json.main_sequence_locus[4].n",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 6, col 2"
+    },
+    {
+      "draft_value": "0.81",
+      "source_key": "estimation_results.json.main_sequence_locus[4].p16_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 6, col 3"
+    },
+    {
+      "draft_value": "0.89",
+      "source_key": "estimation_results.json.main_sequence_locus[4].median_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 6, col 4"
+    },
+    {
+      "draft_value": "0.96",
+      "source_key": "estimation_results.json.main_sequence_locus[4].p84_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 6, col 5"
+    },
+    {
+      "draft_value": "11",
+      "source_key": "estimation_results.json.distributions.parallax.bins[0].count",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 7, col 1"
+    },
+    {
+      "draft_value": "41",
+      "source_key": "estimation_results.json.main_sequence_locus[5].n",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 7, col 2"
+    },
+    {
+      "draft_value": "1.01",
+      "source_key": "estimation_results.json.main_sequence_locus[5].p16_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 7, col 3"
+    },
+    {
+      "draft_value": "1.08",
+      "source_key": "estimation_results.json.statistics.pmra_mas_yr.sd",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 7, col 4"
+    },
+    {
+      "draft_value": "1.20",
+      "source_key": "estimation_results.json.membership_grid[6].ruwe_max",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 7, col 5"
+    },
+    {
+      "draft_value": "12",
+      "source_key": "estimation_results.json.main_sequence_locus[5].g_upper",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 8, col 1"
+    },
+    {
+      "draft_value": "46",
+      "source_key": "estimation_results.json.main_sequence_locus[6].n",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 8, col 2"
+    },
+    {
+      "draft_value": "1.30",
+      "source_key": "estimation_results.json.main_sequence_locus[6].p16_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 8, col 3"
+    },
+    {
+      "draft_value": "1.39",
+      "source_key": "estimation_results.json.main_sequence_locus[6].median_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 8, col 4"
+    },
+    {
+      "draft_value": "1.55",
+      "source_key": "estimation_results.json.main_sequence_locus[6].p84_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 8, col 5"
+    },
+    {
+      "draft_value": "13",
+      "source_key": "estimation_results.json.main_sequence_locus[6].g_upper",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 9, col 1"
+    },
+    {
+      "draft_value": "65",
+      "source_key": "estimation_results.json.main_sequence_locus[7].n",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 9, col 2"
+    },
+    {
+      "draft_value": "1.68",
+      "source_key": "estimation_results.json.main_sequence_locus[7].p16_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 9, col 3"
+    },
+    {
+      "draft_value": "1.81",
+      "source_key": "estimation_results.json.main_sequence_locus[7].median_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 9, col 4"
+    },
+    {
+      "draft_value": "1.90",
+      "source_key": "estimation_results.json.main_sequence_locus[7].p84_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 9, col 5"
+    },
+    {
+      "draft_value": "14",
+      "source_key": "estimation_results.json.main_sequence_locus[1].n",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 10, col 1"
+    },
+    {
+      "draft_value": "59",
+      "source_key": "estimation_results.json.distributions.parallax.bins[1].count",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 10, col 2"
+    },
+    {
+      "draft_value": "2.06",
+      "source_key": "estimation_results.json.main_sequence_locus[8].p16_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 10, col 3"
+    },
+    {
+      "draft_value": "2.28",
+      "source_key": "estimation_results.json.main_sequence_locus[8].median_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 10, col 4"
+    },
+    {
+      "draft_value": "2.46",
+      "source_key": "estimation_results.json.main_sequence_locus[8].p84_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 10, col 5"
+    },
+    {
+      "draft_value": "15",
+      "source_key": "estimation_results.json.main_sequence_locus[8].g_upper",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 11, col 1"
+    },
+    {
+      "draft_value": "142",
+      "source_key": "estimation_results.json.main_sequence_locus[9].n",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 11, col 2"
+    },
+    {
+      "draft_value": "2.50",
+      "source_key": "estimation_results.json.main_sequence_locus[9].p16_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 11, col 3"
+    },
+    {
+      "draft_value": "2.67",
+      "source_key": "estimation_results.json.main_sequence_locus[9].median_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 11, col 4"
+    },
+    {
+      "draft_value": "2.80",
+      "source_key": "summary_statistics.json.ranges.bp_rp.p75",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 11, col 5"
+    },
+    {
+      "draft_value": "16",
+      "source_key": "estimation_results.json.statistics.pmra_mas_yr.min",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 12, col 1"
+    },
+    {
+      "draft_value": "250",
+      "source_key": "estimation_results.json.main_sequence_locus[10].n",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 12, col 2"
+    },
+    {
+      "draft_value": "2.89",
+      "source_key": "estimation_results.json.main_sequence_locus[10].p16_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 12, col 3"
+    },
+    {
+      "draft_value": "2.99",
+      "source_key": "estimation_results.json.membership_grid[1].pm_radius_mas_yr",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 12, col 4"
+    },
+    {
+      "draft_value": "3.11",
+      "source_key": "estimation_results.json.main_sequence_locus[10].p84_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 12, col 5"
+    },
+    {
+      "draft_value": "17",
+      "source_key": "summary_statistics.json.members.members_without_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 13, col 1"
+    },
+    {
+      "draft_value": "228",
+      "source_key": "estimation_results.json.main_sequence_locus[11].n",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 13, col 2"
+    },
+    {
+      "draft_value": "3.12",
+      "source_key": "estimation_results.json.main_sequence_locus[10].p84_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 13, col 3"
+    },
+    {
+      "draft_value": "3.25",
+      "source_key": "summary_statistics.json.ranges.parallax_mas.median",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 13, col 4"
+    },
+    {
+      "draft_value": "3.41",
+      "source_key": "estimation_results.json.main_sequence_locus[11].p84_bp_rp",
+      "table_context": "tab:locus (Median and 16th--84th percentile of $BP-RP$ for members in o...), row 13, col 5"
+    },
+    {
+      "draft_value": "1,112",
+      "source_key": "summary_statistics.json.members.n_members",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 2, col 2"
+    },
+    {
+      "draft_value": "7.37",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 2, col 3"
+    },
+    {
+      "draft_value": "0.23",
+      "source_key": "estimation_results.json.statistics.parallax_mas.sd",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 2, col 4"
+    },
+    {
+      "draft_value": "7.24",
+      "source_key": "estimation_results.json.statistics.parallax_mas.p25",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 2, col 5"
+    },
+    {
+      "draft_value": "7.37",
+      "source_key": "summary_statistics.json.members.parallax_centre_mas",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 2, col 6"
+    },
+    {
+      "draft_value": "7.49",
+      "source_key": "estimation_results.json.statistics.parallax_mas.p75",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 2, col 7"
+    },
+    {
+      "draft_value": "1,112",
+      "source_key": "summary_statistics.json.members.n_members",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 3, col 2"
+    },
+    {
+      "draft_value": "135.89",
+      "source_key": "estimation_results.json.statistics.distance_pc.mean",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 3, col 3"
+    },
+    {
+      "draft_value": "4.27",
+      "source_key": "estimation_results.json.statistics.distance_pc.sd",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 3, col 4"
+    },
+    {
+      "draft_value": "133.52",
+      "source_key": "estimation_results.json.statistics.distance_pc.p25",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 3, col 5"
+    },
+    {
+      "draft_value": "135.75",
+      "source_key": "estimation_results.json.statistics.distance_pc.mean",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 3, col 6"
+    },
+    {
+      "draft_value": "138.06",
+      "source_key": "estimation_results.json.statistics.distance_pc.p75",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 3, col 7"
+    },
+    {
+      "draft_value": "1,112",
+      "source_key": "summary_statistics.json.members.n_members",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 4, col 2"
+    },
+    {
+      "draft_value": "19.87",
+      "source_key": "summary_statistics.json.members.pm_centre_mas_yr[0]",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 4, col 3"
+    },
+    {
+      "draft_value": "1.08",
+      "source_key": "estimation_results.json.statistics.pmra_mas_yr.sd",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 4, col 4"
+    },
+    {
+      "draft_value": "19.14",
+      "source_key": "estimation_results.json.statistics.pmra_mas_yr.p25",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 4, col 5"
+    },
+    {
+      "draft_value": "19.87",
+      "source_key": "summary_statistics.json.members.pm_centre_mas_yr[0]",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 4, col 6"
+    },
+    {
+      "draft_value": "20.63",
+      "source_key": "estimation_results.json.statistics.pmra_mas_yr.p75",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 4, col 7"
+    },
+    {
+      "draft_value": "1,112",
+      "source_key": "summary_statistics.json.members.n_members",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 5, col 2"
+    },
+    {
+      "draft_value": "-45.38",
+      "source_key": "summary_statistics.json.members.pm_centre_mas_yr[1]",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 5, col 3"
+    },
+    {
+      "draft_value": "1.41",
+      "source_key": "estimation_results.json.statistics.pmdec_mas_yr.sd",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 5, col 4"
+    },
+    {
+      "draft_value": "-46.29",
+      "source_key": "estimation_results.json.statistics.pmdec_mas_yr.p25",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 5, col 5"
+    },
+    {
+      "draft_value": "-45.40",
+      "source_key": "summary_statistics.json.members.pm_centre_mas_yr[1]",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 5, col 6"
+    },
+    {
+      "draft_value": "-44.50",
+      "source_key": "estimation_results.json.statistics.pmdec_mas_yr.p75",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 5, col 7"
+    },
+    {
+      "draft_value": "1,111",
+      "source_key": "estimation_results.json.statistics.phot_g_mean_mag.n",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 6, col 2"
+    },
+    {
+      "draft_value": "15.47",
+      "source_key": "estimation_results.json.statistics.phot_g_mean_mag.mean",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 6, col 3"
+    },
+    {
+      "draft_value": "2.92",
+      "source_key": "estimation_results.json.statistics.phot_g_mean_mag.sd",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 6, col 4"
+    },
+    {
+      "draft_value": "14.15",
+      "source_key": "estimation_results.json.statistics.phot_g_mean_mag.p25",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 6, col 5"
+    },
+    {
+      "draft_value": "16.41",
+      "source_key": "estimation_results.json.statistics.phot_g_mean_mag.median",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 6, col 6"
+    },
+    {
+      "draft_value": "17.38",
+      "source_key": "estimation_results.json.statistics.phot_g_mean_mag.p75",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 6, col 7"
+    },
+    {
+      "draft_value": "1,095",
+      "source_key": "summary_statistics.json.members.cmd_rows_members",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 7, col 2"
+    },
+    {
+      "draft_value": "2.54",
+      "source_key": "estimation_results.json.statistics.bp_rp.mean",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 7, col 3"
+    },
+    {
+      "draft_value": "0.94",
+      "source_key": "estimation_results.json.statistics.bp_rp.sd",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 7, col 4"
+    },
+    {
+      "draft_value": "1.97",
+      "source_key": "estimation_results.json.statistics.bp_rp.p25",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 7, col 5"
+    },
+    {
+      "draft_value": "2.94",
+      "source_key": "estimation_results.json.statistics.bp_rp.median",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 7, col 6"
+    },
+    {
+      "draft_value": "3.20",
+      "source_key": "estimation_results.json.statistics.bp_rp.p75",
+      "table_context": "fig:cmd (Summary statistics of the Pleiades members (Gaia DR3, uncorr...), row 7, col 7"
+    }
+  ],
+  "source_files_found": [
+    "/private/tmp/e2er-demos/studies/workspaces/2026-10-13-which-stars-within-3-degrees-of-the/data_quality.json",
+    "/private/tmp/e2er-demos/studies/workspaces/2026-10-13-which-stars-within-3-degrees-of-the/estimation_results.json",
+    "/private/tmp/e2er-demos/studies/workspaces/2026-10-13-which-stars-within-3-degrees-of-the/figure_spec.json",
+    "/private/tmp/e2er-demos/studies/workspaces/2026-10-13-which-stars-within-3-degrees-of-the/summary_statistics.json"
+  ],
+  "source_files_missing": [
+    "robustness_results.json"
+  ],
+  "skipped_reason": null,
+  "prose_total": 153,
+  "prose_matched": 146,
+  "prose_mismatched": 5,
+  "prose_unverifiable": 2,
+  "prose_excluded": 61,
+  "prose_mismatches": [
+    {
+      "draft_value": "1000",
+      "source_key": "estimation_results.json.statistics.parallax_mas.n",
+      "source_value": "1112.0",
+      "table_context": "prose: \u2026to 139.3 pc. The distance is $1000/\\varpi$ from the un\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "500",
+      "source_key": "estimation_results.json.distributions.parallax.bins[3].count",
+      "source_value": "556.0",
+      "table_context": "prose: \u2026llax above 2 mas (closer than 500 pc) and a parallax\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "1000",
+      "source_key": "estimation_results.json.statistics.distance_pc.n",
+      "source_value": "1112.0",
+      "table_context": "prose: \u2026ed summaries. The distance is $1000/\\varpi$ in parsecs,\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "110",
+      "source_key": "estimation_results.json.distributions.distance.bins[4].count",
+      "source_value": "109.0",
+      "table_context": "prose: \u2026median distance lies outside 110--160 pc. \\section{\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "1000",
+      "source_key": "estimation_results.json.statistics.phot_g_mean_mag.n",
+      "source_value": "1111.0",
+      "table_context": "prose: \u2026of the mean parallax through $1000/\\varpi$ gives a dis\u2026",
+      "severity": "major"
+    }
+  ],
+  "table_spec_unresolved": [],
+  "rendered_tables": [
+    "grid.tex",
+    "locus.tex",
+    "summary.tex"
+  ],
+  "rendered_tables_not_in_draft": [],
+  "conclusive": true,
+  "tables_untraced": false,
+  "untraced_reason": ""
+}

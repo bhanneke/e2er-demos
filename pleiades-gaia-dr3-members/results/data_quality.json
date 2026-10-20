@@ -1,0 +1,160 @@
+{
+  "max_missing_share": 0.05,
+  "tables": {
+    "gaia_dr3": {
+      "rows": 14066,
+      "columns": {
+        "source_id": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none",
+          "missing_note": "never missing"
+        },
+        "ra": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "deg",
+          "missing_note": "never missing for a Gaia source"
+        },
+        "dec": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "deg",
+          "missing_note": "never missing for a Gaia source"
+        },
+        "dist_deg": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "deg",
+          "missing_note": "never missing"
+        },
+        "parallax": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "mas",
+          "missing_note": "never missing in this extract (the parallax > 2 condition drops rows without one)"
+        },
+        "parallax_error": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "mas",
+          "missing_note": "never missing in this extract (same rows as parallax)"
+        },
+        "parallax_over_error": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none",
+          "missing_note": "never missing in this extract (same rows as parallax)"
+        },
+        "pmra": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "mas/yr",
+          "missing_note": "null only for 2-parameter solutions, which have no parallax and so are not in this extract"
+        },
+        "pmra_error": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "mas/yr",
+          "missing_note": "missing together with pmra"
+        },
+        "pmdec": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "mas/yr",
+          "missing_note": "null only for 2-parameter solutions, which have no parallax and so are not in this extract"
+        },
+        "pmdec_error": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "mas/yr",
+          "missing_note": "missing together with pmdec"
+        },
+        "ruwe": {
+          "type": "REAL",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none",
+          "missing_note": "null only for 2-parameter solutions, not in this extract; kept as null, not filled; the analysis reports the RUWE < 1.4 cut separately"
+        },
+        "astrometric_params_solved": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "none",
+          "missing_note": "never missing"
+        },
+        "visibility_periods_used": {
+          "type": "INTEGER",
+          "missing": 0,
+          "missing_share": 0.0,
+          "unit": "count",
+          "missing_note": "never missing"
+        },
+        "phot_g_mean_mag": {
+          "type": "REAL",
+          "missing": 2,
+          "missing_share": 0.0001,
+          "unit": "mag",
+          "missing_note": "missing only for sources without photometry; not expected in the extract"
+        },
+        "phot_g_mean_flux_over_error": {
+          "type": "REAL",
+          "missing": 2,
+          "missing_share": 0.0001,
+          "unit": "none",
+          "missing_note": "missing together with G magnitude"
+        },
+        "phot_bp_mean_mag": {
+          "type": "REAL",
+          "missing": 169,
+          "missing_share": 0.012,
+          "unit": "mag",
+          "missing_note": "missing for sources without BP photometry, mostly faint or crowded sources; the CMD uses only rows with bp_rp"
+        },
+        "phot_rp_mean_mag": {
+          "type": "REAL",
+          "missing": 167,
+          "missing_share": 0.0119,
+          "unit": "mag",
+          "missing_note": "missing for sources without RP photometry; same rows as phot_bp_mean_mag"
+        },
+        "bp_rp": {
+          "type": "REAL",
+          "missing": 169,
+          "missing_share": 0.012,
+          "unit": "mag",
+          "missing_note": "missing for sources without BP and RP photometry; the CMD shows only rows with bp_rp, and the count dropped is reported"
+        }
+      },
+      "key": [
+        "source_id"
+      ],
+      "duplicate_rows": 0,
+      "coverage": {
+        "column": "parallax",
+        "declared": [
+          2.0002,
+          null
+        ],
+        "found": [
+          2.000156849807191,
+          74.98865311008939
+        ]
+      }
+    }
+  },
+  "passed": true,
+  "problems": []
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "e2er-reproduce/1",
+  "about": "Written by e2er at export (2026-10-15) from what the run recorded: the scripts that wrote estimation_results.json, from the estimation script on, in the order the run ran them (its script log); the files they read; and the packages they import. code/requirements.txt pins 2 package(s) at the versions the run used.",
+  "python": "3.12",
+  "requirements": "code/requirements.txt",
+  "files": {
+    "run_estimation.py": "code/run_estimation.py",
+    "data/gaia_clean.csv": "data/gaia_clean.csv",
+    "fig_cmd.pdf": "results/figures/fig_cmd.pdf",
+    "fig_cmd_members.pdf": "results/figures/fig_cmd_members.pdf",
+    "fig_vpd_pm.pdf": "results/figures/fig_vpd_pm.pdf",
+    "get_data.py": "code/get_data.py",
+    "clean_gaia.py": "code/scratch/clean_gaia.py"
+  },
+  "steps": [
+    {
+      "run": [
+        "python",
+        "get_data.py"
+      ],
+      "about": "load the inputs the folder does not ship (if any)"
+    },
+    {
+      "run": [
+        "python",
+        "clean_gaia.py"
+      ],
+      "about": "data preparation: builds data/gaia_clean.csv again from the data loaded again",
+      "when_missing": [
+        "data/gaia_clean.csv"
+      ]
+    },
+    {
+      "run": [
+        "python",
+        "run_estimation.py"
+      ],
+      "about": "the estimation script"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/gaia_clean.csv",
+      "sha256": "28c906d7028fc9db636c5ea30070086910bc935010c629aff2dc66dd910197df",
+      "source": "a file the study's code reads",
+      "rows": 9970,
+      "content_sha256": "b5b318c7e97c18b7927e0cc5c672ca51c06a19f4e40b68b4889f507663bcb919",
+      "rebuild": "clean_gaia.py"
+    },
+    {
+      "path": "data/gaia_dr3.csv",
+      "sha256": "6f9e27a6190e7db6903953f757b3053cbe9df48fdc7fa15dccb4fbff51bf74c4",
+      "source": "Gaia Data Release 3 (ESA/Gaia/DPAC), Gaia ESA Archive, Gaia archive ADQL query: SELECT source_id, ra, dec, DISTANCE(POINT('ICRS', ra, dec), POINT('ICRS', 56.75, 24.12)) AS dist_deg, parallax, parallax_error, parallax_over_error, pmra, pmra_error, pmdec, pmdec_error, ruwe, astrometric_params_solved, visibility_periods_used, phot_g_mean_mag, phot_g_mean_flux_over_error, phot_bp_mean_mag, phot_rp_mean_mag, bp_rp FROM gaiadr3.gaia_source WHERE 1 = CONTAINS(POINT('ICRS', ra, dec), CIRCLE('ICRS', 56.75, 24.12, 3)) AND parallax > 2 AND parallax_over_error > 5, release DR3, loaded 2026-10-13",
+      "rows": 14066,
+      "content_sha256": "f5d9168bd51777084d3e45d9d3d6362e7a523496e17b49e714d8c7e066694d21",
+      "reload": "get_data.py"
+    }
+  ],
+  "compare": [
+    {
+      "published": "results/estimation_results.json",
+      "produced": "estimation_results.json"
+    }
+  ],
+  "notes": [
+    "ESA Gaia Data Release 3's terms allow non-commercial use only, with credit to ESA/Gaia/DPAC (CC BY-NC 3.0 IGO), so a published study may leave its data out. get_data.py loads these data again with e2er-data when the folder lacks them.",
+    "The run recorded no Python version for its scripts (e2er up to 0.16.0), so the recipe names the Python e2er exported the study with (3.12.12); the study may have run on another.",
+    "Built from data whose terms keep them out of a published study: data/gaia_clean.csv (code/scratch/clean_gaia.py). When the folder lacks one, the script in brackets builds it again from the data get_data.py loads."
+  ]
+}

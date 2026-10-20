@@ -1,0 +1,39 @@
+--- paper_draft.tex (before)
++++ paper_draft.tex (after)
+@@ -104,7 +104,7 @@
+ % src: estimation_results.json#membership.stage_counts.parallax_window
+ The member proper motions centre on $(\mu_\alpha^*, \mu_\delta) = (19.87, -45.42)$ mas/yr.
+ % src: estimation_results.json#membership.pm_centre_mas_yr
+-The spread of the members is 1.08 mas/yr in right ascension and 1.41 mas/yr in declination.
++The spread of the members is 1.08 mas/yr in right ascension and 1.41 mas/yr in declination. These spreads are computed on members already cut at 5 mas/yr, so they understate the intrinsic proper-motion dispersion of the cluster.
+ % src: estimation_results.json#statistics.pmra_mas_yr.sd
+ % src: estimation_results.json#statistics.pmdec_mas_yr.sd
+ Table~\ref{tab:summary} gives the full summary of the members. Across the one-at-a-time grid, the member count ranges from 1,024, when the proper-motion radius is reduced to 3 mas/yr, to 1,135, when the parallax window is fixed at $\pm 1$ mas.
+@@ -119,7 +119,8 @@
+ % src: estimation_results.json#grid_full_cross.n_members_min
+ % src: estimation_results.json#grid_full_cross.n_members_max
+ % src: estimation_results.json#grid_full_cross.n_members_median
+-The lowest count comes from the tightest combination, a 3 mas/yr proper-motion radius with a 2 sigma window and RUWE below 1.2, and the highest from one of the widest, a 10 mas/yr radius with a fixed $\pm 1$ mas window and a parallax over error cut of 5. The wider spread therefore arises when several cuts move together. We report the full range, because the base row is one of several reasonable selections.
++The lowest count comes from the tightest combination, a 3 mas/yr proper-motion radius with a 2 sigma window and RUWE below 1.2, and the highest from one of the widest, a 10 mas/yr radius with a fixed $\pm 1$ mas window and a parallax over error cut of 5. The wider spread therefore arises when several cuts move together. We report the full range, because the base row is one of several reasonable selections. Measured against the base count, the largest full-cross changes are $-17.9\%$ (913 members) and $+6.5\%$ (1,184 members). Both lie inside the 25\% bound set in Section 3, so the base also passes the stability rule under the full cross. The full range is $25.7\%$ of the median.
++% computed: (1184 - 913) / 1055.5 = 0.257; 913 / 1112 - 1 = -0.179; 1184 / 1112 - 1 = +0.065
+ 
+ \input{tables/grid.tex}
+ 
+@@ -137,7 +138,7 @@
+ The standard error of the mean parallax, the standard deviation divided by the square root of the 1,112 members, is 0.007 mas. Propagating this standard error of the mean parallax through $1000/\varpi$ gives a distance uncertainty of about 0.13 pc around the median distance of 135.7 pc.
+ % computed: 1000 * parallax_median_se_mas / parallax_median_mas^2 = 1000 * 0.00691 / 7.3666^2
+ % src: estimation_results.json#membership.parallax_median_se_mas
+-The parallax window was set from this scatter, which is why the window contains the peak by construction. The window is built from this peak, so a single peak inside it holds by construction and says nothing about stars outside it. Whether a second group lies beyond the window is not tested here.
++The parallax window was set from this scatter, so a single peak inside it holds by construction and says nothing about stars outside the window. Whether a second group lies beyond the window is not tested here.
+ 
+ The parallax distance distribution follows directly. The median distance is 135.7 pc, with a 16th--84th percentile range of 132.3 to 139.3 pc and an interquartile range of 4.5 pc.
+ % src: estimation_results.json#distance_summary.distance_pc_iqr
+@@ -181,7 +182,7 @@
+ % src: estimation_results.json#main_sequence_locus.9.median_bp_rp
+ % src: estimation_results.json#main_sequence_locus.10.median_bp_rp
+ % src: estimation_results.json#main_sequence_locus.11.median_bp_rp
+-Table~\ref{tab:locus} gives the median and the 16th and 84th percentiles of the colour in each bin. The spread between the 16th and 84th percentiles is about 0.08 mag between $G = 6$ and $G = 7$, the narrowest of the bins, and widest between $G = 14$ and $G = 15$, where it reaches 0.40 mag.
++Table~\ref{tab:locus} gives the median and the 16th and 84th percentiles of the colour in each bin. The spread between the 16th and 84th percentiles is about 0.08 mag between $G = 6$ and $G = 7$, the narrowest of the bins, a ranking that rests on only 10 members, and widest between $G = 14$ and $G = 15$, where it reaches 0.40 mag.
+ % computed: main_sequence_locus.0.p84_bp_rp - main_sequence_locus.0.p16_bp_rp = 0.0496 - (-0.0257) = 0.075
+ % src: estimation_results.json#main_sequence_locus.0.p16_bp_rp
+ % src: estimation_results.json#main_sequence_locus.0.p84_bp_rp

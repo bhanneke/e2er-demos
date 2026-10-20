@@ -1,0 +1,46 @@
+[
+  {
+    "id": "r1",
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "We report the full range, because the base row is one of several reasonable selections.",
+    "replace": "We report the full range, because the base row is one of several reasonable selections. Measured against the base count, the largest full-cross changes are $-17.9\\%$ (913 members) and $+6.5\\%$ (1,184 members). Both lie inside the 25\\% bound set in Section 3, so the base also passes the stability rule under the full cross. The full range is $25.7\\%$ of the median.\n% computed: (1184 - 913) / 1055.5 = 0.257; 913 / 1112 - 1 = -0.179; 1184 / 1112 - 1 = +0.065",
+    "find_must_be_unique": true,
+    "source_finding": "F1 (must change 1)"
+  },
+  {
+    "id": "r2",
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "The parallax window was set from this scatter, which is why the window contains the peak by construction. The window is built from this peak, so a single peak inside it holds by construction and says nothing about stars outside it.",
+    "replace": "The parallax window was set from this scatter, so a single peak inside it holds by construction and says nothing about stars outside the window.",
+    "find_must_be_unique": true,
+    "source_finding": "F2 (duplicate sentence on the window, unimodality claim)"
+  },
+  {
+    "id": "r3",
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "The spread of the members is 1.08 mas/yr in right ascension and 1.41 mas/yr in declination.",
+    "replace": "The spread of the members is 1.08 mas/yr in right ascension and 1.41 mas/yr in declination. These spreads are computed on members already cut at 5 mas/yr, so they understate the intrinsic proper-motion dispersion of the cluster.",
+    "find_must_be_unique": true,
+    "source_finding": "F1 (nice to have 22)"
+  },
+  {
+    "id": "r4",
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "the narrowest of the bins, and widest between",
+    "replace": "the narrowest of the bins, a ranking that rests on only 10 members, and widest between",
+    "find_must_be_unique": true,
+    "source_finding": "F1 (should change 17)"
+  },
+  {
+    "id": "k1",
+    "target": "section:results",
+    "edit_type": "keep",
+    "find": "the cluster's brightest stars, the named B stars several magnitudes brighter, are not among the members",
+    "reason": "Wording follows the researcher's instruction at the draft review, which names the B stars and asks that the gap be stated without guessing its cause. The methods review asks for source identifiers for the named stars; that is not in the extract and is flagged for the researcher.",
+    "source_finding": "F1 (must change 9)"
+  }
+]

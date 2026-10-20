@@ -1,0 +1,61 @@
+{
+  "tables": [
+    {
+      "filename": "summary.tex",
+      "label": "tab:summary",
+      "caption": "Summary statistics of the Pleiades members (Gaia DR3, uncorrected parallaxes)",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "statistics",
+      "rows": ["parallax_mas", "distance_pc", "pmra_mas_yr", "pmdec_mas_yr", "phot_g_mean_mag", "bp_rp"],
+      "row_labels": {
+        "parallax_mas": "Parallax (mas)",
+        "distance_pc": "Distance, uncorrected $1000/\\varpi$ (pc)",
+        "pmra_mas_yr": "$\\mu_\\alpha^*$ (mas/yr)",
+        "pmdec_mas_yr": "$\\mu_\\delta$ (mas/yr)",
+        "phot_g_mean_mag": "$G$ (mag)",
+        "bp_rp": "$BP-RP$ (mag)"
+      },
+      "row_header": "Variable",
+      "columns": [
+        {"field": "n", "header": "$N$", "decimals": 0},
+        {"field": "mean", "header": "Mean", "decimals": 2},
+        {"field": "sd", "header": "SD", "decimals": 2},
+        {"field": "p25", "header": "P25", "decimals": 2},
+        {"field": "median", "header": "Median", "decimals": 2},
+        {"field": "p75", "header": "P75", "decimals": 2}
+      ]
+    },
+    {
+      "filename": "grid.tex",
+      "label": "tab:grid",
+      "caption": "Membership counts across the sensitivity grid (one dimension varied at a time from the base row)",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "membership_grid",
+      "key_field": "row",
+      "row_header": "Specification",
+      "columns": [
+        {"field": "n_quality", "header": "Quality sample", "decimals": 0},
+        {"field": "n_members", "header": "Members", "decimals": 0},
+        {"field": "parallax_centre_mas", "header": "Parallax centre (mas)", "decimals": 3}
+      ]
+    },
+    {
+      "filename": "locus.tex",
+      "label": "tab:locus",
+      "caption": "Median and 16th--84th percentile of $BP-RP$ for members in one-magnitude bins of $G$",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "main_sequence_locus",
+      "key_field": "g_lower",
+      "row_header": "$G$ bin (mag)",
+      "columns": [
+        {"field": "n", "header": "$N$", "decimals": 0},
+        {"field": "p16_bp_rp", "header": "16th pct.", "decimals": 2},
+        {"field": "median_bp_rp", "header": "Median", "decimals": 2},
+        {"field": "p84_bp_rp", "header": "84th pct.", "decimals": 2}
+      ]
+    }
+  ]
+}

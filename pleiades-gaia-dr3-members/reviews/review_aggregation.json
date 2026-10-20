@@ -1,0 +1,51 @@
+{
+  "verdict": "MAJOR_REVISION",
+  "weighted_avg": 5.913636363636363,
+  "rule_triggered": "Rule 3: weighted average",
+  "rationale": "Weighted average score: 5.91 of 10. Breakdown: literature_reviewer=5.7, writing_reviewer=6.0, data_reviewer=6.0, methods_reviewer=5.0, plausibility_reviewer=7.0",
+  "round": 1,
+  "panel": {
+    "expected": 5,
+    "reported": 5,
+    "complete": true,
+    "missing": [],
+    "scored_without_a_review_file": [],
+    "scores": [
+      {
+        "reviewer": "literature_reviewer",
+        "score": 5.7,
+        "recommendation": "major_revision",
+        "weight": 0.75,
+        "source": "file"
+      },
+      {
+        "reviewer": "writing_reviewer",
+        "score": 6.0,
+        "recommendation": "major_revision",
+        "weight": 0.75,
+        "source": "file"
+      },
+      {
+        "reviewer": "data_reviewer",
+        "score": 6.0,
+        "recommendation": "major_revision",
+        "weight": 1.25,
+        "source": "file"
+      },
+      {
+        "reviewer": "methods_reviewer",
+        "score": 5.0,
+        "recommendation": "major_revision",
+        "weight": 1.5,
+        "source": "file"
+      },
+      {
+        "reviewer": "plausibility_reviewer",
+        "score": 7.0,
+        "recommendation": "minor_revision",
+        "weight": 1.25,
+        "source": "file"
+      }
+    ]
+  }
+}

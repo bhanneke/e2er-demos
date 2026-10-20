@@ -1,0 +1,240 @@
+\documentclass[11pt]{article}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{natbib}
+\usepackage{setspace}
+\onehalfspacing
+
+\title{Which Stars within 3 Degrees of the Pleiades Centre Share Its Astrometry? A Descriptive Reading of Gaia DR3 Membership, Parallax Distance and the Colour--Magnitude Diagram}
+\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/ed64be6914a73236}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
+\date{13 October 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We describe the stars within 3 degrees of the Pleiades centre that share the cluster's parallax and proper motion in Gaia DR3. The quality sample holds 9,970 sources with five- or six-parameter astrometry, a renormalised unit weight error (RUWE) below 1.4 and a parallax over error above 10.
+% src: estimation_results.json#sample.n_observations
+A three-sigma parallax window and a 5 mas/yr proper-motion radius, both centred by iterative clipping, select 1,112 members, or 11.2\% of the quality sample.
+% src: estimation_results.json#membership.stage_counts.pm_radius
+% src: estimation_results.json#statistics.members_share.share
+The members have a median parallax of 7.367 mas and a median distance of 135.7 pc, with a 16th--84th percentile range of 132.3 to 139.3 pc. The distance is $1000/\varpi$ from the uncorrected parallax.
+% src: estimation_results.json#statistics.parallax_mas.median
+% src: estimation_results.json#distance_summary.distance_pc_median
+% src: estimation_results.json#distance_summary.distance_pc_p16
+% src: estimation_results.json#distance_summary.distance_pc_p84
+Their colour--magnitude diagram (CMD) is populated along a continuous main-sequence locus from $G = 6$ to $G = 18$, with the colours uncorrected for extinction.
+% src: estimation_results.json#main_sequence_locus.0.g_lower
+% src: estimation_results.json#main_sequence_locus.11.g_upper
+Membership counts move by less than 8\% under one-at-a-time changes to the selection, and the full cross of 48 cut combinations spans 913 to 1,184 members.
+% src: estimation_results.json#grid_full_cross.n_rows
+% src: estimation_results.json#grid_full_cross.n_members_min
+% src: estimation_results.json#grid_full_cross.n_members_max
+% src: estimation_results.json#membership.grid_max_change_share
+The study is descriptive: it reports what the astrometry and photometry show, makes no causal claim, and leaves the comparison with published Pleiades distances to a verified source.
+\end{abstract}
+
+\section{Introduction}
+
+The Pleiades is one of the nearest open clusters and a familiar reference for the distance scale and the main sequence of young stars. Gaia data release 3 \citep{GaiaMission_Prusti2016,GaiaDR3_Vallenari2023} gives parallaxes and proper motions for most of the bright stars in such clusters, and Gaia-based censuses now cover much of the open-cluster population \citep{cantatgaudin2022milky,cantatgaudin2024how}. This paper asks a narrow question: which stars within 3 degrees of the Pleiades centre are cluster members on the basis of Gaia DR3 parallax and proper motion alone, and what do the colour--magnitude diagram (CMD) and the parallax distance distribution of these members show about the cluster's distance and main sequence?
+
+The question is answered with a transparent selection, not a model. We do not estimate an effect, test a hypothesis or identify a causal mechanism. The contribution is a replicable reference exercise: a documented cone, a fixed sequence of cuts, a membership count with its sensitivity, and a distance and CMD summary that another researcher can reproduce from the archived extract. Section 2 describes the Gaia sample. Section 3 sets out the membership procedure. Section 4 reports the membership counts, the parallax and distance distributions and the CMD. Section 5 discusses what the description supports, and the limitations and conclusion follow.
+
+\section{Data}
+
+\subsection{Source and extract}
+
+The source is the \texttt{gaiadr3.gaia\_source} table of Gaia DR3, retrieved on 13 October 2026. The cone is centred on RA 56.75 degrees and Dec +24.12 degrees, with a radius of 3 degrees. This centre is a catalogue approximation of the cluster and is recorded as such; it has not yet been checked against a cited literature value.
+
+The full cone holds more sources than the anonymous Gaia archive returns in a single query, so the extract was pre-filtered in the ADQL itself. The query keeps sources with a parallax above 2 mas (closer than 500 pc) and a parallax over error above 5. The extract holds 14,066 rows.
+% src: summary_statistics.json#sample_flow.0.n
+The field background in the CMD is therefore limited to these nearer stars, and every cut of the sensitivity grid lies inside the extract. The exact ADQL text, the cone centre and the retrieval date are recorded with the replication files.
+
+Gaia data are used under the CC BY-NC 3.0 IGO licence, with credit to ESA/Gaia/DPAC. Proper motions are in mas/yr, with the right-ascension component already multiplied by $\cos\delta$. Parallaxes are in mas, and magnitudes are Vega magnitudes.
+
+\subsection{Sample construction}
+
+The analysis applies the quality cuts in a fixed order, and each step is logged with the rows it keeps and drops. Starting from the 14,066 rows of the extract, no \texttt{source\_id} value occurs twice. Every row carries a five- or six-parameter astrometric solution (codes 31 and 95). Code 3, a two-parameter position-only solution, does not occur in the extract, because such sources have no parallax. The RUWE cut at 1.4 keeps 12,722 sources and drops 1,344.
+% src: summary_statistics.json#sample_flow.3.n
+% src: summary_statistics.json#sample_flow.3.dropped
+The parallax over error cut at 10 keeps 9,970 sources and drops a further 2,752.
+% src: summary_statistics.json#sample_flow.4.n
+% src: summary_statistics.json#sample_flow.4.dropped
+This quality sample of 9,970 sources is the base for all membership counts.
+
+Missing values are reported and not imputed \citep{little2019statistical}. Two rows of the extract lack a G magnitude.
+% src: summary_statistics.json#missing_values_raw.phot_g_mean_mag
+A further 169 rows lack a BP magnitude, mostly faint or crowded sources.
+% src: summary_statistics.json#missing_values_raw.phot_bp_mean_mag
+The CMD therefore uses the rows with a colour. Of the 1,112 members, 17 have no colour; they are counted and reported separately.
+% src: estimation_results.json#cmd_extremes.members_without_bp_rp
+
+\subsection{Data organisation}
+
+The raw extract is loaded as a single table keyed on \texttt{source\_id}, with each column's unit and missing-value status recorded in a data dictionary. This follows the principle that a dataset should hold one observation per row and one variable per column \citep{wickham2014tidy}. The data check passed, with no duplicate keys and no missing astrometry. Missing photometry is reported where it arises.
+
+\section{Empirical design}
+
+Membership is defined by two cuts, applied in sequence. The first is a parallax window. The parallax centre and scatter are obtained by iterative three-sigma clipping of the parallax of the quality sample. A naive clip on the full sample converges to the field, with a centre of 3.19 mas, so the clip is started from the densest proper-motion bin among stars with parallax between 5 and 10 mas.
+% src: estimation_results.json#membership.naive_full_sample_parallax_centre_mas
+% src: estimation_results.json#membership.seed_pm_mas_yr
+The seed is only a starting value: the centre and scatter are then recomputed until they are stable, and the seed does not enter the result. The second cut is a proper-motion radius. The proper-motion centre is obtained by the same clipping, restricted to the parallax window, and a star is a member when its proper motion lies within 5 mas/yr of that centre.
+% src: estimation_results.json#membership.pm_radius_mas_yr
+A member therefore passes the quality cuts, the parallax window and the proper-motion radius.
+
+The descriptive outputs are counts, medians, percentiles and binned summaries. The distance is $1000/\varpi$ in parsecs, computed from the uncorrected parallax and labelled as such. Its uncertainty is summarised by the spread of the distribution and by the standard error of the mean parallax, $\sigma/\sqrt{n}$, which is the quantity reported for the parallax in Section 4. Percentiles follow the type-7 definition, which is the default in most statistical packages and differs from other definitions for small samples \citep{hyndman1996sample}. Histograms use bins of equal width, 0.25 mas in parallax and 5 pc in distance, so that each bin can be read, and the counts in the bins sum to the sample size \citep{freedman1981histogram}.
+% src: estimation_results.json#distributions.parallax.bins
+
+To show how the counts depend on the choices, the membership procedure is repeated over a sensitivity grid. The grid varies one dimension at a time from the base: the proper-motion radius (3, 7 and 10 mas/yr), the parallax window (2 sigma and a fixed $\pm 1$ mas), the RUWE cut (1.2), the parallax over error cut (5), an approximate zero-point offset of 0.03 mas added to the parallax, and a floor at $G = 6$. A supplementary full cross of the proper-motion radius, the parallax window, the RUWE cut and the parallax over error cut gives 48 combinations.
+% src: estimation_results.json#grid_full_cross.n_rows
+The grid is reported in full, and no row is selected for its count.
+
+The reading rules are stated here before the results. The base count is stable if it lies within 10\% of the grid median and no row of the grid moves it by more than 25\%. The parallax distribution is unimodal if its mode and median agree within 0.1 mas. The result is a failure if the base count falls below 100 or the median distance lies outside 110--160 pc.
+
+\section{Results}
+
+\subsection{Membership}
+
+The base selection retains 1,112 members out of the 9,970 quality sources, or 11.2\% of the sample.
+% src: estimation_results.json#membership.stage_counts.pm_radius
+% src: estimation_results.json#statistics.members_share.share
+The parallax window alone, before the proper-motion cut, keeps 1,345 sources, so the proper-motion radius removes 233 of them.
+% src: estimation_results.json#membership.stage_counts.parallax_window
+The member proper motions centre on $(\mu_\alpha^*, \mu_\delta) = (19.87, -45.42)$ mas/yr.
+% src: estimation_results.json#membership.pm_centre_mas_yr
+The spread of the members is 1.08 mas/yr in right ascension and 1.41 mas/yr in declination. These spreads are computed on members already cut at 5 mas/yr, so they understate the intrinsic proper-motion dispersion of the cluster.
+% src: estimation_results.json#statistics.pmra_mas_yr.sd
+% src: estimation_results.json#statistics.pmdec_mas_yr.sd
+Table~\ref{tab:summary} gives the full summary of the members. Across the one-at-a-time grid, the member count ranges from 1,024, when the proper-motion radius is reduced to 3 mas/yr, to 1,135, when the parallax window is fixed at $\pm 1$ mas.
+% src: estimation_results.json#membership_grid.1.n_members
+% src: estimation_results.json#membership_grid.5.n_members
+The median of the grid is 1,112, and the base count lies within 10\% of it. The largest change from any single one-at-a-time variation is 7.9\%.
+% src: estimation_results.json#membership.grid_one_at_a_time_median_members
+% src: estimation_results.json#membership.grid_max_change_share
+Table~\ref{tab:grid} lists every row.
+
+The full cross produces a wider spread. Its 48 combinations give between 913 and 1,184 members, with a median of 1,055.5.
+% src: estimation_results.json#grid_full_cross.n_members_min
+% src: estimation_results.json#grid_full_cross.n_members_max
+% src: estimation_results.json#grid_full_cross.n_members_median
+The lowest count comes from the tightest combination, a 3 mas/yr proper-motion radius with a 2 sigma window and RUWE below 1.2, and the highest from one of the widest, a 10 mas/yr radius with a fixed $\pm 1$ mas window and a parallax over error cut of 5. The wider spread therefore arises when several cuts move together. We report the full range, because the base row is one of several reasonable selections. Measured against the base count, the largest full-cross changes are $-17.9\%$ (913 members) and $+6.5\%$ (1,184 members). Both lie inside the 25\% bound set in Section 3, so the base also passes the stability rule under the full cross. The full range is $25.7\%$ of the median.
+% computed: (1184 - 913) / 1055.5 = 0.257; 913 / 1112 - 1 = -0.179; 1184 / 1112 - 1 = +0.065
+
+\input{tables/grid.tex}
+
+\subsection{Parallax and distance}
+
+The members' parallaxes form a single, narrow peak. The median parallax is 7.367 mas, the mean is 7.366 mas, and the interquartile range runs from 7.243 to 7.490 mas, with a standard deviation of 0.230 mas.
+% src: estimation_results.json#statistics.parallax_mas.median
+% src: estimation_results.json#statistics.parallax_mas.mean
+% src: estimation_results.json#statistics.parallax_mas.p25
+% src: estimation_results.json#statistics.parallax_mas.p75
+% src: estimation_results.json#statistics.parallax_mas.sd
+The mode, taken from a 0.1 mas histogram, lies at 7.35 mas, 0.017 mas from the median. That difference is well inside one bin width, so the mode adds little beyond the median, and the histogram shows one local peak.
+% src: estimation_results.json#membership.parallax_mode_mas
+% src: estimation_results.json#membership.parallax_mode_minus_median_mas
+The standard error of the mean parallax, the standard deviation divided by the square root of the 1,112 members, is 0.007 mas. Propagating this standard error of the mean parallax through $1000/\varpi$ gives a distance uncertainty of about 0.13 pc around the median distance of 135.7 pc.
+% computed: 1000 * parallax_median_se_mas / parallax_median_mas^2 = 1000 * 0.00691 / 7.3666^2
+% src: estimation_results.json#membership.parallax_median_se_mas
+The parallax window was set from this scatter, so a single peak inside it holds by construction and says nothing about stars outside the window. Whether a second group lies beyond the window is not tested here.
+
+The parallax distance distribution follows directly. The median distance is 135.7 pc, with a 16th--84th percentile range of 132.3 to 139.3 pc and an interquartile range of 4.5 pc.
+% src: estimation_results.json#distance_summary.distance_pc_iqr
+The distances run from 124.1 to 149.4 pc, and the standard deviation is 4.3 pc.
+% src: estimation_results.json#statistics.distance_pc.min
+% src: estimation_results.json#statistics.distance_pc.max
+% src: estimation_results.json#statistics.distance_pc.sd
+The median distance modulus is 5.66 mag.
+% src: estimation_results.json#distance_summary.distance_modulus_median_mag
+These figures describe the distribution of the members' uncorrected parallaxes. The spread is the star-to-star scatter of these distances and is not a measure of the cluster's depth, which the paper does not estimate. They are not a model-based distance, and they carry no correction for the parallax zero-point. The zero-point sensitivity row shifts the centre to 7.397 mas and leaves the count at 1,112, so the zero-point choice moves the distance but not the membership.
+% src: estimation_results.json#membership_grid.8.parallax_centre_mas
+Figure~\ref{fig:vpd} shows the vector-point diagram of the quality sample from which these members are drawn.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{fig_vpd_pm.pdf}
+\caption{Vector-point diagram of the quality-cut Gaia DR3 sample within 3 degrees of the Pleiades centre (parallax over error above 10, RUWE below 1.4, five- or six-parameter solutions). No member selection is drawn; the members are identified in Section 3.}
+\label{fig:vpd}
+\end{figure}
+
+\subsection{Colour--magnitude diagram}
+
+The members span the $G$ magnitude range from 5.20 mag, the brightest, to 20.16 mag, the faintest.
+% src: estimation_results.json#cmd_extremes.brightest_member_G
+% src: estimation_results.json#cmd_extremes.faintest_member_G
+The brightest member lies at $G = 5.20$, so the cluster's brightest stars, the named B stars several magnitudes brighter, are not among the members. The selection therefore leaves a gap at the bright end of the diagram, and the members do not populate the upper main sequence where those stars lie. The cut that removes them is not identified here.
+Of the 1,112 members, 1,095 have a $BP-RP$ colour and enter the locus summary; the other 17 cannot be placed in the diagram. Figure~\ref{fig:cmd} plots the members as one series, in orange, against the remaining stars of the quality-cut field, drawn in blue. The vertical axis shows $G$ increasing upwards, so the brightest stars lie at the bottom, and the horizontal axis shows $BP-RP$. The locus is summarised in the table below.
+% src: estimation_results.json#statistics.bp_rp.n
+The colours are not corrected for extinction, so the locus is shifted slightly red relative to an extinction-corrected diagram. No verified source for the cluster's reddening is yet in place, so the size of the shift is not quantified here.
+
+The members trace a continuous main-sequence locus. Across the twelve one-magnitude bins, the median colour rises steadily with magnitude: 0.02 mag at $G$ between 6 and 7, 0.17 mag between 7 and 8, 0.40 mag between 8 and 9, 0.70 mag between 9 and 10, 0.89 mag between 10 and 11, 1.08 mag between 11 and 12, 1.39 mag between 12 and 13, 1.81 mag between 13 and 14, 2.28 mag between 14 and 15, 2.67 mag between 15 and 16, 2.99 mag between 16 and 17, and 3.25 mag between 17 and 18.
+% src: estimation_results.json#main_sequence_locus.0.median_bp_rp
+% src: estimation_results.json#main_sequence_locus.1.median_bp_rp
+% src: estimation_results.json#main_sequence_locus.2.median_bp_rp
+% src: estimation_results.json#main_sequence_locus.3.median_bp_rp
+% src: estimation_results.json#main_sequence_locus.4.median_bp_rp
+% src: estimation_results.json#main_sequence_locus.5.median_bp_rp
+% src: estimation_results.json#main_sequence_locus.6.median_bp_rp
+% src: estimation_results.json#main_sequence_locus.7.median_bp_rp
+% src: estimation_results.json#main_sequence_locus.8.median_bp_rp
+% src: estimation_results.json#main_sequence_locus.9.median_bp_rp
+% src: estimation_results.json#main_sequence_locus.10.median_bp_rp
+% src: estimation_results.json#main_sequence_locus.11.median_bp_rp
+Table~\ref{tab:locus} gives the median and the 16th and 84th percentiles of the colour in each bin. The spread between the 16th and 84th percentiles is about 0.08 mag between $G = 6$ and $G = 7$, the narrowest of the bins, a ranking that rests on only 10 members, and widest between $G = 14$ and $G = 15$, where it reaches 0.40 mag.
+% computed: main_sequence_locus.0.p84_bp_rp - main_sequence_locus.0.p16_bp_rp = 0.0496 - (-0.0257) = 0.075
+% src: estimation_results.json#main_sequence_locus.0.p16_bp_rp
+% src: estimation_results.json#main_sequence_locus.0.p84_bp_rp
+% computed: main_sequence_locus.8.p84_bp_rp - main_sequence_locus.8.p16_bp_rp = 2.4645 - 2.0648 = 0.400
+% src: estimation_results.json#main_sequence_locus.8.p16_bp_rp
+% src: estimation_results.json#main_sequence_locus.8.p84_bp_rp
+Every bin from $G = 6$ to $G = 18$ holds at least 10 members, so the locus is continuous over that range. The lowest bins hold few stars, and the members in them should be read as a description, not a precise turn-off measurement. The comparison with a published main sequence is left to a verified source.
+% src: estimation_results.json#main_sequence_locus.0.n
+
+\input{tables/locus.tex}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{fig_cmd.pdf}
+% src: estimation_results.json#membership.stage_counts.pm_radius
+% src: estimation_results.json#statistics.bp_rp.n
+% src: estimation_results.json#cmd_extremes.members_without_bp_rp
+% src: estimation_results.json#cmd_extremes.brightest_member_G
+\caption{Colour--magnitude diagram of the quality-cut Gaia DR3 sample within 3 degrees of the Pleiades centre (parallax over error above 10, RUWE below 1.4, five- or six-parameter solutions). The members, in orange, are the 1,112 stars of the parallax and proper-motion selection, drawn as one series; the 1,095 with a $BP-RP$ colour are plotted. The remaining quality-cut stars form the field, drawn in blue. $G$ increases upwards, so the brightest stars lie at the bottom, and $BP-RP$ is uncorrected for extinction. The brightest member has $G = 5.20$, so the cluster's brightest stars are not among the members. The 17 members without a colour are not plotted.}
+\label{fig:cmd}
+\end{figure}
+
+\input{tables/summary.tex}
+
+\section{Discussion}
+
+The selection describes a compact group of 1,112 stars within 3 degrees of the Pleiades centre that shares a common parallax and proper motion, and it places the group at a median distance of 135.7 pc.
+% src: estimation_results.json#membership.stage_counts.pm_radius
+% src: estimation_results.json#distance_summary.distance_pc_median
+The narrow parallax peak and the continuous CMD locus are consistent with the members forming a single coherent sequence, at the precision the astrometry allows. Unrelated stars that happened to share these values would spread across the diagram and would not concentrate on one sequence. The value of the result lies in its transparency. A researcher who repeats the cone, the cuts and the clipping in the order given should recover the same counts, and the grid shows how far those counts move when the choices change.
+
+The distance comparison is the main place where this description needs a further step. The distance follows from the uncorrected parallax, and the zero-point, the parallax quality cut and the field truncation all bear on it. Pleiades distances determined before Gaia DR2 \citep{chelli2016pseudomagnitude} and the Gaia-based census of open clusters \citep{cantatgaudin2022milky,cantatgaudin2024how} are the natural benchmarks. Setting the present median against those values requires the verified figures and their releases, which have not been extracted for this paper. Until that check is made, the paper states its distance as the parallax-based value and makes no claim that it agrees or disagrees with a published one.
+
+\section{Limitations}
+
+The study's scope is set by the cone, the extract and the cuts. The cone is limited to 3 degrees around an approximate centre, which has not been checked against a cited value, and members outside it are not counted. The extract keeps only parallaxes above 2 mas and parallax over error above 5, so the field background in the CMD is limited to stars closer than 500 pc, and the grid's loosest quality cut is the one the extract allows. The base quality cut of parallax over error above 10 removes the fainter and less precisely measured sources, so the membership count describes the brighter stars with precise astrometry and leaves out the fainter part of the cluster population.
+
+Three further conditions bear on what the distances and the CMD mean. The parallaxes are uncorrected for the Gaia zero-point, which is negative at these magnitudes. The approximate correction changes the centre by 0.03 mas, which is a small fraction of the parallax, but it is not the per-star correction that requires auxiliary inputs missing from the extract. The photometry is not corrected for extinction, so colours are shown uncorrected. Bright stars and crowded regions near the cluster core may have degraded astrometry or photometry at $G < 6$. The floor at $G = 6$ removes only 6 members, which suggests the bright end does not drive the count. The brightest member lies at $G = 5.20$, so the named B stars, several magnitudes brighter, are absent from the membership altogether. The sample therefore has a gap at the bright end, and the paper does not identify which cut removes them.
+% src: estimation_results.json#cmd_extremes.brightest_member_G
+% src: estimation_results.json#membership_grid.9.n_members
+Finally, the membership is a selection on astrometry alone. A field star with a similar parallax and proper motion can be included, and the study has no independent test of contamination. The field stars in the extract do not share the cluster's proper motion, but the data cannot estimate the contamination rate. The count therefore includes any contaminants, and it also omits genuine members whose astrometry falls outside the cuts, so it should not be read as the number of cluster members in the field.
+
+\section{Future research}
+
+A useful next step is to test the selected sample against an independent photometric or spectroscopic criterion, such as whether the members sit on a single isochrone in the CMD, to estimate how many of the selected stars are field contaminants.
+
+\section{Conclusion}
+
+Within 3 degrees of the Pleiades centre, a transparent selection on Gaia DR3 parallax and proper motion yields 1,112 members, 11.2\% of the quality sample. Their parallaxes form a narrow peak at 7.367 mas, their median distance is 135.7 pc, and their colour--magnitude diagram is populated along a continuous main-sequence locus from $G = 6$ to $G = 18$. The counts are stable to within 8\% under single changes of the selection, and they vary more under combined changes. The description is a reference for replication, not a physical result, and its distance and main sequence await comparison with verified published values.
+% src: estimation_results.json#membership.grid_max_change_share
+
+\bibliographystyle{apalike}
+\bibliography{refs}
+
+\end{document}

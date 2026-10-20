@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "figures": [
+    {
+      "figure": "fig_vpd_pm.pdf",
+      "source": {
+        "table": "gaia_dr3",
+        "columns": {
+          "x": "pmra",
+          "y": "pmdec"
+        },
+        "where": "astrometric_params_solved IN (31, 95) AND ruwe < 1.4 AND parallax_over_error > 10"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_cmd.pdf",
+      "source": {
+        "table": "gaia_clean",
+        "columns": {
+          "x": "bp_rp",
+          "y": "phot_g_mean_mag",
+          "groups": "cmd_group"
+        },
+        "where": "cmd_group IN ('Member', 'Field') AND bp_rp IS NOT NULL AND phot_g_mean_mag IS NOT NULL"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_cmd_members.pdf",
+      "source": {
+        "table": "gaia_clean",
+        "columns": {
+          "x": "bp_rp",
+          "y": "phot_g_mean_mag",
+          "groups": "cmd_group"
+        },
+        "where": "bp_rp IS NOT NULL AND phot_g_mean_mag IS NOT NULL"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_distance_hist.pdf",
+      "source": {
+        "results": "distributions.distance.bins"
+      },
+      "matches": true
+    }
+  ],
+  "problems": []
+}

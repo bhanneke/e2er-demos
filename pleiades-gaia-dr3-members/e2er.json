@@ -1,0 +1,2857 @@
+{
+  "schema": "e2er-research-object/0.1",
+  "id": "bhanneke/pleiades-gaia-dr3-members",
+  "content_id": "sha256:1257d5003feae9de1aa3cfc28223ed38079a6745c8c249681a8c51abbcc55976",
+  "title": "Which stars within 3 degrees of the Pleiades centre are cluster members by Ga...",
+  "question": "Which stars within 3 degrees of the Pleiades centre are cluster members by Gaia DR3 parallax and proper motion, and what do their colour-magnitude diagram and parallax distance distribution show about the cluster's distance and main sequence?",
+  "contributors": [
+    {
+      "name": "Björn Hanneke",
+      "github": "bhanneke",
+      "roles": [
+        "conceptualization",
+        "investigation"
+      ]
+    }
+  ],
+  "ai": {
+    "backend": "claude_code",
+    "model": "haiku",
+    "agents": [
+      "literature_scanner",
+      "idea_developer",
+      "data_architect",
+      "data_analyst",
+      "econometrics_specialist",
+      "abstract_writer",
+      "paper_drafter",
+      "literature_reviewer",
+      "data_reviewer",
+      "writing_reviewer",
+      "methods_reviewer",
+      "plausibility_reviewer",
+      "patch_revisor",
+      "replication_packager",
+      "section_writer"
+    ],
+    "agents_source": "recorded",
+    "usage": [
+      {
+        "agent": "strategist:decide",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 4,
+        "input_tokens": 8,
+        "output_tokens": 9805,
+        "cache_read_tokens": 55408,
+        "cache_write_tokens": 105345,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:56:58",
+        "last": "2026-10-13 22:26:11"
+      },
+      {
+        "agent": "literature_scanner",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 1,
+        "input_tokens": 10,
+        "output_tokens": 6598,
+        "cache_read_tokens": 178588,
+        "cache_write_tokens": 46256,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:57:35",
+        "last": "2026-10-13 20:57:35"
+      },
+      {
+        "agent": "idea_developer",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 1,
+        "input_tokens": 8,
+        "output_tokens": 6233,
+        "cache_read_tokens": 122415,
+        "cache_write_tokens": 30370,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:57:40",
+        "last": "2026-10-13 20:57:40"
+      },
+      {
+        "agent": "data_architect",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 4,
+        "input_tokens": 22,
+        "output_tokens": 17111,
+        "cache_read_tokens": 562078,
+        "cache_write_tokens": 246122,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 20:58:18",
+        "last": "2026-10-13 22:20:30"
+      },
+      {
+        "agent": "data_analyst",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 8,
+        "input_tokens": 210,
+        "output_tokens": 103180,
+        "cache_read_tokens": 10018345,
+        "cache_write_tokens": 756740,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:03:34",
+        "last": "2026-10-13 22:28:22"
+      },
+      {
+        "agent": "econometrics_specialist",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 3,
+        "input_tokens": 86,
+        "output_tokens": 60302,
+        "cache_read_tokens": 3059300,
+        "cache_write_tokens": 232273,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:07:51",
+        "last": "2026-10-13 22:25:23"
+      },
+      {
+        "agent": "abstract_writer",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 1,
+        "input_tokens": 12,
+        "output_tokens": 9338,
+        "cache_read_tokens": 317684,
+        "cache_write_tokens": 67212,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:08:47",
+        "last": "2026-10-13 21:08:47"
+      },
+      {
+        "agent": "paper_drafter",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 5,
+        "input_tokens": 68,
+        "output_tokens": 67536,
+        "cache_read_tokens": 2397128,
+        "cache_write_tokens": 345241,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:10:16",
+        "last": "2026-10-13 21:18:22"
+      },
+      {
+        "agent": "strategist:ceiling_check",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 2,
+        "input_tokens": 4,
+        "output_tokens": 4806,
+        "cache_read_tokens": 30276,
+        "cache_write_tokens": 42925,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:17:25",
+        "last": "2026-10-13 22:30:07"
+      },
+      {
+        "agent": "strategist:self_attack",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 2,
+        "input_tokens": 4,
+        "output_tokens": 36582,
+        "cache_read_tokens": 30276,
+        "cache_write_tokens": 34364,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:20:09",
+        "last": "2026-10-13 22:33:09"
+      },
+      {
+        "agent": "literature_reviewer",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 2,
+        "input_tokens": 8,
+        "output_tokens": 13455,
+        "cache_read_tokens": 156080,
+        "cache_write_tokens": 109095,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:20:55",
+        "last": "2026-10-13 22:33:56"
+      },
+      {
+        "agent": "data_reviewer",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 2,
+        "input_tokens": 8,
+        "output_tokens": 39472,
+        "cache_read_tokens": 173713,
+        "cache_write_tokens": 151276,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:21:22",
+        "last": "2026-10-13 22:35:25"
+      },
+      {
+        "agent": "writing_reviewer",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 2,
+        "input_tokens": 8,
+        "output_tokens": 38464,
+        "cache_read_tokens": 162503,
+        "cache_write_tokens": 139369,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:21:34",
+        "last": "2026-10-13 22:35:04"
+      },
+      {
+        "agent": "methods_reviewer",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 2,
+        "input_tokens": 10,
+        "output_tokens": 36064,
+        "cache_read_tokens": 231861,
+        "cache_write_tokens": 156886,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:22:19",
+        "last": "2026-10-13 22:35:37"
+      },
+      {
+        "agent": "plausibility_reviewer",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 2,
+        "input_tokens": 10,
+        "output_tokens": 29849,
+        "cache_read_tokens": 221718,
+        "cache_write_tokens": 127393,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:25:06",
+        "last": "2026-10-13 22:36:25"
+      },
+      {
+        "agent": "patch_revisor",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 3,
+        "input_tokens": 40,
+        "output_tokens": 30407,
+        "cache_read_tokens": 1146699,
+        "cache_write_tokens": 189035,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:26:18",
+        "last": "2026-10-13 22:37:35"
+      },
+      {
+        "agent": "replication_packager",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 2,
+        "input_tokens": 30,
+        "output_tokens": 21519,
+        "cache_read_tokens": 872505,
+        "cache_write_tokens": 117496,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:27:45",
+        "last": "2026-10-13 22:38:23"
+      },
+      {
+        "agent": "section_writer",
+        "backend": "claude_code",
+        "model": "haiku",
+        "calls": 3,
+        "input_tokens": 38,
+        "output_tokens": 25656,
+        "cache_read_tokens": 1107991,
+        "cache_write_tokens": 169682,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 22:25:57",
+        "last": "2026-10-13 22:29:49"
+      }
+    ]
+  },
+  "process": {
+    "template": "descriptive-study",
+    "mode": "iterative",
+    "methodology": "empirical",
+    "governance": "full",
+    "e2er_version": "0.17.0",
+    "exported": "20261015"
+  },
+  "components": {
+    "skills": {
+      "literature_scanner": [
+        "base/researcher",
+        "synthesis/context-builder"
+      ],
+      "idea_developer": [
+        "base/researcher",
+        "reasoning/creative-ideation",
+        "reasoning/novelty"
+      ],
+      "data_architect": [
+        "data/data-tables",
+        "data/query-data",
+        "base/researcher",
+        "data/yfinance",
+        "data/fred",
+        "data/gmd",
+        "data/usgs",
+        "data/exoplanets",
+        "data/gaia",
+        "data/nasa_power",
+        "data/noaa",
+        "data/worldbank",
+        "data/eurostat",
+        "data/owid",
+        "data/who_gho",
+        "data/gutenberg",
+        "data/github",
+        "data/gisco",
+        "data/naturalearth",
+        "methods/descriptive-analysis"
+      ],
+      "data_analyst": [
+        "data/data-tables",
+        "data/query-data",
+        "data/cleaning",
+        "data/figure-spec",
+        "econometrics/panel-data",
+        "data/yfinance",
+        "data/fred",
+        "data/gmd",
+        "data/summary-statistics-schema",
+        "data/usgs",
+        "data/exoplanets",
+        "data/gaia",
+        "data/nasa_power",
+        "data/noaa",
+        "data/worldbank",
+        "data/eurostat",
+        "data/owid",
+        "data/who_gho",
+        "data/gutenberg",
+        "data/github",
+        "data/gisco",
+        "data/naturalearth",
+        "methods/descriptive-analysis"
+      ],
+      "econometrics_specialist": [
+        "data/query-data",
+        "data/cleaning",
+        "data/figure-spec",
+        "data/descriptive-results-schema",
+        "methods/descriptive-analysis"
+      ],
+      "abstract_writer": [
+        "writing/abstract",
+        "reasoning/anti-slop",
+        "writing/cite-numbers-by-source"
+      ],
+      "paper_drafter": [
+        "writing/paper-structure",
+        "writing/personal-style",
+        "base/researcher",
+        "writing/cite-numbers-by-source",
+        "data/table-spec",
+        "methods/descriptive-analysis"
+      ],
+      "literature_reviewer": [
+        "review/referee-simulation",
+        "synthesis/context-builder"
+      ],
+      "data_reviewer": [
+        "review/data-quality",
+        "data/cleaning",
+        "methods/descriptive-analysis"
+      ],
+      "writing_reviewer": [
+        "review/writing-quality",
+        "reasoning/anti-slop"
+      ],
+      "methods_reviewer": [
+        "review/methods-review",
+        "review/consistency-check",
+        "methods/descriptive-analysis"
+      ],
+      "plausibility_reviewer": [
+        "review/domain-plausibility",
+        "review/consistency-check"
+      ],
+      "patch_revisor": [
+        "writing/scoped-revision",
+        "writing/cite-numbers-by-source",
+        "writing/personal-style",
+        "reasoning/anti-slop"
+      ],
+      "replication_packager": [
+        "data/cleaning",
+        "base/researcher",
+        "synthesis/replication-package"
+      ],
+      "section_writer": [
+        "writing/paper-structure",
+        "writing/personal-style",
+        "reasoning/anti-slop",
+        "writing/cite-numbers-by-source",
+        "data/table-spec"
+      ]
+    },
+    "skills_source": "recorded"
+  },
+  "literature": [
+    {
+      "cite_key": "GaiaMission_Prusti2016",
+      "doi": "10.1051/0004-6361/201629272",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "GaiaDR3_Vallenari2023",
+      "doi": "10.1051/0004-6361/202243940",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "cantatgaudin2022milky",
+      "doi": "10.3390/universe8020111",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "cantatgaudin2024how",
+      "doi": "10.1016/j.newar.2024.101696",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "little2019statistical",
+      "doi": "10.1002/9781119482260",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "wickham2014tidy",
+      "doi": "10.18637/jss.v059.i10",
+      "status": "verified_doi",
+      "verified_by": "crossref"
+    },
+    {
+      "cite_key": "hyndman1996sample",
+      "doi": "10.1080/00031305.1996.10473566",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "freedman1981histogram",
+      "doi": "10.1007/BF01025868",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "chelli2016pseudomagnitude",
+      "doi": "10.1051/0004-6361/201629024",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    }
+  ],
+  "data": [
+    {
+      "path": "data/data.db",
+      "sha256": "56ea2a6acff33ff82e907d6fd681be3769db2693717746d9f0af1e4d65ae6749",
+      "bytes": 4177920,
+      "source": "ESA Gaia Data Release 3 (Gaia), release DR3",
+      "terms": "Holds data from ESA Gaia Data Release 3 (Gaia), release DR3, used under its terms. CC BY-NC 3.0 IGO (https://creativecommons.org/licenses/by-nc/3.0/igo/). The Gaia licence page (https://www.cosmos.esa.int/web/gaia-users/license): \"Gaia data are distributed under the CC BY-NC 3.0 IGO license.\" The ESA archives' terms (https://www.cosmos.esa.int/web/esdc/terms-and-conditions): data \"are open and free to use by the User subject to proper acknowledgment to be given in accordance with the credit lines provided below\" (Gaia: \"Credit: ESA, Gaia DPAC\"), and \"Prior to any commercial use by the User of any Data or Data Product, including any use or application that directly or indirectly generates a financial gain, a detailed request for authorisation/licence shall be made\". Acknowledgement: This work has made use of data from the European Space Agency (ESA) mission Gaia (https://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, https://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement.",
+      "citation": "Gaia Collaboration, Vallenari, A., Brown, A. G. A., Prusti, T., et al. (2023). Gaia Data Release 3: Summary of the content and survey properties. Astronomy & Astrophysics, 674, A1. https://doi.org/10.1051/0004-6361/202243940; and Gaia Collaboration, Prusti, T., de Bruijne, J. H. J., Brown, A. G. A., et al. (2016). The Gaia mission. Astronomy & Astrophysics, 595, A1. https://doi.org/10.1051/0004-6361/201629272. Acknowledgement: This work has made use of data from the European Space Agency (ESA) mission Gaia (https://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, https://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement."
+    },
+    {
+      "path": "data/data_dictionary.json",
+      "sha256": "2cc4b7da056012bee3f57b676b7912f25f2e64bca16271c6d507eb70651d9336",
+      "bytes": 14119
+    },
+    {
+      "path": "data/data_sources.json",
+      "sha256": "3b415a6d613550b45524d0e6d29e12452d6dad83a3d4ce47be3ca01cd96b2c8b",
+      "bytes": 5955
+    },
+    {
+      "path": "data/data_summary.md",
+      "sha256": "1e9db8480eb6c729fa78c702ad3069e46226e6e1a5939c8807d941bc5488dbd5",
+      "bytes": 7801
+    },
+    {
+      "path": "data/gaia_clean.csv",
+      "sha256": "28c906d7028fc9db636c5ea30070086910bc935010c629aff2dc66dd910197df",
+      "bytes": 2370419,
+      "source": "ESA Gaia Data Release 3 (Gaia), release DR3",
+      "terms": "Holds data from ESA Gaia Data Release 3 (Gaia), release DR3, used under its terms. CC BY-NC 3.0 IGO (https://creativecommons.org/licenses/by-nc/3.0/igo/). The Gaia licence page (https://www.cosmos.esa.int/web/gaia-users/license): \"Gaia data are distributed under the CC BY-NC 3.0 IGO license.\" The ESA archives' terms (https://www.cosmos.esa.int/web/esdc/terms-and-conditions): data \"are open and free to use by the User subject to proper acknowledgment to be given in accordance with the credit lines provided below\" (Gaia: \"Credit: ESA, Gaia DPAC\"), and \"Prior to any commercial use by the User of any Data or Data Product, including any use or application that directly or indirectly generates a financial gain, a detailed request for authorisation/licence shall be made\". Acknowledgement: This work has made use of data from the European Space Agency (ESA) mission Gaia (https://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, https://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement.",
+      "citation": "Gaia Collaboration, Vallenari, A., Brown, A. G. A., Prusti, T., et al. (2023). Gaia Data Release 3: Summary of the content and survey properties. Astronomy & Astrophysics, 674, A1. https://doi.org/10.1051/0004-6361/202243940; and Gaia Collaboration, Prusti, T., de Bruijne, J. H. J., Brown, A. G. A., et al. (2016). The Gaia mission. Astronomy & Astrophysics, 595, A1. https://doi.org/10.1051/0004-6361/201629272. Acknowledgement: This work has made use of data from the European Space Agency (ESA) mission Gaia (https://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, https://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement."
+    }
+  ],
+  "outputs": [
+    {
+      "path": "paper/abstract.tex",
+      "sha256": "5f2e11a14005c2d793cd99902ceeefd3fb8b36df1c48da72f7c98a9dcc152e42"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256": "2ec43880ec2c8e574bc60f163de7de1abd54eac56afe985822ba33afda8cb7e1"
+    },
+    {
+      "path": "paper/paper.tex",
+      "sha256": "9e32963dc28e255dca76c2a859df77389f2d0d16a991d4729b4e2ffdc83b796c"
+    },
+    {
+      "path": "paper/refs.bib",
+      "sha256": "f2a9c68900245aabd50312260fd5c273d7c67d995af247c88f395a47977bc794"
+    },
+    {
+      "path": "paper/tables/grid.tex",
+      "sha256": "2514c766e9f623fb57718e6bafa5ed3826164078236291b877b5d5ff27491e9b"
+    },
+    {
+      "path": "paper/tables/locus.tex",
+      "sha256": "b99c324da906409fee81d302a31a2896647e413e6ac5f762f697713c4f5edce8"
+    },
+    {
+      "path": "paper/tables/summary.tex",
+      "sha256": "179851cbb95981b99027631175b43b5f20f63f9aaa2266b6be346974c7e8ea8b"
+    },
+    {
+      "path": "replication/audit_log.csv",
+      "sha256": "b6f38b6733b5d0c4512b7cb3f7d9123443f71e39bfc54c022d0e23fb44c374a4"
+    },
+    {
+      "path": "replication/data_queries.sql",
+      "sha256": "2e9a2863bdbbd471f1d75df5e2051aff19e2525efbf2904ed340847326257a24"
+    },
+    {
+      "path": "replication/estimation.py",
+      "sha256": "1131c2b0c69194d06916adb21b5b35f3f90e903cdbe1837eeb1426ad23df70e4"
+    },
+    {
+      "path": "results/data_quality.json",
+      "sha256": "e9df348ef11e90c04de3b62057ad5d210d85c036f6e3f20d77cd8bec2b594853"
+    },
+    {
+      "path": "results/data_quality.md",
+      "sha256": "e481615f8ee9e459c998f4f53fafca308542d16185d3ec83633cf6d1f7133746"
+    },
+    {
+      "path": "results/estimation_results.json",
+      "sha256": "f29659ad1e9f627f08b7fdf227c01db76bc138f28c4a9e6ecedbab8781c8dddb"
+    },
+    {
+      "path": "results/figure_check.json",
+      "sha256": "f09d4cd5ccb06ba5d2fad34235e5581cdea6525731adbe08c5bebe5b14d8a1d8"
+    },
+    {
+      "path": "results/figure_spec.json",
+      "sha256": "1212d76fe9eb92dac212a84dca502e9045c1b8d9afc68d85a777ab78387e17b4"
+    },
+    {
+      "path": "results/figures/fig_cmd.pdf",
+      "sha256": "f92d6906069b37e76e0b5d973216cb0cc9be7779540ff5af4f09334904985db7"
+    },
+    {
+      "path": "results/figures/fig_cmd_members.pdf",
+      "sha256": "4364b4139ab708ca7e18a4d70c62a5dc10a8e6657c17551ab13fb2c40fafa60f"
+    },
+    {
+      "path": "results/figures/fig_distance_hist.pdf",
+      "sha256": "c58b2c438e51ff80b278c175f54a2b839031e909ceb7120b8a62c48c9ac53d75"
+    },
+    {
+      "path": "results/figures/fig_vpd_pm.pdf",
+      "sha256": "db11bbb94387d7bd75336c0301180e8f03db2a3492a06e070380675e3abe85c7"
+    },
+    {
+      "path": "results/number_verification.json",
+      "sha256": "ac0487f2db8011624e69aa10cc9fc599d8b6073ca4505668a55bcc008606ef30"
+    },
+    {
+      "path": "results/summary_statistics.json",
+      "sha256": "7b39bf74928d062740ac33917ab5dda48aa6ddbbdae60ec840f8db2e845da259"
+    },
+    {
+      "path": "results/table_render_report.json",
+      "sha256": "d5bac21ad34d5d8b389e4f648cb0a3955477bd4b0e5122ce1f87cfeb07bcd296"
+    },
+    {
+      "path": "results/table_spec.json",
+      "sha256": "e3bdc6e0b140b617e82f249a00acefdc5728f1263acdcef3f728961345a1a68a"
+    }
+  ],
+  "provenance": {
+    "files": 63,
+    "edges": {
+      "citation": 9,
+      "data": 1,
+      "estimation": 1,
+      "figure": 4,
+      "table_cell": 126
+    }
+  },
+  "verification": [
+    {
+      "check": "integrity",
+      "status": "PASS",
+      "detail": "63 files hash-verified against provenance.json; 126 table cell(s) traced in the derivation graph; 5 change(s) after export recorded as amendments (README.md, paper/paper.pdf, paper/paper.tex)"
+    },
+    {
+      "check": "numbers",
+      "status": "PASS",
+      "detail": "126 table cell(s) are source values at the precision shown; text (not gating): 151 of 153 number(s) are source values, 1 differ from the quantity named nearby, 1 untraced"
+    },
+    {
+      "check": "tables",
+      "status": "PASS",
+      "detail": "3 table(s) reproduce byte-identically from the sidecars"
+    },
+    {
+      "check": "spec",
+      "status": "SKIP",
+      "detail": "no design/identification_spec.json"
+    },
+    {
+      "check": "results contract",
+      "status": "PASS",
+      "detail": "descriptive results (descriptive statistics and distributions) are complete and consistent"
+    },
+    {
+      "check": "citations",
+      "status": "PASS",
+      "detail": "9 cite key(s) resolve in refs.bib; snapshot: 9 verified, 0 unverifiable at run time"
+    },
+    {
+      "check": "results from code",
+      "status": "SKIP",
+      "detail": "not checked: the run predates output records"
+    }
+  ],
+  "dependencies": {
+    "uses": [
+      "template:descriptive-study",
+      "agent:literature_scanner",
+      "agent:idea_developer",
+      "agent:data_architect",
+      "agent:data_analyst",
+      "agent:econometrics_specialist",
+      "agent:abstract_writer",
+      "agent:paper_drafter",
+      "agent:literature_reviewer",
+      "agent:data_reviewer",
+      "agent:writing_reviewer",
+      "agent:methods_reviewer",
+      "agent:plausibility_reviewer",
+      "agent:patch_revisor",
+      "agent:replication_packager",
+      "agent:section_writer",
+      "skill:e2er/base/researcher",
+      "skill:e2er/data/cleaning",
+      "skill:e2er/data/data-tables",
+      "skill:e2er/data/descriptive-results-schema",
+      "skill:e2er/data/eurostat",
+      "skill:e2er/data/exoplanets",
+      "skill:e2er/data/figure-spec",
+      "skill:e2er/data/fred",
+      "skill:e2er/data/gaia",
+      "skill:e2er/data/gisco",
+      "skill:e2er/data/github",
+      "skill:e2er/data/gmd",
+      "skill:e2er/data/gutenberg",
+      "skill:e2er/data/nasa_power",
+      "skill:e2er/data/naturalearth",
+      "skill:e2er/data/noaa",
+      "skill:e2er/data/owid",
+      "skill:e2er/data/query-data",
+      "skill:e2er/data/summary-statistics-schema",
+      "skill:e2er/data/table-spec",
+      "skill:e2er/data/usgs",
+      "skill:e2er/data/who_gho",
+      "skill:e2er/data/worldbank",
+      "skill:e2er/data/yfinance",
+      "skill:e2er/econometrics/panel-data",
+      "skill:e2er/methods/descriptive-analysis",
+      "skill:e2er/reasoning/anti-slop",
+      "skill:e2er/reasoning/creative-ideation",
+      "skill:e2er/reasoning/novelty",
+      "skill:e2er/review/consistency-check",
+      "skill:e2er/review/data-quality",
+      "skill:e2er/review/domain-plausibility",
+      "skill:e2er/review/methods-review",
+      "skill:e2er/review/referee-simulation",
+      "skill:e2er/review/writing-quality",
+      "skill:e2er/synthesis/context-builder",
+      "skill:e2er/synthesis/replication-package",
+      "skill:e2er/writing/abstract",
+      "skill:e2er/writing/cite-numbers-by-source",
+      "skill:e2er/writing/paper-structure",
+      "skill:e2er/writing/personal-style",
+      "skill:e2er/writing/scoped-revision"
+    ],
+    "derived_from": []
+  },
+  "repository": {
+    "url": "https://github.com/bhanneke/e2er-demos",
+    "path": "pleiades-gaia-dr3-members",
+    "host": "github",
+    "left_out": [
+      {
+        "path": "data/data.db",
+        "reason": "the terms of ESA Gaia Data Release 3 (Gaia) do not allow passing the data on"
+      },
+      {
+        "path": "data/gaia_clean.csv",
+        "reason": "built from ESA Gaia Data Release 3 (Gaia) data, whose terms do not allow passing it on"
+      },
+      {
+        "path": "results/figure_spec.json",
+        "reason": "built from ESA Gaia Data Release 3 (Gaia) data and holds them row by row (an array of 9,863 values at figures[2].y); its terms do not allow passing them on"
+      }
+    ]
+  },
+  "license": null,
+  "purpose": "demonstration",
+  "availability": {
+    "data": {
+      "access": "private"
+    },
+    "code": {
+      "access": "public",
+      "url": "https://github.com/bhanneke/e2er-demos"
+    }
+  },
+  "dossier": {
+    "id": "sha256:ed64be6914a73236947710ac05e258595632a9bf598ec58e3fbe04926866a8d1",
+    "url": "https://e2er.org/d/ed64be6914a73236",
+    "doc": {
+      "components": [
+        {
+          "id": "agent:abstract_writer",
+          "kind": "agent",
+          "name": "abstract_writer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:data_analyst",
+          "kind": "agent",
+          "name": "data_analyst",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:data_architect",
+          "kind": "agent",
+          "name": "data_architect",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:data_reviewer",
+          "kind": "agent",
+          "name": "data_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:econometrics_specialist",
+          "kind": "agent",
+          "name": "econometrics_specialist",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:idea_developer",
+          "kind": "agent",
+          "name": "idea_developer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:literature_reviewer",
+          "kind": "agent",
+          "name": "literature_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:literature_scanner",
+          "kind": "agent",
+          "name": "literature_scanner",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:methods_reviewer",
+          "kind": "agent",
+          "name": "methods_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:paper_drafter",
+          "kind": "agent",
+          "name": "paper_drafter",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:patch_revisor",
+          "kind": "agent",
+          "name": "patch_revisor",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:plausibility_reviewer",
+          "kind": "agent",
+          "name": "plausibility_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:replication_packager",
+          "kind": "agent",
+          "name": "replication_packager",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:section_writer",
+          "kind": "agent",
+          "name": "section_writer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "agent:writing_reviewer",
+          "kind": "agent",
+          "name": "writing_reviewer",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/core/specialists/registry.py"
+          }
+        },
+        {
+          "id": "connector:claude-code",
+          "kind": "connector",
+          "name": "claude-code",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "src/modules/llm/claude_code.py"
+          }
+        },
+        {
+          "id": "skill:e2er/base/researcher",
+          "kind": "skill",
+          "name": "researcher",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/base/researcher.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/cleaning",
+          "kind": "skill",
+          "name": "cleaning",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/cleaning.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/data-tables",
+          "kind": "skill",
+          "name": "data-tables",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/data-tables.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/descriptive-results-schema",
+          "kind": "skill",
+          "name": "descriptive-results-schema",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/descriptive-results-schema.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/eurostat",
+          "kind": "skill",
+          "name": "eurostat",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/eurostat.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/exoplanets",
+          "kind": "skill",
+          "name": "exoplanets",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/exoplanets.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/figure-spec",
+          "kind": "skill",
+          "name": "figure-spec",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/figure-spec.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/fred",
+          "kind": "skill",
+          "name": "fred",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/fred.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gaia",
+          "kind": "skill",
+          "name": "gaia",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/gaia.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gisco",
+          "kind": "skill",
+          "name": "gisco",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/gisco.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/github",
+          "kind": "skill",
+          "name": "github",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/github.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gmd",
+          "kind": "skill",
+          "name": "gmd",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/gmd.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gutenberg",
+          "kind": "skill",
+          "name": "gutenberg",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/gutenberg.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/nasa_power",
+          "kind": "skill",
+          "name": "nasa_power",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/nasa_power.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/naturalearth",
+          "kind": "skill",
+          "name": "naturalearth",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/naturalearth.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/noaa",
+          "kind": "skill",
+          "name": "noaa",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/noaa.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/owid",
+          "kind": "skill",
+          "name": "owid",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/owid.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/query-data",
+          "kind": "skill",
+          "name": "query-data",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/query-data.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/summary-statistics-schema",
+          "kind": "skill",
+          "name": "summary-statistics-schema",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/summary-statistics-schema.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/table-spec",
+          "kind": "skill",
+          "name": "table-spec",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/table-spec.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/usgs",
+          "kind": "skill",
+          "name": "usgs",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/usgs.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/who_gho",
+          "kind": "skill",
+          "name": "who_gho",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/who_gho.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/worldbank",
+          "kind": "skill",
+          "name": "worldbank",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/worldbank.md"
+          }
+        },
+        {
+          "id": "skill:e2er/data/yfinance",
+          "kind": "skill",
+          "name": "yfinance",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/data/yfinance.md"
+          }
+        },
+        {
+          "id": "skill:e2er/econometrics/panel-data",
+          "kind": "skill",
+          "name": "panel-data",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/econometrics/panel-data.md"
+          }
+        },
+        {
+          "id": "skill:e2er/methods/descriptive-analysis",
+          "kind": "skill",
+          "name": "descriptive-analysis",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/methods/descriptive-analysis.md"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/anti-slop",
+          "kind": "skill",
+          "name": "anti-slop",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/reasoning/anti-slop.md"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/creative-ideation",
+          "kind": "skill",
+          "name": "creative-ideation",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/reasoning/creative-ideation.md"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/novelty",
+          "kind": "skill",
+          "name": "novelty",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/reasoning/novelty.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/consistency-check",
+          "kind": "skill",
+          "name": "consistency-check",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/consistency-check.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/data-quality",
+          "kind": "skill",
+          "name": "data-quality",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/data-quality.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/domain-plausibility",
+          "kind": "skill",
+          "name": "domain-plausibility",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/domain-plausibility.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/methods-review",
+          "kind": "skill",
+          "name": "methods-review",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/methods-review.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/referee-simulation",
+          "kind": "skill",
+          "name": "referee-simulation",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/referee-simulation.md"
+          }
+        },
+        {
+          "id": "skill:e2er/review/writing-quality",
+          "kind": "skill",
+          "name": "writing-quality",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/review/writing-quality.md"
+          }
+        },
+        {
+          "id": "skill:e2er/synthesis/context-builder",
+          "kind": "skill",
+          "name": "context-builder",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/synthesis/context-builder.md"
+          }
+        },
+        {
+          "id": "skill:e2er/synthesis/replication-package",
+          "kind": "skill",
+          "name": "replication-package",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/synthesis/replication-package.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/abstract",
+          "kind": "skill",
+          "name": "abstract",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/abstract.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/cite-numbers-by-source",
+          "kind": "skill",
+          "name": "cite-numbers-by-source",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/cite-numbers-by-source.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/paper-structure",
+          "kind": "skill",
+          "name": "paper-structure",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/paper-structure.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/personal-style",
+          "kind": "skill",
+          "name": "personal-style",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/personal-style.md"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/scoped-revision",
+          "kind": "skill",
+          "name": "scoped-revision",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "skills/files/writing/scoped-revision.md"
+          }
+        },
+        {
+          "id": "template:descriptive-study",
+          "kind": "template",
+          "name": "descriptive-study",
+          "pin": {
+            "note": "unresolved: the run recorded no E2ER commit",
+            "path": "pipelines/descriptive-study.toml"
+          }
+        }
+      ],
+      "credit": {
+        "entries": [
+          {
+            "accessed": "2026-10-11",
+            "creator": "John D. Emerson and Graham A. Colditz",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Evidence that descriptive statistics carry much of a field's empirical work (58% of NEJM articles readable with descriptives alone).",
+            "publisher": "New England Journal of Medicine 309(12), 709-713",
+            "relation": "cites",
+            "role": "related work",
+            "title": "Use of Statistical Analysis in The New England Journal of Medicine",
+            "url": "https://doi.org/10.1056/NEJM198309223091206",
+            "year": 1983
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "David Freedman and Persi Diaconis",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Histogram bin width (Freedman-Diaconis rule) in the descriptive-analysis skill.",
+            "publisher": "Zeitschrift für Wahrscheinlichkeitstheorie und Verwandte Gebiete 57(4), 453-476",
+            "relation": "cites",
+            "role": "method",
+            "title": "On the histogram as a density estimator: L2 theory",
+            "url": "https://doi.org/10.1007/BF01025868",
+            "year": 1981
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Rob J. Hyndman and Yanan Fan",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Quantile definitions (type 7, linear interpolation) the skill asks studies to state.",
+            "publisher": "The American Statistician 50(4), 361-365",
+            "relation": "cites",
+            "role": "method",
+            "title": "Sample Quantiles in Statistical Packages",
+            "url": "https://doi.org/10.1080/00031305.1996.10473566",
+            "year": 1996
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Charles Spearman",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "Rank correlation (Spearman's rho) for associations in skewed data.",
+            "publisher": "The American Journal of Psychology 15(1), 72-101",
+            "relation": "cites",
+            "role": "method",
+            "title": "The Proof and Measurement of Association between Two Things",
+            "url": "https://doi.org/10.2307/1412159",
+            "year": 1904
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Roderick Little and Donald Rubin",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "book",
+            "note": "Reporting and treating missing values, which the data check asks the dictionary to explain.",
+            "publisher": "Wiley",
+            "relation": "cites",
+            "role": "method",
+            "title": "Statistical Analysis with Missing Data (3rd edition)",
+            "url": "https://doi.org/10.1002/9781119482260",
+            "year": 2019
+          },
+          {
+            "accessed": "2026-10-11",
+            "creator": "Hadley Wickham",
+            "found_via": "Crossref record checked 2026-10-11",
+            "kind": "article",
+            "note": "One row per unit, one column per variable: the shape the data check reads.",
+            "publisher": "Journal of Statistical Software 59(10)",
+            "relation": "cites",
+            "role": "method",
+            "title": "Tidy Data",
+            "url": "https://doi.org/10.18637/jss.v059.i10",
+            "year": 2014
+          }
+        ],
+        "template": "descriptive-study"
+      },
+      "data": [
+        {
+          "path": "data/data.db",
+          "sha256": "56ea2a6acff33ff82e907d6fd681be3769db2693717746d9f0af1e4d65ae6749"
+        },
+        {
+          "path": "data/data_dictionary.json",
+          "sha256": "2cc4b7da056012bee3f57b676b7912f25f2e64bca16271c6d507eb70651d9336"
+        },
+        {
+          "path": "data/data_sources.json",
+          "sha256": "3b415a6d613550b45524d0e6d29e12452d6dad83a3d4ce47be3ca01cd96b2c8b"
+        },
+        {
+          "path": "data/data_summary.md",
+          "sha256": "1e9db8480eb6c729fa78c702ad3069e46226e6e1a5939c8807d941bc5488dbd5"
+        },
+        {
+          "path": "data/gaia_clean.csv",
+          "sha256": "28c906d7028fc9db636c5ea30070086910bc935010c629aff2dc66dd910197df"
+        }
+      ],
+      "data_sources": [
+        {
+          "citation": "Gaia Collaboration, Vallenari, A., Brown, A. G. A., Prusti, T., et al. (2023). Gaia Data Release 3: Summary of the content and survey properties. Astronomy & Astrophysics, 674, A1. https://doi.org/10.1051/0004-6361/202243940; and Gaia Collaboration, Prusti, T., de Bruijne, J. H. J., Brown, A. G. A., et al. (2016). The Gaia mission. Astronomy & Astrophysics, 595, A1. https://doi.org/10.1051/0004-6361/201629272. Acknowledgement: This work has made use of data from the European Space Agency (ESA) mission Gaia (https://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, https://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement.",
+          "citation_by": "source",
+          "cite_key": "GaiaDR3_Vallenari2023",
+          "connector": "gaia",
+          "dataset": "Gaia Data Release 3 (ESA/Gaia/DPAC), Gaia ESA Archive",
+          "files": [
+            {
+              "sha256": "1f4ad5ccdb7e4667a618441365dc65490e14322cef85ddc05ae7d8e8e3f3bfd7",
+              "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2C+ra%2C+dec%2C+DISTANCE%28POINT%28%27ICRS%27%2C+ra%2C+dec%29%2C+POINT%28%27ICRS%27%2C+56.75%2C+24.12%29%29+AS+dist_deg%2C+parallax%2C+parallax_error%2C+parallax_over_error%2C+pmra%2C+pmra_error%2C+pmdec%2C+pmdec_error%2C+ruwe%2C+astrometric_params_solved%2C+visibility_periods_used%2C+phot_g_mean_mag%2C+phot_g_mean_flux_over_error%2C+phot_bp_mean_mag%2C+phot_rp_mean_mag%2C+bp_rp+FROM+gaiadr3.gaia_source+WHERE+1+%3D+CONTAINS%28POINT%28%27ICRS%27%2C+ra%2C+dec%29%2C+CIRCLE%28%27ICRS%27%2C+56.75%2C+24.12%2C+3%29%29+AND+parallax+%3E+2+AND+parallax_over_error+%3E+5&MAXREC=50000"
+            }
+          ],
+          "licence": "CC BY-NC 3.0 IGO (https://creativecommons.org/licenses/by-nc/3.0/igo/). The Gaia licence page (https://www.cosmos.esa.int/web/gaia-users/license): \"Gaia data are distributed under the CC BY-NC 3.0 IGO license.\" The ESA archives' terms (https://www.cosmos.esa.int/web/esdc/terms-and-conditions): data \"are open and free to use by the User subject to proper acknowledgment to be given in accordance with the credit lines provided below\" (Gaia: \"Credit: ESA, Gaia DPAC\"), and \"Prior to any commercial use by the User of any Data or Data Product, including any use or application that directly or indirectly generates a financial gain, a detailed request for authorisation/licence shall be made\". Acknowledgement: This work has made use of data from the European Space Agency (ESA) mission Gaia (https://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, https://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement.",
+          "link": "https://gea.esac.esa.int/archive/",
+          "retrieved_at": "2026-10-13T21:02:56Z",
+          "saved_to": "data/gaia_dr3.csv",
+          "series": "Gaia archive ADQL query: SELECT source_id, ra, dec, DISTANCE(POINT('ICRS', ra, dec), POINT('ICRS', 56.75, 24.12)) AS dist_deg, parallax, parallax_error, parallax_over_error, pmra, pmra_error, pmdec, pmdec_error, ruwe, astrometric_params_solved, visibility_periods_used, phot_g_mean_mag, phot_g_mean_flux_over_error, phot_bp_mean_mag, phot_rp_mean_mag, bp_rp FROM gaiadr3.gaia_source WHERE 1 = CONTAINS(POINT('ICRS', ra, dec), CIRCLE('ICRS', 56.75, 24.12, 3)) AND parallax > 2 AND parallax_over_error > 5",
+          "table": "gaia_dr3",
+          "terms": "https://www.cosmos.esa.int/web/gaia-users/license",
+          "terms_summary": "Gaia data are distributed under CC BY-NC 3.0 IGO: free to use with credit to ESA/Gaia/DPAC; commercial use needs ESA's authorisation. Cite the Gaia mission and DR3 papers.",
+          "version": "DR3"
+        }
+      ],
+      "e2er": {
+        "commit": null,
+        "exported_with": "0.17.0",
+        "repository": null,
+        "segments": [
+          {
+            "commit": null,
+            "from": "2026-10-13T20:56:40Z",
+            "skills": "recorded at dispatch",
+            "steps": 4,
+            "template": "descriptive-study",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T21:01:42Z",
+            "skills": "recorded at dispatch",
+            "steps": 3,
+            "template": "descriptive-study",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T21:02:33Z",
+            "skills": "recorded at dispatch",
+            "steps": 21,
+            "template": "descriptive-study",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T21:17:55Z",
+            "skills": "recorded at dispatch",
+            "steps": 3,
+            "template": "descriptive-study",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T21:18:45Z",
+            "skills": "recorded at dispatch",
+            "steps": 14,
+            "template": "descriptive-study",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T22:19:51Z",
+            "skills": "recorded at dispatch",
+            "steps": 12,
+            "template": "descriptive-study",
+            "version": "0.16.0"
+          },
+          {
+            "commit": null,
+            "from": "2026-10-13T22:31:42Z",
+            "skills": "recorded at dispatch",
+            "steps": 11,
+            "template": "descriptive-study",
+            "version": "0.16.0"
+          }
+        ],
+        "uncommitted_changes": false,
+        "version": "0.16.0"
+      },
+      "references": [
+        {
+          "doi": "10.1051/0004-6361/201629272",
+          "key": "GaiaMission_Prusti2016",
+          "source": "web",
+          "title": "The Gaia mission",
+          "year": "2016"
+        },
+        {
+          "doi": "10.1051/0004-6361/202243940",
+          "key": "GaiaDR3_Vallenari2023",
+          "source": "web",
+          "title": "Gaia Data Release 3: Summary of the content and survey properties",
+          "year": "2023"
+        },
+        {
+          "doi": "10.3390/universe8020111",
+          "key": "cantatgaudin2022milky",
+          "source": "web",
+          "title": "Milky Way Star Clusters and Gaia: A Review of the Ongoing Revolution",
+          "year": "2022"
+        },
+        {
+          "doi": "10.1016/j.newar.2024.101696",
+          "key": "cantatgaudin2024how",
+          "source": "web",
+          "title": "How Gaia sheds light on the Milky Way star cluster population",
+          "year": "2024"
+        },
+        {
+          "doi": "10.1002/9781119482260",
+          "key": "little2019statistical",
+          "source": "template",
+          "title": "Statistical Analysis with Missing Data (3rd edition)",
+          "year": "2019"
+        },
+        {
+          "doi": "10.18637/jss.v059.i10",
+          "key": "wickham2014tidy",
+          "source": "template",
+          "title": "Tidy Data",
+          "year": "2014"
+        },
+        {
+          "doi": "10.1080/00031305.1996.10473566",
+          "key": "hyndman1996sample",
+          "source": "template",
+          "title": "Sample Quantiles in Statistical Packages",
+          "year": "1996"
+        },
+        {
+          "doi": "10.1007/BF01025868",
+          "key": "freedman1981histogram",
+          "source": "template",
+          "title": "On the histogram as a density estimator: L2 theory",
+          "year": "1981"
+        },
+        {
+          "doi": "10.1051/0004-6361/201629024",
+          "key": "chelli2016pseudomagnitude",
+          "source": "web",
+          "title": "Pseudomagnitude distances: Application to the Pleiades cluster",
+          "year": "2016"
+        }
+      ],
+      "run": {
+        "backend": "claude_code",
+        "events": [
+          {
+            "at": "2026-10-13T20:56:40Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "haiku",
+            "segment": 0
+          },
+          {
+            "at": "2026-10-13T20:56:40Z",
+            "event": "method_sources",
+            "keys": [
+              "emerson1983statistical",
+              "freedman1981histogram",
+              "hyndman1996sample",
+              "spearman1904proof",
+              "little2019statistical",
+              "wickham2014tidy"
+            ],
+            "segment": 0
+          },
+          {
+            "at": "2026-10-13T20:58:18Z",
+            "event": "awaiting_review",
+            "segment": 0,
+            "stage": "review_design",
+            "step": "review_design"
+          },
+          {
+            "at": "2026-10-13T21:01:42Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "haiku",
+            "segment": 1
+          },
+          {
+            "at": "2026-10-13T21:02:11Z",
+            "event": "awaiting_review",
+            "segment": 1,
+            "stage": "review_design",
+            "step": "review_design"
+          },
+          {
+            "at": "2026-10-13T21:02:33Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "haiku",
+            "segment": 2
+          },
+          {
+            "at": "2026-10-13T21:17:25Z",
+            "event": "awaiting_review",
+            "segment": 2,
+            "stage": "review_draft",
+            "step": "review_draft"
+          },
+          {
+            "at": "2026-10-13T21:17:55Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "haiku",
+            "segment": 3
+          },
+          {
+            "at": "2026-10-13T21:18:22Z",
+            "event": "awaiting_review",
+            "segment": 3,
+            "stage": "review_draft",
+            "step": "review_draft"
+          },
+          {
+            "at": "2026-10-13T21:18:45Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "haiku",
+            "segment": 4
+          },
+          {
+            "at": "2026-10-13T21:20:09Z",
+            "categories": [],
+            "event": "self_critique",
+            "findings": 0,
+            "label": "Self-critique",
+            "max_severity": 0,
+            "segment": 4,
+            "serious": 0,
+            "step": "self_attack"
+          },
+          {
+            "at": "2026-10-13T22:19:51Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "haiku",
+            "segment": 5
+          },
+          {
+            "at": "2026-10-13T22:19:51Z",
+            "event": "rerun",
+            "remark": "The central figure of the study is missing: fig_cmd.pdf plots the whole quality-cut sample and does not mark the 1,112 members, although the research question asks what the members' colour-magnitude diagram shows. Add the members' CMD to figure_spec.json: either mark the members in fig_cmd (members as one series, the quality-cut field as a second, grey series) or add a figure fig_cmd_members, each series with a 'source' the figure check can re-read (a data.db table with columns and a condition, or a list in the results), BP-RP against G with G increasing downwards. Keep the membership selection, the grid and every number of the analysis as they are; the paper's text and captions must describe the figure as drawn.",
+            "step": "initial"
+          },
+          {
+            "at": "2026-10-13T22:30:07Z",
+            "event": "awaiting_review",
+            "segment": 5,
+            "stage": "review_draft",
+            "step": "review_draft"
+          },
+          {
+            "at": "2026-10-13T22:31:42Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "haiku",
+            "segment": 6
+          },
+          {
+            "at": "2026-10-13T22:33:09Z",
+            "categories": [],
+            "event": "self_critique",
+            "findings": 0,
+            "label": "Self-critique",
+            "max_severity": 0,
+            "segment": 6,
+            "serious": 0,
+            "step": "self_attack"
+          }
+        ],
+        "exported": "20261015",
+        "governance": "full",
+        "internal_review": {
+          "combined": "weighted average",
+          "reviewers": {
+            "data_reviewer": 6,
+            "literature_reviewer": 5.7,
+            "methods_reviewer": 5,
+            "plausibility_reviewer": 7,
+            "writing_reviewer": 6
+          },
+          "rounds": 1,
+          "scale": 10,
+          "score": 5.91,
+          "weights": {
+            "data_reviewer": 1.25,
+            "literature_reviewer": 0.75,
+            "methods_reviewer": 1.5,
+            "plausibility_reviewer": 1.25,
+            "writing_reviewer": 0.75
+          }
+        },
+        "mode": "iterative",
+        "models": [
+          {
+            "backend": "claude_code",
+            "model": "haiku"
+          }
+        ],
+        "outcome": {
+          "at": "2026-10-13T22:38:23Z",
+          "status": "completed"
+        },
+        "rounds": [
+          {
+            "ceiling_check": {
+              "at": "2026-10-13T22:30:07Z",
+              "decision": "ready for review",
+              "verdict": "proceed_to_review"
+            },
+            "label": "Round 1",
+            "reason": "Researcher instruction at the rerun asks for the members' CMD in the figure, and the figure data must be re-checked before drafting. data_analyst updates figure_spec.json only, with no estimation, so no econometrics re-run is needed. The figure check runs after it. The two section_writer orders are scoped to the CMD results and to the design and limitations text, which carry the figure change and the two earlier corrections. paper_drafter is not dispatched because the researcher asked that nothing else change, and a full rewrite would drift sections already reviewed.",
+            "round": 1,
+            "segment": 2,
+            "specialist_labels": [
+              "Data and descriptive analysis",
+              "Sections and table layout",
+              "Sections and table layout"
+            ],
+            "specialists": [
+              "data_analyst",
+              "section_writer",
+              "section_writer"
+            ],
+            "started": "2026-10-13T22:26:11Z"
+          }
+        ],
+        "template": "descriptive-study"
+      },
+      "schema": "e2er-dossier/0.6",
+      "study": {
+        "title": "Which stars within 3 degrees of the Pleiades centre are cluster members by Ga..."
+      },
+      "workflow": [
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:57:35Z",
+          "model": "haiku",
+          "output": {
+            "file": "design/literature_review.md",
+            "sha256": "d14393ba79ce1f574f855ea5efae52d7ea43ad85156147a85ef25f0a88954233"
+          },
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "literature_scanner",
+          "started": "2026-10-13T20:56:58Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:57:40Z",
+          "model": "haiku",
+          "output": {
+            "file": "design/paper_plan.md",
+            "sha256": "f9ecd45f9928041aad0299cf15fa15f47a323399409cbc07a266a379fb14d264"
+          },
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "idea_developer",
+          "started": "2026-10-13T20:56:58Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T20:58:18Z",
+          "model": "haiku",
+          "output": {
+            "file": "data/data_dictionary.json",
+            "sha256": "6601834f8984f83be6a07791d05d43726945066b442691976133d792f0b95219"
+          },
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "data_architect",
+          "started": "2026-10-13T20:57:40Z",
+          "type": "specialist"
+        },
+        {
+          "action": "send_back",
+          "at": "2026-10-13T21:01:42Z",
+          "phase": "initial",
+          "remark": "The full 3-degree cone cannot be loaded: it holds 255,553 Gaia DR3 sources (count on 2026-10-13), and the anonymous Gaia archive returns at most 50,000 rows. Load a pre-filtered extract with one ADQL query and give the exact command in the table entry: e2er-data gaia query --adql \"SELECT source_id, ra, dec, DISTANCE(POINT('ICRS', ra, dec), POINT('ICRS', 56.75, 24.12)) AS dist_deg, parallax, parallax_error, parallax_over_error, pmra, pmra_error, pmdec, pmdec_error, ruwe, astrometric_params_solved, visibility_periods_used, phot_g_mean_mag, phot_g_mean_flux_over_error, phot_bp_mean_mag, phot_rp_mean_mag, bp_rp FROM gaiadr3.gaia_source WHERE 1 = CONTAINS(POINT('ICRS', ra, dec), CIRCLE('ICRS', 56.75, 24.12, 3)) AND parallax > 2 AND parallax_over_error > 5\" --table gaia_dr3 --save-to gaia_dr3.csv. This returned 14,066 rows on 2026-10-13. Say in the dictionary that the extract keeps parallax above 2 mas (closer than 500 pc) and parallax_over_error above 5, so the field background in the CMD is limited to these stars, and that every cut of the sensitivity grid lies inside this extract. Also fix the description of astrometric_params_solved: 3 = two-parameter (position only), 31 = five-parameter, 95 = six-parameter solution.",
+          "segment": 0,
+          "step": "review_design",
+          "target": "data_architect",
+          "type": "researcher"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:02:11Z",
+          "model": "haiku",
+          "output": {
+            "file": "data/data_dictionary.json",
+            "sha256": "a32a7d50e57d8f48d61337d48bf432400bb5277ad3a0d22b395522f715db4047"
+          },
+          "phase": "initial",
+          "segment": 1,
+          "sent_back": {
+            "at": "2026-10-13T21:01:42Z",
+            "remark": "The full 3-degree cone cannot be loaded: it holds 255,553 Gaia DR3 sources (count on 2026-10-13), and the anonymous Gaia archive returns at most 50,000 rows. Load a pre-filtered extract with one ADQL query and give the exact command in the table entry: e2er-data gaia query --adql \"SELECT source_id, ra, dec, DISTANCE(POINT('ICRS', ra, dec), POINT('ICRS', 56.75, 24.12)) AS dist_deg, parallax, parallax_error, parallax_over_error, pmra, pmra_error, pmdec, pmdec_error, ruwe, astrometric_params_solved, visibility_periods_used, phot_g_mean_mag, phot_g_mean_flux_over_error, phot_bp_mean_mag, phot_rp_mean_mag, bp_rp FROM gaiadr3.gaia_source WHERE 1 = CONTAINS(POINT('ICRS', ra, dec), CIRCLE('ICRS', 56.75, 24.12, 3)) AND parallax > 2 AND parallax_over_error > 5\" --table gaia_dr3 --save-to gaia_dr3.csv. This returned 14,066 rows on 2026-10-13. Say in the dictionary that the extract keeps parallax above 2 mas (closer than 500 pc) and parallax_over_error above 5, so the field background in the CMD is limited to these stars, and that every cut of the sensitivity grid lies inside this extract. Also fix the description of astrometric_params_solved: 3 = two-parameter (position only), 31 = five-parameter, 95 = six-parameter solution."
+          },
+          "specialist": "data_architect",
+          "started": "2026-10-13T21:01:42Z",
+          "type": "specialist"
+        },
+        {
+          "action": "instruction",
+          "at": "2026-10-13T21:02:33Z",
+          "phase": "initial",
+          "segment": 1,
+          "step": "review_design",
+          "text": "Researcher decisions at the design review: the plan's 'pull the full cone, not a pre-filtered subset' is replaced by the pre-filtered extract (parallax > 2 mas, parallax_over_error > 5) because the archive's anonymous limit is 50,000 rows and the cone holds 255,553 sources; the paper says so. The grid row 'parallax_over_error > 5' is therefore the loosest quality cut available. Cite only references that literature_scanner verified; Gaia DR3 data are used under CC BY-NC 3.0 IGO with credit to ESA/Gaia/DPAC.",
+          "type": "researcher"
+        },
+        {
+          "action": "approve",
+          "at": "2026-10-13T21:02:33Z",
+          "phase": "initial",
+          "segment": 1,
+          "step": "review_design",
+          "type": "researcher"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:03:34Z",
+          "model": "haiku",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "2549140fbba00a55f47cecfeb69b78bc84307ad28a2d5c15a6a3a8c426296c5c"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "2549140fbba00a55f47cecfeb69b78bc84307ad28a2d5c15a6a3a8c426296c5c"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "4802e392c1d9958da7feabc0863015862f2812b9d5df2844c98540ca1ef1e74e"
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "f35fcfc3da5345b2b24287c3154925ce61ea243659986085901475fbeb6f9de7"
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T21:02:33Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:03:34Z",
+          "check": "data_quality",
+          "detail": "table gaia_dr3: parallax starts at 2.000156849807191, after the declared coverage from 2",
+          "enforced": true,
+          "passed": false,
+          "phase": "initial",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:04:23Z",
+          "model": "haiku",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "b57b1882561325280ce4317dc2fe05bbe9a8cb48f063fe948142c029c603114c"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "b57b1882561325280ce4317dc2fe05bbe9a8cb48f063fe948142c029c603114c"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "4802e392c1d9958da7feabc0863015862f2812b9d5df2844c98540ca1ef1e74e",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "f35fcfc3da5345b2b24287c3154925ce61ea243659986085901475fbeb6f9de7",
+              "unchanged": true
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T21:03:34Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:04:23Z",
+          "check": "data_quality",
+          "enforced": true,
+          "passed": true,
+          "phase": "initial",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:05:20Z",
+          "model": "haiku",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "b57b1882561325280ce4317dc2fe05bbe9a8cb48f063fe948142c029c603114c",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "b57b1882561325280ce4317dc2fe05bbe9a8cb48f063fe948142c029c603114c",
+              "unchanged": true
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "4802e392c1d9958da7feabc0863015862f2812b9d5df2844c98540ca1ef1e74e",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "602039320ea8e496f59ae08a22eeac935a5a4b56a2bf4fb2faf0a363254ad832"
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T21:04:23Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:07:51Z",
+          "model": "haiku",
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "000f79a40fe9fde859aaed5059de802c2a60b04f70d04ca4a805f6e0ba19b312"
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "000f79a40fe9fde859aaed5059de802c2a60b04f70d04ca4a805f6e0ba19b312"
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "fef14a8cb7ad5b4444f25f4c7ffa19e314a0f400ba1a7125c1b48fae7a65e3dc"
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "econometrics_specialist",
+          "started": "2026-10-13T21:05:20Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:07:51Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "initial",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:08:47Z",
+          "model": "haiku",
+          "output": {
+            "file": "paper/abstract.tex",
+            "sha256": "5f2e11a14005c2d793cd99902ceeefd3fb8b36df1c48da72f7c98a9dcc152e42"
+          },
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "abstract_writer",
+          "started": "2026-10-13T21:07:51Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:10:16Z",
+          "check": "contracts",
+          "detail": "paper_draft.tex: 6 construction(s) the researcher does not accept in a paper: \"Against this background\" in: Against this background, this paper asks a narrow question: which stars within 3 degrees of the Pleiades centre are cluster members on the basis of Gaia DR3 parallax and proper motion alone, and what do the colour--magnitude diagram (CMD) and the parallax distance distribution of these members sh... (pivot to the contribution directly (for instance: To keep these quantities apart, we propose ...)); \"rather than\" in: The question is answered with a transparent selection rather than a model. (state the positive claim and stop); \"rather than\" in: The spread is therefore an interaction of the cuts rather than a single influential choice. (state the positive claim and stop); \"rather than\" in: The lowest bins hold few stars, and the members in them should be read as a description rather than a precise turn-off measurement. (state the positive claim and stop); \"rather than\" in: The narrow parallax peak and the continuous CMD locus show that the members form a coherent sequence rather than a mixture of unrelated stars, at least within the precision of the astrometry. (state the positive claim and stop); \"rather than\" in: The description is a reference for replication rather than a physical result, and its distance and main sequence await comparison with verified published values. (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content",
+          "enforced": true,
+          "passed": false,
+          "phase": "initial",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": false,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:10:16Z",
+          "model": "haiku",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "f99275333450d5fa6a8a261d5b8b4e0bc1235f7dcfc4415243ed31c151582251"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "f99275333450d5fa6a8a261d5b8b4e0bc1235f7dcfc4415243ed31c151582251"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "c91290abce56b8080e284b57f09f515ba6ed97d71dcb26d9197f7334967e6c16"
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "paper_drafter",
+          "started": "2026-10-13T21:07:51Z",
+          "stopped_by": "contract violation: paper_draft.tex: 6 construction(s) the researcher does not accept in a paper: \"Against this background\" in: Against this background, this paper asks a narrow question: which stars within 3 degrees of the Pleiades centre are cluster members on the basis of Gaia DR3 parallax and proper motion alone, and what do the colour--magnitude diagram (CMD) and the parallax distance distribution of these members sh... (pivot to the contribution directly (for instance: To keep these quantities apart, we propose ...)); \"rather than\" in: The question is answered with a transparent selection rather than a model. (state the positive claim and stop); \"rather than\" in: The spread is therefore an interaction of the cuts rather than a single influential choice. (state the positive claim and stop); \"rather than\" in: The lowest bins hold few stars, and the members in them should be read as a description rather than a precise turn-off measurement. (state the positive claim and stop); \"rather than\" in: The narrow parallax peak and the continuous CMD locus show that the members form a coherent sequence rather than a mixture of unrelated stars, at least within the precision of the astrometry. (state the positive claim and stop); \"rather than\" in: The description is a reference for replication rather than a physical result, and its distance and main sequence await comparison with verified published values. (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:10:37Z",
+          "model": "haiku",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "2c9ad56da9fa041423eb2d3a5eb78c004c8f8e2189e3885a498e3b6782388f8a"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "2c9ad56da9fa041423eb2d3a5eb78c004c8f8e2189e3885a498e3b6782388f8a"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "c91290abce56b8080e284b57f09f515ba6ed97d71dcb26d9197f7334967e6c16",
+              "unchanged": true
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "paper_drafter",
+          "started": "2026-10-13T21:10:16Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:11:15Z",
+          "model": "haiku",
+          "output": {
+            "file": "data/data_dictionary.json",
+            "sha256": "2cc4b7da056012bee3f57b676b7912f25f2e64bca16271c6d507eb70651d9336"
+          },
+          "phase": "iterative",
+          "round": 1,
+          "segment": 2,
+          "specialist": "data_architect",
+          "started": "2026-10-13T21:10:55Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:12:03Z",
+          "model": "haiku",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "7a83e48d4ebd0746b230d17c100233d0b39cb093b3567bb6109f4425ff0227e8"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "7a83e48d4ebd0746b230d17c100233d0b39cb093b3567bb6109f4425ff0227e8"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "299fd9612d5b240291bed7606d168727d27982c7b4586a2965861f6ece91d9cb"
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "f35fcfc3da5345b2b24287c3154925ce61ea243659986085901475fbeb6f9de7"
+            }
+          ],
+          "phase": "iterative",
+          "round": 1,
+          "segment": 2,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T21:11:15Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:13:58Z",
+          "model": "haiku",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "3862e1c964ab76834397647ffec2608d5e5137fa24fd933ba342e6f12075f285"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "3862e1c964ab76834397647ffec2608d5e5137fa24fd933ba342e6f12075f285"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "299fd9612d5b240291bed7606d168727d27982c7b4586a2965861f6ece91d9cb",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "8ca2590c5b44f4bf34aaced701647cedaa2a667e7c0f9c641de7d8a2ec2905a8"
+            }
+          ],
+          "phase": "iterative",
+          "round": 1,
+          "segment": 2,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T21:12:03Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:14:51Z",
+          "model": "haiku",
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "e8663f142bb1006e79aab111285b6aaaa207a96ef9794cf3a84e14ae38b26999"
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "e8663f142bb1006e79aab111285b6aaaa207a96ef9794cf3a84e14ae38b26999"
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "fef14a8cb7ad5b4444f25f4c7ffa19e314a0f400ba1a7125c1b48fae7a65e3dc",
+              "unchanged": true
+            }
+          ],
+          "phase": "iterative",
+          "round": 1,
+          "segment": 2,
+          "specialist": "econometrics_specialist",
+          "started": "2026-10-13T21:13:58Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:16:45Z",
+          "check": "contracts",
+          "detail": "paper_draft.tex: 2 construction(s) the researcher does not accept in a paper: \"rather than\" in: The narrow parallax peak and the continuous CMD locus are consistent with the members forming a coherent sequence rather than a mixture of unrelated stars, at the precision the astrometry allows. (state the positive claim and stop); \"rather than\" in: The base quality cut of parallax over error above 10 removes the fainter and less precisely measured sources, so the membership count describes the brighter stars with precise astrometry rather than the full cluster population. (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content",
+          "enforced": true,
+          "passed": false,
+          "phase": "iterative",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": false,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:16:45Z",
+          "model": "haiku",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "95c3db49ae303d1c3e5f8115ac74ce8edaaa0f41cf5413e82cacb70e62d8ab51"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "95c3db49ae303d1c3e5f8115ac74ce8edaaa0f41cf5413e82cacb70e62d8ab51"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "e3bdc6e0b140b617e82f249a00acefdc5728f1263acdcef3f728961345a1a68a"
+            }
+          ],
+          "phase": "iterative",
+          "round": 1,
+          "segment": 2,
+          "specialist": "paper_drafter",
+          "started": "2026-10-13T21:14:51Z",
+          "stopped_by": "contract violation: paper_draft.tex: 2 construction(s) the researcher does not accept in a paper: \"rather than\" in: The narrow parallax peak and the continuous CMD locus are consistent with the members forming a coherent sequence rather than a mixture of unrelated stars, at the precision the astrometry allows. (state the positive claim and stop); \"rather than\" in: The base quality cut of parallax over error above 10 removes the fainter and less precisely measured sources, so the membership count describes the brighter stars with precise astrometry rather than the full cluster population. (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:17:07Z",
+          "model": "haiku",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "dffee2083f7a2c636e28ff764d2fa504a2d8b90f313a22068b3fd61b278c7f73"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "dffee2083f7a2c636e28ff764d2fa504a2d8b90f313a22068b3fd61b278c7f73"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "e3bdc6e0b140b617e82f249a00acefdc5728f1263acdcef3f728961345a1a68a",
+              "unchanged": true
+            }
+          ],
+          "phase": "iterative",
+          "round": 1,
+          "segment": 2,
+          "specialist": "paper_drafter",
+          "started": "2026-10-13T21:16:45Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:17:25Z",
+          "check": "estimation",
+          "enforced": true,
+          "passed": true,
+          "phase": "estimation_gate",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T21:17:25Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "figure_gate",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "action": "send_back",
+          "at": "2026-10-13T21:17:55Z",
+          "phase": "figure_gate",
+          "remark": "Two corrections. (1) sigma/sqrt(n) is the standard error of the mean, not of the median (for a normal distribution the median's is about 1.25 times larger). In the design section and in the parallax results, call the 0.007 mas value the standard error of the mean parallax, and drop the sentence that the median is determined far more precisely than its scatter would suggest. (2) The brightest member has G = 5.20, so the cluster's brightest stars (the named B stars, several magnitudes brighter) are not among the members. State this in the CMD results and the limitations as a gap at the bright end, without guessing which cut removed them. Change nothing else.",
+          "segment": 2,
+          "step": "review_draft",
+          "target": "paper_drafter",
+          "type": "researcher"
+        },
+        {
+          "at": "2026-10-13T21:17:55Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "figure_gate",
+          "segment": 3,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:18:22Z",
+          "model": "haiku",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "c92ff8f551948b62d1ffbdf4b130cae9dd48ea67a9f14292fe3f91b5c494f3c6"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "c92ff8f551948b62d1ffbdf4b130cae9dd48ea67a9f14292fe3f91b5c494f3c6"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "e3bdc6e0b140b617e82f249a00acefdc5728f1263acdcef3f728961345a1a68a",
+              "unchanged": true
+            }
+          ],
+          "phase": "figure_gate",
+          "segment": 3,
+          "sent_back": {
+            "at": "2026-10-13T21:17:55Z",
+            "remark": "Two corrections. (1) sigma/sqrt(n) is the standard error of the mean, not of the median (for a normal distribution the median's is about 1.25 times larger). In the design section and in the parallax results, call the 0.007 mas value the standard error of the mean parallax, and drop the sentence that the median is determined far more precisely than its scatter would suggest. (2) The brightest member has G = 5.20, so the cluster's brightest stars (the named B stars, several magnitudes brighter) are not among the members. State this in the CMD results and the limitations as a gap at the bright end, without guessing which cut removed them. Change nothing else."
+          },
+          "specialist": "paper_drafter",
+          "started": "2026-10-13T21:17:55Z",
+          "type": "specialist"
+        },
+        {
+          "action": "approve",
+          "at": "2026-10-13T21:18:45Z",
+          "phase": "figure_gate",
+          "segment": 3,
+          "step": "review_draft",
+          "type": "researcher"
+        },
+        {
+          "at": "2026-10-13T21:18:45Z",
+          "check": "estimation",
+          "enforced": true,
+          "passed": true,
+          "phase": "estimation_gate",
+          "segment": 4,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T21:18:45Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "figure_gate",
+          "segment": 4,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T21:20:09Z",
+          "check": "numbers",
+          "enforced": true,
+          "passed": true,
+          "phase": "review",
+          "segment": 4,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T21:20:11Z",
+          "check": "citations",
+          "enforced": true,
+          "passed": true,
+          "phase": "review",
+          "segment": 4,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:20:55Z",
+          "model": "haiku",
+          "output": {
+            "file": "reviews/review_literature.md",
+            "sha256": "2b3d7713e87ee977fa67f73089e9435b0c15a4408d05794ea6228dc9ad661833"
+          },
+          "phase": "review",
+          "segment": 4,
+          "specialist": "literature_reviewer",
+          "started": "2026-10-13T21:20:11Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:21:22Z",
+          "model": "haiku",
+          "output": {
+            "file": "reviews/review_data.md",
+            "sha256": "ff4b820459faf27ec8e14c2a684ba1df977fc28e8b5bea7cf0849e784462d75c"
+          },
+          "phase": "review",
+          "segment": 4,
+          "specialist": "data_reviewer",
+          "started": "2026-10-13T21:20:11Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:21:34Z",
+          "model": "haiku",
+          "output": {
+            "file": "reviews/review_writing.md",
+            "sha256": "56c75b08a5407a78f2760db3a47ba6f09732f1ec536b433b4e52095ced396db4"
+          },
+          "phase": "review",
+          "segment": 4,
+          "specialist": "writing_reviewer",
+          "started": "2026-10-13T21:20:11Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:22:19Z",
+          "model": "haiku",
+          "output": {
+            "file": "reviews/review_methods.md",
+            "sha256": "96f31c8141fc16dfd8f661078e6b4ac8bc75bd50bd5dce7724f8d086f3c4106a"
+          },
+          "phase": "review",
+          "segment": 4,
+          "specialist": "methods_reviewer",
+          "started": "2026-10-13T21:20:55Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:25:06Z",
+          "model": "haiku",
+          "output": {
+            "file": "reviews/review_plausibility.md",
+            "sha256": "518b1bf672ac811658b06ff7d8edfb3bb0ec79e4c77d0fa57df677c154b72a5f"
+          },
+          "phase": "review",
+          "segment": 4,
+          "specialist": "plausibility_reviewer",
+          "started": "2026-10-13T21:21:22Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:26:18Z",
+          "check": "contracts",
+          "detail": "paper_draft.tex.edits.json: 1 construction(s) the researcher does not accept in a paper: \"rather than\" in: Figure~\\ref{fig:cmd} plots the quality-cut sample rather than the members alone, so the members' locus is read from the table below. (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content",
+          "enforced": true,
+          "passed": false,
+          "phase": "revision",
+          "segment": 4,
+          "type": "check"
+        },
+        {
+          "accepted": false,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:26:18Z",
+          "model": "haiku",
+          "output": {
+            "file": "misc/paper_draft.tex.edits.json",
+            "sha256": "3475a5d58bd7929bd67136f93198c145699dabe1f50cd5da3aca161c4efb7865"
+          },
+          "phase": "revision",
+          "segment": 4,
+          "specialist": "patch_revisor",
+          "started": "2026-10-13T21:25:06Z",
+          "stopped_by": "contract violation: paper_draft.tex.edits.json: 1 construction(s) the researcher does not accept in a paper: \"rather than\" in: Figure~\\ref{fig:cmd} plots the quality-cut sample rather than the members alone, so the members' locus is read from the table below. (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:26:45Z",
+          "model": "haiku",
+          "output": {
+            "file": "misc/paper_draft.tex.edits.json",
+            "sha256": "199ba0be257199ffdf4d19a9b7bb5d5bb842d57f6433c2bd47f4409ccc5872e3"
+          },
+          "phase": "revision",
+          "segment": 4,
+          "specialist": "patch_revisor",
+          "started": "2026-10-13T21:26:18Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:27:45Z",
+          "model": "haiku",
+          "output": {
+            "file": "replication/estimation.py",
+            "sha256": "61172a05ca69d06ba635b43b17c74061692b6968c1d6fe77db4a8ea2c7a5a127"
+          },
+          "phase": "replication",
+          "segment": 4,
+          "specialist": "replication_packager",
+          "started": "2026-10-13T21:26:45Z",
+          "type": "specialist"
+        },
+        {
+          "action": "rerun",
+          "at": "2026-10-13T22:19:51Z",
+          "phase": "replication",
+          "remark": "The central figure of the study is missing: fig_cmd.pdf plots the whole quality-cut sample and does not mark the 1,112 members, although the research question asks what the members' colour-magnitude diagram shows. Add the members' CMD to figure_spec.json: either mark the members in fig_cmd (members as one series, the quality-cut field as a second, grey series) or add a figure fig_cmd_members, each series with a 'source' the figure check can re-read (a data.db table with columns and a condition, or a list in the results), BP-RP against G with G increasing downwards. Keep the membership selection, the grid and every number of the analysis as they are; the paper's text and captions must describe the figure as drawn.",
+          "reruns": [
+            "initial",
+            "iterative",
+            "estimation_gate",
+            "figure_gate",
+            "review_draft",
+            "self_attack",
+            "polish",
+            "review",
+            "revision",
+            "replication"
+          ],
+          "segment": 4,
+          "step": "initial",
+          "target": "initial",
+          "type": "researcher"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:20:30Z",
+          "model": "haiku",
+          "output": {
+            "file": "data/data_dictionary.json",
+            "sha256": "2cc4b7da056012bee3f57b676b7912f25f2e64bca16271c6d507eb70651d9336",
+            "unchanged": true
+          },
+          "phase": "initial",
+          "segment": 5,
+          "specialist": "data_architect",
+          "started": "2026-10-13T22:20:12Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T22:20:30Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "initial",
+          "segment": 5,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:22:23Z",
+          "model": "haiku",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "0779fa1f4ca91bf7a151d36a1d6e15281096e21d758f0e0aa7815f8fd8e7d7c3"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "0779fa1f4ca91bf7a151d36a1d6e15281096e21d758f0e0aa7815f8fd8e7d7c3"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "7b39bf74928d062740ac33917ab5dda48aa6ddbbdae60ec840f8db2e845da259"
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "c758dd6b05e5f81c023ec88457ba674d766c1af0b715e56f65161d5eb5cd365c"
+            }
+          ],
+          "phase": "initial",
+          "segment": 5,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T22:20:30Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:23:24Z",
+          "model": "haiku",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "0779fa1f4ca91bf7a151d36a1d6e15281096e21d758f0e0aa7815f8fd8e7d7c3",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "0779fa1f4ca91bf7a151d36a1d6e15281096e21d758f0e0aa7815f8fd8e7d7c3",
+              "unchanged": true
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "7b39bf74928d062740ac33917ab5dda48aa6ddbbdae60ec840f8db2e845da259",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "c758dd6b05e5f81c023ec88457ba674d766c1af0b715e56f65161d5eb5cd365c",
+              "unchanged": true
+            }
+          ],
+          "phase": "initial",
+          "segment": 5,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T22:22:23Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:25:23Z",
+          "model": "haiku",
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "f66d8e7d81c2d8906436ac1ba369666123ee6c5f389ae92b5459d0a6ad5a0fb1"
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "f66d8e7d81c2d8906436ac1ba369666123ee6c5f389ae92b5459d0a6ad5a0fb1"
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "f29659ad1e9f627f08b7fdf227c01db76bc138f28c4a9e6ecedbab8781c8dddb"
+            }
+          ],
+          "phase": "initial",
+          "segment": 5,
+          "specialist": "econometrics_specialist",
+          "started": "2026-10-13T22:23:24Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:25:57Z",
+          "model": "haiku",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "c2a27701efac6b99e4fc82f3e778429f6d417b5d1cbe5968a29f8aa66cd5fe43"
+          },
+          "phase": "initial",
+          "segment": 5,
+          "specialist": "section_writer",
+          "started": "2026-10-13T22:25:23Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:28:22Z",
+          "model": "haiku",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "1e9db8480eb6c729fa78c702ad3069e46226e6e1a5939c8807d941bc5488dbd5"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "1e9db8480eb6c729fa78c702ad3069e46226e6e1a5939c8807d941bc5488dbd5"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "7b39bf74928d062740ac33917ab5dda48aa6ddbbdae60ec840f8db2e845da259",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "1212d76fe9eb92dac212a84dca502e9045c1b8d9afc68d85a777ab78387e17b4"
+            }
+          ],
+          "phase": "iterative",
+          "round": 1,
+          "segment": 5,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T22:26:11Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:28:43Z",
+          "model": "haiku",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "deefae584d83dad5e3501e496e1494865a250cde0d4d6f81aa4fec1b3b959dd9"
+          },
+          "phase": "iterative",
+          "round": 1,
+          "segment": 5,
+          "specialist": "section_writer",
+          "started": "2026-10-13T22:28:22Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:29:49Z",
+          "model": "haiku",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "826549ed7600c5ea875dd9cdd6043f43b08c85eea87d97333ea62f3712aaa19e"
+          },
+          "phase": "iterative",
+          "round": 1,
+          "segment": 5,
+          "specialist": "section_writer",
+          "started": null,
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T22:30:07Z",
+          "check": "estimation",
+          "enforced": true,
+          "passed": true,
+          "phase": "estimation_gate",
+          "segment": 5,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T22:30:07Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "figure_gate",
+          "segment": 5,
+          "type": "check"
+        },
+        {
+          "action": "approve",
+          "at": "2026-10-13T22:31:42Z",
+          "phase": "figure_gate",
+          "segment": 5,
+          "step": "review_draft",
+          "type": "researcher"
+        },
+        {
+          "at": "2026-10-13T22:31:42Z",
+          "check": "estimation",
+          "enforced": true,
+          "passed": true,
+          "phase": "estimation_gate",
+          "segment": 6,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T22:31:42Z",
+          "check": "figure_data",
+          "enforced": true,
+          "passed": true,
+          "phase": "figure_gate",
+          "segment": 6,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T22:33:10Z",
+          "check": "numbers",
+          "enforced": true,
+          "passed": true,
+          "phase": "review",
+          "segment": 6,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T22:33:13Z",
+          "check": "citations",
+          "enforced": true,
+          "passed": true,
+          "phase": "review",
+          "segment": 6,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:33:56Z",
+          "model": "haiku",
+          "output": {
+            "file": "reviews/review_literature.md",
+            "sha256": "39cfcf6c32a45b5eb2f66033f75bc06a973e4a4ca7670546fe332e9184075b08"
+          },
+          "phase": "review",
+          "segment": 6,
+          "specialist": "literature_reviewer",
+          "started": "2026-10-13T22:33:13Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:35:04Z",
+          "model": "haiku",
+          "output": {
+            "file": "reviews/review_writing.md",
+            "sha256": "922135cbd74957dfaeb07bbe02ea92fdee482abc886ebbe3b73a49490e1d71f7"
+          },
+          "phase": "review",
+          "segment": 6,
+          "specialist": "writing_reviewer",
+          "started": "2026-10-13T22:33:13Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:35:25Z",
+          "model": "haiku",
+          "output": {
+            "file": "reviews/review_data.md",
+            "sha256": "9b4e9ee29d3fd170fb7e8142b7145334371f73eccb844a5ae87dacd9bf9e8a4f"
+          },
+          "phase": "review",
+          "segment": 6,
+          "specialist": "data_reviewer",
+          "started": "2026-10-13T22:33:13Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:35:37Z",
+          "model": "haiku",
+          "output": {
+            "file": "reviews/review_methods.md",
+            "sha256": "56ea529dff6882e4fa25ec5a317929f3f0825ec7404f86a616740bfd3f512dcd"
+          },
+          "phase": "review",
+          "segment": 6,
+          "specialist": "methods_reviewer",
+          "started": "2026-10-13T22:33:56Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:36:25Z",
+          "model": "haiku",
+          "output": {
+            "file": "reviews/review_plausibility.md",
+            "sha256": "f6d9d0d8e9e63bfc55efa09fa796010ddfa6bd0f3b1a263092114704f4ab1d85"
+          },
+          "phase": "review",
+          "segment": 6,
+          "specialist": "plausibility_reviewer",
+          "started": "2026-10-13T22:35:04Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:37:35Z",
+          "model": "haiku",
+          "output": {
+            "file": "misc/paper_draft.tex.edits.json",
+            "sha256": "2b77244e2ee791e2b37e181d996f1e130472858226a56b31996594f1248fd3b5"
+          },
+          "phase": "revision",
+          "segment": 6,
+          "specialist": "patch_revisor",
+          "started": "2026-10-13T22:36:25Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T22:38:23Z",
+          "model": "haiku",
+          "output": {
+            "file": "replication/estimation.py",
+            "sha256": "1131c2b0c69194d06916adb21b5b35f3f90e903cdbe1837eeb1426ad23df70e4"
+          },
+          "phase": "replication",
+          "segment": 6,
+          "specialist": "replication_packager",
+          "started": "2026-10-13T22:37:35Z",
+          "type": "specialist"
+        }
+      ],
+      "availability": {
+        "data": {
+          "access": "private"
+        },
+        "code": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        }
+      },
+      "purpose": "demonstration",
+      "amendments": [
+        {
+          "path": "e2er.json",
+          "kind": "carried_over",
+          "sha256_before": "a6b10ec9226cf3ebf84a228d05e22a7b2b91947cc9a4b03cc0dc25dbabceeda1",
+          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 1 (https://e2er.org/d/147b2eeec2427726). Its steps are the ones that version recorded; none was added or rebuilt.",
+          "at": "2026-10-20T00:25:04Z",
+          "from_version": 1,
+          "from_dossier": "sha256:147b2eeec2427726cdb6d7c8791747dc774cddbd2c17be35033141b9c51bea80",
+          "e2er_version": "0.17.1"
+        }
+      ]
+    }
+  }
+}
