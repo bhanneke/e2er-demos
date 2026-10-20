@@ -1,0 +1,193 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[authoryear]{natbib}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+\title{Spatial Clustering of GDP per Inhabitant across EU NUTS-2 Regions, 2024}
+\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/7ba4c56d920388be}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent We describe how GDP per inhabitant in purchasing power standards (PPS) varies across 236 EU27 NUTS-2 regions in 2024 and how strongly high- and low-income regions cluster in space. Regional income spans a factor of more than six, from 16,700 PPS in the poorest to 107,200 PPS in the richest region. Neighbouring regions resemble each other: global Moran's $I$ is 0.37 under queen contiguity and remains clearly positive under three alternative weights definitions (five and eight nearest neighbours, inverse distance). The clustering is not an artefact of a few metropolitan peaks; dropping the top five regions raises it. It is, however, largely a between-country phenomenon: once each region's income is measured relative to its national mean, Moran's $I$ falls to 0.02, although this test has low power and its permutation null is not adapted to demeaned data. Uncorrected local indicators suggest low-income clusters in Poland, Greece, Bulgaria, Romania and Hungary and high-income clusters in Germany, the Netherlands, Ireland and northern Italy; after a false discovery rate correction, only 22 regions remain significant (20 low-low, one high-high, one high-low), so the high-income clusters are suggestive only. We report associations only and make no causal claim.
+
+\medskip
+\noindent\textbf{Keywords:} regional inequality; GDP per capita; purchasing power standards; NUTS 2; spatial autocorrelation; Moran's I; LISA; European Union
+\end{abstract}
+
+\section{Introduction}
+
+Regional income differences are a defining feature of the European Union, and the NUTS-2 level is the reference unit for cohesion policy eligibility and for most monitoring of territorial disparities \citep{Eurostat_Database}. Even after decades of convergence in national averages, GDP per inhabitant in PPS in 2024 ranges from 16,700 in the Bulgarian region BG31 to 107,200 in the Irish region IE06, a ratio of 6.4. A map of these values suggests a few bright cores, such as Ireland, Luxembourg, Hamburg and Prague, and large contiguous dark areas in Bulgaria, Romania, Greece, southern Italy and eastern Poland. Whether this picture reflects a smooth regional gradient, a pattern defined by national borders, or a set of isolated metropolitan peaks is not evident from tables of regional values, yet the answer determines how spatial a description of EU disparities must be. Recent work on subnational convergence clubs in human development \citep{pourpakdelfekr2026multispeed} points to persistent, geographically structured groups of regions, but does not quantify the spatial structure of regional income itself.
+
+This paper asks how GDP per capita in PPS varies across EU NUTS-2 regions in 2024 and how strongly regions with high and low values cluster in space. We answer with descriptive spatial statistics: the distribution of regional income, global Moran's $I$ \citep{moran1950notes}, local indicators of spatial association \citep{anselin1995local}, and Getis--Ord hot-spot statistics \citep{getis1992analysis}, all computed on 236 regions with permutation-based inference. We check whether the results depend on the neighbour definition, on the inclusion of outermost regions, on extreme regions, and on the national level.
+
+Our analysis yields four findings. First, regional income is substantially dispersed but not extremely so: the Gini coefficient across regions is about 0.20, and the 90th percentile of regional income is 2.4 times the 10th percentile. Second, similar regions are neighbours: Moran's $I$ is 0.37 under queen contiguity and between 0.09 and 0.27 under k-nearest-neighbour and inverse-distance weights, always far outside the permutation distribution. Third, the clustering is not driven by a handful of peaks; excluding Luxembourg or the five richest regions raises it, excluding the three Irish regions lowers it slightly (to 0.34), and excluding the 27 capital regions raises it considerably, although that variant also removes five whole countries and leaves three regions without a neighbour. Fourth, the clustering is largely national: after subtracting each country's population-weighted mean, Moran's $I$ falls to 0.02, although this test has low power and a permutation null that is not adapted to demeaned data. Uncorrected local analysis finds large low-income clusters in eastern and south-eastern Europe and high-income clusters in Germany, the Netherlands, Ireland and northern Italy, but only 22 regions survive a false discovery rate correction, almost all of them low-income, so the high-income clusters are suggestive only.
+
+Our study makes two contributions. First, we provide a compact, replicable description of the 2024 spatial distribution of regional income in the EU27, including the sensitivity of Moran's $I$ to weights, outermost regions, and extreme regions, for a single recent year. Second, we show that the apparent regional clustering largely coincides with country membership (subject to the caveats on the demeaned test in Section 4.4), which cautions against reading maps of regional income as evidence of regional patterns that are independent of national borders. The remainder of this study is structured as follows: Section 2 describes the data and the spatial design, Section 3 the empirical strategy, Section 4 the results, and Section 5 discusses implications and limitations.
+
+\section{Data}
+
+We combine three sources. Regional GDP per inhabitant in PPS (EU27 2020 reference) for 2024 comes from Eurostat's regional accounts (dataset nama\_10r\_2gdp, unit PPS\_EU27\_2020\_HAB; \citealp{Eurostat_Database}), population on 1 January 2024 from Eurostat's demographic statistics (dataset demo\_r\_d2jan), and NUTS 2024 boundaries at 1:20 million scale in the ETRS89-LAEA projection (EPSG:3035) from GISCO \citep{Eurostat_GISCO_NUTS}. Region identifiers match across sources without recoding. All statistics reported here are computed by the authors from Eurostat data; Eurostat is not responsible for them. The 2024 values are largely provisional or estimated: of the 236 regions in the analysis, 134 carry a provisional flag and 33 an estimated flag, so the figures are subject to revision and we do not repeat the analysis with a 2023 vintage or without flagged values. GDP is allocated by workplace and population by residence, so net in-commuting raises income in regions such as Luxembourg, Brussels, Hamburg and Prague and lowers it in their surroundings. Irish values, and to a lesser degree Luxembourg's, reflect multinational accounting and drive the upper end of the range. PPS adjusts for price differences between countries but not between regions within a country.
+% src: summary_statistics.json#flags.provisional
+% src: summary_statistics.json#flags.estimated
+
+The EU27 comprises 244 NUTS-2 regions in this classification. By convention we exclude the eight outermost regions, which are separated from the continental territory by thousands of kilometres and have no meaningful land neighbours, leaving 236 regions that cover a population of 444 million.
+% src: summary_statistics.json#n_all244
+% src: summary_statistics.json#n_units
+% src: summary_statistics.json#population.total
+Among these, 13 regions without a shared border vertex (mostly islands, but including the Spanish exclaves Ceuta and Melilla) are linked to their nearest region by centroid distance so that every region has at least one neighbour; this guarantees a neighbour but not a connected graph, since the three Irish regions, for instance, are linked only to each other. We do not report a variant without these links. The EU27 frame also truncates neighbourhoods at borders with non-EU countries (for example Switzerland, Norway and the Western Balkans), so all statistics are conditional on this frame. Including the outermost regions under nearest-neighbour weights changes Moran's $I$ only marginally, as reported in the robustness analysis. No region has a missing income value.
+
+Table~\ref{tab:summary} summarises the distribution. The mean regional income is 37,976 PPS and the median 35,050 PPS; weighting regions by population raises the mean to 40,077 PPS, because large regions are on average richer than small ones.
+% src: summary_statistics.json#outcome.gdp_pps.mean
+% src: summary_statistics.json#outcome.gdp_pps.median
+% src: summary_statistics.json#population_weighted_mean_gdp_pps
+The Gini coefficient, coefficient of variation, percentiles and Moran's $I$ are computed without population weights, whereas the Theil decomposition and the national demeaning use population weights. We also use the index version of the variable (population-weighted mean of the 236 sample regions = 100, which is not Eurostat's official EU27 figure) for mapping and the natural logarithm of income for one robustness check.
+
+\input{tables/summary.tex}
+
+\section{Empirical Strategy}
+
+The analysis is descriptive. Let $x_i$ denote GDP per inhabitant in PPS of region $i$ and $w_{ij}$ the row-standardised spatial weight between regions $i$ and $j$, so that $\sum_j w_{ij}=1$. Our baseline weights matrix is queen contiguity, in which two regions are neighbours if their polygons share a border or a vertex. Global spatial autocorrelation is measured by Moran's $I$ \citep{moran1950notes},
+\begin{equation}
+I = \frac{n}{S_0}\,\frac{\sum_i\sum_j w_{ij}\,z_i z_j}{\sum_i z_i^2}, \qquad z_i = x_i - \bar{x}, \quad S_0 = \sum_i\sum_j w_{ij},
+\label{eq:moran}
+\end{equation}
+whose expected value under no autocorrelation is $-1/(n-1)$. We assess significance by permutation: values are shuffled across regions 999 times, $I$ is recomputed each time, and the pseudo $p$-value is the share of permuted statistics at least as far from the expectation as the observed one, so the smallest attainable $p$-value is 0.001. The reported $z$ scores standardise the observed $I$ by the mean and standard deviation of the permuted statistics.
+
+Local clusters are identified with local Moran's $I_i$ \citep{anselin1995local}, using conditional permutation for each region and classifying significant regions as high-high, low-low, high-low or low-high according to the sign of $z_i$ and of its spatial lag. Because 236 local tests are run, about five percent would be significant by chance; we therefore report both uncorrected results and a Benjamini--Hochberg false discovery rate correction at the 5 percent level. As a complementary hot-spot measure we compute the Getis--Ord $G_i^*$ statistic \citep{getis1992analysis}.
+
+Spatial statistics depend on the chosen areal units and on the weights definition \citep{openshaw1984modifiable}. We fix the NUTS-2 level because it is the policy-relevant unit and do not repeat the analysis at other levels. To gauge dependence on the weights, we repeat the global test with five and eight nearest neighbours and with inverse-distance weights. To gauge dependence on individual regions, we drop Luxembourg, the three Irish regions, the five richest regions, and the 27 capital regions in turn. Finally, to separate regional from national structure, we subtract each country's population-weighted mean income from every region and recompute $I$. Spatial autocorrelation is a description of co-location, not evidence of spillovers; a spatial regression \citep{anselin1988spatial} would be needed to model interaction and is beyond this study.
+
+\section{Results}
+
+\subsection{Distribution of regional income}
+
+Regional income is right-skewed and moderately dispersed. The coefficient of variation is 0.37, the Gini coefficient 0.20, and the ratio of the 90th to the 10th percentile 2.4, while the maximum is 6.4 times the minimum (Figure~\ref{fig:dist}).
+% src: estimation_results.json#distribution.cv
+% src: estimation_results.json#distribution.gini
+% src: estimation_results.json#distribution.p90_p10_ratio
+% src: estimation_results.json#distribution.max_min_ratio
+The five richest regions are IE06, LU00, IE05, DE60 and CZ01 (all above 76,000 PPS), while the poorest are BG31, EL41, BG42, BG32 and EL54 (all below 17,900 PPS). Only 86 of 236 regions exceed the population-weighted mean, which reflects the right skew and the fact that larger regions are on average richer.
+% src: summary_statistics.json#n_regions_above_pop_weighted_mean
+A Theil decomposition with population weights attributes 36 percent of total inequality to differences between countries and the remainder to differences within countries.
+% src: estimation_results.json#distribution.share_between_country
+Single extreme regions matter little for dispersion: dropping Luxembourg lowers the Gini coefficient only from 0.197 to 0.194, whereas dropping all 27 capital regions, which removes five whole countries, lowers it to 0.174.
+% src: estimation_results.json#distribution_sensitivity.drop_LU00.gini
+% src: estimation_results.json#distribution_sensitivity.drop_capital_regions.gini
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.8\textwidth]{fig_dist_gdp_pps_2024.pdf}
+\caption{Distribution of GDP per inhabitant in PPS across 236 EU27 NUTS-2 regions, 2024, with median and mean.}
+\label{fig:dist}
+\end{figure}
+
+Figure~\ref{fig:map} maps the quintiles of regional income. The highest quintile forms several separate cores, including Ireland, southern Germany, the Benelux area, Austria and northern Italy, together with isolated capital regions such as Prague. The lowest quintile forms contiguous blocks covering Bulgaria, most of Romania outside Bucharest, eastern Poland, Hungary outside Budapest, and Greece and southern Italy.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.85\textwidth]{fig_map_gdp_pps_2024.pdf}
+\caption{GDP per inhabitant in PPS (EU27 2020), NUTS-2 regions, 2024, quintile classes; 236 EU27 regions excluding outermost regions. \copyright\ EuroGeographics for the administrative boundaries.}
+\label{fig:map}
+\end{figure}
+
+\subsection{Global spatial autocorrelation}
+
+High- and low-income regions cluster strongly in space. Under queen contiguity, Moran's $I$ is 0.370 against an expectation of $-0.004$, a $z$ score of 7.8 and a pseudo $p$-value of 0.001, the smallest attainable with 999 permutations (Table~\ref{tab:moran}).
+% src: estimation_results.json#spatial_statistics.moran_gdp_queen.estimate
+% src: estimation_results.json#spatial_statistics.moran_gdp_queen.expected
+% src: estimation_results.json#spatial_statistics.moran_gdp_queen.z
+% src: estimation_results.json#spatial_statistics.moran_gdp_queen.p_value
+The Moran scatter plot (Figure~\ref{fig:scatter}) places 74 regions in the high-high and 105 in the low-low quadrant, against 31 high-low and 26 low-high regions, so about three quarters of regions share the sign of their neighbours' deviation from the mean.
+% src: estimation_results.json#moran_scatter.quadrant_counts.HH
+% src: estimation_results.json#moran_scatter.quadrant_counts.LL
+% src: estimation_results.json#moran_scatter.quadrant_counts.HL
+% src: estimation_results.json#moran_scatter.quadrant_counts.LH
+Using the logarithm of income, which dampens the influence of the upper tail, raises $I$ to 0.482.
+% src: estimation_results.json#spatial_statistics.moran_lngdp_queen.estimate
+The magnitude depends on the weights definition but not the conclusion: with five nearest neighbours $I$ is 0.266, with eight 0.265, and with inverse-distance weights over all region pairs 0.089, which is presumably smaller because distant regions receive non-negligible weight, yet its $z$ score of 12.5 is the largest of all.
+% src: estimation_results.json#spatial_statistics.moran_gdp_knn5.estimate
+% src: estimation_results.json#spatial_statistics.moran_gdp_knn8.estimate
+% src: estimation_results.json#spatial_statistics.moran_gdp_invdist.estimate
+% src: estimation_results.json#spatial_statistics.moran_gdp_invdist.z
+All five statistics reject the null of spatial randomness at the smallest attainable $p$-value.
+
+\input{tables/moran.tex}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\textwidth]{fig_moran_scatter.pdf}
+\caption{Moran scatter plot of GDP per inhabitant in PPS, queen contiguity, row-standardised weights, 236 regions, 2024.}
+\label{fig:scatter}
+\end{figure}
+
+\subsection{Local clusters}
+
+Local Moran statistics identify 62 regions with a significant local association at the 5 percent level, of which about 12 would be expected by chance alone.
+% src: estimation_results.json#cluster_details.n_significant_p05
+% src: estimation_results.json#cluster_details.expected_false_positives_p05
+Of these, 19 are high-high, 38 low-low, 2 high-low and 3 low-high (Figure~\ref{fig:lisa}).
+% src: estimation_results.json#clusters.HH.count
+% src: estimation_results.json#clusters.LL.count
+% src: estimation_results.json#clusters.HL.count
+% src: estimation_results.json#clusters.LH.count
+The low-low clusters are concentrated in Poland (10 regions), Greece (7), and Bulgaria, Hungary and Romania (5 each), with further regions in Slovakia, the Czech Republic, Croatia, Portugal and southern Italy. The high-high clusters comprise five German regions, five Dutch regions, the three Irish regions, three regions in northern Italy, two Austrian regions and one Belgian region. The few spatial outliers are the Bulgarian capital region BG41 and the Greek capital region EL30 (high-low), and BE33, DK02 and DEB2 (low-high). The Irish high-high label describes a closed island of three regions whose only neighbours are each other and whose values are likely inflated by multinational accounting, and the outlier labels may partly reflect workplace-based GDP and commuting into capital regions.
+
+After a false discovery rate correction at the 5 percent level, 22 regions remain significant: 20 low-low, one high-high and one high-low region.
+% src: estimation_results.json#cluster_details.n_significant_fdr
+% src: estimation_results.json#cluster_details.fdr_bh_q05.LL.count
+The uncorrected high-high clusters thus rest on weaker evidence than the low-income ones and should be read as suggestive only. Part of this asymmetry may be mechanical, because regional income is right-skewed and a conditional permutation test on a skewed level variable makes high-high clusters harder to establish; we did not repeat the local analysis on logarithms or ranks, and the 22 survivors were obtained with 999 permutations, whose resolution limits the correction. The Getis--Ord statistic points the same way, with 24 hot spots and 30 cold spots at $|z|>1.96$, again without multiplicity correction.
+% src: estimation_results.json#getis_ord.hot_spots_z_gt_1.96
+% src: estimation_results.json#getis_ord.cold_spots_z_lt_-1.96
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.85\textwidth]{fig_map_lisa.pdf}
+\caption{Local Moran clusters of GDP per inhabitant in PPS, queen contiguity, 999 conditional permutations, $p<0.05$ (uncorrected), 2024. \copyright\ EuroGeographics for the administrative boundaries.}
+\label{fig:lisa}
+\end{figure}
+
+\subsection{Robustness: extreme regions, outermost regions and the national level}
+
+Table~\ref{tab:robust} shows that the global result is not driven by individual regions. Including the eight outermost regions under five-nearest-neighbour weights gives $I=0.276$ for 244 regions, close to the 0.266 for the main sample.
+% src: estimation_results.json#robustness.moran_gdp_knn5_all244.estimate
+Dropping Luxembourg raises $I$ to 0.411, dropping the three Irish regions leaves it at 0.342, and dropping the five richest regions raises it to 0.429.
+% src: estimation_results.json#robustness.sens_drop_LU00.estimate
+% src: estimation_results.json#robustness.sens_drop_Ireland.estimate
+% src: estimation_results.json#robustness.sens_drop_top5.estimate
+Removing the 27 capital regions raises $I$ to 0.623. The 27 include whole single-region countries (EE00, LV00, LU00, CY00, MT00), and the drop leaves three regions without a neighbour (one in the top-five variant), which we note as a caveat for these two variants.
+% src: estimation_results.json#robustness.sens_drop_capital_regions.estimate
+% src: estimation_results.json#robustness.sens_drop_capital_regions.n_isolated_after_drop
+% src: estimation_results.json#robustness.sens_drop_top5.n_isolated_after_drop
+One reading is that capital regions are income peaks surrounded by poorer neighbours, so that they lower autocorrelation instead of creating it, and that the clustering that remains is that of broad, contiguous income belts; our statistics do not test this reading.
+In every case the pseudo $p$-value is 0.001. We did not run the variants without island links, with Geary's $C$, with three nearest neighbours, or with more than 999 permutations.
+
+The national level is a different matter. When each region's income is expressed as its deviation from its country's population-weighted mean, Moran's $I$ falls to 0.020 with a $z$ score of 0.5 and a pseudo $p$-value of 0.6.
+% src: estimation_results.json#robustness.sens_within_country_demeaned.estimate
+% src: estimation_results.json#robustness.sens_within_country_demeaned.z
+% src: estimation_results.json#robustness.sens_within_country_demeaned.p_value
+Within countries, we therefore find no evidence that high-income regions are systematically adjacent to other high-income regions, but this test is weak. The permutation shuffles demeaned values across all 236 regions, although demeaning forces deviations to sum to zero within each country (and to exactly zero in single-region countries), so the reference distribution is not the appropriate null; a shuffle within countries would be, and we did not run it. The test also pools large countries with known internal gradients with very small ones, and capital-hinterland contrasts, which lower the statistic as the capital-drop variant shows, work in the same direction. The result is consistent with the fact that only about one quarter of queen links in the sample cross a national border (24.8 percent), so most neighbours belong to the same country and the national level absorbs most of the spatial signal.
+% src: estimation_results.json#share_queen_links_crossing_borders
+
+\input{tables/robust.tex}
+
+\section{Discussion and Conclusion}
+
+Regional income in the EU27 is spatially clustered, but the clustering largely reflects the geography of national income levels. Moran's $I$ of 0.37 under queen contiguity, positive under three alternative weights definitions, confirms what maps suggest: rich regions border rich regions and poor regions border poor regions. Yet the within-country result suggests that this association largely disappears once national means are removed, although the test has low power and a permutation null that is not adapted to demeaned data. The contiguous low-income blocks in Poland, Romania, Bulgaria, Hungary and Greece appear to follow national borders; the uncorrected high-income cores in Germany, the Netherlands and Ireland are more mixed, since the German, Dutch, Belgian, Austrian and Italian high-high regions span several borders. The demeaned Moran's $I$ of 0.020 ($p=0.6$) shows that regions' deviations from their national mean are not spatially clustered; it does not test for gradients across borders. For monitoring of cohesion policy, this suggests that national and regional disparities should be read jointly and that regional rankings cannot be separated from country membership. The finding is an association between co-location and income, and we make no claim about why it arises or about policy effects.
+
+Our analysis is subject to several scope conditions. The 2024 income figures are largely provisional or estimated and may be revised; we examine a single year and therefore cannot say whether clustering has strengthened or weakened over time. The NUTS-2 units differ widely in population and area, and the modifiable areal unit problem implies that results at NUTS 1 or NUTS 3 would differ. We exclude eight outermost regions from the main sample, although the robustness check suggests this choice matters little. Irish and Luxembourgish values reflect multinational accounting, GDP is allocated by workplace while population is counted by residence, PPS corrects national but not regional price levels, and the EU27 frame truncates neighbourhoods at non-EU borders; each affects the upper tail and the outlier classes. We also did not run the island-link, 2023-vintage, log-scale local and within-country permutation variants that would test these choices. The local cluster results use permutation tests across 236 regions, and only 22 survive a false discovery rate correction, so the cluster maps should be read as exploratory.
+
+Two questions follow directly. First, whether the weak within-country autocorrelation reflects genuine absence of regional gradients or the coarse size of NUTS-2 units can be tested by repeating the decomposition at NUTS 3. Second, whether the spatial structure documented here has changed since 2015 can be answered with the panel already available in the Eurostat series.
+
+\bibliographystyle{apalike}
+\bibliography{refs}
+
+\end{document}

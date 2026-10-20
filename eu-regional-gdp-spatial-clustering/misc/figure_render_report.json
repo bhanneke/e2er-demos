@@ -1,0 +1,19 @@
+{
+  "rendered": [
+    "fig_map_gdp_pps_2024.pdf",
+    "fig_map_gdp_index.pdf",
+    "fig_map_lisa.pdf",
+    "fig_moran_scatter.pdf"
+  ],
+  "skipped": [
+    "fig_dist_gdp_pps_2024.pdf: unknown figure_type 'distribution'"
+  ],
+  "errors": [],
+  "placeholders": [],
+  "notes": [
+    "fig_map_gdp_pps_2024.pdf: projection: none",
+    "fig_map_gdp_index.pdf: projection: none",
+    "fig_map_lisa.pdf: projection: none"
+  ],
+  "skipped_reason": null
+}

@@ -1,0 +1,11 @@
+# The packages the study's scripts import, at the versions of the Python environment
+# e2er ran the study in (Python 3.14.7), written by e2er at export. `e2er reproduce` installs
+# them in a new environment.
+# Also every package the scripts loaded when the run ran them (recorded by e2er), at the run's versions.
+cloudpickle==3.1.2
+numpy==2.5.4
+pandas==2.3.3
+pyarrow==26.0.0
+python-dateutil==2.9.0.post0
+pytz==2026.5
+six==1.17.0

@@ -1,0 +1,83 @@
+{
+  "schema": "e2er-reproduce/1",
+  "about": "Written by e2er at export (2026-10-15) from what the run recorded: the scripts that wrote estimation_results.json, from the estimation script on, in the order the run ran them (its script log); the files they read; and the packages they import. code/requirements.txt pins 7 package(s) at the versions the run used.",
+  "python": "3.14",
+  "requirements": "code/requirements.txt",
+  "files": {
+    "run_estimation.py": "code/run_estimation.py",
+    "data.db": "data/data.db",
+    "fig_map_gdp_index.pdf": "results/figures/fig_map_gdp_index.pdf",
+    "fig_map_gdp_pps_2024.pdf": "results/figures/fig_map_gdp_pps_2024.pdf",
+    "fig_map_lisa.pdf": "results/figures/fig_map_lisa.pdf",
+    "fig_moran_scatter.pdf": "results/figures/fig_moran_scatter.pdf",
+    "figure_spec.json": "results/figure_spec.json",
+    "moran_scatter_data.csv": "results/moran_scatter_data.csv",
+    "spatial_units.csv": "results/spatial_units.csv",
+    "spatial_units_all244.csv": "results/spatial_units_all244.csv",
+    "spatial_weights.csv": "results/spatial_weights.csv",
+    "spatial_weights_invdist.csv": "results/spatial_weights_invdist.csv",
+    "spatial_weights_knn5.csv": "results/spatial_weights_knn5.csv",
+    "spatial_weights_knn5_all244.csv": "results/spatial_weights_knn5_all244.csv",
+    "spatial_weights_knn8.csv": "results/spatial_weights_knn8.csv",
+    "get_data.py": "code/get_data.py"
+  },
+  "steps": [
+    {
+      "run": [
+        "python",
+        "get_data.py"
+      ],
+      "about": "load the inputs the folder does not ship (if any)"
+    },
+    {
+      "run": [
+        "python",
+        "run_estimation.py"
+      ],
+      "about": "the estimation script"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data.db",
+      "sha256": "203608577d4265de599e77e07020351feb5cd5fb778499bb82f6b04cdef56391",
+      "source": "the study's database, tables: gdp_pps_nuts2 (Eurostat database (dissemination API), European Commission, Eurostat nama_10r_2gdp: Gross domestic product (GDP) at current market prices by NUTS 2 region (unit=PPS_EU27_2020_HAB, nuts2), 2015–2024, release 2026-02-10T11:00:00+0100, loaded 2026-10-14); gdp_pps_sample (made by the study during the run); nuts2_boundaries (GISCO geographical data (NUTS regions, countries), Eurostat, NUTS 2 regions, NUTS 2024, 1:20 million, EPSG:3035, release NUTS 2024, loaded 2026-10-14); pop_nuts2 (Eurostat database (dissemination API), European Commission, Eurostat demo_r_d2jan: Population on 1 January by age, sex and NUTS 2 region (sex=T, age=TOTAL, nuts2), 2024–2024, release 2026-08-28T23:00:00+0200, loaded 2026-10-14)",
+      "tables": {
+        "gdp_pps_nuts2": {
+          "rows": 2826,
+          "content_sha256": "9fe3b85dc7be212d518f8446624a9dbbfe052ba7be7c3302e18fbcfabb0dcf67"
+        },
+        "gdp_pps_sample": {
+          "rows": 236,
+          "content_sha256": "b0bca67c6c0077a364398ca3e3e51687c5327c9f73b1edb32686706af61af8a3"
+        },
+        "nuts2_boundaries": {
+          "rows": 299,
+          "content_sha256": "a9ab85ccaccaba85d764e60b4dc9178ce7f3533c66a17038828abeaae0887927"
+        },
+        "pop_nuts2": {
+          "rows": 292,
+          "content_sha256": "ff9039d6f0cb23ba66bca2e97425a3d45f083549f5cb686aa2ea8b4baab380f2"
+        }
+      },
+      "reload": "get_data.py"
+    },
+    {
+      "path": "spatial_units_all244.csv",
+      "sha256": "4da22ec07db2a9295741ec7e91ef1447ef69d1d2cccea8ae3b43086ad7c332ab",
+      "source": "a file the study's code reads",
+      "rows": 244,
+      "content_sha256": "7428a6b06d4d5ac2f14ccd82bf348e9d86c7a3cec747ca42e3aba1d09207eed7"
+    }
+  ],
+  "compare": [
+    {
+      "published": "results/estimation_results.json",
+      "produced": "estimation_results.json"
+    }
+  ],
+  "notes": [
+    "Eurostat GISCO's terms allow non-commercial use only, with the notice '© EuroGeographics for the administrative boundaries' on every map, so a published study may leave its data out. get_data.py loads these data again with e2er-data when the folder lacks them.",
+    "results/spatial_units_all244.csv is built from data whose terms keep them out of a published study, and no recorded step builds them again from data the rerun can load: a folder without them cannot be run again."
+  ]
+}

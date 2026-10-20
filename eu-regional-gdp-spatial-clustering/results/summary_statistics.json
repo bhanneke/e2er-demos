@@ -1,0 +1,416 @@
+{
+ "n_observations": 236,
+ "n_units": 236,
+ "time_coverage": {
+  "start_iso": "2024-01-01",
+  "end_iso": "2024-12-31",
+  "n_periods": 1
+ },
+ "outcome": {
+  "gdp_pps": {
+   "n": 236,
+   "mean": 37975.84745762712,
+   "sd": 14245.634244337467,
+   "min": 16700.0,
+   "p5": 20150.0,
+   "p10": 22750.0,
+   "p25": 28375.0,
+   "median": 35050.0,
+   "p75": 44175.0,
+   "p90": 53550.0,
+   "p95": 64375.0,
+   "max": 107200.0
+  },
+  "gdp_index": {
+   "n": 236,
+   "mean": 94.75627118644066,
+   "sd": 35.545129607342,
+   "min": 41.67,
+   "p5": 50.275,
+   "p10": 56.765,
+   "p25": 70.7975,
+   "median": 87.455,
+   "p75": 110.2275,
+   "p90": 133.615,
+   "p95": 160.6275,
+   "max": 267.48
+  },
+  "ln_gdp_pps": {
+   "n": 236,
+   "mean": 10.48257745762712,
+   "sd": 0.3484138090276682,
+   "min": 9.72316,
+   "p5": 9.9109525,
+   "p10": 10.03232,
+   "p25": 10.25326,
+   "median": 10.46453,
+   "p75": 10.695912499999999,
+   "p90": 10.88832,
+   "p95": 11.072470000000001,
+   "max": 11.58245
+  }
+ },
+ "population_weighted_mean_gdp_pps": 40077.407781290116,
+ "n_all244": 244,
+ "mean_gdp_pps_all244": 37555.32786885246,
+ "ratio_max_to_min": 6.419161676646707,
+ "ratio_p90_to_p10": 2.353846153846154,
+ "n_regions_above_pop_weighted_mean": 86,
+ "flags": {
+  "provisional": 134,
+  "estimated": 33,
+  "none": 69
+ },
+ "population": {
+  "total": 444464009,
+  "missing": 0
+ },
+ "top5": [
+  {
+   "id": "IE06",
+   "gdp_pps": 107200.0
+  },
+  {
+   "id": "LU00",
+   "gdp_pps": 97700.0
+  },
+  {
+   "id": "IE05",
+   "gdp_pps": 86500.0
+  },
+  {
+   "id": "DE60",
+   "gdp_pps": 78300.0
+  },
+  {
+   "id": "CZ01",
+   "gdp_pps": 76600.0
+  }
+ ],
+ "bottom5": [
+  {
+   "id": "BG31",
+   "gdp_pps": 16700.0
+  },
+  {
+   "id": "EL41",
+   "gdp_pps": 16800.0
+  },
+  {
+   "id": "BG42",
+   "gdp_pps": 17300.0
+  },
+  {
+   "id": "BG32",
+   "gdp_pps": 17300.0
+  },
+  {
+   "id": "EL54",
+   "gdp_pps": 17800.0
+  }
+ ],
+ "by_country": {
+  "AT": {
+   "n": 9,
+   "mean": 46988.88888888889,
+   "min": 34400.0,
+   "max": 58100.0
+  },
+  "BE": {
+   "n": 11,
+   "mean": 45000.0,
+   "min": 28800.0,
+   "max": 76000.0
+  },
+  "BG": {
+   "n": 6,
+   "mean": 22783.333333333332,
+   "min": 16700.0,
+   "max": 42600.0
+  },
+  "CY": {
+   "n": 1,
+   "mean": 39500.0,
+   "min": 39500.0,
+   "max": 39500.0
+  },
+  "CZ": {
+   "n": 8,
+   "mean": 35737.5,
+   "min": 24400.0,
+   "max": 76600.0
+  },
+  "DE": {
+   "n": 38,
+   "mean": 44521.05263157895,
+   "min": 32700.0,
+   "max": 78300.0
+  },
+  "DK": {
+   "n": 5,
+   "mean": 46400.0,
+   "min": 36000.0,
+   "max": 70100.0
+  },
+  "EE": {
+   "n": 1,
+   "mean": 31600.0,
+   "min": 31600.0,
+   "max": 31600.0
+  },
+  "EL": {
+   "n": 13,
+   "mean": 22753.846153846152,
+   "min": 16800.0,
+   "max": 38200.0
+  },
+  "ES": {
+   "n": 18,
+   "mean": 35005.555555555555,
+   "min": 23600.0,
+   "max": 49900.0
+  },
+  "FI": {
+   "n": 5,
+   "mean": 40700.0,
+   "min": 35400.0,
+   "max": 51000.0
+  },
+  "FR": {
+   "n": 22,
+   "mean": 34481.818181818184,
+   "min": 28800.0,
+   "max": 64000.0
+  },
+  "HR": {
+   "n": 4,
+   "mean": 32075.0,
+   "min": 21100.0,
+   "max": 52500.0
+  },
+  "HU": {
+   "n": 8,
+   "mean": 28150.0,
+   "min": 18900.0,
+   "max": 67200.0
+  },
+  "IE": {
+   "n": 3,
+   "mean": 77900.0,
+   "min": 40000.0,
+   "max": 107200.0
+  },
+  "IT": {
+   "n": 21,
+   "mean": 38304.76190476191,
+   "min": 22800.0,
+   "max": 64200.0
+  },
+  "LT": {
+   "n": 2,
+   "mean": 40050.0,
+   "min": 27100.0,
+   "max": 53000.0
+  },
+  "LU": {
+   "n": 1,
+   "mean": 97700.0,
+   "min": 97700.0,
+   "max": 97700.0
+  },
+  "LV": {
+   "n": 1,
+   "mean": 27300.0,
+   "min": 27300.0,
+   "max": 27300.0
+  },
+  "MT": {
+   "n": 1,
+   "mean": 43800.0,
+   "min": 43800.0,
+   "max": 43800.0
+  },
+  "NL": {
+   "n": 12,
+   "mean": 49041.666666666664,
+   "min": 38300.0,
+   "max": 69900.0
+  },
+  "PL": {
+   "n": 17,
+   "mean": 29017.647058823528,
+   "min": 22100.0,
+   "max": 62800.0
+  },
+  "PT": {
+   "n": 7,
+   "mean": 31757.14285714286,
+   "min": 22100.0,
+   "max": 51500.0
+  },
+  "RO": {
+   "n": 8,
+   "mean": 31462.5,
+   "min": 19300.0,
+   "max": 75000.0
+  },
+  "SE": {
+   "n": 8,
+   "mean": 41825.0,
+   "min": 33900.0,
+   "max": 61100.0
+  },
+  "SI": {
+   "n": 2,
+   "mean": 36450.0,
+   "min": 28800.0,
+   "max": 44100.0
+  },
+  "SK": {
+   "n": 4,
+   "mean": 33775.0,
+   "min": 21400.0,
+   "max": 61000.0
+  }
+ },
+ "weights": {
+  "queen": {
+   "n_links": 1039,
+   "n_islands_linked_to_nearest": 13,
+   "mean_neighbours": 4.4025423728813555,
+   "min_neighbours": 1,
+   "max_neighbours": 11
+  },
+  "knn5": {
+   "k": 5,
+   "n_links": 1180
+  },
+  "knn5_all244": {
+   "k": 5,
+   "n_links": 1220
+  }
+ },
+ "sample_flow": [
+  {
+   "step": "raw 2024 rows, gdp_pps_nuts2",
+   "n": 276,
+   "dropped": 0
+  },
+  {
+   "step": "drop missing value",
+   "n": 276,
+   "dropped": 0
+  },
+  {
+   "step": "drop non-EU27 (TR, RS, ME, MK)",
+   "n": 244,
+   "dropped": 32
+  },
+  {
+   "step": "merge to GISCO NUTS 2024 geometry (unmatched = 0)",
+   "n": 244,
+   "dropped": 0
+  },
+  {
+   "step": "drop 8 outermost regions = primary sample",
+   "n": 236,
+   "dropped": 8
+  },
+  {
+   "step": "final estimation sample (primary)",
+   "n": 236,
+   "dropped": 0
+  }
+ ],
+ "merge_coverage": {
+  "data_regions_matched_to_geometry": 244,
+  "data_regions_without_geometry": 0,
+  "boundary_units_total": 299,
+  "boundary_units_without_eu27_data": 55
+ },
+ "data_quality_log": {
+  "missing_gdp_values_2024": 0,
+  "nuts_code_recoding_needed": 0,
+  "crs_epsg": 3035,
+  "islands": [
+   {
+    "id": "EL41",
+    "name": "Voreio Aigaio",
+    "linked_to": "EL42",
+    "distance_km": 234.5
+   },
+   {
+    "id": "EL42",
+    "name": "Notio Aigaio",
+    "linked_to": "EL43",
+    "distance_km": 215.4
+   },
+   {
+    "id": "EL43",
+    "name": "Kriti",
+    "linked_to": "EL42",
+    "distance_km": 215.4
+   },
+   {
+    "id": "EL62",
+    "name": "Ionia Nisia",
+    "linked_to": "EL63",
+    "distance_km": 109.9
+   },
+   {
+    "id": "ES53",
+    "name": "Illes Balears",
+    "linked_to": "ES51",
+    "distance_km": 273.0
+   },
+   {
+    "id": "ES63",
+    "name": "Ciudad de Ceuta",
+    "linked_to": "ES61",
+    "distance_km": 185.6
+   },
+   {
+    "id": "ES64",
+    "name": "Ciudad de Melilla",
+    "linked_to": "ES63",
+    "distance_km": 232.1
+   },
+   {
+    "id": "FRM0",
+    "name": "Corse",
+    "linked_to": "ITI1",
+    "distance_km": 219.3
+   },
+   {
+    "id": "ITG1",
+    "name": "Sicilia",
+    "linked_to": "MT00",
+    "distance_km": 185.7
+   },
+   {
+    "id": "ITG2",
+    "name": "Sardegna",
+    "linked_to": "FRM0",
+    "distance_km": 228.2
+   },
+   {
+    "id": "CY00",
+    "name": "K\u00fdpros",
+    "linked_to": "EL42",
+    "distance_km": 646.4
+   },
+   {
+    "id": "MT00",
+    "name": "Malta",
+    "linked_to": "ITG1",
+    "distance_km": 185.7
+   },
+   {
+    "id": "FI20",
+    "name": "\u00c5land",
+    "linked_to": "SE11",
+    "distance_km": 138.7
+   }
+  ]
+ }
+}

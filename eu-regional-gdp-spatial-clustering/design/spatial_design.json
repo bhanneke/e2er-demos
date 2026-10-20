@@ -1,0 +1,22 @@
+{
+  "units": {"type": "NUTS 2 region", "table": "gdp_pps_nuts2", "id_column": "geo", "year": 2024, "level": "NUTS 2"},
+  "boundaries": {"source": "gisco", "table": "nuts2_boundaries", "id_column": "nuts_id",
+                 "geometry_column": "geometry", "dataset": "NUTS 2024, 1:20 million, EPSG:3035",
+                 "attribution": "© EuroGeographics for the administrative boundaries"},
+  "crs": "EPSG:3035",
+  "weights": {"type": "queen", "row_standardised": true,
+              "islands": "regions without a land neighbour are linked to their nearest region by centroid distance",
+              "robustness": {"type": "knn", "k": 5, "row_standardised": true, "islands": "none by construction"}},
+  "units_without_geometry": [],
+  "excluded_units": [
+    {"id": "TR*", "reason": "non-EU (Turkey); in the Eurostat table but outside the EU27 frame"},
+    {"id": "RS*", "reason": "non-EU (Serbia); outside the EU27 frame"},
+    {"id": "ME*", "reason": "non-EU (Montenegro); outside the EU27 frame"},
+    {"id": "MK*", "reason": "non-EU (North Macedonia); outside the EU27 frame"},
+    {"id": "FRY*", "reason": "French outermost regions, far from the mainland; kept only in a kNN robustness run"},
+    {"id": "ES70", "reason": "Canarias, outermost region; kept only in a kNN robustness run"},
+    {"id": "PT20", "reason": "Azores, outermost region; kept only in a kNN robustness run"},
+    {"id": "PT30", "reason": "Madeira, outermost region; kept only in a kNN robustness run"}
+  ],
+  "map_projection": "laea_europe"
+}

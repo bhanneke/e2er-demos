@@ -1,0 +1,2384 @@
+{
+  "schema": "e2er-research-object/0.1",
+  "id": "bhanneke/eu-regional-gdp-spatial-clustering",
+  "content_id": "sha256:ca143e30b0afd696160991cb2de5c324281ae48211bd9b96696e01e21aef4c01",
+  "title": "How does GDP per capita in purchasing power standards vary across the EU's NU...",
+  "question": "How does GDP per capita in purchasing power standards vary across the EU's NUTS-2 regions in 2024, and how strongly do regions with high and low GDP per capita cluster in space?",
+  "contributors": [
+    {
+      "name": "Björn Hanneke",
+      "github": "bhanneke",
+      "roles": [
+        "conceptualization",
+        "investigation"
+      ]
+    }
+  ],
+  "ai": {
+    "backend": "claude_code",
+    "model": "sonnet",
+    "agents": [
+      "data_architect",
+      "data_analyst",
+      "idea_developer",
+      "literature_scanner",
+      "econometrics_specialist",
+      "paper_drafter",
+      "writing_reviewer",
+      "data_reviewer",
+      "methods_reviewer",
+      "technical_reviewer",
+      "plausibility_reviewer",
+      "patch_revisor",
+      "replication_packager"
+    ],
+    "agents_source": "recorded",
+    "usage": [
+      {
+        "agent": "strategist:decide",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 2,
+        "output_tokens": 1558,
+        "cache_read_tokens": 14359,
+        "cache_write_tokens": 16689,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:36:02",
+        "last": "2026-10-14 17:36:02"
+      },
+      {
+        "agent": "data_architect",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 24,
+        "output_tokens": 6669,
+        "cache_read_tokens": 794559,
+        "cache_write_tokens": 66794,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:37:10",
+        "last": "2026-10-14 17:37:10"
+      },
+      {
+        "agent": "data_analyst",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 2,
+        "input_tokens": 32,
+        "output_tokens": 17375,
+        "cache_read_tokens": 1285195,
+        "cache_write_tokens": 168361,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:39:06",
+        "last": "2026-10-14 17:39:33"
+      },
+      {
+        "agent": "idea_developer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 10,
+        "output_tokens": 8676,
+        "cache_read_tokens": 170968,
+        "cache_write_tokens": 35004,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:40:53",
+        "last": "2026-10-14 17:40:53"
+      },
+      {
+        "agent": "literature_scanner",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 15373,
+        "cache_read_tokens": 47571,
+        "cache_write_tokens": 33936,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:41:24",
+        "last": "2026-10-14 17:41:24"
+      },
+      {
+        "agent": "econometrics_specialist",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 3,
+        "input_tokens": 58,
+        "output_tokens": 27331,
+        "cache_read_tokens": 1380606,
+        "cache_write_tokens": 136517,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:43:34",
+        "last": "2026-10-14 17:44:56"
+      },
+      {
+        "agent": "paper_drafter",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 3,
+        "input_tokens": 34,
+        "output_tokens": 17629,
+        "cache_read_tokens": 823120,
+        "cache_write_tokens": 145517,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:46:27",
+        "last": "2026-10-14 17:48:26"
+      },
+      {
+        "agent": "writing_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 14560,
+        "cache_read_tokens": 84343,
+        "cache_write_tokens": 69525,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:50:49",
+        "last": "2026-10-14 17:50:49"
+      },
+      {
+        "agent": "data_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 15681,
+        "cache_read_tokens": 87362,
+        "cache_write_tokens": 73597,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:51:01",
+        "last": "2026-10-14 17:51:01"
+      },
+      {
+        "agent": "methods_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 8447,
+        "cache_read_tokens": 85923,
+        "cache_write_tokens": 64945,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:52:09",
+        "last": "2026-10-14 17:52:09"
+      },
+      {
+        "agent": "technical_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 27619,
+        "cache_read_tokens": 84146,
+        "cache_write_tokens": 82518,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:52:27",
+        "last": "2026-10-14 17:52:27"
+      },
+      {
+        "agent": "plausibility_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 29323,
+        "cache_read_tokens": 82375,
+        "cache_write_tokens": 82491,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:54:58",
+        "last": "2026-10-14 17:54:58"
+      },
+      {
+        "agent": "patch_revisor",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 10,
+        "output_tokens": 9829,
+        "cache_read_tokens": 243453,
+        "cache_write_tokens": 63593,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:56:15",
+        "last": "2026-10-14 17:56:15"
+      },
+      {
+        "agent": "replication_packager",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 16,
+        "output_tokens": 13403,
+        "cache_read_tokens": 402400,
+        "cache_write_tokens": 55409,
+        "cost_usd": 0.0,
+        "first": "2026-10-14 17:57:46",
+        "last": "2026-10-14 17:57:46"
+      }
+    ]
+  },
+  "process": {
+    "template": "spatial-analysis",
+    "mode": "single_pass",
+    "methodology": "empirical",
+    "governance": "full",
+    "e2er_version": "0.17.0",
+    "exported": "20261015"
+  },
+  "components": {
+    "skills": {
+      "data_architect": [
+        "data/data-tables",
+        "data/query-data",
+        "base/researcher",
+        "data/yfinance",
+        "data/fred",
+        "data/gmd",
+        "data/usgs",
+        "data/exoplanets",
+        "data/gaia",
+        "data/nasa_power",
+        "data/noaa",
+        "data/worldbank",
+        "data/eurostat",
+        "data/owid",
+        "data/who_gho",
+        "data/gutenberg",
+        "data/github",
+        "data/gisco",
+        "data/naturalearth",
+        "data/spatial-statistics"
+      ],
+      "data_analyst": [
+        "data/data-tables",
+        "data/query-data",
+        "data/cleaning",
+        "data/figure-spec",
+        "econometrics/panel-data",
+        "data/yfinance",
+        "data/fred",
+        "data/gmd",
+        "data/summary-statistics-schema",
+        "data/usgs",
+        "data/exoplanets",
+        "data/gaia",
+        "data/nasa_power",
+        "data/noaa",
+        "data/worldbank",
+        "data/eurostat",
+        "data/owid",
+        "data/who_gho",
+        "data/gutenberg",
+        "data/github",
+        "data/gisco",
+        "data/naturalearth",
+        "data/spatial-statistics"
+      ],
+      "idea_developer": [
+        "base/researcher",
+        "reasoning/creative-ideation",
+        "reasoning/novelty"
+      ],
+      "literature_scanner": [
+        "base/researcher",
+        "synthesis/context-builder"
+      ],
+      "econometrics_specialist": [
+        "data/query-data",
+        "data/figure-spec",
+        "data/spatial-results-schema",
+        "data/spatial-statistics"
+      ],
+      "paper_drafter": [
+        "writing/paper-structure",
+        "writing/personal-style",
+        "base/researcher",
+        "writing/cite-numbers-by-source",
+        "data/table-spec",
+        "data/spatial-statistics"
+      ],
+      "writing_reviewer": [
+        "review/writing-quality",
+        "reasoning/anti-slop"
+      ],
+      "data_reviewer": [
+        "review/data-quality",
+        "data/cleaning"
+      ],
+      "methods_reviewer": [
+        "review/methods-review",
+        "review/consistency-check",
+        "data/spatial-statistics"
+      ],
+      "technical_reviewer": [
+        "review/technical-review",
+        "review/consistency-check"
+      ],
+      "plausibility_reviewer": [
+        "review/domain-plausibility",
+        "review/consistency-check"
+      ],
+      "patch_revisor": [
+        "writing/scoped-revision",
+        "writing/cite-numbers-by-source",
+        "writing/personal-style",
+        "reasoning/anti-slop"
+      ],
+      "replication_packager": [
+        "data/cleaning",
+        "base/researcher",
+        "synthesis/replication-package"
+      ]
+    },
+    "skills_source": "recorded"
+  },
+  "literature": [
+    {
+      "cite_key": "Eurostat_Database",
+      "doi": "10.1007/978-3-319-69909-7_944-2",
+      "status": "verified_title",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "pourpakdelfekr2026multispeed",
+      "doi": "10.1080/00343404.2026.2632887",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "moran1950notes",
+      "doi": "10.1093/biomet/37.1-2.17",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "anselin1995local",
+      "doi": "10.1111/j.1538-4632.1995.tb00338.x",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "getis1992analysis",
+      "doi": "10.1111/j.1538-4632.1992.tb00261.x",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    },
+    {
+      "cite_key": "Eurostat_GISCO_NUTS",
+      "doi": null,
+      "status": "unverifiable",
+      "verified_by": null
+    },
+    {
+      "cite_key": "openshaw1984modifiable",
+      "doi": null,
+      "status": "unverifiable",
+      "verified_by": null
+    },
+    {
+      "cite_key": "anselin1988spatial",
+      "doi": "10.1007/978-94-015-7799-1",
+      "status": "verified_doi",
+      "verified_by": "openalex"
+    }
+  ],
+  "data": [
+    {
+      "path": "data/data.db",
+      "sha256": "203608577d4265de599e77e07020351feb5cd5fb778499bb82f6b04cdef56391",
+      "bytes": 1073152,
+      "source": "Eurostat GISCO (GISCO), release NUTS 2024",
+      "terms": "Holds data from Eurostat GISCO (GISCO), release NUTS 2024, used under its terms. GISCO download terms (https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units): \"The Commission agrees to grant the non-exclusive and non-transferable right to use and process the Eurostat/GISCO geographical data downloaded from this page (the 'data'). The permission to use the data is granted on condition that: the data will not be used for commercial purposes the source will be acknowledged. A copyright notice, as specified below, must be visible on any printed or electronic publication using the data downloaded from this page.\" Notice: © EuroGeographics for the administrative boundaries.",
+      "citation": "Eurostat, GISCO. Territorial units for statistics (NUTS), boundaries. European Commission. https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics. © EuroGeographics for the administrative boundaries."
+    },
+    {
+      "path": "data/data_dictionary.json",
+      "sha256": "1adbc1ae6fd29599587dfa40adccc0418d58393f0d6d94414f7f42110d7f5aa2",
+      "bytes": 10952
+    },
+    {
+      "path": "data/data_sources.json",
+      "sha256": "48cf17876f49ecf08cf877360afeb6155fc372bdcb88d2721876db4473ae3591",
+      "bytes": 9440
+    },
+    {
+      "path": "data/data_summary.md",
+      "sha256": "c59811c7c668b3632ff52edf2e7949fcafb8b8727860879ab864f00eca249dad",
+      "bytes": 5844
+    }
+  ],
+  "outputs": [
+    {
+      "path": "paper/paper.pdf",
+      "sha256": "adbdecbd759cbad5b9e13beeffdc9673a1f9516d076d776e1ede4bce52a15231"
+    },
+    {
+      "path": "paper/paper.tex",
+      "sha256": "5b3683dfb3dd396c5a6155104f1f9a0117ded33e48cb39f2b46f556621134935"
+    },
+    {
+      "path": "paper/refs.bib",
+      "sha256": "805aded66e39b72d44863cfc3468a84df92f79f0690a349f8ac62ed15b04e8fd"
+    },
+    {
+      "path": "paper/tables/moran.tex",
+      "sha256": "436eeed59b23535bd2fdfc5b64dae1bd3bf6d3a163e0ba690b6c5014df97e276"
+    },
+    {
+      "path": "paper/tables/robust.tex",
+      "sha256": "bfc12f8b4ab3dcc44949dd98a35adb3623f0060b3c3df24863142d20aa729961"
+    },
+    {
+      "path": "paper/tables/summary.tex",
+      "sha256": "14e832cddd88399af97c5afeac197510f5daacc8108fa6587c7a0a1cf10312b0"
+    },
+    {
+      "path": "replication/README.md",
+      "sha256": "4ed8b6122243df16ffe8f99008974ac2818d093733920e3dd950cc9d4f966f39"
+    },
+    {
+      "path": "replication/audit_log.csv",
+      "sha256": "df0667dde7b1bb7d59ee4a2e4893a6729300c41364da614b8e8c083af21c7134"
+    },
+    {
+      "path": "replication/data_queries.sql",
+      "sha256": "36e1b50634964fadf0f5a9c96aa88180c9d514113d8496fa8a90597ce66c2074"
+    },
+    {
+      "path": "replication/estimation.py",
+      "sha256": "c5cf6c61dd8fc3403688f12d9110fce3a47790cb01cd1617aa4ad91345ce3219"
+    },
+    {
+      "path": "results/estimation_results.json",
+      "sha256": "ee650d15050ef8a1f63572bd018358b18b6ffa786e6d65a2c65a03f6c79ef396"
+    },
+    {
+      "path": "results/figure_spec.json",
+      "sha256": "f7bfebf2177892a5f697b32264592e766aacca2550c817c2c9383490c5770b23"
+    },
+    {
+      "path": "results/figures/fig_dist_gdp_pps_2024.pdf",
+      "sha256": "ccee0509d162883475c54f7b39916ddca2bebb6302a53b866fd6c13101ab3244"
+    },
+    {
+      "path": "results/figures/fig_map_gdp_index.pdf",
+      "sha256": "1cc559fcbe7ab5fd9797cfade86ffdebd4c6b21d35fc576bbc2be787fdfe9626"
+    },
+    {
+      "path": "results/figures/fig_map_gdp_pps_2024.pdf",
+      "sha256": "bfff35f6ece49a4d306b8729d8ba5095b7f8039ca8c4f2e066c073b5e047c24f"
+    },
+    {
+      "path": "results/figures/fig_map_lisa.pdf",
+      "sha256": "f022d48d4801d25a09d72fa0613b9f72ca524a5d89cae82bbd91f3576c114e0c"
+    },
+    {
+      "path": "results/figures/fig_moran_scatter.pdf",
+      "sha256": "b3341cd3056e38ae69450519c27d3f0493f8d769d6388ab7c7ba6839d397d45d"
+    },
+    {
+      "path": "results/moran_scatter_data.csv",
+      "sha256": "64de8ffe2ec926b213e6a700bb3201f5439cc951a2af991406838f8aa673278a"
+    },
+    {
+      "path": "results/number_verification.json",
+      "sha256": "50d66d2f710ab981459546fe6c15e6861d04a52235a94e469c8ba05271b6df16"
+    },
+    {
+      "path": "results/spatial_check.json",
+      "sha256": "a1f6d696416d91892f0ec9612f9bb7e3126b92c362698ce34d45f8fdc1b7e6ab"
+    },
+    {
+      "path": "results/spatial_design_check.json",
+      "sha256": "09ffc2bd2d576d47634c8affa0bff3839bc3e4e28cb245d45c41bfab82fba580"
+    },
+    {
+      "path": "results/spatial_units.csv",
+      "sha256": "303a0ccac685393467e7f830e64e7b5d4a76649dc032711b506499d50ce755b3"
+    },
+    {
+      "path": "results/spatial_units_all244.csv",
+      "sha256": "4da22ec07db2a9295741ec7e91ef1447ef69d1d2cccea8ae3b43086ad7c332ab"
+    },
+    {
+      "path": "results/spatial_weights.csv",
+      "sha256": "26749a8a98fdb2f520dbb203b1c755a5eb72c989be0e002a73e466e32fcd8282"
+    },
+    {
+      "path": "results/spatial_weights_invdist.csv",
+      "sha256": "d86e4ac309b64b3ed7f1a37c258db20ea16cad7533a1fd6076cc343d2186fe0f"
+    },
+    {
+      "path": "results/spatial_weights_knn5.csv",
+      "sha256": "31508f846ef90d559ff298fee932af07936465bf6dc0f5398154017dac840825"
+    },
+    {
+      "path": "results/spatial_weights_knn5_all244.csv",
+      "sha256": "95610b06524c70d37b2a811f28e76930e22c0958222f37523622bba007db68b5"
+    },
+    {
+      "path": "results/spatial_weights_knn8.csv",
+      "sha256": "db61a0feec272a637dbc1506b034a00ef6cfdce67b183133d9eb46853a66e28a"
+    },
+    {
+      "path": "results/summary_statistics.json",
+      "sha256": "45bcffb1da06e6ee4e8e30ccdbe10ddd60e93cfc746bf0ed1f70a2be8e954750"
+    },
+    {
+      "path": "results/table_render_report.json",
+      "sha256": "ba5094679776b01060d6ab0fb5e30186cb37c58bbfb59da9f8bd7863851e4458"
+    },
+    {
+      "path": "results/table_spec.json",
+      "sha256": "127b8bd0a97eebf08220edb8db4516d0d0b3320db2d3086ca0479d6367d17fd5"
+    }
+  ],
+  "provenance": {
+    "files": 67,
+    "edges": {
+      "citation": 8,
+      "data": 1,
+      "estimation": 1,
+      "figure": 5,
+      "table_cell": 65
+    }
+  },
+  "verification": [
+    {
+      "check": "integrity",
+      "status": "PASS",
+      "detail": "67 files hash-verified against provenance.json; 65 table cell(s) traced in the derivation graph; 5 change(s) after export recorded as amendments (README.md, paper/paper.pdf, paper/paper.tex)"
+    },
+    {
+      "check": "numbers",
+      "status": "PASS",
+      "detail": "65 table cell(s) are source values at the precision shown; text (not gating): 90 of 99 number(s) are source values, 2 differ from the quantity named nearby, 7 untraced"
+    },
+    {
+      "check": "tables",
+      "status": "PASS",
+      "detail": "3 table(s) reproduce byte-identically from the sidecars"
+    },
+    {
+      "check": "spec",
+      "status": "SKIP",
+      "detail": "no design/identification_spec.json"
+    },
+    {
+      "check": "results contract",
+      "status": "PASS",
+      "detail": "spatial results (spatial statistics and maps) are complete and consistent"
+    },
+    {
+      "check": "method checks",
+      "status": "PASS",
+      "detail": "spatial: units=236, moran_gdp_queen=0.3705, moran_gdp_knn5=0.2659, moran_gdp_knn8=0.2649, moran_gdp_invdist=0.089, moran_lngdp_queen=0.4817, lisa=True"
+    },
+    {
+      "check": "citations",
+      "status": "PASS",
+      "detail": "8 cite key(s) resolve in refs.bib; snapshot: 6 verified, 2 unverifiable at run time"
+    },
+    {
+      "check": "results from code",
+      "status": "PASS",
+      "detail": "written by the last run of the shipped script: estimation_results.json ← run_estimation.py"
+    }
+  ],
+  "dependencies": {
+    "uses": [
+      "template:spatial-analysis",
+      "agent:data_architect",
+      "agent:data_analyst",
+      "agent:idea_developer",
+      "agent:literature_scanner",
+      "agent:econometrics_specialist",
+      "agent:paper_drafter",
+      "agent:writing_reviewer",
+      "agent:data_reviewer",
+      "agent:methods_reviewer",
+      "agent:technical_reviewer",
+      "agent:plausibility_reviewer",
+      "agent:patch_revisor",
+      "agent:replication_packager",
+      "skill:e2er/base/researcher",
+      "skill:e2er/data/cleaning",
+      "skill:e2er/data/data-tables",
+      "skill:e2er/data/eurostat",
+      "skill:e2er/data/exoplanets",
+      "skill:e2er/data/figure-spec",
+      "skill:e2er/data/fred",
+      "skill:e2er/data/gaia",
+      "skill:e2er/data/gisco",
+      "skill:e2er/data/github",
+      "skill:e2er/data/gmd",
+      "skill:e2er/data/gutenberg",
+      "skill:e2er/data/nasa_power",
+      "skill:e2er/data/naturalearth",
+      "skill:e2er/data/noaa",
+      "skill:e2er/data/owid",
+      "skill:e2er/data/query-data",
+      "skill:e2er/data/spatial-results-schema",
+      "skill:e2er/data/spatial-statistics",
+      "skill:e2er/data/summary-statistics-schema",
+      "skill:e2er/data/table-spec",
+      "skill:e2er/data/usgs",
+      "skill:e2er/data/who_gho",
+      "skill:e2er/data/worldbank",
+      "skill:e2er/data/yfinance",
+      "skill:e2er/econometrics/panel-data",
+      "skill:e2er/reasoning/anti-slop",
+      "skill:e2er/reasoning/creative-ideation",
+      "skill:e2er/reasoning/novelty",
+      "skill:e2er/review/consistency-check",
+      "skill:e2er/review/data-quality",
+      "skill:e2er/review/domain-plausibility",
+      "skill:e2er/review/methods-review",
+      "skill:e2er/review/technical-review",
+      "skill:e2er/review/writing-quality",
+      "skill:e2er/synthesis/context-builder",
+      "skill:e2er/synthesis/replication-package",
+      "skill:e2er/writing/cite-numbers-by-source",
+      "skill:e2er/writing/paper-structure",
+      "skill:e2er/writing/personal-style",
+      "skill:e2er/writing/scoped-revision"
+    ],
+    "derived_from": []
+  },
+  "repository": {
+    "url": "https://github.com/bhanneke/e2er-demos",
+    "path": "eu-regional-gdp-spatial-clustering",
+    "host": "github",
+    "left_out": [
+      {
+        "path": "data/data.db",
+        "reason": "the terms of Eurostat GISCO (GISCO) do not allow passing the data on"
+      },
+      {
+        "path": "results/figure_spec.json",
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (an array of 236 values at figures[4].y); its terms do not allow passing them on"
+      },
+      {
+        "path": "results/moran_scatter_data.csv",
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (236 rows); its terms do not allow passing them on"
+      },
+      {
+        "path": "results/spatial_units.csv",
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (236 rows); its terms do not allow passing them on"
+      },
+      {
+        "path": "results/spatial_units_all244.csv",
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (244 rows); its terms do not allow passing them on"
+      },
+      {
+        "path": "results/spatial_weights.csv",
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,039 rows); its terms do not allow passing them on"
+      },
+      {
+        "path": "results/spatial_weights_invdist.csv",
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (55,460 rows); its terms do not allow passing them on"
+      },
+      {
+        "path": "results/spatial_weights_knn5.csv",
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,180 rows); its terms do not allow passing them on"
+      },
+      {
+        "path": "results/spatial_weights_knn5_all244.csv",
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,220 rows); its terms do not allow passing them on"
+      },
+      {
+        "path": "results/spatial_weights_knn8.csv",
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,888 rows); its terms do not allow passing them on"
+      }
+    ]
+  },
+  "license": null,
+  "purpose": "demonstration",
+  "availability": {
+    "data": {
+      "access": "private"
+    },
+    "code": {
+      "access": "public",
+      "url": "https://github.com/bhanneke/e2er-demos"
+    }
+  },
+  "dossier": {
+    "id": "sha256:7ba4c56d920388be61b10b2b34a318226736f09e10b04d2bc6f74f830d110485",
+    "url": "https://e2er.org/d/7ba4c56d920388be",
+    "doc": {
+      "study": {
+        "title": "How does GDP per capita in purchasing power standards vary across the EU's NU..."
+      },
+      "schema": "e2er-dossier/0.6",
+      "e2er": {
+        "version": "0.16.1",
+        "repository": null,
+        "commit": null,
+        "uncommitted_changes": false,
+        "segments": [
+          {
+            "commit": null,
+            "version": "0.16.1",
+            "from": "2026-10-14T17:35:43Z",
+            "template": "spatial-analysis",
+            "skills": "recorded at dispatch",
+            "steps": 17
+          },
+          {
+            "commit": null,
+            "version": "0.16.1",
+            "from": "2026-10-14T17:47:50Z",
+            "template": "spatial-analysis",
+            "skills": "recorded at dispatch",
+            "steps": 2
+          },
+          {
+            "commit": null,
+            "version": "0.16.1",
+            "from": "2026-10-14T17:48:44Z",
+            "template": "spatial-analysis",
+            "skills": "recorded at dispatch",
+            "steps": 10
+          }
+        ],
+        "exported_with": "0.17.0"
+      },
+      "run": {
+        "template": "spatial-analysis",
+        "mode": "single_pass",
+        "governance": "full",
+        "backend": "claude_code",
+        "models": [
+          {
+            "backend": "claude_code",
+            "model": "sonnet"
+          }
+        ],
+        "exported": "20261015",
+        "outcome": {
+          "status": "completed",
+          "at": "2026-10-14T17:57:46Z"
+        },
+        "internal_review": {
+          "score": 5.86,
+          "scale": 10,
+          "combined": "weighted average",
+          "reviewers": {
+            "technical_reviewer": 5.5,
+            "writing_reviewer": 6.5,
+            "data_reviewer": 5.5,
+            "methods_reviewer": 6.0,
+            "plausibility_reviewer": 6.0
+          },
+          "weights": {
+            "technical_reviewer": 1.0,
+            "writing_reviewer": 0.75,
+            "data_reviewer": 1.25,
+            "methods_reviewer": 1.5,
+            "plausibility_reviewer": 1.0
+          },
+          "rounds": 1
+        },
+        "events": [
+          {
+            "event": "backend_identity",
+            "segment": 0,
+            "at": "2026-10-14T17:35:43Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "cli": "claude-medium",
+            "cli_version": "2.1.299 (Claude Code)"
+          },
+          {
+            "event": "method_sources",
+            "segment": 0,
+            "at": "2026-10-14T17:35:43Z",
+            "keys": [
+              "moran1950notes",
+              "anselin1995local",
+              "anselin1988spatial",
+              "getis1992analysis",
+              "openshaw1984modifiable"
+            ]
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 0,
+            "at": "2026-10-14T17:37:10Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 12,
+            "input_tokens": 24,
+            "cache_read_tokens": 794559,
+            "cache_write_tokens": 66794,
+            "output_tokens": 6669,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 0,
+            "at": "2026-10-14T17:39:06Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": false,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 12,
+            "input_tokens": 20,
+            "cache_read_tokens": 845597,
+            "cache_write_tokens": 92865,
+            "output_tokens": 15517,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 0,
+            "at": "2026-10-14T17:39:33Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 6,
+            "input_tokens": 12,
+            "cache_read_tokens": 439598,
+            "cache_write_tokens": 75496,
+            "output_tokens": 1858,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 0,
+            "at": "2026-10-14T17:40:53Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 4,
+            "input_tokens": 10,
+            "cache_read_tokens": 170968,
+            "cache_write_tokens": 35004,
+            "output_tokens": 8676,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 0,
+            "at": "2026-10-14T17:41:24Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 1,
+            "input_tokens": 4,
+            "cache_read_tokens": 47571,
+            "cache_write_tokens": 33936,
+            "output_tokens": 15373,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 0,
+            "at": "2026-10-14T17:43:34Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": false,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 9,
+            "input_tokens": 16,
+            "cache_read_tokens": 396348,
+            "cache_write_tokens": 57675,
+            "output_tokens": 20422,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 0,
+            "at": "2026-10-14T17:44:05Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 9,
+            "input_tokens": 18,
+            "cache_read_tokens": 389882,
+            "cache_write_tokens": 35208,
+            "output_tokens": 2045,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 0,
+            "at": "2026-10-14T17:44:56Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 17,
+            "input_tokens": 24,
+            "cache_read_tokens": 594376,
+            "cache_write_tokens": 43634,
+            "output_tokens": 4864,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "drafter_sent_out",
+            "step": "initial",
+            "segment": 0,
+            "at": "2026-10-14T17:44:56Z",
+            "reason": "no draft after the initial phase"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 0,
+            "at": "2026-10-14T17:46:27Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": false,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 9,
+            "input_tokens": 14,
+            "cache_read_tokens": 356621,
+            "cache_write_tokens": 57797,
+            "output_tokens": 12091,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 0,
+            "at": "2026-10-14T17:46:46Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 6,
+            "input_tokens": 10,
+            "cache_read_tokens": 216935,
+            "cache_write_tokens": 37333,
+            "output_tokens": 1197,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "awaiting_review",
+            "step": "initial",
+            "segment": 0,
+            "at": "2026-10-14T17:46:46Z",
+            "stage": "initial"
+          },
+          {
+            "event": "backend_identity",
+            "segment": 1,
+            "at": "2026-10-14T17:47:50Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "cli": "claude-medium",
+            "cli_version": "2.1.299 (Claude Code)"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 1,
+            "at": "2026-10-14T17:48:26Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 15,
+            "input_tokens": 10,
+            "cache_read_tokens": 249564,
+            "cache_write_tokens": 50387,
+            "output_tokens": 4341,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "awaiting_review",
+            "step": "initial",
+            "segment": 1,
+            "at": "2026-10-14T17:48:26Z",
+            "stage": "initial"
+          },
+          {
+            "event": "backend_identity",
+            "segment": 2,
+            "at": "2026-10-14T17:48:44Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "cli": "claude-medium",
+            "cli_version": "2.1.299 (Claude Code)"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 2,
+            "at": "2026-10-14T17:50:49Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 1,
+            "input_tokens": 4,
+            "cache_read_tokens": 84343,
+            "cache_write_tokens": 69525,
+            "output_tokens": 14560,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 2,
+            "at": "2026-10-14T17:51:01Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 1,
+            "input_tokens": 4,
+            "cache_read_tokens": 87362,
+            "cache_write_tokens": 73597,
+            "output_tokens": 15681,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 2,
+            "at": "2026-10-14T17:52:09Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 1,
+            "input_tokens": 4,
+            "cache_read_tokens": 85923,
+            "cache_write_tokens": 64945,
+            "output_tokens": 8447,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 2,
+            "at": "2026-10-14T17:52:27Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 1,
+            "input_tokens": 4,
+            "cache_read_tokens": 84146,
+            "cache_write_tokens": 82518,
+            "output_tokens": 27619,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 2,
+            "at": "2026-10-14T17:54:58Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 1,
+            "input_tokens": 4,
+            "cache_read_tokens": 82375,
+            "cache_write_tokens": 82491,
+            "output_tokens": 29323,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 2,
+            "at": "2026-10-14T17:56:15Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 6,
+            "input_tokens": 10,
+            "cache_read_tokens": 243453,
+            "cache_write_tokens": 63593,
+            "output_tokens": 9829,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          },
+          {
+            "event": "attempt_usage",
+            "segment": 2,
+            "at": "2026-10-14T17:57:46Z",
+            "backend": "claude_code",
+            "model": "sonnet",
+            "success": true,
+            "stop_reason": "end_turn",
+            "turns": 0,
+            "tool_calls": 8,
+            "input_tokens": 16,
+            "cache_read_tokens": 402400,
+            "cache_write_tokens": 55409,
+            "output_tokens": 13403,
+            "peak_prompt_tokens": 0,
+            "summarised_exchanges": 0,
+            "cost_usd": "0"
+          }
+        ]
+      },
+      "credit": {
+        "template": "spatial-analysis",
+        "entries": [
+          {
+            "creator": "P. A. P. Moran",
+            "role": "method",
+            "relation": "cites",
+            "kind": "article",
+            "title": "Notes on Continuous Stochastic Phenomena",
+            "publisher": "Biometrika 37(1/2), 17-23",
+            "published": "1950-06",
+            "url": "https://doi.org/10.2307/2332142",
+            "accessed": "2026-10-11",
+            "cite_key": "moran1950notes"
+          },
+          {
+            "creator": "Luc Anselin",
+            "role": "method",
+            "relation": "cites",
+            "kind": "article",
+            "title": "Local Indicators of Spatial Association—LISA",
+            "publisher": "Geographical Analysis 27(2), 93-115",
+            "published": "1995-04",
+            "url": "https://doi.org/10.1111/j.1538-4632.1995.tb00338.x",
+            "accessed": "2026-10-11",
+            "cite_key": "anselin1995local"
+          },
+          {
+            "creator": "Luc Anselin",
+            "role": "method",
+            "relation": "cites",
+            "kind": "book",
+            "title": "Spatial Econometrics: Methods and Models",
+            "publisher": "Springer Netherlands (Kluwer), Studies in Operational Regional Science",
+            "published": "1988",
+            "url": "https://doi.org/10.1007/978-94-015-7799-1",
+            "accessed": "2026-10-11",
+            "cite_key": "anselin1988spatial"
+          },
+          {
+            "creator": "Arthur Getis and J. K. Ord",
+            "role": "method",
+            "relation": "cites",
+            "kind": "article",
+            "title": "The Analysis of Spatial Association by Use of Distance Statistics",
+            "publisher": "Geographical Analysis 24(3), 189-206",
+            "published": "1992-07",
+            "url": "https://doi.org/10.1111/j.1538-4632.1992.tb00261.x",
+            "accessed": "2026-10-11",
+            "cite_key": "getis1992analysis"
+          },
+          {
+            "creator": "Stan Openshaw",
+            "role": "method",
+            "relation": "cites",
+            "kind": "book",
+            "title": "The Modifiable Areal Unit Problem (Concepts and Techniques in Modern Geography 38)",
+            "publisher": "Geo Books, Norwich. ISBN 0-86094-134-5 (no DOI)",
+            "published": "1984",
+            "url": "https://github.com/qmrg/CATMOG/blob/master/38-maup-openshaw.pdf",
+            "accessed": "2026-10-11",
+            "cite_key": "openshaw1984modifiable"
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "agent:data_analyst",
+          "kind": "agent",
+          "name": "data_analyst",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:data_architect",
+          "kind": "agent",
+          "name": "data_architect",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:data_reviewer",
+          "kind": "agent",
+          "name": "data_reviewer",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:econometrics_specialist",
+          "kind": "agent",
+          "name": "econometrics_specialist",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:idea_developer",
+          "kind": "agent",
+          "name": "idea_developer",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:literature_scanner",
+          "kind": "agent",
+          "name": "literature_scanner",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:methods_reviewer",
+          "kind": "agent",
+          "name": "methods_reviewer",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:paper_drafter",
+          "kind": "agent",
+          "name": "paper_drafter",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:patch_revisor",
+          "kind": "agent",
+          "name": "patch_revisor",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:plausibility_reviewer",
+          "kind": "agent",
+          "name": "plausibility_reviewer",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:replication_packager",
+          "kind": "agent",
+          "name": "replication_packager",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:technical_reviewer",
+          "kind": "agent",
+          "name": "technical_reviewer",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "agent:writing_reviewer",
+          "kind": "agent",
+          "name": "writing_reviewer",
+          "pin": {
+            "path": "src/core/specialists/registry.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "connector:claude-code",
+          "kind": "connector",
+          "name": "claude-code",
+          "pin": {
+            "path": "src/modules/llm/claude_code.py",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/base/researcher",
+          "kind": "skill",
+          "name": "researcher",
+          "pin": {
+            "path": "skills/files/base/researcher.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/cleaning",
+          "kind": "skill",
+          "name": "cleaning",
+          "pin": {
+            "path": "skills/files/data/cleaning.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/data-tables",
+          "kind": "skill",
+          "name": "data-tables",
+          "pin": {
+            "path": "skills/files/data/data-tables.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/eurostat",
+          "kind": "skill",
+          "name": "eurostat",
+          "pin": {
+            "path": "skills/files/data/eurostat.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/exoplanets",
+          "kind": "skill",
+          "name": "exoplanets",
+          "pin": {
+            "path": "skills/files/data/exoplanets.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/figure-spec",
+          "kind": "skill",
+          "name": "figure-spec",
+          "pin": {
+            "path": "skills/files/data/figure-spec.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/fred",
+          "kind": "skill",
+          "name": "fred",
+          "pin": {
+            "path": "skills/files/data/fred.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gaia",
+          "kind": "skill",
+          "name": "gaia",
+          "pin": {
+            "path": "skills/files/data/gaia.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gisco",
+          "kind": "skill",
+          "name": "gisco",
+          "pin": {
+            "path": "skills/files/data/gisco.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/github",
+          "kind": "skill",
+          "name": "github",
+          "pin": {
+            "path": "skills/files/data/github.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gmd",
+          "kind": "skill",
+          "name": "gmd",
+          "pin": {
+            "path": "skills/files/data/gmd.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gutenberg",
+          "kind": "skill",
+          "name": "gutenberg",
+          "pin": {
+            "path": "skills/files/data/gutenberg.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/nasa_power",
+          "kind": "skill",
+          "name": "nasa_power",
+          "pin": {
+            "path": "skills/files/data/nasa_power.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/naturalearth",
+          "kind": "skill",
+          "name": "naturalearth",
+          "pin": {
+            "path": "skills/files/data/naturalearth.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/noaa",
+          "kind": "skill",
+          "name": "noaa",
+          "pin": {
+            "path": "skills/files/data/noaa.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/owid",
+          "kind": "skill",
+          "name": "owid",
+          "pin": {
+            "path": "skills/files/data/owid.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/query-data",
+          "kind": "skill",
+          "name": "query-data",
+          "pin": {
+            "path": "skills/files/data/query-data.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/spatial-results-schema",
+          "kind": "skill",
+          "name": "spatial-results-schema",
+          "pin": {
+            "path": "skills/files/data/spatial-results-schema.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/spatial-statistics",
+          "kind": "skill",
+          "name": "spatial-statistics",
+          "pin": {
+            "path": "skills/files/data/spatial-statistics.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/summary-statistics-schema",
+          "kind": "skill",
+          "name": "summary-statistics-schema",
+          "pin": {
+            "path": "skills/files/data/summary-statistics-schema.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/table-spec",
+          "kind": "skill",
+          "name": "table-spec",
+          "pin": {
+            "path": "skills/files/data/table-spec.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/usgs",
+          "kind": "skill",
+          "name": "usgs",
+          "pin": {
+            "path": "skills/files/data/usgs.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/who_gho",
+          "kind": "skill",
+          "name": "who_gho",
+          "pin": {
+            "path": "skills/files/data/who_gho.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/worldbank",
+          "kind": "skill",
+          "name": "worldbank",
+          "pin": {
+            "path": "skills/files/data/worldbank.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/data/yfinance",
+          "kind": "skill",
+          "name": "yfinance",
+          "pin": {
+            "path": "skills/files/data/yfinance.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/econometrics/panel-data",
+          "kind": "skill",
+          "name": "panel-data",
+          "pin": {
+            "path": "skills/files/econometrics/panel-data.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/anti-slop",
+          "kind": "skill",
+          "name": "anti-slop",
+          "pin": {
+            "path": "skills/files/reasoning/anti-slop.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/creative-ideation",
+          "kind": "skill",
+          "name": "creative-ideation",
+          "pin": {
+            "path": "skills/files/reasoning/creative-ideation.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/novelty",
+          "kind": "skill",
+          "name": "novelty",
+          "pin": {
+            "path": "skills/files/reasoning/novelty.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/review/consistency-check",
+          "kind": "skill",
+          "name": "consistency-check",
+          "pin": {
+            "path": "skills/files/review/consistency-check.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/review/data-quality",
+          "kind": "skill",
+          "name": "data-quality",
+          "pin": {
+            "path": "skills/files/review/data-quality.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/review/domain-plausibility",
+          "kind": "skill",
+          "name": "domain-plausibility",
+          "pin": {
+            "path": "skills/files/review/domain-plausibility.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/review/methods-review",
+          "kind": "skill",
+          "name": "methods-review",
+          "pin": {
+            "path": "skills/files/review/methods-review.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/review/technical-review",
+          "kind": "skill",
+          "name": "technical-review",
+          "pin": {
+            "path": "skills/files/review/technical-review.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/review/writing-quality",
+          "kind": "skill",
+          "name": "writing-quality",
+          "pin": {
+            "path": "skills/files/review/writing-quality.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/synthesis/context-builder",
+          "kind": "skill",
+          "name": "context-builder",
+          "pin": {
+            "path": "skills/files/synthesis/context-builder.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/synthesis/replication-package",
+          "kind": "skill",
+          "name": "replication-package",
+          "pin": {
+            "path": "skills/files/synthesis/replication-package.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/cite-numbers-by-source",
+          "kind": "skill",
+          "name": "cite-numbers-by-source",
+          "pin": {
+            "path": "skills/files/writing/cite-numbers-by-source.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/paper-structure",
+          "kind": "skill",
+          "name": "paper-structure",
+          "pin": {
+            "path": "skills/files/writing/paper-structure.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/personal-style",
+          "kind": "skill",
+          "name": "personal-style",
+          "pin": {
+            "path": "skills/files/writing/personal-style.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/scoped-revision",
+          "kind": "skill",
+          "name": "scoped-revision",
+          "pin": {
+            "path": "skills/files/writing/scoped-revision.md",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        },
+        {
+          "id": "template:spatial-analysis",
+          "kind": "template",
+          "name": "spatial-analysis",
+          "pin": {
+            "path": "pipelines/spatial-analysis.toml",
+            "note": "unresolved: the run recorded no E2ER commit"
+          }
+        }
+      ],
+      "data": [
+        {
+          "path": "data/data.db",
+          "sha256": "203608577d4265de599e77e07020351feb5cd5fb778499bb82f6b04cdef56391"
+        },
+        {
+          "path": "data/data_dictionary.json",
+          "sha256": "1adbc1ae6fd29599587dfa40adccc0418d58393f0d6d94414f7f42110d7f5aa2"
+        },
+        {
+          "path": "data/data_sources.json",
+          "sha256": "48cf17876f49ecf08cf877360afeb6155fc372bdcb88d2721876db4473ae3591"
+        },
+        {
+          "path": "data/data_summary.md",
+          "sha256": "c59811c7c668b3632ff52edf2e7949fcafb8b8727860879ab864f00eca249dad"
+        }
+      ],
+      "data_sources": [
+        {
+          "connector": "eurostat",
+          "dataset": "Eurostat database (dissemination API), European Commission",
+          "version": "2026-02-10T11:00:00+0100",
+          "table": "gdp_pps_nuts2",
+          "saved_to": "data/gdp_pps_nuts2.csv",
+          "licence": "Eurostat copyright notice (https://ec.europa.eu/eurostat/en/help/copyright-notice): \"Reuse of statistical data, metadata, publications, and other dissemination tools published on this website for commercial or non-commercial purposes is authorised provided the source is acknowledged. The reuse policy of the European Commission is implemented by the Decision of 12 December 2011.\" \"The following Eurostat data and documents may not be reused for commercial purposes, but non-commercial reuse is possible without restriction: Data identified as belonging to sources other than Eurostat. […] Data for countries other than: Member States of the European Union (EU); Member States of the European Free Trade Association (EFTA); official EU acceding and candidate countries.\" \"When reuse involves translations of publications or modifications to the data or text, this must be stated clearly to the end user of the information. A disclaimer regarding the non-responsibility of Eurostat shall be included.\"",
+          "terms": "https://ec.europa.eu/eurostat/en/help/copyright-notice",
+          "citation": "Eurostat, Gross domestic product (GDP) at current market prices by NUTS 2 region (nama_10r_2gdp). Source: https://doi.org/10.2908/NAMA_10R_2GDP, 2026-10-14. Customised version: Source: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10r_2gdp?lang=en&unit=PPS_EU27_2020_HAB&geoLevel=nuts2&sinceTimePeriod=2015&untilTimePeriod=2024, 2026-10-14.",
+          "cite_key": "Eurostat_Database",
+          "series": "Eurostat nama_10r_2gdp: Gross domestic product (GDP) at current market prices by NUTS 2 region (unit=PPS_EU27_2020_HAB, nuts2), 2015–2024",
+          "retrieved_at": "2026-10-14T17:36:16Z",
+          "terms_summary": "Reuse for commercial or non-commercial purposes is authorised provided the source is acknowledged; data of non-Eurostat sources and of countries outside the EU, EFTA and candidate countries may be reused non-commercially only. Modified data must say so.",
+          "citation_by": "source",
+          "link": "https://ec.europa.eu/eurostat/databrowser/view/nama_10r_2gdp/default/table?lang=en",
+          "doi": "https://doi.org/10.2908/NAMA_10R_2GDP",
+          "files": [
+            {
+              "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10r_2gdp?lang=en&unit=PPS_EU27_2020_HAB&geoLevel=nuts2&sinceTimePeriod=2015&untilTimePeriod=2024",
+              "sha256": "66a967d8dcd45c2002635372ddc0d14460daacee0c06ba914ea36fb9c4a28c45"
+            }
+          ]
+        },
+        {
+          "connector": "gisco",
+          "dataset": "GISCO geographical data (NUTS regions, countries), Eurostat",
+          "version": "NUTS 2024",
+          "table": "nuts2_boundaries",
+          "licence": "GISCO download terms (https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units): \"The Commission agrees to grant the non-exclusive and non-transferable right to use and process the Eurostat/GISCO geographical data downloaded from this page (the 'data'). The permission to use the data is granted on condition that: the data will not be used for commercial purposes the source will be acknowledged. A copyright notice, as specified below, must be visible on any printed or electronic publication using the data downloaded from this page.\" Notice: © EuroGeographics for the administrative boundaries.",
+          "terms": "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units",
+          "citation": "Eurostat, GISCO. Territorial units for statistics (NUTS), boundaries. European Commission. https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics. © EuroGeographics for the administrative boundaries.",
+          "cite_key": "Eurostat_GISCO_NUTS",
+          "series": "NUTS 2 regions, NUTS 2024, 1:20 million, EPSG:3035",
+          "retrieved_at": "2026-10-14T17:36:20Z",
+          "terms_summary": "Use and processing for non-commercial purposes, with the source acknowledged and the notice '© EuroGeographics for the administrative boundaries' on every map and publication; the files may not be passed on.",
+          "citation_by": "e2er",
+          "link": "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics",
+          "files": [
+            {
+              "url": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_20M_2024_3035_LEVL_2.geojson",
+              "sha256": "d1d2bfbc44c7503fd670da2a916e9f570d3a20af3c10571bd732a84189faf808"
+            }
+          ]
+        },
+        {
+          "connector": "eurostat",
+          "dataset": "Eurostat database (dissemination API), European Commission",
+          "version": "2026-08-28T23:00:00+0200",
+          "table": "pop_nuts2",
+          "saved_to": "data/pop_nuts2.csv",
+          "licence": "Eurostat copyright notice (https://ec.europa.eu/eurostat/en/help/copyright-notice): \"Reuse of statistical data, metadata, publications, and other dissemination tools published on this website for commercial or non-commercial purposes is authorised provided the source is acknowledged. The reuse policy of the European Commission is implemented by the Decision of 12 December 2011.\" \"The following Eurostat data and documents may not be reused for commercial purposes, but non-commercial reuse is possible without restriction: Data identified as belonging to sources other than Eurostat. […] Data for countries other than: Member States of the European Union (EU); Member States of the European Free Trade Association (EFTA); official EU acceding and candidate countries.\" \"When reuse involves translations of publications or modifications to the data or text, this must be stated clearly to the end user of the information. A disclaimer regarding the non-responsibility of Eurostat shall be included.\"",
+          "terms": "https://ec.europa.eu/eurostat/en/help/copyright-notice",
+          "citation": "Eurostat, Population on 1 January by age, sex and NUTS 2 region (demo_r_d2jan). Source: https://doi.org/10.2908/DEMO_R_D2JAN, 2026-10-14. Customised version: Source: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_r_d2jan?lang=en&sex=T&age=TOTAL&geoLevel=nuts2&sinceTimePeriod=2024&untilTimePeriod=2024, 2026-10-14.",
+          "cite_key": "Eurostat_Database",
+          "series": "Eurostat demo_r_d2jan: Population on 1 January by age, sex and NUTS 2 region (sex=T, age=TOTAL, nuts2), 2024–2024",
+          "retrieved_at": "2026-10-14T17:36:34Z",
+          "terms_summary": "Reuse for commercial or non-commercial purposes is authorised provided the source is acknowledged; data of non-Eurostat sources and of countries outside the EU, EFTA and candidate countries may be reused non-commercially only. Modified data must say so.",
+          "citation_by": "source",
+          "link": "https://ec.europa.eu/eurostat/databrowser/view/demo_r_d2jan/default/table?lang=en",
+          "doi": "https://doi.org/10.2908/DEMO_R_D2JAN",
+          "files": [
+            {
+              "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_r_d2jan?lang=en&sex=T&age=TOTAL&geoLevel=nuts2&sinceTimePeriod=2024&untilTimePeriod=2024",
+              "sha256": "47717976e8042a16634c9d9c4156c0866c122d8b9cbba4ef4325d2ce4497dc30"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "key": "Eurostat_Database",
+          "title": "Eurostat Database",
+          "source": "web"
+        },
+        {
+          "key": "pourpakdelfekr2026multispeed",
+          "title": "Multispeed Europe: human development index convergence clubs across subnational regions",
+          "source": "web",
+          "year": "2026",
+          "doi": "10.1080/00343404.2026.2632887"
+        },
+        {
+          "key": "moran1950notes",
+          "title": "Notes on Continuous Stochastic Phenomena",
+          "source": "template",
+          "year": "1950",
+          "doi": "10.2307/2332142"
+        },
+        {
+          "key": "anselin1995local",
+          "title": "Local Indicators of Spatial Association—LISA",
+          "source": "template",
+          "year": "1995",
+          "doi": "10.1111/j.1538-4632.1995.tb00338.x"
+        },
+        {
+          "key": "getis1992analysis",
+          "title": "The Analysis of Spatial Association by Use of Distance Statistics",
+          "source": "template",
+          "year": "1992",
+          "doi": "10.1111/j.1538-4632.1992.tb00261.x"
+        },
+        {
+          "key": "Eurostat_GISCO_NUTS",
+          "title": "GISCO: Territorial units for statistics (NUTS), boundaries",
+          "source": "web"
+        },
+        {
+          "key": "openshaw1984modifiable",
+          "title": "The Modifiable Areal Unit Problem (Concepts and Techniques in Modern Geography 38)",
+          "source": "template",
+          "year": "1984"
+        },
+        {
+          "key": "anselin1988spatial",
+          "title": "Spatial Econometrics: Methods and Models",
+          "source": "template",
+          "year": "1988",
+          "doi": "10.1007/978-94-015-7799-1"
+        }
+      ],
+      "workflow": [
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "data_architect",
+          "segment": 0,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:36:02Z",
+          "ended": "2026-10-14T17:37:10Z",
+          "accepted": true,
+          "output": {
+            "file": "data/data_dictionary.json",
+            "sha256": "5a9208e672af562222981cbec7678091f665206264bf982fdae7dd9cf299ff4a"
+          },
+          "outputs": [
+            {
+              "file": "data/data_dictionary.json",
+              "sha256": "5a9208e672af562222981cbec7678091f665206264bf982fdae7dd9cf299ff4a"
+            },
+            {
+              "file": "design/spatial_design.json",
+              "sha256": "bb5dec86615e6dc3f2066e41a25f01351a0a0748363f00ae7a13cfacc65be28b"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "contracts",
+          "segment": 0,
+          "passed": false,
+          "enforced": true,
+          "at": "2026-10-14T17:39:06Z",
+          "detail": "data.db: data_dictionary.json declares tables that were not loaded — loaded without values: gdp_pps_nuts2.flag: 535 of 2826 non-null (needs 90%); nuts2_boundaries.mount_type: 263 of 299 non-null (needs 90%); nuts2_boundaries.urbn_type: 260 of 299 non-null (needs 90%); nuts2_boundaries.coast_type: 260 of 299 non-null (needs 90%); pop_nuts2.flag: 35 of 292 non-null (needs 90%). Tables in data.db: gdp_pps_nuts2 (2826 rows), gdp_pps_sample (236 rows), nuts2_boundaries (299 rows), pop_nuts2 (292 rows). Load each series with `e2er-data ... --table <name>`; a table whose values are NULL was not loaded (check the connector's error, e.g. an API key)."
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "data_analyst",
+          "segment": 0,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:37:10Z",
+          "ended": "2026-10-14T17:39:06Z",
+          "accepted": false,
+          "stopped_by": "contract violation: data.db: data_dictionary.json declares tables that were not loaded — loaded without values: gdp_pps_nuts2.flag: 535 of 2826 non-null (needs 90%); nuts2_boundaries.mount_type: 263 of 299 non-null (needs 90%); nuts2_boundaries.urbn_type: 260 of 299 non-null (needs 90%); nuts2_boundaries.coast_type: 260 of 299 non-null (needs 90%); pop_nuts2.flag: 35 of 292 non-null (needs 90%). Tables in data.db: gdp_pps_nuts2 (2826 rows), gdp_pps_sample (236 rows), nuts2_boundaries (299 rows), pop_nuts2 (292 rows). Load each series with `e2er-data ... --table <name>`; a table whose values are NULL was not loaded (check the connector's error, e.g. an API key).",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "c59811c7c668b3632ff52edf2e7949fcafb8b8727860879ab864f00eca249dad"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "c59811c7c668b3632ff52edf2e7949fcafb8b8727860879ab864f00eca249dad"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "45bcffb1da06e6ee4e8e30ccdbe10ddd60e93cfc746bf0ed1f70a2be8e954750"
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "e46671dadfbb99207219f68b7df0cdcaf670288f65ff3b61cd9dddfa8ef08057"
+            }
+          ]
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "data_analyst",
+          "segment": 0,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:39:06Z",
+          "ended": "2026-10-14T17:39:33Z",
+          "accepted": true,
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "c59811c7c668b3632ff52edf2e7949fcafb8b8727860879ab864f00eca249dad",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "c59811c7c668b3632ff52edf2e7949fcafb8b8727860879ab864f00eca249dad",
+              "unchanged": true
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "45bcffb1da06e6ee4e8e30ccdbe10ddd60e93cfc746bf0ed1f70a2be8e954750",
+              "unchanged": true
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "e46671dadfbb99207219f68b7df0cdcaf670288f65ff3b61cd9dddfa8ef08057",
+              "unchanged": true
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "spatial_design",
+          "segment": 0,
+          "passed": true,
+          "enforced": true,
+          "at": "2026-10-14T17:39:33Z"
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "idea_developer",
+          "segment": 0,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:39:33Z",
+          "ended": "2026-10-14T17:40:53Z",
+          "accepted": true,
+          "output": {
+            "file": "design/paper_plan.md",
+            "sha256": "3c700e61734f4d16dbce8e9bb329464e6a3388d33c8b6853be6609a9498ec4eb"
+          }
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "literature_scanner",
+          "segment": 0,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:39:33Z",
+          "ended": "2026-10-14T17:41:24Z",
+          "accepted": true,
+          "output": {
+            "file": "design/literature_review.md",
+            "sha256": "349c50d088e410d383ed806b996f83e706ce03a4c51af2e63f6e35327dbf33be"
+          }
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "contracts",
+          "segment": 0,
+          "passed": false,
+          "enforced": true,
+          "at": "2026-10-14T17:43:34Z",
+          "detail": "estimation_results.json: spatial results contract: spatial_statistics.moran_gdp_knn5_all244.expected -0.004115 is not -1/(n_units - 1) = -0.00425532; spatial_statistics.sens_drop_Ireland.expected -0.00431 is not -1/(n_units - 1) = -0.00425532; spatial_statistics.sens_drop_top5.expected -0.004348 is not -1/(n_units - 1) = -0.00425532; spatial_statistics.sens_drop_capital_regions.expected -0.004808 is not -1/(n_units - 1) = -0.00425532. This study reports spatial statistics and maps; write estimation_results.json as the data/spatial-results-schema skill specifies (from the script that computes it, never by hand)."
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "econometrics_specialist",
+          "segment": 0,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:41:24Z",
+          "ended": "2026-10-14T17:43:34Z",
+          "accepted": false,
+          "stopped_by": "contract violation: estimation_results.json: spatial results contract: spatial_statistics.moran_gdp_knn5_all244.expected -0.004115 is not -1/(n_units - 1) = -0.00425532; spatial_statistics.sens_drop_Ireland.expected -0.00431 is not -1/(n_units - 1) = -0.00425532; spatial_statistics.sens_drop_top5.expected -0.004348 is not -1/(n_units - 1) = -0.00425532; spatial_statistics.sens_drop_capital_regions.expected -0.004808 is not -1/(n_units - 1) = -0.00425532. This study reports spatial statistics and maps; write estimation_results.json as the data/spatial-results-schema skill specifies (from the script that computes it, never by hand).",
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "c9ae7522be887de933d3c04211e502141679797b5eea812ff1fbadc98c94fb97"
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "c9ae7522be887de933d3c04211e502141679797b5eea812ff1fbadc98c94fb97"
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "80bf50130e411841040da6ed9a15ca8e95b434bea95380f212f78b3d269b6ae6"
+            }
+          ]
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "econometrics_specialist",
+          "segment": 0,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:43:34Z",
+          "ended": "2026-10-14T17:44:05Z",
+          "accepted": true,
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "c9ae7522be887de933d3c04211e502141679797b5eea812ff1fbadc98c94fb97",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "c9ae7522be887de933d3c04211e502141679797b5eea812ff1fbadc98c94fb97",
+              "unchanged": true
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "1f5f940107258897303648607ac6b6d9b7c5394c03430aefd37a2d4e31276d10"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "spatial_results",
+          "segment": 0,
+          "passed": false,
+          "enforced": true,
+          "at": "2026-10-14T17:44:05Z",
+          "detail": "(g) spatial_statistics.moran_gdp_knn5_all244: the reported Moran's I 0.27593 does not follow from spatial_units.csv and spatial_weights.csv (e2er computes 0.3705); (g) spatial_statistics.sens_drop_LU00: the reported Moran's I 0.41101 does not follow from spatial_units.csv and spatial_weights.csv (e2er computes 0.3705); (g) spatial_statistics.sens_drop_Ireland: the reported Moran's I 0.34177 does not follow from spatial_units.csv and spatial_weights.csv (e2er computes 0.3705); (g) spatial_statistics.sens_drop_top5: the reported Moran's I 0.42921 does not follow from spatial_units.csv and spatial_weights.csv (e2er computes 0.3705); (g) spatial_statistics.sens_drop_capital_regions: the reported Moran's I 0.6227 does not follow from spatial_units.csv and spatial_weights.csv (e2er computes 0.3705); (g) spatial_statistics.sens_within_country_demeaned: spatial_units.csv has no column gdp_pps minus national population-weighted mean; clusters.method needs a whole count"
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "econometrics_specialist",
+          "segment": 0,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:44:05Z",
+          "ended": "2026-10-14T17:44:56Z",
+          "accepted": true,
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "c9ae7522be887de933d3c04211e502141679797b5eea812ff1fbadc98c94fb97",
+            "unchanged": true
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "c9ae7522be887de933d3c04211e502141679797b5eea812ff1fbadc98c94fb97",
+              "unchanged": true
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "ee650d15050ef8a1f63572bd018358b18b6ffa786e6d65a2c65a03f6c79ef396"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "spatial_results",
+          "segment": 0,
+          "passed": true,
+          "enforced": true,
+          "at": "2026-10-14T17:44:56Z"
+        },
+        {
+          "type": "check",
+          "phase": "initial",
+          "check": "contracts",
+          "segment": 0,
+          "passed": false,
+          "enforced": true,
+          "at": "2026-10-14T17:46:27Z",
+          "detail": "paper_draft.tex: 2 construction(s) the researcher does not accept in a paper: \"Against this background\" in: Against this background, this paper asks how GDP per capita in PPS varies across EU NUTS-2 regions in 2024 and how strongly regions with high and low values cluster in space. (pivot to the contribution directly (for instance: To keep these quantities apart, we propose ...)); \"rather than\" in: Capital regions are typically income peaks surrounded by poorer neighbours, so they lower rather than create autocorrelation, and the clustering that remains is that of the broad, contiguous income belts. (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content"
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "paper_drafter",
+          "segment": 0,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:44:56Z",
+          "ended": "2026-10-14T17:46:27Z",
+          "accepted": false,
+          "stopped_by": "contract violation: paper_draft.tex: 2 construction(s) the researcher does not accept in a paper: \"Against this background\" in: Against this background, this paper asks how GDP per capita in PPS varies across EU NUTS-2 regions in 2024 and how strongly regions with high and low values cluster in space. (pivot to the contribution directly (for instance: To keep these quantities apart, we propose ...)); \"rather than\" in: Capital regions are typically income peaks surrounded by poorer neighbours, so they lower rather than create autocorrelation, and the clustering that remains is that of the broad, contiguous income belts. (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "1910d43eba8b417d3a5de6955813fd7865efdd338331799ede101b00706c6c44"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "1910d43eba8b417d3a5de6955813fd7865efdd338331799ede101b00706c6c44"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "127b8bd0a97eebf08220edb8db4516d0d0b3320db2d3086ca0479d6367d17fd5"
+            }
+          ]
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "paper_drafter",
+          "segment": 0,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:46:27Z",
+          "ended": "2026-10-14T17:46:46Z",
+          "accepted": true,
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "e6ddc6dc10f4628ac28b105f86a5abc108f3de1ce7d1eccf5fbf90a774b78291"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "e6ddc6dc10f4628ac28b105f86a5abc108f3de1ce7d1eccf5fbf90a774b78291"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "127b8bd0a97eebf08220edb8db4516d0d0b3320db2d3086ca0479d6367d17fd5",
+              "unchanged": true
+            }
+          ]
+        },
+        {
+          "type": "researcher",
+          "action": "send_back",
+          "phase": "initial",
+          "step": "initial",
+          "at": "2026-10-14T17:47:50Z",
+          "target": "paper_drafter",
+          "remark": "Corrections to paper_draft.tex, no new analysis: (1) Title: 'Rich Cores and Poor Peripheries' contradicts the paper's own finding (the clustering is national blocks; within countries none). Use a plain descriptive title, e.g. 'Spatial clustering of GDP per inhabitant across EU NUTS-2 regions, 2024'. (2) Abstract: there are three alternative weights (5 and 8 nearest neighbours, inverse distance), not four; the abstract's local clusters are uncorrected - add that after the false discovery rate correction 22 remain (20 low-low, one high-high, one high-low). (3) Introduction: 'the richest tenth of regions earns roughly 2.4 times the income of the poorest tenth' is wrong; say the 90th percentile is 2.4 times the 10th. (4) Local clusters: delete 'because the richest regions are fewer and more heterogeneous' (not tested). (5) Capital regions: the 27 dropped include whole single-region countries (EE00, LV00, LU00, CY00, MT00), and the drop leaves 3 regions without a neighbour (1 in the top-five variant); say both, and present 'income peaks surrounded by poorer neighbours' as a reading, not a finding. (6) Discussion: the demeaned Moran's I (0.020, p = 0.6) shows that regions' deviations from their national mean are not clustered; it does not test cross-border gradients - rewrite the sentence about 'cross-border gradients that a smooth core-periphery narrative would imply'. (7) Data: name the datasets (nama_10r_2gdp, unit PPS_EU27_2020_HAB; demo_r_d2jan) and add the sentence Eurostat's terms ask for: the statistics are computed by the authors from Eurostat data; Eurostat is not responsible for them. Keep the EuroGeographics notice in every map caption.",
+          "segment": 0
+        },
+        {
+          "type": "specialist",
+          "phase": "initial",
+          "specialist": "paper_drafter",
+          "segment": 1,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:47:50Z",
+          "ended": "2026-10-14T17:48:26Z",
+          "accepted": true,
+          "sent_back": {
+            "at": "2026-10-14T17:47:50Z",
+            "remark": "Corrections to paper_draft.tex, no new analysis: (1) Title: 'Rich Cores and Poor Peripheries' contradicts the paper's own finding (the clustering is national blocks; within countries none). Use a plain descriptive title, e.g. 'Spatial clustering of GDP per inhabitant across EU NUTS-2 regions, 2024'. (2) Abstract: there are three alternative weights (5 and 8 nearest neighbours, inverse distance), not four; the abstract's local clusters are uncorrected - add that after the false discovery rate correction 22 remain (20 low-low, one high-high, one high-low). (3) Introduction: 'the richest tenth of regions earns roughly 2.4 times the income of the poorest tenth' is wrong; say the 90th percentile is 2.4 times the 10th. (4) Local clusters: delete 'because the richest regions are fewer and more heterogeneous' (not tested). (5) Capital regions: the 27 dropped include whole single-region countries (EE00, LV00, LU00, CY00, MT00), and the drop leaves 3 regions without a neighbour (1 in the top-five variant); say both, and present 'income peaks surrounded by poorer neighbours' as a reading, not a finding. (6) Discussion: the demeaned Moran's I (0.020, p = 0.6) shows that regions' deviations from their national mean are not clustered; it does not test cross-border gradients - rewrite the sentence about 'cross-border gradients that a smooth core-periphery narrative would imply'. (7) Data: name the datasets (nama_10r_2gdp, unit PPS_EU27_2020_HAB; demo_r_d2jan) and add the sentence Eurostat's terms ask for: the statistics are computed by the authors from Eurostat data; Eurostat is not responsible for them. Keep the EuroGeographics notice in every map caption."
+          },
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "d954a0cf0922b724180dd5e0229b42d41e285f9b332ce8091205b828e7373c93"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "d954a0cf0922b724180dd5e0229b42d41e285f9b332ce8091205b828e7373c93"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "127b8bd0a97eebf08220edb8db4516d0d0b3320db2d3086ca0479d6367d17fd5",
+              "unchanged": true
+            }
+          ]
+        },
+        {
+          "type": "researcher",
+          "action": "approve",
+          "phase": "initial",
+          "step": "initial",
+          "at": "2026-10-14T17:48:44Z",
+          "segment": 1
+        },
+        {
+          "type": "check",
+          "phase": "estimation_gate",
+          "check": "estimation",
+          "segment": 2,
+          "passed": true,
+          "enforced": true,
+          "at": "2026-10-14T17:48:44Z"
+        },
+        {
+          "type": "check",
+          "phase": "review",
+          "check": "numbers",
+          "segment": 2,
+          "passed": true,
+          "enforced": true,
+          "at": "2026-10-14T17:48:44Z"
+        },
+        {
+          "type": "check",
+          "phase": "review",
+          "check": "citations",
+          "segment": 2,
+          "passed": true,
+          "enforced": true,
+          "at": "2026-10-14T17:48:47Z"
+        },
+        {
+          "type": "specialist",
+          "phase": "review",
+          "specialist": "writing_reviewer",
+          "segment": 2,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:48:47Z",
+          "ended": "2026-10-14T17:50:49Z",
+          "accepted": true,
+          "output": {
+            "file": "reviews/review_writing.md",
+            "sha256": "b4c409a5e1d25441736699205f0b710347a4845553a71f3dba1e92b3aa08d005"
+          }
+        },
+        {
+          "type": "specialist",
+          "phase": "review",
+          "specialist": "data_reviewer",
+          "segment": 2,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:48:47Z",
+          "ended": "2026-10-14T17:51:01Z",
+          "accepted": true,
+          "output": {
+            "file": "reviews/review_data.md",
+            "sha256": "a1eec96484124fcfe1a67a4e5e39535cc851847069ec2f53246d3f50179fd44c"
+          }
+        },
+        {
+          "type": "specialist",
+          "phase": "review",
+          "specialist": "methods_reviewer",
+          "segment": 2,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:50:49Z",
+          "ended": "2026-10-14T17:52:09Z",
+          "accepted": true,
+          "output": {
+            "file": "reviews/review_methods.md",
+            "sha256": "d3558f7cdfe67027d7ee55d4a3ae1399876cf745b9402367f8146821a60b6d95"
+          }
+        },
+        {
+          "type": "specialist",
+          "phase": "review",
+          "specialist": "technical_reviewer",
+          "segment": 2,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:48:47Z",
+          "ended": "2026-10-14T17:52:27Z",
+          "accepted": true,
+          "output": {
+            "file": "reviews/review_technical.md",
+            "sha256": "5e1621f15c2a2b2d58ea34be0d40600e71af0f1e48415cec45b5f18b7b8d5103"
+          }
+        },
+        {
+          "type": "specialist",
+          "phase": "review",
+          "specialist": "plausibility_reviewer",
+          "segment": 2,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:51:01Z",
+          "ended": "2026-10-14T17:54:58Z",
+          "accepted": true,
+          "output": {
+            "file": "reviews/review_plausibility.md",
+            "sha256": "ba390a1cd9755963c8a477660d587c0a97de9f2ecea4c05f5ae68893d8fa5a90"
+          }
+        },
+        {
+          "type": "specialist",
+          "phase": "revision",
+          "specialist": "patch_revisor",
+          "segment": 2,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:54:58Z",
+          "ended": "2026-10-14T17:56:15Z",
+          "accepted": true,
+          "output": {
+            "file": "misc/paper_draft.tex.edits.json",
+            "sha256": "b2ad111b1f1fec8bc7b4ff3a10aecb50d52ade190533924de7ee28d362c39c0c"
+          }
+        },
+        {
+          "type": "specialist",
+          "phase": "replication",
+          "specialist": "replication_packager",
+          "segment": 2,
+          "backend": "claude_code",
+          "model": "sonnet",
+          "started": "2026-10-14T17:56:15Z",
+          "ended": "2026-10-14T17:57:46Z",
+          "accepted": true,
+          "output": {
+            "file": "replication/estimation.py",
+            "sha256": "c5cf6c61dd8fc3403688f12d9110fce3a47790cb01cd1617aa4ad91345ce3219"
+          }
+        }
+      ],
+      "availability": {
+        "data": {
+          "access": "private"
+        },
+        "code": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        }
+      },
+      "purpose": "demonstration"
+    }
+  }
+}

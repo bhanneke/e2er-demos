@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "total_cites": 8,
+  "verified": 6,
+  "unverifiable": 2,
+  "missing_in_bib": 0,
+  "bibbed_uncited": [],
+  "checks": [
+    {
+      "cite_key": "Eurostat_Database",
+      "status": "verified_title",
+      "verifier": "openalex",
+      "matched_doi": "10.1007/978-3-319-69909-7_944-2",
+      "matched_title": "Eurostat Database",
+      "bib_title": "Eurostat Database",
+      "bib_year": null,
+      "bib_doi": "",
+      "explanation": ""
+    },
+    {
+      "cite_key": "pourpakdelfekr2026multispeed",
+      "status": "verified_doi",
+      "verifier": "openalex",
+      "matched_doi": "10.1080/00343404.2026.2632887",
+      "matched_title": "Multispeed Europe: human development index convergence clubs across subnational regions",
+      "bib_title": "Multispeed Europe: human development index convergence clubs across subnational regions",
+      "bib_year": 2026,
+      "bib_doi": "10.1080/00343404.2026.2632887",
+      "explanation": ""
+    },
+    {
+      "cite_key": "moran1950notes",
+      "status": "verified_doi",
+      "verifier": "openalex",
+      "matched_doi": "10.1093/biomet/37.1-2.17",
+      "matched_title": "NOTES ON CONTINUOUS STOCHASTIC PHENOMENA",
+      "bib_title": "Notes on Continuous Stochastic Phenomena",
+      "bib_year": 1950,
+      "bib_doi": "10.2307/2332142",
+      "explanation": ""
+    },
+    {
+      "cite_key": "anselin1995local",
+      "status": "verified_doi",
+      "verifier": "openalex",
+      "matched_doi": "10.1111/j.1538-4632.1995.tb00338.x",
+      "matched_title": "Local Indicators of Spatial Association\u2014LISA",
+      "bib_title": "Local Indicators of Spatial Association\u2014LISA",
+      "bib_year": 1995,
+      "bib_doi": "10.1111/j.1538-4632.1995.tb00338.x",
+      "explanation": ""
+    },
+    {
+      "cite_key": "getis1992analysis",
+      "status": "verified_doi",
+      "verifier": "openalex",
+      "matched_doi": "10.1111/j.1538-4632.1992.tb00261.x",
+      "matched_title": "The Analysis of Spatial Association by Use of Distance Statistics",
+      "bib_title": "The Analysis of Spatial Association by Use of Distance Statistics",
+      "bib_year": 1992,
+      "bib_doi": "10.1111/j.1538-4632.1992.tb00261.x",
+      "explanation": ""
+    },
+    {
+      "cite_key": "Eurostat_GISCO_NUTS",
+      "status": "unverifiable",
+      "verifier": "",
+      "matched_doi": "",
+      "matched_title": "",
+      "bib_title": "GISCO}: Territorial units for statistics ({NUTS}), boundaries",
+      "bib_year": null,
+      "bib_doi": "",
+      "explanation": "no title match (>0.85 similarity) for 'GISCO}: Territorial units for statistics ({NUTS}), boundaries' in any verifier"
+    },
+    {
+      "cite_key": "openshaw1984modifiable",
+      "status": "unverifiable",
+      "verifier": "",
+      "matched_doi": "",
+      "matched_title": "",
+      "bib_title": "The Modifiable Areal Unit Problem (Concepts and Techniques in Modern Geography 38)",
+      "bib_year": 1984,
+      "bib_doi": "",
+      "explanation": "no title match (>0.85 similarity) for 'The Modifiable Areal Unit Problem (Concepts and Techniques in Modern Geography 3' in any verifier"
+    },
+    {
+      "cite_key": "anselin1988spatial",
+      "status": "verified_doi",
+      "verifier": "openalex",
+      "matched_doi": "10.1007/978-94-015-7799-1",
+      "matched_title": "Spatial Econometrics: Methods and Models",
+      "bib_title": "Spatial Econometrics: Methods and Models",
+      "bib_year": 1988,
+      "bib_doi": "10.1007/978-94-015-7799-1",
+      "explanation": ""
+    }
+  ],
+  "skipped_reason": null,
+  "strict": false,
+  "bibliography_source": "/private/tmp/e2er-demos3/studies/workspaces/2026-10-14-how-does-gdp-per-capita-in-purchasing-2/refs.bib",
+  "conclusive": false
+}

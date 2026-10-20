@@ -1,0 +1,762 @@
+{
+  "contents": [
+    {
+      "bytes": 9799,
+      "part": "study",
+      "path": "README.md",
+      "sha256": "951ff3519a40de20b878d4982b18fae5b04d9f4d6fad9f62944946b08e0d12df"
+    },
+    {
+      "bytes": 5243,
+      "part": "study",
+      "path": "code/get_data.py",
+      "sha256": "395558137cf3b9556c2c6de6f3984db568d1dfb50a54c25d5e4001180208123e"
+    },
+    {
+      "bytes": 429,
+      "part": "study",
+      "path": "code/requirements.txt",
+      "sha256": "e3ab8877f98b99d72848a2e113f78dc1fc661db7648d67fce7ae5fb730245c84"
+    },
+    {
+      "bytes": 13533,
+      "part": "study",
+      "path": "code/run_estimation.py",
+      "sha256": "2f5613da740819bda9216d6cef7ff04924c43efe5e4fa9bcc223f1abb554aa57"
+    },
+    {
+      "bytes": 6925,
+      "part": "study",
+      "path": "code/scratch/build_data.py",
+      "sha256": "7115b8a8a6ac5030d0dfcce3e25a2af1fdc66434c6afa7fe6ef82cbf6ad2f7b3"
+    },
+    {
+      "bytes": 232,
+      "part": "study",
+      "path": "code/scratch/fill_fig.py",
+      "sha256": "ec071eb415cf14b8591957af961831e4b89f770d1239bcfc43f3dffd838f765c"
+    },
+    {
+      "bytes": 352,
+      "part": "study",
+      "path": "code/scratch/fix_dict.py",
+      "sha256": "0755f1d2261b80b2149420c030d09b0eb94e1490e9aafbd1807f1042b23b770e"
+    },
+    {
+      "bytes": 15242,
+      "part": "study",
+      "path": "code/scratch/paper_draft.log",
+      "sha256": "6666954c7909365dbd1c88c8bce908101c29be458003dd6a11fb76dfe35fab95"
+    },
+    {
+      "bytes": 10952,
+      "part": "study",
+      "path": "data/data_dictionary.json",
+      "sha256": "1adbc1ae6fd29599587dfa40adccc0418d58393f0d6d94414f7f42110d7f5aa2"
+    },
+    {
+      "bytes": 9440,
+      "part": "study",
+      "path": "data/data_sources.json",
+      "sha256": "48cf17876f49ecf08cf877360afeb6155fc372bdcb88d2721876db4473ae3591"
+    },
+    {
+      "bytes": 5844,
+      "part": "study",
+      "path": "data/data_summary.md",
+      "sha256": "c59811c7c668b3632ff52edf2e7949fcafb8b8727860879ab864f00eca249dad"
+    },
+    {
+      "bytes": 3870,
+      "part": "study",
+      "path": "design/econometric_spec.md",
+      "sha256": "c9ae7522be887de933d3c04211e502141679797b5eea812ff1fbadc98c94fb97"
+    },
+    {
+      "bytes": 25755,
+      "part": "study",
+      "path": "design/literature_review.md",
+      "sha256": "349c50d088e410d383ed806b996f83e706ce03a4c51af2e63f6e35327dbf33be"
+    },
+    {
+      "bytes": 17852,
+      "part": "study",
+      "path": "design/paper_plan.md",
+      "sha256": "3c700e61734f4d16dbce8e9bb329464e6a3388d33c8b6853be6609a9498ec4eb"
+    },
+    {
+      "bytes": 1740,
+      "part": "study",
+      "path": "design/researcher_instructions.md",
+      "sha256": "7ca6f88dcbd69e6847422c50e9db243e133dced87f12ff0d577a467dddf8ac0a"
+    },
+    {
+      "bytes": 1524,
+      "part": "study",
+      "path": "design/spatial_design.json",
+      "sha256": "bb5dec86615e6dc3f2066e41a25f01351a0a0748363f00ae7a13cfacc65be28b"
+    },
+    {
+      "bytes": 15725,
+      "part": "package",
+      "path": "e2er-package/requirements.lock.txt",
+      "sha256": "92b745945b83473a6191f61ceaa6dbd2a70a28a01e71005a38cdfd6bd9ececa1"
+    },
+    {
+      "bytes": 90552,
+      "part": "study",
+      "path": "e2er.json",
+      "sha256": "92f0e05bb988fa85b6a929950f846492a205e4c8cbdb60f44075a4f01ddc0c8f"
+    },
+    {
+      "bytes": 10170,
+      "part": "study",
+      "path": "misc/fig_dist_gdp_pps_2024.pdf",
+      "sha256": "ccee0509d162883475c54f7b39916ddca2bebb6302a53b866fd6c13101ab3244"
+    },
+    {
+      "bytes": 127389,
+      "part": "study",
+      "path": "misc/fig_map_gdp_index.pdf",
+      "sha256": "1cc559fcbe7ab5fd9797cfade86ffdebd4c6b21d35fc576bbc2be787fdfe9626"
+    },
+    {
+      "bytes": 127144,
+      "part": "study",
+      "path": "misc/fig_map_gdp_pps_2024.pdf",
+      "sha256": "bfff35f6ece49a4d306b8729d8ba5095b7f8039ca8c4f2e066c073b5e047c24f"
+    },
+    {
+      "bytes": 126650,
+      "part": "study",
+      "path": "misc/fig_map_lisa.pdf",
+      "sha256": "f022d48d4801d25a09d72fa0613b9f72ca524a5d89cae82bbd91f3576c114e0c"
+    },
+    {
+      "bytes": 21013,
+      "part": "study",
+      "path": "misc/fig_moran_scatter.pdf",
+      "sha256": "b3341cd3056e38ae69450519c27d3f0493f8d769d6388ab7c7ba6839d397d45d"
+    },
+    {
+      "bytes": 444,
+      "part": "study",
+      "path": "misc/figure_render_report.json",
+      "sha256": "70dd69af28b4dc0b7e7087090eed6317557a25af95ce54c0cca95cc309dc231b"
+    },
+    {
+      "bytes": 308,
+      "part": "study",
+      "path": "misc/paper_draft.blg",
+      "sha256": "bb6ec124b88cdd5152fdac656c16982debf84a5fc0af07da3eb7d6352be874a9"
+    },
+    {
+      "bytes": 26657,
+      "part": "study",
+      "path": "misc/paper_draft.tex.applied.diff",
+      "sha256": "10ceed348baf5422d974eefccaf417b8d43e19a209f62ec9e4431d76bf73566c"
+    },
+    {
+      "bytes": 12932,
+      "part": "study",
+      "path": "misc/paper_draft.tex.edits.json",
+      "sha256": "b2ad111b1f1fec8bc7b4ff3a10aecb50d52ade190533924de7ee28d362c39c0c"
+    },
+    {
+      "bytes": 2980,
+      "part": "study",
+      "path": "misc/refs.bib",
+      "sha256": "805aded66e39b72d44863cfc3468a84df92f79f0690a349f8ac62ed15b04e8fd"
+    },
+    {
+      "bytes": 71086,
+      "part": "study",
+      "path": "paper/paper.pdf",
+      "sha256": "adbdecbd759cbad5b9e13beeffdc9673a1f9516d076d776e1ede4bce52a15231"
+    },
+    {
+      "bytes": 25935,
+      "part": "study",
+      "path": "paper/paper.tex",
+      "sha256": "5b3683dfb3dd396c5a6155104f1f9a0117ded33e48cb39f2b46f556621134935"
+    },
+    {
+      "bytes": 2980,
+      "part": "study",
+      "path": "paper/refs.bib",
+      "sha256": "805aded66e39b72d44863cfc3468a84df92f79f0690a349f8ac62ed15b04e8fd"
+    },
+    {
+      "bytes": 794,
+      "part": "study",
+      "path": "paper/tables/moran.tex",
+      "sha256": "436eeed59b23535bd2fdfc5b64dae1bd3bf6d3a163e0ba690b6c5014df97e276"
+    },
+    {
+      "bytes": 834,
+      "part": "study",
+      "path": "paper/tables/robust.tex",
+      "sha256": "bfc12f8b4ab3dcc44949dd98a35adb3623f0060b3c3df24863142d20aa729961"
+    },
+    {
+      "bytes": 653,
+      "part": "study",
+      "path": "paper/tables/summary.tex",
+      "sha256": "14e832cddd88399af97c5afeac197510f5daacc8108fa6587c7a0a1cf10312b0"
+    },
+    {
+      "bytes": 39647,
+      "part": "study",
+      "path": "provenance.json",
+      "sha256": "ca143e30b0afd696160991cb2de5c324281ae48211bd9b96696e01e21aef4c01"
+    },
+    {
+      "bytes": 3831,
+      "part": "study",
+      "path": "replication/README.md",
+      "sha256": "4ed8b6122243df16ffe8f99008974ac2818d093733920e3dd950cc9d4f966f39"
+    },
+    {
+      "bytes": 5708,
+      "part": "study",
+      "path": "replication/audit_log.csv",
+      "sha256": "df0667dde7b1bb7d59ee4a2e4893a6729300c41364da614b8e8c083af21c7134"
+    },
+    {
+      "bytes": 137,
+      "part": "study",
+      "path": "replication/data_queries.sql",
+      "sha256": "36e1b50634964fadf0f5a9c96aa88180c9d514113d8496fa8a90597ce66c2074"
+    },
+    {
+      "bytes": 18056,
+      "part": "study",
+      "path": "replication/estimation.py",
+      "sha256": "c5cf6c61dd8fc3403688f12d9110fce3a47790cb01cd1617aa4ad91345ce3219"
+    },
+    {
+      "bytes": 15860,
+      "part": "study",
+      "path": "report.html",
+      "sha256": "14d347c68f5308ce688dc4a2ae3fef86cf28e5686409300512b371c002665a3a"
+    },
+    {
+      "bytes": 4247,
+      "part": "study",
+      "path": "reproduce.json",
+      "sha256": "5005603920762654ba7936c41d2417130a6c5c646ad761594fd46e7282515dbc"
+    },
+    {
+      "bytes": 10976,
+      "part": "study",
+      "path": "results/estimation_results.json",
+      "sha256": "ee650d15050ef8a1f63572bd018358b18b6ffa786e6d65a2c65a03f6c79ef396"
+    },
+    {
+      "bytes": 10170,
+      "part": "study",
+      "path": "results/figures/fig_dist_gdp_pps_2024.pdf",
+      "sha256": "ccee0509d162883475c54f7b39916ddca2bebb6302a53b866fd6c13101ab3244"
+    },
+    {
+      "bytes": 127389,
+      "part": "study",
+      "path": "results/figures/fig_map_gdp_index.pdf",
+      "sha256": "1cc559fcbe7ab5fd9797cfade86ffdebd4c6b21d35fc576bbc2be787fdfe9626"
+    },
+    {
+      "bytes": 127144,
+      "part": "study",
+      "path": "results/figures/fig_map_gdp_pps_2024.pdf",
+      "sha256": "bfff35f6ece49a4d306b8729d8ba5095b7f8039ca8c4f2e066c073b5e047c24f"
+    },
+    {
+      "bytes": 126650,
+      "part": "study",
+      "path": "results/figures/fig_map_lisa.pdf",
+      "sha256": "f022d48d4801d25a09d72fa0613b9f72ca524a5d89cae82bbd91f3576c114e0c"
+    },
+    {
+      "bytes": 21013,
+      "part": "study",
+      "path": "results/figures/fig_moran_scatter.pdf",
+      "sha256": "b3341cd3056e38ae69450519c27d3f0493f8d769d6388ab7c7ba6839d397d45d"
+    },
+    {
+      "bytes": 16619,
+      "part": "study",
+      "path": "results/number_verification.json",
+      "sha256": "50d66d2f710ab981459546fe6c15e6861d04a52235a94e469c8ba05271b6df16"
+    },
+    {
+      "bytes": 262,
+      "part": "study",
+      "path": "results/spatial_check.json",
+      "sha256": "a1f6d696416d91892f0ec9612f9bb7e3126b92c362698ce34d45f8fdc1b7e6ab"
+    },
+    {
+      "bytes": 320,
+      "part": "study",
+      "path": "results/spatial_design_check.json",
+      "sha256": "09ffc2bd2d576d47634c8affa0bff3839bc3e4e28cb245d45c41bfab82fba580"
+    },
+    {
+      "bytes": 6732,
+      "part": "study",
+      "path": "results/summary_statistics.json",
+      "sha256": "45bcffb1da06e6ee4e8e30ccdbe10ddd60e93cfc746bf0ed1f70a2be8e954750"
+    },
+    {
+      "bytes": 177,
+      "part": "study",
+      "path": "results/table_render_report.json",
+      "sha256": "ba5094679776b01060d6ab0fb5e30186cb37c58bbfb59da9f8bd7863851e4458"
+    },
+    {
+      "bytes": 3215,
+      "part": "study",
+      "path": "results/table_spec.json",
+      "sha256": "127b8bd0a97eebf08220edb8db4516d0d0b3320db2d3086ca0479d6367d17fd5"
+    },
+    {
+      "bytes": 3714,
+      "part": "study",
+      "path": "reviews/citation_integrity.json",
+      "sha256": "24c4e560c4564c01b35890a8c192aa597e17ef4decbee565cfb2aa3828bced11"
+    },
+    {
+      "bytes": 1329,
+      "part": "study",
+      "path": "reviews/review_aggregation.json",
+      "sha256": "c76c6d20345d7264dac5cf5935202cce49ace1df871339a4be4635d10fc958be"
+    },
+    {
+      "bytes": 16761,
+      "part": "study",
+      "path": "reviews/review_data.md",
+      "sha256": "a1eec96484124fcfe1a67a4e5e39535cc851847069ec2f53246d3f50179fd44c"
+    },
+    {
+      "bytes": 22834,
+      "part": "study",
+      "path": "reviews/review_methods.md",
+      "sha256": "d3558f7cdfe67027d7ee55d4a3ae1399876cf745b9402367f8146821a60b6d95"
+    },
+    {
+      "bytes": 17957,
+      "part": "study",
+      "path": "reviews/review_plausibility.md",
+      "sha256": "ba390a1cd9755963c8a477660d587c0a97de9f2ecea4c05f5ae68893d8fa5a90"
+    },
+    {
+      "bytes": 27058,
+      "part": "study",
+      "path": "reviews/review_technical.md",
+      "sha256": "5e1621f15c2a2b2d58ea34be0d40600e71af0f1e48415cec45b5f18b7b8d5103"
+    },
+    {
+      "bytes": 17037,
+      "part": "study",
+      "path": "reviews/review_writing.md",
+      "sha256": "b4c409a5e1d25441736699205f0b710347a4845553a71f3dba1e92b3aa08d005"
+    }
+  ],
+  "created": "20261015",
+  "e2er_version": "0.17.1",
+  "environment": {
+    "hashes": true,
+    "lock": "e2er-package/requirements.lock.txt",
+    "note": "e2er-package/requirements.lock.txt pins every package with its hashes; `e2er reproduce` installs from it.",
+    "python": "3.14",
+    "resolved_as_of": "2026-10-16"
+  },
+  "fingerprint": "sha256:43defa8af2fc180cb7a3b78f09d31e24f724c4e36e04cb1d3717468c8f6f5994",
+  "format": "e2er-package/1",
+  "left_out": [
+    {
+      "builds": [
+        {
+          "by": "code/scratch/build_data.py",
+          "what": [
+            "gdp_pps_sample"
+          ]
+        }
+      ],
+      "content": {
+        "tables": {
+          "gdp_pps_nuts2": {
+            "content_sha256": "9fe3b85dc7be212d518f8446624a9dbbfe052ba7be7c3302e18fbcfabb0dcf67",
+            "numeric_sha256": "9fe3b85dc7be212d518f8446624a9dbbfe052ba7be7c3302e18fbcfabb0dcf67",
+            "rows": 2826
+          },
+          "gdp_pps_sample": {
+            "content_sha256": "b0bca67c6c0077a364398ca3e3e51687c5327c9f73b1edb32686706af61af8a3",
+            "numeric_sha256": "1a51de2c24dfc2bcad21ec8325c717e8dfae980bd77306e9cdada21580161681",
+            "rows": 236
+          },
+          "nuts2_boundaries": {
+            "content_sha256": "a9ab85ccaccaba85d764e60b4dc9178ce7f3533c66a17038828abeaae0887927",
+            "numeric_sha256": "038290272ed7af80f012521cdb264f2d07277ea574736418950268587b0dd1bd",
+            "rows": 299
+          },
+          "pop_nuts2": {
+            "content_sha256": "ff9039d6f0cb23ba66bca2e97425a3d45f083549f5cb686aa2ea8b4baab380f2",
+            "numeric_sha256": "ff9039d6f0cb23ba66bca2e97425a3d45f083549f5cb686aa2ea8b4baab380f2",
+            "rows": 292
+          }
+        }
+      },
+      "loads": [
+        "gdp_pps_nuts2",
+        "nuts2_boundaries",
+        "pop_nuts2"
+      ],
+      "needed": true,
+      "path": "data/data.db",
+      "reason": "the terms of Eurostat GISCO (GISCO) do not allow passing the data on",
+      "rebuilt_by": {
+        "by": "code/get_data.py",
+        "source": "the study's database, tables: gdp_pps_nuts2 (Eurostat database (dissemination API), European Commission, Eurostat nama_10r_2gdp: Gross domestic product (GDP) at current market prices by NUTS 2 region (unit=PPS_EU27_2020_HAB, nuts2), 2015–2024, release 2026-02-10T11:00:00+0100, loaded 2026-10-14); gdp_pps_sample (made by the study during the run); nuts2_boundaries (GISCO geographical data (NUTS regions, countries), Eurostat, NUTS 2 regions, NUTS 2024, 1:20 million, EPSG:3035, release NUTS 2024, loaded 2026-10-14); pop_nuts2 (Eurostat database (dissemination API), European Commission, Eurostat demo_r_d2jan: Population on 1 January by age, sex and NUTS 2 region (sex=T, age=TOTAL, nuts2), 2024–2024, release 2026-08-28T23:00:00+0200, loaded 2026-10-14)"
+      },
+      "source": "gisco"
+    },
+    {
+      "needed": true,
+      "path": "results/figure_spec.json",
+      "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (an array of 236 values at figures[4].y); its terms do not allow passing them on",
+      "rebuilt_by": {
+        "by": "code/run_estimation.py",
+        "kind": "written",
+        "source": ""
+      },
+      "source": "gisco"
+    },
+    {
+      "content": {
+        "content_sha256": "7f39e5ede9b7d29c4b47f2ef95426efa191913d5298eca7247ec3d76a0ded957",
+        "numeric_sha256": "7f39e5ede9b7d29c4b47f2ef95426efa191913d5298eca7247ec3d76a0ded957",
+        "rows": 236
+      },
+      "needed": true,
+      "path": "results/moran_scatter_data.csv",
+      "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (236 rows); its terms do not allow passing them on",
+      "rebuilt_by": {
+        "by": "code/run_estimation.py",
+        "kind": "written",
+        "source": ""
+      },
+      "source": "gisco"
+    },
+    {
+      "builds": [
+        {
+          "by": "code/scratch/build_data.py",
+          "what": [
+            "results/spatial_units.csv"
+          ]
+        }
+      ],
+      "content": {
+        "content_sha256": "fd8aa565531b8300efd4bd15351333007783088fd52109d4caf305cc2c3308b6",
+        "numeric_sha256": "db0bbffbfb6636d8246900ea2f72f79fa09276c801e7a59362aafb785b50a90f",
+        "rows": 236
+      },
+      "needed": true,
+      "path": "results/spatial_units.csv",
+      "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (236 rows); its terms do not allow passing them on",
+      "rebuilt_by": {
+        "by": "code/scratch/build_data.py",
+        "kind": "rebuild",
+        "source": ""
+      },
+      "source": "gisco"
+    },
+    {
+      "builds": [
+        {
+          "by": "code/scratch/build_data.py",
+          "what": [
+            "results/spatial_units_all244.csv"
+          ]
+        }
+      ],
+      "content": {
+        "content_sha256": "7428a6b06d4d5ac2f14ccd82bf348e9d86c7a3cec747ca42e3aba1d09207eed7",
+        "numeric_sha256": "c5ba09177e2a8d55e4a91297358edbcb8de71ee3ae7b50036c8f76bcaca6fe99",
+        "rows": 244
+      },
+      "needed": true,
+      "path": "results/spatial_units_all244.csv",
+      "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (244 rows); its terms do not allow passing them on",
+      "rebuilt_by": {
+        "by": "code/scratch/build_data.py",
+        "kind": "rebuild",
+        "source": ""
+      },
+      "source": "gisco"
+    },
+    {
+      "builds": [
+        {
+          "by": "code/scratch/build_data.py",
+          "what": [
+            "results/spatial_weights.csv"
+          ]
+        }
+      ],
+      "content": {
+        "content_sha256": "28c6ce785c99ffbdb867c45a666f83cfe01bc95bccb4d6e31be1686f7b49910e",
+        "numeric_sha256": "6c260f77de3cf68bce3d95ff9177eb779edbdbdbb29dc87d98cce4c9eeaad6fe",
+        "rows": 1039
+      },
+      "needed": true,
+      "path": "results/spatial_weights.csv",
+      "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,039 rows); its terms do not allow passing them on",
+      "rebuilt_by": {
+        "by": "code/scratch/build_data.py",
+        "kind": "rebuild",
+        "source": ""
+      },
+      "source": "gisco"
+    },
+    {
+      "content": {
+        "content_sha256": "3db0ce5dc45bd6784e4f81d6180540dc5d525f5f9036ad71c90eaee788a49d07",
+        "numeric_sha256": "4966f1a271ceda0d3d1c35d0734b39855166bc025403e7146ca76a62bdfe20b3",
+        "rows": 55460
+      },
+      "needed": true,
+      "path": "results/spatial_weights_invdist.csv",
+      "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (55,460 rows); its terms do not allow passing them on",
+      "rebuilt_by": {
+        "by": "code/run_estimation.py",
+        "kind": "written",
+        "source": ""
+      },
+      "source": "gisco"
+    },
+    {
+      "builds": [
+        {
+          "by": "code/scratch/build_data.py",
+          "what": [
+            "results/spatial_weights_knn5.csv"
+          ]
+        }
+      ],
+      "content": {
+        "content_sha256": "af67c6d90b2aeb313a2e75930ed2b12dee006743474bfad36565439fdf149505",
+        "numeric_sha256": "af67c6d90b2aeb313a2e75930ed2b12dee006743474bfad36565439fdf149505",
+        "rows": 1180
+      },
+      "needed": true,
+      "path": "results/spatial_weights_knn5.csv",
+      "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,180 rows); its terms do not allow passing them on",
+      "rebuilt_by": {
+        "by": "code/scratch/build_data.py",
+        "kind": "rebuild",
+        "source": ""
+      },
+      "source": "gisco"
+    },
+    {
+      "builds": [
+        {
+          "by": "code/scratch/build_data.py",
+          "what": [
+            "results/spatial_weights_knn5_all244.csv"
+          ]
+        }
+      ],
+      "content": {
+        "content_sha256": "b49771a78fa20d0fa7b3be3837ba6398be56fbf16cfefb1accfbeb004b2bc19a",
+        "numeric_sha256": "b49771a78fa20d0fa7b3be3837ba6398be56fbf16cfefb1accfbeb004b2bc19a",
+        "rows": 1220
+      },
+      "needed": true,
+      "path": "results/spatial_weights_knn5_all244.csv",
+      "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,220 rows); its terms do not allow passing them on",
+      "rebuilt_by": {
+        "by": "code/scratch/build_data.py",
+        "kind": "rebuild",
+        "source": ""
+      },
+      "source": "gisco"
+    },
+    {
+      "content": {
+        "content_sha256": "d449d8e9990476924b6d357dd61e374a7730b6bc362da56582e9dd7ff2a721c0",
+        "numeric_sha256": "d449d8e9990476924b6d357dd61e374a7730b6bc362da56582e9dd7ff2a721c0",
+        "rows": 1888
+      },
+      "needed": true,
+      "path": "results/spatial_weights_knn8.csv",
+      "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,888 rows); its terms do not allow passing them on",
+      "rebuilt_by": {
+        "by": "code/run_estimation.py",
+        "kind": "written",
+        "source": ""
+      },
+      "source": "gisco"
+    }
+  ],
+  "notes": [],
+  "rebuild": [
+    {
+      "from": "code/scratch/build_data.py",
+      "path": "spatial_units_all244.csv",
+      "script": "build_data.py"
+    },
+    {
+      "content": {
+        "content_sha256": "7f39e5ede9b7d29c4b47f2ef95426efa191913d5298eca7247ec3d76a0ded957",
+        "numeric_sha256": "7f39e5ede9b7d29c4b47f2ef95426efa191913d5298eca7247ec3d76a0ded957",
+        "rows": 236
+      },
+      "folder": "results/moran_scatter_data.csv",
+      "from": "code/run_estimation.py",
+      "output": true,
+      "path": "moran_scatter_data.csv",
+      "script": "run_estimation.py",
+      "sha256": "64de8ffe2ec926b213e6a700bb3201f5439cc951a2af991406838f8aa673278a",
+      "written": true
+    },
+    {
+      "content": {
+        "content_sha256": "fd8aa565531b8300efd4bd15351333007783088fd52109d4caf305cc2c3308b6",
+        "numeric_sha256": "db0bbffbfb6636d8246900ea2f72f79fa09276c801e7a59362aafb785b50a90f",
+        "rows": 236
+      },
+      "folder": "results/spatial_units.csv",
+      "from": "code/scratch/build_data.py",
+      "output": true,
+      "path": "spatial_units.csv",
+      "script": "build_data.py",
+      "sha256": "303a0ccac685393467e7f830e64e7b5d4a76649dc032711b506499d50ce755b3"
+    },
+    {
+      "content": {
+        "content_sha256": "28c6ce785c99ffbdb867c45a666f83cfe01bc95bccb4d6e31be1686f7b49910e",
+        "numeric_sha256": "6c260f77de3cf68bce3d95ff9177eb779edbdbdbb29dc87d98cce4c9eeaad6fe",
+        "rows": 1039
+      },
+      "folder": "results/spatial_weights.csv",
+      "from": "code/scratch/build_data.py",
+      "output": true,
+      "path": "spatial_weights.csv",
+      "script": "build_data.py",
+      "sha256": "26749a8a98fdb2f520dbb203b1c755a5eb72c989be0e002a73e466e32fcd8282"
+    },
+    {
+      "content": {
+        "content_sha256": "3db0ce5dc45bd6784e4f81d6180540dc5d525f5f9036ad71c90eaee788a49d07",
+        "numeric_sha256": "4966f1a271ceda0d3d1c35d0734b39855166bc025403e7146ca76a62bdfe20b3",
+        "rows": 55460
+      },
+      "folder": "results/spatial_weights_invdist.csv",
+      "from": "code/run_estimation.py",
+      "output": true,
+      "path": "spatial_weights_invdist.csv",
+      "script": "run_estimation.py",
+      "sha256": "d86e4ac309b64b3ed7f1a37c258db20ea16cad7533a1fd6076cc343d2186fe0f",
+      "written": true
+    },
+    {
+      "content": {
+        "content_sha256": "af67c6d90b2aeb313a2e75930ed2b12dee006743474bfad36565439fdf149505",
+        "numeric_sha256": "af67c6d90b2aeb313a2e75930ed2b12dee006743474bfad36565439fdf149505",
+        "rows": 1180
+      },
+      "folder": "results/spatial_weights_knn5.csv",
+      "from": "code/scratch/build_data.py",
+      "output": true,
+      "path": "spatial_weights_knn5.csv",
+      "script": "build_data.py",
+      "sha256": "31508f846ef90d559ff298fee932af07936465bf6dc0f5398154017dac840825"
+    },
+    {
+      "content": {
+        "content_sha256": "b49771a78fa20d0fa7b3be3837ba6398be56fbf16cfefb1accfbeb004b2bc19a",
+        "numeric_sha256": "b49771a78fa20d0fa7b3be3837ba6398be56fbf16cfefb1accfbeb004b2bc19a",
+        "rows": 1220
+      },
+      "folder": "results/spatial_weights_knn5_all244.csv",
+      "from": "code/scratch/build_data.py",
+      "output": true,
+      "path": "spatial_weights_knn5_all244.csv",
+      "script": "build_data.py",
+      "sha256": "95610b06524c70d37b2a811f28e76930e22c0958222f37523622bba007db68b5"
+    },
+    {
+      "content": {
+        "content_sha256": "d449d8e9990476924b6d357dd61e374a7730b6bc362da56582e9dd7ff2a721c0",
+        "numeric_sha256": "d449d8e9990476924b6d357dd61e374a7730b6bc362da56582e9dd7ff2a721c0",
+        "rows": 1888
+      },
+      "folder": "results/spatial_weights_knn8.csv",
+      "from": "code/run_estimation.py",
+      "output": true,
+      "path": "spatial_weights_knn8.csv",
+      "script": "run_estimation.py",
+      "sha256": "db61a0feec272a637dbc1506b034a00ef6cfdce67b183133d9eb46853a66e28a",
+      "written": true
+    },
+    {
+      "folder": "results/figure_spec.json",
+      "from": "code/run_estimation.py",
+      "output": true,
+      "path": "figure_spec.json",
+      "script": "run_estimation.py",
+      "sha256": "f7bfebf2177892a5f697b32264592e766aacca2550c817c2c9383490c5770b23",
+      "written": true
+    }
+  ],
+  "recipe": {
+    "compare": [
+      "results/estimation_results.json"
+    ],
+    "inputs": [
+      {
+        "path": "data.db",
+        "reload": "get_data.py",
+        "source": "the study's database, tables: gdp_pps_nuts2 (Eurostat database (dissemination API), European Commission, Eurostat nama_10r_2gdp: Gross domestic product (GDP) at current market prices by NUTS 2 region (unit=PPS_EU27_2020_HAB, nuts2), 2015–2024, release 2026-02-10T11:00:00+0100, loaded 2026-10-14); gdp_pps_sample (made by the study during the run); nuts2_boundaries (GISCO geographical data (NUTS regions, countries), Eurostat, NUTS 2 regions, NUTS 2024, 1:20 million, EPSG:3035, release NUTS 2024, loaded 2026-10-14); pop_nuts2 (Eurostat database (dissemination API), European Commission, Eurostat demo_r_d2jan: Population on 1 January by age, sex and NUTS 2 region (sex=T, age=TOTAL, nuts2), 2024–2024, release 2026-08-28T23:00:00+0200, loaded 2026-10-14)"
+      },
+      {
+        "path": "spatial_units_all244.csv",
+        "reload": null,
+        "source": "a file the study's code reads"
+      }
+    ],
+    "present": true,
+    "python": "3.14",
+    "requirements": "code/requirements.txt",
+    "steps": [
+      {
+        "about": "load the inputs the folder does not ship (if any)",
+        "run": [
+          "python",
+          "get_data.py"
+        ]
+      },
+      {
+        "about": "the estimation script",
+        "run": [
+          "python",
+          "run_estimation.py"
+        ]
+      }
+    ]
+  },
+  "study": {
+    "authors": [],
+    "e2er_version": "0.17.0",
+    "exported_at": "20261015",
+    "folder": "how-does-gdp-per-capita-in-purchasing-power-standards-vary-a-20261015-01",
+    "id": "620f7e1f-43a0-4f27-b982-57099cbbc277",
+    "purpose": "demonstration",
+    "question": "How does GDP per capita in purchasing power standards vary across the EU's NUTS-2 regions in 2024, and how strongly do regions with high and low GDP per capita cluster in space?",
+    "template": "spatial-analysis",
+    "title": "Spatial Clustering of GDP per Inhabitant across EU NUTS-2 Regions, 2024"
+  },
+  "wheels": null
+}

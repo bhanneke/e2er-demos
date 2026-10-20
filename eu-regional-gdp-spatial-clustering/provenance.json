@@ -1,0 +1,1043 @@
+{
+  "schema": "e2er-provenance/1",
+  "run": {
+    "paper_id": "620f7e1f-43a0-4f27-b982-57099cbbc277",
+    "backend": "claude_code",
+    "model": "sonnet",
+    "governance": "full",
+    "template": "spatial-analysis",
+    "e2er_version": "0.17.0",
+    "exported_at": "20261015",
+    "purpose": "demonstration",
+    "results_from_code": {
+      "results/estimation_results.json": {
+        "outcome": "from_code",
+        "reason": "written by run_estimation.py (run 2026-10-14T17:44:45Z)",
+        "script": "run_estimation.py",
+        "script_sha256": "2f5613da740819bda9216d6cef7ff04924c43efe5e4fa9bcc223f1abb554aa57",
+        "output_sha256": "ee650d15050ef8a1f63572bd018358b18b6ffa786e6d65a2c65a03f6c79ef396",
+        "ran_at": "2026-10-14T17:44:45Z",
+        "exit_code": 0,
+        "script_in_folder": "code/run_estimation.py",
+        "script_in_folder_sha256": "2f5613da740819bda9216d6cef7ff04924c43efe5e4fa9bcc223f1abb554aa57"
+      }
+    },
+    "derived_data": [
+      {
+        "path": "results/moran_scatter_data.csv",
+        "named": "moran_scatter_data.csv",
+        "connectors": [
+          "gisco"
+        ],
+        "writers": [
+          "code/run_estimation.py"
+        ]
+      },
+      {
+        "path": "results/spatial_units.csv",
+        "named": "spatial_units.csv",
+        "connectors": [
+          "gisco"
+        ],
+        "writers": [
+          "code/run_estimation.py",
+          "code/scratch/build_data.py"
+        ]
+      },
+      {
+        "path": "results/spatial_units_all244.csv",
+        "named": "spatial_units_all244.csv",
+        "connectors": [
+          "gisco"
+        ],
+        "writers": [
+          "code/scratch/build_data.py"
+        ]
+      },
+      {
+        "path": "results/spatial_weights.csv",
+        "named": "spatial_weights.csv",
+        "connectors": [
+          "gisco"
+        ],
+        "writers": [
+          "code/scratch/build_data.py"
+        ]
+      },
+      {
+        "path": "results/spatial_weights_invdist.csv",
+        "named": "spatial_weights_invdist.csv",
+        "connectors": [
+          "gisco"
+        ],
+        "writers": [
+          "code/run_estimation.py"
+        ]
+      },
+      {
+        "path": "results/spatial_weights_knn5.csv",
+        "named": "spatial_weights_knn5.csv",
+        "connectors": [
+          "gisco"
+        ],
+        "writers": [
+          "code/scratch/build_data.py"
+        ]
+      },
+      {
+        "path": "results/spatial_weights_knn5_all244.csv",
+        "named": "spatial_weights_knn5_all244.csv",
+        "connectors": [
+          "gisco"
+        ],
+        "writers": [
+          "code/scratch/build_data.py"
+        ]
+      },
+      {
+        "path": "results/spatial_weights_knn8.csv",
+        "named": "spatial_weights_knn8.csv",
+        "connectors": [
+          "gisco"
+        ],
+        "writers": [
+          "code/run_estimation.py"
+        ]
+      }
+    ]
+  },
+  "files": {
+    "README.md": {
+      "sha256": "951ff3519a40de20b878d4982b18fae5b04d9f4d6fad9f62944946b08e0d12df",
+      "bytes": 9799
+    },
+    "code/get_data.py": {
+      "sha256": "395558137cf3b9556c2c6de6f3984db568d1dfb50a54c25d5e4001180208123e",
+      "bytes": 5243
+    },
+    "code/requirements.txt": {
+      "sha256": "e3ab8877f98b99d72848a2e113f78dc1fc661db7648d67fce7ae5fb730245c84",
+      "bytes": 429
+    },
+    "code/run_estimation.py": {
+      "sha256": "2f5613da740819bda9216d6cef7ff04924c43efe5e4fa9bcc223f1abb554aa57",
+      "bytes": 13533
+    },
+    "code/scratch/build_data.py": {
+      "sha256": "7115b8a8a6ac5030d0dfcce3e25a2af1fdc66434c6afa7fe6ef82cbf6ad2f7b3",
+      "bytes": 6925
+    },
+    "code/scratch/fill_fig.py": {
+      "sha256": "ec071eb415cf14b8591957af961831e4b89f770d1239bcfc43f3dffd838f765c",
+      "bytes": 232
+    },
+    "code/scratch/fix_dict.py": {
+      "sha256": "0755f1d2261b80b2149420c030d09b0eb94e1490e9aafbd1807f1042b23b770e",
+      "bytes": 352
+    },
+    "code/scratch/paper_draft.log": {
+      "sha256": "6666954c7909365dbd1c88c8bce908101c29be458003dd6a11fb76dfe35fab95",
+      "bytes": 15242
+    },
+    "data/data.db": {
+      "sha256": "203608577d4265de599e77e07020351feb5cd5fb778499bb82f6b04cdef56391",
+      "bytes": 1073152
+    },
+    "data/data_dictionary.json": {
+      "sha256": "1adbc1ae6fd29599587dfa40adccc0418d58393f0d6d94414f7f42110d7f5aa2",
+      "bytes": 10952
+    },
+    "data/data_sources.json": {
+      "sha256": "48cf17876f49ecf08cf877360afeb6155fc372bdcb88d2721876db4473ae3591",
+      "bytes": 9440
+    },
+    "data/data_summary.md": {
+      "sha256": "c59811c7c668b3632ff52edf2e7949fcafb8b8727860879ab864f00eca249dad",
+      "bytes": 5844
+    },
+    "design/econometric_spec.md": {
+      "sha256": "c9ae7522be887de933d3c04211e502141679797b5eea812ff1fbadc98c94fb97",
+      "bytes": 3870
+    },
+    "design/literature_review.md": {
+      "sha256": "349c50d088e410d383ed806b996f83e706ce03a4c51af2e63f6e35327dbf33be",
+      "bytes": 25755
+    },
+    "design/paper_plan.md": {
+      "sha256": "3c700e61734f4d16dbce8e9bb329464e6a3388d33c8b6853be6609a9498ec4eb",
+      "bytes": 17852
+    },
+    "design/researcher_instructions.md": {
+      "sha256": "7ca6f88dcbd69e6847422c50e9db243e133dced87f12ff0d577a467dddf8ac0a",
+      "bytes": 1740
+    },
+    "design/spatial_design.json": {
+      "sha256": "bb5dec86615e6dc3f2066e41a25f01351a0a0748363f00ae7a13cfacc65be28b",
+      "bytes": 1524
+    },
+    "misc/fig_dist_gdp_pps_2024.pdf": {
+      "sha256": "ccee0509d162883475c54f7b39916ddca2bebb6302a53b866fd6c13101ab3244",
+      "bytes": 10170
+    },
+    "misc/fig_map_gdp_index.pdf": {
+      "sha256": "1cc559fcbe7ab5fd9797cfade86ffdebd4c6b21d35fc576bbc2be787fdfe9626",
+      "bytes": 127389
+    },
+    "misc/fig_map_gdp_pps_2024.pdf": {
+      "sha256": "bfff35f6ece49a4d306b8729d8ba5095b7f8039ca8c4f2e066c073b5e047c24f",
+      "bytes": 127144
+    },
+    "misc/fig_map_lisa.pdf": {
+      "sha256": "f022d48d4801d25a09d72fa0613b9f72ca524a5d89cae82bbd91f3576c114e0c",
+      "bytes": 126650
+    },
+    "misc/fig_moran_scatter.pdf": {
+      "sha256": "b3341cd3056e38ae69450519c27d3f0493f8d769d6388ab7c7ba6839d397d45d",
+      "bytes": 21013
+    },
+    "misc/figure_render_report.json": {
+      "sha256": "70dd69af28b4dc0b7e7087090eed6317557a25af95ce54c0cca95cc309dc231b",
+      "bytes": 444
+    },
+    "misc/paper_draft.blg": {
+      "sha256": "bb6ec124b88cdd5152fdac656c16982debf84a5fc0af07da3eb7d6352be874a9",
+      "bytes": 308
+    },
+    "misc/paper_draft.tex.applied.diff": {
+      "sha256": "10ceed348baf5422d974eefccaf417b8d43e19a209f62ec9e4431d76bf73566c",
+      "bytes": 26657
+    },
+    "misc/paper_draft.tex.edits.json": {
+      "sha256": "b2ad111b1f1fec8bc7b4ff3a10aecb50d52ade190533924de7ee28d362c39c0c",
+      "bytes": 12932
+    },
+    "misc/refs.bib": {
+      "sha256": "805aded66e39b72d44863cfc3468a84df92f79f0690a349f8ac62ed15b04e8fd",
+      "bytes": 2980
+    },
+    "paper/paper.pdf": {
+      "sha256": "adbdecbd759cbad5b9e13beeffdc9673a1f9516d076d776e1ede4bce52a15231",
+      "bytes": 71086
+    },
+    "paper/paper.tex": {
+      "sha256": "5b3683dfb3dd396c5a6155104f1f9a0117ded33e48cb39f2b46f556621134935",
+      "bytes": 25935
+    },
+    "paper/refs.bib": {
+      "sha256": "805aded66e39b72d44863cfc3468a84df92f79f0690a349f8ac62ed15b04e8fd",
+      "bytes": 2980
+    },
+    "paper/tables/moran.tex": {
+      "sha256": "436eeed59b23535bd2fdfc5b64dae1bd3bf6d3a163e0ba690b6c5014df97e276",
+      "bytes": 794
+    },
+    "paper/tables/robust.tex": {
+      "sha256": "bfc12f8b4ab3dcc44949dd98a35adb3623f0060b3c3df24863142d20aa729961",
+      "bytes": 834
+    },
+    "paper/tables/summary.tex": {
+      "sha256": "14e832cddd88399af97c5afeac197510f5daacc8108fa6587c7a0a1cf10312b0",
+      "bytes": 653
+    },
+    "replication/README.md": {
+      "sha256": "4ed8b6122243df16ffe8f99008974ac2818d093733920e3dd950cc9d4f966f39",
+      "bytes": 3831
+    },
+    "replication/audit_log.csv": {
+      "sha256": "df0667dde7b1bb7d59ee4a2e4893a6729300c41364da614b8e8c083af21c7134",
+      "bytes": 5708
+    },
+    "replication/data_queries.sql": {
+      "sha256": "36e1b50634964fadf0f5a9c96aa88180c9d514113d8496fa8a90597ce66c2074",
+      "bytes": 137
+    },
+    "replication/estimation.py": {
+      "sha256": "c5cf6c61dd8fc3403688f12d9110fce3a47790cb01cd1617aa4ad91345ce3219",
+      "bytes": 18056
+    },
+    "report.html": {
+      "sha256": "14d347c68f5308ce688dc4a2ae3fef86cf28e5686409300512b371c002665a3a",
+      "bytes": 15860
+    },
+    "reproduce.json": {
+      "sha256": "5005603920762654ba7936c41d2417130a6c5c646ad761594fd46e7282515dbc",
+      "bytes": 4247
+    },
+    "results/estimation_results.json": {
+      "sha256": "ee650d15050ef8a1f63572bd018358b18b6ffa786e6d65a2c65a03f6c79ef396",
+      "bytes": 10976
+    },
+    "results/figure_spec.json": {
+      "sha256": "f7bfebf2177892a5f697b32264592e766aacca2550c817c2c9383490c5770b23",
+      "bytes": 14980
+    },
+    "results/figures/fig_dist_gdp_pps_2024.pdf": {
+      "sha256": "ccee0509d162883475c54f7b39916ddca2bebb6302a53b866fd6c13101ab3244",
+      "bytes": 10170
+    },
+    "results/figures/fig_map_gdp_index.pdf": {
+      "sha256": "1cc559fcbe7ab5fd9797cfade86ffdebd4c6b21d35fc576bbc2be787fdfe9626",
+      "bytes": 127389
+    },
+    "results/figures/fig_map_gdp_pps_2024.pdf": {
+      "sha256": "bfff35f6ece49a4d306b8729d8ba5095b7f8039ca8c4f2e066c073b5e047c24f",
+      "bytes": 127144
+    },
+    "results/figures/fig_map_lisa.pdf": {
+      "sha256": "f022d48d4801d25a09d72fa0613b9f72ca524a5d89cae82bbd91f3576c114e0c",
+      "bytes": 126650
+    },
+    "results/figures/fig_moran_scatter.pdf": {
+      "sha256": "b3341cd3056e38ae69450519c27d3f0493f8d769d6388ab7c7ba6839d397d45d",
+      "bytes": 21013
+    },
+    "results/moran_scatter_data.csv": {
+      "sha256": "64de8ffe2ec926b213e6a700bb3201f5439cc951a2af991406838f8aa673278a",
+      "bytes": 5419
+    },
+    "results/number_verification.json": {
+      "sha256": "50d66d2f710ab981459546fe6c15e6861d04a52235a94e469c8ba05271b6df16",
+      "bytes": 16619
+    },
+    "results/spatial_check.json": {
+      "sha256": "a1f6d696416d91892f0ec9612f9bb7e3126b92c362698ce34d45f8fdc1b7e6ab",
+      "bytes": 262
+    },
+    "results/spatial_design_check.json": {
+      "sha256": "09ffc2bd2d576d47634c8affa0bff3839bc3e4e28cb245d45c41bfab82fba580",
+      "bytes": 320
+    },
+    "results/spatial_units.csv": {
+      "sha256": "303a0ccac685393467e7f830e64e7b5d4a76649dc032711b506499d50ce755b3",
+      "bytes": 28111
+    },
+    "results/spatial_units_all244.csv": {
+      "sha256": "4da22ec07db2a9295741ec7e91ef1447ef69d1d2cccea8ae3b43086ad7c332ab",
+      "bytes": 15118
+    },
+    "results/spatial_weights.csv": {
+      "sha256": "26749a8a98fdb2f520dbb203b1c755a5eb72c989be0e002a73e466e32fcd8282",
+      "bytes": 22593
+    },
+    "results/spatial_weights_invdist.csv": {
+      "sha256": "d86e4ac309b64b3ed7f1a37c258db20ea16cad7533a1fd6076cc343d2186fe0f",
+      "bytes": 1740024
+    },
+    "results/spatial_weights_knn5.csv": {
+      "sha256": "31508f846ef90d559ff298fee932af07936465bf6dc0f5398154017dac840825",
+      "bytes": 16535
+    },
+    "results/spatial_weights_knn5_all244.csv": {
+      "sha256": "95610b06524c70d37b2a811f28e76930e22c0958222f37523622bba007db68b5",
+      "bytes": 17095
+    },
+    "results/spatial_weights_knn8.csv": {
+      "sha256": "db61a0feec272a637dbc1506b034a00ef6cfdce67b183133d9eb46853a66e28a",
+      "bytes": 30223
+    },
+    "results/summary_statistics.json": {
+      "sha256": "45bcffb1da06e6ee4e8e30ccdbe10ddd60e93cfc746bf0ed1f70a2be8e954750",
+      "bytes": 6732
+    },
+    "results/table_render_report.json": {
+      "sha256": "ba5094679776b01060d6ab0fb5e30186cb37c58bbfb59da9f8bd7863851e4458",
+      "bytes": 177
+    },
+    "results/table_spec.json": {
+      "sha256": "127b8bd0a97eebf08220edb8db4516d0d0b3320db2d3086ca0479d6367d17fd5",
+      "bytes": 3215
+    },
+    "reviews/citation_integrity.json": {
+      "sha256": "24c4e560c4564c01b35890a8c192aa597e17ef4decbee565cfb2aa3828bced11",
+      "bytes": 3714
+    },
+    "reviews/review_aggregation.json": {
+      "sha256": "c76c6d20345d7264dac5cf5935202cce49ace1df871339a4be4635d10fc958be",
+      "bytes": 1329
+    },
+    "reviews/review_data.md": {
+      "sha256": "a1eec96484124fcfe1a67a4e5e39535cc851847069ec2f53246d3f50179fd44c",
+      "bytes": 16761
+    },
+    "reviews/review_methods.md": {
+      "sha256": "d3558f7cdfe67027d7ee55d4a3ae1399876cf745b9402367f8146821a60b6d95",
+      "bytes": 22834
+    },
+    "reviews/review_plausibility.md": {
+      "sha256": "ba390a1cd9755963c8a477660d587c0a97de9f2ecea4c05f5ae68893d8fa5a90",
+      "bytes": 17957
+    },
+    "reviews/review_technical.md": {
+      "sha256": "5e1621f15c2a2b2d58ea34be0d40600e71af0f1e48415cec45b5f18b7b8d5103",
+      "bytes": 27058
+    },
+    "reviews/review_writing.md": {
+      "sha256": "b4c409a5e1d25441736699205f0b710347a4845553a71f3dba1e92b3aa08d005",
+      "bytes": 17037
+    }
+  },
+  "edges": [
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "236",
+      "table_context": "tab:summary (Summary statistics of GDP per inhabitant in PPS, 236 EU27 NU...), row 2, col 2",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "37975.8",
+      "table_context": "tab:summary (Summary statistics of GDP per inhabitant in PPS, 236 EU27 NU...), row 2, col 3",
+      "source_key": "summary_statistics.json.outcome.gdp_pps.mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14245.6",
+      "table_context": "tab:summary (Summary statistics of GDP per inhabitant in PPS, 236 EU27 NU...), row 2, col 4",
+      "source_key": "summary_statistics.json.outcome.gdp_pps.sd",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "16700.0",
+      "table_context": "tab:summary (Summary statistics of GDP per inhabitant in PPS, 236 EU27 NU...), row 2, col 5",
+      "source_key": "summary_statistics.json.outcome.gdp_pps.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "28375.0",
+      "table_context": "tab:summary (Summary statistics of GDP per inhabitant in PPS, 236 EU27 NU...), row 2, col 6",
+      "source_key": "summary_statistics.json.outcome.gdp_pps.p25",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "35050.0",
+      "table_context": "tab:summary (Summary statistics of GDP per inhabitant in PPS, 236 EU27 NU...), row 2, col 7",
+      "source_key": "summary_statistics.json.outcome.gdp_pps.median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "44175.0",
+      "table_context": "tab:summary (Summary statistics of GDP per inhabitant in PPS, 236 EU27 NU...), row 2, col 8",
+      "source_key": "summary_statistics.json.outcome.gdp_pps.p75",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "107200.0",
+      "table_context": "tab:summary (Summary statistics of GDP per inhabitant in PPS, 236 EU27 NU...), row 2, col 9",
+      "source_key": "summary_statistics.json.outcome.gdp_pps.max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "236",
+      "table_context": "tab:summary (Summary statistics of GDP per inhabitant in PPS, 236 EU27 NU...), row 3, col 2",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "94.8",
+      "table_context": "tab:summary (Summary statistics of GDP per inhabitant in PPS, 236 EU27 NU...), row 3, col 3",
+      "source_key": "summary_statistics.json.outcome.gdp_index.mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "35.5",
+      "table_context": "tab:summary (Summary statistics of GDP per inhabitant in PPS, 236 EU27 NU...), row 3, col 4",
+      "source_key": "summary_statistics.json.outcome.gdp_index.sd",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "41.7",
+      "table_context": "tab:summary (Summary statistics of GDP per inhabitant in PPS, 236 EU27 NU...), row 3, col 5",
+      "source_key": "summary_statistics.json.outcome.gdp_index.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "70.8",
+      "table_context": "tab:summary (Summary statistics of GDP per inhabitant in PPS, 236 EU27 NU...), row 3, col 6",
+      "source_key": "summary_statistics.json.outcome.gdp_index.p25",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "87.5",
+      "table_context": "tab:summary (Summary statistics of GDP per inhabitant in PPS, 236 EU27 NU...), row 3, col 7",
+      "source_key": "summary_statistics.json.outcome.gdp_index.median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "110.2",
+      "table_context": "tab:summary (Summary statistics of GDP per inhabitant in PPS, 236 EU27 NU...), row 3, col 8",
+      "source_key": "summary_statistics.json.outcome.gdp_index.p75",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "267.5",
+      "table_context": "tab:summary (Summary statistics of GDP per inhabitant in PPS, 236 EU27 NU...), row 3, col 9",
+      "source_key": "summary_statistics.json.outcome.gdp_index.max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.370",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 2, col 2",
+      "source_key": "estimation_results.json.distribution.cv",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-0.004",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 2, col 3",
+      "source_key": "summary_statistics.json.population.missing",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.83",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 2, col 4",
+      "source_key": "estimation_results.json.spatial_statistics.moran_gdp_queen.z",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.001",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 2, col 5",
+      "source_key": "summary_statistics.json.population.missing",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "236",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 2, col 6",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.266",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 3, col 2",
+      "source_key": "estimation_results.json.spatial_statistics.moran_gdp_knn5.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-0.004",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 3, col 3",
+      "source_key": "summary_statistics.json.population.missing",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.01",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 3, col 4",
+      "source_key": "summary_statistics.json.by_country.PT.n",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.001",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 3, col 5",
+      "source_key": "summary_statistics.json.population.missing",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "236",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 3, col 6",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.265",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 4, col 2",
+      "source_key": "estimation_results.json.spatial_statistics.moran_gdp_knn5.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-0.004",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 4, col 3",
+      "source_key": "summary_statistics.json.population.missing",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8.43",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 4, col 4",
+      "source_key": "estimation_results.json.spatial_statistics.moran_gdp_knn8.z",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.001",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 4, col 5",
+      "source_key": "summary_statistics.json.population.missing",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "236",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 4, col 6",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.089",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 5, col 2",
+      "source_key": "estimation_results.json.spatial_statistics.moran_gdp_invdist.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-0.004",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 5, col 3",
+      "source_key": "summary_statistics.json.population.missing",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "12.49",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 5, col 4",
+      "source_key": "estimation_results.json.spatial_statistics.moran_gdp_invdist.z",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.001",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 5, col 5",
+      "source_key": "summary_statistics.json.population.missing",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "236",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 5, col 6",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.482",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 6, col 2",
+      "source_key": "estimation_results.json.spatial_statistics.moran_lngdp_queen.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-0.004",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 6, col 3",
+      "source_key": "summary_statistics.json.population.missing",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9.95",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 6, col 4",
+      "source_key": "summary_statistics.json.outcome.ln_gdp_pps.p5",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.001",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 6, col 5",
+      "source_key": "summary_statistics.json.population.missing",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "236",
+      "table_context": "tab:moran (Global Moran's $I$ of regional GDP per inhabitant under alte...), row 6, col 6",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.276",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 2, col 2",
+      "source_key": "estimation_results.json.robustness.moran_gdp_knn5_all244.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.36",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 2, col 3",
+      "source_key": "estimation_results.json.robustness.moran_gdp_knn5_all244.z",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.001",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 2, col 4",
+      "source_key": "summary_statistics.json.population.missing",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "244",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 2, col 5",
+      "source_key": "summary_statistics.json.n_all244",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.411",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 3, col 2",
+      "source_key": "estimation_results.json.robustness.sens_drop_LU00.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8.85",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 3, col 3",
+      "source_key": "estimation_results.json.robustness.sens_drop_LU00.z",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.001",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 3, col 4",
+      "source_key": "summary_statistics.json.population.missing",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "235",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 3, col 5",
+      "source_key": "summary_statistics.json.data_quality_log.islands[0].distance_km",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.342",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 4, col 2",
+      "source_key": "estimation_results.json.robustness.sens_drop_Ireland.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.07",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 4, col 3",
+      "source_key": "estimation_results.json.robustness.sens_drop_Ireland.z",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.001",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 4, col 4",
+      "source_key": "summary_statistics.json.population.missing",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "233",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 4, col 5",
+      "source_key": "summary_statistics.json.data_quality_log.islands[6].distance_km",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.429",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 5, col 2",
+      "source_key": "estimation_results.json.robustness.sens_drop_top5.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8.84",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 5, col 3",
+      "source_key": "estimation_results.json.robustness.sens_drop_LU00.z",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.001",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 5, col 4",
+      "source_key": "summary_statistics.json.population.missing",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "231",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 5, col 5",
+      "source_key": "summary_statistics.json.data_quality_log.islands[6].distance_km",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.623",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 6, col 2",
+      "source_key": "estimation_results.json.robustness.sens_drop_capital_regions.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "12.28",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 6, col 3",
+      "source_key": "estimation_results.json.robustness.sens_drop_capital_regions.z",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.001",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 6, col 4",
+      "source_key": "summary_statistics.json.population.missing",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "209",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 6, col 5",
+      "source_key": "estimation_results.json.distribution_sensitivity.drop_capital_regions.n",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.020",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 7, col 2",
+      "source_key": "estimation_results.json.distribution.theil_between_country",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.49",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 7, col 3",
+      "source_key": "figure_spec.json.figures[4].x[35]",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.600",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 7, col 4",
+      "source_key": "estimation_results.json.robustness.sens_within_country_demeaned.p_value",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "236",
+      "table_context": "tab:robust (Robustness of Moran's $I$: outermost regions, extreme region...), row 7, col 5",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "Eurostat_Database",
+      "status": "verified_title",
+      "registry": "openalex",
+      "external_id": "doi:10.1007/978-3-319-69909-7_944-2"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "pourpakdelfekr2026multispeed",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1080/00343404.2026.2632887"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "moran1950notes",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1093/biomet/37.1-2.17"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "anselin1995local",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1111/j.1538-4632.1995.tb00338.x"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "getis1992analysis",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1111/j.1538-4632.1992.tb00261.x"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "Eurostat_GISCO_NUTS",
+      "status": "unverifiable",
+      "registry": null,
+      "external_id": null
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "openshaw1984modifiable",
+      "status": "unverifiable",
+      "registry": null,
+      "external_id": null
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "anselin1988spatial",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1007/978-94-015-7799-1"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_dist_gdp_pps_2024.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_map_gdp_index.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_map_gdp_pps_2024.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_map_lisa.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_moran_scatter.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "estimation",
+      "output": "results/estimation_results.json",
+      "script": "code/run_estimation.py"
+    },
+    {
+      "type": "data",
+      "output": "data/data.db",
+      "queries": "replication/data_queries.sql",
+      "sources": "data/data_sources.json"
+    }
+  ],
+  "amendments": [
+    {
+      "path": "paper/paper.tex",
+      "sha256_before": "c0a64205c6686637966a258daee30d587551c2bb67d313399182e6ab2e745bdf",
+      "sha256_after": "740befd2148e725a641cad75999348717dfb983b18841fc73d7e6cd1abcfe357",
+      "reason": "stamped with the dossier link",
+      "at": "2026-10-15T09:20:12Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256_before": "4be0a580c90d0c321c14b699386d591bc4cb4d89f807b073fe8aebfc21e4d51c",
+      "sha256_after": "70795b43fa62b54364e160e7b30ca267074bad971fbb24e4d313ceef4b1b4a76",
+      "reason": "recompiled with the dossier link",
+      "at": "2026-10-15T09:20:12Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "paper/paper.tex",
+      "sha256_before": "740befd2148e725a641cad75999348717dfb983b18841fc73d7e6cd1abcfe357",
+      "sha256_after": "5b3683dfb3dd396c5a6155104f1f9a0117ded33e48cb39f2b46f556621134935",
+      "reason": "stamped with the dossier link",
+      "at": "2026-10-20T00:27:01Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256_before": "70795b43fa62b54364e160e7b30ca267074bad971fbb24e4d313ceef4b1b4a76",
+      "sha256_after": "adbdecbd759cbad5b9e13beeffdc9673a1f9516d076d776e1ede4bce52a15231",
+      "reason": "recompiled with the dossier link",
+      "at": "2026-10-20T00:27:01Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "README.md",
+      "sha256_before": "6a18ea6e090ebe9f2f56d54aa5faae9ca238d234c80542699170832654ce3a16",
+      "sha256_after": "951ff3519a40de20b878d4982b18fae5b04d9f4d6fad9f62944946b08e0d12df",
+      "reason": "the study's summary for its GitHub repository, at the top",
+      "at": "2026-10-20T00:27:01Z",
+      "kind": "readme"
+    }
+  ]
+}

@@ -1,0 +1,580 @@
+{
+ "result_kind": "spatial",
+ "units": {
+  "type": "NUTS 2 region",
+  "n_units": 236,
+  "id_field": "id",
+  "crs": "EPSG:3035",
+  "year": 2024,
+  "note": "EU27 NUTS 2024 regions excluding 8 outermost regions; 13 island regions linked to nearest region (queen)"
+ },
+ "variables": {
+  "gdp_pps": {
+   "n": 236,
+   "mean": 37975.84745762712,
+   "sd": 14245.634244337467,
+   "min": 16700.0,
+   "median": 35050.0,
+   "max": 107200.0
+  },
+  "gdp_index": {
+   "n": 236,
+   "mean": 94.75627118644066,
+   "sd": 35.545129607342,
+   "min": 41.67,
+   "median": 87.455,
+   "max": 267.48
+  },
+  "ln_gdp_pps": {
+   "n": 236,
+   "mean": 10.48257745762712,
+   "sd": 0.3484138090276682,
+   "min": 9.72316,
+   "median": 10.46453,
+   "max": 11.58245
+  }
+ },
+ "distribution": {
+  "cv": 0.37432794072458686,
+  "cv_pop_weighted": 0.3571803297409243,
+  "gini": 0.19743130215703936,
+  "theil_pop_weighted": 0.05899094971656561,
+  "theil_between_country": 0.021418991760226977,
+  "theil_within_country": 0.037571957956338636,
+  "share_between_country": 0.3630894546220906,
+  "max_min_ratio": 6.419161676646707,
+  "p90_p10_ratio": 2.353846153846154,
+  "pop_weighted_mean": 40077.407781290116,
+  "top5": [
+   [
+    "IE06",
+    107200.0
+   ],
+   [
+    "LU00",
+    97700.0
+   ],
+   [
+    "IE05",
+    86500.0
+   ],
+   [
+    "DE60",
+    78300.0
+   ],
+   [
+    "CZ01",
+    76600.0
+   ]
+  ],
+  "bottom5": [
+   [
+    "BG31",
+    16700.0
+   ],
+   [
+    "EL41",
+    16800.0
+   ],
+   [
+    "BG42",
+    17300.0
+   ],
+   [
+    "BG32",
+    17300.0
+   ],
+   [
+    "EL54",
+    17800.0
+   ]
+  ]
+ },
+ "distribution_sensitivity": {
+  "drop_LU00": {
+   "n": 235,
+   "cv": 0.36319088799055715,
+   "gini": 0.1936814899905481
+  },
+  "drop_Ireland": {
+   "n": 233,
+   "cv": 0.35183903310112263,
+   "gini": 0.19041857269757678
+  },
+  "drop_capital_regions": {
+   "n": 209,
+   "cv": 0.3193187855662976,
+   "gini": 0.1738084323935034
+  }
+ },
+ "spatial_statistics": {
+  "moran_gdp_queen": {
+   "statistic": "morans_i",
+   "variable": "gdp_pps",
+   "weights": "queen contiguity, row-standardised (islands linked to nearest region)",
+   "estimate": 0.37048,
+   "expected": -0.004255,
+   "z": 7.83,
+   "p_value": 0.001,
+   "p_value_method": "permutation",
+   "n_permutations": 999,
+   "alternative": "two-sided",
+   "n_units": 236,
+   "weights_file": "spatial_weights.csv"
+  },
+  "moran_gdp_knn5": {
+   "statistic": "morans_i",
+   "variable": "gdp_pps",
+   "weights": "k = 5 nearest neighbours (centroids), row-standardised",
+   "estimate": 0.26593,
+   "expected": -0.004255,
+   "z": 7.007,
+   "p_value": 0.001,
+   "p_value_method": "permutation",
+   "n_permutations": 999,
+   "alternative": "two-sided",
+   "n_units": 236,
+   "weights_file": "spatial_weights_knn5.csv"
+  },
+  "moran_gdp_knn8": {
+   "statistic": "morans_i",
+   "variable": "gdp_pps",
+   "weights": "k = 8 nearest neighbours (centroids), row-standardised",
+   "estimate": 0.2649,
+   "expected": -0.004255,
+   "z": 8.433,
+   "p_value": 0.001,
+   "p_value_method": "permutation",
+   "n_permutations": 999,
+   "alternative": "two-sided",
+   "n_units": 236,
+   "weights_file": "spatial_weights_knn8.csv"
+  },
+  "moran_gdp_invdist": {
+   "statistic": "morans_i",
+   "variable": "gdp_pps",
+   "weights": "inverse distance (1/km, all pairs), row-standardised",
+   "estimate": 0.08898,
+   "expected": -0.004255,
+   "z": 12.491,
+   "p_value": 0.001,
+   "p_value_method": "permutation",
+   "n_permutations": 999,
+   "alternative": "two-sided",
+   "n_units": 236,
+   "weights_file": "spatial_weights_invdist.csv"
+  },
+  "moran_lngdp_queen": {
+   "statistic": "morans_i",
+   "variable": "ln_gdp_pps",
+   "weights": "queen contiguity, row-standardised (islands linked to nearest region)",
+   "estimate": 0.48171,
+   "expected": -0.004255,
+   "z": 9.953,
+   "p_value": 0.001,
+   "p_value_method": "permutation",
+   "n_permutations": 999,
+   "alternative": "two-sided",
+   "n_units": 236,
+   "weights_file": "spatial_weights.csv"
+  }
+ },
+ "moran_scatter": {
+  "variable": "gdp_pps",
+  "weights": "queen, row-standardised",
+  "slope": 0.3704834275600537,
+  "data_file": "moran_scatter_data.csv",
+  "quadrant_counts": {
+   "HH": 74,
+   "LL": 105,
+   "HL": 31,
+   "LH": 26
+  }
+ },
+ "robustness": {
+  "moran_gdp_knn5_all244": {
+   "statistic": "morans_i",
+   "variable": "gdp_pps",
+   "weights": "k = 5 nearest neighbours, row-standardised, 244 EU27 regions incl. outermost",
+   "estimate": 0.27593,
+   "z": 7.358,
+   "p_value": 0.001,
+   "p_value_method": "permutation",
+   "n_permutations": 999,
+   "alternative": "two-sided",
+   "n_units": 244,
+   "expected_note": "-1/(n-1) = -0.004115 for this statistic's own n"
+  },
+  "sens_drop_LU00": {
+   "statistic": "morans_i",
+   "variable": "gdp_pps",
+   "weights": "queen, row-standardised, after dropping 1 regions",
+   "estimate": 0.41101,
+   "z": 8.853,
+   "p_value": 0.001,
+   "p_value_method": "permutation",
+   "n_permutations": 999,
+   "alternative": "two-sided",
+   "n_units": 235,
+   "expected_note": "-1/(n-1) = -0.004274 for this statistic's own n",
+   "n_isolated_after_drop": 0,
+   "dropped": "dropping 1 regions",
+   "dropped_ids": [
+    "LU00"
+   ]
+  },
+  "sens_drop_Ireland": {
+   "statistic": "morans_i",
+   "variable": "gdp_pps",
+   "weights": "queen, row-standardised, after dropping 3 regions",
+   "estimate": 0.34177,
+   "z": 7.067,
+   "p_value": 0.001,
+   "p_value_method": "permutation",
+   "n_permutations": 999,
+   "alternative": "two-sided",
+   "n_units": 233,
+   "expected_note": "-1/(n-1) = -0.004310 for this statistic's own n",
+   "n_isolated_after_drop": 0,
+   "dropped": "dropping 3 regions",
+   "dropped_ids": [
+    "IE04",
+    "IE05",
+    "IE06"
+   ]
+  },
+  "sens_drop_top5": {
+   "statistic": "morans_i",
+   "variable": "gdp_pps",
+   "weights": "queen, row-standardised, after dropping 5 regions",
+   "estimate": 0.42921,
+   "z": 8.836,
+   "p_value": 0.001,
+   "p_value_method": "permutation",
+   "n_permutations": 999,
+   "alternative": "two-sided",
+   "n_units": 231,
+   "expected_note": "-1/(n-1) = -0.004348 for this statistic's own n",
+   "n_isolated_after_drop": 1,
+   "dropped": "dropping 5 regions",
+   "dropped_ids": [
+    "IE06",
+    "LU00",
+    "IE05",
+    "DE60",
+    "CZ01"
+   ]
+  },
+  "sens_drop_capital_regions": {
+   "statistic": "morans_i",
+   "variable": "gdp_pps",
+   "weights": "queen, row-standardised, after dropping 27 regions",
+   "estimate": 0.6227,
+   "z": 12.277,
+   "p_value": 0.001,
+   "p_value_method": "permutation",
+   "n_permutations": 999,
+   "alternative": "two-sided",
+   "n_units": 209,
+   "expected_note": "-1/(n-1) = -0.004808 for this statistic's own n",
+   "n_isolated_after_drop": 3,
+   "dropped": "dropping 27 regions",
+   "dropped_ids": [
+    "BE10",
+    "BG41",
+    "CZ01",
+    "DK01",
+    "DE30",
+    "EE00",
+    "IE06",
+    "EL30",
+    "ES30",
+    "FR10",
+    "HR05",
+    "ITI4",
+    "CY00",
+    "LV00",
+    "LT01",
+    "LU00",
+    "HU11",
+    "MT00",
+    "NL32",
+    "AT13",
+    "PL91",
+    "PT1A",
+    "RO32",
+    "SI04",
+    "SK01",
+    "FI1B",
+    "SE11"
+   ]
+  },
+  "sens_within_country_demeaned": {
+   "statistic": "morans_i",
+   "variable": "gdp_pps minus national population-weighted mean",
+   "weights": "queen contiguity, row-standardised (islands linked to nearest region)",
+   "estimate": 0.02029,
+   "expected": -0.004255,
+   "z": 0.495,
+   "p_value": 0.6,
+   "p_value_method": "permutation",
+   "n_permutations": 999,
+   "alternative": "two-sided",
+   "n_units": 236
+  }
+ },
+ "clusters": {
+  "HH": {
+   "count": 19
+  },
+  "LL": {
+   "count": 38
+  },
+  "HL": {
+   "count": 2
+  },
+  "LH": {
+   "count": 3
+  },
+  "ns": {
+   "count": 174
+  }
+ },
+ "cluster_details": {
+  "method": "local Moran's I, queen row-standardised, conditional permutation 999, pseudo p in direction of sign of I_i, p < 0.05 uncorrected",
+  "seed": 20241014,
+  "n_significant_p05": 62,
+  "expected_false_positives_p05": 11.8,
+  "fdr_bh_q05": {
+   "HH": {
+    "count": 1
+   },
+   "LL": {
+    "count": 20
+   },
+   "HL": {
+    "count": 1
+   },
+   "LH": {
+    "count": 0
+   },
+   "ns": {
+    "count": 214
+   }
+  },
+  "n_significant_fdr": 22,
+  "hh_ll_by_country": {
+   "AT": {
+    "HH": 2,
+    "LL": 0
+   },
+   "BE": {
+    "HH": 1,
+    "LL": 0
+   },
+   "BG": {
+    "HH": 0,
+    "LL": 5
+   },
+   "CZ": {
+    "HH": 0,
+    "LL": 1
+   },
+   "DE": {
+    "HH": 5,
+    "LL": 0
+   },
+   "EL": {
+    "HH": 0,
+    "LL": 7
+   },
+   "HR": {
+    "HH": 0,
+    "LL": 1
+   },
+   "HU": {
+    "HH": 0,
+    "LL": 5
+   },
+   "IE": {
+    "HH": 3,
+    "LL": 0
+   },
+   "IT": {
+    "HH": 3,
+    "LL": 1
+   },
+   "NL": {
+    "HH": 5,
+    "LL": 0
+   },
+   "PL": {
+    "HH": 0,
+    "LL": 10
+   },
+   "PT": {
+    "HH": 0,
+    "LL": 1
+   },
+   "RO": {
+    "HH": 0,
+    "LL": 5
+   },
+   "SK": {
+    "HH": 0,
+    "LL": 2
+   }
+  },
+  "hh_ids": [
+   "BE24",
+   "DE14",
+   "DE21",
+   "DE25",
+   "DE26",
+   "DE27",
+   "IE04",
+   "IE05",
+   "IE06",
+   "ITH1",
+   "ITH2",
+   "ITH3",
+   "NL22",
+   "NL23",
+   "NL34",
+   "NL35",
+   "NL36",
+   "AT32",
+   "AT33"
+  ],
+  "ll_ids": [
+   "BG31",
+   "BG32",
+   "BG33",
+   "BG34",
+   "BG42",
+   "CZ07",
+   "EL52",
+   "EL53",
+   "EL54",
+   "EL61",
+   "EL62",
+   "EL63",
+   "EL64",
+   "HR02",
+   "ITF5",
+   "HU21",
+   "HU23",
+   "HU31",
+   "HU32",
+   "HU33",
+   "PL21",
+   "PL22",
+   "PL41",
+   "PL62",
+   "PL63",
+   "PL71",
+   "PL72",
+   "PL81",
+   "PL82",
+   "PL84",
+   "PT1C",
+   "RO11",
+   "RO12",
+   "RO22",
+   "RO41",
+   "RO42",
+   "SK03",
+   "SK04"
+  ],
+  "hl_ids": [
+   "BG41",
+   "EL30"
+  ],
+  "lh_ids": [
+   "BE33",
+   "DK02",
+   "DEB2"
+  ]
+ },
+ "getis_ord": {
+  "statistic": "gi_star",
+  "weights": "queen incl. own value, row-standardised",
+  "hot_spots_z_gt_1.96": 24,
+  "cold_spots_z_lt_-1.96": 30,
+  "note": "analytic z, not corrected for multiple testing"
+ },
+ "share_queen_links_crossing_borders": 0.24789847628830677,
+ "maps": [
+  {
+   "id": "map_gdp_pps",
+   "figure": "fig_map_gdp_pps_2024.pdf",
+   "variable": "gdp_pps",
+   "classification": "quantiles",
+   "classes": 5,
+   "legend_label": "GDP per inhabitant, PPS (EU27 2020), 2024",
+   "extent": [
+    -12,
+    34,
+    35,
+    72
+   ]
+  },
+  {
+   "id": "map_gdp_index",
+   "figure": "fig_map_gdp_index.pdf",
+   "variable": "gdp_index",
+   "classification": "breaks",
+   "breaks": [
+    0,
+    50,
+    75,
+    100,
+    125,
+    150,
+    1000
+   ],
+   "legend_label": "GDP per inhabitant, PPS (EU27 = 100)",
+   "extent": [
+    -12,
+    34,
+    35,
+    72
+   ]
+  },
+  {
+   "id": "map_lisa",
+   "figure": "fig_map_lisa.pdf",
+   "variable": "lisa_cluster",
+   "classification": "categories",
+   "categories": {
+    "HH": {
+     "label": "High-High",
+     "color": "#b2182b"
+    },
+    "LL": {
+     "label": "Low-Low",
+     "color": "#2166ac"
+    },
+    "HL": {
+     "label": "High-Low",
+     "color": "#ef8a62"
+    },
+    "LH": {
+     "label": "Low-High",
+     "color": "#67a9cf"
+    },
+    "Not significant": {
+     "label": "Not significant",
+     "color": "#e0e0e0"
+    }
+   },
+   "legend_label": "LISA clusters (p < 0.05, 999 permutations)",
+   "extent": [
+    -12,
+    34,
+    35,
+    72
+   ]
+  }
+ ]
+}

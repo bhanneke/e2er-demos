@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "reasons": [],
+  "notes": [],
+  "stats": {
+    "units": 236,
+    "moran_gdp_queen": 0.3705,
+    "moran_gdp_knn5": 0.2659,
+    "moran_gdp_knn8": 0.2649,
+    "moran_gdp_invdist": 0.089,
+    "moran_lngdp_queen": 0.4817,
+    "lisa": true
+  }
+}

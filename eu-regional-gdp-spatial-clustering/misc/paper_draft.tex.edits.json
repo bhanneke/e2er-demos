@@ -1,0 +1,162 @@
+[
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "It is, however, almost entirely a between-country phenomenon: once each region's income is measured relative to its national mean, spatial autocorrelation disappears. Local indicators locate low-income clusters in Poland, Greece, Bulgaria, Romania and Hungary and high-income clusters in Germany, the Netherlands, Ireland and northern Italy; after a false discovery rate correction, 22 local clusters remain (20 low-low, one high-high, one high-low).",
+    "replace": "It is, however, largely a between-country phenomenon: once each region's income is measured relative to its national mean, Moran's $I$ falls to 0.02, although this test has low power and its permutation null is not adapted to demeaned data. Uncorrected local indicators suggest low-income clusters in Poland, Greece, Bulgaria, Romania and Hungary and high-income clusters in Germany, the Netherlands, Ireland and northern Italy; after a false discovery rate correction, only 22 regions remain significant (20 low-low, one high-high, one high-low), so the high-income clusters are suggestive only.",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "We check whether the results depend on the neighbour definition, on the treatment of islands, on extreme regions, and on the national level.",
+    "replace": "We check whether the results depend on the neighbour definition, on the inclusion of outermost regions, on extreme regions, and on the national level.",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "excluding Luxembourg, the Irish regions, or the five richest regions leaves it unchanged or stronger, and excluding capital regions raises it considerably. Fourth, the clustering is a national phenomenon: after subtracting each country's population-weighted mean, spatial autocorrelation is statistically indistinguishable from zero. Local analysis finds large low-income clusters in eastern and south-eastern Europe and high-income clusters in Germany, the Netherlands, Ireland and northern Italy, but only a small subset survives a false discovery rate correction.",
+    "replace": "excluding Luxembourg or the five richest regions raises it, excluding the three Irish regions lowers it slightly (to 0.34), and excluding the 27 capital regions raises it considerably, although that variant also removes five whole countries and leaves three regions without a neighbour. Fourth, the clustering is largely national: after subtracting each country's population-weighted mean, Moran's $I$ falls to 0.02, although this test has low power and a permutation null that is not adapted to demeaned data. Uncorrected local analysis finds large low-income clusters in eastern and south-eastern Europe and high-income clusters in Germany, the Netherlands, Ireland and northern Italy, but only 22 regions survive a false discovery rate correction, almost all of them low-income, so the high-income clusters are suggestive only.",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "which is rarely reported together.",
+    "replace": "for a single recent year.",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "we show that the apparent regional clustering is largely absorbed by country membership, which cautions",
+    "replace": "we show that the apparent regional clustering largely coincides with country membership (subject to the caveats on the demeaned test in Section 4.4), which cautions",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "section:data",
+    "edit_type": "replace_text",
+    "find": "The 2024 values are largely provisional or estimated: of the 236 regions in the analysis, 134 carry a provisional flag and 33 an estimated flag.",
+    "replace": "The 2024 values are largely provisional or estimated: of the 236 regions in the analysis, 134 carry a provisional flag and 33 an estimated flag, so the figures are subject to revision and we do not repeat the analysis with a 2023 vintage or without flagged values. GDP is allocated by workplace and population by residence, so net in-commuting raises income in regions such as Luxembourg, Brussels, Hamburg and Prague and lowers it in their surroundings. Irish values, and to a lesser degree Luxembourg's, reflect multinational accounting and drive the upper end of the range. PPS adjusts for price differences between countries but not between regions within a country.",
+    "find_must_be_unique": true,
+    "source_finding": "F2"
+  },
+  {
+    "target": "section:data",
+    "edit_type": "replace_text",
+    "find": "We exclude the eight outermost regions, which are separated from the continental territory by thousands of kilometres and have no meaningful land neighbours, leaving",
+    "replace": "By convention we exclude the eight outermost regions, which are separated from the continental territory by thousands of kilometres and have no meaningful land neighbours, leaving",
+    "find_must_be_unique": true,
+    "source_finding": "F2"
+  },
+  {
+    "target": "section:data",
+    "edit_type": "replace_text",
+    "find": "Among these, 13 island regions have no land border and are linked to their nearest region by centroid distance so that every region has at least one neighbour.",
+    "replace": "Among these, 13 regions without a shared border vertex (mostly islands, but including the Spanish exclaves Ceuta and Melilla) are linked to their nearest region by centroid distance so that every region has at least one neighbour; this guarantees a neighbour but not a connected graph, since the three Irish regions, for instance, are linked only to each other. We do not report a variant without these links. The EU27 frame also truncates neighbourhoods at borders with non-EU countries (for example Switzerland, Norway and the Western Balkans), so all statistics are conditional on this frame.",
+    "find_must_be_unique": true,
+    "source_finding": "F2"
+  },
+  {
+    "target": "section:data",
+    "edit_type": "replace_text",
+    "find": "We also use the index version of the variable (EU27 = 100) for mapping",
+    "replace": "We also use the index version of the variable (population-weighted mean of the 236 sample regions = 100, which is not Eurostat's official EU27 figure) for mapping",
+    "find_must_be_unique": true,
+    "source_finding": "F2"
+  },
+  {
+    "target": "section:data",
+    "edit_type": "replace_text",
+    "find": "We also use the index version",
+    "replace": "The Gini coefficient, coefficient of variation, percentiles and Moran's $I$ are computed without population weights, whereas the Theil decomposition and the national demeaning use population weights. We also use the index version",
+    "find_must_be_unique": true,
+    "source_finding": "F2"
+  },
+  {
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "which reflects the right skew.",
+    "replace": "which reflects the right skew and the fact that larger regions are on average richer.",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "Inequality is partly a matter of extreme regions: dropping Luxembourg lowers the Gini coefficient only from 0.197 to 0.194, whereas dropping all capital regions lowers it to 0.174.",
+    "replace": "Single extreme regions matter little for dispersion: dropping Luxembourg lowers the Gini coefficient only from 0.197 to 0.194, whereas dropping all 27 capital regions, which removes five whole countries, lowers it to 0.174.",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "which is smaller because distant regions receive non-negligible weight",
+    "replace": "which is presumably smaller because distant regions receive non-negligible weight",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "and BE33, DK02 and DEB2 (low-high).",
+    "replace": "and BE33, DK02 and DEB2 (low-high). The Irish high-high label describes a closed island of three regions whose only neighbours are each other and whose values are likely inflated by multinational accounting, and the outlier labels may partly reflect workplace-based GDP and commuting into capital regions.",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "The uncorrected high-high clusters thus rest on weaker evidence than the low-income ones.",
+    "replace": "The uncorrected high-high clusters thus rest on weaker evidence than the low-income ones and should be read as suggestive only. Part of this asymmetry may be mechanical, because regional income is right-skewed and a conditional permutation test on a skewed level variable makes high-high clusters harder to establish; we did not repeat the local analysis on logarithms or ranks, and the 22 survivors were obtained with 999 permutations, whose resolution limits the correction.",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "In every case the pseudo $p$-value is 0.001.",
+    "replace": "In every case the pseudo $p$-value is 0.001. We did not run the variants without island links, with Geary's $C$, with three nearest neighbours, or with more than 999 permutations.",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "section:results",
+    "edit_type": "replace_text",
+    "find": "Within countries, high-income regions are thus not systematically adjacent to other high-income regions. This is consistent with",
+    "replace": "Within countries, we therefore find no evidence that high-income regions are systematically adjacent to other high-income regions, but this test is weak. The permutation shuffles demeaned values across all 236 regions, although demeaning forces deviations to sum to zero within each country (and to exactly zero in single-region countries), so the reference distribution is not the appropriate null; a shuffle within countries would be, and we did not run it. The test also pools large countries with known internal gradients with very small ones, and capital-hinterland contrasts, which lower the statistic as the capital-drop variant shows, work in the same direction. The result is consistent with",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "but the clustering is the geography of national income levels.",
+    "replace": "but the clustering largely reflects the geography of national income levels.",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "Yet the within-country result shows that this association vanishes once national means are removed. The contiguous low-income blocks in Poland, Romania, Bulgaria, Hungary and Greece, and the high-income cores in Germany, the Netherlands and Ireland, are largely national blocks.",
+    "replace": "Yet the within-country result suggests that this association largely disappears once national means are removed, although the test has low power and a permutation null that is not adapted to demeaned data. The contiguous low-income blocks in Poland, Romania, Bulgaria, Hungary and Greece appear to follow national borders; the uncorrected high-income cores in Germany, the Netherlands and Ireland are more mixed, since the German, Dutch, Belgian, Austrian and Italian high-high regions span several borders.",
+    "find_must_be_unique": true,
+    "source_finding": "F1"
+  },
+  {
+    "target": "paper:full",
+    "edit_type": "replace_text",
+    "find": "although the robustness check suggests this choice matters little.",
+    "replace": "although the robustness check suggests this choice matters little. Irish and Luxembourgish values reflect multinational accounting, GDP is allocated by workplace while population is counted by residence, PPS corrects national but not regional price levels, and the EU27 frame truncates neighbourhoods at non-EU borders; each affects the upper tail and the outlier classes. We also did not run the island-link, 2023-vintage, log-scale local and within-country permutation variants that would test these choices.",
+    "find_must_be_unique": true,
+    "source_finding": "F2"
+  }
+]

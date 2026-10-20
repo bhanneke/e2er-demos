@@ -1,0 +1,109 @@
+{
+  "tables": [
+    {
+      "name": "gdp_pps_nuts2",
+      "source": "eurostat",
+      "series": "Eurostat nama_10r_2gdp: Gross domestic product (GDP) at current market prices by NUTS 2 region (unit=PPS_EU27_2020_HAB, nuts2), 2015–2024",
+      "licence": "Eurostat copyright notice (https://ec.europa.eu/eurostat/en/help/copyright-notice): \"Reuse of statistical data, metadata, publications, and other dissemination tools published on this website for commercial or non-commercial purposes is authorised provided the source is acknowledged. The reuse policy of the European Commission is implemented by the Decision of 12 December 2011.\" \"The following Eurostat data and documents may not be reused for commercial purposes, but non-commercial reuse is possible without restriction: Data identified as belonging to sources other than Eurostat. […] Data for countries other than: Member States of the European Union (EU); Member States of the European Free Trade Association (EFTA); official EU acceding and candidate countries.\" \"When reuse involves translations of publications or modifications to the data or text, this must be stated clearly to the end user of the information. A disclaimer regarding the non-responsibility of Eurostat shall be included.\"",
+      "citation": "Eurostat, Gross domestic product (GDP) at current market prices by NUTS 2 region (nama_10r_2gdp). Source: https://doi.org/10.2908/NAMA_10R_2GDP, 2026-10-14. Customised version: Source: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10r_2gdp?lang=en&unit=PPS_EU27_2020_HAB&geoLevel=nuts2&sinceTimePeriod=2015&untilTimePeriod=2024, 2026-10-14.",
+      "provenance": "Eurostat database (dissemination API), European Commission (https://ec.europa.eu/eurostat/data/database), release 2026-02-10T11:00:00+0100",
+      "frequency": "annual",
+      "version": "2026-02-10T11:00:00+0100",
+      "source_files": [
+        {
+          "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10r_2gdp?lang=en&unit=PPS_EU27_2020_HAB&geoLevel=nuts2&sinceTimePeriod=2015&untilTimePeriod=2024",
+          "sha256": "66a967d8dcd45c2002635372ddc0d14460daacee0c06ba914ea36fb9c4a28c45"
+        }
+      ],
+      "cite_key": "Eurostat_Database",
+      "columns": [
+        {
+          "name": "value",
+          "min_non_null": 0.9
+        }
+      ]
+    },
+    {
+      "name": "nuts2_boundaries",
+      "source": "gisco",
+      "series": "NUTS 2 regions, NUTS 2024, 1:20 million, EPSG:3035",
+      "licence": "GISCO download terms (https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units): \"The Commission agrees to grant the non-exclusive and non-transferable right to use and process the Eurostat/GISCO geographical data downloaded from this page (the 'data'). The permission to use the data is granted on condition that: the data will not be used for commercial purposes the source will be acknowledged. A copyright notice, as specified below, must be visible on any printed or electronic publication using the data downloaded from this page.\" Notice: © EuroGeographics for the administrative boundaries.",
+      "citation": "Eurostat, GISCO. Territorial units for statistics (NUTS), boundaries. European Commission. https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics. © EuroGeographics for the administrative boundaries.",
+      "provenance": "GISCO geographical data (NUTS regions, countries), Eurostat (https://ec.europa.eu/eurostat/web/gisco), release NUTS 2024",
+      "frequency": "static",
+      "version": "NUTS 2024",
+      "source_files": [
+        {
+          "url": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_20M_2024_3035_LEVL_2.geojson",
+          "sha256": "d1d2bfbc44c7503fd670da2a916e9f570d3a20af3c10571bd732a84189faf808"
+        }
+      ],
+      "cite_key": "Eurostat_GISCO_NUTS",
+      "columns": [
+        {
+          "name": "nuts_id",
+          "min_non_null": 0.9
+        },
+        {
+          "name": "geometry",
+          "min_non_null": 0.9
+        }
+      ]
+    },
+    {
+      "name": "pop_nuts2",
+      "source": "eurostat",
+      "series": "Eurostat demo_r_d2jan: Population on 1 January by age, sex and NUTS 2 region (sex=T, age=TOTAL, nuts2), 2024–2024",
+      "licence": "Eurostat copyright notice (https://ec.europa.eu/eurostat/en/help/copyright-notice): \"Reuse of statistical data, metadata, publications, and other dissemination tools published on this website for commercial or non-commercial purposes is authorised provided the source is acknowledged. The reuse policy of the European Commission is implemented by the Decision of 12 December 2011.\" \"The following Eurostat data and documents may not be reused for commercial purposes, but non-commercial reuse is possible without restriction: Data identified as belonging to sources other than Eurostat. […] Data for countries other than: Member States of the European Union (EU); Member States of the European Free Trade Association (EFTA); official EU acceding and candidate countries.\" \"When reuse involves translations of publications or modifications to the data or text, this must be stated clearly to the end user of the information. A disclaimer regarding the non-responsibility of Eurostat shall be included.\"",
+      "citation": "Eurostat, Population on 1 January by age, sex and NUTS 2 region (demo_r_d2jan). Source: https://doi.org/10.2908/DEMO_R_D2JAN, 2026-10-14. Customised version: Source: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_r_d2jan?lang=en&sex=T&age=TOTAL&geoLevel=nuts2&sinceTimePeriod=2024&untilTimePeriod=2024, 2026-10-14.",
+      "provenance": "Eurostat database (dissemination API), European Commission (https://ec.europa.eu/eurostat/data/database), release 2026-08-28T23:00:00+0200",
+      "frequency": "annual",
+      "version": "2026-08-28T23:00:00+0200",
+      "source_files": [
+        {
+          "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_r_d2jan?lang=en&sex=T&age=TOTAL&geoLevel=nuts2&sinceTimePeriod=2024&untilTimePeriod=2024",
+          "sha256": "47717976e8042a16634c9d9c4156c0866c122d8b9cbba4ef4325d2ce4497dc30"
+        }
+      ],
+      "cite_key": "Eurostat_Database",
+      "columns": [
+        {
+          "name": "value",
+          "min_non_null": 0.9
+        }
+      ]
+    }
+  ],
+  "table_roles": {
+    "gdp_pps_nuts2": "outcome: GDP per inhabitant in PPS (EU27_2020 basis), unit PPS_EU27_2020_HAB, NUTS 2, 2015-2024 (analysis year 2024). Columns: geo, geo_label, time, value, flag (p provisional, e estimated).",
+    "nuts2_boundaries": "NUTS 2024 level-2 polygons, 1:20M, EPSG:3035 (metres): geometry for contiguity, centroids and kNN distances, and for maps.",
+    "pop_nuts2": "labelling and size: population on 1 January 2024 (sex=T, age=TOTAL), NUTS 2; used for population weights in descriptives and for flagging small regions. Country code = first two characters of geo (EL = Greece)."
+  },
+  "variable_definitions": {
+    "gdp_pps_per_capita": "gdp_pps_nuts2.value at time=2024, PPS per inhabitant (EU27 2020 = national-price-level-adjusted). Data units: PPS, not euro.",
+    "country_code": "substr(geo,1,2); labels from geo_label; GISCO also gives cntr_code and nuts_name."
+  },
+  "year_and_availability": {
+    "analysis_year": 2024,
+    "check_date": "2026-10-14",
+    "availability_2024": "gdp_pps_nuts2 holds 276 regions with non-null value for 2024 (EU27 244 + TR 26, RS 4, ME 1, MK 1). All 244 EU27 NUTS-2 regions of NUTS 2024 are present, so no fallback to an earlier year is needed. Other years: 2015-2021 285 regions, 2022 279, 2023 276.",
+    "provisional_flags_2024": "Of the 276 values in 2024, 146 are flagged p (provisional), 34 e (estimated), 96 unflagged. Provisional and estimated values may be revised; the analysis reports results with all values and, as robustness, with the 96 unflagged values excluded or with 2023 (if complete) as an alternative year.",
+    "fallback_rule": "Only if 2024 were missing for an EU27 region would the latest available year be used for that region and flagged explicitly in spatial_units.csv; not triggered for 2024.",
+    "scope": "EU27 NUTS-2 regions only (244). TR, RS, ME, MK rows in gdp_pps_nuts2 are non-EU and are dropped from the analysis (listed in spatial_design.json excluded_units); they also form no neighbours for edge-effect purposes."
+  },
+  "nuts_version_matching": {
+    "boundaries_vintage": "NUTS 2024 (GISCO NUTS_RG_20M_2024_3035_LEVL_2)",
+    "data_vintage": "Eurostat nama_10r_2gdp 2024 values are published on the NUTS 2024 classification: all 276 geo codes of the 2024 rows exist in nuts2_boundaries (checked by SQL anti-join: 0 unmatched). Earlier years (2015-2021) use NUTS 2021 or older codes in part; they are not used for the spatial analysis and must not be joined to the 2024 geometry without a concordance.",
+    "boundary_units_without_data": "Of 299 GISCO NUTS-2 polygons, 23 have no 2024 GDP value: non-EU (CH 7, NO 7, AL 3, BA 3, IS 1, LI 1, XK 1). They are outside the EU27 frame and are removed."
+  },
+  "missing_value_treatment": "No EU27 NUTS-2 region has a missing 2024 value. If a value were missing, the unit is dropped from spatial_units.csv and spatial_weights.csv (Moran's I needs a value for every unit), and the number is reported. No imputation.",
+  "spatial_weights": {
+    "main": "Queen contiguity (shared vertex, coordinates rounded to 6 decimals), row-standardised, on the 244 EU27 NUTS-2 polygons of NUTS 2024, EPSG:3035.",
+    "robustness": "k = 5 nearest neighbours on area-weighted centroids (EPSG:3035 distances in km), row-standardised; asymmetric.",
+    "islands_rule": "Regions with no queen neighbour (Mediterranean and Atlantic islands, Cyprus, Malta, Baleares, Canarias, Madeira, Azores, Corsica, Sardinia, Sicily if separate, the French overseas regions, and Finnish Aland) are linked to their single nearest region by centroid distance (excluding other regions of the same island group only if that gives a link) in the queen matrix; the number of such units is reported. The French overseas regions (FRY1-FRY5) and Canarias, Azores and Madeira are far from the mainland, so they are excluded from the main analysis (reported as excluded_units) and kept in a robustness run with kNN weights. kNN-5 has no islands by construction.",
+    "edge_effects": "Regions on the EU border have fewer neighbours because TR, RS, ME, MK, CH, NO and other non-EU polygons are dropped; the number of neighbours is reported."
+  },
+  "crs": "EPSG:3035 (ETRS89-LAEA Europe, metres) for contiguity, centroids and distances; maps use the same projection.",
+  "attribution": "© EuroGeographics for the administrative boundaries. Data: Eurostat nama_10r_2gdp and demo_r_d2jan; changed data (filtered, restricted to EU27 regions) are marked as changed; Eurostat is not responsible for the changes.",
+  "unavailable": []
+}

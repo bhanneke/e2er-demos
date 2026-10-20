@@ -1,0 +1,124 @@
+{
+  "$comment": "Written by e2er-data: one entry per external-source load, with the source version, the URL and SHA-256 of every file read.",
+  "loads": [
+    {
+      "connector": "eurostat",
+      "dataset": "Eurostat database (dissemination API), European Commission",
+      "terms_summary": "Reuse for commercial or non-commercial purposes is authorised provided the source is acknowledged; data of non-Eurostat sources and of countries outside the EU, EFTA and candidate countries may be reused non-commercially only. Modified data must say so.",
+      "licence": "Eurostat copyright notice (https://ec.europa.eu/eurostat/en/help/copyright-notice): \"Reuse of statistical data, metadata, publications, and other dissemination tools published on this website for commercial or non-commercial purposes is authorised provided the source is acknowledged. The reuse policy of the European Commission is implemented by the Decision of 12 December 2011.\" \"The following Eurostat data and documents may not be reused for commercial purposes, but non-commercial reuse is possible without restriction: Data identified as belonging to sources other than Eurostat. […] Data for countries other than: Member States of the European Union (EU); Member States of the European Free Trade Association (EFTA); official EU acceding and candidate countries.\" \"When reuse involves translations of publications or modifications to the data or text, this must be stated clearly to the end user of the information. A disclaimer regarding the non-responsibility of Eurostat shall be included.\"",
+      "terms": "https://ec.europa.eu/eurostat/en/help/copyright-notice",
+      "series": "Eurostat nama_10r_2gdp: Gross domestic product (GDP) at current market prices by NUTS 2 region (unit=PPS_EU27_2020_HAB, nuts2), 2015–2024",
+      "link": "https://ec.europa.eu/eurostat/databrowser/view/nama_10r_2gdp/default/table?lang=en",
+      "retrieved_at": "2026-10-14T17:36:16Z",
+      "citation": "Eurostat, Gross domestic product (GDP) at current market prices by NUTS 2 region (nama_10r_2gdp). Source: https://doi.org/10.2908/NAMA_10R_2GDP, 2026-10-14. Customised version: Source: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10r_2gdp?lang=en&unit=PPS_EU27_2020_HAB&geoLevel=nuts2&sinceTimePeriod=2015&untilTimePeriod=2024, 2026-10-14.",
+      "citation_by": "source",
+      "cite_key": "Eurostat_Database",
+      "version": "2026-02-10T11:00:00+0100",
+      "query": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10r_2gdp?lang=en&unit=PPS_EU27_2020_HAB&geoLevel=nuts2&sinceTimePeriod=2015&untilTimePeriod=2024",
+      "files": [
+        {
+          "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10r_2gdp?lang=en&unit=PPS_EU27_2020_HAB&geoLevel=nuts2&sinceTimePeriod=2015&untilTimePeriod=2024",
+          "sha256": "66a967d8dcd45c2002635372ddc0d14460daacee0c06ba914ea36fb9c4a28c45"
+        }
+      ],
+      "request": {
+        "command": "data",
+        "dataset": "nama_10r_2gdp",
+        "filter": [
+          "unit=PPS_EU27_2020_HAB"
+        ],
+        "geo_level": "nuts2",
+        "start": "2015",
+        "end": "2024"
+      },
+      "dataset_code": "nama_10r_2gdp",
+      "dataset_title": "Gross domestic product (GDP) at current market prices by NUTS 2 region",
+      "doi": "https://doi.org/10.2908/NAMA_10R_2GDP",
+      "frequency": "annual",
+      "table": "gdp_pps_nuts2",
+      "table_rows": 2826,
+      "saved_to": "data/gdp_pps_nuts2.csv",
+      "rows": 2826,
+      "specialist": "data_architect"
+    },
+    {
+      "connector": "gisco",
+      "dataset": "GISCO geographical data (NUTS regions, countries), Eurostat",
+      "terms_summary": "Use and processing for non-commercial purposes, with the source acknowledged and the notice '© EuroGeographics for the administrative boundaries' on every map and publication; the files may not be passed on.",
+      "licence": "GISCO download terms (https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units): \"The Commission agrees to grant the non-exclusive and non-transferable right to use and process the Eurostat/GISCO geographical data downloaded from this page (the 'data'). The permission to use the data is granted on condition that: the data will not be used for commercial purposes the source will be acknowledged. A copyright notice, as specified below, must be visible on any printed or electronic publication using the data downloaded from this page.\" Notice: © EuroGeographics for the administrative boundaries.",
+      "terms": "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units",
+      "series": "NUTS 2 regions, NUTS 2024, 1:20 million, EPSG:3035",
+      "link": "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics",
+      "retrieved_at": "2026-10-14T17:36:20Z",
+      "citation": "Eurostat, GISCO. Territorial units for statistics (NUTS), boundaries. European Commission. https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics. © EuroGeographics for the administrative boundaries.",
+      "citation_by": "e2er",
+      "cite_key": "Eurostat_GISCO_NUTS",
+      "version": "NUTS 2024",
+      "query": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_20M_2024_3035_LEVL_2.geojson",
+      "files": [
+        {
+          "url": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_20M_2024_3035_LEVL_2.geojson",
+          "sha256": "d1d2bfbc44c7503fd670da2a916e9f570d3a20af3c10571bd732a84189faf808"
+        }
+      ],
+      "request": {
+        "command": "nuts",
+        "level": 2,
+        "year": "2024",
+        "scale": "20M",
+        "crs": "3035"
+      },
+      "nuts_year": "2024",
+      "level": 2,
+      "scale": "20M",
+      "crs": "EPSG:3035",
+      "attribution": "© EuroGeographics for the administrative boundaries",
+      "frequency": "static",
+      "table": "nuts2_boundaries",
+      "table_rows": 299,
+      "rows": 299,
+      "specialist": "data_architect"
+    },
+    {
+      "connector": "eurostat",
+      "dataset": "Eurostat database (dissemination API), European Commission",
+      "terms_summary": "Reuse for commercial or non-commercial purposes is authorised provided the source is acknowledged; data of non-Eurostat sources and of countries outside the EU, EFTA and candidate countries may be reused non-commercially only. Modified data must say so.",
+      "licence": "Eurostat copyright notice (https://ec.europa.eu/eurostat/en/help/copyright-notice): \"Reuse of statistical data, metadata, publications, and other dissemination tools published on this website for commercial or non-commercial purposes is authorised provided the source is acknowledged. The reuse policy of the European Commission is implemented by the Decision of 12 December 2011.\" \"The following Eurostat data and documents may not be reused for commercial purposes, but non-commercial reuse is possible without restriction: Data identified as belonging to sources other than Eurostat. […] Data for countries other than: Member States of the European Union (EU); Member States of the European Free Trade Association (EFTA); official EU acceding and candidate countries.\" \"When reuse involves translations of publications or modifications to the data or text, this must be stated clearly to the end user of the information. A disclaimer regarding the non-responsibility of Eurostat shall be included.\"",
+      "terms": "https://ec.europa.eu/eurostat/en/help/copyright-notice",
+      "series": "Eurostat demo_r_d2jan: Population on 1 January by age, sex and NUTS 2 region (sex=T, age=TOTAL, nuts2), 2024–2024",
+      "link": "https://ec.europa.eu/eurostat/databrowser/view/demo_r_d2jan/default/table?lang=en",
+      "retrieved_at": "2026-10-14T17:36:34Z",
+      "citation": "Eurostat, Population on 1 January by age, sex and NUTS 2 region (demo_r_d2jan). Source: https://doi.org/10.2908/DEMO_R_D2JAN, 2026-10-14. Customised version: Source: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_r_d2jan?lang=en&sex=T&age=TOTAL&geoLevel=nuts2&sinceTimePeriod=2024&untilTimePeriod=2024, 2026-10-14.",
+      "citation_by": "source",
+      "cite_key": "Eurostat_Database",
+      "version": "2026-08-28T23:00:00+0200",
+      "query": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_r_d2jan?lang=en&sex=T&age=TOTAL&geoLevel=nuts2&sinceTimePeriod=2024&untilTimePeriod=2024",
+      "files": [
+        {
+          "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_r_d2jan?lang=en&sex=T&age=TOTAL&geoLevel=nuts2&sinceTimePeriod=2024&untilTimePeriod=2024",
+          "sha256": "47717976e8042a16634c9d9c4156c0866c122d8b9cbba4ef4325d2ce4497dc30"
+        }
+      ],
+      "request": {
+        "command": "data",
+        "dataset": "demo_r_d2jan",
+        "filter": [
+          "sex=T",
+          "age=TOTAL"
+        ],
+        "geo_level": "nuts2",
+        "start": "2024",
+        "end": "2024"
+      },
+      "dataset_code": "demo_r_d2jan",
+      "dataset_title": "Population on 1 January by age, sex and NUTS 2 region",
+      "doi": "https://doi.org/10.2908/DEMO_R_D2JAN",
+      "frequency": "annual",
+      "table": "pop_nuts2",
+      "table_rows": 292,
+      "saved_to": "data/pop_nuts2.csv",
+      "rows": 292,
+      "specialist": "data_architect"
+    }
+  ]
+}

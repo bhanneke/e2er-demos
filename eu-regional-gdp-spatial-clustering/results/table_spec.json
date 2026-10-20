@@ -1,0 +1,74 @@
+{
+  "tables": [
+    {
+      "filename": "summary.tex",
+      "label": "tab:summary",
+      "caption": "Summary statistics of GDP per inhabitant in PPS, 236 EU27 NUTS-2 regions, 2024",
+      "layout": "records",
+      "source": "summary_statistics.json",
+      "path": "outcome",
+      "rows": ["gdp_pps", "gdp_index"],
+      "row_labels": {"gdp_pps": "GDP per inhabitant (PPS)", "gdp_index": "GDP per inhabitant (EU27 = 100)"},
+      "row_header": "Variable",
+      "columns": [
+        {"field": "n", "header": "$N$", "decimals": 0},
+        {"field": "mean", "header": "Mean", "decimals": 1},
+        {"field": "sd", "header": "SD", "decimals": 1},
+        {"field": "min", "header": "Min", "decimals": 1},
+        {"field": "p25", "header": "P25", "decimals": 1},
+        {"field": "median", "header": "Median", "decimals": 1},
+        {"field": "p75", "header": "P75", "decimals": 1},
+        {"field": "max", "header": "Max", "decimals": 1}
+      ],
+      "notes": "Eurostat regional accounts, 2024. Outermost regions excluded."
+    },
+    {
+      "filename": "moran.tex",
+      "label": "tab:moran",
+      "caption": "Global Moran's $I$ of regional GDP per inhabitant under alternative weights",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "spatial_statistics",
+      "row_labels": {
+        "moran_gdp_queen": "Queen contiguity",
+        "moran_gdp_knn5": "5 nearest neighbours",
+        "moran_gdp_knn8": "8 nearest neighbours",
+        "moran_gdp_invdist": "Inverse distance",
+        "moran_lngdp_queen": "Queen contiguity, log income"
+      },
+      "row_header": "Weights",
+      "columns": [
+        {"field": "estimate", "header": "Moran's $I$", "decimals": 3},
+        {"field": "expected", "header": "$E[I]$", "decimals": 3},
+        {"field": "z", "header": "$z$", "decimals": 2},
+        {"field": "p_value", "header": "Pseudo $p$", "decimals": 3},
+        {"field": "n_units", "header": "$N$", "decimals": 0}
+      ],
+      "notes": "Row-standardised weights; 999 permutations, two-sided pseudo $p$-values (smallest attainable 0.001)."
+    },
+    {
+      "filename": "robust.tex",
+      "label": "tab:robust",
+      "caption": "Robustness of Moran's $I$: outermost regions, extreme regions and national means",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "robustness",
+      "row_labels": {
+        "moran_gdp_knn5_all244": "All 244 regions, 5 nearest neighbours",
+        "sens_drop_LU00": "Drop Luxembourg, queen",
+        "sens_drop_Ireland": "Drop Irish regions, queen",
+        "sens_drop_top5": "Drop five richest regions, queen",
+        "sens_drop_capital_regions": "Drop capital regions, queen",
+        "sens_within_country_demeaned": "Deviation from national mean, queen"
+      },
+      "row_header": "Specification",
+      "columns": [
+        {"field": "estimate", "header": "Moran's $I$", "decimals": 3},
+        {"field": "z", "header": "$z$", "decimals": 2},
+        {"field": "p_value", "header": "Pseudo $p$", "decimals": 3},
+        {"field": "n_units", "header": "$N$", "decimals": 0}
+      ],
+      "notes": "Row-standardised weights; 999 permutations, two-sided pseudo $p$-values."
+    }
+  ]
+}
