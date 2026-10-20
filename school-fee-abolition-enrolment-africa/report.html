@@ -1,0 +1,159 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Did abolishing primary-school fees in sub-Saharan African countries (staggere...</title><style>
+:root{--paper:#faf9f6;--card:#fff;--ink:#1b1f2b;--muted:#5f6676;--line:#e3ded4;
+--ok:#2c7a54;--bad:#ab392f;--accent:#ad5a29;--okbg:#e6f2ea;--badbg:#fbe9e7}
+@media(prefers-color-scheme:dark){:root{--paper:#14161c;--card:#1b1e26;--ink:#e9e7e1;
+--muted:#98a0af;--line:#2c313b;--ok:#56b483;--bad:#e07a6d;--accent:#e0884d;
+--okbg:#16302a;--badbg:#3a201d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);line-height:1.6;
+font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:940px;margin:0 auto;padding:40px 20px 72px}
+h1{font-size:30px;line-height:1.15;margin:0 0 8px}
+h2{font-size:20px;margin:44px 0 12px}
+h3{font-size:15px;margin:0}
+p{margin:0 0 12px;max-width:70ch}
+.muted{color:var(--muted)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px}
+a{color:var(--accent)}
+.lede{border-bottom:2px solid var(--ink);padding-bottom:22px;margin-bottom:8px}
+.abstract{background:var(--card);border:1px solid var(--line);padding:18px 20px;margin:18px 0}
+.reads{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+.reads a{display:block;padding:10px 14px;border:1px solid var(--line);background:var(--card);
+border-radius:4px;text-decoration:none;color:var(--ink);font-size:14px}
+.reads a.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.reads a .p{display:block;font-size:11px;color:var(--muted);font-family:ui-monospace,Menlo,monospace}
+.reads a.primary .p{color:rgba(255,255,255,.85)}
+.v{display:grid;grid-template-columns:26px 150px 1fr;gap:12px;padding:12px 16px;
+border-bottom:1px solid var(--line);align-items:start}
+.v:last-child{border-bottom:none}
+.vs{border:1px solid var(--line);background:var(--card)}
+.mark{font-weight:700}
+.ok{color:var(--ok)}.bad{color:var(--bad)}
+.pill{display:inline-block;padding:2px 8px;border-radius:3px;font-size:11px;
+text-transform:uppercase;letter-spacing:.06em}
+.pill.ok{background:var(--okbg)}.pill.bad{background:var(--badbg)}
+table{border-collapse:collapse;width:100%;background:var(--card);border:1px solid var(--line)}
+th{text-align:left;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+color:var(--muted);padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:7px 10px;border-bottom:1px solid var(--paper);font-size:13.5px;vertical-align:top}
+td.n{text-align:right;font-family:ui-monospace,Menlo,monospace;white-space:nowrap;color:var(--muted)}
+details{border:1px solid var(--line);background:var(--card);margin-bottom:6px}
+summary{cursor:pointer;padding:10px 14px;font-weight:600;display:flex;
+justify-content:space-between;gap:12px;list-style:none}
+summary::-webkit-details-marker{display:none}
+details ul{margin:0;padding:0 0 8px;list-style:none;border-top:1px solid var(--line)}
+details li{display:flex;justify-content:space-between;gap:12px;padding:5px 14px}
+footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
+color:var(--muted);font-size:13px}
+@media(max-width:620px){.v{grid-template-columns:26px 1fr}.v div:last-child{grid-column:2}}
+</style></head><body><div class='wrap'>
+<div class='lede'>
+<h1>Did abolishing primary-school fees in sub-Saharan African countries (staggere...</h1>
+<p class='muted'>Did abolishing primary-school fees in sub-Saharan African countries (staggered between the mid-1990s and the mid-2000s) raise gross primary enrolment? A difference-in-differences with World Bank enrolment data, comparing countries that abolished fees with countries that had not (yet) abolished them.</p>
+<p class='mono muted'>backend: claude_code · model: sonnet · governance: full · exported_at: 20261015</p>
+</div>
+<div class='reads'>
+<a href='paper/paper.pdf' class='primary'>The paper (PDF)<span class='p'>paper/paper.pdf</span></a>
+<a href='paper/paper.tex'>LaTeX source<span class='p'>paper/paper.tex</span></a>
+<a href='paper/abstract.tex'>Abstract<span class='p'>paper/abstract.tex</span></a>
+<a href='design/identification_strategy.md'>Identification strategy<span class='p'>design/identification_strategy.md</span></a>
+<a href='results/estimation_results.json'>Estimation results<span class='p'>results/estimation_results.json</span></a>
+<a href='replication/estimation.py'>Replication script<span class='p'>replication/estimation.py</span></a>
+</div>
+<div class='abstract'><h3>Abstract</h3><p>Between 1994 and 2005, governments across sub-Saharan Africa abolished primary-school fees, yet the effect on measured enrolment is contested. We ask whether fee abolition raised the gross primary enrolment ratio (GER). We apply the Callaway--Sant&#x27;Anna difference-in-differences estimator to World Bank data on 47 countries, 1980--2010, comparing eight countries with published abolition dates (Malawi, Uganda, Lesotho, Tanzania, Zambia, Rwanda, Kenya, Ghana) with 39 countries not known to have abolished fees. Abolition raised the GER by 22 percentage points on average over the first six years, about 21 percent in logs. Pre-reform differences are indistinguishable from zero, and estimates stay between 17 and 24 points when we change the comparison group, allow anticipation, add controls, drop outliers, or omit any one treated country. A sensitivity analysis shows the estimate is not robust to pre-trend violations as large as those in the pre-period. Because the GER counts over-age pupils, the results measure enrolment, not access for age-eligible children. \medskip \noindent\textit{JEL codes:} I21, I28, O15\\ \textit{Keywords:} school fee abolition, primary enrolment, sub-Saharan Africa, staggered difference-in-differences % src: estimation_results.json#main.coefficients.att.estimate % src: estimation_results.json#cs_log_ger.coefficients.att.estimate % src: estimation_results.json#main.n_clusters % src: estimation_results.json#main.n_treated_clusters % src: estimation_results.json#leave_one_country_out.coefficients.att_min.estimate % src: estimation_results.json#sensitivity.honest_did_rm.mbar_1 % computed: log ATT 0.1917 -&gt; exp(0.1917)-1 = 21 percent; comparison units 39 from estimation_results.json#sample_flow.comparison_units</p></div>
+<h2>What was checked</h2>
+<div class='vs'>
+<div class='v'><div class='mark ok'>✓</div><div><strong>Tables</strong></div><div class='muted'>5 rendered from the result files, 0 unresolved</div></div>
+<div class='v'><div class='mark ok'>✓</div><div><strong>Numbers</strong></div><div class='muted'>121 table cells trace to a source key, 0 critical mismatches</div></div>
+<div class='v'><div class='mark ok'>✓</div><div><strong>Citations</strong></div><div class='muted'>18 of 22 verified, 0 missing from the bibliography</div></div>
+<div class='v'><div class='mark muted'>·</div><div><strong>e2er&#x27;s internal quality review</strong></div><div class='muted'>4.9 of 10 (weighted average): data 5.0, identification 4.0, methods 5.0, technical 5.0, writing 6.0</div></div>
+</div>
+<p class='muted' style='margin-top:14px'>These are the results the run recorded, not a re-check. The internal quality review is a score: six reviewer specialists each score the draft from one angle, and the score is their weighted average. To verify the bundle independently — re-hash every file, recompute the numbers, re-render the tables and resolve every citation — run <span class='mono'>e2er verify</span> on this folder.</p>
+<h2>Provenance</h2>
+<p><strong>57</strong> files inventoried by SHA-256, <strong>148</strong> derivation edges recording where each output came from.</p>
+<table><thead><tr><th>Edge</th><th style='text-align:right'>Count</th></tr></thead><tbody>
+<tr><td class='mono'>table_cell</td><td class='n'>121</td></tr>
+<tr><td class='mono'>citation</td><td class='n'>22</td></tr>
+<tr><td class='mono'>figure</td><td class='n'>3</td></tr>
+<tr><td class='mono'>estimation</td><td class='n'>1</td></tr>
+<tr><td class='mono'>data</td><td class='n'>1</td></tr>
+</tbody></table>
+<h2>Everything in this folder</h2>
+<details><summary><span>paper</span><span class='mono muted'>9 files · 170 KB</span></summary><ul>
+<li><a class='mono' href='paper/abstract.tex'>paper/abstract.tex</a><span class='mono muted'>1 KB</span></li>
+<li><a class='mono' href='paper/paper.pdf'>paper/paper.pdf</a><span class='mono muted'>92 KB</span></li>
+<li><a class='mono' href='paper/paper.tex'>paper/paper.tex</a><span class='mono muted'>28 KB</span></li>
+<li><a class='mono' href='paper/refs.bib'>paper/refs.bib</a><span class='mono muted'>43 KB</span></li>
+<li><a class='mono' href='paper/tables/main.tex'>paper/tables/main.tex</a><span class='mono muted'>966 B</span></li>
+<li><a class='mono' href='paper/tables/mechanism.tex'>paper/tables/mechanism.tex</a><span class='mono muted'>789 B</span></li>
+<li><a class='mono' href='paper/tables/robust_level.tex'>paper/tables/robust_level.tex</a><span class='mono muted'>753 B</span></li>
+<li><a class='mono' href='paper/tables/robust_log.tex'>paper/tables/robust_log.tex</a><span class='mono muted'>554 B</span></li>
+<li><a class='mono' href='paper/tables/summary.tex'>paper/tables/summary.tex</a><span class='mono muted'>835 B</span></li>
+</ul></details>
+<details><summary><span>results</span><span class='mono muted'>11 files · 128 KB</span></summary><ul>
+<li><a class='mono' href='results/did_check.json'>results/did_check.json</a><span class='mono muted'>344 B</span></li>
+<li><a class='mono' href='results/did_design_check.json'>results/did_design_check.json</a><span class='mono muted'>1 KB</span></li>
+<li><a class='mono' href='results/estimation_results.json'>results/estimation_results.json</a><span class='mono muted'>24 KB</span></li>
+<li><a class='mono' href='results/figure_spec.json'>results/figure_spec.json</a><span class='mono muted'>12 KB</span></li>
+<li><a class='mono' href='results/figures/fig_event_study.pdf'>results/figures/fig_event_study.pdf</a><span class='mono muted'>13 KB</span></li>
+<li><a class='mono' href='results/figures/fig_ger_cohort_trends.pdf'>results/figures/fig_ger_cohort_trends.pdf</a><span class='mono muted'>20 KB</span></li>
+<li><a class='mono' href='results/figures/fig_ger_event_time.pdf'>results/figures/fig_ger_event_time.pdf</a><span class='mono muted'>11 KB</span></li>
+<li><a class='mono' href='results/number_verification.json'>results/number_verification.json</a><span class='mono muted'>30 KB</span></li>
+<li><a class='mono' href='results/summary_statistics.json'>results/summary_statistics.json</a><span class='mono muted'>7 KB</span></li>
+<li><a class='mono' href='results/table_render_report.json'>results/table_render_report.json</a><span class='mono muted'>225 B</span></li>
+<li><a class='mono' href='results/table_spec.json'>results/table_spec.json</a><span class='mono muted'>5 KB</span></li>
+</ul></details>
+<details><summary><span>design</span><span class='mono muted'>9 files · 86 KB</span></summary><ul>
+<li><a class='mono' href='design/did_design.json'>design/did_design.json</a><span class='mono muted'>1 KB</span></li>
+<li><a class='mono' href='design/econometric_spec.md'>design/econometric_spec.md</a><span class='mono muted'>8 KB</span></li>
+<li><a class='mono' href='design/identification_spec.json'>design/identification_spec.json</a><span class='mono muted'>777 B</span></li>
+<li><a class='mono' href='design/identification_strategy.md'>design/identification_strategy.md</a><span class='mono muted'>8 KB</span></li>
+<li><a class='mono' href='design/literature_review.md'>design/literature_review.md</a><span class='mono muted'>7 KB</span></li>
+<li><a class='mono' href='design/paper_plan.md'>design/paper_plan.md</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='design/preregistration.lock.json'>design/preregistration.lock.json</a><span class='mono muted'>1 KB</span></li>
+<li><a class='mono' href='design/preregistration.md'>design/preregistration.md</a><span class='mono muted'>33 KB</span></li>
+<li><a class='mono' href='design/researcher_instructions.md'>design/researcher_instructions.md</a><span class='mono muted'>1 KB</span></li>
+</ul></details>
+<details><summary><span>code</span><span class='mono muted'>5 files · 60 KB</span></summary><ul>
+<li><a class='mono' href='code/requirements.txt'>code/requirements.txt</a><span class='mono muted'>303 B</span></li>
+<li><a class='mono' href='code/run_estimation.py'>code/run_estimation.py</a><span class='mono muted'>26 KB</span></li>
+<li><a class='mono' href='code/scratch/build_panel.py'>code/scratch/build_panel.py</a><span class='mono muted'>9 KB</span></li>
+<li><a class='mono' href='code/scratch/paper_draft.log'>code/scratch/paper_draft.log</a><span class='mono muted'>23 KB</span></li>
+<li><a class='mono' href='code/scratch/summ.py'>code/scratch/summ.py</a><span class='mono muted'>698 B</span></li>
+</ul></details>
+<details><summary><span>data</span><span class='mono muted'>4 files · 1.8 MB</span></summary><ul>
+<li><a class='mono' href='data/data.db'>data/data.db</a><span class='mono muted'>1.7 MB</span></li>
+<li><a class='mono' href='data/data_dictionary.json'>data/data_dictionary.json</a><span class='mono muted'>24 KB</span></li>
+<li><a class='mono' href='data/data_sources.json'>data/data_sources.json</a><span class='mono muted'>21 KB</span></li>
+<li><a class='mono' href='data/data_summary.md'>data/data_summary.md</a><span class='mono muted'>5 KB</span></li>
+</ul></details>
+<details><summary><span>replication</span><span class='mono muted'>3 files · 32 KB</span></summary><ul>
+<li><a class='mono' href='replication/audit_log.csv'>replication/audit_log.csv</a><span class='mono muted'>2 KB</span></li>
+<li><a class='mono' href='replication/data_queries.sql'>replication/data_queries.sql</a><span class='mono muted'>137 B</span></li>
+<li><a class='mono' href='replication/estimation.py'>replication/estimation.py</a><span class='mono muted'>30 KB</span></li>
+</ul></details>
+<details><summary><span>reviews</span><span class='mono muted'>7 files · 128 KB</span></summary><ul>
+<li><a class='mono' href='reviews/citation_integrity.json'>reviews/citation_integrity.json</a><span class='mono muted'>13 KB</span></li>
+<li><a class='mono' href='reviews/review_aggregation.json'>reviews/review_aggregation.json</a><span class='mono muted'>1 KB</span></li>
+<li><a class='mono' href='reviews/review_data.md'>reviews/review_data.md</a><span class='mono muted'>25 KB</span></li>
+<li><a class='mono' href='reviews/review_identification.md'>reviews/review_identification.md</a><span class='mono muted'>19 KB</span></li>
+<li><a class='mono' href='reviews/review_methods.md'>reviews/review_methods.md</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='reviews/review_technical.md'>reviews/review_technical.md</a><span class='mono muted'>21 KB</span></li>
+<li><a class='mono' href='reviews/review_writing.md'>reviews/review_writing.md</a><span class='mono muted'>24 KB</span></li>
+</ul></details>
+<details><summary><span>misc</span><span class='mono muted'>6 files · 89 KB</span></summary><ul>
+<li><a class='mono' href='misc/fig_event_study.pdf'>misc/fig_event_study.pdf</a><span class='mono muted'>13 KB</span></li>
+<li><a class='mono' href='misc/fig_ger_cohort_trends.pdf'>misc/fig_ger_cohort_trends.pdf</a><span class='mono muted'>20 KB</span></li>
+<li><a class='mono' href='misc/fig_ger_event_time.pdf'>misc/fig_ger_event_time.pdf</a><span class='mono muted'>11 KB</span></li>
+<li><a class='mono' href='misc/figure_render_report.json'>misc/figure_render_report.json</a><span class='mono muted'>208 B</span></li>
+<li><a class='mono' href='misc/paper_draft.blg'>misc/paper_draft.blg</a><span class='mono muted'>352 B</span></li>
+<li><a class='mono' href='misc/refs.bib'>misc/refs.bib</a><span class='mono muted'>43 KB</span></li>
+</ul></details>
+<details><summary><span>(root)</span><span class='mono muted'>2 files · 5 KB</span></summary><ul>
+<li><a class='mono' href='README.md'>README.md</a><span class='mono muted'>1 KB</span></li>
+<li><a class='mono' href='reproduce.json'>reproduce.json</a><span class='mono muted'>3 KB</span></li>
+</ul></details>
+<footer>Generated by e2er at export and fingerprinted in provenance.json like every other file. Everything above is read from this bundle — open any file beside this one to check it. Verification establishes that the paper's claims trace to the artifacts that produced them; whether the analysis was a good idea is a separate question, and still the reader's.</footer>
+</div></body></html>

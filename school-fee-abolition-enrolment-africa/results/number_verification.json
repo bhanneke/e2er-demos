@@ -1,0 +1,680 @@
+{
+  "passed": true,
+  "total_values_in_tables": 121,
+  "matched": 121,
+  "mismatched": 0,
+  "unverifiable": 0,
+  "coverage": 1.0,
+  "mismatches": [],
+  "matched_cells": [
+    {
+      "draft_value": "980",
+      "source_key": "summary_statistics.json.other_variables.ger_male.n",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 2, col 2"
+    },
+    {
+      "draft_value": "90.7",
+      "source_key": "summary_statistics.json.other_variables.ger_male.mean",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 2, col 3"
+    },
+    {
+      "draft_value": "26.7",
+      "source_key": "summary_statistics.json.other_variables.ger_male.sd",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 2, col 4"
+    },
+    {
+      "draft_value": "18.2",
+      "source_key": "summary_statistics.json.other_variables.ger_male.min",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 2, col 5"
+    },
+    {
+      "draft_value": "93.1",
+      "source_key": "summary_statistics.json.other_variables.ger_male.median",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 2, col 6"
+    },
+    {
+      "draft_value": "160.9",
+      "source_key": "summary_statistics.json.other_variables.ger_male.max",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 2, col 7"
+    },
+    {
+      "draft_value": "980",
+      "source_key": "summary_statistics.json.other_variables.ger_male.n",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 3, col 2"
+    },
+    {
+      "draft_value": "79.9",
+      "source_key": "summary_statistics.json.other_variables.ger_female.mean",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 3, col 3"
+    },
+    {
+      "draft_value": "31.5",
+      "source_key": "summary_statistics.json.other_variables.ger_female.sd",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 3, col 4"
+    },
+    {
+      "draft_value": "9.3",
+      "source_key": "summary_statistics.json.other_variables.ger_female.min",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 3, col 5"
+    },
+    {
+      "draft_value": "80.1",
+      "source_key": "summary_statistics.json.other_variables.ger_female.mean",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 3, col 6"
+    },
+    {
+      "draft_value": "155.4",
+      "source_key": "summary_statistics.json.other_variables.ger_female.max",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 3, col 7"
+    },
+    {
+      "draft_value": "573",
+      "source_key": "summary_statistics.json.other_variables.ner_primary.n",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 4, col 2"
+    },
+    {
+      "draft_value": "67.3",
+      "source_key": "summary_statistics.json.other_variables.ner_primary.mean",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 4, col 3"
+    },
+    {
+      "draft_value": "20.5",
+      "source_key": "summary_statistics.json.other_variables.ner_primary.sd",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 4, col 4"
+    },
+    {
+      "draft_value": "19.2",
+      "source_key": "summary_statistics.json.other_variables.ner_primary.min",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 4, col 5"
+    },
+    {
+      "draft_value": "66.4",
+      "source_key": "summary_statistics.json.other_variables.ner_primary.median",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 4, col 6"
+    },
+    {
+      "draft_value": "99.9",
+      "source_key": "summary_statistics.json.other_variables.ner_primary.max",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 4, col 7"
+    },
+    {
+      "draft_value": "717",
+      "source_key": "summary_statistics.json.other_variables.completion_rate.n",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 5, col 2"
+    },
+    {
+      "draft_value": "53.9",
+      "source_key": "summary_statistics.json.other_variables.completion_rate.mean",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 5, col 3"
+    },
+    {
+      "draft_value": "25.5",
+      "source_key": "summary_statistics.json.other_variables.completion_rate.sd",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 5, col 4"
+    },
+    {
+      "draft_value": "5.9",
+      "source_key": "summary_statistics.json.other_variables.completion_rate.min",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 5, col 5"
+    },
+    {
+      "draft_value": "53.1",
+      "source_key": "summary_statistics.json.other_variables.completion_rate.median",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 5, col 6"
+    },
+    {
+      "draft_value": "150.1",
+      "source_key": "summary_statistics.json.other_variables.completion_rate.max",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 5, col 7"
+    },
+    {
+      "draft_value": "1,003",
+      "source_key": "summary_statistics.json.other_variables.gdp_pc.n",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 6, col 2"
+    },
+    {
+      "draft_value": "1684.2",
+      "source_key": "summary_statistics.json.other_variables.gdp_pc.mean",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 6, col 3"
+    },
+    {
+      "draft_value": "2175.1",
+      "source_key": "summary_statistics.json.other_variables.gdp_pc.sd",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 6, col 4"
+    },
+    {
+      "draft_value": "169.8",
+      "source_key": "summary_statistics.json.other_variables.gdp_pc.min",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 6, col 5"
+    },
+    {
+      "draft_value": "856.8",
+      "source_key": "summary_statistics.json.other_variables.gdp_pc.median",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 6, col 6"
+    },
+    {
+      "draft_value": "13112.8",
+      "source_key": "summary_statistics.json.other_variables.gdp_pc.max",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 6, col 7"
+    },
+    {
+      "draft_value": "1,006",
+      "source_key": "summary_statistics.json.n_observations",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 7, col 2"
+    },
+    {
+      "draft_value": "32.6",
+      "source_key": "summary_statistics.json.other_variables.urban_share.mean",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 7, col 3"
+    },
+    {
+      "draft_value": "14.5",
+      "source_key": "summary_statistics.json.other_variables.urban_share.sd",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 7, col 4"
+    },
+    {
+      "draft_value": "5.0",
+      "source_key": "summary_statistics.json.other_variables.urban_share.min",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 7, col 5"
+    },
+    {
+      "draft_value": "32.6",
+      "source_key": "summary_statistics.json.other_variables.urban_share.mean",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 7, col 6"
+    },
+    {
+      "draft_value": "82.0",
+      "source_key": "summary_statistics.json.other_variables.urban_share.max",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 7, col 7"
+    },
+    {
+      "draft_value": "1,006",
+      "source_key": "summary_statistics.json.n_observations",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 8, col 2"
+    },
+    {
+      "draft_value": "128.9",
+      "source_key": "summary_statistics.json.other_variables.u5_mortality.mean",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 8, col 3"
+    },
+    {
+      "draft_value": "61.6",
+      "source_key": "summary_statistics.json.other_variables.u5_mortality.sd",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 8, col 4"
+    },
+    {
+      "draft_value": "13.7",
+      "source_key": "summary_statistics.json.other_variables.u5_mortality.min",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 8, col 5"
+    },
+    {
+      "draft_value": "122.2",
+      "source_key": "summary_statistics.json.other_variables.u5_mortality.median",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 8, col 6"
+    },
+    {
+      "draft_value": "489.3",
+      "source_key": "summary_statistics.json.other_variables.u5_mortality.max",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 8, col 7"
+    },
+    {
+      "draft_value": "22.04",
+      "source_key": "estimation_results.json.main.coefficients.att.estimate",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 2, col 2"
+    },
+    {
+      "draft_value": "22.12",
+      "source_key": "estimation_results.json.main.coefficients.att.estimate",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 2, col 3"
+    },
+    {
+      "draft_value": "19.11",
+      "source_key": "summary_statistics.json.other_variables.ner_primary.min",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 2, col 4"
+    },
+    {
+      "draft_value": "22.03",
+      "source_key": "estimation_results.json.main.coefficients.att.estimate",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 2, col 5"
+    },
+    {
+      "draft_value": "22.73",
+      "source_key": "estimation_results.json.bjs_imputation.coefficients.att.estimate",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 2, col 6"
+    },
+    {
+      "draft_value": "23.37",
+      "source_key": "estimation_results.json.twfe_level.coefficients.att.estimate",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 2, col 7"
+    },
+    {
+      "draft_value": "5.54",
+      "source_key": "estimation_results.json.main.coefficients.att.se",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 3, col 2"
+    },
+    {
+      "draft_value": "5.58",
+      "source_key": "estimation_results.json.cs_not_yet_treated.coefficients.att.se",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 3, col 3"
+    },
+    {
+      "draft_value": "5.33",
+      "source_key": "estimation_results.json.controls.coefficients.att.se",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 3, col 4"
+    },
+    {
+      "draft_value": "5.74",
+      "source_key": "estimation_results.json.sun_abraham.coefficients.att.se",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 3, col 5"
+    },
+    {
+      "draft_value": "10.26",
+      "source_key": "estimation_results.json.bjs_imputation.coefficients.att.se",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 3, col 6"
+    },
+    {
+      "draft_value": "9.70",
+      "source_key": "estimation_results.json.twfe_level.coefficients.att.se",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 3, col 7"
+    },
+    {
+      "draft_value": "1,211",
+      "source_key": "estimation_results.json.main.n_observations",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 4, col 2"
+    },
+    {
+      "draft_value": "1,211",
+      "source_key": "estimation_results.json.main.n_observations",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 4, col 3"
+    },
+    {
+      "draft_value": "1,211",
+      "source_key": "estimation_results.json.main.n_observations",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 4, col 4"
+    },
+    {
+      "draft_value": "1,211",
+      "source_key": "estimation_results.json.main.n_observations",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 4, col 5"
+    },
+    {
+      "draft_value": "1,211",
+      "source_key": "estimation_results.json.main.n_observations",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 4, col 6"
+    },
+    {
+      "draft_value": "1,211",
+      "source_key": "estimation_results.json.main.n_observations",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 4, col 7"
+    },
+    {
+      "draft_value": "47",
+      "source_key": "summary_statistics.json.n_units",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 5, col 2"
+    },
+    {
+      "draft_value": "47",
+      "source_key": "summary_statistics.json.n_units",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 5, col 3"
+    },
+    {
+      "draft_value": "47",
+      "source_key": "summary_statistics.json.n_units",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 5, col 4"
+    },
+    {
+      "draft_value": "47",
+      "source_key": "summary_statistics.json.n_units",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 5, col 5"
+    },
+    {
+      "draft_value": "47",
+      "source_key": "summary_statistics.json.n_units",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 5, col 6"
+    },
+    {
+      "draft_value": "47",
+      "source_key": "summary_statistics.json.n_units",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 5, col 7"
+    },
+    {
+      "draft_value": "8",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 6, col 2"
+    },
+    {
+      "draft_value": "8",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 6, col 3"
+    },
+    {
+      "draft_value": "8",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 6, col 4"
+    },
+    {
+      "draft_value": "8",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 6, col 5"
+    },
+    {
+      "draft_value": "8",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 6, col 6"
+    },
+    {
+      "draft_value": "8",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 6, col 7"
+    },
+    {
+      "draft_value": "21.84",
+      "source_key": "estimation_results.json.anticipation_1.coefficients.att.estimate",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 2, col 2"
+    },
+    {
+      "draft_value": "21.17",
+      "source_key": "estimation_results.json.drop_outliers.coefficients.att.estimate",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 2, col 3"
+    },
+    {
+      "draft_value": "24.35",
+      "source_key": "estimation_results.json.drop_zmb_gha.coefficients.att.estimate",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 2, col 4"
+    },
+    {
+      "draft_value": "21.60",
+      "source_key": "estimation_results.json.gender_female.coefficients.att.estimate",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 2, col 5"
+    },
+    {
+      "draft_value": "21.40",
+      "source_key": "summary_statistics.json.other_variables.urban_share.p25",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 2, col 6"
+    },
+    {
+      "draft_value": "6.26",
+      "source_key": "estimation_results.json.anticipation_1.coefficients.att.se",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 3, col 2"
+    },
+    {
+      "draft_value": "5.59",
+      "source_key": "estimation_results.json.cs_not_yet_treated.coefficients.att.se",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 3, col 3"
+    },
+    {
+      "draft_value": "7.08",
+      "source_key": "estimation_results.json.drop_zmb_gha.coefficients.att.se",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 3, col 4"
+    },
+    {
+      "draft_value": "5.38",
+      "source_key": "estimation_results.json.gender_female.coefficients.att.se",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 3, col 5"
+    },
+    {
+      "draft_value": "5.99",
+      "source_key": "summary_statistics.json.treatment.event_time_mean_ger.7.n",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 3, col 6"
+    },
+    {
+      "draft_value": "1,211",
+      "source_key": "estimation_results.json.main.n_observations",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 4, col 2"
+    },
+    {
+      "draft_value": "1,202",
+      "source_key": "estimation_results.json.drop_outliers.n_observations",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 4, col 3"
+    },
+    {
+      "draft_value": "1,211",
+      "source_key": "estimation_results.json.main.n_observations",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 4, col 4"
+    },
+    {
+      "draft_value": "1,167",
+      "source_key": "estimation_results.json.gender_female.n_observations",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 4, col 5"
+    },
+    {
+      "draft_value": "1,167",
+      "source_key": "estimation_results.json.gender_female.n_observations",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 4, col 6"
+    },
+    {
+      "draft_value": "8",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 5, col 2"
+    },
+    {
+      "draft_value": "8",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 5, col 3"
+    },
+    {
+      "draft_value": "6",
+      "source_key": "summary_statistics.json.treatment.event_time_mean_ger.7.n",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 5, col 4"
+    },
+    {
+      "draft_value": "8",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 5, col 5"
+    },
+    {
+      "draft_value": "8",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 5, col 6"
+    },
+    {
+      "draft_value": "0.192",
+      "source_key": "estimation_results.json.cs_log_ger.coefficients.att.estimate",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 2, col 2"
+    },
+    {
+      "draft_value": "0.194",
+      "source_key": "estimation_results.json.cs_log_ger.coefficients.att.estimate",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 2, col 3"
+    },
+    {
+      "draft_value": "0.150",
+      "source_key": "estimation_results.json.twfe_log.coefficients.att.estimate",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 2, col 4"
+    },
+    {
+      "draft_value": "0.055",
+      "source_key": "estimation_results.json.cs_log_ger.coefficients.att.se",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 3, col 2"
+    },
+    {
+      "draft_value": "0.055",
+      "source_key": "estimation_results.json.cs_log_ger.coefficients.att.se",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 3, col 3"
+    },
+    {
+      "draft_value": "0.108",
+      "source_key": "estimation_results.json.twfe_log.coefficients.att.se",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 3, col 4"
+    },
+    {
+      "draft_value": "1,211",
+      "source_key": "estimation_results.json.main.n_observations",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 4, col 2"
+    },
+    {
+      "draft_value": "1,211",
+      "source_key": "estimation_results.json.main.n_observations",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 4, col 3"
+    },
+    {
+      "draft_value": "1,211",
+      "source_key": "estimation_results.json.main.n_observations",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 4, col 4"
+    },
+    {
+      "draft_value": "13.45",
+      "source_key": "estimation_results.json.ner.coefficients.att.estimate",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 2, col 2"
+    },
+    {
+      "draft_value": "14.78",
+      "source_key": "estimation_results.json.ger_on_ner_sample.coefficients.att.estimate",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 2, col 3"
+    },
+    {
+      "draft_value": "1.33",
+      "source_key": "estimation_results.json.ger_minus_ner.coefficients.att.estimate",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 2, col 4"
+    },
+    {
+      "draft_value": "0.20",
+      "source_key": "estimation_results.json.gender_gap.coefficients.att.estimate",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 2, col 5"
+    },
+    {
+      "draft_value": "5.83",
+      "source_key": "estimation_results.json.completion_rate.coefficients.att.estimate",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 2, col 6"
+    },
+    {
+      "draft_value": "3.93",
+      "source_key": "estimation_results.json.ner.coefficients.att.se",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 3, col 2"
+    },
+    {
+      "draft_value": "3.63",
+      "source_key": "estimation_results.json.ger_on_ner_sample.coefficients.att.se",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 3, col 3"
+    },
+    {
+      "draft_value": "2.48",
+      "source_key": "estimation_results.json.ger_minus_ner.coefficients.att.se",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 3, col 4"
+    },
+    {
+      "draft_value": "2.70",
+      "source_key": "estimation_results.json.gender_gap.coefficients.att.se",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 3, col 5"
+    },
+    {
+      "draft_value": "3.84",
+      "source_key": "estimation_results.json.completion_rate.coefficients.att.se",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 3, col 6"
+    },
+    {
+      "draft_value": "684",
+      "source_key": "estimation_results.json.ner.n_observations",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 4, col 2"
+    },
+    {
+      "draft_value": "661",
+      "source_key": "estimation_results.json.ger_on_ner_sample.n_observations",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 4, col 3"
+    },
+    {
+      "draft_value": "684",
+      "source_key": "estimation_results.json.ner.n_observations",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 4, col 4"
+    },
+    {
+      "draft_value": "1,167",
+      "source_key": "estimation_results.json.gender_female.n_observations",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 4, col 5"
+    },
+    {
+      "draft_value": "863",
+      "source_key": "estimation_results.json.completion_rate.n_observations",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 4, col 6"
+    },
+    {
+      "draft_value": "47",
+      "source_key": "summary_statistics.json.n_units",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 5, col 2"
+    },
+    {
+      "draft_value": "47",
+      "source_key": "summary_statistics.json.n_units",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 5, col 3"
+    },
+    {
+      "draft_value": "47",
+      "source_key": "summary_statistics.json.n_units",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 5, col 4"
+    },
+    {
+      "draft_value": "47",
+      "source_key": "summary_statistics.json.n_units",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 5, col 5"
+    },
+    {
+      "draft_value": "46",
+      "source_key": "estimation_results.json.main.df",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 5, col 6"
+    }
+  ],
+  "source_files_found": [
+    "/private/tmp/e2er-demos58/studies-dev/workspaces/2026-10-13-did-abolishing-primary-school-fees-in/estimation_results.json",
+    "/private/tmp/e2er-demos58/studies-dev/workspaces/2026-10-13-did-abolishing-primary-school-fees-in/figure_spec.json",
+    "/private/tmp/e2er-demos58/studies-dev/workspaces/2026-10-13-did-abolishing-primary-school-fees-in/summary_statistics.json"
+  ],
+  "source_files_missing": [
+    "field_map_results.json",
+    "robustness_results.json"
+  ],
+  "skipped_reason": null,
+  "prose_total": 97,
+  "prose_matched": 87,
+  "prose_mismatched": 5,
+  "prose_unverifiable": 5,
+  "prose_excluded": 64,
+  "prose_mismatches": [
+    {
+      "draft_value": "5.5",
+      "source_key": "summary_statistics.json.countries_with_zero_ger_obs_before_1995",
+      "source_value": "4.0",
+      "table_context": "prose: \u2026entage points (standard error 5.5; $t = 3.98$, $p < 0\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "21",
+      "source_key": "estimation_results.json.cs_not_yet_treated.coefficients.att.estimate",
+      "source_value": "22.12052944675871",
+      "table_context": "prose: \u2026ponds to an increase of about 21 percent (Table~ ).\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "3.9",
+      "source_key": "summary_statistics.json.treatment.pre_post.GHA.n_post_obs",
+      "source_value": "5.0",
+      "table_context": "prose: \u2026abolition observations yields 3.9 points ($p = 0.416$\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "5.5",
+      "source_key": "summary_statistics.json.countries_with_zero_ger_obs_before_1995",
+      "source_value": "4.0",
+      "table_context": "prose: \u2026es a confidence interval from 5.5 to 38.6 points, whi\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "3.9",
+      "source_key": "summary_statistics.json.countries_with_zero_ger_obs_before_1995",
+      "source_value": "4.0",
+      "table_context": "prose: \u2026entage points (standard error 3.9). On the reduced sam\u2026",
+      "severity": "major"
+    }
+  ],
+  "table_spec_unresolved": [],
+  "rendered_tables": [
+    "main.tex",
+    "mechanism.tex",
+    "robust_level.tex",
+    "robust_log.tex",
+    "summary.tex"
+  ],
+  "rendered_tables_not_in_draft": [],
+  "conclusive": true,
+  "tables_untraced": false,
+  "untraced_reason": ""
+}

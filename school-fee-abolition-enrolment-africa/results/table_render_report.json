@@ -1,0 +1,14 @@
+{
+  "rendered": [
+    "summary.tex",
+    "main.tex",
+    "robust_level.tex",
+    "robust_log.tex",
+    "mechanism.tex"
+  ],
+  "unresolved": [],
+  "normalized": [],
+  "errors": [],
+  "skipped_reason": null,
+  "set_aside": []
+}

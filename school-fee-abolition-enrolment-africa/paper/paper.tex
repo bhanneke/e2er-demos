@@ -1,0 +1,177 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[authoryear]{natbib}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{hyperref}
+\onehalfspacing
+
+\title{Did Abolishing Primary-School Fees Raise Enrolment? Evidence from Staggered Reforms in Sub-Saharan Africa}
+\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/984a090d8f324fe1}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent Between 1994 and 2005, a group of sub-Saharan African governments abolished primary-school fees, usually with donor backing. We estimate the effect of these reforms on gross primary enrolment using a staggered difference-in-differences design with World Bank data, eight reforming countries with published-source abolition years, and a comparison group of countries with no known abolition date. Gross enrolment rises by roughly 22 percentage points over the first six years after abolition, with an event-study profile that is flat before the reform and shifts upward at the reform date. The estimate is stable across heterogeneity-robust estimators, comparison groups, and leave-one-country-out samples. Net enrolment rises by about 13 percentage points, and we cannot detect a differential gain for girls or a significant effect on primary completion. Because only eight countries are treated and the pre-reform data are sparse, sensitivity analysis shows that moderate violations of parallel trends would make the effect statistically indistinguishable from zero.
+\end{abstract}
+
+\section{Introduction}
+
+Few education policies have produced headlines as dramatic as the abolition of primary-school fees in sub-Saharan Africa. When Uganda removed tuition in 1997 and Kenya followed in 2003, governments reported that millions of children enrolled within a year \citep{kan2020evaluating,oketch2010free}. These reforms were a flagship of the Education for All agenda, and they continue to serve as the template for current debates on fee-free secondary schooling \citep{gruijters2024secondary}. Yet fees were only one component of the private cost of schooling, classrooms and teachers could not expand overnight, and gross enrolment ratios rise mechanically when over-age children enter or repeat grades. Whether abolition raised access in a lasting and measurable way at the national level therefore remains an empirical question.
+
+This paper asks whether national abolition of primary-school fees raised gross primary enrolment in sub-Saharan Africa. We exploit the staggered timing of reforms across eight countries, Malawi (1994), Uganda (1997), Lesotho (2000), Tanzania (2002), Zambia (2002), Kenya (2003), Rwanda (2003), and Ghana (2005), and compare their enrolment paths with those of 39 countries for which we have no abolition date. Each abolition year is taken from a published source, and we treat Zambia, whose date rests on a single concept paper, as a low-confidence case. We estimate group-time average treatment effects following \citet{callaway2021difference}, with cluster-robust inference at the country level, and we compare the results with the estimators of \citet{sun2021estimating} and \citet{borusyak2024revisiting} and with a conventional two-way fixed-effects benchmark.
+
+Our analysis yields four main findings. First, abolition raises the gross primary enrolment ratio by about 22 percentage points on average over the first six years, an increase of roughly 21 percent in log terms, and the effect is statistically significant at the 1 percent level. Second, the event-study profile shows no systematic pre-reform divergence from the comparison group in the two years before abolition, an immediate jump of about 12 points in the reform year, and a plateau at 22 to 27 points thereafter. Third, net enrolment rises by about 13 percentage points, and the difference between the gross and net effects is small and statistically insignificant, which suggests that the gain is not driven mainly by over-age enrolment. Fourth, the effect is similar for girls and boys, and we find no precise effect on primary completion. These results come with an important qualification: the pre-reform coefficients at the longest leads are negative and imprecise, the treated group contains only eight countries, and a sensitivity analysis in the spirit of \citet{rambachan2023credible} shows that the confidence interval includes zero once post-treatment trend deviations are allowed to equal the largest pre-treatment deviation.
+
+Our study makes three contributions. First, we provide cross-country, national-level evidence on fee abolition with an estimator designed for staggered adoption, whereas most of the existing evidence consists of single-country case studies of Uganda, Kenya, Tanzania, or Ghana \citep{kan2020evaluating,oketch2010free,lindsjo2017everybody,pajibo2017influence} and of systematic reviews that pool heterogeneous designs \citep{morgan2014eliminating,fermah2026school,fermah2026effect}. Second, we separate gross from net enrolment on a common sample, which addresses the concern that gross ratios overstate access. Third, we document how fragile inference is in this setting: the number of treated units, the sparse pre-reform data, and the possibility that comparison countries abolished fees without our knowledge limit what a country-level difference-in-differences can establish, and we quantify these limits explicitly.
+
+The remainder of this paper is structured as follows. Section~\ref{sec:lit} situates the study in the literature. Section~\ref{sec:background} describes the institutional setting. Section~\ref{sec:data} presents the data, and Section~\ref{sec:strategy} the empirical strategy. Section~\ref{sec:results} reports the results and robustness checks, and Section~\ref{sec:discussion} discusses implications and limitations.
+
+\section{Related Literature}\label{sec:lit}
+
+Research on fee abolition has developed along two lines. The first consists of country studies that exploit the timing of a single national reform. \citet{kan2020evaluating} evaluate Uganda's 1997 abolition and relate it to subsequent educational outcomes, while \citet{oketch2010free} and \citet{wallstrom2017is} examine Kenya's 2003 programme and its consequences for school choice. Evidence on Tanzania and Ghana similarly emphasizes implementation, for example in the form of capitation grants and school-level funding \citep{lindsjo2017everybody,pajibo2017influence}. These studies establish that enrolment rose after abolition in the cases examined, but they cannot show whether the pattern generalizes, and they typically lack a comparison group of countries that did not reform at the same time.
+
+The second line synthesizes this evidence. \citet{morgan2014eliminating} review the evidence on eliminating school fees in low-income countries, and recent meta-analyses pool enrolment effects of fee abolition and capitation-grant policies across sub-Saharan Africa \citep{fermah2026school,fermah2026effect}. Related work documents the quality side of rapid expansion, including large classes in Uganda \citep{nakabugo2008universal}, internal efficiency problems \citep{nishimura2007internal}, and the tension between access and learning \citep{valente2015primary,nishimura2011the}. Pooling is informative about averages, but the underlying designs differ in comparison groups, outcomes, and time windows. We contribute a single design applied to one outcome series with harmonized definitions.
+
+Methodologically, the paper draws on the recent literature on staggered difference-in-differences. Static two-way fixed-effects regressions can combine treatment effects with negative weights when effects vary over time or across cohorts \citep{goodmanbacon2021difference,dechaisemartin2020twoway}, which motivates estimators that compare each cohort only with clean controls \citep{callaway2021difference,sun2021estimating,borusyak2024revisiting}. Because pre-trend tests have low power and can distort post-test estimates \citep{roth2022pretest,roth2023trending}, we complement them with a sensitivity analysis that bounds the consequences of departures from parallel trends \citep{rambachan2023credible}. We apply this toolkit to a setting with few treated units, which is common in cross-country policy evaluation but rarely examined for its implications for inference.
+
+\section{Institutional Background}\label{sec:background}
+
+Before the 1990s, primary schooling in most of sub-Saharan Africa required payment of tuition, together with levies for parent-teacher associations, examinations, and school construction. These charges, in combination with uniforms, books, and the foregone labour of children, formed a substantial share of household budgets in low-income countries. Following the Jomtien conference in 1990 and the Dakar Framework for Action in 2000, donors and governments committed to universal primary education, and abolition of fees became the principal instrument. Malawi announced free primary education in 1994/95, and Uganda abolished fees in 1997 for up to four children per family. Lesotho phased in free primary education from the first grade starting in 2000. Tanzania declared the end of fees under its first Primary Education Development Plan in 2001, and the first fee-free school year began in January 2002. Zambia, Kenya, and Rwanda followed in 2002 and 2003, and Ghana introduced a capitation grant scheme in 2005 that replaced school-levied charges with a per-pupil government transfer.
+
+Two features of this setting shape our interpretation. First, the reforms differ in scope. Uganda initially limited eligibility, Lesotho phased the reform in by grade, and Ghana's capitation grant substituted public transfers for fee revenue. We therefore interpret our estimate as the average effect of a package of national fee-removal policies, and we examine sensitivity to the most heterogeneous cases. Second, the mechanism could operate through demand and supply simultaneously. Lower prices raise the demand of poor households, but fixed classroom and teacher capacity may limit realized enrolment in the short run, and reforms were often accompanied by new funding. The estimand is accordingly the combined effect of abolition and the associated policy package, not the price elasticity of demand in isolation.
+
+\section{Data}\label{sec:data}
+
+We combine country-year indicators from the World Bank's World Development Indicators \citep{WorldBank_OpenData} with a hand-assembled table of abolition years. The enrolment data cover 49 economies in sub-Saharan Africa. The panel runs from 1980 to 2010 and contains 1,519 country-years; we end it in 2010, five years after the last treated cohort, so that later abolitions do not enter the comparison group.
+% src: data_summary.md (Panel end rule); estimation_results.json#sample_flow.raw_rows_1980_2010
+Our outcome is the gross primary enrolment ratio (GER), defined as total primary enrolment divided by the population of official primary-school age, expressed in percent. The estimation sample consists of country-years with a non-missing GER, which yields 1,211 observations for 47 countries.
+% src: estimation_results.json#sample_flow.rows_with_ger_primary, #sample_flow.units_with_ger
+We do not impute missing values. In the descriptive window 1985 to 2010, the panel contains 1,006 country-years with GER, a mean of 85.6 percent, and a standard deviation of 28.6 percentage points.
+% src: summary_statistics.json#n_observations, #outcome.ger_primary.mean, #outcome.ger_primary.sd
+Secondary outcomes are the net enrolment rate (NER), male and female GER, and the primary completion rate. Table~\ref{tab:summary} summarizes these variables and the time-varying covariates, GDP per capita, urban share, and under-five mortality.
+
+\input{tables/summary.tex}
+
+Treatment is the first year of national fee abolition. Eight countries have an abolition year taken from a published source: Malawi (1994), Uganda (1997), Lesotho (2000), Tanzania (2002), Zambia (2002), Kenya (2003), Rwanda (2003), and Ghana (2005). The sources are \citet{kan2020evaluating} for Uganda, \citet{oketch2010free} for Kenya, \citet{lindsjo2017everybody} for Tanzania, and \citet{pajibo2017influence} for Ghana; the remaining dates are recorded in the data dictionary with their references. We code Tanzania at the first fee-free school year (2002) and use 2001, the year the plan declared abolition, as an alternative. Zambia's date rests on a 2020 concept paper and is of low confidence. The other 41 economies have no known abolition date. We call them the undated comparison group, not never-abolishers, because the absence of a date in our table does not establish that fees were never abolished.
+
+Three features of the data deserve emphasis. Pre-reform coverage is thin: four countries have no GER observation before 1995, and 61 gaps appear in country series.
+% src: data_summary.md (Missingness); the count of 61 gaps is reported there
+Net enrolment is observed in less than half of the country-years in the descriptive window, so the NER analysis uses 684 observations.
+% src: summary_statistics.json#missingness.ner_primary; estimation_results.json#ner.n_observations
+Finally, GER series contain breaks that look like revisions of enrolment or population estimates. Nine year-on-year changes exceed 20 points, and two of them, Malawi 1995 and Uganda 1997, coincide with abolition. Nine observations are flagged as outliers (GER above 150 or below 10), and we drop them in a robustness check.
+% src: data_summary.md (Breaks and outliers); estimation_results.json#sample_flow.rows_ger_outlier_flag
+
+\section{Empirical Strategy}\label{sec:strategy}
+
+Let $Y_{it}$ denote the GER of country $i$ in year $t$ and $G_i$ the first year of fee abolition, with $G_i$ undefined for the comparison group. We follow \citet{callaway2021difference} and estimate group-time average treatment effects
+\begin{equation}
+ATT(g,t) = \mathbb{E}\left[Y_{it}(g) - Y_{it}(\infty) \mid G_i = g\right],
+\label{eq:attgt}
+\end{equation}
+identified by comparing the change in outcomes between $g-1$ and $t$ for cohort $g$ with the same change for countries not yet treated or never dated as treated. We then aggregate to event time $e = t - g$ and to an overall effect, defined as the cohort-size weighted mean of $ATT(g,t)$ over $0 \le e \le 5$,
+\begin{equation}
+ATT = \sum_{g}\sum_{e=0}^{5} w_{g,e}\, ATT(g,g+e).
+\label{eq:att}
+\end{equation}
+Our baseline uses the undated comparison group, the universal base period $g-1$, and no covariates. Standard errors come from a multiplier bootstrap with 999 draws, clustered by country, and we base inference on a $t$ distribution with 46 degrees of freedom, since only 8 of the 47 clusters are treated.
+% src: estimation_results.json#main.bootstrap_draws, #main.df, #main.n_clusters, #main.n_treated_clusters
+
+Identification requires parallel trends in untreated outcomes between reforming and comparison countries, no anticipation, and a stable comparison group. Several threats are specific to this setting. Governments often announced reforms before implementing them, which we address with a specification that allows one year of anticipation. Reforms were typically adopted alongside donor funding and economic recovery, so that enrolment might have risen even without abolition; we probe this with covariates (log GDP per capita and urban share at $g-1$), event-study pre-trends, and a placebo that moves the treatment date three years earlier. The comparison group may contain undetected abolishers, which would bias the estimate toward zero, and we address it with a not-yet-treated comparison group. Finally, GER can rise through over-age enrolment, so we compare the gross effect with the net effect on a common sample.
+
+Because the treatment is staggered, we do not rely on a static two-way fixed-effects regression. We report it as a benchmark, with wild cluster bootstrap $p$-values, and we use the Goodman-Bacon decomposition \citep{goodmanbacon2021difference} on a balanced subsample to see how much weight falls on problematic comparisons. We also report the interaction-weighted estimator of \citet{sun2021estimating} and the imputation estimator of \citet{borusyak2024revisiting}, which are robust to heterogeneous effects across cohorts and over time. Pre-trend tests are reported but not relied upon, given their low power \citep{roth2022pretest}; we instead bound the post-treatment effect under relative-magnitude restrictions \citep{rambachan2023credible,roth2023trending}.
+
+\section{Results}\label{sec:results}
+
+\subsection{Baseline effect}
+
+Fee abolition raises the gross primary enrolment ratio substantially. Our baseline estimate in Table~\ref{tab:main} is 22.0 percentage points (standard error 5.5; $t = 3.98$, $p < 0.001$), with a 95 percent confidence interval from 10.9 to 33.2 points.
+% src: estimation_results.json#main.coefficients.att.estimate, #main.coefficients.att.se, #main.coefficients.att.t_stat, #main.coefficients.att.p_value, #main.coefficients.att.ci_lower, #main.coefficients.att.ci_upper
+Because the mean GER in the descriptive sample is 85.6 percent, this is a large effect. In logs, the ATT is 0.192 (standard error 0.055), which corresponds to an increase of about 21 percent (Table~\ref{tab:robust_log}).
+% src: estimation_results.json#cs_log_ger.coefficients.att.estimate, #cs_log_ger.coefficients.att.se
+% computed: exp(0.1917) - 1 = 0.211
+Using not-yet-treated countries as controls leaves the estimate essentially unchanged at 22.1 points, and adding log GDP per capita and urban share as covariates lowers it to 19.1 points (standard error 5.3), which remains significant at the 1 percent level.
+% src: estimation_results.json#cs_not_yet_treated.coefficients.att.estimate, #controls.coefficients.att.estimate, #controls.coefficients.att.se
+
+\input{tables/main.tex}
+
+The static two-way fixed-effects benchmark yields 23.4 points, but its standard error of 9.7 is much larger, and the wild cluster bootstrap $p$-value is 0.062, so the conventional estimate is only marginally significant under the most conservative inference.
+% src: estimation_results.json#twfe_level.coefficients.att.estimate, #twfe_level.coefficients.att.se, #twfe_level.coefficients.att.wild_bootstrap_p_value
+In logs, the corresponding two-way estimate is 0.150 with a cluster-robust $p$-value of 0.170, and the wild bootstrap $p$-value is 0.212.
+% src: estimation_results.json#twfe_log.coefficients.att.estimate, #twfe_log.coefficients.att.p_value, #twfe_log.coefficients.att.wild_bootstrap_p_value
+The heterogeneity-robust estimators of \citet{sun2021estimating} and \citet{borusyak2024revisiting} give 22.0 and 22.7 points, respectively, the latter with a wider standard error of 10.3 and a $p$-value of 0.032.
+% src: estimation_results.json#sun_abraham.coefficients.att.estimate, #bjs_imputation.coefficients.att.estimate, #bjs_imputation.coefficients.att.se, #bjs_imputation.coefficients.att.p_value
+The Goodman-Bacon decomposition on the balanced subsample of 13 countries, which contains three treated cohorts, shows that 95.6 percent of the two-way weight falls on comparisons of treated with never-treated countries, so the static estimator is not distorted much by forbidden comparisons in this subsample.
+% src: estimation_results.json#goodman_bacon.n_units, #goodman_bacon.by_type.treated_vs_never.weight
+
+\subsection{Dynamics and pre-trends}
+
+Figure~\ref{fig:event_study} traces the effect by year relative to abolition. The coefficients two and three years before the reform are close to zero (0.08 and $-0.34$ points), and the joint Wald test of the five pre-reform coefficients does not reject (p-value 0.98).
+% src: estimation_results.json#event_study.periods (relative_period -2, -3); #pre_trends.p_value
+In the reform year, GER is 11.9 points higher, and by the first full year after abolition the effect reaches 23.2 points. It stays between 22.0 and 24.7 points through year four and reaches 27.5 points in year five.
+% src: estimation_results.json#event_study.periods (relative_period 0, 1, 3, 4, 5)
+The immediate jump and the persistence of the effect speak against a purely transitory surge, and they are consistent with the broad pattern reported in country studies.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.85\textwidth]{fig_event_study.pdf}
+\caption{Event-study estimates of the effect of fee abolition on GER (percentage points), relative to the year before abolition. Callaway--Sant'Anna estimates with pointwise 95 percent confidence intervals.}
+\label{fig:event_study}
+\end{figure}
+
+The pre-period does not give unambiguous support to parallel trends. The coefficients at leads four to six are negative, between $-3.6$ and $-5.3$ points, and are imprecise (standard errors of 5.3 to 7.9), which means they are statistically indistinguishable from zero but also compatible with a rising pre-reform trend among treated countries.
+% src: estimation_results.json#event_study.periods (relative_period -4, -5, -6)
+Because only a subset of cohorts is observed at these leads, composition changes across event times. A non-rejection of the pre-trend test therefore does not establish parallel trends, since the test has low power \citep{roth2022pretest}. A placebo that moves the treatment date three years earlier and drops all post-abolition observations yields 3.9 points ($p = 0.416$), which is small relative to the main effect and not significant.
+% src: estimation_results.json#placebo.fake_date_minus_3.estimate, #placebo.fake_date_minus_3.p_value
+The sensitivity analysis is more cautionary. Allowing post-treatment deviations from parallel trends up to half the largest pre-treatment change gives a confidence interval from 5.5 to 38.6 points, which excludes zero, whereas allowing deviations equal to that change gives an interval from $-0.3$ to 44.3 points. The breakdown value is 0.98, so a deviation slightly smaller than the largest observed pre-period change is enough to make the effect statistically insignificant.
+% src: estimation_results.json#sensitivity.honest_did_rm.mbar_0_5.ci_lower, .ci_upper, #sensitivity.honest_did_rm.mbar_1.ci_lower, .ci_upper, #sensitivity.honest_did_rm.breakdown_mbar
+We use a conservative closed-form bound here, not the exact procedure, so the bound is likely wider than necessary.
+
+\subsection{Robustness}
+
+Table~\ref{tab:robust_level} shows that the baseline estimate is stable across alternative specifications. Allowing one year of anticipation yields 21.8 points. Dropping the nine flagged outliers yields 21.2 points, and excluding Zambia (low-confidence date) and Ghana (capitation grant, not strictly an abolition) raises the estimate to 24.4 points with a standard error of 7.1.
+% src: estimation_results.json#anticipation_1.coefficients.att.estimate, #drop_outliers.coefficients.att.estimate, #drop_zmb_gha.coefficients.att.estimate, #drop_zmb_gha.coefficients.att.se
+Restricting the event window to $[-5,5]$ gives the same estimate as the baseline.
+% src: estimation_results.json#window_m5_p5.coefficients.att.estimate
+Dropping each treated country in turn produces estimates between 17.5 points (without Uganda) and 24.1 points (without Kenya), so no single reform drives the result, although Uganda and Malawi, the two early adopters with the largest country-level effects, contribute the most.
+% src: estimation_results.json#leave_one_country_out.coefficients.att_min.estimate, #att_max.estimate; country_att in #h3_initial_level.country_att
+Country-level effects range from 8.9 points in Kenya to 51.8 points in Uganda, and a regression of these effects on pre-reform GER yields a negative but imprecise slope ($-0.71$, $p = 0.185$, eight countries), which is consistent with larger gains where initial enrolment was lower but cannot establish it.
+% src: estimation_results.json#h3_initial_level.country_att.KEN.att, #UGA.att, #h3_initial_level.coefficients.pre_ger.estimate, .p_value
+
+\input{tables/robust_level.tex}
+
+\input{tables/robust_log.tex}
+
+\subsection{Net enrolment, gender, and completion}
+
+Table~\ref{tab:mechanism} examines whether the gain reflects additional age-eligible children or mainly over-age enrolment. Net enrolment rises by 13.4 percentage points (standard error 3.9). On the reduced sample with observed NER, the GER effect is 14.8 points, and the difference between the gross and net effects is 1.3 points (standard error 2.5, $p = 0.594$).
+% src: estimation_results.json#ner.coefficients.att.estimate, .se; #ger_on_ner_sample.coefficients.att.estimate; #ger_minus_ner.coefficients.att.estimate, .se, .p_value
+Gross and net effects are therefore statistically indistinguishable, and the NER estimate suggests that the gain is a genuine increase in participation among children of primary-school age. The estimate is imprecise, however, and net enrolment is observed in only 684 country-years, so we cannot rule out a moderate role for over-age enrolment.
+% src: estimation_results.json#ner.n_observations
+
+\input{tables/mechanism.tex}
+
+Girls and boys gain similarly. The female GER rises by 21.6 points and the male GER by 21.4 points, and the difference of 0.2 points is not distinguishable from zero (standard error 2.7).
+% src: estimation_results.json#gender_female.coefficients.att.estimate, #gender_male.coefficients.att.estimate, #gender_gap.coefficients.att.estimate, #gender_gap.coefficients.att.se
+Fee abolition did not close the gender gap in gross enrolment on average. The effect on the primary completion rate is 5.8 points, with a standard error of 3.8 ($p = 0.136$), and so we cannot conclude that higher enrolment translated into more children finishing primary school within the window.
+% src: estimation_results.json#completion_rate.coefficients.att.estimate, .se, .p_value
+We also cannot estimate whether the effect depends on capitation grants, because country-level information on such grants is not in our data.
+
+\section{Discussion and Conclusion}\label{sec:discussion}
+
+Our evidence indicates that abolishing primary-school fees raised gross primary enrolment in sub-Saharan Africa by a large amount, roughly 22 percentage points on average over six years, and that the increase is persistent and comparable for boys and girls. The net enrolment result suggests that a large part of the increase reflects additional children of primary-school age, not merely older children entering. These findings provide national-level support for the cross-country syntheses of \citet{morgan2014eliminating} and \citet{fermah2026school}, and they extend the single-country evidence of \citet{kan2020evaluating} and \citet{oketch2010free} to a common design. For policy, the results imply that fee removal can move enrolment substantially even where governments cannot immediately expand supply, but the insignificant completion effect and the large-class evidence from Uganda \citep{nakabugo2008universal} suggest that access gains should be paired with investment in teachers and classrooms.
+
+The study has three scope conditions. First, only eight countries are treated, one of which (Zambia) has a low-confidence date, and the comparison group consists of countries without a known abolition date, not verified never-abolishers. If some of these countries abolished fees, our estimates are biased toward zero, and a stricter comparison group would require verified dates for the remaining 41 economies. Second, the sensitivity analysis shows that the effect is robust to deviations from parallel trends only up to about the size of the largest pre-reform change, and the negative, imprecise coefficients at the longest leads indicate that treated countries may have been on a rising path before reform. Third, GER is subject to breaks in the underlying enrolment and population estimates, and net enrolment and completion are observed in fewer country-years, which limits what we can say about quality-adjusted access.
+
+Future research should address two specific questions. A hand-verified chronology of fee policies for all sub-Saharan economies, including capitation grants and partial reforms, would allow a clean never-treated group and a test of whether replacing fees with per-pupil transfers differs from outright abolition. Household survey data with age-specific enrolment would then show whether the additional pupils are drawn from the poorest households and whether they remain in school long enough to complete the cycle.
+
+\bibliographystyle{apalike}
+\bibliography{refs}
+
+\end{document}

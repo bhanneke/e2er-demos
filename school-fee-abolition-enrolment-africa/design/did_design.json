@@ -1,0 +1,17 @@
+{
+  "outcome": {"table": "wb_primary_enrolment", "column": "ger_primary", "label": "Gross primary enrolment ratio (% of primary school-age population), World Bank SE.PRM.ENRR"},
+  "panel": {"table": "wb_primary_enrolment", "unit": "iso3", "time": "year"},
+  "treatment": {
+    "table": "fee_abolition_dates",
+    "unit": "iso3",
+    "first_treated": "first_year",
+    "description": "First calendar year (school year) in which primary fees were abolished nationally, for eight countries: MWI 1994, UGA 1997, LSO 2000 (phased in from grade 1), TZA 2002 (alt_year 2001 = declaration), ZMB 2002 (low confidence), KEN 2003, RWA 2003, GHA 2005 (capitation grant scheme). All other countries have an empty first_year: they are undated comparison units not known to have abolished fees, not verified never-abolishers. The panel wb_primary_enrolment ends in 2010 (last cohort 2005 plus five years) so that later abolitions do not enter the comparison group.",
+    "source": "fee_abolition_dates.first_year with verification_status 'published source' and source_doi: Chimombo 2009 (doi 10.1080/03050060902921003); Kan and Klasen 2020 (doi 10.1111/rode.12725); Lindsjo 2017 (Int. J. Educ. Development); Oketch and Somerset 2010 (CREATE Pathways to Access 37); Pajibo and Tamanja 2017 (doi 10.20448/journal.522.2017.31.53.63); doi 10.1080/09751122.2013.11890101 (LSO); doi 10.1155/2012/396019 (RWA); Zambia 2020 concept paper without DOI. Checked against abstracts by the researcher on 2026-10-13."
+  },
+  "comparison_group": "never_treated",
+  "estimator": "callaway_santanna",
+  "anticipation": 0,
+  "event_window": [-6, 5],
+  "reference_period": -1,
+  "cluster": "iso3"
+}

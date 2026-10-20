@@ -1,0 +1,1502 @@
+{
+  "schema": "e2er-provenance/1",
+  "run": {
+    "paper_id": "30170166-245c-4c41-a957-50eb2f1cf0df",
+    "backend": "claude_code",
+    "model": "sonnet",
+    "governance": "full",
+    "template": "policy-evaluation",
+    "e2er_version": "0.17.0",
+    "exported_at": "20261015",
+    "purpose": "demonstration",
+    "preregistration": {
+      "file": "design/preregistration.md",
+      "sha256": "0739668ec62727170804ff8b2040f14b3f730316073cb8e7e3c697fa8ad9ed5c",
+      "frozen_at": "2026-10-13T21:33:45Z"
+    },
+    "results_from_code": {
+      "results/estimation_results.json": {
+        "outcome": "not_recorded",
+        "reason": "the run predates output records"
+      }
+    }
+  },
+  "files": {
+    "README.md": {
+      "sha256": "30f19b7ef29d533228362140776b31c57dc3ae3e6c943d730480f9de40e28722",
+      "bytes": 7548
+    },
+    "code/requirements.txt": {
+      "sha256": "a51cd39a33828334971c419b103ac9da10f726811acf1e670d41959d3e838e27",
+      "bytes": 303
+    },
+    "code/run_estimation.py": {
+      "sha256": "ae0587f52be4d53c233420b5e2810495b2f38299364e998d7bd0c8382020d33c",
+      "bytes": 26382
+    },
+    "code/scratch/build_panel.py": {
+      "sha256": "fad84947ae4ccf460b3657ab64c90efbdd25e772350fcd3f72ac1164e82cdbe7",
+      "bytes": 9406
+    },
+    "code/scratch/paper_draft.log": {
+      "sha256": "2bd1239cbc65c1c0c0728a0b21d47de0e88be821a9f1560c59e6b08344137755",
+      "bytes": 23669
+    },
+    "code/scratch/summ.py": {
+      "sha256": "5f7bc65265dd367aafd09d85937c97083b2da88a8efdae6939359efab3335860",
+      "bytes": 698
+    },
+    "data/data.db": {
+      "sha256": "139c8457b11c5478f41392b30bebfae5451c7b6a572f64382a1a6d4a64ac6206",
+      "bytes": 1720320
+    },
+    "data/data_dictionary.json": {
+      "sha256": "65b8d7453a467bb8d175bc0195b674b0eef0adb9500356631dac514023bcbf91",
+      "bytes": 24363
+    },
+    "data/data_sources.json": {
+      "sha256": "e55909d9b656c151e67570f1b61ddb912377a0ef5704c38de3c428cc49c0add5",
+      "bytes": 21008
+    },
+    "data/data_summary.md": {
+      "sha256": "a9b41e10f0f0c5e116d4a613761a5b33587e1e92984529ed521fc6827fd4aae8",
+      "bytes": 5302
+    },
+    "design/did_design.json": {
+      "sha256": "736ba789a2127148a5b3f28c2cb101e45b8ff03aabc1ec18b0f6d4c094f9aadd",
+      "bytes": 1664
+    },
+    "design/econometric_spec.md": {
+      "sha256": "2f1e57d706ddd5116c17b13b3622c87ccaee27948cadb3e7a0253a38ebf535ab",
+      "bytes": 8623
+    },
+    "design/identification_spec.json": {
+      "sha256": "8c9eee65856dc0b9b73f1aa411c1fc4f549e5701f24513c662ecb2abfdc7323e",
+      "bytes": 777
+    },
+    "design/identification_strategy.md": {
+      "sha256": "2636c65ba3d0a2d0bbf5eb3e87d49d8667b60c26daa7fdc35e1aa9387a8c4cf9",
+      "bytes": 8865
+    },
+    "design/literature_review.md": {
+      "sha256": "3aa9ed5a086b657065831100638d9d646e80b4d37e5fa22031aeeb399c69d9b1",
+      "bytes": 7413
+    },
+    "design/paper_plan.md": {
+      "sha256": "5ce725ab9a74663c9ea7f5bacdffc40f1d94412b4c536131f9a345fed31a3b45",
+      "bytes": 22481
+    },
+    "design/preregistration.lock.json": {
+      "sha256": "dce0af76ca3904ad3fa2e2a9d199a25660029adc1acb590d292869b81bac8d66",
+      "bytes": 1573
+    },
+    "design/preregistration.md": {
+      "sha256": "6b11644bb0c37bdef241b611f1617ac781219176ea382ee988a6ba8d457b9748",
+      "bytes": 33595
+    },
+    "design/researcher_instructions.md": {
+      "sha256": "36f8dbb55adfe982a36afd610c6c1c8d4da2a03e426707ad27a83110d30ed9ba",
+      "bytes": 1765
+    },
+    "misc/fig_event_study.pdf": {
+      "sha256": "20478fe580438550afad40826bdcff4a9ae81d65ee2c20f9071591f5c7f9f6dc",
+      "bytes": 13217
+    },
+    "misc/fig_ger_cohort_trends.pdf": {
+      "sha256": "51af3fd397c55195f9d4d158a9098e3011a1a3b9b2545d6b4015dbcb641f6409",
+      "bytes": 20732
+    },
+    "misc/fig_ger_event_time.pdf": {
+      "sha256": "1963ac33cdc62bf436114ad835027b3d5345954d2351dee727474a0daea5ee8d",
+      "bytes": 11642
+    },
+    "misc/figure_render_report.json": {
+      "sha256": "530de7e9a3acec6ad96a6e83913514b43c4807a20d7e88d8bcf4bcc82a6e6d1c",
+      "bytes": 208
+    },
+    "misc/paper_draft.blg": {
+      "sha256": "11083ecbabfbfecc6a4f2814f137cfb88e18276d0415714a44ee1e5f39abad42",
+      "bytes": 352
+    },
+    "misc/refs.bib": {
+      "sha256": "e56000d8ffdf845d843b9181fbb39cc6c69829b305f76446ba39c9e5f3d447e0",
+      "bytes": 43662
+    },
+    "paper/abstract.tex": {
+      "sha256": "f5990d731a6ff89df0c7a0a75c3afab5b56d950e7d828e685201dc17e150c04a",
+      "bytes": 1787
+    },
+    "paper/paper.pdf": {
+      "sha256": "23bebcb188b3fa18db16fba775f1f80eec84662e4ecd444b25fa4a598b8b89ea",
+      "bytes": 87632
+    },
+    "paper/paper.tex": {
+      "sha256": "7090cdf17d25376de7ae8fbc3ccd5f4731512f7b1eeb532efa7205a2f3c3cfeb",
+      "bytes": 29148
+    },
+    "paper/refs.bib": {
+      "sha256": "e56000d8ffdf845d843b9181fbb39cc6c69829b305f76446ba39c9e5f3d447e0",
+      "bytes": 43662
+    },
+    "paper/tables/main.tex": {
+      "sha256": "7752fd1d42aa060d349f6de5b3a04fe38d79d964610a2130056c56f650d0b315",
+      "bytes": 966
+    },
+    "paper/tables/mechanism.tex": {
+      "sha256": "610bfed3d75fb78e205834801a7cc60df4f7cee393a1d94e7ecb81b0583b7b84",
+      "bytes": 789
+    },
+    "paper/tables/robust_level.tex": {
+      "sha256": "2f488aeb552c2bbc78c397c87f74211d5c8a6db0b11c6a8d7381e7bc84d2e4b4",
+      "bytes": 753
+    },
+    "paper/tables/robust_log.tex": {
+      "sha256": "60b906a2db2267982af879c2d15fe20ac459c3dc179e40fd623ae73711c87b42",
+      "bytes": 554
+    },
+    "paper/tables/summary.tex": {
+      "sha256": "811c19171cf4b17c61d2cd52dca3793686c0853adee4345ddfcbef9fe59b9309",
+      "bytes": 835
+    },
+    "replication/audit_log.csv": {
+      "sha256": "6f4c242ead6be9b60e83781e516d7e0ac2123572b5faf1ab15d019459de77301",
+      "bytes": 2178
+    },
+    "replication/data_queries.sql": {
+      "sha256": "44ca6fee834f1151cf6c14f96068ca2af3b22591573fe34e428d5ce5eb300fe6",
+      "bytes": 137
+    },
+    "replication/estimation.py": {
+      "sha256": "8f304358d2eafa5b120106d957dea63ee96f43df567c69fd1661bca38f73f824",
+      "bytes": 30537
+    },
+    "report.html": {
+      "sha256": "28cb62a7fdf403f4cbdfd1c767971eab02629879d2f89e9bacc52184b5f53e98",
+      "bytes": 16609
+    },
+    "reproduce.json": {
+      "sha256": "58a9ec5ee3827f91c4e9072e47dee567126953f03782c9ec6a69f63d8418e356",
+      "bytes": 3312
+    },
+    "results/did_check.json": {
+      "sha256": "f39bec90c30639e4bcc56ad85a7ec7d5505aea9f6db75114964eb0046c0e5618",
+      "bytes": 344
+    },
+    "results/did_design_check.json": {
+      "sha256": "3e62ef5621c21af8c1cce2ec23c051f9df25f3d4f3acb6f06bb18713a69803f0",
+      "bytes": 1711
+    },
+    "results/estimation_results.json": {
+      "sha256": "8c27af2214a37807950b7e467e8cbd1a19b6d69d6788d0ab60b8bf773d87c4b2",
+      "bytes": 24486
+    },
+    "results/figure_spec.json": {
+      "sha256": "8685b4ba30fe6f248a134e094c2ef9c208a9d551946920ec7897c7e8bb73684f",
+      "bytes": 12530
+    },
+    "results/figures/fig_event_study.pdf": {
+      "sha256": "20478fe580438550afad40826bdcff4a9ae81d65ee2c20f9071591f5c7f9f6dc",
+      "bytes": 13217
+    },
+    "results/figures/fig_ger_cohort_trends.pdf": {
+      "sha256": "51af3fd397c55195f9d4d158a9098e3011a1a3b9b2545d6b4015dbcb641f6409",
+      "bytes": 20732
+    },
+    "results/figures/fig_ger_event_time.pdf": {
+      "sha256": "1963ac33cdc62bf436114ad835027b3d5345954d2351dee727474a0daea5ee8d",
+      "bytes": 11642
+    },
+    "results/number_verification.json": {
+      "sha256": "13e80d587ff4413d5a7e219849089df9ee4aa54101315ff0c588bdac1db55528",
+      "bytes": 30471
+    },
+    "results/summary_statistics.json": {
+      "sha256": "47f6330c829091003f1af3d583056067a4215b7632fe8637c86a74417a2dc09d",
+      "bytes": 7618
+    },
+    "results/table_render_report.json": {
+      "sha256": "7726e2f7c03ca22280bd0f18287939b60e437cf11ccf8f163eff8aa4c29965c5",
+      "bytes": 225
+    },
+    "results/table_spec.json": {
+      "sha256": "be3c83ce2c08c30c7aa8851f9057ace43685c26a38dcabcf88a82b13b4e9b9cf",
+      "bytes": 5157
+    },
+    "reviews/citation_integrity.json": {
+      "sha256": "ab3f5a947c2201eec9b36429f7b2a899ef0360f462551f648deeadc3faf76064",
+      "bytes": 13065
+    },
+    "reviews/review_aggregation.json": {
+      "sha256": "2af6e77502c230886b2a46fd59e5b9c460cbbecc0068edaa43f52bf5016ba7be",
+      "bytes": 1330
+    },
+    "reviews/review_data.md": {
+      "sha256": "f81ccee8b925fb7b84166f6bf7b254174dbb03b1e7de933bd3537509420a53ff",
+      "bytes": 25500
+    },
+    "reviews/review_identification.md": {
+      "sha256": "c2922aaf4ed3694a726e774038a27ba617f66df4fd30097a0acbdc2250aedb03",
+      "bytes": 19213
+    },
+    "reviews/review_methods.md": {
+      "sha256": "9a3631074d00459e7add2708658825ee694671b20b647dfa6ea3fdbf0efbd237",
+      "bytes": 22636
+    },
+    "reviews/review_technical.md": {
+      "sha256": "89a3de30c8d9dcbaf9b1f7981cbc60b796cd0d2345cac1559ad9191d8f9a122f",
+      "bytes": 21592
+    },
+    "reviews/review_writing.md": {
+      "sha256": "ae4bdfe2cbc8e6b3a77d3100c2aa0e944e2f181b7dd7a389427c293c0eec9fc6",
+      "bytes": 24869
+    }
+  },
+  "edges": [
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "980",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 2, col 2",
+      "source_key": "summary_statistics.json.other_variables.ger_male.n",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "90.7",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 2, col 3",
+      "source_key": "summary_statistics.json.other_variables.ger_male.mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "26.7",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 2, col 4",
+      "source_key": "summary_statistics.json.other_variables.ger_male.sd",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "18.2",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 2, col 5",
+      "source_key": "summary_statistics.json.other_variables.ger_male.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "93.1",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 2, col 6",
+      "source_key": "summary_statistics.json.other_variables.ger_male.median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "160.9",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 2, col 7",
+      "source_key": "summary_statistics.json.other_variables.ger_male.max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "980",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 3, col 2",
+      "source_key": "summary_statistics.json.other_variables.ger_male.n",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "79.9",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 3, col 3",
+      "source_key": "summary_statistics.json.other_variables.ger_female.mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "31.5",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 3, col 4",
+      "source_key": "summary_statistics.json.other_variables.ger_female.sd",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9.3",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 3, col 5",
+      "source_key": "summary_statistics.json.other_variables.ger_female.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "80.1",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 3, col 6",
+      "source_key": "summary_statistics.json.other_variables.ger_female.mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "155.4",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 3, col 7",
+      "source_key": "summary_statistics.json.other_variables.ger_female.max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "573",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 4, col 2",
+      "source_key": "summary_statistics.json.other_variables.ner_primary.n",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "67.3",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 4, col 3",
+      "source_key": "summary_statistics.json.other_variables.ner_primary.mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "20.5",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 4, col 4",
+      "source_key": "summary_statistics.json.other_variables.ner_primary.sd",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "19.2",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 4, col 5",
+      "source_key": "summary_statistics.json.other_variables.ner_primary.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "66.4",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 4, col 6",
+      "source_key": "summary_statistics.json.other_variables.ner_primary.median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "99.9",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 4, col 7",
+      "source_key": "summary_statistics.json.other_variables.ner_primary.max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "717",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 5, col 2",
+      "source_key": "summary_statistics.json.other_variables.completion_rate.n",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "53.9",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 5, col 3",
+      "source_key": "summary_statistics.json.other_variables.completion_rate.mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "25.5",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 5, col 4",
+      "source_key": "summary_statistics.json.other_variables.completion_rate.sd",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.9",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 5, col 5",
+      "source_key": "summary_statistics.json.other_variables.completion_rate.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "53.1",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 5, col 6",
+      "source_key": "summary_statistics.json.other_variables.completion_rate.median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "150.1",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 5, col 7",
+      "source_key": "summary_statistics.json.other_variables.completion_rate.max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,003",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 6, col 2",
+      "source_key": "summary_statistics.json.other_variables.gdp_pc.n",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1684.2",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 6, col 3",
+      "source_key": "summary_statistics.json.other_variables.gdp_pc.mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2175.1",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 6, col 4",
+      "source_key": "summary_statistics.json.other_variables.gdp_pc.sd",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "169.8",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 6, col 5",
+      "source_key": "summary_statistics.json.other_variables.gdp_pc.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "856.8",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 6, col 6",
+      "source_key": "summary_statistics.json.other_variables.gdp_pc.median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "13112.8",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 6, col 7",
+      "source_key": "summary_statistics.json.other_variables.gdp_pc.max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,006",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 7, col 2",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "32.6",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 7, col 3",
+      "source_key": "summary_statistics.json.other_variables.urban_share.mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14.5",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 7, col 4",
+      "source_key": "summary_statistics.json.other_variables.urban_share.sd",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.0",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 7, col 5",
+      "source_key": "summary_statistics.json.other_variables.urban_share.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "32.6",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 7, col 6",
+      "source_key": "summary_statistics.json.other_variables.urban_share.mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "82.0",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 7, col 7",
+      "source_key": "summary_statistics.json.other_variables.urban_share.max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,006",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 8, col 2",
+      "source_key": "summary_statistics.json.n_observations",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "128.9",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 8, col 3",
+      "source_key": "summary_statistics.json.other_variables.u5_mortality.mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "61.6",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 8, col 4",
+      "source_key": "summary_statistics.json.other_variables.u5_mortality.sd",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "13.7",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 8, col 5",
+      "source_key": "summary_statistics.json.other_variables.u5_mortality.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "122.2",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 8, col 6",
+      "source_key": "summary_statistics.json.other_variables.u5_mortality.median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "489.3",
+      "table_context": "tab:summary (Summary statistics of the country-year panel, 1985--2010...), row 8, col 7",
+      "source_key": "summary_statistics.json.other_variables.u5_mortality.max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "22.04",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 2, col 2",
+      "source_key": "estimation_results.json.main.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "22.12",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 2, col 3",
+      "source_key": "estimation_results.json.main.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "19.11",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 2, col 4",
+      "source_key": "summary_statistics.json.other_variables.ner_primary.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "22.03",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 2, col 5",
+      "source_key": "estimation_results.json.main.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "22.73",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 2, col 6",
+      "source_key": "estimation_results.json.bjs_imputation.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "23.37",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 2, col 7",
+      "source_key": "estimation_results.json.twfe_level.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.54",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 3, col 2",
+      "source_key": "estimation_results.json.main.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.58",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 3, col 3",
+      "source_key": "estimation_results.json.cs_not_yet_treated.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.33",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 3, col 4",
+      "source_key": "estimation_results.json.controls.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.74",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 3, col 5",
+      "source_key": "estimation_results.json.sun_abraham.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10.26",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 3, col 6",
+      "source_key": "estimation_results.json.bjs_imputation.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9.70",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 3, col 7",
+      "source_key": "estimation_results.json.twfe_level.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,211",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 4, col 2",
+      "source_key": "estimation_results.json.main.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,211",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 4, col 3",
+      "source_key": "estimation_results.json.main.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,211",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 4, col 4",
+      "source_key": "estimation_results.json.main.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,211",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 4, col 5",
+      "source_key": "estimation_results.json.main.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,211",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 4, col 6",
+      "source_key": "estimation_results.json.main.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,211",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 4, col 7",
+      "source_key": "estimation_results.json.main.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "47",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 5, col 2",
+      "source_key": "summary_statistics.json.n_units",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "47",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 5, col 3",
+      "source_key": "summary_statistics.json.n_units",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "47",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 5, col 4",
+      "source_key": "summary_statistics.json.n_units",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "47",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 5, col 5",
+      "source_key": "summary_statistics.json.n_units",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "47",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 5, col 6",
+      "source_key": "summary_statistics.json.n_units",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "47",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 5, col 7",
+      "source_key": "summary_statistics.json.n_units",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 6, col 2",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 6, col 3",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 6, col 4",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 6, col 5",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 6, col 6",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8",
+      "table_context": "tab:main (Effect of fee abolition on the gross primary enrolment ratio...), row 6, col 7",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "21.84",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 2, col 2",
+      "source_key": "estimation_results.json.anticipation_1.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "21.17",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 2, col 3",
+      "source_key": "estimation_results.json.drop_outliers.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "24.35",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 2, col 4",
+      "source_key": "estimation_results.json.drop_zmb_gha.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "21.60",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 2, col 5",
+      "source_key": "estimation_results.json.gender_female.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "21.40",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 2, col 6",
+      "source_key": "summary_statistics.json.other_variables.urban_share.p25",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "6.26",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 3, col 2",
+      "source_key": "estimation_results.json.anticipation_1.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.59",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 3, col 3",
+      "source_key": "estimation_results.json.cs_not_yet_treated.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.08",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 3, col 4",
+      "source_key": "estimation_results.json.drop_zmb_gha.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.38",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 3, col 5",
+      "source_key": "estimation_results.json.gender_female.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.99",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 3, col 6",
+      "source_key": "summary_statistics.json.treatment.event_time_mean_ger.7.n",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,211",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 4, col 2",
+      "source_key": "estimation_results.json.main.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,202",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 4, col 3",
+      "source_key": "estimation_results.json.drop_outliers.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,211",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 4, col 4",
+      "source_key": "estimation_results.json.main.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,167",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 4, col 5",
+      "source_key": "estimation_results.json.gender_female.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,167",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 4, col 6",
+      "source_key": "estimation_results.json.gender_female.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 5, col 2",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 5, col 3",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "6",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 5, col 4",
+      "source_key": "summary_statistics.json.treatment.event_time_mean_ger.7.n",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 5, col 5",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8",
+      "table_context": "tab:robust_level (Robustness of the GER effect (percentage points)...), row 5, col 6",
+      "source_key": "summary_statistics.json.treatment.n_countries_with_published_source_year",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.192",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 2, col 2",
+      "source_key": "estimation_results.json.cs_log_ger.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.194",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 2, col 3",
+      "source_key": "estimation_results.json.cs_log_ger.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.150",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 2, col 4",
+      "source_key": "estimation_results.json.twfe_log.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.055",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 3, col 2",
+      "source_key": "estimation_results.json.cs_log_ger.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.055",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 3, col 3",
+      "source_key": "estimation_results.json.cs_log_ger.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.108",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 3, col 4",
+      "source_key": "estimation_results.json.twfe_log.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,211",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 4, col 2",
+      "source_key": "estimation_results.json.main.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,211",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 4, col 3",
+      "source_key": "estimation_results.json.main.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,211",
+      "table_context": "tab:robust_log (Effect of fee abolition on log GER...), row 4, col 4",
+      "source_key": "estimation_results.json.main.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "13.45",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 2, col 2",
+      "source_key": "estimation_results.json.ner.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14.78",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 2, col 3",
+      "source_key": "estimation_results.json.ger_on_ner_sample.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.33",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 2, col 4",
+      "source_key": "estimation_results.json.ger_minus_ner.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.20",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 2, col 5",
+      "source_key": "estimation_results.json.gender_gap.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "5.83",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 2, col 6",
+      "source_key": "estimation_results.json.completion_rate.coefficients.att.estimate",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3.93",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 3, col 2",
+      "source_key": "estimation_results.json.ner.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3.63",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 3, col 3",
+      "source_key": "estimation_results.json.ger_on_ner_sample.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.48",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 3, col 4",
+      "source_key": "estimation_results.json.ger_minus_ner.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.70",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 3, col 5",
+      "source_key": "estimation_results.json.gender_gap.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3.84",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 3, col 6",
+      "source_key": "estimation_results.json.completion_rate.coefficients.att.se",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "684",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 4, col 2",
+      "source_key": "estimation_results.json.ner.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "661",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 4, col 3",
+      "source_key": "estimation_results.json.ger_on_ner_sample.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "684",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 4, col 4",
+      "source_key": "estimation_results.json.ner.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,167",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 4, col 5",
+      "source_key": "estimation_results.json.gender_female.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "863",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 4, col 6",
+      "source_key": "estimation_results.json.completion_rate.n_observations",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "47",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 5, col 2",
+      "source_key": "summary_statistics.json.n_units",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "47",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 5, col 3",
+      "source_key": "summary_statistics.json.n_units",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "47",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 5, col 4",
+      "source_key": "summary_statistics.json.n_units",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "47",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 5, col 5",
+      "source_key": "summary_statistics.json.n_units",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "46",
+      "table_context": "tab:mechanism (Net enrolment, gender and completion (percentage points)...), row 5, col 6",
+      "source_key": "estimation_results.json.main.df",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "kan2020evaluating",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.1111/RODE.12725"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "oketch2010free",
+      "status": "verified_title",
+      "registry": "semantic_scholar",
+      "external_id": null
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "gruijters2024secondary",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.1086/731496"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "callaway2021difference",
+      "status": "verified_doi",
+      "registry": "crossref",
+      "external_id": "doi:10.1016/j.jeconom.2020.12.001"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "sun2021estimating",
+      "status": "verified_doi",
+      "registry": "crossref",
+      "external_id": "doi:10.1016/j.jeconom.2020.09.006"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "borusyak2024revisiting",
+      "status": "verified_doi",
+      "registry": "crossref",
+      "external_id": "doi:10.1093/restud/rdae007"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "rambachan2023credible",
+      "status": "verified_doi",
+      "registry": "crossref",
+      "external_id": "doi:10.1093/restud/rdad018"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "lindsjo2017everybody",
+      "status": "unverifiable",
+      "registry": null,
+      "external_id": null
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "pajibo2017influence",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.20448/JOURNAL.522.2017.31.53.63"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "morgan2014eliminating",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.56645/jmde.v10i23.384"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "fermah2026school",
+      "status": "unverifiable",
+      "registry": null,
+      "external_id": "doi:10.17605/osf.io/cahvn"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "fermah2026effect",
+      "status": "unverifiable",
+      "registry": null,
+      "external_id": "doi:10.17605/osf.io/brcpd"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "wallstrom2017is",
+      "status": "unverifiable",
+      "registry": null,
+      "external_id": null
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "nakabugo2008universal",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.15027/34290"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "nishimura2007internal",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.32204/JIDS.16.1_69"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "valente2015primary",
+      "status": "verified_doi",
+      "registry": "crossref",
+      "external_id": "doi:10.2139/ssrn.2655157"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "nishimura2011the",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.1057/9780230339361_12"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "goodmanbacon2021difference",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.1016/J.JECONOM.2021.03.014"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "dechaisemartin2020twoway",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.1257/aer.20181169"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "roth2022pretest",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.1257/aeri.20210236"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "roth2023trending",
+      "status": "verified_doi",
+      "registry": "semantic_scholar",
+      "external_id": "doi:10.1016/j.jeconom.2023.03.008"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "WorldBank_OpenData",
+      "status": "verified_title",
+      "registry": "crossref",
+      "external_id": "doi:10.4135/9781483345727.n894"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_event_study.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_ger_cohort_trends.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_ger_event_time.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "estimation",
+      "output": "results/estimation_results.json",
+      "script": "code/run_estimation.py"
+    },
+    {
+      "type": "data",
+      "output": "data/data.db",
+      "queries": "replication/data_queries.sql",
+      "sources": "data/data_sources.json"
+    }
+  ],
+  "amendments": [
+    {
+      "path": "paper/paper.tex",
+      "sha256_before": "2da5a344c51a7ce0f1e66c51ac3859d1da11f59b3ca5980c5478453495f80bd8",
+      "sha256_after": "c777137643d0b579135bdef271b40f4f95732f80d68f44a699805afa2485179f",
+      "reason": "stamped with the dossier link",
+      "at": "2026-10-15T09:20:07Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256_before": "b85794bf25a9b53c4ff5dd898ac2099311e7a69e3b7a6a2ffa649e37b0f39f22",
+      "sha256_after": "8efb68a225e36e9073bb5782d8ebc88a433390b722566058d7e810032c90fb33",
+      "reason": "recompiled with the dossier link",
+      "at": "2026-10-15T09:20:07Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "design/paper_plan.md",
+      "kind": "redacted",
+      "sha256_before": "d69883c08399faab3841dab6a15eb20d0d764c70cf81b6724a796f51c5011463",
+      "sha256_after": "5ce725ab9a74663c9ea7f5bacdffc40f1d94412b4c536131f9a345fed31a3b45",
+      "reason": "personal contact details removed by the researcher",
+      "at": "2026-10-20T07:07:39Z",
+      "redaction": {
+        "replacement": "<redacted>",
+        "count": 1,
+        "offsets": [
+          217
+        ],
+        "removed_bytes": 29,
+        "bytes_before": 22500
+      }
+    },
+    {
+      "path": "design/preregistration.md",
+      "kind": "redacted",
+      "sha256_before": "0739668ec62727170804ff8b2040f14b3f730316073cb8e7e3c697fa8ad9ed5c",
+      "sha256_after": "6b11644bb0c37bdef241b611f1617ac781219176ea382ee988a6ba8d457b9748",
+      "reason": "personal contact details removed by the researcher",
+      "at": "2026-10-20T07:07:39Z",
+      "redaction": {
+        "replacement": "<redacted>",
+        "count": 1,
+        "offsets": [
+          460
+        ],
+        "removed_bytes": 29,
+        "bytes_before": 33614
+      }
+    },
+    {
+      "path": "paper/paper.tex",
+      "sha256_before": "c777137643d0b579135bdef271b40f4f95732f80d68f44a699805afa2485179f",
+      "sha256_after": "7090cdf17d25376de7ae8fbc3ccd5f4731512f7b1eeb532efa7205a2f3c3cfeb",
+      "reason": "stamped with the dossier link",
+      "at": "2026-10-20T07:46:20Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256_before": "8efb68a225e36e9073bb5782d8ebc88a433390b722566058d7e810032c90fb33",
+      "sha256_after": "23bebcb188b3fa18db16fba775f1f80eec84662e4ecd444b25fa4a598b8b89ea",
+      "reason": "recompiled with the dossier link",
+      "at": "2026-10-20T07:46:20Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "README.md",
+      "sha256_before": "b90582e8f8fb804526dcad3f97679e97b137f18db98d677ba1c3a6cfc43acd18",
+      "sha256_after": "30f19b7ef29d533228362140776b31c57dc3ae3e6c943d730480f9de40e28722",
+      "reason": "the study's summary for its GitHub repository, at the top",
+      "at": "2026-10-20T07:46:20Z",
+      "kind": "readme"
+    }
+  ]
+}

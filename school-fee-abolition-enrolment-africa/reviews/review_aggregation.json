@@ -1,0 +1,51 @@
+{
+  "verdict": "HARD_REJECT",
+  "weighted_avg": 4.863636363636363,
+  "rule_triggered": "Rule 3: weighted average",
+  "rationale": "Weighted average score: 4.86 of 10. Breakdown: technical_reviewer=5.0, writing_reviewer=6.0, data_reviewer=5.0, identification_reviewer=4.0, methods_reviewer=5.0",
+  "round": 1,
+  "panel": {
+    "expected": 5,
+    "reported": 5,
+    "complete": true,
+    "missing": [],
+    "scored_without_a_review_file": [],
+    "scores": [
+      {
+        "reviewer": "technical_reviewer",
+        "score": 5.0,
+        "recommendation": "major_revision",
+        "weight": 1.0,
+        "source": "file"
+      },
+      {
+        "reviewer": "writing_reviewer",
+        "score": 6.0,
+        "recommendation": "major_revision",
+        "weight": 0.75,
+        "source": "file"
+      },
+      {
+        "reviewer": "data_reviewer",
+        "score": 5.0,
+        "recommendation": "major_revision",
+        "weight": 1.25,
+        "source": "file"
+      },
+      {
+        "reviewer": "identification_reviewer",
+        "score": 4.0,
+        "recommendation": "major_revision",
+        "weight": 1.5,
+        "source": "file"
+      },
+      {
+        "reviewer": "methods_reviewer",
+        "score": 5.0,
+        "recommendation": "major_revision",
+        "weight": 1.0,
+        "source": "file"
+      }
+    ]
+  }
+}

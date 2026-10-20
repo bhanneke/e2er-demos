@@ -1,0 +1,414 @@
+{
+  "contents": [
+    {
+      "bytes": 7548,
+      "part": "study",
+      "path": "README.md",
+      "sha256": "30f19b7ef29d533228362140776b31c57dc3ae3e6c943d730480f9de40e28722"
+    },
+    {
+      "bytes": 303,
+      "part": "study",
+      "path": "code/requirements.txt",
+      "sha256": "a51cd39a33828334971c419b103ac9da10f726811acf1e670d41959d3e838e27"
+    },
+    {
+      "bytes": 26382,
+      "part": "study",
+      "path": "code/run_estimation.py",
+      "sha256": "ae0587f52be4d53c233420b5e2810495b2f38299364e998d7bd0c8382020d33c"
+    },
+    {
+      "bytes": 9406,
+      "part": "study",
+      "path": "code/scratch/build_panel.py",
+      "sha256": "fad84947ae4ccf460b3657ab64c90efbdd25e772350fcd3f72ac1164e82cdbe7"
+    },
+    {
+      "bytes": 23669,
+      "part": "study",
+      "path": "code/scratch/paper_draft.log",
+      "sha256": "2bd1239cbc65c1c0c0728a0b21d47de0e88be821a9f1560c59e6b08344137755"
+    },
+    {
+      "bytes": 698,
+      "part": "study",
+      "path": "code/scratch/summ.py",
+      "sha256": "5f7bc65265dd367aafd09d85937c97083b2da88a8efdae6939359efab3335860"
+    },
+    {
+      "bytes": 1720320,
+      "part": "study",
+      "path": "data/data.db",
+      "sha256": "139c8457b11c5478f41392b30bebfae5451c7b6a572f64382a1a6d4a64ac6206"
+    },
+    {
+      "bytes": 24363,
+      "part": "study",
+      "path": "data/data_dictionary.json",
+      "sha256": "65b8d7453a467bb8d175bc0195b674b0eef0adb9500356631dac514023bcbf91"
+    },
+    {
+      "bytes": 21008,
+      "part": "study",
+      "path": "data/data_sources.json",
+      "sha256": "e55909d9b656c151e67570f1b61ddb912377a0ef5704c38de3c428cc49c0add5"
+    },
+    {
+      "bytes": 5302,
+      "part": "study",
+      "path": "data/data_summary.md",
+      "sha256": "a9b41e10f0f0c5e116d4a613761a5b33587e1e92984529ed521fc6827fd4aae8"
+    },
+    {
+      "bytes": 1664,
+      "part": "study",
+      "path": "design/did_design.json",
+      "sha256": "736ba789a2127148a5b3f28c2cb101e45b8ff03aabc1ec18b0f6d4c094f9aadd"
+    },
+    {
+      "bytes": 8623,
+      "part": "study",
+      "path": "design/econometric_spec.md",
+      "sha256": "2f1e57d706ddd5116c17b13b3622c87ccaee27948cadb3e7a0253a38ebf535ab"
+    },
+    {
+      "bytes": 777,
+      "part": "study",
+      "path": "design/identification_spec.json",
+      "sha256": "8c9eee65856dc0b9b73f1aa411c1fc4f549e5701f24513c662ecb2abfdc7323e"
+    },
+    {
+      "bytes": 8865,
+      "part": "study",
+      "path": "design/identification_strategy.md",
+      "sha256": "2636c65ba3d0a2d0bbf5eb3e87d49d8667b60c26daa7fdc35e1aa9387a8c4cf9"
+    },
+    {
+      "bytes": 7413,
+      "part": "study",
+      "path": "design/literature_review.md",
+      "sha256": "3aa9ed5a086b657065831100638d9d646e80b4d37e5fa22031aeeb399c69d9b1"
+    },
+    {
+      "bytes": 22481,
+      "part": "study",
+      "path": "design/paper_plan.md",
+      "sha256": "5ce725ab9a74663c9ea7f5bacdffc40f1d94412b4c536131f9a345fed31a3b45"
+    },
+    {
+      "bytes": 1573,
+      "part": "study",
+      "path": "design/preregistration.lock.json",
+      "sha256": "dce0af76ca3904ad3fa2e2a9d199a25660029adc1acb590d292869b81bac8d66"
+    },
+    {
+      "bytes": 33595,
+      "part": "study",
+      "path": "design/preregistration.md",
+      "sha256": "6b11644bb0c37bdef241b611f1617ac781219176ea382ee988a6ba8d457b9748"
+    },
+    {
+      "bytes": 1765,
+      "part": "study",
+      "path": "design/researcher_instructions.md",
+      "sha256": "36f8dbb55adfe982a36afd610c6c1c8d4da2a03e426707ad27a83110d30ed9ba"
+    },
+    {
+      "bytes": 30893,
+      "part": "package",
+      "path": "e2er-package/requirements.lock.txt",
+      "sha256": "b83bd9d4821ef67c98cc69737e2f88ab38bf7678c83df4090dad72f160c5501a"
+    },
+    {
+      "bytes": 107018,
+      "part": "study",
+      "path": "e2er.json",
+      "sha256": "03894e1e72635f50a8476725f2f27b87b1a986d183bdd866d0405353bb04e70d"
+    },
+    {
+      "bytes": 13217,
+      "part": "study",
+      "path": "misc/fig_event_study.pdf",
+      "sha256": "20478fe580438550afad40826bdcff4a9ae81d65ee2c20f9071591f5c7f9f6dc"
+    },
+    {
+      "bytes": 20732,
+      "part": "study",
+      "path": "misc/fig_ger_cohort_trends.pdf",
+      "sha256": "51af3fd397c55195f9d4d158a9098e3011a1a3b9b2545d6b4015dbcb641f6409"
+    },
+    {
+      "bytes": 11642,
+      "part": "study",
+      "path": "misc/fig_ger_event_time.pdf",
+      "sha256": "1963ac33cdc62bf436114ad835027b3d5345954d2351dee727474a0daea5ee8d"
+    },
+    {
+      "bytes": 208,
+      "part": "study",
+      "path": "misc/figure_render_report.json",
+      "sha256": "530de7e9a3acec6ad96a6e83913514b43c4807a20d7e88d8bcf4bcc82a6e6d1c"
+    },
+    {
+      "bytes": 352,
+      "part": "study",
+      "path": "misc/paper_draft.blg",
+      "sha256": "11083ecbabfbfecc6a4f2814f137cfb88e18276d0415714a44ee1e5f39abad42"
+    },
+    {
+      "bytes": 43662,
+      "part": "study",
+      "path": "misc/refs.bib",
+      "sha256": "e56000d8ffdf845d843b9181fbb39cc6c69829b305f76446ba39c9e5f3d447e0"
+    },
+    {
+      "bytes": 1787,
+      "part": "study",
+      "path": "paper/abstract.tex",
+      "sha256": "f5990d731a6ff89df0c7a0a75c3afab5b56d950e7d828e685201dc17e150c04a"
+    },
+    {
+      "bytes": 87632,
+      "part": "study",
+      "path": "paper/paper.pdf",
+      "sha256": "23bebcb188b3fa18db16fba775f1f80eec84662e4ecd444b25fa4a598b8b89ea"
+    },
+    {
+      "bytes": 29148,
+      "part": "study",
+      "path": "paper/paper.tex",
+      "sha256": "7090cdf17d25376de7ae8fbc3ccd5f4731512f7b1eeb532efa7205a2f3c3cfeb"
+    },
+    {
+      "bytes": 43662,
+      "part": "study",
+      "path": "paper/refs.bib",
+      "sha256": "e56000d8ffdf845d843b9181fbb39cc6c69829b305f76446ba39c9e5f3d447e0"
+    },
+    {
+      "bytes": 966,
+      "part": "study",
+      "path": "paper/tables/main.tex",
+      "sha256": "7752fd1d42aa060d349f6de5b3a04fe38d79d964610a2130056c56f650d0b315"
+    },
+    {
+      "bytes": 789,
+      "part": "study",
+      "path": "paper/tables/mechanism.tex",
+      "sha256": "610bfed3d75fb78e205834801a7cc60df4f7cee393a1d94e7ecb81b0583b7b84"
+    },
+    {
+      "bytes": 753,
+      "part": "study",
+      "path": "paper/tables/robust_level.tex",
+      "sha256": "2f488aeb552c2bbc78c397c87f74211d5c8a6db0b11c6a8d7381e7bc84d2e4b4"
+    },
+    {
+      "bytes": 554,
+      "part": "study",
+      "path": "paper/tables/robust_log.tex",
+      "sha256": "60b906a2db2267982af879c2d15fe20ac459c3dc179e40fd623ae73711c87b42"
+    },
+    {
+      "bytes": 835,
+      "part": "study",
+      "path": "paper/tables/summary.tex",
+      "sha256": "811c19171cf4b17c61d2cd52dca3793686c0853adee4345ddfcbef9fe59b9309"
+    },
+    {
+      "bytes": 59105,
+      "part": "study",
+      "path": "provenance.json",
+      "sha256": "a29cee13730d2189b18a3437a9660e871d08980eaf9d8787332694eb6ad987a5"
+    },
+    {
+      "bytes": 2178,
+      "part": "study",
+      "path": "replication/audit_log.csv",
+      "sha256": "6f4c242ead6be9b60e83781e516d7e0ac2123572b5faf1ab15d019459de77301"
+    },
+    {
+      "bytes": 137,
+      "part": "study",
+      "path": "replication/data_queries.sql",
+      "sha256": "44ca6fee834f1151cf6c14f96068ca2af3b22591573fe34e428d5ce5eb300fe6"
+    },
+    {
+      "bytes": 30537,
+      "part": "study",
+      "path": "replication/estimation.py",
+      "sha256": "8f304358d2eafa5b120106d957dea63ee96f43df567c69fd1661bca38f73f824"
+    },
+    {
+      "bytes": 16609,
+      "part": "study",
+      "path": "report.html",
+      "sha256": "28cb62a7fdf403f4cbdfd1c767971eab02629879d2f89e9bacc52184b5f53e98"
+    },
+    {
+      "bytes": 3312,
+      "part": "study",
+      "path": "reproduce.json",
+      "sha256": "58a9ec5ee3827f91c4e9072e47dee567126953f03782c9ec6a69f63d8418e356"
+    },
+    {
+      "bytes": 344,
+      "part": "study",
+      "path": "results/did_check.json",
+      "sha256": "f39bec90c30639e4bcc56ad85a7ec7d5505aea9f6db75114964eb0046c0e5618"
+    },
+    {
+      "bytes": 1711,
+      "part": "study",
+      "path": "results/did_design_check.json",
+      "sha256": "3e62ef5621c21af8c1cce2ec23c051f9df25f3d4f3acb6f06bb18713a69803f0"
+    },
+    {
+      "bytes": 24486,
+      "part": "study",
+      "path": "results/estimation_results.json",
+      "sha256": "8c27af2214a37807950b7e467e8cbd1a19b6d69d6788d0ab60b8bf773d87c4b2"
+    },
+    {
+      "bytes": 12530,
+      "part": "study",
+      "path": "results/figure_spec.json",
+      "sha256": "8685b4ba30fe6f248a134e094c2ef9c208a9d551946920ec7897c7e8bb73684f"
+    },
+    {
+      "bytes": 13217,
+      "part": "study",
+      "path": "results/figures/fig_event_study.pdf",
+      "sha256": "20478fe580438550afad40826bdcff4a9ae81d65ee2c20f9071591f5c7f9f6dc"
+    },
+    {
+      "bytes": 20732,
+      "part": "study",
+      "path": "results/figures/fig_ger_cohort_trends.pdf",
+      "sha256": "51af3fd397c55195f9d4d158a9098e3011a1a3b9b2545d6b4015dbcb641f6409"
+    },
+    {
+      "bytes": 11642,
+      "part": "study",
+      "path": "results/figures/fig_ger_event_time.pdf",
+      "sha256": "1963ac33cdc62bf436114ad835027b3d5345954d2351dee727474a0daea5ee8d"
+    },
+    {
+      "bytes": 30471,
+      "part": "study",
+      "path": "results/number_verification.json",
+      "sha256": "13e80d587ff4413d5a7e219849089df9ee4aa54101315ff0c588bdac1db55528"
+    },
+    {
+      "bytes": 7618,
+      "part": "study",
+      "path": "results/summary_statistics.json",
+      "sha256": "47f6330c829091003f1af3d583056067a4215b7632fe8637c86a74417a2dc09d"
+    },
+    {
+      "bytes": 225,
+      "part": "study",
+      "path": "results/table_render_report.json",
+      "sha256": "7726e2f7c03ca22280bd0f18287939b60e437cf11ccf8f163eff8aa4c29965c5"
+    },
+    {
+      "bytes": 5157,
+      "part": "study",
+      "path": "results/table_spec.json",
+      "sha256": "be3c83ce2c08c30c7aa8851f9057ace43685c26a38dcabcf88a82b13b4e9b9cf"
+    },
+    {
+      "bytes": 13065,
+      "part": "study",
+      "path": "reviews/citation_integrity.json",
+      "sha256": "ab3f5a947c2201eec9b36429f7b2a899ef0360f462551f648deeadc3faf76064"
+    },
+    {
+      "bytes": 1330,
+      "part": "study",
+      "path": "reviews/review_aggregation.json",
+      "sha256": "2af6e77502c230886b2a46fd59e5b9c460cbbecc0068edaa43f52bf5016ba7be"
+    },
+    {
+      "bytes": 25500,
+      "part": "study",
+      "path": "reviews/review_data.md",
+      "sha256": "f81ccee8b925fb7b84166f6bf7b254174dbb03b1e7de933bd3537509420a53ff"
+    },
+    {
+      "bytes": 19213,
+      "part": "study",
+      "path": "reviews/review_identification.md",
+      "sha256": "c2922aaf4ed3694a726e774038a27ba617f66df4fd30097a0acbdc2250aedb03"
+    },
+    {
+      "bytes": 22636,
+      "part": "study",
+      "path": "reviews/review_methods.md",
+      "sha256": "9a3631074d00459e7add2708658825ee694671b20b647dfa6ea3fdbf0efbd237"
+    },
+    {
+      "bytes": 21592,
+      "part": "study",
+      "path": "reviews/review_technical.md",
+      "sha256": "89a3de30c8d9dcbaf9b1f7981cbc60b796cd0d2345cac1559ad9191d8f9a122f"
+    },
+    {
+      "bytes": 24869,
+      "part": "study",
+      "path": "reviews/review_writing.md",
+      "sha256": "ae4bdfe2cbc8e6b3a77d3100c2aa0e944e2f181b7dd7a389427c293c0eec9fc6"
+    }
+  ],
+  "created": "20261015",
+  "e2er_version": "0.17.1",
+  "environment": {
+    "hashes": true,
+    "lock": "e2er-package/requirements.lock.txt",
+    "note": "e2er-package/requirements.lock.txt pins every package with its hashes; `e2er reproduce` installs from it.",
+    "python": "3.12",
+    "resolved_as_of": "2026-10-16"
+  },
+  "fingerprint": "sha256:a535ab10f66cb8dd1ad57457950b3c0e7be79ccc93c81e1195fe824ab34c7697",
+  "format": "e2er-package/1",
+  "left_out": [],
+  "notes": [],
+  "rebuild": [],
+  "recipe": {
+    "compare": [
+      "results/estimation_results.json"
+    ],
+    "inputs": [
+      {
+        "path": "data.db",
+        "reload": null,
+        "source": "the study's database, tables: fee_abolition_dates (made by the study during the run); ger_cohort_means (made by the study during the run); ger_event_time_means (made by the study during the run); wb_primary_enrolment (made by the study during the run); wdi_controls (World Bank Open Data (Indicators API v2), The World Bank, World Bank SP.POP.TOTL, NY.GDP.PCAP.KD, SP.URB.TOTL.IN.ZS, SH.DYN.MORT for AGO, BEN, BWA, BFA, BDI, CPV, CMR, CAF, TCD, COM, COD, COG, CIV, DJI, GNQ, ERI, SWZ, ETH, GAB, GMB, GHA, GIN, GNB, KEN, LSO, LBR, MDG, MWI, MLI, MRT, MUS, MOZ, NAM, NER, NGA, RWA, STP, SEN, SYC, SLE, SOM, ZAF, SSD, SDN, TZA, TGO, UGA, ZMB, ZWE, 1980–2018, release 2026-10-08, loaded 2026-10-13); wdi_primary_enrolment (World Bank Open Data (Indicators API v2), The World Bank, World Bank SE.PRM.ENRR, SE.PRM.ENRR.MA, SE.PRM.ENRR.FE, SE.PRM.NENR, SE.PRM.CMPT.ZS for AGO, BEN, BWA, BFA, BDI, CPV, CMR, CAF, TCD, COM, COD, COG, CIV, DJI, GNQ, ERI, SWZ, ETH, GAB, GMB, GHA, GIN, GNB, KEN, LSO, LBR, MDG, MWI, MLI, MRT, MUS, MOZ, NAM, NER, NGA, RWA, STP, SEN, SYC, SLE, SOM, ZAF, SSD, SDN, TZA, TGO, UGA, ZMB, ZWE, 1980–2018, release 2026-10-08, loaded 2026-10-13)"
+      }
+    ],
+    "present": true,
+    "python": "3.12",
+    "requirements": "code/requirements.txt",
+    "steps": [
+      {
+        "about": "the estimation script",
+        "run": [
+          "python",
+          "run_estimation.py"
+        ]
+      }
+    ]
+  },
+  "study": {
+    "authors": [],
+    "e2er_version": "0.17.0",
+    "exported_at": "20261015",
+    "folder": "did-abolishing-primary-school-fees-in-sub-saharan-african-co-20261015-01",
+    "id": "30170166-245c-4c41-a957-50eb2f1cf0df",
+    "purpose": "demonstration",
+    "question": "Did abolishing primary-school fees in sub-Saharan African countries (staggered between the mid-1990s and the mid-2000s) raise gross primary enrolment? A difference-in-differences with World Bank enrolment data, comparing countries that abolished fees with countries that had not (yet) abolished them.",
+    "template": "policy-evaluation",
+    "title": "Did Abolishing Primary-School Fees Raise Enrolment? Evidence from Staggered Reforms in Sub-Saharan Africa"
+  },
+  "wheels": null
+}

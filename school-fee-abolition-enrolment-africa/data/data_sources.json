@@ -1,0 +1,267 @@
+{
+  "$comment": "Written by e2er-data: one entry per external-source load, with the source version, the URL and SHA-256 of every file read.",
+  "loads": [
+    {
+      "connector": "worldbank",
+      "dataset": "World Bank Open Data (Indicators API v2), The World Bank",
+      "terms_summary": "CC BY 4.0 unless an indicator is labelled otherwise; attribute as \"The World Bank: Dataset name: Data source\". Some third-party indicators carry other terms, stated in their metadata (each load records them).",
+      "licence": "CC BY 4.0 with the World Bank's additional terms (https://www.worldbank.org/ext/en/legal/terms-conditions/datasets): \"Unless specifically labeled otherwise, these Datasets are provided to you under a Creative Commons Attribution 4.0 International License (CC BY 4.0)\". \"You agree to provide attribution to The World Bank and its data providers in the following format: The World Bank: Dataset name: Data source (if known).\" \"Some datasets and indicators are provided by third parties, and may not be redistributed or reused without the consent of the original data provider, or may be subject to terms and conditions that are different from those described above. Where applicable, these conditions are included in the dataset or indicator metadata.\"",
+      "terms": "https://www.worldbank.org/ext/en/legal/terms-conditions/datasets",
+      "series": "World Bank SE.PRM.ENRR, SE.PRM.ENRR.MA, SE.PRM.ENRR.FE, SE.PRM.NENR, SE.PRM.CMPT.ZS for AGO, BEN, BWA, BFA, BDI, CPV, CMR, CAF, TCD, COM, COD, COG, CIV, DJI, GNQ, ERI, SWZ, ETH, GAB, GMB, GHA, GIN, GNB, KEN, LSO, LBR, MDG, MWI, MLI, MRT, MUS, MOZ, NAM, NER, NGA, RWA, STP, SEN, SYC, SLE, SOM, ZAF, SSD, SDN, TZA, TGO, UGA, ZMB, ZWE, 1980–2018",
+      "link": "https://data.worldbank.org/indicator/SE.PRM.ENRR",
+      "retrieved_at": "2026-10-13T21:27:07Z",
+      "citation": "The World Bank: World Development Indicators: Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API. Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2026-03-19, date published: 2026-02; Stat Bulk Data Download Service, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://uis.unesco.org/bdds, publisher: UNESCO Institute for Statistics (UIS). World Bank Open Data, https://data.worldbank.org (last updated 2026-10-08). Licence: CC BY 4.0.",
+      "citation_by": "source",
+      "cite_key": "WorldBank_OpenData",
+      "version": "2026-10-08",
+      "query": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.ENRR?format=json&per_page=20000&source=2&date=1980%3A2018&page=1 ; https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.ENRR.MA?format=json&per_page=20000&source=2&date=1980%3A2018&page=1 ; https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.ENRR.FE?format=json&per_page=20000&source=2&date=1980%3A2018&page=1 ; https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.NENR?format=json&per_page=20000&source=2&date=1980%3A2018&page=1 ; https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.CMPT.ZS?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+      "files": [
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.ENRR?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "e24fe5397b188023510c36906e388f566eaa7d758c536715aebd5cf54609923c"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.ENRR.MA?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "91b4a629d2a32d95e030207b47f43fabe40a4aa58eb98b8bfaac6439dd1c89cd"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.ENRR.FE?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "734218cf18ef71d1a4ca864d702b20a5f0d74913c4ca32bc606eb1cab7d698e1"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.NENR?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "9716cd93942493da18471d582a485469d253ff3a21c6db85b1b6a4562c40d06b"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.CMPT.ZS?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "34c1824e437249e721e21c6dda55eb053a9aaa1941429fab6adeb308f1fa1429"
+        }
+      ],
+      "request": {
+        "command": "series",
+        "indicator": [
+          "SE.PRM.ENRR",
+          "SE.PRM.ENRR.MA",
+          "SE.PRM.ENRR.FE",
+          "SE.PRM.NENR",
+          "SE.PRM.CMPT.ZS"
+        ],
+        "countries": [
+          "AGO",
+          "BEN",
+          "BWA",
+          "BFA",
+          "BDI",
+          "CPV",
+          "CMR",
+          "CAF",
+          "TCD",
+          "COM",
+          "COD",
+          "COG",
+          "CIV",
+          "DJI",
+          "GNQ",
+          "ERI",
+          "SWZ",
+          "ETH",
+          "GAB",
+          "GMB",
+          "GHA",
+          "GIN",
+          "GNB",
+          "KEN",
+          "LSO",
+          "LBR",
+          "MDG",
+          "MWI",
+          "MLI",
+          "MRT",
+          "MUS",
+          "MOZ",
+          "NAM",
+          "NER",
+          "NGA",
+          "RWA",
+          "STP",
+          "SEN",
+          "SYC",
+          "SLE",
+          "SOM",
+          "ZAF",
+          "SSD",
+          "SDN",
+          "TZA",
+          "TGO",
+          "UGA",
+          "ZMB",
+          "ZWE"
+        ],
+        "start": "1980",
+        "end": "2018"
+      },
+      "database": "2",
+      "indicator_licences": {
+        "SE.PRM.ENRR": {
+          "licence": "CC BY-4.0",
+          "licence_url": "https://datacatalog.worldbank.org/public-licenses#cc-by"
+        },
+        "SE.PRM.ENRR.MA": {
+          "licence": "CC BY-4.0",
+          "licence_url": "https://datacatalog.worldbank.org/public-licenses#cc-by"
+        },
+        "SE.PRM.ENRR.FE": {
+          "licence": "CC BY-4.0",
+          "licence_url": "https://datacatalog.worldbank.org/public-licenses#cc-by"
+        },
+        "SE.PRM.NENR": {
+          "licence": "CC BY-4.0",
+          "licence_url": "https://datacatalog.worldbank.org/public-licenses#cc-by"
+        },
+        "SE.PRM.CMPT.ZS": {
+          "licence": "CC BY-4.0",
+          "licence_url": "https://datacatalog.worldbank.org/public-licenses#cc-by"
+        }
+      },
+      "indicator_sources": {
+        "SE.PRM.ENRR": "Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API. Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2026-03-19, date published: 2026-02",
+        "SE.PRM.ENRR.MA": "Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API. Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2026-03-19, date published: 2026-02",
+        "SE.PRM.ENRR.FE": "Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API. Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2026-03-19, date published: 2026-02",
+        "SE.PRM.NENR": "Stat Bulk Data Download Service, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://uis.unesco.org/bdds, publisher: UNESCO Institute for Statistics (UIS)",
+        "SE.PRM.CMPT.ZS": "Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API. Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2026-03-19, date published: 2026-02"
+      },
+      "frequency": "annual",
+      "table": "wdi_primary_enrolment",
+      "table_rows": 9555,
+      "saved_to": "data/wdi_primary_enrolment.csv",
+      "rows": 9555,
+      "specialist": "data_analyst"
+    },
+    {
+      "connector": "worldbank",
+      "dataset": "World Bank Open Data (Indicators API v2), The World Bank",
+      "terms_summary": "CC BY 4.0 unless an indicator is labelled otherwise; attribute as \"The World Bank: Dataset name: Data source\". Some third-party indicators carry other terms, stated in their metadata (each load records them).",
+      "licence": "CC BY 4.0 with the World Bank's additional terms (https://www.worldbank.org/ext/en/legal/terms-conditions/datasets): \"Unless specifically labeled otherwise, these Datasets are provided to you under a Creative Commons Attribution 4.0 International License (CC BY 4.0)\". \"You agree to provide attribution to The World Bank and its data providers in the following format: The World Bank: Dataset name: Data source (if known).\" \"Some datasets and indicators are provided by third parties, and may not be redistributed or reused without the consent of the original data provider, or may be subject to terms and conditions that are different from those described above. Where applicable, these conditions are included in the dataset or indicator metadata.\"",
+      "terms": "https://www.worldbank.org/ext/en/legal/terms-conditions/datasets",
+      "series": "World Bank SP.POP.TOTL, NY.GDP.PCAP.KD, SP.URB.TOTL.IN.ZS, SH.DYN.MORT for AGO, BEN, BWA, BFA, BDI, CPV, CMR, CAF, TCD, COM, COD, COG, CIV, DJI, GNQ, ERI, SWZ, ETH, GAB, GMB, GHA, GIN, GNB, KEN, LSO, LBR, MDG, MWI, MLI, MRT, MUS, MOZ, NAM, NER, NGA, RWA, STP, SEN, SYC, SLE, SOM, ZAF, SSD, SDN, TZA, TGO, UGA, ZMB, ZWE, 1980–2018",
+      "link": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+      "retrieved_at": "2026-10-13T21:27:31Z",
+      "citation": "The World Bank: World Development Indicators: Country official statistics, National Statistical Organizations and/or Central Banks; National Accounts data files, Organisation for Economic Co-operation and Development (OECD); Staff estimates, World Bank (WB); UN Inter-agency Group for Child Mortality Estimation, UN Children's Fund (UNICEF), uri: www.childmortality.org, publisher: UNICEF, WHO, World Bank, United Nations Population Division; World Health Organization (WHO), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation; World Bank (WB), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation; United Nations (UN), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation, publisher: UN Population Division; World Population Prospects, United Nations (UN), uri: https://population.un.org/wpp/, publisher: UN Population Division; Statistical databases and publications from national statistical offices, National Statistical Offices (NSOs), uri: https://unstats.un.org/home/nso_sites/, publisher: National Statistical Offices; Eurostat: Demographic Statistics, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/data/database?node_code=earn_ses_monthly, publisher: Eurostat; Population and Vital Statistics Report (various years), United Nations (UN), uri: https://unstats.un.org, publisher: UN Statistics Division; World Urbanization Prospects, United Nations (UN), uri: https://population.un.org/wup/, note: United Nations Population Division's World Urbanization Prospects, National definitions, publisher: UN Population Division. World Bank Open Data, https://data.worldbank.org (last updated 2026-10-08). Licence: CC BY 4.0.",
+      "citation_by": "source",
+      "cite_key": "WorldBank_OpenData",
+      "version": "2026-10-08",
+      "query": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SP.POP.TOTL?format=json&per_page=20000&source=2&date=1980%3A2018&page=1 ; https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/NY.GDP.PCAP.KD?format=json&per_page=20000&source=2&date=1980%3A2018&page=1 ; https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SP.URB.TOTL.IN.ZS?format=json&per_page=20000&source=2&date=1980%3A2018&page=1 ; https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SH.DYN.MORT?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+      "files": [
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SP.POP.TOTL?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "c884fd4f8d75295d172bc9e85ac0efb7d38c9830d47bc5c4ea751ba708063dac"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/NY.GDP.PCAP.KD?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "9d8c684e02b69d618518dcd781346419413939c22077ab6bc07e13c17237c87a"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SP.URB.TOTL.IN.ZS?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "b5c5250f475c88b307dfbd4ad99d5ec7146dff96a8e5843a3254e7e7487f7dbb"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SH.DYN.MORT?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "f36a92e16f5394c06d45eabd37b599206847d75276ddc22b492da2a862d90542"
+        }
+      ],
+      "request": {
+        "command": "series",
+        "indicator": [
+          "SP.POP.TOTL",
+          "NY.GDP.PCAP.KD",
+          "SP.URB.TOTL.IN.ZS",
+          "SH.DYN.MORT"
+        ],
+        "countries": [
+          "AGO",
+          "BEN",
+          "BWA",
+          "BFA",
+          "BDI",
+          "CPV",
+          "CMR",
+          "CAF",
+          "TCD",
+          "COM",
+          "COD",
+          "COG",
+          "CIV",
+          "DJI",
+          "GNQ",
+          "ERI",
+          "SWZ",
+          "ETH",
+          "GAB",
+          "GMB",
+          "GHA",
+          "GIN",
+          "GNB",
+          "KEN",
+          "LSO",
+          "LBR",
+          "MDG",
+          "MWI",
+          "MLI",
+          "MRT",
+          "MUS",
+          "MOZ",
+          "NAM",
+          "NER",
+          "NGA",
+          "RWA",
+          "STP",
+          "SEN",
+          "SYC",
+          "SLE",
+          "SOM",
+          "ZAF",
+          "SSD",
+          "SDN",
+          "TZA",
+          "TGO",
+          "UGA",
+          "ZMB",
+          "ZWE"
+        ],
+        "start": "1980",
+        "end": "2018"
+      },
+      "database": "2",
+      "indicator_licences": {
+        "SP.POP.TOTL": {
+          "licence": "CC BY-4.0",
+          "licence_url": "https://datacatalog.worldbank.org/public-licenses#cc-by"
+        },
+        "NY.GDP.PCAP.KD": {
+          "licence": "CC BY-4.0",
+          "licence_url": "https://datacatalog.worldbank.org/public-licenses#cc-by"
+        },
+        "SP.URB.TOTL.IN.ZS": {
+          "licence": "CC BY-4.0",
+          "licence_url": "https://datacatalog.worldbank.org/public-licenses#cc-by"
+        },
+        "SH.DYN.MORT": {
+          "licence": "CC BY-4.0",
+          "licence_url": "https://datacatalog.worldbank.org/public-licenses#cc-by"
+        }
+      },
+      "indicator_sources": {
+        "SP.POP.TOTL": "World Population Prospects, United Nations (UN), uri: https://population.un.org/wpp/, publisher: UN Population Division; Statistical databases and publications from national statistical offices, National Statistical Offices (NSOs), uri: https://unstats.un.org/home/nso_sites/, publisher: National Statistical Offices; Eurostat: Demographic Statistics, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/data/database?node_code=earn_ses_monthly, publisher: Eurostat; Population and Vital Statistics Report (various years), United Nations (UN), uri: https://unstats.un.org, publisher: UN Statistics Division",
+        "NY.GDP.PCAP.KD": "Country official statistics, National Statistical Organizations and/or Central Banks; National Accounts data files, Organisation for Economic Co-operation and Development (OECD); Staff estimates, World Bank (WB)",
+        "SP.URB.TOTL.IN.ZS": "World Urbanization Prospects, United Nations (UN), uri: https://population.un.org/wup/, note: United Nations Population Division's World Urbanization Prospects, National definitions, publisher: UN Population Division",
+        "SH.DYN.MORT": "UN Inter-agency Group for Child Mortality Estimation, UN Children's Fund (UNICEF), uri: www.childmortality.org, publisher: UNICEF, WHO, World Bank, United Nations Population Division; World Health Organization (WHO), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation; World Bank (WB), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation; United Nations (UN), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation, publisher: UN Population Division"
+      },
+      "frequency": "annual",
+      "table": "wdi_controls",
+      "table_rows": 7644,
+      "saved_to": "data/wdi_controls.csv",
+      "rows": 7644,
+      "specialist": "data_analyst"
+    }
+  ]
+}

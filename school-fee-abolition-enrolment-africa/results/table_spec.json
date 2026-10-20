@@ -1,0 +1,102 @@
+{
+  "tables": [
+    {
+      "filename": "summary.tex",
+      "label": "tab:summary",
+      "caption": "Summary statistics of the country-year panel, 1985--2010",
+      "layout": "records",
+      "source": "summary_statistics.json",
+      "path": "other_variables",
+      "rows": ["ger_male", "ger_female", "ner_primary", "completion_rate", "gdp_pc", "urban_share", "u5_mortality"],
+      "row_labels": {
+        "ger_male": "Gross enrolment ratio, male (\\%)",
+        "ger_female": "Gross enrolment ratio, female (\\%)",
+        "ner_primary": "Net enrolment rate (\\%)",
+        "completion_rate": "Primary completion rate (\\%)",
+        "gdp_pc": "GDP per capita (constant 2015 US\\$)",
+        "urban_share": "Urban population share (\\%)",
+        "u5_mortality": "Under-five mortality (per 1,000)"
+      },
+      "row_header": "Variable",
+      "columns": [
+        {"field": "n", "header": "$N$", "decimals": 0},
+        {"field": "mean", "header": "Mean", "decimals": 1},
+        {"field": "sd", "header": "SD", "decimals": 1},
+        {"field": "min", "header": "Min", "decimals": 1},
+        {"field": "median", "header": "Median", "decimals": 1},
+        {"field": "max", "header": "Max", "decimals": 1}
+      ]
+    },
+    {
+      "filename": "main.tex",
+      "label": "tab:main",
+      "caption": "Effect of fee abolition on the gross primary enrolment ratio (percentage points)",
+      "columns": [
+        {"spec_key": "main", "header": "CS, undated"},
+        {"spec_key": "cs_not_yet_treated", "header": "CS, not yet"},
+        {"spec_key": "controls", "header": "CS, controls"},
+        {"spec_key": "sun_abraham", "header": "Sun--Abraham"},
+        {"spec_key": "bjs_imputation", "header": "BJS"},
+        {"spec_key": "twfe_level", "header": "TWFE"}
+      ],
+      "rows": [
+        {"type": "coefficient", "var": "att", "label": "ATT", "decimals": 2},
+        {"type": "stat", "field": "n_observations", "label": "Observations", "decimals": 0},
+        {"type": "stat", "field": "n_clusters", "label": "Countries", "decimals": 0},
+        {"type": "stat", "field": "n_treated_clusters", "label": "Treated countries", "decimals": 0}
+      ],
+      "notes": "Standard errors clustered by country in parentheses. CS denotes Callaway and Sant'Anna; BJS the Borusyak--Jaravel--Spiess imputation estimator; TWFE a static two-way fixed-effects benchmark. The ATT averages event times 0 to 5. */**/*** denote significance at the 10/5/1\\% levels."
+    },
+    {
+      "filename": "robust_level.tex",
+      "label": "tab:robust_level",
+      "caption": "Robustness of the GER effect (percentage points)",
+      "columns": [
+        {"spec_key": "anticipation_1", "header": "Anticipation"},
+        {"spec_key": "drop_outliers", "header": "No outliers"},
+        {"spec_key": "drop_zmb_gha", "header": "No ZMB, GHA"},
+        {"spec_key": "gender_female", "header": "Female GER"},
+        {"spec_key": "gender_male", "header": "Male GER"}
+      ],
+      "rows": [
+        {"type": "coefficient", "var": "att", "label": "ATT", "decimals": 2},
+        {"type": "stat", "field": "n_observations", "label": "Observations", "decimals": 0},
+        {"type": "stat", "field": "n_treated_clusters", "label": "Treated countries", "decimals": 0}
+      ],
+      "notes": "Callaway--Sant'Anna estimates with the undated comparison group; standard errors clustered by country in parentheses. */**/*** denote significance at the 10/5/1\\% levels."
+    },
+    {
+      "filename": "robust_log.tex",
+      "label": "tab:robust_log",
+      "caption": "Effect of fee abolition on log GER",
+      "columns": [
+        {"spec_key": "cs_log_ger", "header": "CS, undated"},
+        {"spec_key": "cs_not_yet_treated_log", "header": "CS, not yet"},
+        {"spec_key": "twfe_log", "header": "TWFE"}
+      ],
+      "rows": [
+        {"type": "coefficient", "var": "att", "label": "ATT (log points)", "decimals": 3},
+        {"type": "stat", "field": "n_observations", "label": "Observations", "decimals": 0}
+      ],
+      "notes": "Standard errors clustered by country in parentheses. */**/*** denote significance at the 10/5/1\\% levels."
+    },
+    {
+      "filename": "mechanism.tex",
+      "label": "tab:mechanism",
+      "caption": "Net enrolment, gender and completion (percentage points)",
+      "columns": [
+        {"spec_key": "ner", "header": "NER"},
+        {"spec_key": "ger_on_ner_sample", "header": "GER, NER sample"},
+        {"spec_key": "ger_minus_ner", "header": "GER $-$ NER"},
+        {"spec_key": "gender_gap", "header": "Female $-$ male"},
+        {"spec_key": "completion_rate", "header": "Completion"}
+      ],
+      "rows": [
+        {"type": "coefficient", "var": "att", "label": "ATT", "decimals": 2},
+        {"type": "stat", "field": "n_observations", "label": "Observations", "decimals": 0},
+        {"type": "stat", "field": "n_clusters", "label": "Countries", "decimals": 0}
+      ],
+      "notes": "Callaway--Sant'Anna estimates; standard errors clustered by country in parentheses. The NER samples are smaller because net enrolment is observed in fewer country-years. */**/*** denote significance at the 10/5/1\\% levels."
+    }
+  ]
+}

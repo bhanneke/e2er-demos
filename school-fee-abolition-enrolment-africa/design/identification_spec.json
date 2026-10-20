@@ -1,0 +1,19 @@
+{
+  "primary": {
+    "estimator": "callaway_santanna",
+    "unit_of_analysis": "country-year",
+    "outcome": "ger_primary",
+    "treatment": "fee_abolition",
+    "fixed_effects": [],
+    "controls": [],
+    "cluster_level": "iso3",
+    "identifying_assumption": "Absent abolition, the gross primary enrolment ratio of each cohort of abolishing countries would have evolved in parallel with that of never-treated countries (not-yet-treated as a check), with no anticipation within the stated window."
+  },
+  "fallback": {
+    "estimator": "twfe_ols",
+    "fixed_effects": ["iso3", "year"],
+    "controls": [],
+    "cluster_level": "iso3",
+    "when": "Benchmark only, with Goodman-Bacon decomposition; the Sun-Abraham check uses the same country and year fixed effects."
+  }
+}

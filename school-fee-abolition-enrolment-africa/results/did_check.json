@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "reasons": [],
+  "notes": [
+    "the event-study plot fig_event_study.pdf was added to figure_spec.json from the results"
+  ],
+  "stats": {
+    "pre_periods": 5,
+    "post_periods": 6,
+    "pre_trends_p": 0.9797,
+    "placebo": 1,
+    "sensitivity": 3,
+    "estimator": "callaway_santanna"
+  },
+  "pretrend_alpha": 0.05
+}

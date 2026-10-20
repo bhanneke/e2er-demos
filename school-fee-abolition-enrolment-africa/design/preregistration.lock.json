@@ -1,0 +1,35 @@
+{
+  "file": "preregistration.md",
+  "sha256": "0739668ec62727170804ff8b2040f14b3f730316073cb8e7e3c697fa8ad9ed5c",
+  "frozen_at": "2026-10-13T21:33:45Z",
+  "plan_files": {
+    "identification_spec.json": "8c9eee65856dc0b9b73f1aa411c1fc4f549e5701f24513c662ecb2abfdc7323e",
+    "did_design.json": "736ba789a2127148a5b3f28c2cb101e45b8ff03aabc1ec18b0f6d4c094f9aadd"
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "statement": "main Abolition raises GER; effect is positive on impact (year 0–1) and persistent for ≥5 years."
+    },
+    {
+      "id": "H2",
+      "statement": "over-age The GER effect exceeds the NER effect (ΔGER − ΔNER > 0), i.e., part of the surge is over-age enrolment."
+    },
+    {
+      "id": "H3",
+      "statement": "initial level Effects are larger where pre-reform GER was low (more room to grow, more fee-constrained households). Expect negative interaction with baseline GER."
+    },
+    {
+      "id": "H4",
+      "statement": "gender Girls' GER rises by more than boys' (higher price sensitivity of girls' schooling), shrinking the gender gap."
+    },
+    {
+      "id": "H5",
+      "statement": "capitation grants Effects are larger and more persistent where abolition was accompanied by a per-pupil capitation grant that replaced fee revenue; without compensation, schools reintroduced informal charges and the effect fades."
+    },
+    {
+      "id": "H6",
+      "statement": "quality dilution Pupil–teacher ratios rise and primary completion / survival rises by less than enrolment (mechanism check, not main outcome)."
+    }
+  ]
+}

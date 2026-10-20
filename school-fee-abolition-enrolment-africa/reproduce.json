@@ -1,0 +1,61 @@
+{
+  "schema": "e2er-reproduce/1",
+  "about": "Written by e2er at export (2026-10-15) from what the run recorded: the scripts that wrote estimation_results.json, from the estimation script on, in the order the run ran them (its script log); the files they read; and the packages they import. code/requirements.txt pins 4 package(s) at the versions the run used.",
+  "python": "3.12",
+  "requirements": "code/requirements.txt",
+  "files": {
+    "run_estimation.py": "code/run_estimation.py",
+    "data.db": "data/data.db"
+  },
+  "steps": [
+    {
+      "run": [
+        "python",
+        "run_estimation.py"
+      ],
+      "about": "the estimation script"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data.db",
+      "sha256": "139c8457b11c5478f41392b30bebfae5451c7b6a572f64382a1a6d4a64ac6206",
+      "source": "the study's database, tables: fee_abolition_dates (made by the study during the run); ger_cohort_means (made by the study during the run); ger_event_time_means (made by the study during the run); wb_primary_enrolment (made by the study during the run); wdi_controls (World Bank Open Data (Indicators API v2), The World Bank, World Bank SP.POP.TOTL, NY.GDP.PCAP.KD, SP.URB.TOTL.IN.ZS, SH.DYN.MORT for AGO, BEN, BWA, BFA, BDI, CPV, CMR, CAF, TCD, COM, COD, COG, CIV, DJI, GNQ, ERI, SWZ, ETH, GAB, GMB, GHA, GIN, GNB, KEN, LSO, LBR, MDG, MWI, MLI, MRT, MUS, MOZ, NAM, NER, NGA, RWA, STP, SEN, SYC, SLE, SOM, ZAF, SSD, SDN, TZA, TGO, UGA, ZMB, ZWE, 1980–2018, release 2026-10-08, loaded 2026-10-13); wdi_primary_enrolment (World Bank Open Data (Indicators API v2), The World Bank, World Bank SE.PRM.ENRR, SE.PRM.ENRR.MA, SE.PRM.ENRR.FE, SE.PRM.NENR, SE.PRM.CMPT.ZS for AGO, BEN, BWA, BFA, BDI, CPV, CMR, CAF, TCD, COM, COD, COG, CIV, DJI, GNQ, ERI, SWZ, ETH, GAB, GMB, GHA, GIN, GNB, KEN, LSO, LBR, MDG, MWI, MLI, MRT, MUS, MOZ, NAM, NER, NGA, RWA, STP, SEN, SYC, SLE, SOM, ZAF, SSD, SDN, TZA, TGO, UGA, ZMB, ZWE, 1980–2018, release 2026-10-08, loaded 2026-10-13)",
+      "tables": {
+        "fee_abolition_dates": {
+          "rows": 49,
+          "content_sha256": "3f3385259d9b7871f344f529ba1d8a552aecc145307c231ccf12be48f36146b3"
+        },
+        "ger_cohort_means": {
+          "rows": 177,
+          "content_sha256": "0bb39c071be5ff966f778c6fefd492e8e0b56fc2431551334a7357ea8c1357be"
+        },
+        "ger_event_time_means": {
+          "rows": 15,
+          "content_sha256": "50355804a56f09786cd6e29a5e2f0732bb7b20339ecb195866bb89680276fa4d"
+        },
+        "wb_primary_enrolment": {
+          "rows": 1519,
+          "content_sha256": "1b5b71d2e070ddb77334c1f1ffce522ace34e5c46339908db77a8a5edcb1f5cd"
+        },
+        "wdi_controls": {
+          "rows": 7644,
+          "content_sha256": "d46ffb2030e92a2dae63c4e8685ce6d2235ff97eab36353569b10a7f9d557618"
+        },
+        "wdi_primary_enrolment": {
+          "rows": 9555,
+          "content_sha256": "4b2e7546e795a2040c1130551fc344d2c46379f74032b4aa14cb35f95e9f8b4d"
+        }
+      }
+    }
+  ],
+  "compare": [
+    {
+      "published": "results/estimation_results.json",
+      "produced": "estimation_results.json"
+    }
+  ],
+  "notes": [
+    "The run recorded no Python version for its scripts (e2er up to 0.16.0), so the recipe names the Python e2er exported the study with (3.12.12); the study may have run on another."
+  ]
+}

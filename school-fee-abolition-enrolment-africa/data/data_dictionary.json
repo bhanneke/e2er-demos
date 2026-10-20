@@ -1,0 +1,350 @@
+{
+  "study": "Did abolishing primary-school fees in sub-Saharan Africa raise gross primary enrolment? (staggered DiD, country-year panel)",
+  "unit_of_observation": "country-year",
+  "panel_window": {
+    "load_start": 1980,
+    "load_end": 2018,
+    "analysis_start": 1985,
+    "analysis_end": 2015,
+    "note": "Loaded window is wider than the analysis window so lags, leads and pre-period checks can be built without a second load."
+  },
+  "countries": {
+    "definition": "World Bank sub-Saharan Africa region (48 economies), ISO3 codes",
+    "iso3": [
+      "AGO",
+      "BEN",
+      "BWA",
+      "BFA",
+      "BDI",
+      "CPV",
+      "CMR",
+      "CAF",
+      "TCD",
+      "COM",
+      "COD",
+      "COG",
+      "CIV",
+      "DJI",
+      "GNQ",
+      "ERI",
+      "SWZ",
+      "ETH",
+      "GAB",
+      "GMB",
+      "GHA",
+      "GIN",
+      "GNB",
+      "KEN",
+      "LSO",
+      "LBR",
+      "MDG",
+      "MWI",
+      "MLI",
+      "MRT",
+      "MUS",
+      "MOZ",
+      "NAM",
+      "NER",
+      "NGA",
+      "RWA",
+      "STP",
+      "SEN",
+      "SYC",
+      "SLE",
+      "SOM",
+      "ZAF",
+      "SSD",
+      "SDN",
+      "TZA",
+      "TGO",
+      "UGA",
+      "ZMB",
+      "ZWE"
+    ],
+    "note": "The list above is the working World Bank SSA grouping as the data architect understands it; the data analyst must check it against the countries actually returned and the World Bank region metadata, and report any mismatch in data_summary.md. Aggregates (SSF, AFE, AFW, WLD) are not loaded."
+  },
+  "tables": [
+    {
+      "name": "wdi_primary_enrolment",
+      "source": "worldbank",
+      "series": "World Bank SE.PRM.ENRR, SE.PRM.ENRR.MA, SE.PRM.ENRR.FE, SE.PRM.NENR, SE.PRM.CMPT.ZS for AGO, BEN, BWA, BFA, BDI, CPV, CMR, CAF, TCD, COM, COD, COG, CIV, DJI, GNQ, ERI, SWZ, ETH, GAB, GMB, GHA, GIN, GNB, KEN, LSO, LBR, MDG, MWI, MLI, MRT, MUS, MOZ, NAM, NER, NGA, RWA, STP, SEN, SYC, SLE, SOM, ZAF, SSD, SDN, TZA, TGO, UGA, ZMB, ZWE, 1980–2018",
+      "frequency": "annual",
+      "role": "outcomes: gross primary enrolment ratio (total, male, female), net primary enrolment rate, primary completion rate",
+      "load_command": "e2er-data worldbank series --indicator SE.PRM.ENRR,SE.PRM.ENRR.MA,SE.PRM.ENRR.FE,SE.PRM.NENR,SE.PRM.CMPT.ZS --countries <48 SSA ISO3 codes> --start 1980 --end 2018 --table wdi_primary_enrolment --save-to wdi_primary_enrolment.csv",
+      "format": "long: indicator, indicator_name, country, iso3, year, value, obs_status, unit",
+      "columns": [
+        {
+          "name": "value",
+          "min_non_null": 0.3
+        }
+      ],
+      "min_non_null": 0.3,
+      "expected_missingness": "High and uneven. In the long-format load, rows with null value are the World Bank's gaps. Expect GER (total) to be reasonably filled from the late 1990s and thin or patchy in the 1980s and early 1990s; male/female GER similar; net enrolment (SE.PRM.NENR) and completion (SE.PRM.CMPT.ZS) clearly sparser, especially before 1995 (completion series largely starts in the 1990s). Share of non-null values is therefore declared as 0.3 and the actual share is reported per indicator in data_summary.md.",
+      "licence": "CC BY 4.0 with the World Bank's additional terms (https://www.worldbank.org/ext/en/legal/terms-conditions/datasets): \"Unless specifically labeled otherwise, these Datasets are provided to you under a Creative Commons Attribution 4.0 International License (CC BY 4.0)\". \"You agree to provide attribution to The World Bank and its data providers in the following format: The World Bank: Dataset name: Data source (if known).\" \"Some datasets and indicators are provided by third parties, and may not be redistributed or reused without the consent of the original data provider, or may be subject to terms and conditions that are different from those described above. Where applicable, these conditions are included in the dataset or indicator metadata.\"",
+      "citation": "The World Bank: World Development Indicators: Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API. Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2026-03-19, date published: 2026-02; Stat Bulk Data Download Service, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://uis.unesco.org/bdds, publisher: UNESCO Institute for Statistics (UIS). World Bank Open Data, https://data.worldbank.org (last updated 2026-10-08). Licence: CC BY 4.0.",
+      "provenance": "World Bank Open Data (Indicators API v2), The World Bank (https://data.worldbank.org), release 2026-10-08",
+      "version": "2026-10-08",
+      "source_files": [
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.ENRR?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "e24fe5397b188023510c36906e388f566eaa7d758c536715aebd5cf54609923c"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.ENRR.MA?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "91b4a629d2a32d95e030207b47f43fabe40a4aa58eb98b8bfaac6439dd1c89cd"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.ENRR.FE?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "734218cf18ef71d1a4ca864d702b20a5f0d74913c4ca32bc606eb1cab7d698e1"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.NENR?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "9716cd93942493da18471d582a485469d253ff3a21c6db85b1b6a4562c40d06b"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.CMPT.ZS?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "34c1824e437249e721e21c6dda55eb053a9aaa1941429fab6adeb308f1fa1429"
+        }
+      ],
+      "cite_key": "WorldBank_OpenData"
+    },
+    {
+      "name": "wdi_controls",
+      "source": "worldbank",
+      "series": "World Bank SP.POP.TOTL, NY.GDP.PCAP.KD, SP.URB.TOTL.IN.ZS, SH.DYN.MORT for AGO, BEN, BWA, BFA, BDI, CPV, CMR, CAF, TCD, COM, COD, COG, CIV, DJI, GNQ, ERI, SWZ, ETH, GAB, GMB, GHA, GIN, GNB, KEN, LSO, LBR, MDG, MWI, MLI, MRT, MUS, MOZ, NAM, NER, NGA, RWA, STP, SEN, SYC, SLE, SOM, ZAF, SSD, SDN, TZA, TGO, UGA, ZMB, ZWE, 1980–2018",
+      "frequency": "annual",
+      "role": "controls and pre-treatment covariates: population, GDP per capita, net ODA per capita, urban population share, under-5 mortality",
+      "load_command": "e2er-data worldbank series --indicator SP.POP.TOTL,NY.GDP.PCAP.KD,DT.ODA.ODAT.PC.CD,SP.URB.TOTL.IN.ZS,SH.DYN.MORT --countries <48 SSA ISO3 codes> --start 1980 --end 2018 --table wdi_controls --save-to wdi_controls.csv",
+      "format": "long: indicator, indicator_name, country, iso3, year, value, obs_status, unit",
+      "columns": [
+        {
+          "name": "value",
+          "min_non_null": 0.5
+        }
+      ],
+      "min_non_null": 0.5,
+      "expected_missingness": "Population, urban share and under-5 mortality are nearly complete (under-5 mortality is a modelled series). GDP per capita (constant 2015 US$) has gaps for some countries and years (e.g. conflict or newly independent states such as SSD, ERI, SOM). Net ODA per capita is sparse for the smallest states and has gaps for high-income or recently graduated economies (MUS, SYC, BWA, GNQ in some years).",
+      "licence": "CC BY 4.0 with the World Bank's additional terms (https://www.worldbank.org/ext/en/legal/terms-conditions/datasets): \"Unless specifically labeled otherwise, these Datasets are provided to you under a Creative Commons Attribution 4.0 International License (CC BY 4.0)\". \"You agree to provide attribution to The World Bank and its data providers in the following format: The World Bank: Dataset name: Data source (if known).\" \"Some datasets and indicators are provided by third parties, and may not be redistributed or reused without the consent of the original data provider, or may be subject to terms and conditions that are different from those described above. Where applicable, these conditions are included in the dataset or indicator metadata.\"",
+      "citation": "The World Bank: World Development Indicators: Country official statistics, National Statistical Organizations and/or Central Banks; National Accounts data files, Organisation for Economic Co-operation and Development (OECD); Staff estimates, World Bank (WB); UN Inter-agency Group for Child Mortality Estimation, UN Children's Fund (UNICEF), uri: www.childmortality.org, publisher: UNICEF, WHO, World Bank, United Nations Population Division; World Health Organization (WHO), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation; World Bank (WB), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation; United Nations (UN), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation, publisher: UN Population Division; World Population Prospects, United Nations (UN), uri: https://population.un.org/wpp/, publisher: UN Population Division; Statistical databases and publications from national statistical offices, National Statistical Offices (NSOs), uri: https://unstats.un.org/home/nso_sites/, publisher: National Statistical Offices; Eurostat: Demographic Statistics, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/data/database?node_code=earn_ses_monthly, publisher: Eurostat; Population and Vital Statistics Report (various years), United Nations (UN), uri: https://unstats.un.org, publisher: UN Statistics Division; World Urbanization Prospects, United Nations (UN), uri: https://population.un.org/wup/, note: United Nations Population Division's World Urbanization Prospects, National definitions, publisher: UN Population Division. World Bank Open Data, https://data.worldbank.org (last updated 2026-10-08). Licence: CC BY 4.0.",
+      "provenance": "World Bank Open Data (Indicators API v2), The World Bank (https://data.worldbank.org), release 2026-10-08",
+      "version": "2026-10-08",
+      "source_files": [
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SP.POP.TOTL?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "c884fd4f8d75295d172bc9e85ac0efb7d38c9830d47bc5c4ea751ba708063dac"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/NY.GDP.PCAP.KD?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "9d8c684e02b69d618518dcd781346419413939c22077ab6bc07e13c17237c87a"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SP.URB.TOTL.IN.ZS?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "b5c5250f475c88b307dfbd4ad99d5ec7146dff96a8e5843a3254e7e7487f7dbb"
+        },
+        {
+          "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SH.DYN.MORT?format=json&per_page=20000&source=2&date=1980%3A2018&page=1",
+          "sha256": "f36a92e16f5394c06d45eabd37b599206847d75276ddc22b492da2a862d90542"
+        }
+      ],
+      "cite_key": "WorldBank_OpenData"
+    }
+  ],
+  "variables": [
+    {
+      "name": "gross_primary_enrolment",
+      "wdi_code": "SE.PRM.ENRR",
+      "table": "wdi_primary_enrolment",
+      "definition": "Total enrolment in primary education, regardless of age, as a percentage of the official primary-school-age population (gross enrolment ratio, GER).",
+      "unit": "percent; can exceed 100 because of over-age and under-age pupils and repetition",
+      "role": "main outcome",
+      "expected_missingness": "see table"
+    },
+    {
+      "name": "gross_primary_enrolment_male",
+      "wdi_code": "SE.PRM.ENRR.MA",
+      "table": "wdi_primary_enrolment",
+      "definition": "Gross enrolment ratio, primary, male.",
+      "unit": "percent",
+      "role": "heterogeneity by sex"
+    },
+    {
+      "name": "gross_primary_enrolment_female",
+      "wdi_code": "SE.PRM.ENRR.FE",
+      "table": "wdi_primary_enrolment",
+      "definition": "Gross enrolment ratio, primary, female.",
+      "unit": "percent",
+      "role": "heterogeneity by sex"
+    },
+    {
+      "name": "net_primary_enrolment",
+      "wdi_code": "SE.PRM.NENR",
+      "table": "wdi_primary_enrolment",
+      "definition": "Enrolled children of official primary-school age as a percentage of the primary-school-age population (net enrolment rate, NER).",
+      "unit": "percent; at most 100",
+      "role": "secondary outcome: separates access for age-eligible children from over-age enrolment; very sparse pre-2000, so may support only a reduced sample"
+    },
+    {
+      "name": "primary_completion_rate",
+      "wdi_code": "SE.PRM.CMPT.ZS",
+      "table": "wdi_primary_enrolment",
+      "definition": "Share of a cohort of children entering the last grade of primary school (total new entrants to the last grade, regardless of age, over the population at the intended graduation age).",
+      "unit": "percent; can exceed 100",
+      "role": "secondary outcome"
+    },
+    {
+      "name": "population",
+      "wdi_code": "SP.POP.TOTL",
+      "table": "wdi_controls",
+      "definition": "Total population (midyear), all residents.",
+      "unit": "persons; use log",
+      "role": "control"
+    },
+    {
+      "name": "gdp_per_capita",
+      "wdi_code": "NY.GDP.PCAP.KD",
+      "table": "wdi_controls",
+      "definition": "GDP per capita in constant US dollars (base year set by the current WDI release, recorded in the load note).",
+      "unit": "constant US$; use log",
+      "role": "control"
+    },
+    {
+      "name": "aid_per_capita",
+      "wdi_code": "DT.ODA.ODAT.PC.CD",
+      "table": "wdi_controls",
+      "definition": "Net official development assistance and official aid received per capita.",
+      "unit": "current US$ per person",
+      "role": "control (donor funding accompanying the reforms)"
+    },
+    {
+      "name": "urban_share",
+      "wdi_code": "SP.URB.TOTL.IN.ZS",
+      "table": "wdi_controls",
+      "definition": "Urban population as a share of total population.",
+      "unit": "percent",
+      "role": "control"
+    },
+    {
+      "name": "under5_mortality",
+      "wdi_code": "SH.DYN.MORT",
+      "table": "wdi_controls",
+      "definition": "Probability of dying before age 5 per 1,000 live births (modelled estimate).",
+      "unit": "deaths per 1,000 live births",
+      "role": "control (development level / child health)"
+    }
+  ],
+  "handcoded_treatment_table": {
+    "name": "fee_abolition_years",
+    "status": "NOT YET BUILT - no abolition year has been verified",
+    "not_a_declared_table_reason": "No available data source holds fee-abolition dates and the researcher supplied no data files, so this table cannot be declared under `tables` (the contract only allows listed sources). It is a hand-coded input that must be created from published sources and stored as data/fee_abolition_years.csv, with one cited source per row.",
+    "columns": [
+      {
+        "name": "iso3",
+        "definition": "ISO3 country code"
+      },
+      {
+        "name": "country",
+        "definition": "Country name"
+      },
+      {
+        "name": "abolition_year",
+        "definition": "First school year/calendar year in which tuition and compulsory fees were abolished nationally for all of primary school. Calendar year in which the first affected school year starts. Empty if no national abolition in the window or if unverified."
+      },
+      {
+        "name": "abolition_scope",
+        "definition": "national_full | partial (certain grades, regions or fee types only) | reintroduced | none"
+      },
+      {
+        "name": "reintroduction_year",
+        "definition": "Year fees were reintroduced after abolition, if any"
+      },
+      {
+        "name": "source_key",
+        "definition": "BibTeX key in literature.bib of the publication the year is taken from"
+      },
+      {
+        "name": "source_quote_or_page",
+        "definition": "Short quote or page reference supporting the year"
+      },
+      {
+        "name": "verification_status",
+        "definition": "verified_two_sources | verified_one_source | unverified | conflicting"
+      },
+      {
+        "name": "notes",
+        "definition": "Partial abolition, phased roll-out by grade, difference between announcement and implementation year, reintroduced levies"
+      }
+    ],
+    "provenance_rule": "Years must come from published sources found with e2er-lit search and cited by BibTeX key. They must not be filled in from memory. At the time of writing, e2er-lit search returned titles and metadata only, not abolition dates, so no year is entered here.",
+    "candidate_sources_to_read": [
+      {
+        "key": "kan2020evaluating",
+        "note": "Uganda universal primary education and fee abolition (check abolition year and scope)"
+      },
+      {
+        "key": "oketch2010free",
+        "note": "Kenya free primary education (check year and scope)"
+      },
+      {
+        "key": "lloyd2003primary",
+        "note": "Recent trends in primary schooling in SSA; may list policy dates"
+      },
+      {
+        "key": "majgaard2012education",
+        "note": "Comparative analysis of education in SSA; may list fee policies"
+      },
+      {
+        "key": "fredriksen2022promise",
+        "note": "Universal primary education in SSA"
+      }
+    ],
+    "rows": [],
+    "countries_to_code": "All 48 SSA countries in `countries.iso3`; each gets one row, with abolition_year empty when no national abolition is documented or the date cannot be verified.",
+    "dated_uncertain_rule": "A country whose year cannot be verified from a published source is excluded from the treated group and from the main control group, and kept only in a dated-uncertain robustness set."
+  },
+  "treatment_status_rule": {
+    "event_time": "Event time t_rel = calendar year - abolition_year, for treated countries.",
+    "treated": "Country-year with year >= abolition_year (post-treatment, absorbing). Treatment is coded to the calendar year the first affected school year starts. If a source gives the school year, the later calendar year is the first treated year, and the choice is documented per country.",
+    "not_yet_treated": "Country-year of a country that has a verified abolition_year later than the current year (year < abolition_year). Contributes as a control to the Callaway-Sant'Anna not-yet-treated comparison and as a pre-period observation for itself.",
+    "never_treated": "Country with no verified national abolition in the analysis window up to 2015 (or fees abolished only after 2015). It is a control in all years. Countries that already had free primary education before the window are not never-treated: they are excluded (see sample rules).",
+    "partial_abolition": "Abolition limited to some grades, regions or fee types is not coded as treated in the main specification. These countries are flagged and enter robustness runs with the partial date as treatment, or are dropped.",
+    "reintroduction": "Main specification codes treatment as absorbing (intention-to-treat on the first abolition year); reintroductions are flagged, and a robustness run drops these countries.",
+    "cohort_definition": "Treatment cohort g = abolition_year; never-treated coded as g = 0 (or infinity per the estimator's convention)."
+  },
+  "sample_inclusion_rules": [
+    "Unit: sub-Saharan African country (World Bank SSA grouping) observed in the analysis window 1985-2015.",
+    "Exclude countries whose verified fee abolition predates the first panel year (abolition_year < 1985), because no pre-treatment period is observed.",
+    "Exclude countries with abolition_year but fewer than the minimum number of non-missing pre-treatment GER observations needed for the event-study (default: at least 3 pre-period GER observations in 1985-abolition_year-1); report the count dropped. This is likely to hit the earliest adopters because WDI GER coverage is thin before the late 1990s.",
+    "Exclude countries with unverified abolition years from the main treated and control groups (kept in a dated-uncertain robustness set).",
+    "Exclude countries with partial abolition or reintroduction from the main specification (flagged; robustness only).",
+    "Exclude country-years in which the dependent variable is null; no imputation. The panel is therefore unbalanced and the estimator must handle unbalanced panels.",
+    "Flag GER values above 150 or below 10 as outliers for inspection; do not delete them in the load.",
+    "Exclude World Bank aggregates and non-country entities.",
+    "Small island states (CPV, COM, STP, SYC, MUS) are kept in the main sample but dropped in a robustness check."
+  ],
+  "unavailable": [
+    {
+      "item": "Fee-abolition dates by country",
+      "reason": "Held by no available source; must be hand-coded from published sources (see handcoded_treatment_table)."
+    },
+    {
+      "item": "Age-specific net enrolment before about 2000",
+      "reason": "SE.PRM.NENR is sparse in WDI before about 2000; net enrolment analysis may cover only a subset of countries and years."
+    },
+    {
+      "item": "Household-survey (DHS/MICS) school attendance",
+      "reason": "No such source is available to this study."
+    }
+  ],
+  "known_data_issues": [
+    "GER exceeds 100% because of repetition and over-age enrolment, so a GER increase after abolition may reflect over-age entrants rather than more age-eligible children; NER is the check.",
+    "WDI GER and NER come from UNESCO Institute for Statistics administrative data and are revised; the release date (lastupdated) must be recorded in data_summary.md.",
+    "Pre-1999 WDI education data are sparse for many SSA countries.",
+    "Population denominators, especially for conflict-affected countries, are modelled; denominator errors change GER.",
+    "Under-5 mortality and urban share are modelled estimates and move smoothly; they are not shocks.",
+    "Aid per capita can respond to the reform (bad control for the post-treatment effect), so the main specification uses pre-treatment or baseline values of the controls and a robustness run uses contemporaneous values."
+  ],
+  "citations": [
+    "WorldBank_OpenData"
+  ],
+  "contract_note": "Row counts in data_summary.md must be the actual counts in data.db for wdi_primary_enrolment and wdi_controls."
+}

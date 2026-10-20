@@ -1,0 +1,2566 @@
+{
+  "schema": "e2er-research-object/0.1",
+  "id": "bhanneke/school-fee-abolition-enrolment-africa",
+  "content_id": "sha256:a29cee13730d2189b18a3437a9660e871d08980eaf9d8787332694eb6ad987a5",
+  "title": "Did abolishing primary-school fees in sub-Saharan African countries (staggere...",
+  "question": "Did abolishing primary-school fees in sub-Saharan African countries (staggered between the mid-1990s and the mid-2000s) raise gross primary enrolment? A difference-in-differences with World Bank enrolment data, comparing countries that abolished fees with countries that had not (yet) abolished them.",
+  "contributors": [
+    {
+      "name": "Björn Hanneke",
+      "github": "bhanneke",
+      "roles": [
+        "conceptualization",
+        "investigation"
+      ]
+    }
+  ],
+  "ai": {
+    "backend": "claude_code",
+    "model": "sonnet",
+    "agents": [
+      "literature_scanner",
+      "identification_strategist",
+      "idea_developer",
+      "data_architect",
+      "data_analyst",
+      "econometrics_specialist",
+      "abstract_writer",
+      "paper_drafter",
+      "writing_reviewer",
+      "data_reviewer",
+      "technical_reviewer",
+      "methods_reviewer",
+      "identification_reviewer",
+      "replication_packager"
+    ],
+    "agents_source": "recorded",
+    "usage": [
+      {
+        "agent": "strategist:decide",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 2,
+        "output_tokens": 1766,
+        "cache_read_tokens": 12566,
+        "cache_write_tokens": 18256,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:22:22",
+        "last": "2026-10-13 21:22:22"
+      },
+      {
+        "agent": "literature_scanner",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 10,
+        "output_tokens": 4847,
+        "cache_read_tokens": 140534,
+        "cache_write_tokens": 27386,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:24:28",
+        "last": "2026-10-13 21:24:28"
+      },
+      {
+        "agent": "identification_strategist",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 3,
+        "input_tokens": 46,
+        "output_tokens": 16128,
+        "cache_read_tokens": 1021353,
+        "cache_write_tokens": 120719,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:24:47",
+        "last": "2026-10-13 21:33:08"
+      },
+      {
+        "agent": "idea_developer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 12,
+        "output_tokens": 11452,
+        "cache_read_tokens": 208579,
+        "cache_write_tokens": 35898,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:25:16",
+        "last": "2026-10-13 21:25:16"
+      },
+      {
+        "agent": "data_architect",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 8,
+        "output_tokens": 7404,
+        "cache_read_tokens": 205172,
+        "cache_write_tokens": 56881,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:26:20",
+        "last": "2026-10-13 21:26:20"
+      },
+      {
+        "agent": "data_analyst",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 2,
+        "input_tokens": 56,
+        "output_tokens": 25582,
+        "cache_read_tokens": 2412306,
+        "cache_write_tokens": 183256,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:28:24",
+        "last": "2026-10-13 21:32:37"
+      },
+      {
+        "agent": "econometrics_specialist",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 30,
+        "output_tokens": 28599,
+        "cache_read_tokens": 1162049,
+        "cache_write_tokens": 85661,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:37:38",
+        "last": "2026-10-13 21:37:38"
+      },
+      {
+        "agent": "abstract_writer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 10,
+        "output_tokens": 2273,
+        "cache_read_tokens": 200676,
+        "cache_write_tokens": 36744,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:38:04",
+        "last": "2026-10-13 21:38:04"
+      },
+      {
+        "agent": "paper_drafter",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 2,
+        "input_tokens": 28,
+        "output_tokens": 17742,
+        "cache_read_tokens": 755247,
+        "cache_write_tokens": 108279,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:39:39",
+        "last": "2026-10-13 21:39:55"
+      },
+      {
+        "agent": "writing_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 17107,
+        "cache_read_tokens": 91064,
+        "cache_write_tokens": 78738,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:42:26",
+        "last": "2026-10-13 21:42:26"
+      },
+      {
+        "agent": "data_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 19765,
+        "cache_read_tokens": 94207,
+        "cache_write_tokens": 84603,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:42:47",
+        "last": "2026-10-13 21:42:47"
+      },
+      {
+        "agent": "technical_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 26419,
+        "cache_read_tokens": 90745,
+        "cache_write_tokens": 87664,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:43:36",
+        "last": "2026-10-13 21:43:36"
+      },
+      {
+        "agent": "methods_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 8822,
+        "cache_read_tokens": 92895,
+        "cache_write_tokens": 72265,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:44:08",
+        "last": "2026-10-13 21:44:08"
+      },
+      {
+        "agent": "identification_reviewer",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 4,
+        "output_tokens": 12616,
+        "cache_read_tokens": 96587,
+        "cache_write_tokens": 79831,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:44:13",
+        "last": "2026-10-13 21:44:13"
+      },
+      {
+        "agent": "replication_packager",
+        "backend": "claude_code",
+        "model": "sonnet",
+        "calls": 1,
+        "input_tokens": 14,
+        "output_tokens": 19138,
+        "cache_read_tokens": 340739,
+        "cache_write_tokens": 65014,
+        "cost_usd": 0.0,
+        "first": "2026-10-13 21:46:03",
+        "last": "2026-10-13 21:46:03"
+      }
+    ]
+  },
+  "process": {
+    "template": "policy-evaluation",
+    "mode": "single_pass",
+    "methodology": "empirical",
+    "governance": "full",
+    "e2er_version": "0.17.0",
+    "exported": "20261015"
+  },
+  "components": {
+    "skills": {
+      "literature_scanner": [
+        "base/researcher",
+        "synthesis/context-builder"
+      ],
+      "identification_strategist": [
+        "data/data-tables",
+        "causal-inference/judge-designs",
+        "causal-inference/natural-experiments",
+        "reasoning/identification",
+        "causal-inference/identification-spec-schema",
+        "econometrics/did-practice"
+      ],
+      "idea_developer": [
+        "base/researcher",
+        "base/economist",
+        "reasoning/creative-ideation",
+        "reasoning/novelty"
+      ],
+      "data_architect": [
+        "data/data-tables",
+        "data/query-data",
+        "base/economist",
+        "data/yfinance",
+        "data/fred",
+        "data/gmd",
+        "data/usgs",
+        "data/exoplanets",
+        "data/gaia",
+        "data/nasa_power",
+        "data/noaa",
+        "data/worldbank",
+        "data/eurostat",
+        "data/owid",
+        "data/who_gho",
+        "data/gutenberg",
+        "data/github",
+        "data/gisco",
+        "data/naturalearth"
+      ],
+      "data_analyst": [
+        "data/data-tables",
+        "data/query-data",
+        "data/cleaning",
+        "data/figure-spec",
+        "econometrics/panel-data",
+        "data/yfinance",
+        "data/fred",
+        "data/gmd",
+        "data/summary-statistics-schema",
+        "data/usgs",
+        "data/exoplanets",
+        "data/gaia",
+        "data/nasa_power",
+        "data/noaa",
+        "data/worldbank",
+        "data/eurostat",
+        "data/owid",
+        "data/who_gho",
+        "data/gutenberg",
+        "data/github",
+        "data/gisco",
+        "data/naturalearth"
+      ],
+      "econometrics_specialist": [
+        "data/query-data",
+        "econometrics/iv-estimation",
+        "econometrics/did",
+        "econometrics/panel-data",
+        "econometrics/event-study",
+        "econometrics/estimation-results-schema",
+        "econometrics/did-practice"
+      ],
+      "abstract_writer": [
+        "writing/abstract",
+        "reasoning/anti-slop",
+        "writing/cite-numbers-by-source"
+      ],
+      "paper_drafter": [
+        "writing/paper-structure",
+        "writing/personal-style",
+        "base/researcher",
+        "writing/cite-numbers-by-source",
+        "data/table-spec"
+      ],
+      "writing_reviewer": [
+        "review/writing-quality",
+        "reasoning/anti-slop"
+      ],
+      "data_reviewer": [
+        "review/data-quality",
+        "data/cleaning"
+      ],
+      "technical_reviewer": [
+        "review/technical-review",
+        "review/consistency-check"
+      ],
+      "methods_reviewer": [
+        "review/methods-review",
+        "review/consistency-check",
+        "econometrics/did-practice"
+      ],
+      "identification_reviewer": [
+        "causal-inference/sensitivity",
+        "review/technical-review",
+        "econometrics/did-practice"
+      ],
+      "replication_packager": [
+        "data/cleaning",
+        "base/researcher",
+        "synthesis/replication-package"
+      ]
+    },
+    "skills_source": "recorded"
+  },
+  "literature": [
+    {
+      "cite_key": "kan2020evaluating",
+      "doi": "10.1111/RODE.12725",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "oketch2010free",
+      "doi": null,
+      "status": "verified_title",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "gruijters2024secondary",
+      "doi": "10.1086/731496",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "callaway2021difference",
+      "doi": "10.1016/j.jeconom.2020.12.001",
+      "status": "verified_doi",
+      "verified_by": "crossref"
+    },
+    {
+      "cite_key": "sun2021estimating",
+      "doi": "10.1016/j.jeconom.2020.09.006",
+      "status": "verified_doi",
+      "verified_by": "crossref"
+    },
+    {
+      "cite_key": "borusyak2024revisiting",
+      "doi": "10.1093/restud/rdae007",
+      "status": "verified_doi",
+      "verified_by": "crossref"
+    },
+    {
+      "cite_key": "rambachan2023credible",
+      "doi": "10.1093/restud/rdad018",
+      "status": "verified_doi",
+      "verified_by": "crossref"
+    },
+    {
+      "cite_key": "lindsjo2017everybody",
+      "doi": null,
+      "status": "unverifiable",
+      "verified_by": null
+    },
+    {
+      "cite_key": "pajibo2017influence",
+      "doi": "10.20448/JOURNAL.522.2017.31.53.63",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "morgan2014eliminating",
+      "doi": "10.56645/jmde.v10i23.384",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "fermah2026school",
+      "doi": "10.17605/osf.io/cahvn",
+      "status": "unverifiable",
+      "verified_by": null
+    },
+    {
+      "cite_key": "fermah2026effect",
+      "doi": "10.17605/osf.io/brcpd",
+      "status": "unverifiable",
+      "verified_by": null
+    },
+    {
+      "cite_key": "wallstrom2017is",
+      "doi": null,
+      "status": "unverifiable",
+      "verified_by": null
+    },
+    {
+      "cite_key": "nakabugo2008universal",
+      "doi": "10.15027/34290",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "nishimura2007internal",
+      "doi": "10.32204/JIDS.16.1_69",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "valente2015primary",
+      "doi": "10.2139/ssrn.2655157",
+      "status": "verified_doi",
+      "verified_by": "crossref"
+    },
+    {
+      "cite_key": "nishimura2011the",
+      "doi": "10.1057/9780230339361_12",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "goodmanbacon2021difference",
+      "doi": "10.1016/J.JECONOM.2021.03.014",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "dechaisemartin2020twoway",
+      "doi": "10.1257/aer.20181169",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "roth2022pretest",
+      "doi": "10.1257/aeri.20210236",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "roth2023trending",
+      "doi": "10.1016/j.jeconom.2023.03.008",
+      "status": "verified_doi",
+      "verified_by": "semantic_scholar"
+    },
+    {
+      "cite_key": "WorldBank_OpenData",
+      "doi": "10.4135/9781483345727.n894",
+      "status": "verified_title",
+      "verified_by": "crossref"
+    }
+  ],
+  "data": [
+    {
+      "path": "data/data.db",
+      "sha256": "139c8457b11c5478f41392b30bebfae5451c7b6a572f64382a1a6d4a64ac6206",
+      "bytes": 1720320
+    },
+    {
+      "path": "data/data_dictionary.json",
+      "sha256": "65b8d7453a467bb8d175bc0195b674b0eef0adb9500356631dac514023bcbf91",
+      "bytes": 24363
+    },
+    {
+      "path": "data/data_sources.json",
+      "sha256": "e55909d9b656c151e67570f1b61ddb912377a0ef5704c38de3c428cc49c0add5",
+      "bytes": 21008
+    },
+    {
+      "path": "data/data_summary.md",
+      "sha256": "a9b41e10f0f0c5e116d4a613761a5b33587e1e92984529ed521fc6827fd4aae8",
+      "bytes": 5302
+    }
+  ],
+  "outputs": [
+    {
+      "path": "paper/abstract.tex",
+      "sha256": "f5990d731a6ff89df0c7a0a75c3afab5b56d950e7d828e685201dc17e150c04a"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256": "23bebcb188b3fa18db16fba775f1f80eec84662e4ecd444b25fa4a598b8b89ea"
+    },
+    {
+      "path": "paper/paper.tex",
+      "sha256": "7090cdf17d25376de7ae8fbc3ccd5f4731512f7b1eeb532efa7205a2f3c3cfeb"
+    },
+    {
+      "path": "paper/refs.bib",
+      "sha256": "e56000d8ffdf845d843b9181fbb39cc6c69829b305f76446ba39c9e5f3d447e0"
+    },
+    {
+      "path": "paper/tables/main.tex",
+      "sha256": "7752fd1d42aa060d349f6de5b3a04fe38d79d964610a2130056c56f650d0b315"
+    },
+    {
+      "path": "paper/tables/mechanism.tex",
+      "sha256": "610bfed3d75fb78e205834801a7cc60df4f7cee393a1d94e7ecb81b0583b7b84"
+    },
+    {
+      "path": "paper/tables/robust_level.tex",
+      "sha256": "2f488aeb552c2bbc78c397c87f74211d5c8a6db0b11c6a8d7381e7bc84d2e4b4"
+    },
+    {
+      "path": "paper/tables/robust_log.tex",
+      "sha256": "60b906a2db2267982af879c2d15fe20ac459c3dc179e40fd623ae73711c87b42"
+    },
+    {
+      "path": "paper/tables/summary.tex",
+      "sha256": "811c19171cf4b17c61d2cd52dca3793686c0853adee4345ddfcbef9fe59b9309"
+    },
+    {
+      "path": "replication/audit_log.csv",
+      "sha256": "6f4c242ead6be9b60e83781e516d7e0ac2123572b5faf1ab15d019459de77301"
+    },
+    {
+      "path": "replication/data_queries.sql",
+      "sha256": "44ca6fee834f1151cf6c14f96068ca2af3b22591573fe34e428d5ce5eb300fe6"
+    },
+    {
+      "path": "replication/estimation.py",
+      "sha256": "8f304358d2eafa5b120106d957dea63ee96f43df567c69fd1661bca38f73f824"
+    },
+    {
+      "path": "results/did_check.json",
+      "sha256": "f39bec90c30639e4bcc56ad85a7ec7d5505aea9f6db75114964eb0046c0e5618"
+    },
+    {
+      "path": "results/did_design_check.json",
+      "sha256": "3e62ef5621c21af8c1cce2ec23c051f9df25f3d4f3acb6f06bb18713a69803f0"
+    },
+    {
+      "path": "results/estimation_results.json",
+      "sha256": "8c27af2214a37807950b7e467e8cbd1a19b6d69d6788d0ab60b8bf773d87c4b2"
+    },
+    {
+      "path": "results/figure_spec.json",
+      "sha256": "8685b4ba30fe6f248a134e094c2ef9c208a9d551946920ec7897c7e8bb73684f"
+    },
+    {
+      "path": "results/figures/fig_event_study.pdf",
+      "sha256": "20478fe580438550afad40826bdcff4a9ae81d65ee2c20f9071591f5c7f9f6dc"
+    },
+    {
+      "path": "results/figures/fig_ger_cohort_trends.pdf",
+      "sha256": "51af3fd397c55195f9d4d158a9098e3011a1a3b9b2545d6b4015dbcb641f6409"
+    },
+    {
+      "path": "results/figures/fig_ger_event_time.pdf",
+      "sha256": "1963ac33cdc62bf436114ad835027b3d5345954d2351dee727474a0daea5ee8d"
+    },
+    {
+      "path": "results/number_verification.json",
+      "sha256": "13e80d587ff4413d5a7e219849089df9ee4aa54101315ff0c588bdac1db55528"
+    },
+    {
+      "path": "results/summary_statistics.json",
+      "sha256": "47f6330c829091003f1af3d583056067a4215b7632fe8637c86a74417a2dc09d"
+    },
+    {
+      "path": "results/table_render_report.json",
+      "sha256": "7726e2f7c03ca22280bd0f18287939b60e437cf11ccf8f163eff8aa4c29965c5"
+    },
+    {
+      "path": "results/table_spec.json",
+      "sha256": "be3c83ce2c08c30c7aa8851f9057ace43685c26a38dcabcf88a82b13b4e9b9cf"
+    }
+  ],
+  "provenance": {
+    "files": 57,
+    "edges": {
+      "citation": 22,
+      "data": 1,
+      "estimation": 1,
+      "figure": 3,
+      "table_cell": 121
+    }
+  },
+  "verification": [
+    {
+      "check": "integrity",
+      "status": "PASS",
+      "detail": "57 files hash-verified against provenance.json; 121 table cell(s) traced in the derivation graph; 7 change(s) after export recorded as amendments (README.md, design/paper_plan.md, design/preregistration.md); 2 file(s) redacted by the researcher, personal contact details only (design/paper_plan.md, design/preregistration.md)"
+    },
+    {
+      "check": "numbers",
+      "status": "PASS",
+      "detail": "121 table cell(s) are source values at the precision shown; 21 coefficient(s) checked, 0 inconsistent; text (not gating): 91 of 91 number(s) are source values, 0 differ from the quantity named nearby, 0 untraced"
+    },
+    {
+      "check": "tables",
+      "status": "PASS",
+      "detail": "5 table(s) reproduce byte-identically from the sidecars"
+    },
+    {
+      "check": "spec",
+      "status": "PASS",
+      "detail": "estimation implements the declared identification"
+    },
+    {
+      "check": "method checks",
+      "status": "PASS",
+      "detail": "difference-in-differences: pre_periods=5, post_periods=6, pre_trends_p=0.9797, placebo=1, sensitivity=3, estimator=callaway_santanna"
+    },
+    {
+      "check": "citations",
+      "status": "PASS",
+      "detail": "22 cite key(s) resolve in refs.bib; snapshot: 18 verified, 4 unverifiable at run time"
+    },
+    {
+      "check": "results from code",
+      "status": "SKIP",
+      "detail": "not checked: the run predates output records"
+    },
+    {
+      "check": "preregistration",
+      "status": "PASS",
+      "detail": "estimation follows the pre-registered plan (frozen 2026-10-13); preregistration.md redacted by the researcher after registration: contact details only; every pre-registered hypothesis has a result (H1, H2, H3, H4, H5, H6)"
+    }
+  ],
+  "dependencies": {
+    "uses": [
+      "template:policy-evaluation",
+      "agent:literature_scanner",
+      "agent:identification_strategist",
+      "agent:idea_developer",
+      "agent:data_architect",
+      "agent:data_analyst",
+      "agent:econometrics_specialist",
+      "agent:abstract_writer",
+      "agent:paper_drafter",
+      "agent:writing_reviewer",
+      "agent:data_reviewer",
+      "agent:technical_reviewer",
+      "agent:methods_reviewer",
+      "agent:identification_reviewer",
+      "agent:replication_packager",
+      "skill:e2er/base/economist",
+      "skill:e2er/base/researcher",
+      "skill:e2er/causal-inference/identification-spec-schema",
+      "skill:e2er/causal-inference/judge-designs",
+      "skill:e2er/causal-inference/natural-experiments",
+      "skill:e2er/causal-inference/sensitivity",
+      "skill:e2er/data/cleaning",
+      "skill:e2er/data/data-tables",
+      "skill:e2er/data/eurostat",
+      "skill:e2er/data/exoplanets",
+      "skill:e2er/data/figure-spec",
+      "skill:e2er/data/fred",
+      "skill:e2er/data/gaia",
+      "skill:e2er/data/gisco",
+      "skill:e2er/data/github",
+      "skill:e2er/data/gmd",
+      "skill:e2er/data/gutenberg",
+      "skill:e2er/data/nasa_power",
+      "skill:e2er/data/naturalearth",
+      "skill:e2er/data/noaa",
+      "skill:e2er/data/owid",
+      "skill:e2er/data/query-data",
+      "skill:e2er/data/summary-statistics-schema",
+      "skill:e2er/data/table-spec",
+      "skill:e2er/data/usgs",
+      "skill:e2er/data/who_gho",
+      "skill:e2er/data/worldbank",
+      "skill:e2er/data/yfinance",
+      "skill:e2er/econometrics/did",
+      "skill:e2er/econometrics/did-practice",
+      "skill:e2er/econometrics/estimation-results-schema",
+      "skill:e2er/econometrics/event-study",
+      "skill:e2er/econometrics/iv-estimation",
+      "skill:e2er/econometrics/panel-data",
+      "skill:e2er/reasoning/anti-slop",
+      "skill:e2er/reasoning/creative-ideation",
+      "skill:e2er/reasoning/identification",
+      "skill:e2er/reasoning/novelty",
+      "skill:e2er/review/consistency-check",
+      "skill:e2er/review/data-quality",
+      "skill:e2er/review/methods-review",
+      "skill:e2er/review/technical-review",
+      "skill:e2er/review/writing-quality",
+      "skill:e2er/synthesis/context-builder",
+      "skill:e2er/synthesis/replication-package",
+      "skill:e2er/writing/abstract",
+      "skill:e2er/writing/cite-numbers-by-source",
+      "skill:e2er/writing/paper-structure",
+      "skill:e2er/writing/personal-style"
+    ],
+    "derived_from": []
+  },
+  "repository": {
+    "url": "https://github.com/bhanneke/e2er-demos",
+    "path": "school-fee-abolition-enrolment-africa",
+    "host": "github",
+    "left_out": []
+  },
+  "license": null,
+  "purpose": "demonstration",
+  "availability": {
+    "data": {
+      "access": "public",
+      "url": "https://github.com/bhanneke/e2er-demos"
+    },
+    "code": {
+      "access": "public",
+      "url": "https://github.com/bhanneke/e2er-demos"
+    }
+  },
+  "dossier": {
+    "id": "sha256:984a090d8f324fe1a4355c95643417adbbcf997b476841604c37aaff97d884f5",
+    "url": "https://e2er.org/d/984a090d8f324fe1",
+    "doc": {
+      "components": [
+        {
+          "id": "agent:abstract_writer",
+          "kind": "agent",
+          "name": "abstract_writer",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: src/core/specialists/registry.py at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "src/core/specialists/registry.py",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "agent:data_analyst",
+          "kind": "agent",
+          "name": "data_analyst",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: src/core/specialists/registry.py at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "src/core/specialists/registry.py",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "agent:data_architect",
+          "kind": "agent",
+          "name": "data_architect",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: src/core/specialists/registry.py at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "src/core/specialists/registry.py",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "agent:data_reviewer",
+          "kind": "agent",
+          "name": "data_reviewer",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: src/core/specialists/registry.py at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "src/core/specialists/registry.py",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "agent:econometrics_specialist",
+          "kind": "agent",
+          "name": "econometrics_specialist",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: src/core/specialists/registry.py at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "src/core/specialists/registry.py",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "agent:idea_developer",
+          "kind": "agent",
+          "name": "idea_developer",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: src/core/specialists/registry.py at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "src/core/specialists/registry.py",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "agent:identification_reviewer",
+          "kind": "agent",
+          "name": "identification_reviewer",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: src/core/specialists/registry.py at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "src/core/specialists/registry.py",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "agent:identification_strategist",
+          "kind": "agent",
+          "name": "identification_strategist",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: src/core/specialists/registry.py at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "src/core/specialists/registry.py",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "agent:literature_scanner",
+          "kind": "agent",
+          "name": "literature_scanner",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: src/core/specialists/registry.py at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "src/core/specialists/registry.py",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "agent:methods_reviewer",
+          "kind": "agent",
+          "name": "methods_reviewer",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: src/core/specialists/registry.py at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "src/core/specialists/registry.py",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "agent:paper_drafter",
+          "kind": "agent",
+          "name": "paper_drafter",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: src/core/specialists/registry.py at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "src/core/specialists/registry.py",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "agent:replication_packager",
+          "kind": "agent",
+          "name": "replication_packager",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: src/core/specialists/registry.py at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "src/core/specialists/registry.py",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "agent:technical_reviewer",
+          "kind": "agent",
+          "name": "technical_reviewer",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: src/core/specialists/registry.py at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "src/core/specialists/registry.py",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "agent:writing_reviewer",
+          "kind": "agent",
+          "name": "writing_reviewer",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: src/core/specialists/registry.py at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "src/core/specialists/registry.py",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "connector:claude-code",
+          "kind": "connector",
+          "name": "claude-code",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: src/modules/llm/claude_code.py at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "src/modules/llm/claude_code.py",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/base/economist",
+          "kind": "skill",
+          "name": "economist",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/base/economist.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/base/economist.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/base/researcher",
+          "kind": "skill",
+          "name": "researcher",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/base/researcher.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/base/researcher.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/causal-inference/identification-spec-schema",
+          "kind": "skill",
+          "name": "identification-spec-schema",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/causal-inference/identification-spec-schema.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/causal-inference/identification-spec-schema.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/causal-inference/judge-designs",
+          "kind": "skill",
+          "name": "judge-designs",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/causal-inference/judge-designs.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/causal-inference/judge-designs.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/causal-inference/natural-experiments",
+          "kind": "skill",
+          "name": "natural-experiments",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/causal-inference/natural-experiments.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/causal-inference/natural-experiments.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/causal-inference/sensitivity",
+          "kind": "skill",
+          "name": "sensitivity",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/causal-inference/sensitivity.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/causal-inference/sensitivity.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/cleaning",
+          "kind": "skill",
+          "name": "cleaning",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/cleaning.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/cleaning.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/data-tables",
+          "kind": "skill",
+          "name": "data-tables",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/data-tables.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/data-tables.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/eurostat",
+          "kind": "skill",
+          "name": "eurostat",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/eurostat.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/eurostat.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/exoplanets",
+          "kind": "skill",
+          "name": "exoplanets",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/exoplanets.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/exoplanets.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/figure-spec",
+          "kind": "skill",
+          "name": "figure-spec",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/figure-spec.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/figure-spec.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/fred",
+          "kind": "skill",
+          "name": "fred",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/fred.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/fred.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gaia",
+          "kind": "skill",
+          "name": "gaia",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/gaia.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/gaia.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gisco",
+          "kind": "skill",
+          "name": "gisco",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/gisco.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/gisco.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/github",
+          "kind": "skill",
+          "name": "github",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/github.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/github.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gmd",
+          "kind": "skill",
+          "name": "gmd",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/gmd.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/gmd.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/gutenberg",
+          "kind": "skill",
+          "name": "gutenberg",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/gutenberg.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/gutenberg.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/nasa_power",
+          "kind": "skill",
+          "name": "nasa_power",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/nasa_power.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/nasa_power.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/naturalearth",
+          "kind": "skill",
+          "name": "naturalearth",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/naturalearth.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/naturalearth.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/noaa",
+          "kind": "skill",
+          "name": "noaa",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/noaa.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/noaa.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/owid",
+          "kind": "skill",
+          "name": "owid",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/owid.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/owid.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/query-data",
+          "kind": "skill",
+          "name": "query-data",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/query-data.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/query-data.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/summary-statistics-schema",
+          "kind": "skill",
+          "name": "summary-statistics-schema",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/summary-statistics-schema.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/summary-statistics-schema.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/table-spec",
+          "kind": "skill",
+          "name": "table-spec",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/table-spec.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/table-spec.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/usgs",
+          "kind": "skill",
+          "name": "usgs",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/usgs.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/usgs.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/who_gho",
+          "kind": "skill",
+          "name": "who_gho",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/who_gho.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/who_gho.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/worldbank",
+          "kind": "skill",
+          "name": "worldbank",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/worldbank.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/worldbank.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/data/yfinance",
+          "kind": "skill",
+          "name": "yfinance",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/data/yfinance.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/data/yfinance.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/econometrics/did",
+          "kind": "skill",
+          "name": "did",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/econometrics/did.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/econometrics/did.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/econometrics/did-practice",
+          "kind": "skill",
+          "name": "did-practice",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/econometrics/did-practice.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/econometrics/did-practice.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/econometrics/estimation-results-schema",
+          "kind": "skill",
+          "name": "estimation-results-schema",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/econometrics/estimation-results-schema.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/econometrics/estimation-results-schema.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/econometrics/event-study",
+          "kind": "skill",
+          "name": "event-study",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/econometrics/event-study.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/econometrics/event-study.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/econometrics/iv-estimation",
+          "kind": "skill",
+          "name": "iv-estimation",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/econometrics/iv-estimation.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/econometrics/iv-estimation.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/econometrics/panel-data",
+          "kind": "skill",
+          "name": "panel-data",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/econometrics/panel-data.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/econometrics/panel-data.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/anti-slop",
+          "kind": "skill",
+          "name": "anti-slop",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/reasoning/anti-slop.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/reasoning/anti-slop.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/creative-ideation",
+          "kind": "skill",
+          "name": "creative-ideation",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/reasoning/creative-ideation.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/reasoning/creative-ideation.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/identification",
+          "kind": "skill",
+          "name": "identification",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/reasoning/identification.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/reasoning/identification.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/reasoning/novelty",
+          "kind": "skill",
+          "name": "novelty",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/reasoning/novelty.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/reasoning/novelty.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/review/consistency-check",
+          "kind": "skill",
+          "name": "consistency-check",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/review/consistency-check.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/review/consistency-check.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/review/data-quality",
+          "kind": "skill",
+          "name": "data-quality",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/review/data-quality.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/review/data-quality.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/review/methods-review",
+          "kind": "skill",
+          "name": "methods-review",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/review/methods-review.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/review/methods-review.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/review/technical-review",
+          "kind": "skill",
+          "name": "technical-review",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/review/technical-review.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/review/technical-review.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/review/writing-quality",
+          "kind": "skill",
+          "name": "writing-quality",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/review/writing-quality.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/review/writing-quality.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/synthesis/context-builder",
+          "kind": "skill",
+          "name": "context-builder",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/synthesis/context-builder.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/synthesis/context-builder.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/synthesis/replication-package",
+          "kind": "skill",
+          "name": "replication-package",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/synthesis/replication-package.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/synthesis/replication-package.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/abstract",
+          "kind": "skill",
+          "name": "abstract",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/writing/abstract.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/writing/abstract.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/cite-numbers-by-source",
+          "kind": "skill",
+          "name": "cite-numbers-by-source",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/writing/cite-numbers-by-source.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/writing/cite-numbers-by-source.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/paper-structure",
+          "kind": "skill",
+          "name": "paper-structure",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/writing/paper-structure.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/writing/paper-structure.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "skill:e2er/writing/personal-style",
+          "kind": "skill",
+          "name": "personal-style",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: skills/files/writing/personal-style.md at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "skills/files/writing/personal-style.md",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        },
+        {
+          "id": "template:policy-evaluation",
+          "kind": "template",
+          "name": "policy-evaluation",
+          "pin": {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "note": "unresolved: pipelines/policy-evaluation.toml at b5087e8701ca is not in the E2ER checkout this dossier was built from",
+            "path": "pipelines/policy-evaluation.toml",
+            "repository": "https://github.com/bhanneke/E2ER-project"
+          }
+        }
+      ],
+      "credit": {
+        "entries": [
+          {
+            "accessed": "2026-10-11",
+            "cite_key": "callaway2021difference",
+            "creator": "Brantly Callaway and Pedro H. C. Sant'Anna",
+            "kind": "article",
+            "published": "2021-12",
+            "publisher": "Journal of Econometrics 225(2), 200-230",
+            "relation": "cites",
+            "role": "method",
+            "title": "Difference-in-Differences with multiple time periods",
+            "url": "https://doi.org/10.1016/j.jeconom.2020.12.001"
+          },
+          {
+            "accessed": "2026-10-11",
+            "cite_key": "goodmanbacon2021difference",
+            "creator": "Andrew Goodman-Bacon",
+            "kind": "article",
+            "published": "2021-12",
+            "publisher": "Journal of Econometrics 225(2), 254-277",
+            "relation": "cites",
+            "role": "method",
+            "title": "Difference-in-differences with variation in treatment timing",
+            "url": "https://doi.org/10.1016/j.jeconom.2021.03.014"
+          },
+          {
+            "accessed": "2026-10-11",
+            "cite_key": "sun2021estimating",
+            "creator": "Liyang Sun and Sarah Abraham",
+            "kind": "article",
+            "published": "2021-12",
+            "publisher": "Journal of Econometrics 225(2), 175-199",
+            "relation": "cites",
+            "role": "method",
+            "title": "Estimating dynamic treatment effects in event studies with heterogeneous treatment effects",
+            "url": "https://doi.org/10.1016/j.jeconom.2020.09.006"
+          },
+          {
+            "accessed": "2026-10-11",
+            "cite_key": "dechaisemartin2020twoway",
+            "creator": "Clément de Chaisemartin and Xavier D'Haultfœuille",
+            "kind": "article",
+            "published": "2020-09-01",
+            "publisher": "American Economic Review 110(9), 2964-2996",
+            "relation": "cites",
+            "role": "method",
+            "title": "Two-Way Fixed Effects Estimators with Heterogeneous Treatment Effects",
+            "url": "https://doi.org/10.1257/aer.20181169"
+          },
+          {
+            "accessed": "2026-10-11",
+            "cite_key": "borusyak2024revisiting",
+            "creator": "Kirill Borusyak, Xavier Jaravel and Jann Spiess",
+            "kind": "article",
+            "published": "2024-11-08",
+            "publisher": "Review of Economic Studies 91(6), 3253-3285",
+            "relation": "cites",
+            "role": "method",
+            "title": "Revisiting Event-Study Designs: Robust and Efficient Estimation",
+            "url": "https://doi.org/10.1093/restud/rdae007"
+          },
+          {
+            "accessed": "2026-10-11",
+            "cite_key": "roth2023trending",
+            "creator": "Jonathan Roth, Pedro H. C. Sant'Anna, Alyssa Bilinski and John Poe",
+            "kind": "article",
+            "published": "2023-08",
+            "publisher": "Journal of Econometrics 235(2), 2218-2244",
+            "relation": "cites",
+            "role": "method",
+            "title": "What's trending in difference-in-differences? A synthesis of the recent econometrics literature",
+            "url": "https://doi.org/10.1016/j.jeconom.2023.03.008"
+          },
+          {
+            "accessed": "2026-10-11",
+            "cite_key": "roth2022pretest",
+            "creator": "Jonathan Roth",
+            "kind": "article",
+            "published": "2022-09-01",
+            "publisher": "American Economic Review: Insights 4(3), 305-322",
+            "relation": "cites",
+            "role": "method",
+            "title": "Pretest with Caution: Event-Study Estimates after Testing for Parallel Trends",
+            "url": "https://doi.org/10.1257/aeri.20210236"
+          },
+          {
+            "accessed": "2026-10-11",
+            "cite_key": "rambachan2023credible",
+            "creator": "Ashesh Rambachan and Jonathan Roth",
+            "kind": "article",
+            "published": "2023-09-05",
+            "publisher": "Review of Economic Studies 90(5), 2555-2591",
+            "relation": "cites",
+            "role": "method",
+            "title": "A More Credible Approach to Parallel Trends",
+            "url": "https://doi.org/10.1093/restud/rdad018"
+          }
+        ],
+        "template": "policy-evaluation"
+      },
+      "data": [
+        {
+          "path": "data/data.db",
+          "sha256": "139c8457b11c5478f41392b30bebfae5451c7b6a572f64382a1a6d4a64ac6206"
+        },
+        {
+          "path": "data/data_dictionary.json",
+          "sha256": "65b8d7453a467bb8d175bc0195b674b0eef0adb9500356631dac514023bcbf91"
+        },
+        {
+          "path": "data/data_sources.json",
+          "sha256": "e55909d9b656c151e67570f1b61ddb912377a0ef5704c38de3c428cc49c0add5"
+        },
+        {
+          "path": "data/data_summary.md",
+          "sha256": "a9b41e10f0f0c5e116d4a613761a5b33587e1e92984529ed521fc6827fd4aae8"
+        }
+      ],
+      "data_sources": [
+        {
+          "citation": "The World Bank: World Development Indicators: Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API. Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2026-03-19, date published: 2026-02; Stat Bulk Data Download Service, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://uis.unesco.org/bdds, publisher: UNESCO Institute for Statistics (UIS). World Bank Open Data, https://data.worldbank.org (last updated 2026-10-08). Licence: CC BY 4.0.",
+          "citation_by": "source",
+          "cite_key": "WorldBank_OpenData",
+          "connector": "worldbank",
+          "dataset": "World Bank Open Data (Indicators API v2), The World Bank",
+          "files": [
+            {
+              "sha256": "e24fe5397b188023510c36906e388f566eaa7d758c536715aebd5cf54609923c",
+              "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.ENRR?format=json&per_page=20000&source=2&date=1980%3A2018&page=1"
+            },
+            {
+              "sha256": "91b4a629d2a32d95e030207b47f43fabe40a4aa58eb98b8bfaac6439dd1c89cd",
+              "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.ENRR.MA?format=json&per_page=20000&source=2&date=1980%3A2018&page=1"
+            },
+            {
+              "sha256": "734218cf18ef71d1a4ca864d702b20a5f0d74913c4ca32bc606eb1cab7d698e1",
+              "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.ENRR.FE?format=json&per_page=20000&source=2&date=1980%3A2018&page=1"
+            },
+            {
+              "sha256": "9716cd93942493da18471d582a485469d253ff3a21c6db85b1b6a4562c40d06b",
+              "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.NENR?format=json&per_page=20000&source=2&date=1980%3A2018&page=1"
+            },
+            {
+              "sha256": "34c1824e437249e721e21c6dda55eb053a9aaa1941429fab6adeb308f1fa1429",
+              "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SE.PRM.CMPT.ZS?format=json&per_page=20000&source=2&date=1980%3A2018&page=1"
+            }
+          ],
+          "licence": "CC BY 4.0 with the World Bank's additional terms (https://www.worldbank.org/ext/en/legal/terms-conditions/datasets): \"Unless specifically labeled otherwise, these Datasets are provided to you under a Creative Commons Attribution 4.0 International License (CC BY 4.0)\". \"You agree to provide attribution to The World Bank and its data providers in the following format: The World Bank: Dataset name: Data source (if known).\" \"Some datasets and indicators are provided by third parties, and may not be redistributed or reused without the consent of the original data provider, or may be subject to terms and conditions that are different from those described above. Where applicable, these conditions are included in the dataset or indicator metadata.\"",
+          "link": "https://data.worldbank.org/indicator/SE.PRM.ENRR",
+          "retrieved_at": "2026-10-13T21:27:07Z",
+          "saved_to": "data/wdi_primary_enrolment.csv",
+          "series": "World Bank SE.PRM.ENRR, SE.PRM.ENRR.MA, SE.PRM.ENRR.FE, SE.PRM.NENR, SE.PRM.CMPT.ZS for AGO, BEN, BWA, BFA, BDI, CPV, CMR, CAF, TCD, COM, COD, COG, CIV, DJI, GNQ, ERI, SWZ, ETH, GAB, GMB, GHA, GIN, GNB, KEN, LSO, LBR, MDG, MWI, MLI, MRT, MUS, MOZ, NAM, NER, NGA, RWA, STP, SEN, SYC, SLE, SOM, ZAF, SSD, SDN, TZA, TGO, UGA, ZMB, ZWE, 1980–2018",
+          "table": "wdi_primary_enrolment",
+          "terms": "https://www.worldbank.org/ext/en/legal/terms-conditions/datasets",
+          "terms_summary": "CC BY 4.0 unless an indicator is labelled otherwise; attribute as \"The World Bank: Dataset name: Data source\". Some third-party indicators carry other terms, stated in their metadata (each load records them).",
+          "version": "2026-10-08"
+        },
+        {
+          "citation": "The World Bank: World Development Indicators: Country official statistics, National Statistical Organizations and/or Central Banks; National Accounts data files, Organisation for Economic Co-operation and Development (OECD); Staff estimates, World Bank (WB); UN Inter-agency Group for Child Mortality Estimation, UN Children's Fund (UNICEF), uri: www.childmortality.org, publisher: UNICEF, WHO, World Bank, United Nations Population Division; World Health Organization (WHO), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation; World Bank (WB), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation; United Nations (UN), uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation, publisher: UN Population Division; World Population Prospects, United Nations (UN), uri: https://population.un.org/wpp/, publisher: UN Population Division; Statistical databases and publications from national statistical offices, National Statistical Offices (NSOs), uri: https://unstats.un.org/home/nso_sites/, publisher: National Statistical Offices; Eurostat: Demographic Statistics, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/data/database?node_code=earn_ses_monthly, publisher: Eurostat; Population and Vital Statistics Report (various years), United Nations (UN), uri: https://unstats.un.org, publisher: UN Statistics Division; World Urbanization Prospects, United Nations (UN), uri: https://population.un.org/wup/, note: United Nations Population Division's World Urbanization Prospects, National definitions, publisher: UN Population Division. World Bank Open Data, https://data.worldbank.org (last updated 2026-10-08). Licence: CC BY 4.0.",
+          "citation_by": "source",
+          "cite_key": "WorldBank_OpenData",
+          "connector": "worldbank",
+          "dataset": "World Bank Open Data (Indicators API v2), The World Bank",
+          "files": [
+            {
+              "sha256": "c884fd4f8d75295d172bc9e85ac0efb7d38c9830d47bc5c4ea751ba708063dac",
+              "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SP.POP.TOTL?format=json&per_page=20000&source=2&date=1980%3A2018&page=1"
+            },
+            {
+              "sha256": "9d8c684e02b69d618518dcd781346419413939c22077ab6bc07e13c17237c87a",
+              "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/NY.GDP.PCAP.KD?format=json&per_page=20000&source=2&date=1980%3A2018&page=1"
+            },
+            {
+              "sha256": "b5c5250f475c88b307dfbd4ad99d5ec7146dff96a8e5843a3254e7e7487f7dbb",
+              "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SP.URB.TOTL.IN.ZS?format=json&per_page=20000&source=2&date=1980%3A2018&page=1"
+            },
+            {
+              "sha256": "f36a92e16f5394c06d45eabd37b599206847d75276ddc22b492da2a862d90542",
+              "url": "https://api.worldbank.org/v2/country/AGO;BEN;BWA;BFA;BDI;CPV;CMR;CAF;TCD;COM;COD;COG;CIV;DJI;GNQ;ERI;SWZ;ETH;GAB;GMB;GHA;GIN;GNB;KEN;LSO;LBR;MDG;MWI;MLI;MRT;MUS;MOZ;NAM;NER;NGA;RWA;STP;SEN;SYC;SLE;SOM;ZAF;SSD;SDN;TZA;TGO;UGA;ZMB;ZWE/indicator/SH.DYN.MORT?format=json&per_page=20000&source=2&date=1980%3A2018&page=1"
+            }
+          ],
+          "licence": "CC BY 4.0 with the World Bank's additional terms (https://www.worldbank.org/ext/en/legal/terms-conditions/datasets): \"Unless specifically labeled otherwise, these Datasets are provided to you under a Creative Commons Attribution 4.0 International License (CC BY 4.0)\". \"You agree to provide attribution to The World Bank and its data providers in the following format: The World Bank: Dataset name: Data source (if known).\" \"Some datasets and indicators are provided by third parties, and may not be redistributed or reused without the consent of the original data provider, or may be subject to terms and conditions that are different from those described above. Where applicable, these conditions are included in the dataset or indicator metadata.\"",
+          "link": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+          "retrieved_at": "2026-10-13T21:27:31Z",
+          "saved_to": "data/wdi_controls.csv",
+          "series": "World Bank SP.POP.TOTL, NY.GDP.PCAP.KD, SP.URB.TOTL.IN.ZS, SH.DYN.MORT for AGO, BEN, BWA, BFA, BDI, CPV, CMR, CAF, TCD, COM, COD, COG, CIV, DJI, GNQ, ERI, SWZ, ETH, GAB, GMB, GHA, GIN, GNB, KEN, LSO, LBR, MDG, MWI, MLI, MRT, MUS, MOZ, NAM, NER, NGA, RWA, STP, SEN, SYC, SLE, SOM, ZAF, SSD, SDN, TZA, TGO, UGA, ZMB, ZWE, 1980–2018",
+          "table": "wdi_controls",
+          "terms": "https://www.worldbank.org/ext/en/legal/terms-conditions/datasets",
+          "terms_summary": "CC BY 4.0 unless an indicator is labelled otherwise; attribute as \"The World Bank: Dataset name: Data source\". Some third-party indicators carry other terms, stated in their metadata (each load records them).",
+          "version": "2026-10-08"
+        }
+      ],
+      "e2er": {
+        "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+        "exported_with": "0.17.0",
+        "repository": "https://github.com/bhanneke/E2ER-project",
+        "segments": [
+          {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "from": "2026-10-13T21:22:00Z",
+            "skills": "recorded at dispatch",
+            "steps": 10,
+            "template": "policy-evaluation",
+            "uncommitted_changes": false,
+            "version": "0.16.0"
+          },
+          {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "from": "2026-10-13T21:31:13Z",
+            "skills": "recorded at dispatch",
+            "steps": 5,
+            "template": "policy-evaluation",
+            "uncommitted_changes": false,
+            "version": "0.16.0"
+          },
+          {
+            "commit": "b5087e8701ca1d8dbd2bae897c9f0efbda4c6864",
+            "from": "2026-10-13T21:33:45Z",
+            "skills": "recorded at dispatch",
+            "steps": 17,
+            "template": "policy-evaluation",
+            "uncommitted_changes": false,
+            "version": "0.16.0"
+          }
+        ],
+        "uncommitted_changes": false,
+        "version": "0.16.0"
+      },
+      "preregistration": {
+        "file": "design/preregistration.md",
+        "frozen_at": "2026-10-13T21:33:45Z",
+        "plan_files": {
+          "did_design.json": "736ba789a2127148a5b3f28c2cb101e45b8ff03aabc1ec18b0f6d4c094f9aadd",
+          "identification_spec.json": "8c9eee65856dc0b9b73f1aa411c1fc4f549e5701f24513c662ecb2abfdc7323e"
+        },
+        "sha256": "0739668ec62727170804ff8b2040f14b3f730316073cb8e7e3c697fa8ad9ed5c"
+      },
+      "references": [
+        {
+          "doi": "10.1111/rode.12725",
+          "key": "kan2020evaluating",
+          "source": "web",
+          "title": "Evaluating universal primary education in Uganda: School fee abolition and educational outcomes",
+          "year": "2020"
+        },
+        {
+          "key": "oketch2010free",
+          "source": "web",
+          "title": "Free Primary Education and After in Kenya: Enrolment Impact, Quality Effects, and the Transition to Secondary School",
+          "year": "2010"
+        },
+        {
+          "doi": "10.1086/731496",
+          "key": "gruijters2024secondary",
+          "source": "web",
+          "title": "Secondary School Fee Abolition in Sub-Saharan Africa: Taking Stock of the Evidence",
+          "year": "2024"
+        },
+        {
+          "doi": "10.1016/j.jeconom.2020.12.001",
+          "key": "callaway2021difference",
+          "source": "template",
+          "title": "Difference-in-Differences with multiple time periods",
+          "year": "2021"
+        },
+        {
+          "doi": "10.1016/j.jeconom.2020.09.006",
+          "key": "sun2021estimating",
+          "source": "template",
+          "title": "Estimating dynamic treatment effects in event studies with heterogeneous treatment effects",
+          "year": "2021"
+        },
+        {
+          "doi": "10.1093/restud/rdae007",
+          "key": "borusyak2024revisiting",
+          "source": "template",
+          "title": "Revisiting Event-Study Designs: Robust and Efficient Estimation",
+          "year": "2024"
+        },
+        {
+          "doi": "10.1093/restud/rdad018",
+          "key": "rambachan2023credible",
+          "source": "template",
+          "title": "A More Credible Approach to Parallel Trends",
+          "year": "2023"
+        },
+        {
+          "key": "lindsjo2017everybody",
+          "source": "web",
+          "title": "\"Everybody knows every child should be educated\": The Strive Towards Universal Primary Education in Tanzania",
+          "year": "2017"
+        },
+        {
+          "doi": "10.20448/journal.522.2017.31.53.63",
+          "key": "pajibo2017influence",
+          "source": "web",
+          "title": "Influence and Challenges of the Capitation Grant on Education Delivery in Basic Schools in Ghana",
+          "year": "2017"
+        },
+        {
+          "doi": "10.56645/jmde.v10i23.384",
+          "key": "morgan2014eliminating",
+          "source": "web",
+          "title": "Eliminating School Fees in Low-Income Countries: A Systematic Review",
+          "year": "2014"
+        },
+        {
+          "doi": "10.17605/osf.io/cahvn",
+          "key": "fermah2026school",
+          "source": "web",
+          "title": "School Fee Abolition and Educational Access in Sub-Saharan Africa: A Systematic Review and Meta-Analysis of Enrollment Effects",
+          "year": "2026"
+        },
+        {
+          "doi": "10.17605/osf.io/brcpd",
+          "key": "fermah2026effect",
+          "source": "web",
+          "title": "Effect of Free Primary Education and Capitation Grant Policies on School Enrollment in Sub-Saharan Africa: A Meta-Analysis",
+          "year": "2026"
+        },
+        {
+          "key": "wallstrom2017is",
+          "source": "web",
+          "title": "Is Private Education Worth it? Evidence from the Free Primary Education Reform in Kenya",
+          "year": "2017"
+        },
+        {
+          "doi": "10.15027/34290",
+          "key": "nakabugo2008universal",
+          "source": "web",
+          "title": "Universal Primary Education for Equal Growth? The Paradox of Large Classes in Uganda",
+          "year": "2008"
+        },
+        {
+          "doi": "10.32204/jids.16.1_69",
+          "key": "nishimura2007internal",
+          "source": "web",
+          "title": "Internal efficiency under the universal primary education policy in rural Uganda",
+          "year": "2007"
+        },
+        {
+          "doi": "10.2139/ssrn.2655157",
+          "key": "valente2015primary",
+          "source": "web",
+          "title": "Primary Education Expansion and Quality of Schooling: Evidence from Tanzania",
+          "year": "2015"
+        },
+        {
+          "doi": "10.1057/9780230339361_12",
+          "key": "nishimura2011the",
+          "source": "web",
+          "title": "The Challenges of Universal Primary Education Policy in Sub-Saharan Africa",
+          "year": "2011"
+        },
+        {
+          "doi": "10.1016/j.jeconom.2021.03.014",
+          "key": "goodmanbacon2021difference",
+          "source": "template",
+          "title": "Difference-in-differences with variation in treatment timing",
+          "year": "2021"
+        },
+        {
+          "doi": "10.1257/aer.20181169",
+          "key": "dechaisemartin2020twoway",
+          "source": "template",
+          "title": "Two-Way Fixed Effects Estimators with Heterogeneous Treatment Effects",
+          "year": "2020"
+        },
+        {
+          "doi": "10.1257/aeri.20210236",
+          "key": "roth2022pretest",
+          "source": "template",
+          "title": "Pretest with Caution: Event-Study Estimates after Testing for Parallel Trends",
+          "year": "2022"
+        },
+        {
+          "doi": "10.1016/j.jeconom.2023.03.008",
+          "key": "roth2023trending",
+          "source": "template",
+          "title": "What's trending in difference-in-differences? A synthesis of the recent econometrics literature",
+          "year": "2023"
+        },
+        {
+          "key": "WorldBank_OpenData",
+          "source": "web",
+          "title": "World Bank Open Data"
+        }
+      ],
+      "run": {
+        "backend": "claude_code",
+        "events": [
+          {
+            "at": "2026-10-13T21:22:00Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "sonnet",
+            "segment": 0
+          },
+          {
+            "at": "2026-10-13T21:22:00Z",
+            "event": "method_sources",
+            "keys": [
+              "callaway2021difference",
+              "goodmanbacon2021difference",
+              "sun2021estimating",
+              "dechaisemartin2020twoway",
+              "borusyak2024revisiting",
+              "roth2023trending",
+              "roth2022pretest",
+              "rambachan2023credible"
+            ],
+            "segment": 0
+          },
+          {
+            "at": "2026-10-13T21:29:12Z",
+            "event": "awaiting_review",
+            "segment": 0,
+            "stage": "preregister",
+            "step": "preregister"
+          },
+          {
+            "at": "2026-10-13T21:31:13Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "sonnet",
+            "segment": 1
+          },
+          {
+            "at": "2026-10-13T21:33:08Z",
+            "event": "awaiting_review",
+            "segment": 1,
+            "stage": "preregister",
+            "step": "preregister"
+          },
+          {
+            "at": "2026-10-13T21:33:45Z",
+            "backend": "claude_code",
+            "cli": "claude",
+            "cli_version": "2.1.296 (Claude Code)",
+            "event": "backend_identity",
+            "model": "sonnet",
+            "segment": 2
+          },
+          {
+            "at": "2026-10-13T21:33:45Z",
+            "event": "preregistration_frozen",
+            "file": "preregistration.md",
+            "frozen_at": "2026-10-13T21:33:45Z",
+            "hypotheses": [
+              {
+                "id": "H1",
+                "statement": "main Abolition raises GER; effect is positive on impact (year 0–1) and persistent for ≥5 years."
+              },
+              {
+                "id": "H2",
+                "statement": "over-age The GER effect exceeds the NER effect (ΔGER − ΔNER > 0), i.e., part of the surge is over-age enrolment."
+              },
+              {
+                "id": "H3",
+                "statement": "initial level Effects are larger where pre-reform GER was low (more room to grow, more fee-constrained households). Expect negative interaction with baseline GER."
+              },
+              {
+                "id": "H4",
+                "statement": "gender Girls' GER rises by more than boys' (higher price sensitivity of girls' schooling), shrinking the gender gap."
+              },
+              {
+                "id": "H5",
+                "statement": "capitation grants Effects are larger and more persistent where abolition was accompanied by a per-pupil capitation grant that replaced fee revenue; without compensation, schools reintroduced informal charges and the effect fades."
+              },
+              {
+                "id": "H6",
+                "statement": "quality dilution Pupil–teacher ratios rise and primary completion / survival rises by less than enrolment (mechanism check, not main outcome)."
+              }
+            ],
+            "plan_files": {
+              "did_design.json": "736ba789a2127148a5b3f28c2cb101e45b8ff03aabc1ec18b0f6d4c094f9aadd",
+              "identification_spec.json": "8c9eee65856dc0b9b73f1aa411c1fc4f549e5701f24513c662ecb2abfdc7323e"
+            },
+            "segment": 2,
+            "sha256": "0739668ec62727170804ff8b2040f14b3f730316073cb8e7e3c697fa8ad9ed5c",
+            "step": "preregister"
+          }
+        ],
+        "exported": "20261015",
+        "governance": "full",
+        "internal_review": {
+          "combined": "weighted average",
+          "reviewers": {
+            "data_reviewer": 5,
+            "identification_reviewer": 4,
+            "methods_reviewer": 5,
+            "technical_reviewer": 5,
+            "writing_reviewer": 6
+          },
+          "rounds": 1,
+          "scale": 10,
+          "score": 4.86,
+          "weights": {
+            "data_reviewer": 1.25,
+            "identification_reviewer": 1.5,
+            "methods_reviewer": 1,
+            "technical_reviewer": 1,
+            "writing_reviewer": 0.75
+          }
+        },
+        "mode": "single_pass",
+        "models": [
+          {
+            "backend": "claude_code",
+            "model": "sonnet"
+          }
+        ],
+        "outcome": {
+          "at": "2026-10-13T21:46:03Z",
+          "status": "completed"
+        },
+        "template": "policy-evaluation"
+      },
+      "schema": "e2er-dossier/0.6",
+      "study": {
+        "title": "Did abolishing primary-school fees in sub-Saharan African countries (staggere..."
+      },
+      "workflow": [
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:24:28Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/literature_review.md",
+            "sha256": "3aa9ed5a086b657065831100638d9d646e80b4d37e5fa22031aeeb399c69d9b1"
+          },
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "literature_scanner",
+          "started": "2026-10-13T21:22:22Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:24:47Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/identification_strategy.md",
+            "sha256": "1c96818e5a57e7f00571fed5f885366531fa12b46d46bbd6db9a32aa9e99c21e"
+          },
+          "outputs": [
+            {
+              "file": "design/identification_strategy.md",
+              "sha256": "1c96818e5a57e7f00571fed5f885366531fa12b46d46bbd6db9a32aa9e99c21e"
+            },
+            {
+              "file": "design/identification_spec.json",
+              "sha256": "8c9eee65856dc0b9b73f1aa411c1fc4f549e5701f24513c662ecb2abfdc7323e"
+            },
+            {
+              "file": "design/did_design.json",
+              "sha256": "2e2d4664b46533c41ee143f8297527c4516c069b117a126571c71d4bcd6749b4"
+            }
+          ],
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "identification_strategist",
+          "started": "2026-10-13T21:22:22Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:25:16Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/paper_plan.md",
+            "sha256": "d69883c08399faab3841dab6a15eb20d0d764c70cf81b6724a796f51c5011463"
+          },
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "idea_developer",
+          "started": "2026-10-13T21:22:22Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:26:20Z",
+          "model": "sonnet",
+          "output": {
+            "file": "data/data_dictionary.json",
+            "sha256": "73111405e0b5449c874b6fd3d25cc5d2d5e7217b594a2b8c0aad74d00d1caf8d"
+          },
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "data_architect",
+          "started": "2026-10-13T21:25:16Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:28:24Z",
+          "model": "sonnet",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "8d75bf0060fbee2008e8b143bf2702d951e8ed7e36bcb52f4e968c3e6c472edd"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "8d75bf0060fbee2008e8b143bf2702d951e8ed7e36bcb52f4e968c3e6c472edd"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "2ce5d065ec5228d2c87ffe0b2d60bd9acdd2deb4f519fa2bdc0da7ab6c8ff03f"
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "eab020598de1f9c35b353d5f744086258a4086e81839659460567cd57b1c1613"
+            }
+          ],
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "data_analyst",
+          "started": "2026-10-13T21:26:20Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:28:24Z",
+          "check": "did_design",
+          "detail": "(a) no unit is treated inside the panel: there is nothing to evaluate; units in the treatment table without outcome data: DJI",
+          "enforced": true,
+          "passed": false,
+          "phase": "initial",
+          "segment": 0,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:29:12Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/identification_strategy.md",
+            "sha256": "69ef38ce1e30a862aa02ad1837c60a5479597a86f00e3e0ea6f4f71b2879cdc4"
+          },
+          "outputs": [
+            {
+              "file": "design/identification_strategy.md",
+              "sha256": "69ef38ce1e30a862aa02ad1837c60a5479597a86f00e3e0ea6f4f71b2879cdc4"
+            },
+            {
+              "file": "design/identification_spec.json",
+              "sha256": "8c9eee65856dc0b9b73f1aa411c1fc4f549e5701f24513c662ecb2abfdc7323e",
+              "unchanged": true
+            },
+            {
+              "file": "design/did_design.json",
+              "sha256": "198811ea481f72d037c4a551a5519a962e35793bed114f04c238717c7db6cfc6"
+            }
+          ],
+          "phase": "initial",
+          "segment": 0,
+          "specialist": "identification_strategist",
+          "started": "2026-10-13T21:28:24Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:29:12Z",
+          "check": "did_design",
+          "enforced": true,
+          "passed": true,
+          "phase": "initial",
+          "segment": 0,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T21:29:12Z",
+          "check": "preregistration",
+          "enforced": true,
+          "passed": true,
+          "phase": "initial",
+          "segment": 0,
+          "type": "check"
+        },
+        {
+          "action": "send_back",
+          "at": "2026-10-13T21:31:13Z",
+          "phase": "initial",
+          "remark": "The researcher checked the abolition years against published abstracts (OpenAlex, 2026-10-13). Fill fee_abolition_dates.first_year for these eight countries, set verification_status to 'published source', and record the source in a new column source_doi (or the reference where no DOI exists): MWI 1994 (Chimombo 2009, Compare, doi 10.1080/03050060902921003: 'Since the introduction of Free Primary Education in 1994/95'); UGA 1997 (Kan and Klasen 2020, Review of Development Economics, doi 10.1111/rode.12725: 'After the abolishment of school fees in 1997'); TZA 2002 (Lindsjo 2017, International Journal of Educational Development: 'In 2001, the first Primary Education Development Plan declared that the ... fee was to be abolished'; coded at the first fee-free school year, January 2002, with alt_year 2001); KEN 2003 (Oketch and Somerset 2010, CREATE Pathways to Access 37: 'the 2003 Free Primary Education programme'); GHA 2005 (Pajibo and Tamanja 2017, doi 10.20448/journal.522.2017.31.53.63: 'the Capitation Grant Scheme in 2005'); LSO 2000, phased from grade 1 (doi 10.1080/09751122.2013.11890101: 'progressively introduced Free Primary Education in 2000'); RWA 2003 (doi 10.1155/2012/396019: 'In 2003, Rwanda introduced free education'); ZMB 2002 ('Universal Free Primary Education Policy implemented in 2002', a 2020 concept paper without DOI; confidence low). All other countries keep first_year empty: they are comparison units not known to have abolished fees, not verified never-abolishers. End the analysis panel wb_primary_enrolment in 2010 (the last cohort plus five years) so that later abolitions do not enter the comparison group, and record that rule in data_summary.md.",
+          "segment": 0,
+          "step": "preregister",
+          "target": "data_analyst",
+          "type": "researcher"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:32:37Z",
+          "model": "sonnet",
+          "output": {
+            "file": "data/data_summary.md",
+            "sha256": "a9b41e10f0f0c5e116d4a613761a5b33587e1e92984529ed521fc6827fd4aae8"
+          },
+          "outputs": [
+            {
+              "file": "data/data_summary.md",
+              "sha256": "a9b41e10f0f0c5e116d4a613761a5b33587e1e92984529ed521fc6827fd4aae8"
+            },
+            {
+              "file": "results/summary_statistics.json",
+              "sha256": "47f6330c829091003f1af3d583056067a4215b7632fe8637c86a74417a2dc09d"
+            },
+            {
+              "file": "results/figure_spec.json",
+              "sha256": "bdb6cf710a2f4dfe0be63fb82f5ca056ee7487915f03baa13c7d4069054a079a"
+            }
+          ],
+          "phase": "initial",
+          "segment": 1,
+          "sent_back": {
+            "at": "2026-10-13T21:31:13Z",
+            "remark": "The researcher checked the abolition years against published abstracts (OpenAlex, 2026-10-13). Fill fee_abolition_dates.first_year for these eight countries, set verification_status to 'published source', and record the source in a new column source_doi (or the reference where no DOI exists): MWI 1994 (Chimombo 2009, Compare, doi 10.1080/03050060902921003: 'Since the introduction of Free Primary Education in 1994/95'); UGA 1997 (Kan and Klasen 2020, Review of Development Economics, doi 10.1111/rode.12725: 'After the abolishment of school fees in 1997'); TZA 2002 (Lindsjo 2017, International Journal of Educational Development: 'In 2001, the first Primary Education Development Plan declared that the ... fee was to be abolished'; coded at the first fee-free school year, January 2002, with alt_year 2001); KEN 2003 (Oketch and Somerset 2010, CREATE Pathways to Access 37: 'the 2003 Free Primary Education programme'); GHA 2005 (Pajibo and Tamanja 2017, doi 10.20448/journal.522.2017.31.53.63: 'the Capitation Grant Scheme in 2005'); LSO 2000, phased from grade 1 (doi 10.1080/09751122.2013.11890101: 'progressively introduced Free Primary Education in 2000'); RWA 2003 (doi 10.1155/2012/396019: 'In 2003, Rwanda introduced free education'); ZMB 2002 ('Universal Free Primary Education Policy implemented in 2002', a 2020 concept paper without DOI; confidence low). All other countries keep first_year empty: they are comparison units not known to have abolished fees, not verified never-abolishers. End the analysis panel wb_primary_enrolment in 2010 (the last cohort plus five years) so that later abolitions do not enter the comparison group, and record that rule in data_summary.md."
+          },
+          "specialist": "data_analyst",
+          "started": "2026-10-13T21:31:13Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:32:37Z",
+          "check": "did_design",
+          "detail": "(a) no unit is treated inside the panel: there is nothing to evaluate; units in the treatment table without outcome data: DJI, SSD",
+          "enforced": true,
+          "passed": false,
+          "phase": "initial",
+          "segment": 1,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:33:08Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/identification_strategy.md",
+            "sha256": "2636c65ba3d0a2d0bbf5eb3e87d49d8667b60c26daa7fdc35e1aa9387a8c4cf9"
+          },
+          "outputs": [
+            {
+              "file": "design/identification_strategy.md",
+              "sha256": "2636c65ba3d0a2d0bbf5eb3e87d49d8667b60c26daa7fdc35e1aa9387a8c4cf9"
+            },
+            {
+              "file": "design/identification_spec.json",
+              "sha256": "8c9eee65856dc0b9b73f1aa411c1fc4f549e5701f24513c662ecb2abfdc7323e",
+              "unchanged": true
+            },
+            {
+              "file": "design/did_design.json",
+              "sha256": "736ba789a2127148a5b3f28c2cb101e45b8ff03aabc1ec18b0f6d4c094f9aadd"
+            }
+          ],
+          "phase": "initial",
+          "segment": 1,
+          "specialist": "identification_strategist",
+          "started": "2026-10-13T21:32:37Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:33:08Z",
+          "check": "did_design",
+          "enforced": true,
+          "passed": true,
+          "phase": "initial",
+          "segment": 1,
+          "type": "check"
+        },
+        {
+          "action": "approve",
+          "at": "2026-10-13T21:33:45Z",
+          "phase": "initial",
+          "segment": 1,
+          "step": "preregister",
+          "type": "researcher"
+        },
+        {
+          "at": "2026-10-13T21:33:45Z",
+          "check": "preregistration",
+          "enforced": true,
+          "passed": true,
+          "phase": "initial",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:37:38Z",
+          "model": "sonnet",
+          "output": {
+            "file": "design/econometric_spec.md",
+            "sha256": "2f1e57d706ddd5116c17b13b3622c87ccaee27948cadb3e7a0253a38ebf535ab"
+          },
+          "outputs": [
+            {
+              "file": "design/econometric_spec.md",
+              "sha256": "2f1e57d706ddd5116c17b13b3622c87ccaee27948cadb3e7a0253a38ebf535ab"
+            },
+            {
+              "file": "results/estimation_results.json",
+              "sha256": "8c27af2214a37807950b7e467e8cbd1a19b6d69d6788d0ab60b8bf773d87c4b2"
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "econometrics_specialist",
+          "started": "2026-10-13T21:33:45Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:37:38Z",
+          "check": "did_results",
+          "enforced": true,
+          "passed": true,
+          "phase": "initial",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:38:04Z",
+          "model": "sonnet",
+          "output": {
+            "file": "paper/abstract.tex",
+            "sha256": "f5990d731a6ff89df0c7a0a75c3afab5b56d950e7d828e685201dc17e150c04a"
+          },
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "abstract_writer",
+          "started": "2026-10-13T21:37:38Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:39:39Z",
+          "check": "contracts",
+          "detail": "paper_draft.tex: 2 construction(s) the researcher does not accept in a paper: \"rather than\" in: Third, we document how fragile inference is in this setting: the number of treated units, the sparse pre-reform data, and the possibility that comparison countries abolished fees without our knowledge limit what a country-level difference-in-differences can establish, and we quantify these limits... (state the positive claim and stop); \"rather than\" in: Uganda initially limited eligibility, Lesotho phased the reform in by grade, and Ghana's capitation grant replaced rather than simply eliminated fees. (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content",
+          "enforced": true,
+          "passed": false,
+          "phase": "initial",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": false,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:39:39Z",
+          "model": "sonnet",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "a6f20ad9a75add230fa26c64d538b86c485f40dc2511441717fa5e814f04e3e3"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "a6f20ad9a75add230fa26c64d538b86c485f40dc2511441717fa5e814f04e3e3"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "be3c83ce2c08c30c7aa8851f9057ace43685c26a38dcabcf88a82b13b4e9b9cf"
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "paper_drafter",
+          "started": "2026-10-13T21:37:38Z",
+          "stopped_by": "contract violation: paper_draft.tex: 2 construction(s) the researcher does not accept in a paper: \"rather than\" in: Third, we document how fragile inference is in this setting: the number of treated units, the sparse pre-reform data, and the possibility that comparison countries abolished fees without our knowledge limit what a country-level difference-in-differences can establish, and we quantify these limits... (state the positive claim and stop); \"rather than\" in: Uganda initially limited eligibility, Lesotho phased the reform in by grade, and Ghana's capitation grant replaced rather than simply eliminated fees. (state the positive claim and stop). Rewrite each of these sentences without the construction; keep its content",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:39:55Z",
+          "model": "sonnet",
+          "output": {
+            "file": "paper/paper.tex",
+            "sha256": "c039934769e08fc3c9360e8db7d8dca667bf8852044df7998f0a0bceea25c797"
+          },
+          "outputs": [
+            {
+              "file": "paper/paper.tex",
+              "sha256": "c039934769e08fc3c9360e8db7d8dca667bf8852044df7998f0a0bceea25c797"
+            },
+            {
+              "file": "results/table_spec.json",
+              "sha256": "be3c83ce2c08c30c7aa8851f9057ace43685c26a38dcabcf88a82b13b4e9b9cf",
+              "unchanged": true
+            }
+          ],
+          "phase": "initial",
+          "segment": 2,
+          "specialist": "paper_drafter",
+          "started": "2026-10-13T21:39:39Z",
+          "type": "specialist"
+        },
+        {
+          "at": "2026-10-13T21:39:55Z",
+          "check": "preregistration",
+          "deviations": [],
+          "enforced": true,
+          "frozen_at": "2026-10-13T21:33:45Z",
+          "passed": true,
+          "phase": "estimation_gate",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T21:39:55Z",
+          "check": "estimation",
+          "enforced": true,
+          "passed": true,
+          "phase": "estimation_gate",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T21:39:55Z",
+          "check": "numbers",
+          "enforced": true,
+          "passed": true,
+          "phase": "review",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "at": "2026-10-13T21:40:03Z",
+          "check": "citations",
+          "enforced": true,
+          "passed": true,
+          "phase": "review",
+          "segment": 2,
+          "type": "check"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:42:26Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/review_writing.md",
+            "sha256": "ae4bdfe2cbc8e6b3a77d3100c2aa0e944e2f181b7dd7a389427c293c0eec9fc6"
+          },
+          "phase": "review",
+          "segment": 2,
+          "specialist": "writing_reviewer",
+          "started": "2026-10-13T21:40:03Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:42:47Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/review_data.md",
+            "sha256": "f81ccee8b925fb7b84166f6bf7b254174dbb03b1e7de933bd3537509420a53ff"
+          },
+          "phase": "review",
+          "segment": 2,
+          "specialist": "data_reviewer",
+          "started": "2026-10-13T21:40:03Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:43:36Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/review_technical.md",
+            "sha256": "89a3de30c8d9dcbaf9b1f7981cbc60b796cd0d2345cac1559ad9191d8f9a122f"
+          },
+          "phase": "review",
+          "segment": 2,
+          "specialist": "technical_reviewer",
+          "started": "2026-10-13T21:40:03Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:44:08Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/review_methods.md",
+            "sha256": "9a3631074d00459e7add2708658825ee694671b20b647dfa6ea3fdbf0efbd237"
+          },
+          "phase": "review",
+          "segment": 2,
+          "specialist": "methods_reviewer",
+          "started": "2026-10-13T21:42:47Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:44:13Z",
+          "model": "sonnet",
+          "output": {
+            "file": "reviews/review_identification.md",
+            "sha256": "c2922aaf4ed3694a726e774038a27ba617f66df4fd30097a0acbdc2250aedb03"
+          },
+          "phase": "review",
+          "segment": 2,
+          "specialist": "identification_reviewer",
+          "started": "2026-10-13T21:42:26Z",
+          "type": "specialist"
+        },
+        {
+          "accepted": true,
+          "backend": "claude_code",
+          "ended": "2026-10-13T21:46:03Z",
+          "model": "sonnet",
+          "output": {
+            "file": "replication/estimation.py",
+            "sha256": "8f304358d2eafa5b120106d957dea63ee96f43df567c69fd1661bca38f73f824"
+          },
+          "phase": "replication",
+          "segment": 2,
+          "specialist": "replication_packager",
+          "started": "2026-10-13T21:44:13Z",
+          "type": "specialist"
+        }
+      ],
+      "availability": {
+        "data": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        },
+        "code": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        }
+      },
+      "purpose": "demonstration",
+      "amendments": [
+        {
+          "path": "design/paper_plan.md",
+          "kind": "redacted",
+          "sha256_before": "d69883c08399faab3841dab6a15eb20d0d764c70cf81b6724a796f51c5011463",
+          "sha256_after": "5ce725ab9a74663c9ea7f5bacdffc40f1d94412b4c536131f9a345fed31a3b45",
+          "reason": "personal contact details removed by the researcher",
+          "at": "2026-10-20T07:07:39Z",
+          "redaction": {
+            "replacement": "<redacted>",
+            "count": 1,
+            "offsets": [
+              217
+            ],
+            "removed_bytes": 29,
+            "bytes_before": 22500
+          }
+        },
+        {
+          "path": "design/preregistration.md",
+          "kind": "redacted",
+          "sha256_before": "0739668ec62727170804ff8b2040f14b3f730316073cb8e7e3c697fa8ad9ed5c",
+          "sha256_after": "6b11644bb0c37bdef241b611f1617ac781219176ea382ee988a6ba8d457b9748",
+          "reason": "personal contact details removed by the researcher",
+          "at": "2026-10-20T07:07:39Z",
+          "redaction": {
+            "replacement": "<redacted>",
+            "count": 1,
+            "offsets": [
+              460
+            ],
+            "removed_bytes": 29,
+            "bytes_before": 33614
+          }
+        },
+        {
+          "path": "e2er.json",
+          "kind": "carried_over",
+          "sha256_before": "51f1321fe32abb347c37e78fd119c8112317a45a2cc1071841b3d4371eb786f4",
+          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 1 (https://e2er.org/d/00f09b8dcbede3ad). Its steps are the ones that version recorded; none was added or rebuilt.",
+          "at": "2026-10-20T07:46:18Z",
+          "from_version": 1,
+          "from_dossier": "sha256:00f09b8dcbede3adbf52e9370641e158ebb056fcd3079522aacfa5610972879b",
+          "e2er_version": "0.17.1"
+        }
+      ]
+    }
+  }
+}

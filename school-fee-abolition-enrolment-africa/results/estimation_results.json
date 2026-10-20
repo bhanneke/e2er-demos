@@ -1,0 +1,1032 @@
+{
+ "main": {
+  "specification": "Callaway-Sant'Anna ATT, GER level, undated comparison group",
+  "estimator": "callaway_santanna",
+  "n_observations": 1211,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [],
+  "controls": [],
+  "bootstrap_draws": 999,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 22.036683385331887,
+    "se": 5.535801096020379,
+    "t_stat": 3.9807577987536065,
+    "p_value": 0.00024201435678994023,
+    "df": 46,
+    "ci_lower": 10.893693722659114,
+    "ci_upper": 33.17967304800466
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 999,
+   "pre_trend_p_value": 0.9796743678405864
+  },
+  "hypothesis": "H1",
+  "base": "universal (g-1)",
+  "aggregation": "cohort-size weighted mean of ATT(g,t), t>=g, e in [0,5]",
+  "comparison_group": "never_treated (undated comparison units)",
+  "ci_type": "pointwise",
+  "pre_trend_p_value": 0.9796743678405864
+ },
+ "cs_log_ger": {
+  "specification": "Callaway-Sant'Anna ATT, log GER",
+  "estimator": "callaway_santanna",
+  "n_observations": 1211,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [],
+  "controls": [],
+  "bootstrap_draws": 999,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 0.19171532923662968,
+    "se": 0.05457213822547219,
+    "t_stat": 3.513062443046153,
+    "p_value": 0.0010056271370982544,
+    "df": 46,
+    "ci_lower": 0.08186731237895396,
+    "ci_upper": 0.3015633460943054
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 999
+  },
+  "hypothesis": "H1",
+  "base": "universal (g-1)",
+  "aggregation": "cohort-size weighted mean of ATT(g,t), t>=g, e in [0,5]",
+  "comparison_group": "never_treated (undated comparison units)",
+  "ci_type": "pointwise"
+ },
+ "cs_not_yet_treated": {
+  "specification": "CS ATT, GER level, not-yet-treated comparison",
+  "estimator": "callaway_santanna",
+  "n_observations": 1211,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [],
+  "controls": [],
+  "bootstrap_draws": 999,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 22.12052944675871,
+    "se": 5.583116697702775,
+    "t_stat": 3.9620395998278894,
+    "p_value": 0.0002565724080963529,
+    "df": 46,
+    "ci_lower": 10.882298417699218,
+    "ci_upper": 33.3587604758182
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 999
+  },
+  "base": "universal (g-1)",
+  "comparison_group": "not_yet_treated"
+ },
+ "cs_not_yet_treated_log": {
+  "specification": "CS ATT, log GER, not-yet-treated",
+  "estimator": "callaway_santanna",
+  "n_observations": 1211,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [],
+  "controls": [],
+  "bootstrap_draws": 999,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 0.19386956496267377,
+    "se": 0.05537384863427115,
+    "t_stat": 3.5011033140052854,
+    "p_value": 0.0010418482432861327,
+    "df": 46,
+    "ci_lower": 0.08240778875151873,
+    "ci_upper": 0.3053313411738288
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 999
+  }
+ },
+ "anticipation_1": {
+  "specification": "CS ATT, anticipation = 1 (base g-2)",
+  "estimator": "callaway_santanna",
+  "n_observations": 1211,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [],
+  "controls": [],
+  "bootstrap_draws": 999,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 21.836849986296077,
+    "se": 6.255752090391381,
+    "t_stat": 3.4906834015748043,
+    "p_value": 0.0010744205393784234,
+    "df": 46,
+    "ci_lower": 9.244674135616249,
+    "ci_upper": 34.4290258369759
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 999
+  },
+  "base": "universal (g-2)"
+ },
+ "window_m5_p5": {
+  "specification": "CS ATT, event window [-5,5]",
+  "estimator": "callaway_santanna",
+  "n_observations": 1211,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [],
+  "controls": [],
+  "bootstrap_draws": 999,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 22.036683385331887,
+    "se": 5.535801096020379,
+    "t_stat": 3.9807577987536065,
+    "p_value": 0.00024201435678994023,
+    "df": 46,
+    "ci_lower": 10.893693722659114,
+    "ci_upper": 33.17967304800466
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 999
+  }
+ },
+ "drop_outliers": {
+  "specification": "CS ATT, flagged GER outliers dropped",
+  "estimator": "callaway_santanna",
+  "n_observations": 1202,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [],
+  "controls": [],
+  "bootstrap_draws": 999,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 21.172638389081694,
+    "se": 5.589890542582685,
+    "t_stat": 3.7876660066583963,
+    "p_value": 0.0004397485407008001,
+    "df": 46,
+    "ci_lower": 9.920772317475668,
+    "ci_upper": 32.42450446068772
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 999
+  }
+ },
+ "drop_zmb_gha": {
+  "specification": "CS ATT, ZMB (low confidence) and GHA (capitation grant) excluded",
+  "estimator": "callaway_santanna",
+  "n_observations": 1211,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 6,
+  "fixed_effects": [],
+  "controls": [],
+  "bootstrap_draws": 999,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 24.35037738449591,
+    "se": 7.082206285821039,
+    "t_stat": 3.438247405084301,
+    "p_value": 0.0012536401566772776,
+    "df": 46,
+    "ci_lower": 10.094635521127225,
+    "ci_upper": 38.6061192478646
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 5,
+   "bootstrap_valid_draws": 999
+  }
+ },
+ "controls": {
+  "specification": "CS ATT with outcome regression on log GDP pc and urban share at g-1, GER level",
+  "estimator": "callaway_santanna",
+  "n_observations": 1211,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [],
+  "controls": [
+   "log_gdp_pc_g_minus_1",
+   "urban_share_g_minus_1"
+  ],
+  "bootstrap_draws": 999,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 19.11251462493354,
+    "se": 5.328675222822863,
+    "t_stat": 3.5867291260450838,
+    "p_value": 0.0008076977155087011,
+    "df": 46,
+    "ci_lower": 8.38644772084239,
+    "ci_upper": 29.838581529024687
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 999
+  },
+  "base": "universal (g-1)"
+ },
+ "leave_one_country_out": {
+  "specification": "CS ATT dropping each treated country in turn (point estimates)",
+  "n_observations": 1211,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 7,
+  "fixed_effects": [],
+  "controls": [],
+  "coefficients": {
+   "att_min": {
+    "estimate": 17.464488520560696
+   },
+   "att_max": {
+    "estimate": 24.057390227943685
+   }
+  },
+  "by_dropped_country": {
+   "GHA": 23.63939808460018,
+   "KEN": 24.057390227943685,
+   "LSO": 23.08174238759642,
+   "MWI": 19.601800369255624,
+   "RWA": 23.6126182412024,
+   "TZA": 22.3881014127488,
+   "UGA": 17.464488520560696,
+   "ZMB": 22.458450935332117
+  },
+  "diagnostics": {}
+ },
+ "gender_female": {
+  "specification": "CS ATT, female GER",
+  "estimator": "callaway_santanna",
+  "n_observations": 1167,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [],
+  "controls": [],
+  "bootstrap_draws": 999,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 21.60250921932162,
+    "se": 5.375374005305463,
+    "t_stat": 4.018791845553458,
+    "p_value": 0.00021485719385835043,
+    "df": 46,
+    "ci_lower": 10.782442541496353,
+    "ci_upper": 32.42257589714689
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 999
+  },
+  "hypothesis": "H4"
+ },
+ "gender_male": {
+  "specification": "CS ATT, male GER",
+  "estimator": "callaway_santanna",
+  "n_observations": 1167,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [],
+  "controls": [],
+  "bootstrap_draws": 999,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 21.403950339222384,
+    "se": 5.994060804263875,
+    "t_stat": 3.570859729016543,
+    "p_value": 0.0008468961759994305,
+    "df": 46,
+    "ci_lower": 9.338531726664176,
+    "ci_upper": 33.469368951780595
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 999
+  }
+ },
+ "gender_gap": {
+  "specification": "CS ATT difference: female minus male GER",
+  "estimator": "callaway_santanna",
+  "n_observations": 1167,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [],
+  "controls": [],
+  "bootstrap_draws": 999,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 0.19855888009923817,
+    "se": 2.70468010042804,
+    "t_stat": 0.07341307390393949,
+    "p_value": 0.941795717975545,
+    "df": 46,
+    "ci_lower": -5.245679790537323,
+    "ci_upper": 5.642797550735799
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 999
+  },
+  "hypothesis": "H4",
+  "note": "positive = girls' GER rose more than boys'"
+ },
+ "ner": {
+  "specification": "CS ATT, net enrolment rate",
+  "estimator": "callaway_santanna",
+  "n_observations": 684,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [],
+  "controls": [],
+  "bootstrap_draws": 999,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 13.445320159068787,
+    "se": 3.9322435873200146,
+    "t_stat": 3.4192490522267787,
+    "p_value": 0.0013253477339202197,
+    "df": 46,
+    "ci_lower": 5.5301243482731826,
+    "ci_upper": 21.36051596986439
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 995
+  },
+  "hypothesis": "H2"
+ },
+ "ger_on_ner_sample": {
+  "specification": "CS ATT, GER restricted to NER-observed country-years",
+  "estimator": "callaway_santanna",
+  "n_observations": 661,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [],
+  "controls": [],
+  "bootstrap_draws": 999,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 14.778804656374493,
+    "se": 3.6250499212874994,
+    "t_stat": 4.076855485379231,
+    "p_value": 0.00017900839401511503,
+    "df": 46,
+    "ci_lower": 7.481957623951663,
+    "ci_upper": 22.075651688797322
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 995
+  },
+  "hypothesis": "H2"
+ },
+ "ger_minus_ner": {
+  "specification": "CS ATT difference: GER minus NER on common sample",
+  "estimator": "callaway_santanna",
+  "n_observations": 684,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [],
+  "controls": [],
+  "bootstrap_draws": 999,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 1.3334844973057063,
+    "se": 2.483198260274704,
+    "t_stat": 0.5370028316459071,
+    "p_value": 0.5938537595308234,
+    "df": 46,
+    "ci_lower": -3.664934352045628,
+    "ci_upper": 6.3319033466570405
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 995
+  },
+  "hypothesis": "H2",
+  "note": "positive = GER effect exceeds NER effect (over-age enrolment)"
+ },
+ "completion_rate": {
+  "specification": "CS ATT, primary completion rate (H6 proxy; PTR not in data)",
+  "estimator": "callaway_santanna",
+  "n_observations": 863,
+  "n_clusters": 46,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [],
+  "controls": [],
+  "bootstrap_draws": 999,
+  "df": 45,
+  "coefficients": {
+   "att": {
+    "estimate": 5.826446013795055,
+    "se": 3.8412485156283016,
+    "t_stat": 1.5168104823444468,
+    "p_value": 0.13630873068596833,
+    "df": 45,
+    "ci_lower": -1.9102256390654277,
+    "ci_upper": 13.563117666655536
+   }
+  },
+  "diagnostics": {
+   "df_residual": 45,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 996
+  },
+  "hypothesis": "H6"
+ },
+ "h3_initial_level": {
+  "specification": "Country-level CS ATT regressed on mean GER in the 5 years before abolition (HC3)",
+  "hypothesis": "H3",
+  "n_observations": 8,
+  "n_clusters": 8,
+  "cluster_level": "iso3",
+  "fixed_effects": [],
+  "controls": [],
+  "df": 6,
+  "coefficients": {
+   "pre_ger": {
+    "estimate": -0.7120838612638609,
+    "se": 0.4754427802448438,
+    "t_stat": -1.4977277831354416,
+    "p_value": 0.18485214104102063,
+    "df": 6,
+    "ci_lower": -1.8754504347862873,
+    "ci_upper": 0.4512827122585654
+   }
+  },
+  "country_att": {
+   "GHA": {
+    "att": 9.214965791185529,
+    "pre_ger": 78.14846801757814
+   },
+   "KEN": {
+    "att": 8.90208890835521,
+    "pre_ger": 92.45433044433597
+   },
+   "LSO": {
+    "att": 15.243799870612413,
+    "pre_ger": 96.39015350341799
+   },
+   "MWI": {
+    "att": 41.51574751394199,
+    "pre_ger": 79.3248992919922
+   },
+   "RWA": {
+    "att": 11.793106822173584,
+    "pre_ger": 104.90130615234375
+   },
+   "TZA": {
+    "att": 19.752466207121973,
+    "pre_ger": 69.69776458740235
+   },
+   "UGA": {
+    "att": 51.75595000634464,
+    "pre_ger": 69.50155639648438
+   },
+   "ZMB": {
+    "att": 18.66254298533007,
+    "pre_ger": 80.9424629211426
+   }
+  },
+  "diagnostics": {
+   "r_squared": 0.3276731869655912,
+   "df_residual": 6
+  }
+ },
+ "twfe_level": {
+  "specification": "Static TWFE (country, year FE), benchmark only; wild cluster bootstrap-t (Webb), p_value is cluster-robust t",
+  "estimator": "twfe",
+  "n_observations": 1211,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [
+   "iso3",
+   "year"
+  ],
+  "controls": [],
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 23.374760611056775,
+    "se": 9.697306352583764,
+    "t_stat": 2.410438503350858,
+    "p_value": 0.019987855123820158,
+    "df": 46,
+    "ci_lower": 3.855095332567494,
+    "ci_upper": 42.894425889546056,
+    "wild_bootstrap_p_value": 0.062062062062062065
+   }
+  },
+  "diagnostics": {
+   "within_r_squared": 0.09509381587799581,
+   "df_residual": 46,
+   "wild_bootstrap_draws": 999,
+   "wild_bootstrap_p_value": 0.062062062062062065
+  }
+ },
+ "twfe_log": {
+  "specification": "Static TWFE (country, year FE), benchmark only; wild cluster bootstrap-t (Webb), p_value is cluster-robust t",
+  "estimator": "twfe",
+  "n_observations": 1211,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [
+   "iso3",
+   "year"
+  ],
+  "controls": [],
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 0.1502295767901354,
+    "se": 0.10783453629951799,
+    "t_stat": 1.3931490035146274,
+    "p_value": 0.17027089053874403,
+    "df": 46,
+    "ci_lower": -0.06683008673868177,
+    "ci_upper": 0.3672892403189526,
+    "wild_bootstrap_p_value": 0.2122122122122122
+   }
+  },
+  "diagnostics": {
+   "within_r_squared": 0.020716860425355033,
+   "df_residual": 46,
+   "wild_bootstrap_draws": 999,
+   "wild_bootstrap_p_value": 0.2122122122122122
+  }
+ },
+ "sun_abraham": {
+  "specification": "Sun-Abraham interaction-weighted ATT (country, year FE; undated comparison); unit-bootstrap SE",
+  "estimator": "sun_abraham",
+  "n_observations": 1211,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [
+   "iso3",
+   "year"
+  ],
+  "controls": [],
+  "bootstrap_draws": 499,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 22.034987902517575,
+    "se": 5.736261268036829,
+    "t_stat": 3.841350118639,
+    "p_value": 0.0003729281763099036,
+    "df": 46,
+    "ci_lower": 10.488492841834258,
+    "ci_upper": 33.58148296320089
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 499
+  }
+ },
+ "bjs_imputation": {
+  "specification": "Borusyak-Jaravel-Spiess imputation ATT (FE fitted on untreated obs); unit-bootstrap SE",
+  "estimator": "borusyak_jaravel_spiess",
+  "n_observations": 1211,
+  "n_clusters": 47,
+  "cluster_level": "iso3",
+  "n_treated_clusters": 8,
+  "fixed_effects": [
+   "iso3",
+   "year"
+  ],
+  "controls": [],
+  "bootstrap_draws": 499,
+  "df": 46,
+  "coefficients": {
+   "att": {
+    "estimate": 22.734966561798572,
+    "se": 10.26225302554561,
+    "t_stat": 2.2153971944761937,
+    "p_value": 0.0317226506836485,
+    "df": 46,
+    "ci_lower": 2.078122611680218,
+    "ci_upper": 43.39181051191693
+   }
+  },
+  "diagnostics": {
+   "df_residual": 46,
+   "n_cohorts": 6,
+   "bootstrap_valid_draws": 499
+  }
+ },
+ "event_study": {
+  "reference_period": -1,
+  "estimator": "callaway_santanna",
+  "base": "universal",
+  "outcome": "ger_primary",
+  "ci_type": "pointwise, 1.96 SE",
+  "periods": [
+   {
+    "relative_period": -6,
+    "estimate": -5.1287023301640335,
+    "se": 7.930120879398242,
+    "ci_lower": -20.671739253784587,
+    "ci_upper": 10.41433459345652
+   },
+   {
+    "relative_period": -5,
+    "estimate": -5.311226796714599,
+    "se": 6.957406630679814,
+    "ci_lower": -18.947743792847035,
+    "ci_upper": 8.325290199417836
+   },
+   {
+    "relative_period": -4,
+    "estimate": -3.606819266686104,
+    "se": 5.286007249999509,
+    "ci_lower": -13.96739347668514,
+    "ci_upper": 6.7537549433129325
+   },
+   {
+    "relative_period": -3,
+    "estimate": -0.33810566756315186,
+    "se": 2.6398031792360657,
+    "ci_lower": -5.512119898865841,
+    "ci_upper": 4.835908563739537
+   },
+   {
+    "relative_period": -2,
+    "estimate": 0.07544996500702617,
+    "se": 1.3499425051710987,
+    "ci_lower": -2.5704373451283273,
+    "ci_upper": 2.7213372751423797
+   },
+   {
+    "relative_period": -1,
+    "estimate": 0.0,
+    "se": 0.0,
+    "ci_lower": 0.0,
+    "ci_upper": 0.0
+   },
+   {
+    "relative_period": 0,
+    "estimate": 11.88944294077212,
+    "se": 4.878288409975863,
+    "ci_lower": 2.327997657219429,
+    "ci_upper": 21.450888224324814
+   },
+   {
+    "relative_period": 1,
+    "estimate": 23.19885668052806,
+    "se": 8.210022405284418,
+    "ci_lower": 7.107212766170601,
+    "ci_upper": 39.290500594885515
+   },
+   {
+    "relative_period": 2,
+    "estimate": 23.802436966221368,
+    "se": 7.043636226856484,
+    "ci_lower": 9.99690996158266,
+    "ci_upper": 37.60796397086008
+   },
+   {
+    "relative_period": 3,
+    "estimate": 21.95791517725186,
+    "se": 5.585028758712356,
+    "ci_lower": 11.01125881017564,
+    "ci_upper": 32.90457154432808
+   },
+   {
+    "relative_period": 4,
+    "estimate": 24.713069592892687,
+    "se": 5.297702686079937,
+    "ci_lower": 14.329572328176011,
+    "ci_upper": 35.09656685760936
+   },
+   {
+    "relative_period": 5,
+    "estimate": 27.473393333769426,
+    "se": 6.277098612629727,
+    "ci_lower": 15.170280053015162,
+    "ci_upper": 39.77650661452369
+   }
+  ]
+ },
+ "pre_trends": {
+  "test": "Wald test that pre-treatment event-time effects (e=-6..-2) are jointly zero, bootstrap covariance",
+  "statistic": 0.7573366518532427,
+  "df": 5,
+  "p_value": 0.9796743678405864,
+  "n_pre_periods": 5,
+  "note": "A non-rejection is not evidence of parallel trends (low power, Roth 2022)."
+ },
+ "placebo": {
+  "fake_date_minus_3": {
+   "description": "treatment moved 3 years earlier, all post-abolition observations of treated units dropped",
+   "estimate": 3.8603372399459275,
+   "se": 4.702008919994905,
+   "p_value": 0.41588235961135483,
+   "df": 46,
+   "n_observations": 1134
+  }
+ },
+ "goodman_bacon": {
+  "window": [
+   1985,
+   2010
+  ],
+  "n_units": 13,
+  "units": [
+   "COG",
+   "ETH",
+   "GIN",
+   "GMB",
+   "LSO",
+   "MLI",
+   "MRT",
+   "MUS",
+   "NER",
+   "SEN",
+   "TCD",
+   "TZA",
+   "UGA"
+  ],
+  "treated_units": [
+   "LSO",
+   "TZA",
+   "UGA"
+  ],
+  "n_comparison_units": 10,
+  "dropped_already_treated_at_start": [],
+  "twfe_balanced_direct": 17.071588772325388,
+  "decomposition_weighted_sum": 17.071588772325388,
+  "weights_sum_to_one_before_normalisation": 0.0444837365638458,
+  "by_type": {
+   "later_vs_already_treated_control": {
+    "weight": 0.01889020070838253,
+    "weighted_mean_estimate": 27.299607041038517
+   },
+   "treated_vs_never": {
+    "weight": 0.9563164108618654,
+    "weighted_mean_estimate": 16.162767014761126
+   },
+   "early_vs_later_control": {
+    "weight": 0.024793388429752074,
+    "weighted_mean_estimate": 44.33336645459382
+   }
+  },
+  "components": [
+   {
+    "type": "treated_vs_never",
+    "early_cohort": 1997,
+    "late_cohort": 0,
+    "estimate": 36.21833786397599,
+    "weight": 0.3305785123966942
+   },
+   {
+    "type": "treated_vs_never",
+    "early_cohort": 2000,
+    "late_cohort": 0,
+    "estimate": -0.95317674586164,
+    "weight": 0.3246753246753247
+   },
+   {
+    "type": "treated_vs_never",
+    "early_cohort": 2002,
+    "late_cohort": 0,
+    "estimate": 12.599334451588966,
+    "weight": 0.3010625737898465
+   },
+   {
+    "type": "early_vs_later_control",
+    "early_cohort": 1997,
+    "late_cohort": 2000,
+    "estimate": 60.20681762695324,
+    "weight": 0.0070838252656434475
+   },
+   {
+    "type": "later_vs_already_treated_control",
+    "early_cohort": 1997,
+    "late_cohort": 2000,
+    "estimate": 22.810142539260426,
+    "weight": 0.006493506493506493
+   },
+   {
+    "type": "early_vs_later_control",
+    "early_cohort": 1997,
+    "late_cohort": 2002,
+    "estimate": 54.29030062357599,
+    "weight": 0.01180637544273908
+   },
+   {
+    "type": "later_vs_already_treated_control",
+    "early_cohort": 1997,
+    "late_cohort": 2002,
+    "estimate": 34.24272393120691,
+    "weight": 0.008854781582054312
+   },
+   {
+    "type": "early_vs_later_control",
+    "early_cohort": 2000,
+    "late_cohort": 2002,
+    "estimate": 5.371356709798192,
+    "weight": 0.00590318772136954
+   },
+   {
+    "type": "later_vs_already_treated_control",
+    "early_cohort": 2000,
+    "late_cohort": 2002,
+    "estimate": 18.172499735544022,
+    "weight": 0.0035419126328217238
+   }
+  ]
+ },
+ "sun_abraham_event_study": [
+  {
+   "relative_period": -6,
+   "estimate": -4.859550225823256,
+   "se": 7.892643711464227
+  },
+  {
+   "relative_period": -5,
+   "estimate": -5.172254607946021,
+   "se": 6.712666649425775
+  },
+  {
+   "relative_period": -4,
+   "estimate": -3.6617439032816432,
+   "se": 5.602237406417912
+  },
+  {
+   "relative_period": -3,
+   "estimate": -0.6709174175476265,
+   "se": 2.848073624049494
+  },
+  {
+   "relative_period": -2,
+   "estimate": -0.09319663865999228,
+   "se": 1.3216783004950814
+  },
+  {
+   "relative_period": -1,
+   "estimate": 0.0,
+   "se": 0.0
+  },
+  {
+   "relative_period": 0,
+   "estimate": 11.750392742378354,
+   "se": 4.8716467432084425
+  },
+  {
+   "relative_period": 1,
+   "estimate": 22.711736886098585,
+   "se": 8.747416629935529
+  },
+  {
+   "relative_period": 2,
+   "estimate": 23.791147528140403,
+   "se": 7.224847405131236
+  },
+  {
+   "relative_period": 3,
+   "estimate": 21.452026398860095,
+   "se": 6.033641517140497
+  },
+  {
+   "relative_period": 4,
+   "estimate": 25.30754660035423,
+   "se": 5.339012002908403
+  },
+  {
+   "relative_period": 5,
+   "estimate": 27.94791680737087,
+   "se": 6.326222609551225
+  }
+ ],
+ "sensitivity": {
+  "honest_did_rm": {
+   "method": "Rambachan-Roth relative magnitudes (conservative closed-form bound, not the exact procedure)",
+   "M_max_pre_change": 3.268713599122952,
+   "target": "overall ATT, mean horizon factor 3.5",
+   "mbar_0_5": {
+    "mbar": 0.5,
+    "ci_lower": 5.4662644386667765,
+    "ci_upper": 38.607102331997
+   },
+   "mbar_1": {
+    "mbar": 1,
+    "ci_lower": -0.2539843597983875,
+    "ci_upper": 44.32735113046216
+   },
+   "mbar_2": {
+    "mbar": 2,
+    "ci_lower": -11.694481956728719,
+    "ci_upper": 55.7678487273925
+   },
+   "mbar": 1.0,
+   "ci_lower": -0.2539843597983875,
+   "ci_upper": 44.32735113046216,
+   "breakdown_mbar": 0.9777995355843144
+  },
+  "not_yet_treated": {
+   "method": "comparison group: not yet treated",
+   "estimate": 22.12052944675871,
+   "se": 5.583116697702774
+  },
+  "anticipation_1": {
+   "method": "anticipation of one year",
+   "estimate": 21.836849986296077,
+   "se": 6.255752090391379
+  }
+ },
+ "sample_flow": {
+  "raw_rows_1980_2010": 1519,
+  "rows_with_ger_primary": 1211,
+  "rows_ger_outlier_flag": 9,
+  "units_with_ger": 47,
+  "treated_units": [
+   "GHA",
+   "KEN",
+   "LSO",
+   "MWI",
+   "RWA",
+   "TZA",
+   "UGA",
+   "ZMB"
+  ],
+  "comparison_units": 39,
+  "rows_in_main_sample": 1211
+ },
+ "h5_note": {
+  "hypothesis": "H5",
+  "status": "not estimable: capitation-grant status by country is not in data.db"
+ }
+}
