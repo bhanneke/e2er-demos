@@ -1,7 +1,7 @@
 {
   "schema": "e2er-research-object/0.1",
   "id": "bhanneke/pleiades-gaia-dr3-members",
-  "content_id": "sha256:1257d5003feae9de1aa3cfc28223ed38079a6745c8c249681a8c51abbcc55976",
+  "content_id": "sha256:a0e8c0489139c2bcec04f94dc17ccca45897413ee4027bc85bdd844132403f92",
   "title": "Which stars within 3 degrees of the Pleiades centre are cluster members by Ga...",
   "question": "Which stars within 3 degrees of the Pleiades centre are cluster members by Gaia DR3 parallax and proper motion, and what do their colour-magnitude diagram and parallax distance distribution show about the cluster's distance and main sequence?",
   "contributors": [
@@ -497,11 +497,11 @@
     },
     {
       "path": "paper/paper.pdf",
-      "sha256": "2ec43880ec2c8e574bc60f163de7de1abd54eac56afe985822ba33afda8cb7e1"
+      "sha256": "ab7a5a62e861ab4e6f9abae5abbd4ff04df01a1ac935d4109b8d9079a72d2b22"
     },
     {
       "path": "paper/paper.tex",
-      "sha256": "9e32963dc28e255dca76c2a859df77389f2d0d16a991d4729b4e2ffdc83b796c"
+      "sha256": "ed5d9b07a24b2fb9cafd599e670400e9af2ee50688d9eadb5f3084f93222f82e"
     },
     {
       "path": "paper/refs.bib",
@@ -725,8 +725,8 @@
     }
   },
   "dossier": {
-    "id": "sha256:ed64be6914a73236947710ac05e258595632a9bf598ec58e3fbe04926866a8d1",
-    "url": "https://e2er.org/d/ed64be6914a73236",
+    "id": "sha256:f6140fa5d03bcc0771579b7c57409c9e71014ce83c0487837f1c7cd116c8a7db",
+    "url": "https://e2er.org/d/f6140fa5d03bcc07",
     "doc": {
       "components": [
         {
@@ -2846,7 +2846,7 @@
           "kind": "carried_over",
           "sha256_before": "a6b10ec9226cf3ebf84a228d05e22a7b2b91947cc9a4b03cc0dc25dbabceeda1",
           "reason": "published again with files on GitHub; run database not available, dossier carried over from version 1 (https://e2er.org/d/147b2eeec2427726). Its steps are the ones that version recorded; none was added or rebuilt.",
-          "at": "2026-10-20T00:25:04Z",
+          "at": "2026-10-20T00:26:18Z",
           "from_version": 1,
           "from_dossier": "sha256:147b2eeec2427726cdb6d7c8791747dc774cddbd2c17be35033141b9c51bea80",
           "e2er_version": "0.17.1"

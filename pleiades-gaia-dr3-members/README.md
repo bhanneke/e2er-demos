@@ -5,7 +5,7 @@
 
 **Question:** Which stars within 3 degrees of the Pleiades centre are cluster members by Gaia DR3 parallax and proper motion, and what do their colour-magnitude diagram and parallax distance distribution show about the cluster's distance and main sequence?
 
-**Dossier:** https://e2er.org/d/ed64be6914a73236 (every step of the run, the models, the data loads and the checks; id `sha256:ed64be6914a73236947710ac05e258595632a9bf598ec58e3fbe04926866a8d1`)
+**Dossier:** https://e2er.org/d/f6140fa5d03bcc07 (every step of the run, the models, the data loads and the checks; id `sha256:f6140fa5d03bcc0771579b7c57409c9e71014ce83c0487837f1c7cd116c8a7db`)
 
 **Made with:** e2er 0.16.0; template descriptive-study; model haiku (claude_code)
 

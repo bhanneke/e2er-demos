@@ -31,7 +31,7 @@
   },
   "files": {
     "README.md": {
-      "sha256": "3e452a18823defd22e452b8614d3721962c7a50237885af49ecd184427c28844",
+      "sha256": "332f27af93e9e16393a723ee3faa0eaf3a9b8beb4c4ffcb7c66f6b205047a049",
       "bytes": 6131
     },
     "code/get_data.py": {
@@ -155,11 +155,11 @@
       "bytes": 1840
     },
     "paper/paper.pdf": {
-      "sha256": "2ec43880ec2c8e574bc60f163de7de1abd54eac56afe985822ba33afda8cb7e1",
-      "bytes": 78634
+      "sha256": "ab7a5a62e861ab4e6f9abae5abbd4ff04df01a1ac935d4109b8d9079a72d2b22",
+      "bytes": 78787
     },
     "paper/paper.tex": {
-      "sha256": "9e32963dc28e255dca76c2a859df77389f2d0d16a991d4729b4e2ffdc83b796c",
+      "sha256": "ed5d9b07a24b2fb9cafd599e670400e9af2ee50688d9eadb5f3084f93222f82e",
       "bytes": 26035
     },
     "paper/refs.bib": {
@@ -1416,25 +1416,25 @@
     {
       "path": "paper/paper.tex",
       "sha256_before": "1130e71741871ea06af5cd098fcb77443a23e3f858673a030c700d532e5057c8",
-      "sha256_after": "9e32963dc28e255dca76c2a859df77389f2d0d16a991d4729b4e2ffdc83b796c",
+      "sha256_after": "ed5d9b07a24b2fb9cafd599e670400e9af2ee50688d9eadb5f3084f93222f82e",
       "reason": "stamped with the dossier link",
-      "at": "2026-10-20T00:25:06Z",
+      "at": "2026-10-20T00:26:20Z",
       "kind": "stamp"
     },
     {
       "path": "paper/paper.pdf",
       "sha256_before": "a5bb1bd67674134c4e0429653519cc08a0c1575033527d08fabb19b0cfb31042",
-      "sha256_after": "2ec43880ec2c8e574bc60f163de7de1abd54eac56afe985822ba33afda8cb7e1",
+      "sha256_after": "ab7a5a62e861ab4e6f9abae5abbd4ff04df01a1ac935d4109b8d9079a72d2b22",
       "reason": "recompiled with the dossier link",
-      "at": "2026-10-20T00:25:06Z",
+      "at": "2026-10-20T00:26:20Z",
       "kind": "stamp"
     },
     {
       "path": "README.md",
       "sha256_before": "042af698d3fe5a88077d802066d8221503daadeb14489bcfdcadf017276c9a2a",
-      "sha256_after": "3e452a18823defd22e452b8614d3721962c7a50237885af49ecd184427c28844",
+      "sha256_after": "332f27af93e9e16393a723ee3faa0eaf3a9b8beb4c4ffcb7c66f6b205047a049",
       "reason": "the study's summary for its GitHub repository, at the top",
-      "at": "2026-10-20T00:25:06Z",
+      "at": "2026-10-20T00:26:21Z",
       "kind": "readme"
     }
   ]
