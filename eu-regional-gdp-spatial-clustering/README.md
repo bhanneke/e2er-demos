@@ -5,7 +5,7 @@
 
 **Question:** How does GDP per capita in purchasing power standards vary across the EU's NUTS-2 regions in 2024, and how strongly do regions with high and low GDP per capita cluster in space?
 
-**Dossier:** https://e2er.org/d/7ba4c56d920388be (every step of the run, the models, the data loads and the checks; id `sha256:7ba4c56d920388be61b10b2b34a318226736f09e10b04d2bc6f74f830d110485`)
+**Dossier:** https://e2er.org/d/42495852899961c7 (every step of the run, the models, the data loads and the checks; id `sha256:42495852899961c7f8abdbc1b12801787c340ec1eb9ab7bd418a6a94953468d4`)
 
 **Made with:** e2er 0.16.1; template spatial-analysis; model sonnet (claude_code)
 

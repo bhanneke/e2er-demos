@@ -4,7 +4,7 @@
       "bytes": 9799,
       "part": "study",
       "path": "README.md",
-      "sha256": "951ff3519a40de20b878d4982b18fae5b04d9f4d6fad9f62944946b08e0d12df"
+      "sha256": "d47fc575e89682bc50745247929313b75c5dbaddcd9919f6b29e680cf0f1a93f"
     },
     {
       "bytes": 5243,
@@ -103,10 +103,10 @@
       "sha256": "92b745945b83473a6191f61ceaa6dbd2a70a28a01e71005a38cdfd6bd9ececa1"
     },
     {
-      "bytes": 90552,
+      "bytes": 93449,
       "part": "study",
       "path": "e2er.json",
-      "sha256": "92f0e05bb988fa85b6a929950f846492a205e4c8cbdb60f44075a4f01ddc0c8f"
+      "sha256": "bdfcbf6cca6fb4bb0b340eb3aa2e570e2133ffdf96e066322ca97cb613458a83"
     },
     {
       "bytes": 10170,
@@ -169,16 +169,22 @@
       "sha256": "805aded66e39b72d44863cfc3468a84df92f79f0690a349f8ac62ed15b04e8fd"
     },
     {
-      "bytes": 71086,
+      "bytes": 1404,
       "part": "study",
-      "path": "paper/paper.pdf",
-      "sha256": "adbdecbd759cbad5b9e13beeffdc9673a1f9516d076d776e1ede4bce52a15231"
+      "path": "paper/abstract.tex",
+      "sha256": "4dcc506615e8b1a7f034b7a6a6196fc0616a5afdbd49348ddfd514ffbf2dc2bd"
     },
     {
-      "bytes": 25935,
+      "bytes": 70759,
+      "part": "study",
+      "path": "paper/paper.pdf",
+      "sha256": "1bdb62ffdb83d7b75c3e644c2a93599eb10feba820a91ca047f5b9771a8e5397"
+    },
+    {
+      "bytes": 25855,
       "part": "study",
       "path": "paper/paper.tex",
-      "sha256": "5b3683dfb3dd396c5a6155104f1f9a0117ded33e48cb39f2b46f556621134935"
+      "sha256": "62541933d7fe438439841330b3eb8362ad3250c7128f016af4aaba43209083dd"
     },
     {
       "bytes": 2980,
@@ -205,10 +211,10 @@
       "sha256": "14e832cddd88399af97c5afeac197510f5daacc8108fa6587c7a0a1cf10312b0"
     },
     {
-      "bytes": 39647,
+      "bytes": 42974,
       "part": "study",
       "path": "provenance.json",
-      "sha256": "ca143e30b0afd696160991cb2de5c324281ae48211bd9b96696e01e21aef4c01"
+      "sha256": "f874f9f8babd84d4c4fe3a7a1eb0f35cb4e65a97044a21b5b4fedffac5a32b9c"
     },
     {
       "bytes": 3831,
@@ -235,10 +241,10 @@
       "sha256": "c5cf6c61dd8fc3403688f12d9110fce3a47790cb01cd1617aa4ad91345ce3219"
     },
     {
-      "bytes": 15860,
+      "bytes": 16910,
       "part": "study",
       "path": "report.html",
-      "sha256": "14d347c68f5308ce688dc4a2ae3fef86cf28e5686409300512b371c002665a3a"
+      "sha256": "64eee259fb2c1a09ad82ce8e25a2ac86ab14ffd18bbca4cb9eb22a89a5258e96"
     },
     {
       "bytes": 4247,
@@ -362,7 +368,7 @@
     }
   ],
   "created": "20261015",
-  "e2er_version": "0.17.1",
+  "e2er_version": "0.17.3",
   "environment": {
     "hashes": true,
     "lock": "e2er-package/requirements.lock.txt",
@@ -370,7 +376,7 @@
     "python": "3.14",
     "resolved_as_of": "2026-10-16"
   },
-  "fingerprint": "sha256:43defa8af2fc180cb7a3b78f09d31e24f724c4e36e04cb1d3717468c8f6f5994",
+  "fingerprint": "sha256:4879b976aaa7e1af705271247e6d066ca0fe3c169a5ce996969e8e5d9cbb0800",
   "format": "e2er-package/1",
   "left_out": [
     {
@@ -385,27 +391,76 @@
       "content": {
         "tables": {
           "gdp_pps_nuts2": {
+            "columns": [
+              "freq",
+              "freq_label",
+              "unit",
+              "unit_label",
+              "geo",
+              "geo_label",
+              "time",
+              "value",
+              "flag"
+            ],
             "content_sha256": "9fe3b85dc7be212d518f8446624a9dbbfe052ba7be7c3302e18fbcfabb0dcf67",
             "numeric_sha256": "9fe3b85dc7be212d518f8446624a9dbbfe052ba7be7c3302e18fbcfabb0dcf67",
             "rows": 2826
           },
           "gdp_pps_sample": {
+            "columns": [
+              "id",
+              "name",
+              "country",
+              "gdp_pps",
+              "flag",
+              "population",
+              "area_km2",
+              "gdp_index",
+              "ln_gdp_pps"
+            ],
             "content_sha256": "b0bca67c6c0077a364398ca3e3e51687c5327c9f73b1edb32686706af61af8a3",
             "numeric_sha256": "1a51de2c24dfc2bcad21ec8325c717e8dfae980bd77306e9cdada21580161681",
             "rows": 236
           },
           "nuts2_boundaries": {
+            "columns": [
+              "nuts_id",
+              "levl_code",
+              "cntr_code",
+              "name_latn",
+              "nuts_name",
+              "mount_type",
+              "urbn_type",
+              "coast_type",
+              "geometry"
+            ],
             "content_sha256": "a9ab85ccaccaba85d764e60b4dc9178ce7f3533c66a17038828abeaae0887927",
             "numeric_sha256": "038290272ed7af80f012521cdb264f2d07277ea574736418950268587b0dd1bd",
             "rows": 299
           },
           "pop_nuts2": {
+            "columns": [
+              "freq",
+              "freq_label",
+              "unit",
+              "unit_label",
+              "sex",
+              "sex_label",
+              "age",
+              "age_label",
+              "geo",
+              "geo_label",
+              "time",
+              "value",
+              "flag"
+            ],
             "content_sha256": "ff9039d6f0cb23ba66bca2e97425a3d45f083549f5cb686aa2ea8b4baab380f2",
             "numeric_sha256": "ff9039d6f0cb23ba66bca2e97425a3d45f083549f5cb686aa2ea8b4baab380f2",
             "rows": 292
           }
         }
       },
+      "kind": "terms",
       "loads": [
         "gdp_pps_nuts2",
         "nuts2_boundaries",
@@ -421,6 +476,7 @@
       "source": "gisco"
     },
     {
+      "kind": "terms",
       "needed": true,
       "path": "results/figure_spec.json",
       "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (an array of 236 values at figures[4].y); its terms do not allow passing them on",
@@ -437,6 +493,7 @@
         "numeric_sha256": "7f39e5ede9b7d29c4b47f2ef95426efa191913d5298eca7247ec3d76a0ded957",
         "rows": 236
       },
+      "kind": "terms",
       "needed": true,
       "path": "results/moran_scatter_data.csv",
       "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (236 rows); its terms do not allow passing them on",
@@ -461,6 +518,7 @@
         "numeric_sha256": "db0bbffbfb6636d8246900ea2f72f79fa09276c801e7a59362aafb785b50a90f",
         "rows": 236
       },
+      "kind": "terms",
       "needed": true,
       "path": "results/spatial_units.csv",
       "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (236 rows); its terms do not allow passing them on",
@@ -485,6 +543,7 @@
         "numeric_sha256": "c5ba09177e2a8d55e4a91297358edbcb8de71ee3ae7b50036c8f76bcaca6fe99",
         "rows": 244
       },
+      "kind": "terms",
       "needed": true,
       "path": "results/spatial_units_all244.csv",
       "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (244 rows); its terms do not allow passing them on",
@@ -509,6 +568,7 @@
         "numeric_sha256": "6c260f77de3cf68bce3d95ff9177eb779edbdbdbb29dc87d98cce4c9eeaad6fe",
         "rows": 1039
       },
+      "kind": "terms",
       "needed": true,
       "path": "results/spatial_weights.csv",
       "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,039 rows); its terms do not allow passing them on",
@@ -525,6 +585,7 @@
         "numeric_sha256": "4966f1a271ceda0d3d1c35d0734b39855166bc025403e7146ca76a62bdfe20b3",
         "rows": 55460
       },
+      "kind": "terms",
       "needed": true,
       "path": "results/spatial_weights_invdist.csv",
       "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (55,460 rows); its terms do not allow passing them on",
@@ -549,6 +610,7 @@
         "numeric_sha256": "af67c6d90b2aeb313a2e75930ed2b12dee006743474bfad36565439fdf149505",
         "rows": 1180
       },
+      "kind": "terms",
       "needed": true,
       "path": "results/spatial_weights_knn5.csv",
       "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,180 rows); its terms do not allow passing them on",
@@ -573,6 +635,7 @@
         "numeric_sha256": "b49771a78fa20d0fa7b3be3837ba6398be56fbf16cfefb1accfbeb004b2bc19a",
         "rows": 1220
       },
+      "kind": "terms",
       "needed": true,
       "path": "results/spatial_weights_knn5_all244.csv",
       "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,220 rows); its terms do not allow passing them on",
@@ -589,6 +652,7 @@
         "numeric_sha256": "d449d8e9990476924b6d357dd61e374a7730b6bc362da56582e9dd7ff2a721c0",
         "rows": 1888
       },
+      "kind": "terms",
       "needed": true,
       "path": "results/spatial_weights_knn8.csv",
       "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,888 rows); its terms do not allow passing them on",

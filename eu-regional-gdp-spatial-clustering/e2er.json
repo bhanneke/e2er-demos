@@ -1,7 +1,7 @@
 {
   "schema": "e2er-research-object/0.1",
   "id": "bhanneke/eu-regional-gdp-spatial-clustering",
-  "content_id": "sha256:ca143e30b0afd696160991cb2de5c324281ae48211bd9b96696e01e21aef4c01",
+  "content_id": "sha256:f874f9f8babd84d4c4fe3a7a1eb0f35cb4e65a97044a21b5b4fedffac5a32b9c",
   "title": "How does GDP per capita in purchasing power standards vary across the EU's NU...",
   "question": "How does GDP per capita in purchasing power standards vary across the EU's NUTS-2 regions in 2024, and how strongly do regions with high and low GDP per capita cluster in space?",
   "contributors": [
@@ -410,12 +410,16 @@
   ],
   "outputs": [
     {
+      "path": "paper/abstract.tex",
+      "sha256": "4dcc506615e8b1a7f034b7a6a6196fc0616a5afdbd49348ddfd514ffbf2dc2bd"
+    },
+    {
       "path": "paper/paper.pdf",
-      "sha256": "adbdecbd759cbad5b9e13beeffdc9673a1f9516d076d776e1ede4bce52a15231"
+      "sha256": "1bdb62ffdb83d7b75c3e644c2a93599eb10feba820a91ca047f5b9771a8e5397"
     },
     {
       "path": "paper/paper.tex",
-      "sha256": "5b3683dfb3dd396c5a6155104f1f9a0117ded33e48cb39f2b46f556621134935"
+      "sha256": "62541933d7fe438439841330b3eb8362ad3250c7128f016af4aaba43209083dd"
     },
     {
       "path": "paper/refs.bib",
@@ -535,7 +539,7 @@
     }
   ],
   "provenance": {
-    "files": 67,
+    "files": 68,
     "edges": {
       "citation": 8,
       "data": 1,
@@ -548,12 +552,12 @@
     {
       "check": "integrity",
       "status": "PASS",
-      "detail": "67 files hash-verified against provenance.json; 65 table cell(s) traced in the derivation graph; 5 change(s) after export recorded as amendments (README.md, paper/paper.pdf, paper/paper.tex)"
+      "detail": "68 files hash-verified against provenance.json; 65 table cell(s) traced in the derivation graph; 12 change(s) after export recorded as amendments (README.md, paper/abstract.tex, paper/paper.pdf); the abstract rewritten after export by e2er's abstract step (paper/abstract.tex, paper/paper.pdf, paper/paper.tex, report.html)"
     },
     {
       "check": "numbers",
       "status": "PASS",
-      "detail": "65 table cell(s) are source values at the precision shown; text (not gating): 90 of 99 number(s) are source values, 2 differ from the quantity named nearby, 7 untraced"
+      "detail": "65 table cell(s) are source values at the precision shown; text (not gating): 86 of 95 number(s) are source values, 2 differ from the quantity named nearby, 7 untraced"
     },
     {
       "check": "tables",
@@ -653,43 +657,53 @@
     "left_out": [
       {
         "path": "data/data.db",
-        "reason": "the terms of Eurostat GISCO (GISCO) do not allow passing the data on"
+        "reason": "the terms of Eurostat GISCO (GISCO) do not allow passing the data on",
+        "kind": "terms"
       },
       {
         "path": "results/figure_spec.json",
-        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (an array of 236 values at figures[4].y); its terms do not allow passing them on"
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (an array of 236 values at figures[4].y); its terms do not allow passing them on",
+        "kind": "terms"
       },
       {
         "path": "results/moran_scatter_data.csv",
-        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (236 rows); its terms do not allow passing them on"
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (236 rows); its terms do not allow passing them on",
+        "kind": "terms"
       },
       {
         "path": "results/spatial_units.csv",
-        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (236 rows); its terms do not allow passing them on"
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (236 rows); its terms do not allow passing them on",
+        "kind": "terms"
       },
       {
         "path": "results/spatial_units_all244.csv",
-        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (244 rows); its terms do not allow passing them on"
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (244 rows); its terms do not allow passing them on",
+        "kind": "terms"
       },
       {
         "path": "results/spatial_weights.csv",
-        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,039 rows); its terms do not allow passing them on"
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,039 rows); its terms do not allow passing them on",
+        "kind": "terms"
       },
       {
         "path": "results/spatial_weights_invdist.csv",
-        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (55,460 rows); its terms do not allow passing them on"
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (55,460 rows); its terms do not allow passing them on",
+        "kind": "terms"
       },
       {
         "path": "results/spatial_weights_knn5.csv",
-        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,180 rows); its terms do not allow passing them on"
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,180 rows); its terms do not allow passing them on",
+        "kind": "terms"
       },
       {
         "path": "results/spatial_weights_knn5_all244.csv",
-        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,220 rows); its terms do not allow passing them on"
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,220 rows); its terms do not allow passing them on",
+        "kind": "terms"
       },
       {
         "path": "results/spatial_weights_knn8.csv",
-        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,888 rows); its terms do not allow passing them on"
+        "reason": "built from Eurostat GISCO (GISCO) data and holds them row by row (1,888 rows); its terms do not allow passing them on",
+        "kind": "terms"
       }
     ]
   },
@@ -705,8 +719,8 @@
     }
   },
   "dossier": {
-    "id": "sha256:7ba4c56d920388be61b10b2b34a318226736f09e10b04d2bc6f74f830d110485",
-    "url": "https://e2er.org/d/7ba4c56d920388be",
+    "id": "sha256:42495852899961c7f8abdbc1b12801787c340ec1eb9ab7bd418a6a94953468d4",
+    "url": "https://e2er.org/d/42495852899961c7",
     "doc": {
       "study": {
         "title": "How does GDP per capita in purchasing power standards vary across the EU's NU..."
@@ -2378,7 +2392,57 @@
           "url": "https://github.com/bhanneke/e2er-demos"
         }
       },
-      "purpose": "demonstration"
+      "purpose": "demonstration",
+      "amendments": [
+        {
+          "path": "paper/abstract.tex",
+          "kind": "abstract_rewritten",
+          "sha256_before": null,
+          "sha256_after": "4dcc506615e8b1a7f034b7a6a6196fc0616a5afdbd49348ddfd514ffbf2dc2bd",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:09:56Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": null
+        },
+        {
+          "path": "paper/paper.tex",
+          "kind": "abstract_rewritten",
+          "sha256_before": "5b3683dfb3dd396c5a6155104f1f9a0117ded33e48cb39f2b46f556621134935",
+          "sha256_after": "a2b53e0e4e35a81c9bfab74bdb8d40920b811adb5fca32b62b6b6a3cdf037f44",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:09:56Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 25935
+        },
+        {
+          "path": "paper/paper.pdf",
+          "kind": "abstract_rewritten",
+          "sha256_before": "adbdecbd759cbad5b9e13beeffdc9673a1f9516d076d776e1ede4bce52a15231",
+          "sha256_after": "38f1c965e0668d73b5fe8d43cf85589dc341f27c54140644d247444dd72486b2",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:09:56Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 71086
+        },
+        {
+          "path": "report.html",
+          "kind": "abstract_rewritten",
+          "sha256_before": "14d347c68f5308ce688dc4a2ae3fef86cf28e5686409300512b371c002665a3a",
+          "sha256_after": "64eee259fb2c1a09ad82ce8e25a2ac86ab14ffd18bbca4cb9eb22a89a5258e96",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:09:56Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 15860
+        }
+      ]
     }
   }
 }

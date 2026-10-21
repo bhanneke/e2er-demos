@@ -1,0 +1,12 @@
+\begin{abstract}
+\noindent Income differs sharply between European regions, and maps suggest that rich regions border rich regions. We ask how GDP per inhabitant in purchasing power standards varies across the EU's NUTS-2 regions in 2024 and how strongly high- and low-income regions cluster in space. We describe Eurostat's provisional regional accounts and measure clustering with Moran's $I$ and local cluster statistics. The richest region has more than six times the income of the poorest, and neighbouring regions resemble each other: Moran's $I$ is 0.37 and stays clearly positive under alternative neighbour definitions.
+% src: estimation_results.json#spatial_statistics.moran_gdp_queen.estimate
+Once each region's income is measured relative to its national mean, spatial autocorrelation is no longer detectable ($I$ of 0.02).
+% src: estimation_results.json#robustness.sens_within_country_demeaned.estimate
+After correction for multiple testing, 22 regions form significant local clusters, nearly all low-income.
+% src: estimation_results.json#cluster_details.n_significant_fdr
+Maps of regional income in the EU thus largely reflect national income levels, and low-income clusters are the most reliable local pattern.
+
+\medskip
+\noindent\textbf{Keywords:} regional inequality; GDP per capita; purchasing power standards; NUTS 2; spatial autocorrelation; Moran's I; European Union
+\end{abstract}

@@ -10,17 +10,23 @@
 \onehalfspacing
 
 \title{Spatial Clustering of GDP per Inhabitant across EU NUTS-2 Regions, 2024}
-\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/7ba4c56d920388be}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
+\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/42495852899961c7}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
 \date{}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-\noindent We describe how GDP per inhabitant in purchasing power standards (PPS) varies across 236 EU27 NUTS-2 regions in 2024 and how strongly high- and low-income regions cluster in space. Regional income spans a factor of more than six, from 16,700 PPS in the poorest to 107,200 PPS in the richest region. Neighbouring regions resemble each other: global Moran's $I$ is 0.37 under queen contiguity and remains clearly positive under three alternative weights definitions (five and eight nearest neighbours, inverse distance). The clustering is not an artefact of a few metropolitan peaks; dropping the top five regions raises it. It is, however, largely a between-country phenomenon: once each region's income is measured relative to its national mean, Moran's $I$ falls to 0.02, although this test has low power and its permutation null is not adapted to demeaned data. Uncorrected local indicators suggest low-income clusters in Poland, Greece, Bulgaria, Romania and Hungary and high-income clusters in Germany, the Netherlands, Ireland and northern Italy; after a false discovery rate correction, only 22 regions remain significant (20 low-low, one high-high, one high-low), so the high-income clusters are suggestive only. We report associations only and make no causal claim.
+\noindent Income differs sharply between European regions, and maps suggest that rich regions border rich regions. We ask how GDP per inhabitant in purchasing power standards varies across the EU's NUTS-2 regions in 2024 and how strongly high- and low-income regions cluster in space. We describe Eurostat's provisional regional accounts and measure clustering with Moran's $I$ and local cluster statistics. The richest region has more than six times the income of the poorest, and neighbouring regions resemble each other: Moran's $I$ is 0.37 and stays clearly positive under alternative neighbour definitions.
+% src: estimation_results.json#spatial_statistics.moran_gdp_queen.estimate
+Once each region's income is measured relative to its national mean, spatial autocorrelation is no longer detectable ($I$ of 0.02).
+% src: estimation_results.json#robustness.sens_within_country_demeaned.estimate
+After correction for multiple testing, 22 regions form significant local clusters, nearly all low-income.
+% src: estimation_results.json#cluster_details.n_significant_fdr
+Maps of regional income in the EU thus largely reflect national income levels, and low-income clusters are the most reliable local pattern.
 
 \medskip
-\noindent\textbf{Keywords:} regional inequality; GDP per capita; purchasing power standards; NUTS 2; spatial autocorrelation; Moran's I; LISA; European Union
+\noindent\textbf{Keywords:} regional inequality; GDP per capita; purchasing power standards; NUTS 2; spatial autocorrelation; Moran's I; European Union
 \end{abstract}
 
 \section{Introduction}
