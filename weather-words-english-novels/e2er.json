@@ -1,7 +1,7 @@
 {
   "schema": "e2er-research-object/0.1",
   "id": "bhanneke/weather-words-english-novels",
-  "content_id": "sha256:a5b6219d3837804fa7d6d47183dcefb0141fba87d6b003c7d19e1e65bd9946fc",
+  "content_id": "sha256:acba66e2aa16582e34724e43dadc1ef44e5d5c220ab99af203c48318823670c5",
   "title": "How did the vocabulary of weather (rain, wind, storm, fog, snow, sun, cloud a...",
   "question": "How did the vocabulary of weather (rain, wind, storm, fog, snow, sun, cloud and related words) vary across English-language novels by authors born in six cohorts, 1770–1799 to 1880–1899?",
   "contributors": [
@@ -517,15 +517,15 @@
   "outputs": [
     {
       "path": "paper/abstract.tex",
-      "sha256": "167f6b850f4639ad56e3e54587a8d9a0cb52e9dcfed2c73caa52c0e88d5b5a59"
+      "sha256": "d6b1046f38507cf65e1237dff70936f20ef90e4b19d39b7209db4732aa5bb05b"
     },
     {
       "path": "paper/paper.pdf",
-      "sha256": "abd3fc8889f9c1220ee98d66770f7977dde1b498571b9430f9014a54795ae723"
+      "sha256": "012eb9840b88294fda8b1eeb0c719e75fdf953b2abe2ca838fd7a24737a634d7"
     },
     {
       "path": "paper/paper.tex",
-      "sha256": "6f09e94c103ebfa81879b6ad7d71cbc3fa84b0778c6c52e37b8cb52bcd8d1b24"
+      "sha256": "d66cf47b8844dfeedb957e0791bb2ed56314ebcf59e5b18584089bbc7d655602"
     },
     {
       "path": "paper/refs.bib",
@@ -690,12 +690,12 @@
     {
       "check": "integrity",
       "status": "PASS",
-      "detail": "100 files hash-verified against provenance.json; 211 table cell(s) traced in the derivation graph; 4 change(s) after export recorded as amendments (README.md, paper/paper.pdf, paper/paper.tex)"
+      "detail": "100 files hash-verified against provenance.json; 211 table cell(s) traced in the derivation graph; 11 change(s) after export recorded as amendments (README.md, paper/abstract.tex, paper/paper.pdf); the abstract rewritten after export by e2er's abstract step (paper/abstract.tex, paper/paper.pdf, paper/paper.tex, report.html)"
     },
     {
       "check": "numbers",
       "status": "PASS",
-      "detail": "211 table cell(s) are source values at the precision shown; text (not gating): 232 of 232 number(s) are source values, 0 differ from the quantity named nearby, 0 untraced"
+      "detail": "211 table cell(s) are source values at the precision shown; text (not gating): 218 of 218 number(s) are source values, 0 differ from the quantity named nearby, 0 untraced"
     },
     {
       "check": "tables",
@@ -816,8 +816,8 @@
     }
   },
   "dossier": {
-    "id": "sha256:d9f0b0004906f789b9378ab0d76bd0b2f53aad94d2d3fc6169574e1f724bc051",
-    "url": "https://e2er.org/d/d9f0b0004906f789",
+    "id": "sha256:67f22aa2136e140dad0320341756dc97b55f9fbd4c981605ae119181d19fd5a3",
+    "url": "https://e2er.org/d/67f22aa2136e140d",
     "doc": {
       "study": {
         "title": "How did the vocabulary of weather (rain, wind, storm, fog, snow, sun, cloud a..."
@@ -4410,6 +4410,54 @@
           "reason": "exported again on 2026-10-21 from the original run (run database and a copy of its workspace; no study rerun, no model calls) with e2er c6d7bf2 to add the recorded data-preparation steps (get_data.py loads the Gutenberg texts again, build_data.py builds the corpus tables, data/sample_ids_v2.csv ships with the scripts that made it); files the operating system had deleted from the workspace were restored byte-identical from the 2026-10-15 export, and manifest.json was rebuilt from the run database. This README section says so.",
           "at": "2026-10-21T10:29:33Z",
           "kind": "re_export"
+        },
+        {
+          "path": "paper/abstract.tex",
+          "kind": "abstract_rewritten",
+          "sha256_before": "167f6b850f4639ad56e3e54587a8d9a0cb52e9dcfed2c73caa52c0e88d5b5a59",
+          "sha256_after": "d6b1046f38507cf65e1237dff70936f20ef90e4b19d39b7209db4732aa5bb05b",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:12:50Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 1912
+        },
+        {
+          "path": "paper/paper.tex",
+          "kind": "abstract_rewritten",
+          "sha256_before": "6f09e94c103ebfa81879b6ad7d71cbc3fa84b0778c6c52e37b8cb52bcd8d1b24",
+          "sha256_after": "c52bfd5392ee0a5819f46eeef7378a352fd21620f65be7c781efe62e85348a5f",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:12:50Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 48694
+        },
+        {
+          "path": "paper/paper.pdf",
+          "kind": "abstract_rewritten",
+          "sha256_before": "abd3fc8889f9c1220ee98d66770f7977dde1b498571b9430f9014a54795ae723",
+          "sha256_after": "579d6b574238ab13d172e49a06eb7a2d4f31ad593c931a74a9ac995a0907c026",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:12:50Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 88025
+        },
+        {
+          "path": "report.html",
+          "kind": "abstract_rewritten",
+          "sha256_before": "1277241fe4a3bced37830c1cea46b1b94b7271c6d4eb20ac2c8dd9da260c3022",
+          "sha256_after": "30dcb53ec00cb6ec656790f282fafb07d5cfc58e6c6372999e4d6925b4422739",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:12:50Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 22321
         }
       ]
     }

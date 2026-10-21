@@ -10,7 +10,7 @@
 \onehalfspacing
 
 \title{The Vocabulary of Weather in English-Language Novels by Author Birth Cohort, 1770--1899}
-\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/d9f0b0004906f789}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
+\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/67f22aa2136e140d}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
 \date{}
 
 \begin{document}
@@ -18,10 +18,17 @@
 
 \begin{abstract}
 \noindent
-Weather and climate are a recognised theme of the Victorian novel, but accounts of this theme typically rest on a few canonical texts. We ask how the vocabulary of weather (rain, wind, storm, fog, snow, sun, cloud and related words) varies across English-language novels by authors born in six cohorts, 1770--1799 to 1880--1899. Using 84 novels by 69 authors from Project Gutenberg (14 novels per cohort, 9.2 million tokens), we count a hand-built dictionary of 90 exact word forms per 10,000 tokens, compare cohorts with log-likelihood keyness and log ratios, and check the dictionary hits against a hand-judged sample of 198 passages. The pooled weather rate is stable across cohorts, between about 11 and 13 hits per 10,000 tokens, and the range of author rates is much wider than the range of cohort rates, although the author-bootstrap intervals are wide enough to leave sizeable cohort differences open. Beneath this stability, individual word families move: snow and ice words rise from 0.82 hits per 10,000 tokens in the first cohort to a peak of 2.06 in the fifth and 1.44 in the sixth, a pattern we regard as suggestive, and \emph{tempest} is concentrated in the earliest cohort. Fog and mist words are also more frequent in the sixth cohort, but precision in the hand-checked sample (not weighted by term frequency) is 0.71 overall and only 0.42 for storm words, 0.50 for fog words and 0.58 for cloud words, so these three families partly measure figurative language; the hand check found none of only four sampled fog hits in the sixth cohort to be weather (too few to bound the share well), and the fog rise cannot be read as more fog description. A reduced lexicon defined after the hand check makes the composite flat, lowers the rank correlation of the fog rise while the fog and mist rate still roughly doubles, and yields a steadier fall of storm words; because this lexicon was fitted to the hand-checked sample, we treat the storm fall as a pattern worth testing, not a finding. All patterns are descriptive and refer to this corpus of popular, digitised novels; none is a causal estimate.
+Weather is a recurring theme of the Victorian novel, yet accounts of it rest on a few canonical texts. We ask how the vocabulary of weather (rain, wind, storm, fog, snow, sun, cloud and related words) varies across English-language novels by authors born in six cohorts, 1770--1799 to 1880--1899. We count a hand-built dictionary in 84 Project Gutenberg novels and check the hits against hand-judged passages.
+% src: summary_statistics.json#n_observations
+The overall weather rate shows no detectable difference between cohorts, and variation between authors is far larger than variation between cohorts.
+Snow and ice words rise about two and a half times from the first to the fifth cohort, a suggestive pattern.
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.snow_ice_words.cohort_rates_per_10k.4
+Only half of the sampled fog hits describe weather, so the later rise in fog vocabulary partly reflects figurative language.
+% src: text_validation.json#fog_words.precision
+A word family needs hand validation before its rise or fall is read as a change in described weather.
 
 \medskip
-\noindent\textbf{Keywords:} weather vocabulary; English-language novel; author cohorts; keyness; dictionary validation; Project Gutenberg; computational literary studies
+\noindent\textbf{Keywords:} weather vocabulary; English-language novel; author cohorts; keyness; dictionary validation; computational literary studies
 \end{abstract}
 
 \section{Introduction}

@@ -4,7 +4,7 @@
       "bytes": 33351,
       "part": "study",
       "path": "README.md",
-      "sha256": "78ceddae16f4ae36a660bff77b0d27b14f62dba9d8e60d9be09c34bf437ca249"
+      "sha256": "32ce1115791ad9299d89aea314f2f731bd07fd4e48b787c954d3a63db5e3aeac"
     },
     {
       "bytes": 8955,
@@ -181,10 +181,10 @@
       "sha256": "a7f9c9dff71b7d35e3faa88e6a3fc8023a14656dcac7af3990c00018821d0fde"
     },
     {
-      "bytes": 224520,
+      "bytes": 227067,
       "part": "study",
       "path": "e2er.json",
-      "sha256": "dcc2b2b0941788586e316479a94e37f983be90906aed2846b872e2d6653c4409"
+      "sha256": "be09787635e7f2197f8be6cfdd724ba506dffe9e8c62da1a7c0c992f1c10d4ce"
     },
     {
       "bytes": 19688,
@@ -313,22 +313,22 @@
       "sha256": "4e22be0ad71ae1c41dd7a8f944e851ead671d114edf4faad1ee8c698d2ba5084"
     },
     {
-      "bytes": 1912,
+      "bytes": 1307,
       "part": "study",
       "path": "paper/abstract.tex",
-      "sha256": "167f6b850f4639ad56e3e54587a8d9a0cb52e9dcfed2c73caa52c0e88d5b5a59"
+      "sha256": "d6b1046f38507cf65e1237dff70936f20ef90e4b19d39b7209db4732aa5bb05b"
     },
     {
-      "bytes": 88025,
+      "bytes": 86721,
       "part": "study",
       "path": "paper/paper.pdf",
-      "sha256": "abd3fc8889f9c1220ee98d66770f7977dde1b498571b9430f9014a54795ae723"
+      "sha256": "012eb9840b88294fda8b1eeb0c719e75fdf953b2abe2ca838fd7a24737a634d7"
     },
     {
-      "bytes": 48694,
+      "bytes": 47669,
       "part": "study",
       "path": "paper/paper.tex",
-      "sha256": "6f09e94c103ebfa81879b6ad7d71cbc3fa84b0778c6c52e37b8cb52bcd8d1b24"
+      "sha256": "d66cf47b8844dfeedb957e0791bb2ed56314ebcf59e5b18584089bbc7d655602"
     },
     {
       "bytes": 22573,
@@ -361,10 +361,10 @@
       "sha256": "928679bee6f3c28446530784ffef216ff741fd3a696505adce7f4d1ba4d89642"
     },
     {
-      "bytes": 99472,
+      "bytes": 102722,
       "part": "study",
       "path": "provenance.json",
-      "sha256": "a5b6219d3837804fa7d6d47183dcefb0141fba87d6b003c7d19e1e65bd9946fc"
+      "sha256": "acba66e2aa16582e34724e43dadc1ef44e5d5c220ab99af203c48318823670c5"
     },
     {
       "bytes": 4386,
@@ -391,10 +391,10 @@
       "sha256": "e30852fabefa4216d522846dddf7d05a1845e31c0385deb50f27b26a8549c74e"
     },
     {
-      "bytes": 22321,
+      "bytes": 21339,
       "part": "study",
       "path": "report.html",
-      "sha256": "1277241fe4a3bced37830c1cea46b1b94b7271c6d4eb20ac2c8dd9da260c3022"
+      "sha256": "30dcb53ec00cb6ec656790f282fafb07d5cfc58e6c6372999e4d6925b4422739"
     },
     {
       "bytes": 24602,
@@ -614,7 +614,7 @@
     }
   ],
   "created": "20261021",
-  "e2er_version": "0.17.1",
+  "e2er_version": "0.17.3",
   "environment": {
     "hashes": true,
     "lock": "e2er-package/requirements.lock.txt",
@@ -622,7 +622,7 @@
     "python": "3.14",
     "resolved_as_of": "2026-10-22"
   },
-  "fingerprint": "sha256:7e739d6f0e7cdd437382ea5ad1c92aa9c6bd4d470e685e5cce1238827c72c368",
+  "fingerprint": "sha256:1b0f32eec9cc59a97eb24199fa3e79d37114d3d28d90f2eeea27ef6c296553af",
   "format": "e2er-package/1",
   "left_out": [
     {
