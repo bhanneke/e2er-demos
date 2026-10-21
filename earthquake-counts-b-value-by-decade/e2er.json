@@ -1,7 +1,7 @@
 {
   "schema": "e2er-research-object/0.1",
   "id": "bhanneke/earthquake-counts-b-value-by-decade",
-  "content_id": "sha256:7e71594d213dcd8764f08bfeb243e8c688f539d6b423b148610a6c5e11cb3bc0",
+  "content_id": "sha256:73011da51c3ef2defa87bfc6a99bb63cede3f95ddad9d96ccf3aa90320412862",
   "title": "How has the yearly number of magnitude 5 and larger earthquakes worldwide cha...",
   "question": "How has the yearly number of magnitude 5 and larger earthquakes worldwide changed from 1976 to 2025, and is the Gutenberg–Richter b-value stable across decades once the catalogue's completeness magnitude is taken into account?",
   "contributors": [
@@ -479,15 +479,15 @@
   "outputs": [
     {
       "path": "paper/abstract.tex",
-      "sha256": "49ab20b8356cce96117acdba8e9c6cc1c9137e341e89fef6c42875988cbc90d3"
+      "sha256": "a95e016871458a36507a4d8a3bd5e8b3daf3fe65bbf8635f7c3c78538bcec7ca"
     },
     {
       "path": "paper/paper.pdf",
-      "sha256": "35332bcff17bdac1a93402b1157f79b642b2d0fae2bec3f6e1ee9f2a974efe13"
+      "sha256": "2434a04d6be5370ff39a014da2232ec9cb22df8b4305cc03d753c180ce241969"
     },
     {
       "path": "paper/paper.tex",
-      "sha256": "e21fb72d2edbd49142ddd607691dca579714cff51b01f85f07973e69afb69477"
+      "sha256": "69f411663bb4406947f90343210f1a1ef41e7468ded6fd31aa408b69573bc1cf"
     },
     {
       "path": "paper/refs.bib",
@@ -616,12 +616,12 @@
     {
       "check": "integrity",
       "status": "PASS",
-      "detail": "65 files hash-verified against provenance.json; 392 table cell(s) traced in the derivation graph; 5 change(s) after export recorded as amendments (README.md, paper/paper.pdf, paper/paper.tex)"
+      "detail": "65 files hash-verified against provenance.json; 392 table cell(s) traced in the derivation graph; 12 change(s) after export recorded as amendments (README.md, paper/abstract.tex, paper/paper.pdf); the abstract rewritten after export by e2er's abstract step (paper/abstract.tex, paper/paper.pdf, paper/paper.tex, report.html)"
     },
     {
       "check": "numbers",
       "status": "PASS",
-      "detail": "397 table cell(s) are source values at the precision shown; text (not gating): 256 of 259 number(s) are source values, 2 differ from the quantity named nearby, 1 untraced"
+      "detail": "397 table cell(s) are source values at the precision shown; text (not gating): 246 of 249 number(s) are source values, 2 differ from the quantity named nearby, 1 untraced"
     },
     {
       "check": "tables",
@@ -730,8 +730,8 @@
     }
   },
   "dossier": {
-    "id": "sha256:2710da27da3a6d1bba0638dec8ca8e8c9e3975fc09ccc0edf14ae1fc579db012",
-    "url": "https://e2er.org/d/2710da27da3a6d1b",
+    "id": "sha256:3777eb6cfb5dfd277b1ec6d9938bd8fd85b31c3b8bc1426ecc7135aea8ae0301",
+    "url": "https://e2er.org/d/3777eb6cfb5dfd27",
     "doc": {
       "study": {
         "title": "How has the yearly number of magnitude 5 and larger earthquakes worldwide cha..."
@@ -3527,7 +3527,57 @@
           "url": "https://github.com/bhanneke/e2er-demos"
         }
       },
-      "purpose": "demonstration"
+      "purpose": "demonstration",
+      "amendments": [
+        {
+          "path": "paper/abstract.tex",
+          "kind": "abstract_rewritten",
+          "sha256_before": "49ab20b8356cce96117acdba8e9c6cc1c9137e341e89fef6c42875988cbc90d3",
+          "sha256_after": "a95e016871458a36507a4d8a3bd5e8b3daf3fe65bbf8635f7c3c78538bcec7ca",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:06:11Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 1634
+        },
+        {
+          "path": "paper/paper.tex",
+          "kind": "abstract_rewritten",
+          "sha256_before": "e21fb72d2edbd49142ddd607691dca579714cff51b01f85f07973e69afb69477",
+          "sha256_after": "f18711ca584d08c503c4f299a773a9b0f4817cf34ed2bd81a6d3aeaa7c38aba7",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:06:11Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 40521
+        },
+        {
+          "path": "paper/paper.pdf",
+          "kind": "abstract_rewritten",
+          "sha256_before": "35332bcff17bdac1a93402b1157f79b642b2d0fae2bec3f6e1ee9f2a974efe13",
+          "sha256_after": "ee8c147da5e489e21a8b949d7172bde126c880f39d17064032b8670c2f1f921a",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:06:11Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 100437
+        },
+        {
+          "path": "report.html",
+          "kind": "abstract_rewritten",
+          "sha256_before": "fcb03031053dec36fb3430056cba84da5b6ea611df3b57a3664ecbe519cfaae3",
+          "sha256_after": "785c5f9da30b482fc78f51974988f3c51c1055a49def85d30e7f7a1ed1533b15",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:06:11Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 17343
+        }
+      ]
     }
   }
 }

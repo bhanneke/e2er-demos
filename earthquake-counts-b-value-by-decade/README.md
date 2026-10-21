@@ -5,7 +5,7 @@
 
 **Question:** How has the yearly number of magnitude 5 and larger earthquakes worldwide changed from 1976 to 2025, and is the Gutenberg–Richter b-value stable across decades once the catalogue's completeness magnitude is taken into account?
 
-**Dossier:** https://e2er.org/d/2710da27da3a6d1b (every step of the run, the models, the data loads and the checks; id `sha256:2710da27da3a6d1bba0638dec8ca8e8c9e3975fc09ccc0edf14ae1fc579db012`)
+**Dossier:** https://e2er.org/d/3777eb6cfb5dfd27 (every step of the run, the models, the data loads and the checks; id `sha256:3777eb6cfb5dfd277b1ec6d9938bd8fd85b31c3b8bc1426ecc7135aea8ae0301`)
 
 **Made with:** e2er 0.16.1; template descriptive-study; model sonnet (claude_code)
 
