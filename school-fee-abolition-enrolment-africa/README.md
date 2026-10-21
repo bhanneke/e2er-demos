@@ -5,7 +5,7 @@
 
 **Question:** Did abolishing primary-school fees in sub-Saharan African countries (staggered between the mid-1990s and the mid-2000s) raise gross primary enrolment? A difference-in-differences with World Bank enrolment data, comparing countries that abolished fees with countries that had not (yet) abolished them.
 
-**Dossier:** https://e2er.org/d/984a090d8f324fe1 (every step of the run, the models, the data loads and the checks; id `sha256:984a090d8f324fe1a4355c95643417adbbcf997b476841604c37aaff97d884f5`)
+**Dossier:** https://e2er.org/d/626aef717cbc7d84 (every step of the run, the models, the data loads and the checks; id `sha256:626aef717cbc7d84819967f79983bb9d2b12efa6f349e9109aaff5c2d31c25b7`)
 
 **Made with:** e2er 0.16.0; template policy-evaluation; model sonnet (claude_code)
 

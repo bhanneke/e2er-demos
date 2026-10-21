@@ -1,7 +1,7 @@
 {
   "schema": "e2er-research-object/0.1",
   "id": "bhanneke/school-fee-abolition-enrolment-africa",
-  "content_id": "sha256:a29cee13730d2189b18a3437a9660e871d08980eaf9d8787332694eb6ad987a5",
+  "content_id": "sha256:ab7d1e7de1828a793e1a3a695b97eededeaffc0276775654b95041dfb13a9a89",
   "title": "Did abolishing primary-school fees in sub-Saharan African countries (staggere...",
   "question": "Did abolishing primary-school fees in sub-Saharan African countries (staggered between the mid-1990s and the mid-2000s) raise gross primary enrolment? A difference-in-differences with World Bank enrolment data, comparing countries that abolished fees with countries that had not (yet) abolished them.",
   "contributors": [
@@ -515,15 +515,15 @@
   "outputs": [
     {
       "path": "paper/abstract.tex",
-      "sha256": "f5990d731a6ff89df0c7a0a75c3afab5b56d950e7d828e685201dc17e150c04a"
+      "sha256": "6fc1f9654b278ef86850c78ff1d743bed6be8696e08f55c93c576e4b2e93abb2"
     },
     {
       "path": "paper/paper.pdf",
-      "sha256": "23bebcb188b3fa18db16fba775f1f80eec84662e4ecd444b25fa4a598b8b89ea"
+      "sha256": "5c08b0a0c18d0d84eb93bf5a23909bab7e274c1d3837103599cdef305dfeaea6"
     },
     {
       "path": "paper/paper.tex",
-      "sha256": "7090cdf17d25376de7ae8fbc3ccd5f4731512f7b1eeb532efa7205a2f3c3cfeb"
+      "sha256": "ebad3a3fd971382d77eded3635561e07fb257d4e14199f217f3a6a0afdb16cb6"
     },
     {
       "path": "paper/refs.bib",
@@ -620,7 +620,7 @@
     {
       "check": "integrity",
       "status": "PASS",
-      "detail": "57 files hash-verified against provenance.json; 121 table cell(s) traced in the derivation graph; 7 change(s) after export recorded as amendments (README.md, design/paper_plan.md, design/preregistration.md); 2 file(s) redacted by the researcher, personal contact details only (design/paper_plan.md, design/preregistration.md)"
+      "detail": "57 files hash-verified against provenance.json; 121 table cell(s) traced in the derivation graph; 14 change(s) after export recorded as amendments (README.md, design/paper_plan.md, design/preregistration.md); the abstract rewritten after export by e2er's abstract step (paper/abstract.tex, paper/paper.pdf, paper/paper.tex, report.html); 2 file(s) redacted by the researcher, personal contact details only (design/paper_plan.md, design/preregistration.md)"
     },
     {
       "check": "numbers",
@@ -746,9 +746,123 @@
     }
   },
   "dossier": {
-    "id": "sha256:984a090d8f324fe1a4355c95643417adbbcf997b476841604c37aaff97d884f5",
-    "url": "https://e2er.org/d/984a090d8f324fe1",
+    "id": "sha256:626aef717cbc7d84819967f79983bb9d2b12efa6f349e9109aaff5c2d31c25b7",
+    "url": "https://e2er.org/d/626aef717cbc7d84",
     "doc": {
+      "amendments": [
+        {
+          "at": "2026-10-20T07:07:39Z",
+          "kind": "redacted",
+          "path": "design/paper_plan.md",
+          "reason": "personal contact details removed by the researcher",
+          "redaction": {
+            "bytes_before": 22500,
+            "count": 1,
+            "offsets": [
+              217
+            ],
+            "removed_bytes": 29,
+            "replacement": "<redacted>"
+          },
+          "sha256_after": "5ce725ab9a74663c9ea7f5bacdffc40f1d94412b4c536131f9a345fed31a3b45",
+          "sha256_before": "d69883c08399faab3841dab6a15eb20d0d764c70cf81b6724a796f51c5011463"
+        },
+        {
+          "at": "2026-10-20T07:07:39Z",
+          "kind": "redacted",
+          "path": "design/preregistration.md",
+          "reason": "personal contact details removed by the researcher",
+          "redaction": {
+            "bytes_before": 33614,
+            "count": 1,
+            "offsets": [
+              460
+            ],
+            "removed_bytes": 29,
+            "replacement": "<redacted>"
+          },
+          "sha256_after": "6b11644bb0c37bdef241b611f1617ac781219176ea382ee988a6ba8d457b9748",
+          "sha256_before": "0739668ec62727170804ff8b2040f14b3f730316073cb8e7e3c697fa8ad9ed5c"
+        },
+        {
+          "at": "2026-10-20T07:46:18Z",
+          "e2er_version": "0.17.1",
+          "from_dossier": "sha256:00f09b8dcbede3adbf52e9370641e158ebb056fcd3079522aacfa5610972879b",
+          "from_version": 1,
+          "kind": "carried_over",
+          "path": "e2er.json",
+          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 1 (https://e2er.org/d/00f09b8dcbede3ad). Its steps are the ones that version recorded; none was added or rebuilt.",
+          "sha256_before": "51f1321fe32abb347c37e78fd119c8112317a45a2cc1071841b3d4371eb786f4"
+        },
+        {
+          "path": "paper/abstract.tex",
+          "kind": "abstract_rewritten",
+          "sha256_before": "f5990d731a6ff89df0c7a0a75c3afab5b56d950e7d828e685201dc17e150c04a",
+          "sha256_after": "6fc1f9654b278ef86850c78ff1d743bed6be8696e08f55c93c576e4b2e93abb2",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:08:12Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 1787
+        },
+        {
+          "path": "paper/paper.tex",
+          "kind": "abstract_rewritten",
+          "sha256_before": "7090cdf17d25376de7ae8fbc3ccd5f4731512f7b1eeb532efa7205a2f3c3cfeb",
+          "sha256_after": "4ab7d706f6e28e68c1ae7948319ad9d0f9e2d84e06af4794839e192357856485",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:08:12Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 29148
+        },
+        {
+          "path": "paper/paper.pdf",
+          "kind": "abstract_rewritten",
+          "sha256_before": "23bebcb188b3fa18db16fba775f1f80eec84662e4ecd444b25fa4a598b8b89ea",
+          "sha256_after": "c20c51c232b569fb4de50b35e1692b5d4b1f3ae59598375c677f307128e67850",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:08:12Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 87632
+        },
+        {
+          "path": "report.html",
+          "kind": "abstract_rewritten",
+          "sha256_before": "28cb62a7fdf403f4cbdfd1c767971eab02629879d2f89e9bacc52184b5f53e98",
+          "sha256_after": "f4f52887110464cd243cf6736c0ea448af7e8706f696309fbd57668c5c44c665",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:08:12Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 16609
+        },
+        {
+          "path": "e2er.json",
+          "kind": "carried_over",
+          "sha256_before": "02ff54fcda8efeacb8246e22d4f3cb6e46a001d06bdb96fb1ad3241ecba70e4d",
+          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 2 (https://e2er.org/d/984a090d8f324fe1). Its steps are the ones that version recorded; none was added or rebuilt.",
+          "at": "2026-10-21T23:08:42Z",
+          "from_version": 2,
+          "from_dossier": "sha256:984a090d8f324fe1a4355c95643417adbbcf997b476841604c37aaff97d884f5",
+          "e2er_version": "0.17.3"
+        }
+      ],
+      "availability": {
+        "data": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        },
+        "code": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        }
+      },
       "components": [
         {
           "id": "agent:abstract_writer",
@@ -2504,63 +2618,7 @@
           "type": "specialist"
         }
       ],
-      "availability": {
-        "data": {
-          "access": "public",
-          "url": "https://github.com/bhanneke/e2er-demos"
-        },
-        "code": {
-          "access": "public",
-          "url": "https://github.com/bhanneke/e2er-demos"
-        }
-      },
-      "purpose": "demonstration",
-      "amendments": [
-        {
-          "path": "design/paper_plan.md",
-          "kind": "redacted",
-          "sha256_before": "d69883c08399faab3841dab6a15eb20d0d764c70cf81b6724a796f51c5011463",
-          "sha256_after": "5ce725ab9a74663c9ea7f5bacdffc40f1d94412b4c536131f9a345fed31a3b45",
-          "reason": "personal contact details removed by the researcher",
-          "at": "2026-10-20T07:07:39Z",
-          "redaction": {
-            "replacement": "<redacted>",
-            "count": 1,
-            "offsets": [
-              217
-            ],
-            "removed_bytes": 29,
-            "bytes_before": 22500
-          }
-        },
-        {
-          "path": "design/preregistration.md",
-          "kind": "redacted",
-          "sha256_before": "0739668ec62727170804ff8b2040f14b3f730316073cb8e7e3c697fa8ad9ed5c",
-          "sha256_after": "6b11644bb0c37bdef241b611f1617ac781219176ea382ee988a6ba8d457b9748",
-          "reason": "personal contact details removed by the researcher",
-          "at": "2026-10-20T07:07:39Z",
-          "redaction": {
-            "replacement": "<redacted>",
-            "count": 1,
-            "offsets": [
-              460
-            ],
-            "removed_bytes": 29,
-            "bytes_before": 33614
-          }
-        },
-        {
-          "path": "e2er.json",
-          "kind": "carried_over",
-          "sha256_before": "51f1321fe32abb347c37e78fd119c8112317a45a2cc1071841b3d4371eb786f4",
-          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 1 (https://e2er.org/d/00f09b8dcbede3ad). Its steps are the ones that version recorded; none was added or rebuilt.",
-          "at": "2026-10-20T07:46:18Z",
-          "from_version": 1,
-          "from_dossier": "sha256:00f09b8dcbede3adbf52e9370641e158ebb056fcd3079522aacfa5610972879b",
-          "e2er_version": "0.17.1"
-        }
-      ]
+      "purpose": "demonstration"
     }
   }
 }
