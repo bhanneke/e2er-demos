@@ -1,0 +1,91 @@
+{
+  "tables": [
+    {
+      "filename": "corpus.tex",
+      "label": "tab:corpus",
+      "caption": "The analysed corpus by author birth cohort",
+      "layout": "records",
+      "source": "summary_statistics.json",
+      "path": "by_cohort",
+      "rows": ["c1", "c2", "c3", "c4", "c5", "c6"],
+      "row_labels": {"c1": "Cohort 1", "c2": "Cohort 2", "c3": "Cohort 3", "c4": "Cohort 4", "c5": "Cohort 5", "c6": "Cohort 6"},
+      "row_header": "Cohort",
+      "columns": [
+        {"field": "n_documents", "header": "Novels", "decimals": 0},
+        {"field": "n_authors", "header": "Authors", "decimals": 0},
+        {"field": "n_tokens", "header": "Tokens", "decimals": 0},
+        {"field": "tokens_per_doc_median", "header": "Median tokens per novel", "decimals": 1},
+        {"field": "birth_year_min", "header": "Earliest birth year", "decimals": 0},
+        {"field": "birth_year_max", "header": "Latest birth year", "decimals": 0},
+        {"field": "n_weather_dictionary_hits", "header": "Dictionary hits", "decimals": 0}
+      ],
+      "notes": "Cohort 1 comprises authors born 1770--1799, cohort 2 1800--1819, cohort 3 1820--1839, cohort 4 1840--1859, cohort 5 1860--1879 and cohort 6 1880--1899. Tokens are counted with the recorded preprocessing; every cohort has the same number of novels."
+    },
+    {
+      "filename": "weather_all.tex",
+      "label": "tab:weather_all",
+      "caption": "Weather dictionary hits per 10,000 tokens by author birth cohort",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "models.weather_all.outputs.by_group",
+      "key_field": "group",
+      "rows": ["c1", "c2", "c3", "c4", "c5", "c6", "all"],
+      "row_labels": {"c1": "Cohort 1", "c2": "Cohort 2", "c3": "Cohort 3", "c4": "Cohort 4", "c5": "Cohort 5", "c6": "Cohort 6", "all": "All novels"},
+      "row_header": "Group",
+      "columns": [
+        {"field": "hits", "header": "Hits", "decimals": 0},
+        {"field": "n_tokens", "header": "Tokens", "decimals": 0},
+        {"field": "per_10k", "header": "Pooled rate", "decimals": 2},
+        {"field": "ci_pooled_per_10k.0", "header": "CI low", "decimals": 2},
+        {"field": "ci_pooled_per_10k.1", "header": "CI high", "decimals": 2},
+        {"field": "mean_doc_per_10k", "header": "Mean novel rate", "decimals": 2},
+        {"field": "n_authors", "header": "Authors", "decimals": 0}
+      ],
+      "notes": "Rates are hits per 10,000 tokens. The pooled rate divides all hits of a group by all its tokens; the mean novel rate averages the rates of individual novels. Confidence intervals (95\\%) are percentile intervals from a bootstrap that resamples authors within cohort."
+    },
+    {
+      "filename": "families.tex",
+      "label": "tab:families",
+      "caption": "Weather word families per 10,000 tokens by author birth cohort",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "models.cohort_trend.outputs.trend_by_category",
+      "rows": ["weather_all", "precipitation", "wind_words", "storm_words", "fog_words", "snow_ice_words", "sun_words", "cloud_words"],
+      "row_labels": {"weather_all": "All weather words", "precipitation": "Precipitation", "wind_words": "Wind", "storm_words": "Storm", "fog_words": "Fog and mist", "snow_ice_words": "Snow and ice", "sun_words": "Sun", "cloud_words": "Cloud"},
+      "row_header": "Family",
+      "columns": [
+        {"field": "cohort_rates_per_10k.0", "header": "C1", "decimals": 2},
+        {"field": "cohort_rates_per_10k.1", "header": "C2", "decimals": 2},
+        {"field": "cohort_rates_per_10k.2", "header": "C3", "decimals": 2},
+        {"field": "cohort_rates_per_10k.3", "header": "C4", "decimals": 2},
+        {"field": "cohort_rates_per_10k.4", "header": "C5", "decimals": 2},
+        {"field": "cohort_rates_per_10k.5", "header": "C6", "decimals": 2},
+        {"field": "spearman_rho", "header": "Spearman $\\rho$", "decimals": 2},
+        {"field": "spearman_p", "header": "$p$", "decimals": 3}
+      ],
+      "notes": "C1 to C6 are the six birth cohorts (1770--1799 to 1880--1899). Spearman $\\rho$ is the rank correlation between the six cohort rates and cohort order; $p$ values are unadjusted for the number of profiles examined and, with six points, describe monotone drift only."
+    },
+    {
+      "filename": "terms.tex",
+      "label": "tab:terms",
+      "caption": "Seven focal weather terms per 10,000 tokens by author birth cohort",
+      "layout": "records",
+      "source": "estimation_results.json",
+      "path": "models.cohort_trend.outputs.trend_by_term",
+      "rows": ["rain", "wind", "storm", "fog", "snow", "sun", "cloud"],
+      "row_labels": {"rain": "rain", "wind": "wind", "storm": "storm", "fog": "fog", "snow": "snow", "sun": "sun", "cloud": "cloud"},
+      "row_header": "Term",
+      "columns": [
+        {"field": "cohort_rates_per_10k.0", "header": "C1", "decimals": 2},
+        {"field": "cohort_rates_per_10k.1", "header": "C2", "decimals": 2},
+        {"field": "cohort_rates_per_10k.2", "header": "C3", "decimals": 2},
+        {"field": "cohort_rates_per_10k.3", "header": "C4", "decimals": 2},
+        {"field": "cohort_rates_per_10k.4", "header": "C5", "decimals": 2},
+        {"field": "cohort_rates_per_10k.5", "header": "C6", "decimals": 2},
+        {"field": "spearman_rho", "header": "Spearman $\\rho$", "decimals": 2},
+        {"field": "spearman_p", "header": "$p$", "decimals": 3}
+      ],
+      "notes": "Counts are of the exact word form only (rain does not include rains or rained). C1 to C6 are the six birth cohorts. $p$ values are unadjusted."
+    }
+  ]
+}

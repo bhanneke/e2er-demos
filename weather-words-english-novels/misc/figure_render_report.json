@@ -1,0 +1,24 @@
+{
+  "rendered": [
+    "fig_corpus_tokens_by_cohort.pdf",
+    "fig_corpus_median_length_by_cohort.pdf",
+    "fig_keyness_c1.pdf",
+    "fig_keyness_weather_c1.pdf",
+    "fig_keyness_c2.pdf",
+    "fig_keyness_weather_c2.pdf",
+    "fig_keyness_c3.pdf",
+    "fig_keyness_weather_c3.pdf",
+    "fig_keyness_c4.pdf",
+    "fig_keyness_weather_c4.pdf",
+    "fig_keyness_c5.pdf",
+    "fig_keyness_weather_c5.pdf",
+    "fig_keyness_c6.pdf",
+    "fig_keyness_weather_c6.pdf",
+    "fig_cohort_trend.pdf"
+  ],
+  "skipped": [],
+  "errors": [],
+  "placeholders": [],
+  "notes": [],
+  "skipped_reason": null
+}

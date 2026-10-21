@@ -1,0 +1,1292 @@
+{
+  "passed": true,
+  "total_values_in_tables": 211,
+  "matched": 211,
+  "mismatched": 0,
+  "unverifiable": 0,
+  "coverage": 1.0,
+  "mismatches": [],
+  "matched_cells": [
+    {
+      "draft_value": "14",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_documents",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 2, col 2"
+    },
+    {
+      "draft_value": "10",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_authors",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 2, col 3"
+    },
+    {
+      "draft_value": "1,742,991",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_tokens",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 2, col 4"
+    },
+    {
+      "draft_value": "122327.0",
+      "source_key": "summary_statistics.json.by_cohort.c1.tokens_per_doc_median",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 2, col 5"
+    },
+    {
+      "draft_value": "1,770",
+      "source_key": "summary_statistics.json.author_birth_year.min",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 2, col 6"
+    },
+    {
+      "draft_value": "1,797",
+      "source_key": "summary_statistics.json.by_cohort.c1.birth_year_max",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 2, col 7"
+    },
+    {
+      "draft_value": "1,933",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_weather_dictionary_hits",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 2, col 8"
+    },
+    {
+      "draft_value": "14",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_documents",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 3, col 2"
+    },
+    {
+      "draft_value": "13",
+      "source_key": "summary_statistics.json.by_cohort.c2.n_authors",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 3, col 3"
+    },
+    {
+      "draft_value": "2,389,137",
+      "source_key": "summary_statistics.json.by_cohort.c2.n_tokens",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 3, col 4"
+    },
+    {
+      "draft_value": "157540.5",
+      "source_key": "summary_statistics.json.by_cohort.c2.tokens_per_doc_median",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 3, col 5"
+    },
+    {
+      "draft_value": "1,803",
+      "source_key": "summary_statistics.json.by_cohort.c2.birth_year_min",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 3, col 6"
+    },
+    {
+      "draft_value": "1,819",
+      "source_key": "summary_statistics.json.by_cohort.c2.birth_year_max",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 3, col 7"
+    },
+    {
+      "draft_value": "2,582",
+      "source_key": "summary_statistics.json.by_cohort.c2.n_weather_dictionary_hits",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 3, col 8"
+    },
+    {
+      "draft_value": "14",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_documents",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 4, col 2"
+    },
+    {
+      "draft_value": "11",
+      "source_key": "summary_statistics.json.by_cohort.c3.n_authors",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 4, col 3"
+    },
+    {
+      "draft_value": "1,626,578",
+      "source_key": "summary_statistics.json.by_cohort.c3.n_tokens",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 4, col 4"
+    },
+    {
+      "draft_value": "96250.5",
+      "source_key": "summary_statistics.json.by_cohort.c3.tokens_per_doc_median",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 4, col 5"
+    },
+    {
+      "draft_value": "1,820",
+      "source_key": "summary_statistics.json.by_cohort.c2.birth_year_mean",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 4, col 6"
+    },
+    {
+      "draft_value": "1,838",
+      "source_key": "summary_statistics.json.author_birth_year.mean",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 4, col 7"
+    },
+    {
+      "draft_value": "1,779",
+      "source_key": "summary_statistics.json.by_cohort.c1.birth_year_mean",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 4, col 8"
+    },
+    {
+      "draft_value": "14",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_documents",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 5, col 2"
+    },
+    {
+      "draft_value": "12",
+      "source_key": "summary_statistics.json.by_cohort.c4.n_authors",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 5, col 3"
+    },
+    {
+      "draft_value": "1,259,938",
+      "source_key": "summary_statistics.json.by_cohort.c4.n_tokens",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 5, col 4"
+    },
+    {
+      "draft_value": "81698.0",
+      "source_key": "summary_statistics.json.by_cohort.c4.tokens_per_doc_median",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 5, col 5"
+    },
+    {
+      "draft_value": "1,840",
+      "source_key": "summary_statistics.json.author_birth_year.mean",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 5, col 6"
+    },
+    {
+      "draft_value": "1,859",
+      "source_key": "summary_statistics.json.by_cohort.c4.birth_year_max",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 5, col 7"
+    },
+    {
+      "draft_value": "1,678",
+      "source_key": "summary_statistics.json.by_cohort.c4.n_weather_dictionary_hits",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 5, col 8"
+    },
+    {
+      "draft_value": "14",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_documents",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 6, col 2"
+    },
+    {
+      "draft_value": "14",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_documents",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 6, col 3"
+    },
+    {
+      "draft_value": "1,036,163",
+      "source_key": "summary_statistics.json.by_cohort.c5.n_tokens",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 6, col 4"
+    },
+    {
+      "draft_value": "76644.0",
+      "source_key": "summary_statistics.json.by_cohort.c5.tokens_per_doc_median",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 6, col 5"
+    },
+    {
+      "draft_value": "1,860",
+      "source_key": "summary_statistics.json.by_cohort.c5.birth_year_min",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 6, col 6"
+    },
+    {
+      "draft_value": "1,878",
+      "source_key": "summary_statistics.json.by_cohort.c5.birth_year_max",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 6, col 7"
+    },
+    {
+      "draft_value": "1,242",
+      "source_key": "summary_statistics.json.by_cohort.c5.n_weather_dictionary_hits",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 6, col 8"
+    },
+    {
+      "draft_value": "14",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_documents",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 7, col 2"
+    },
+    {
+      "draft_value": "9",
+      "source_key": "summary_statistics.json.by_cohort.c6.n_authors",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 7, col 3"
+    },
+    {
+      "draft_value": "1,193,286",
+      "source_key": "summary_statistics.json.by_cohort.c6.n_tokens",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 7, col 4"
+    },
+    {
+      "draft_value": "82498.5",
+      "source_key": "summary_statistics.json.by_cohort.c6.tokens_per_doc_median",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 7, col 5"
+    },
+    {
+      "draft_value": "1,880",
+      "source_key": "summary_statistics.json.by_cohort.c6.birth_year_min",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 7, col 6"
+    },
+    {
+      "draft_value": "1,890",
+      "source_key": "summary_statistics.json.author_birth_year.max",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 7, col 7"
+    },
+    {
+      "draft_value": "1,326",
+      "source_key": "summary_statistics.json.by_cohort.c6.n_weather_dictionary_hits",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 7, col 8"
+    },
+    {
+      "draft_value": "1,933",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_weather_dictionary_hits",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 2, col 2"
+    },
+    {
+      "draft_value": "1,742,991",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_tokens",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 2, col 3"
+    },
+    {
+      "draft_value": "11.09",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].per_10k",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 2, col 4"
+    },
+    {
+      "draft_value": "7.11",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].ci_pooled_per_10k[0]",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 2, col 5"
+    },
+    {
+      "draft_value": "15.55",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].ci_pooled_per_10k[1]",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 2, col 6"
+    },
+    {
+      "draft_value": "10.83",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].mean_doc_per_10k",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 2, col 7"
+    },
+    {
+      "draft_value": "10",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_authors",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 2, col 8"
+    },
+    {
+      "draft_value": "2,582",
+      "source_key": "summary_statistics.json.by_cohort.c2.n_weather_dictionary_hits",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 3, col 2"
+    },
+    {
+      "draft_value": "2,389,137",
+      "source_key": "summary_statistics.json.by_cohort.c2.n_tokens",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 3, col 3"
+    },
+    {
+      "draft_value": "10.81",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].mean_doc_per_10k",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 3, col 4"
+    },
+    {
+      "draft_value": "7.01",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[22].count",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 3, col 5"
+    },
+    {
+      "draft_value": "15.32",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[1].ci_pooled_per_10k[1]",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 3, col 6"
+    },
+    {
+      "draft_value": "12.28",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[1].mean_doc_per_10k",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 3, col 7"
+    },
+    {
+      "draft_value": "13",
+      "source_key": "summary_statistics.json.by_cohort.c2.n_authors",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 3, col 8"
+    },
+    {
+      "draft_value": "1,779",
+      "source_key": "summary_statistics.json.by_cohort.c1.birth_year_mean",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 4, col 2"
+    },
+    {
+      "draft_value": "1,626,578",
+      "source_key": "summary_statistics.json.by_cohort.c3.n_tokens",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 4, col 3"
+    },
+    {
+      "draft_value": "10.94",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[2].per_10k",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 4, col 4"
+    },
+    {
+      "draft_value": "8.01",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[9].count",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 4, col 5"
+    },
+    {
+      "draft_value": "15.64",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[2].ci_pooled_per_10k[1]",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 4, col 6"
+    },
+    {
+      "draft_value": "13.61",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[2].mean_doc_per_10k",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 4, col 7"
+    },
+    {
+      "draft_value": "11",
+      "source_key": "summary_statistics.json.by_cohort.c3.n_authors",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 4, col 8"
+    },
+    {
+      "draft_value": "1,678",
+      "source_key": "summary_statistics.json.by_cohort.c4.n_weather_dictionary_hits",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 5, col 2"
+    },
+    {
+      "draft_value": "1,259,938",
+      "source_key": "summary_statistics.json.by_cohort.c4.n_tokens",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 5, col 3"
+    },
+    {
+      "draft_value": "13.32",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[3].per_10k",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 5, col 4"
+    },
+    {
+      "draft_value": "10.87",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].mean_doc_per_10k",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 5, col 5"
+    },
+    {
+      "draft_value": "15.71",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[2].ci_pooled_per_10k[1]",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 5, col 6"
+    },
+    {
+      "draft_value": "13.47",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[3].mean_doc_per_10k",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 5, col 7"
+    },
+    {
+      "draft_value": "12",
+      "source_key": "summary_statistics.json.by_cohort.c4.n_authors",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 5, col 8"
+    },
+    {
+      "draft_value": "1,242",
+      "source_key": "summary_statistics.json.by_cohort.c5.n_weather_dictionary_hits",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 6, col 2"
+    },
+    {
+      "draft_value": "1,036,163",
+      "source_key": "summary_statistics.json.by_cohort.c5.n_tokens",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 6, col 3"
+    },
+    {
+      "draft_value": "11.99",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[3].dispersion_authors.median",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 6, col 4"
+    },
+    {
+      "draft_value": "9.16",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[4].ci_pooled_per_10k[0]",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 6, col 5"
+    },
+    {
+      "draft_value": "14.80",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[4].ci_pooled_per_10k[1]",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 6, col 6"
+    },
+    {
+      "draft_value": "11.89",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[4].mean_doc_per_10k",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 6, col 7"
+    },
+    {
+      "draft_value": "14",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_documents",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 6, col 8"
+    },
+    {
+      "draft_value": "1,326",
+      "source_key": "summary_statistics.json.by_cohort.c6.n_weather_dictionary_hits",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 7, col 2"
+    },
+    {
+      "draft_value": "1,193,286",
+      "source_key": "summary_statistics.json.by_cohort.c6.n_tokens",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 7, col 3"
+    },
+    {
+      "draft_value": "11.11",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].per_10k",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 7, col 4"
+    },
+    {
+      "draft_value": "8.44",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].dispersion_authors.sd",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 7, col 5"
+    },
+    {
+      "draft_value": "13.88",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[5].ci_pooled_per_10k[1]",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 7, col 6"
+    },
+    {
+      "draft_value": "11.04",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].per_10k",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 7, col 7"
+    },
+    {
+      "draft_value": "9",
+      "source_key": "summary_statistics.json.by_cohort.c6.n_authors",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 7, col 8"
+    },
+    {
+      "draft_value": "10,540",
+      "source_key": "summary_statistics.json.weather_dictionary.n_hits_total",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 8, col 2"
+    },
+    {
+      "draft_value": "9,248,093",
+      "source_key": "summary_statistics.json.n_tokens",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 8, col 3"
+    },
+    {
+      "draft_value": "11.40",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[2].dispersion_authors.median",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 8, col 4"
+    },
+    {
+      "draft_value": "9.84",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[6].ci_pooled_per_10k[0]",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 8, col 5"
+    },
+    {
+      "draft_value": "13.09",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[6].ci_pooled_per_10k[1]",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 8, col 6"
+    },
+    {
+      "draft_value": "12.19",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[6].mean_doc_per_10k",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 8, col 7"
+    },
+    {
+      "draft_value": "69",
+      "source_key": "summary_statistics.json.n_units",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 8, col 8"
+    },
+    {
+      "draft_value": "11.09",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 2, col 2"
+    },
+    {
+      "draft_value": "10.81",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].mean_doc_per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 2, col 3"
+    },
+    {
+      "draft_value": "10.94",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[2].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 2, col 4"
+    },
+    {
+      "draft_value": "13.32",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[3].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 2, col 5"
+    },
+    {
+      "draft_value": "11.99",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[3].dispersion_authors.median",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 2, col 6"
+    },
+    {
+      "draft_value": "11.11",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 2, col 7"
+    },
+    {
+      "draft_value": "0.60",
+      "source_key": "estimation_results.json.models.weather_all.outputs.trend.spearman_rho",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 2, col 8"
+    },
+    {
+      "draft_value": "0.208",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[8].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 2, col 9"
+    },
+    {
+      "draft_value": "0.74",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[50].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 3, col 2"
+    },
+    {
+      "draft_value": "1.10",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[1].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 3, col 3"
+    },
+    {
+      "draft_value": "1.07",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[2].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 3, col 4"
+    },
+    {
+      "draft_value": "1.21",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[3].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 3, col 5"
+    },
+    {
+      "draft_value": "1.50",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[4].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 3, col 6"
+    },
+    {
+      "draft_value": "0.86",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[5].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 3, col 7"
+    },
+    {
+      "draft_value": "0.37",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[56].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 3, col 8"
+    },
+    {
+      "draft_value": "0.469",
+      "source_key": "estimation_results.json.term_frequencies.c5.terms[65].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 3, col 9"
+    },
+    {
+      "draft_value": "2.94",
+      "source_key": "estimation_results.json.models.wind_words.outputs.by_group[0].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 4, col 2"
+    },
+    {
+      "draft_value": "2.18",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[50].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 4, col 3"
+    },
+    {
+      "draft_value": "2.04",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[4].ci_pooled_per_10k[1]",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 4, col 4"
+    },
+    {
+      "draft_value": "3.15",
+      "source_key": "estimation_results.json.models.wind_words.outputs.by_group[3].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 4, col 5"
+    },
+    {
+      "draft_value": "2.16",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[50].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 4, col 6"
+    },
+    {
+      "draft_value": "2.36",
+      "source_key": "estimation_results.json.models.wind_words.outputs.by_group[5].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 4, col 7"
+    },
+    {
+      "draft_value": "-0.09",
+      "source_key": "estimation_results.json.models.wind_words.outputs.trend.spearman_rho",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 4, col 8"
+    },
+    {
+      "draft_value": "0.872",
+      "source_key": "estimation_results.json.term_frequencies.c5.terms[30].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 4, col 9"
+    },
+    {
+      "draft_value": "2.31",
+      "source_key": "estimation_results.json.models.storm_words.outputs.by_group[0].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 5, col 2"
+    },
+    {
+      "draft_value": "2.29",
+      "source_key": "estimation_results.json.models.storm_words.outputs.by_group[1].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 5, col 3"
+    },
+    {
+      "draft_value": "1.55",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[2].ci_pooled_per_10k[1]",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 5, col 4"
+    },
+    {
+      "draft_value": "1.94",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[4].dispersion_authors.p75",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 5, col 5"
+    },
+    {
+      "draft_value": "1.73",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[70].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 5, col 6"
+    },
+    {
+      "draft_value": "1.64",
+      "source_key": "estimation_results.json.models.storm_words.outputs.by_group[0].dispersion_authors.sd",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 5, col 7"
+    },
+    {
+      "draft_value": "-0.66",
+      "source_key": "estimation_results.json.models.storm_words.outputs.trend.spearman_rho",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 5, col 8"
+    },
+    {
+      "draft_value": "0.156",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[15].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 5, col 9"
+    },
+    {
+      "draft_value": "0.73",
+      "source_key": "estimation_results.json.models.fog_words.outputs.by_group[0].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 6, col 2"
+    },
+    {
+      "draft_value": "0.40",
+      "source_key": "estimation_results.json.models.fog_words.outputs.by_group[1].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 6, col 3"
+    },
+    {
+      "draft_value": "0.88",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[6].ci_pooled_per_10k[0]",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 6, col 4"
+    },
+    {
+      "draft_value": "1.23",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[6].ci_pooled_per_10k[1]",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 6, col 5"
+    },
+    {
+      "draft_value": "0.80",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[32].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 6, col 6"
+    },
+    {
+      "draft_value": "1.53",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[53].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 6, col 7"
+    },
+    {
+      "draft_value": "0.77",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[0].mean_doc_per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 6, col 8"
+    },
+    {
+      "draft_value": "0.072",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[7].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 6, col 9"
+    },
+    {
+      "draft_value": "0.82",
+      "source_key": "estimation_results.json.models.fog_words.outputs.by_group[3].ci_pooled_per_10k[0]",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 7, col 2"
+    },
+    {
+      "draft_value": "1.10",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[1].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 7, col 3"
+    },
+    {
+      "draft_value": "1.11",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[6].mean_doc_per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 7, col 4"
+    },
+    {
+      "draft_value": "1.56",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[61].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 7, col 5"
+    },
+    {
+      "draft_value": "2.06",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[4].ci_pooled_per_10k[1]",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 7, col 6"
+    },
+    {
+      "draft_value": "1.44",
+      "source_key": "estimation_results.json.models.storm_words.outputs.by_group[0].dispersion_authors.p25",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 7, col 7"
+    },
+    {
+      "draft_value": "0.83",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[2].dispersion_authors.sd",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 7, col 8"
+    },
+    {
+      "draft_value": "0.042",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[9].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 7, col 9"
+    },
+    {
+      "draft_value": "1.98",
+      "source_key": "estimation_results.json.models.wind_words.outputs.by_group[2].dispersion_authors.sd",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 8, col 2"
+    },
+    {
+      "draft_value": "2.64",
+      "source_key": "estimation_results.json.models.storm_words.outputs.by_group[4].dispersion_authors.p75",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 8, col 3"
+    },
+    {
+      "draft_value": "3.04",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[4].dispersion_authors.max",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 8, col 4"
+    },
+    {
+      "draft_value": "2.94",
+      "source_key": "estimation_results.json.models.wind_words.outputs.by_group[0].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 8, col 5"
+    },
+    {
+      "draft_value": "2.83",
+      "source_key": "estimation_results.json.models.sun_words.outputs.by_group[4].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 8, col 6"
+    },
+    {
+      "draft_value": "2.25",
+      "source_key": "estimation_results.json.models.snow_ice_words.outputs.by_group[2].ci_pooled_per_10k[1]",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 8, col 7"
+    },
+    {
+      "draft_value": "0.20",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[57].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 8, col 8"
+    },
+    {
+      "draft_value": "0.704",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[2].ci_pooled_per_10k[0]",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 8, col 9"
+    },
+    {
+      "draft_value": "1.57",
+      "source_key": "estimation_results.json.models.snow_ice_words.outputs.by_group[3].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 9, col 2"
+    },
+    {
+      "draft_value": "1.09",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[2].dispersion_authors.median",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 9, col 3"
+    },
+    {
+      "draft_value": "1.25",
+      "source_key": "estimation_results.json.models.fog_words.outputs.by_group[4].ci_mean_doc_per_10k[1]",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 9, col 4"
+    },
+    {
+      "draft_value": "1.29",
+      "source_key": "estimation_results.json.models.fog_words.outputs.by_group[6].ci_mean_doc_per_10k[1]",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 9, col 5"
+    },
+    {
+      "draft_value": "0.92",
+      "source_key": "estimation_results.json.models.snow_ice_words.outputs.by_group[6].ci_mean_doc_per_10k[0]",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 9, col 6"
+    },
+    {
+      "draft_value": "1.03",
+      "source_key": "estimation_results.json.models.cloud_words.outputs.by_group[5].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 9, col 7"
+    },
+    {
+      "draft_value": "-0.71",
+      "source_key": "estimation_results.json.models.cloud_words.outputs.trend.spearman_rho",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 9, col 8"
+    },
+    {
+      "draft_value": "0.111",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[44].per_10k",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 9, col 9"
+    },
+    {
+      "draft_value": "0.43",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[28].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 2, col 2"
+    },
+    {
+      "draft_value": "0.53",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[33].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 2, col 3"
+    },
+    {
+      "draft_value": "0.71",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[32].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 2, col 4"
+    },
+    {
+      "draft_value": "0.80",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[32].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 2, col 5"
+    },
+    {
+      "draft_value": "0.87",
+      "source_key": "estimation_results.json.term_frequencies.c5.terms[30].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 2, col 6"
+    },
+    {
+      "draft_value": "0.52",
+      "source_key": "estimation_results.json.term_frequencies.c6.terms[29].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 2, col 7"
+    },
+    {
+      "draft_value": "0.43",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[28].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 2, col 8"
+    },
+    {
+      "draft_value": "0.397",
+      "source_key": "estimation_results.json.models.wind_words.outputs.by_group[5].dispersion_authors.min",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 2, col 9"
+    },
+    {
+      "draft_value": "1.56",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[61].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 3, col 2"
+    },
+    {
+      "draft_value": "1.28",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[71].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 3, col 3"
+    },
+    {
+      "draft_value": "1.17",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[66].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 3, col 4"
+    },
+    {
+      "draft_value": "1.72",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[70].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 3, col 5"
+    },
+    {
+      "draft_value": "1.38",
+      "source_key": "estimation_results.json.term_frequencies.c5.terms[69].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 3, col 6"
+    },
+    {
+      "draft_value": "1.28",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[71].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 3, col 7"
+    },
+    {
+      "draft_value": "0.03",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[1].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 3, col 8"
+    },
+    {
+      "draft_value": "0.957",
+      "source_key": "estimation_results.json.models.cloud_words.outputs.by_group[0].ci_mean_doc_per_10k[0]",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 3, col 9"
+    },
+    {
+      "draft_value": "0.68",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[42].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 4, col 2"
+    },
+    {
+      "draft_value": "0.74",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[50].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 4, col 3"
+    },
+    {
+      "draft_value": "0.64",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[47].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 4, col 4"
+    },
+    {
+      "draft_value": "0.69",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[49].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 4, col 5"
+    },
+    {
+      "draft_value": "0.51",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[42].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 4, col 6"
+    },
+    {
+      "draft_value": "0.54",
+      "source_key": "estimation_results.json.term_frequencies.c6.terms[46].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 4, col 7"
+    },
+    {
+      "draft_value": "-0.66",
+      "source_key": "estimation_results.json.models.storm_words.outputs.trend.spearman_rho",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 4, col 8"
+    },
+    {
+      "draft_value": "0.156",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[15].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 4, col 9"
+    },
+    {
+      "draft_value": "0.21",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[8].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 5, col 2"
+    },
+    {
+      "draft_value": "0.04",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[22].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 5, col 3"
+    },
+    {
+      "draft_value": "0.32",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[9].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 5, col 4"
+    },
+    {
+      "draft_value": "0.33",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[62].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 5, col 5"
+    },
+    {
+      "draft_value": "0.11",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[44].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 5, col 6"
+    },
+    {
+      "draft_value": "0.36",
+      "source_key": "estimation_results.json.term_frequencies.c5.terms[0].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 5, col 7"
+    },
+    {
+      "draft_value": "0.54",
+      "source_key": "estimation_results.json.term_frequencies.c6.terms[46].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 5, col 8"
+    },
+    {
+      "draft_value": "0.266",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[28].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 5, col 9"
+    },
+    {
+      "draft_value": "0.46",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[37].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 6, col 2"
+    },
+    {
+      "draft_value": "0.51",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[42].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 6, col 3"
+    },
+    {
+      "draft_value": "0.61",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[41].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 6, col 4"
+    },
+    {
+      "draft_value": "0.97",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[42].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 6, col 5"
+    },
+    {
+      "draft_value": "1.32",
+      "source_key": "estimation_results.json.term_frequencies.c5.terms[41].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 6, col 6"
+    },
+    {
+      "draft_value": "0.90",
+      "source_key": "estimation_results.json.term_frequencies.c6.terms[38].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 6, col 7"
+    },
+    {
+      "draft_value": "0.83",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[2].dispersion_authors.sd",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 6, col 8"
+    },
+    {
+      "draft_value": "0.042",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[9].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 6, col 9"
+    },
+    {
+      "draft_value": "1.68",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[45].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 7, col 2"
+    },
+    {
+      "draft_value": "1.54",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[53].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 7, col 3"
+    },
+    {
+      "draft_value": "2.17",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[50].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 7, col 4"
+    },
+    {
+      "draft_value": "2.02",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[52].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 7, col 5"
+    },
+    {
+      "draft_value": "2.08",
+      "source_key": "estimation_results.json.term_frequencies.c5.terms[54].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 7, col 6"
+    },
+    {
+      "draft_value": "1.53",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[53].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 7, col 7"
+    },
+    {
+      "draft_value": "-0.09",
+      "source_key": "estimation_results.json.models.wind_words.outputs.trend.spearman_rho",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 7, col 8"
+    },
+    {
+      "draft_value": "0.872",
+      "source_key": "estimation_results.json.term_frequencies.c5.terms[30].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 7, col 9"
+    },
+    {
+      "draft_value": "0.67",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[3].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 8, col 2"
+    },
+    {
+      "draft_value": "0.48",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[3].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 8, col 3"
+    },
+    {
+      "draft_value": "0.58",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[3].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 8, col 4"
+    },
+    {
+      "draft_value": "0.63",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[6].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 8, col 5"
+    },
+    {
+      "draft_value": "0.49",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[5].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 8, col 6"
+    },
+    {
+      "draft_value": "0.56",
+      "source_key": "estimation_results.json.term_frequencies.c6.terms[3].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 8, col 7"
+    },
+    {
+      "draft_value": "-0.31",
+      "source_key": "estimation_results.json.models.keyness_weather_c2.outputs.terms[22].log_ratio",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 8, col 8"
+    },
+    {
+      "draft_value": "0.544",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[29].per_10k",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 8, col 9"
+    }
+  ],
+  "source_files_found": [
+    "/private/tmp/e2er-demos3/studies/workspaces/2026-10-14-how-did-the-vocabulary-of-weather-rain/corpus_check.json",
+    "/private/tmp/e2er-demos3/studies/workspaces/2026-10-14-how-did-the-vocabulary-of-weather-rain/estimation_results.json",
+    "/private/tmp/e2er-demos3/studies/workspaces/2026-10-14-how-did-the-vocabulary-of-weather-rain/figure_spec.json",
+    "/private/tmp/e2er-demos3/studies/workspaces/2026-10-14-how-did-the-vocabulary-of-weather-rain/summary_statistics.json",
+    "/private/tmp/e2er-demos3/studies/workspaces/2026-10-14-how-did-the-vocabulary-of-weather-rain/text_validation.json",
+    "/private/tmp/e2er-demos3/studies/workspaces/2026-10-14-how-did-the-vocabulary-of-weather-rain/text_validation_check.json"
+  ],
+  "source_files_missing": [
+    "robustness_results.json"
+  ],
+  "skipped_reason": null,
+  "prose_total": 263,
+  "prose_matched": 234,
+  "prose_mismatched": 28,
+  "prose_unverifiable": 1,
+  "prose_excluded": 114,
+  "prose_mismatches": [
+    {
+      "draft_value": "1799",
+      "source_key": "summary_statistics.json.by_cohort.c1.birth_year_max",
+      "source_value": "1797.0",
+      "table_context": "prose: \u2026rs born in six cohorts, 1770--1799 to . Using 84 nove\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026ry of 90 exact word forms per 10,000 tokens, compare coh\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026ween about 11 and 13 hits per 10,000 tokens, and cohort\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026words rise from 0.82 hits per 10,000 tokens in the first\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "1799",
+      "source_key": "summary_statistics.json.by_cohort.c1.birth_year_max",
+      "source_value": "1797.0",
+      "table_context": "prose: \u2026rs born in six cohorts, 1770--1799 to ? We answer th\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.models.keyness_c3.outputs.terms[32].count_target",
+      "source_value": "9784.0",
+      "table_context": "prose: \u2026exact weather word forms per 10,000 tokens, compare coh\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026t 11 and 13 weather words per 10,000 tokens, and the coh\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026words rise from 0.82 hits per 10,000 tokens in the first\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "1799",
+      "source_key": "summary_statistics.json.by_cohort.c1.birth_year_max",
+      "source_value": "1797.0",
+      "table_context": "prose: \u2026of author birth years: 1770--1799 (cohort 1), (coho\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "30,000",
+      "source_key": "summary_statistics.json.outcome.tokens_per_document.min",
+      "source_value": "30914.0",
+      "table_context": "prose: \u2026emoved novels with fewer than 30,000 tokens after cleani\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "1799",
+      "source_key": "summary_statistics.json.by_cohort.c1.birth_year_max",
+      "source_value": "1797.0",
+      "table_context": "prose: \u2026comprises authors born 1770--1799, cohort 2 , cohort\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026number of dictionary hits per 10,000 tokens of a group.\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026pooled rate is 11.09 hits per 10,000 tokens in cohort 1\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026s from 2.10 to 31.35 hits per 10,000 tokens, with a medi\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026n{Weather dictionary hits per 10,000 tokens by author bi\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026size \\item Rates are hits per 10,000 tokens. The pooled\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026heir rate rises from 0.82 per 10,000 tokens in cohort 1\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026site direction, from 2.31 per 10,000 tokens in cohort 1\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026ion{Weather word families per 10,000 tokens by author bi\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "1799",
+      "source_key": "summary_statistics.json.by_cohort.c1.birth_year_max",
+      "source_value": "1797.0",
+      "table_context": "prose: \u2026the six birth cohorts (1770--1799 to ). Spearman $\\r\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026mph{snow} rises from 0.46 per 10,000 tokens in cohort 1\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026cohort 2, a rate of 0.04 per 10,000 tokens, against 0.3\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.models.keyness_c3.outputs.terms[32].count_target",
+      "source_value": "9784.0",
+      "table_context": "prose: \u2026ms, a fraction of one hit per 10,000 tokens for most ter\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.models.keyness_c3.outputs.terms[32].count_target",
+      "source_value": "9784.0",
+      "table_context": "prose: \u2026Seven focal weather terms per 10,000 tokens by author bi\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.models.keyness_c3.outputs.terms[32].count_target",
+      "source_value": "9784.0",
+      "table_context": "prose: \u2026ring \\caption{Frequency per 10,000 tokens of seven foc\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026words weakens, from 0.65 per 10,000 tokens in cohort 1\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026at roughly 11 to 13 hits per 10,000 tokens, and the dif\u2026",
+      "severity": "major"
+    },
+    {
+      "draft_value": "10,000",
+      "source_key": "estimation_results.json.robustness.extended_minus_capitalised_midsentence_hits.by_cohort.all.hits",
+      "source_value": "10271.0",
+      "table_context": "prose: \u2026lary rises from 0.82 hits per 10,000 tokens in the first\u2026",
+      "severity": "major"
+    }
+  ],
+  "table_spec_unresolved": [],
+  "rendered_tables": [
+    "corpus.tex",
+    "families.tex",
+    "terms.tex",
+    "weather_all.tex"
+  ],
+  "rendered_tables_not_in_draft": [],
+  "conclusive": true,
+  "tables_untraced": false,
+  "untraced_reason": ""
+}

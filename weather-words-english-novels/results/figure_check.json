@@ -1,0 +1,244 @@
+{
+  "passed": true,
+  "figures": [
+    {
+      "figure": "fig_corpus_tokens_by_cohort.pdf",
+      "source": {
+        "results": "corpus.cohort_summary",
+        "fields": {
+          "categories": "cohort",
+          "values": "n_tokens"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_corpus_median_length_by_cohort.pdf",
+      "source": {
+        "results": "corpus.cohort_summary",
+        "fields": {
+          "categories": "cohort",
+          "values": "median_tokens"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_keyness_c1.pdf",
+      "source": {
+        "results": "models.keyness_c1.outputs.terms",
+        "fields": {
+          "categories": "term",
+          "values": "log_ratio"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_keyness_weather_c1.pdf",
+      "source": {
+        "results": "models.keyness_weather_c1.outputs.terms",
+        "fields": {
+          "categories": "term",
+          "values": "log_ratio"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_keyness_c2.pdf",
+      "source": {
+        "results": "models.keyness_c2.outputs.terms",
+        "fields": {
+          "categories": "term",
+          "values": "log_ratio"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_keyness_weather_c2.pdf",
+      "source": {
+        "results": "models.keyness_weather_c2.outputs.terms",
+        "fields": {
+          "categories": "term",
+          "values": "log_ratio"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_keyness_c3.pdf",
+      "source": {
+        "results": "models.keyness_c3.outputs.terms",
+        "fields": {
+          "categories": "term",
+          "values": "log_ratio"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_keyness_weather_c3.pdf",
+      "source": {
+        "results": "models.keyness_weather_c3.outputs.terms",
+        "fields": {
+          "categories": "term",
+          "values": "log_ratio"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_keyness_c4.pdf",
+      "source": {
+        "results": "models.keyness_c4.outputs.terms",
+        "fields": {
+          "categories": "term",
+          "values": "log_ratio"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_keyness_weather_c4.pdf",
+      "source": {
+        "results": "models.keyness_weather_c4.outputs.terms",
+        "fields": {
+          "categories": "term",
+          "values": "log_ratio"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_keyness_c5.pdf",
+      "source": {
+        "results": "models.keyness_c5.outputs.terms",
+        "fields": {
+          "categories": "term",
+          "values": "log_ratio"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_keyness_weather_c5.pdf",
+      "source": {
+        "results": "models.keyness_weather_c5.outputs.terms",
+        "fields": {
+          "categories": "term",
+          "values": "log_ratio"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_keyness_c6.pdf",
+      "source": {
+        "results": "models.keyness_c6.outputs.terms",
+        "fields": {
+          "categories": "term",
+          "values": "log_ratio"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_keyness_weather_c6.pdf",
+      "source": {
+        "results": "models.keyness_weather_c6.outputs.terms",
+        "fields": {
+          "categories": "term",
+          "values": "log_ratio"
+        }
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_cohort_trend.pdf series rain",
+      "source": {
+        "results": "models.cohort_trend.outputs.series",
+        "fields": {
+          "x": "group",
+          "y": "per_10k"
+        },
+        "where": "term = 'rain'"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_cohort_trend.pdf series wind",
+      "source": {
+        "results": "models.cohort_trend.outputs.series",
+        "fields": {
+          "x": "group",
+          "y": "per_10k"
+        },
+        "where": "term = 'wind'"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_cohort_trend.pdf series storm",
+      "source": {
+        "results": "models.cohort_trend.outputs.series",
+        "fields": {
+          "x": "group",
+          "y": "per_10k"
+        },
+        "where": "term = 'storm'"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_cohort_trend.pdf series fog",
+      "source": {
+        "results": "models.cohort_trend.outputs.series",
+        "fields": {
+          "x": "group",
+          "y": "per_10k"
+        },
+        "where": "term = 'fog'"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_cohort_trend.pdf series snow",
+      "source": {
+        "results": "models.cohort_trend.outputs.series",
+        "fields": {
+          "x": "group",
+          "y": "per_10k"
+        },
+        "where": "term = 'snow'"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_cohort_trend.pdf series sun",
+      "source": {
+        "results": "models.cohort_trend.outputs.series",
+        "fields": {
+          "x": "group",
+          "y": "per_10k"
+        },
+        "where": "term = 'sun'"
+      },
+      "matches": true
+    },
+    {
+      "figure": "fig_cohort_trend.pdf series cloud",
+      "source": {
+        "results": "models.cohort_trend.outputs.series",
+        "fields": {
+          "x": "group",
+          "y": "per_10k"
+        },
+        "where": "term = 'cloud'"
+      },
+      "matches": true
+    }
+  ],
+  "problems": []
+}

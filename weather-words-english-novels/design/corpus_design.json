@@ -1,0 +1,92 @@
+{
+  "question": "How did the vocabulary of weather (rain, wind, storm, fog, snow, sun, cloud and related words) vary across English-language novels by authors born in six cohorts, 1770-1799 to 1880-1899?",
+  "corpus": {
+    "description": "English-language novels on Project Gutenberg; one document is one novel (one edition).",
+    "selection": "Project Gutenberg catalogue via e2er-data gutenberg books (languages en, fiction topics; up to 320 popularity-sorted catalogue rows per cohort search); filtered to a single author with birth year 1770-1899, no translator in the catalogue record (books with a translator are excluded as translations), plain text available, not under copyright, >= 30,000 tokens (applied after the texts are loaded), de-duplicated by normalised title + author and by text hash, non-novel forms excluded; then 20 novels per cohort drawn at random with seed 20261014, at most 2 per author per cohort",
+    "sampling": "stratified random by birth cohort from a convenience frame (the 320 most popular Project Gutenberg catalogue rows per cohort search); equal n per cohort, seed 20261014",
+    "n_documents_planned": 120,
+    "table": "corpus",
+    "id_column": "doc_id",
+    "text_column": "text"
+  },
+  "metadata": {
+    "author": {"description": "single author as in the catalogue", "source": "Gutendex/Project Gutenberg catalogue (gutenberg books)"},
+    "author_birth_year": {"description": "author's birth year as the Gutenberg catalogue records it; the only time axis of the study (no publication year is looked up or used, not even as a robustness check)", "source": "Gutendex/Project Gutenberg catalogue"},
+    "cohort": {"description": "c1 1770-1799, c2 1800-1819, c3 1820-1839, c4 1840-1859, c5 1860-1879, c6 1880-1899", "source": "derived from author_birth_year; exactly one cohort per novel"},
+    "language": {"description": "language code", "source": "catalogue; en only"},
+    "source_id": {"description": "Project Gutenberg ebook number", "source": "catalogue"}
+  },
+  "preprocessing": {
+    "token_pattern": "[a-z]+(?:['’][a-z]+)?",
+    "lowercase": true,
+    "stopwords": {"file": "stopwords.txt", "source": "scikit-learn ENGLISH_STOP_WORDS (written by build_data.py from sorted(sklearn.feature_extraction.text.ENGLISH_STOP_WORDS)); removed from term lists and key-term lists only, never from token counts"},
+    "lemmatisation": "none",
+    "ngrams": [1, 2],
+    "front_matter": "Gutenberg header, footer and licence removed by the connector; build_data.py removes tables of contents, illustration lists, editors' prefaces/introductions and transcriber's notes where detectable by heading patterns, and records characters cut per document; the SHA-256 is of the text as analysed"
+  },
+  "groups": {
+    "c1": {"column": "cohort", "value": "c1"},
+    "c2": {"column": "cohort", "value": "c2"},
+    "c3": {"column": "cohort", "value": "c3"},
+    "c4": {"column": "cohort", "value": "c4"},
+    "c5": {"column": "cohort", "value": "c5"},
+    "c6": {"column": "cohort", "value": "c6"},
+    "not_c1": {"column": "cohort", "values": ["c2", "c3", "c4", "c5", "c6"]},
+    "not_c2": {"column": "cohort", "values": ["c1", "c3", "c4", "c5", "c6"]},
+    "not_c3": {"column": "cohort", "values": ["c1", "c2", "c4", "c5", "c6"]},
+    "not_c4": {"column": "cohort", "values": ["c1", "c2", "c3", "c5", "c6"]},
+    "not_c5": {"column": "cohort", "values": ["c1", "c2", "c3", "c4", "c6"]},
+    "not_c6": {"column": "cohort", "values": ["c1", "c2", "c3", "c4", "c5"]}
+  },
+  "analyses": [
+    {"id": "frequencies", "method": "term_frequency",
+     "terms": ["rain", "wind", "storm", "fog", "snow", "sun", "cloud", "mist", "thunder", "frost", "breeze", "sunshine"],
+     "by": ["c1", "c2", "c3", "c4", "c5", "c6"]},
+    {"id": "cohort_trend", "method": "diachronic",
+     "terms": ["rain", "wind", "storm", "fog", "snow", "sun", "cloud"],
+     "by": ["c1", "c2", "c3", "c4", "c5", "c6"]},
+    {"id": "weather_all", "method": "dictionary",
+     "dictionary": {"name": "weather vocabulary (all categories)",
+       "terms": ["rain", "rains", "rained", "raining", "rainy", "rainfall", "raindrop", "raindrops", "drizzle", "drizzled", "drizzling", "drizzly", "shower", "showers", "showery", "downpour", "hailstone", "hailstones", "sleet",
+                 "wind", "winds", "windy", "breeze", "breezes", "breezy", "gale", "gales", "gust", "gusts", "gusty", "zephyr", "zephyrs",
+                 "storm", "storms", "stormy", "thunder", "thunders", "thundered", "thundering", "thunderstorm", "thunderstorms", "lightning", "tempest", "tempests", "tempestuous", "hurricane", "hurricanes", "squall", "squalls", "squally",
+                 "fog", "fogs", "foggy", "mist", "mists", "misty", "haze", "hazy",
+                 "snow", "snows", "snowed", "snowing", "snowy", "snowflake", "snowflakes", "snowdrift", "snowdrifts", "frost", "frosts", "frosty", "icy", "icicle", "icicles", "thaw", "thawed", "thawing",
+                 "sun", "suns", "sunny", "sunshine", "sunlight", "sunbeam", "sunbeams", "sunless",
+                 "cloud", "clouds", "clouded", "cloudy", "cloudless", "overcast"],
+       "source": "written for this study from the question's word list plus common inflections and close synonyms; not a published dictionary; exact word forms only, no wildcards at all (so no window/winding); 'hail' (greeting, 'within hail' outnumber weather hail in novels) and 'storming' (storming a fort) deliberately excluded"}},
+    {"id": "precipitation", "method": "dictionary",
+     "dictionary": {"name": "precipitation", "terms": ["rain", "rains", "rained", "raining", "rainy", "rainfall", "raindrop", "raindrops", "drizzle", "drizzled", "drizzling", "drizzly", "shower", "showers", "showery", "downpour", "hailstone", "hailstones", "sleet"], "source": "written for this study; exact word forms only; 'hail' excluded (greeting and 'within hail' outnumber weather hail in novels)"}},
+    {"id": "wind_words", "method": "dictionary",
+     "dictionary": {"name": "wind", "terms": ["wind", "winds", "windy", "breeze", "breezes", "breezy", "gale", "gales", "gust", "gusts", "gusty", "zephyr", "zephyrs"], "source": "written for this study; exact word forms only"}},
+    {"id": "storm_words", "method": "dictionary",
+     "dictionary": {"name": "storm", "terms": ["storm", "storms", "stormy", "thunder", "thunders", "thundered", "thundering", "thunderstorm", "thunderstorms", "lightning", "tempest", "tempests", "tempestuous", "hurricane", "hurricanes", "squall", "squalls", "squally"], "source": "written for this study; exact word forms only; 'storming' excluded (storming a fort)"}},
+    {"id": "fog_words", "method": "dictionary",
+     "dictionary": {"name": "fog and mist", "terms": ["fog", "fogs", "foggy", "mist", "mists", "misty", "haze", "hazy"], "source": "written for this study; exact word forms only"}},
+    {"id": "snow_ice_words", "method": "dictionary",
+     "dictionary": {"name": "snow and ice", "terms": ["snow", "snows", "snowed", "snowing", "snowy", "snowflake", "snowflakes", "snowdrift", "snowdrifts", "frost", "frosts", "frosty", "icy", "icicle", "icicles", "thaw", "thawed", "thawing"], "source": "written for this study; exact word forms only"}},
+    {"id": "sun_words", "method": "dictionary",
+     "dictionary": {"name": "sun", "terms": ["sun", "suns", "sunny", "sunshine", "sunlight", "sunbeam", "sunbeams", "sunless"], "source": "written for this study; exact word forms only"}},
+    {"id": "cloud_words", "method": "dictionary",
+     "dictionary": {"name": "cloud", "terms": ["cloud", "clouds", "clouded", "cloudy", "cloudless", "overcast"], "source": "written for this study; exact word forms only"}},
+    {"id": "keyness_c1", "method": "keyness", "target": "c1", "reference": "not_c1", "statistic": "log-likelihood G2", "effect_size": "log ratio"},
+    {"id": "keyness_c2", "method": "keyness", "target": "c2", "reference": "not_c2", "statistic": "log-likelihood G2", "effect_size": "log ratio"},
+    {"id": "keyness_c3", "method": "keyness", "target": "c3", "reference": "not_c3", "statistic": "log-likelihood G2", "effect_size": "log ratio"},
+    {"id": "keyness_c4", "method": "keyness", "target": "c4", "reference": "not_c4", "statistic": "log-likelihood G2", "effect_size": "log ratio"},
+    {"id": "keyness_c5", "method": "keyness", "target": "c5", "reference": "not_c5", "statistic": "log-likelihood G2", "effect_size": "log ratio"},
+    {"id": "keyness_c6", "method": "keyness", "target": "c6", "reference": "not_c6", "statistic": "log-likelihood G2", "effect_size": "log ratio"},
+    {"id": "weather_collocates", "method": "collocation", "measure": "pmi", "window": 1, "nodes": ["fog", "storm", "rain", "wind", "snow", "sun", "cloud"], "min_count": 5}
+  ],
+  "analysis_notes": {
+    "normalisation": "counts per 10,000 tokens of the group; main comparison also reports the mean of per-document rates (each novel weighted equally) with a bootstrap interval over documents (seed 20261014) so that long novels and single authors do not drive a cohort figure",
+    "dispersion": "for each term and cohort, the number of documents and authors in which it occurs",
+    "keyness_threshold": "G2 > 15.13 (p < 0.0001) with stop words excluded; effect size by log ratio; keyness is token-based and treats tokens as independent, which overstates certainty because words cluster in documents, so document-level dispersion is reported beside it",
+    "validation": "hand-checked sample of at least 20 hits (30 where available) per dictionary analysis, stratified by cohort where hits allow, seed fixed in run_estimation.py; precision reported per category. Terms listed as ambiguous that the sample must cover: shower/showers (bathing, 'shower of' gifts or blows), thunder forms (figurative use, 'thundering' as intensifier), icy (icy manner, icy stare), cloud forms (clouded brow, 'cloud of' dust or smoke), plus wind (verb), sun (Sunday, surname), storm/storms (figurative), and the surnames Snow, Rain, Frost",
+    "time_axis": "the author's birth year as the Gutenberg catalogue records it, grouped into the six cohorts; no publication year is looked up or used, not even as a robustness check",
+    "topic_model": "none planned: 120 novels give many segments but the question concerns a defined word field, not topics"
+  },
+  "limits": {
+    "frame": "The frame is the 320 most popular catalogue rows per cohort search (popularity-sorted by download count), so it favours books that are popular on Project Gutenberg today, not a random draw of the cohort's novels. Word counts are known only after the texts are loaded, so the 30,000-token rule is applied after loading and may shrink a cohort below 20 novels; then all cohorts are cut to the smallest n, as planned. Books with a translator in the catalogue record are excluded. The time axis is the author's birth year; no publication year is used.",
+    "sampling_bias": "Project Gutenberg holds what volunteers digitised and what is out of U.S. copyright: it over-represents popular, canonical and genre fiction by British and American authors, and under-represents women, authors of colour and later cohorts whose works remain in copyright; c6 (born 1880-1899) is limited to works published before the U.S. public-domain cutoff, so its members are mostly early-career or early-publishing works. Cohort is birth-year based, so cohorts overlap in publication years (a c1 author writing in 1840 and a c3 author in 1850). Counts describe these (about) 120 novels, not the English novel; they show word use, not meaning, reception or cause."
+  }
+}

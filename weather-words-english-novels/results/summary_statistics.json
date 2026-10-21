@@ -1,0 +1,193 @@
+{
+ "n_observations": 84,
+ "n_units": 69,
+ "n_tokens": 9248093,
+ "n_types": 78344,
+ "time_coverage": {
+  "start_iso": "1770",
+  "end_iso": "1899",
+  "n_periods": 6,
+  "note": "author birth years in six cohorts; no publication year used"
+ },
+ "outcome": {
+  "tokens_per_document": {
+   "mean": 110096.35,
+   "sd": 66100.98,
+   "min": 30914.0,
+   "p25": 62536.0,
+   "median": 87638.5,
+   "p75": 138758.75,
+   "max": 320232.0
+  }
+ },
+ "author_birth_year": {
+  "min": 1770,
+  "max": 1890,
+  "mean": 1837.39
+ },
+ "by_cohort": {
+  "c1": {
+   "n_documents": 14,
+   "n_authors": 10,
+   "n_tokens": 1742991,
+   "tokens_per_doc_mean": 124499.36,
+   "tokens_per_doc_median": 122327.0,
+   "tokens_per_doc_min": 50332,
+   "tokens_per_doc_max": 286477,
+   "birth_year_min": 1770,
+   "birth_year_max": 1797,
+   "birth_year_mean": 1779.43,
+   "n_weather_dictionary_hits": 1933
+  },
+  "c2": {
+   "n_documents": 14,
+   "n_authors": 13,
+   "n_tokens": 2389137,
+   "tokens_per_doc_mean": 170652.64,
+   "tokens_per_doc_median": 157540.5,
+   "tokens_per_doc_min": 57458,
+   "tokens_per_doc_max": 320232,
+   "birth_year_min": 1803,
+   "birth_year_max": 1819,
+   "birth_year_mean": 1811.64,
+   "n_weather_dictionary_hits": 2582
+  },
+  "c3": {
+   "n_documents": 14,
+   "n_authors": 11,
+   "n_tokens": 1626578,
+   "tokens_per_doc_mean": 116184.14,
+   "tokens_per_doc_median": 96250.5,
+   "tokens_per_doc_min": 36694,
+   "tokens_per_doc_max": 237050,
+   "birth_year_min": 1820,
+   "birth_year_max": 1838,
+   "birth_year_mean": 1828.14,
+   "n_weather_dictionary_hits": 1779
+  },
+  "c4": {
+   "n_documents": 14,
+   "n_authors": 12,
+   "n_tokens": 1259938,
+   "tokens_per_doc_mean": 89995.57,
+   "tokens_per_doc_median": 81698.0,
+   "tokens_per_doc_min": 30914,
+   "tokens_per_doc_max": 152276,
+   "birth_year_min": 1840,
+   "birth_year_max": 1859,
+   "birth_year_mean": 1850.5,
+   "n_weather_dictionary_hits": 1678
+  },
+  "c5": {
+   "n_documents": 14,
+   "n_authors": 14,
+   "n_tokens": 1036163,
+   "tokens_per_doc_mean": 74011.64,
+   "tokens_per_doc_median": 76644.0,
+   "tokens_per_doc_min": 32469,
+   "tokens_per_doc_max": 151334,
+   "birth_year_min": 1860,
+   "birth_year_max": 1878,
+   "birth_year_mean": 1869.86,
+   "n_weather_dictionary_hits": 1242
+  },
+  "c6": {
+   "n_documents": 14,
+   "n_authors": 9,
+   "n_tokens": 1193286,
+   "tokens_per_doc_mean": 85234.71,
+   "tokens_per_doc_median": 82498.5,
+   "tokens_per_doc_min": 39782,
+   "tokens_per_doc_max": 169739,
+   "birth_year_min": 1880,
+   "birth_year_max": 1890,
+   "birth_year_mean": 1884.79,
+   "n_weather_dictionary_hits": 1326
+  }
+ },
+ "n_per_cohort_before_cut": {
+  "c1": 15,
+  "c2": 14,
+  "c3": 18,
+  "c4": 18,
+  "c5": 20,
+  "c6": 20
+ },
+ "weather_dictionary": {
+  "n_terms": 90,
+  "n_hits_total": 10540,
+  "n_distinct_terms_observed": 86
+ },
+ "sample_flow": [
+  {
+   "step": "catalogue rows read (6 frames + 7 extra searches, with repeats)",
+   "n": 4160,
+   "dropped": 0
+  },
+  {
+   "step": "unique ebook ids",
+   "n": 1409,
+   "dropped": 2751
+  },
+  {
+   "step": "language en, one catalogue person, birth year 1770-1899, plain text, not copyrighted, fiction-type, non-novel forms and collections removed, title+author de-duplication (catalogue-eligible books)",
+   "n": 632,
+   "dropped": 777
+  },
+  {
+   "step": "random draw (seed 20261014), at most 2 per author per cohort: first 20 per cohort drawn for text loading",
+   "n": 120,
+   "dropped": 512
+  },
+  {
+   "step": "full texts loaded in gutenberg_texts_c1..c6 and gutenberg_texts_c3_refill",
+   "n": 128,
+   "dropped": 0
+  },
+  {
+   "step": "drop translations, books on non-English-literature bookshelves and non-novels (ids 83, 357, 477, 547, 750, 973, 1051, 1235, 1258, 1290, 1353, 1608, 1748, 2472, 2496, 2759, 4067, 4926, 4927, 6112)",
+   "n": 108,
+   "dropped": 20
+  },
+  {
+   "step": "drop novels under 30,000 tokens after cleaning (ids [581, 693, 2695])",
+   "n": 105,
+   "dropped": 3
+  },
+  {
+   "step": "drop non-novels found on reading titles/subjects (ids )",
+   "n": 105,
+   "dropped": 0
+  },
+  {
+   "step": "de-duplicate by text SHA-256",
+   "n": 105,
+   "dropped": 0
+  },
+  {
+   "step": "de-duplicate by normalised title + author",
+   "n": 105,
+   "dropped": 0
+  },
+  {
+   "step": "cut every cohort to the smallest n (14), lowest draw ranks kept",
+   "n": 84,
+   "dropped": 21
+  },
+  {
+   "step": "final corpus",
+   "n": 84,
+   "dropped": 0
+  }
+ ],
+ "missingness": {
+  "title_pct_missing": 0.0,
+  "author_birth_year_pct_missing": 0.0,
+  "language_pct_missing": 0.0,
+  "note": "books without a recorded birth year, or with several catalogue persons, were dropped at the catalogue stage, not coded as zero"
+ },
+ "front_matter_chars_cut": {
+  "total": 48466,
+  "max_doc": 5026
+ }
+}

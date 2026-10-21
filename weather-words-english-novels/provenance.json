@@ -1,0 +1,2382 @@
+{
+  "schema": "e2er-provenance/1",
+  "run": {
+    "paper_id": "4b4d6a45-97cd-4a7f-870b-173551822e97",
+    "backend": "claude_code",
+    "model": "sonnet",
+    "governance": "full",
+    "template": "text-analysis",
+    "e2er_version": "0.17.1",
+    "exported_at": "20261021",
+    "purpose": "demonstration",
+    "results_from_code": {
+      "results/estimation_results.json": {
+        "outcome": "from_code",
+        "reason": "written by run_estimation.py (run 2026-10-14T23:06:49Z)",
+        "script": "run_estimation.py",
+        "script_sha256": "9aee547cdd82d989249f58c481cf36a1fbc4c41c9c8f8811e942a513b1b0e9ee",
+        "output_sha256": "f09a2bb0b2d1db99cf8a137a4768166c79306ab2b141ec04c1cad7680f5c1b5b",
+        "ran_at": "2026-10-14T23:06:49Z",
+        "exit_code": 0,
+        "script_in_folder": "code/run_estimation.py",
+        "script_in_folder_sha256": "9aee547cdd82d989249f58c481cf36a1fbc4c41c9c8f8811e942a513b1b0e9ee"
+      }
+    }
+  },
+  "files": {
+    "README.md": {
+      "sha256": "78ceddae16f4ae36a660bff77b0d27b14f62dba9d8e60d9be09c34bf437ca249",
+      "bytes": 33351
+    },
+    "code/get_data.py": {
+      "sha256": "1515f4645a639efc66468d392c75f31e380b3ac2ae04314f777281f7140bf025",
+      "bytes": 8955
+    },
+    "code/requirements.txt": {
+      "sha256": "8718879d16c14ebf7d8ff1fcf2c3e2bcd460a039450b78d0b21a20acfe3b41df",
+      "bytes": 541
+    },
+    "code/run_estimation.py": {
+      "sha256": "9aee547cdd82d989249f58c481cf36a1fbc4c41c9c8f8811e942a513b1b0e9ee",
+      "bytes": 23010
+    },
+    "code/scratch/build_data.py": {
+      "sha256": "6618376a3126e6d1dd31b6e2f2a0de116464ac59a2eb5a763d0013f58b0eed59",
+      "bytes": 12280
+    },
+    "code/scratch/check_shelves.py": {
+      "sha256": "3a2d1c471d1846d2f2c348b7d94939aafdccdd9224ec34b819b9e6b735013a62",
+      "bytes": 989
+    },
+    "code/scratch/check_texts.py": {
+      "sha256": "e8e4de209d767fe18292e7056cd472f6567b7331c0c1abee1290d6f18e4572d5",
+      "bytes": 489
+    },
+    "code/scratch/draw_refill.py": {
+      "sha256": "df37f872ccf77a597da36ccb120737ce24fb0957049de0738bbe286b419ef1c6",
+      "bytes": 2681
+    },
+    "code/scratch/draw_sample.py": {
+      "sha256": "06b37c682cefd7d8b52f8e5ecf19bb3b54d33ed96aa91fc1acc27280658c9a8a",
+      "bytes": 3559
+    },
+    "code/scratch/explore.py": {
+      "sha256": "ee8439d03677f8374439fc28cb3c7e731b5dcc49960e2ace4eae7fd6fdceb3fc",
+      "bytes": 528
+    },
+    "code/scratch/fix_dict.py": {
+      "sha256": "c339779890e10cc8ee3e99c189f01ab0202a5351e3b31cab2e5ab967202856e7",
+      "bytes": 677
+    },
+    "code/scratch/judge_validation.py": {
+      "sha256": "61658b1c0998fb9d1096eb41b8511dd960adefa64985e1220072f7d55278ce40",
+      "bytes": 11973
+    },
+    "code/scratch/list_titles.py": {
+      "sha256": "a18728e1420fcf9bc915a914f96a26541d9a64a8f23297b86b3d0597b9f9be09",
+      "bytes": 360
+    },
+    "code/scratch/make_validation.py": {
+      "sha256": "0070922d8c95614b96772cd3049ac004221a4afe94536b3ba9b6289501a48180",
+      "bytes": 7594
+    },
+    "code/scratch/paper_draft.log": {
+      "sha256": "c587f3bc2ef2c3b090890bb09551bb5fc612f7090e687f139dc942bb99db6e27",
+      "bytes": 17751
+    },
+    "code/scratch/plan_ids.py": {
+      "sha256": "be8f70f0a94c153f8acd32023210a1375673a340d3123e26098b425efe792aac",
+      "bytes": 1124
+    },
+    "code/scratch/print_ids.py": {
+      "sha256": "1f52a76723dc90a90955b3eecb9ee9447c6a3004a982a008e082a0da0864403a",
+      "bytes": 173
+    },
+    "code/scratch/show.py": {
+      "sha256": "d939526bb0dca19edf3484be77e8a52e322cc666fb4e6e00320fda9fff75fa56",
+      "bytes": 695
+    },
+    "code/scratch/show_est.py": {
+      "sha256": "a7d2ce2e2868d9c72adc711301a4c6ffbc62ef3ddb654478e7720ab60974e367",
+      "bytes": 722
+    },
+    "data/corpus_manifest.json": {
+      "sha256": "c61f68bd62778156ca6b4e078e2039420da81a023fe732382697660aebdcc59a",
+      "bytes": 42883
+    },
+    "data/data.db": {
+      "sha256": "03be205ef275be68b25516e79b0b94fbf3bf89d55a438d52e6911f681ec19db7",
+      "bytes": 145076224
+    },
+    "data/data_dictionary.json": {
+      "sha256": "2d36969ce11290a9f06070d66683f67b95131df32d5a0ae2f845ebc5fe35ff0a",
+      "bytes": 70895
+    },
+    "data/data_sources.json": {
+      "sha256": "546294e6d6ebee0b31eff161bb6eed086c490348d9baeaca5cfab837f6abddd1",
+      "bytes": 131851
+    },
+    "data/data_summary.md": {
+      "sha256": "2292e2a0138d766b0869f60d06693d298f9aee7046f3adccc7dcc0a8e1bf360c",
+      "bytes": 7899
+    },
+    "data/sample_ids_v2.csv": {
+      "sha256": "8b857c1c9a2cbd4684ab1567c7391fbfa355dc91aad1255f06005dfcaf967a73",
+      "bytes": 84829
+    },
+    "design/corpus_design.json": {
+      "sha256": "b7c37b281253674f1c0ee895d3f8111d86763b38594297031cfbe97d8d11b011",
+      "bytes": 11543
+    },
+    "design/econometric_spec.md": {
+      "sha256": "636372e4e3607fc6b195d1063504738e26bd25aa9f5def0ca681bcd421feba1f",
+      "bytes": 4851
+    },
+    "design/literature_review.md": {
+      "sha256": "28bcc981f0ec7bad5ec2bd4b6454a57c9c1abede65983cd5260cb6600c584fce",
+      "bytes": 8467
+    },
+    "design/paper_plan.md": {
+      "sha256": "1b78108d4f2499e03c3c1c4d6d02e5176ff3e4688049a8ee8435a054f6fcf1bf",
+      "bytes": 20573
+    },
+    "design/researcher_instructions.md": {
+      "sha256": "329537275ae97878ecfd314980ab3ede5ccf392e08fa6cee7f151b116a9c7768",
+      "bytes": 7389
+    },
+    "misc/fig_cohort_trend.pdf": {
+      "sha256": "1120a5d6bf19be1c672cb7710b32dedef0860834431fceb928f128659908e905",
+      "bytes": 19688
+    },
+    "misc/fig_corpus_median_length_by_cohort.pdf": {
+      "sha256": "4144d2980c7f1a2ed66252c29be8b512b8f9c7152cf4680c8de5dbdf08b4a1af",
+      "bytes": 11948
+    },
+    "misc/fig_corpus_tokens_by_cohort.pdf": {
+      "sha256": "401a0fe6ff973e556764a4296d2ee8014061f6279242c6b15141b78e4a592fee",
+      "bytes": 12110
+    },
+    "misc/fig_keyness_c1.pdf": {
+      "sha256": "c78dc762d1e5b038aab96a7cd34d413d81b217eb2651ccc9989792c04dc420bc",
+      "bytes": 20674
+    },
+    "misc/fig_keyness_c2.pdf": {
+      "sha256": "46ed6a0a59c45d385cc72c651285605f121f07376824710e500b60b2ed03ab54",
+      "bytes": 20381
+    },
+    "misc/fig_keyness_c3.pdf": {
+      "sha256": "59bd6e078e4b97fc38e4b6665c47988a9ed2e562b240cdc001764f3ae009dc50",
+      "bytes": 20000
+    },
+    "misc/fig_keyness_c4.pdf": {
+      "sha256": "2d3cba237537d0cbe0429b9803a14035b3e66800378b00182a96e916271e9bfb",
+      "bytes": 20055
+    },
+    "misc/fig_keyness_c5.pdf": {
+      "sha256": "6d3be69950cf90849a9f1a0f13672c94739d87344857621948547972b1ffa85c",
+      "bytes": 20713
+    },
+    "misc/fig_keyness_c6.pdf": {
+      "sha256": "dac7b7268ed34a6f42af7e88dddf53a99b090214e0639ea8b855cddc57793a01",
+      "bytes": 20234
+    },
+    "misc/fig_keyness_weather_c1.pdf": {
+      "sha256": "5a0be6d12d525bfe9665fc45e35e79cd79ebf1e5ec5589db4d57a3aa52e25a1b",
+      "bytes": 22010
+    },
+    "misc/fig_keyness_weather_c2.pdf": {
+      "sha256": "b8ef610a0963e0a8b8cfd0f43c24db4b0378bb46c94aa00f8eb0979ae2dd2abf",
+      "bytes": 22151
+    },
+    "misc/fig_keyness_weather_c3.pdf": {
+      "sha256": "82522fd6ea3236baa00057417b521cafa930480b415555d5e290983a152c0db9",
+      "bytes": 22030
+    },
+    "misc/fig_keyness_weather_c4.pdf": {
+      "sha256": "ab50da673a856912c4019efff64d8076805c534b31f01f48c4cde7b573ada04d",
+      "bytes": 22125
+    },
+    "misc/fig_keyness_weather_c5.pdf": {
+      "sha256": "dc2b2908920573d7752ca3c66eef0de77868900235d5ef981f093b7999118f80",
+      "bytes": 22054
+    },
+    "misc/fig_keyness_weather_c6.pdf": {
+      "sha256": "38d4188fe75a5b7dcc887875f5de2e90a000399a9991d1637074342d5b55ae7e",
+      "bytes": 22101
+    },
+    "misc/figure_render_report.json": {
+      "sha256": "eebda3e89294ba21e670e737f68c6b622b7d0fa3529c3ecb931b477e9f5f8d3e",
+      "bytes": 591
+    },
+    "misc/paper_draft.blg": {
+      "sha256": "e069e469fb373fc878781c5240ee1481d2532367c1e41260b6142a4d7573764a",
+      "bytes": 262
+    },
+    "misc/paper_draft.tex.applied.diff": {
+      "sha256": "46e67b9f5f4ee192eba4244898e535a09d6c406cdde20af9bdf8443412662f37",
+      "bytes": 39921
+    },
+    "misc/paper_draft.tex.edits.json": {
+      "sha256": "acbf8d3f6256502426e36090df8da25e3ca1610b0947d2784b0d48abf898d0a2",
+      "bytes": 14022
+    },
+    "misc/refs.bib": {
+      "sha256": "b44869c2e6c139fb3147b8ea954d3c57ac2cea4937d18a69f2cee5c3f31c7b81",
+      "bytes": 22573
+    },
+    "misc/stopwords.txt": {
+      "sha256": "4e22be0ad71ae1c41dd7a8f944e851ead671d114edf4faad1ee8c698d2ba5084",
+      "bytes": 1910
+    },
+    "paper/abstract.tex": {
+      "sha256": "167f6b850f4639ad56e3e54587a8d9a0cb52e9dcfed2c73caa52c0e88d5b5a59",
+      "bytes": 1912
+    },
+    "paper/paper.pdf": {
+      "sha256": "abd3fc8889f9c1220ee98d66770f7977dde1b498571b9430f9014a54795ae723",
+      "bytes": 88025
+    },
+    "paper/paper.tex": {
+      "sha256": "6f09e94c103ebfa81879b6ad7d71cbc3fa84b0778c6c52e37b8cb52bcd8d1b24",
+      "bytes": 48694
+    },
+    "paper/refs.bib": {
+      "sha256": "b44869c2e6c139fb3147b8ea954d3c57ac2cea4937d18a69f2cee5c3f31c7b81",
+      "bytes": 22573
+    },
+    "paper/tables/corpus.tex": {
+      "sha256": "5fe0270ffb8b9193b3a07ef83ae9c834c98b4ef44c04169bdb6a49f508c0d9c3",
+      "bytes": 1074
+    },
+    "paper/tables/families.tex": {
+      "sha256": "481e547e81d71e970b3eae10a3d8726cbd7bb71e473487d065adc28702208f1b",
+      "bytes": 1212
+    },
+    "paper/tables/terms.tex": {
+      "sha256": "698cb8fd6257d54af290f05557c932b60b2a2593081b50fddacf05800365384b",
+      "bytes": 980
+    },
+    "paper/tables/weather_all.tex": {
+      "sha256": "928679bee6f3c28446530784ffef216ff741fd3a696505adce7f4d1ba4d89642",
+      "bytes": 1151
+    },
+    "replication/README.md": {
+      "sha256": "1cb3ce5e32a562c8d7273a9329db896398d9aabfa2664ab4f11f5923037655cc",
+      "bytes": 4386
+    },
+    "replication/audit_log.csv": {
+      "sha256": "5769f64b14d79104d9c75cb51894bbb245f71492d6730e63f93a00d6d5b2a47f",
+      "bytes": 3845
+    },
+    "replication/data_queries.sql": {
+      "sha256": "bd7d78122e63fcd6686876f495d1d980494b6275d74f804af66427fdb02266dc",
+      "bytes": 137
+    },
+    "replication/estimation.py": {
+      "sha256": "e30852fabefa4216d522846dddf7d05a1845e31c0385deb50f27b26a8549c74e",
+      "bytes": 27400
+    },
+    "report.html": {
+      "sha256": "1277241fe4a3bced37830c1cea46b1b94b7271c6d4eb20ac2c8dd9da260c3022",
+      "bytes": 22321
+    },
+    "reproduce.json": {
+      "sha256": "38cb74246d67aab3575ae6332daf5111b800f1ad4c75cf6a9d464e538840bccf",
+      "bytes": 24602
+    },
+    "results/corpus_check.json": {
+      "sha256": "c7d01f0785989faf4373ac33eb859a924bf4b300d7817f02d1f192647cf688cb",
+      "bytes": 11630
+    },
+    "results/estimation_results.json": {
+      "sha256": "f09a2bb0b2d1db99cf8a137a4768166c79306ab2b141ec04c1cad7680f5c1b5b",
+      "bytes": 321987
+    },
+    "results/figure_check.json": {
+      "sha256": "83735cea058e750eac1eee347f0d134e75bd60a3bc8b53615ebeca0b90a96921",
+      "bytes": 5634
+    },
+    "results/figure_spec.json": {
+      "sha256": "5fef9bd9f96357194539666ec18a0429215335d844976d81a9da1969bd52e872",
+      "bytes": 27989
+    },
+    "results/figures/fig_cohort_trend.pdf": {
+      "sha256": "1120a5d6bf19be1c672cb7710b32dedef0860834431fceb928f128659908e905",
+      "bytes": 19688
+    },
+    "results/figures/fig_corpus_median_length_by_cohort.pdf": {
+      "sha256": "4144d2980c7f1a2ed66252c29be8b512b8f9c7152cf4680c8de5dbdf08b4a1af",
+      "bytes": 11948
+    },
+    "results/figures/fig_corpus_tokens_by_cohort.pdf": {
+      "sha256": "401a0fe6ff973e556764a4296d2ee8014061f6279242c6b15141b78e4a592fee",
+      "bytes": 12110
+    },
+    "results/figures/fig_keyness_c1.pdf": {
+      "sha256": "c78dc762d1e5b038aab96a7cd34d413d81b217eb2651ccc9989792c04dc420bc",
+      "bytes": 20674
+    },
+    "results/figures/fig_keyness_c2.pdf": {
+      "sha256": "46ed6a0a59c45d385cc72c651285605f121f07376824710e500b60b2ed03ab54",
+      "bytes": 20381
+    },
+    "results/figures/fig_keyness_c3.pdf": {
+      "sha256": "59bd6e078e4b97fc38e4b6665c47988a9ed2e562b240cdc001764f3ae009dc50",
+      "bytes": 20000
+    },
+    "results/figures/fig_keyness_c4.pdf": {
+      "sha256": "2d3cba237537d0cbe0429b9803a14035b3e66800378b00182a96e916271e9bfb",
+      "bytes": 20055
+    },
+    "results/figures/fig_keyness_c5.pdf": {
+      "sha256": "6d3be69950cf90849a9f1a0f13672c94739d87344857621948547972b1ffa85c",
+      "bytes": 20713
+    },
+    "results/figures/fig_keyness_c6.pdf": {
+      "sha256": "dac7b7268ed34a6f42af7e88dddf53a99b090214e0639ea8b855cddc57793a01",
+      "bytes": 20234
+    },
+    "results/figures/fig_keyness_weather_c1.pdf": {
+      "sha256": "5a0be6d12d525bfe9665fc45e35e79cd79ebf1e5ec5589db4d57a3aa52e25a1b",
+      "bytes": 22010
+    },
+    "results/figures/fig_keyness_weather_c2.pdf": {
+      "sha256": "b8ef610a0963e0a8b8cfd0f43c24db4b0378bb46c94aa00f8eb0979ae2dd2abf",
+      "bytes": 22151
+    },
+    "results/figures/fig_keyness_weather_c3.pdf": {
+      "sha256": "82522fd6ea3236baa00057417b521cafa930480b415555d5e290983a152c0db9",
+      "bytes": 22030
+    },
+    "results/figures/fig_keyness_weather_c4.pdf": {
+      "sha256": "ab50da673a856912c4019efff64d8076805c534b31f01f48c4cde7b573ada04d",
+      "bytes": 22125
+    },
+    "results/figures/fig_keyness_weather_c5.pdf": {
+      "sha256": "dc2b2908920573d7752ca3c66eef0de77868900235d5ef981f093b7999118f80",
+      "bytes": 22054
+    },
+    "results/figures/fig_keyness_weather_c6.pdf": {
+      "sha256": "38d4188fe75a5b7dcc887875f5de2e90a000399a9991d1637074342d5b55ae7e",
+      "bytes": 22101
+    },
+    "results/number_verification.json": {
+      "sha256": "8bfb5d596c5bd5687f4a2a76ef9cad4f2513eeb24bf0bb427926aec9b2f9ce21",
+      "bytes": 61753
+    },
+    "results/summary_statistics.json": {
+      "sha256": "fa29b2cfef56f3ff192cc0541c1da50411c6d80c8e81ba76d7622377e8dbcd3b",
+      "bytes": 4693
+    },
+    "results/table_render_report.json": {
+      "sha256": "3a38ebca814f29e697897c6ed434febcfe18168703d3912c981ac9c7e768e6fc",
+      "bytes": 201
+    },
+    "results/table_spec.json": {
+      "sha256": "c8b527da54d61f90a1b568b6b8b2edd18ecfe34e330d048922c3373736e7f2c1",
+      "bytes": 5615
+    },
+    "results/text_check.json": {
+      "sha256": "8c9399712212570322ca07f9f7be92b6c2a2c2f280041417dedc53a619f6277f",
+      "bytes": 571
+    },
+    "results/text_validation.json": {
+      "sha256": "893c28c8f544fa7c88e890ba72af4662c2ff701fc760b6f19f534dfa7203a50c",
+      "bytes": 66694
+    },
+    "results/text_validation.md": {
+      "sha256": "dd84e0a69aa9e2e3facf53c3678a52bf1e913d7a602b6f635dbf7f2e1c212402",
+      "bytes": 10481
+    },
+    "results/text_validation_check.json": {
+      "sha256": "f376643e012e99f6396b4813c1f72049166ab8cab344e0031b3e75bd863fccd6",
+      "bytes": 1104
+    },
+    "results/validation_sample.json": {
+      "sha256": "edca0d9a33e4d9825ca292478b0b75b460540b11cd61cd4fc87bff6b515c0383",
+      "bytes": 60707
+    },
+    "reviews/citation_integrity.json": {
+      "sha256": "3e9b869e411607906c3995dffe6842f9c3cff89997e45ca9cc8060f038fb0929",
+      "bytes": 9555
+    },
+    "reviews/review_aggregation.json": {
+      "sha256": "fd05330798e61aed80db3b2700c7680f3baa314b4ffc49404744c185ffd2b1b1",
+      "bytes": 1329
+    },
+    "reviews/review_data.md": {
+      "sha256": "f5295a6c4d0a5f5ca757658d33beb5b104ee6c3d8a166c3517364c9efa70b11b",
+      "bytes": 24048
+    },
+    "reviews/review_methods.md": {
+      "sha256": "51f0472b54b04adfe0f50c9d6bdfe4ddfc59f41ce8b6ed64f2689fbf4b7330f9",
+      "bytes": 22439
+    },
+    "reviews/review_plausibility.md": {
+      "sha256": "e9a1d3d426e9101e14abe61ba9223c16015fbdd38da6b2e2d3afdc2ba931fee0",
+      "bytes": 13379
+    },
+    "reviews/review_technical.md": {
+      "sha256": "f52768dc34f0ff0b5f284be2be343717c9c59622c7373a621a25275edb40d589",
+      "bytes": 24556
+    },
+    "reviews/review_writing.md": {
+      "sha256": "11852395c4c047e6101867dc6a02b59cc5cf6a1c4d7129a1fedd0eaaf7a1bcb6",
+      "bytes": 21677
+    }
+  },
+  "edges": [
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 2, col 2",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_documents",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 2, col 3",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_authors",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,742,991",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 2, col 4",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_tokens",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "122327.0",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 2, col 5",
+      "source_key": "summary_statistics.json.by_cohort.c1.tokens_per_doc_median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,770",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 2, col 6",
+      "source_key": "summary_statistics.json.author_birth_year.min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,797",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 2, col 7",
+      "source_key": "summary_statistics.json.by_cohort.c1.birth_year_max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,933",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 2, col 8",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_weather_dictionary_hits",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 3, col 2",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_documents",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "13",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 3, col 3",
+      "source_key": "summary_statistics.json.by_cohort.c2.n_authors",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2,389,137",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 3, col 4",
+      "source_key": "summary_statistics.json.by_cohort.c2.n_tokens",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "157540.5",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 3, col 5",
+      "source_key": "summary_statistics.json.by_cohort.c2.tokens_per_doc_median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,803",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 3, col 6",
+      "source_key": "summary_statistics.json.by_cohort.c2.birth_year_min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,819",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 3, col 7",
+      "source_key": "summary_statistics.json.by_cohort.c2.birth_year_max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2,582",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 3, col 8",
+      "source_key": "summary_statistics.json.by_cohort.c2.n_weather_dictionary_hits",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 4, col 2",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_documents",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "11",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 4, col 3",
+      "source_key": "summary_statistics.json.by_cohort.c3.n_authors",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,626,578",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 4, col 4",
+      "source_key": "summary_statistics.json.by_cohort.c3.n_tokens",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "96250.5",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 4, col 5",
+      "source_key": "summary_statistics.json.by_cohort.c3.tokens_per_doc_median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,820",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 4, col 6",
+      "source_key": "summary_statistics.json.by_cohort.c2.birth_year_mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,838",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 4, col 7",
+      "source_key": "summary_statistics.json.author_birth_year.mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,779",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 4, col 8",
+      "source_key": "summary_statistics.json.by_cohort.c1.birth_year_mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 5, col 2",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_documents",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "12",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 5, col 3",
+      "source_key": "summary_statistics.json.by_cohort.c4.n_authors",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,259,938",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 5, col 4",
+      "source_key": "summary_statistics.json.by_cohort.c4.n_tokens",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "81698.0",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 5, col 5",
+      "source_key": "summary_statistics.json.by_cohort.c4.tokens_per_doc_median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,840",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 5, col 6",
+      "source_key": "summary_statistics.json.author_birth_year.mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,859",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 5, col 7",
+      "source_key": "summary_statistics.json.by_cohort.c4.birth_year_max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,678",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 5, col 8",
+      "source_key": "summary_statistics.json.by_cohort.c4.n_weather_dictionary_hits",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 6, col 2",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_documents",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 6, col 3",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_documents",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,036,163",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 6, col 4",
+      "source_key": "summary_statistics.json.by_cohort.c5.n_tokens",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "76644.0",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 6, col 5",
+      "source_key": "summary_statistics.json.by_cohort.c5.tokens_per_doc_median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,860",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 6, col 6",
+      "source_key": "summary_statistics.json.by_cohort.c5.birth_year_min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,878",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 6, col 7",
+      "source_key": "summary_statistics.json.by_cohort.c5.birth_year_max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,242",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 6, col 8",
+      "source_key": "summary_statistics.json.by_cohort.c5.n_weather_dictionary_hits",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 7, col 2",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_documents",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 7, col 3",
+      "source_key": "summary_statistics.json.by_cohort.c6.n_authors",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,193,286",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 7, col 4",
+      "source_key": "summary_statistics.json.by_cohort.c6.n_tokens",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "82498.5",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 7, col 5",
+      "source_key": "summary_statistics.json.by_cohort.c6.tokens_per_doc_median",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,880",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 7, col 6",
+      "source_key": "summary_statistics.json.by_cohort.c6.birth_year_min",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,890",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 7, col 7",
+      "source_key": "summary_statistics.json.author_birth_year.max",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,326",
+      "table_context": "tab:corpus (The analysed corpus by author birth cohort...), row 7, col 8",
+      "source_key": "summary_statistics.json.by_cohort.c6.n_weather_dictionary_hits",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,933",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 2, col 2",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_weather_dictionary_hits",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,742,991",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 2, col 3",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_tokens",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "11.09",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 2, col 4",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.11",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 2, col 5",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].ci_pooled_per_10k[0]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "15.55",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 2, col 6",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].ci_pooled_per_10k[1]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10.83",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 2, col 7",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].mean_doc_per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 2, col 8",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_authors",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2,582",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 3, col 2",
+      "source_key": "summary_statistics.json.by_cohort.c2.n_weather_dictionary_hits",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2,389,137",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 3, col 3",
+      "source_key": "summary_statistics.json.by_cohort.c2.n_tokens",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10.81",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 3, col 4",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].mean_doc_per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "7.01",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 3, col 5",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[22].count",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "15.32",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 3, col 6",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[1].ci_pooled_per_10k[1]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "12.28",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 3, col 7",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[1].mean_doc_per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "13",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 3, col 8",
+      "source_key": "summary_statistics.json.by_cohort.c2.n_authors",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,779",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 4, col 2",
+      "source_key": "summary_statistics.json.by_cohort.c1.birth_year_mean",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,626,578",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 4, col 3",
+      "source_key": "summary_statistics.json.by_cohort.c3.n_tokens",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10.94",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 4, col 4",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[2].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8.01",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 4, col 5",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[9].count",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "15.64",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 4, col 6",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[2].ci_pooled_per_10k[1]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "13.61",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 4, col 7",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[2].mean_doc_per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "11",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 4, col 8",
+      "source_key": "summary_statistics.json.by_cohort.c3.n_authors",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,678",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 5, col 2",
+      "source_key": "summary_statistics.json.by_cohort.c4.n_weather_dictionary_hits",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,259,938",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 5, col 3",
+      "source_key": "summary_statistics.json.by_cohort.c4.n_tokens",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "13.32",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 5, col 4",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[3].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10.87",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 5, col 5",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].mean_doc_per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "15.71",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 5, col 6",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[2].ci_pooled_per_10k[1]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "13.47",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 5, col 7",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[3].mean_doc_per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "12",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 5, col 8",
+      "source_key": "summary_statistics.json.by_cohort.c4.n_authors",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,242",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 6, col 2",
+      "source_key": "summary_statistics.json.by_cohort.c5.n_weather_dictionary_hits",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,036,163",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 6, col 3",
+      "source_key": "summary_statistics.json.by_cohort.c5.n_tokens",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "11.99",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 6, col 4",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[3].dispersion_authors.median",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9.16",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 6, col 5",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[4].ci_pooled_per_10k[0]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14.80",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 6, col 6",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[4].ci_pooled_per_10k[1]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "11.89",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 6, col 7",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[4].mean_doc_per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "14",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 6, col 8",
+      "source_key": "summary_statistics.json.by_cohort.c1.n_documents",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,326",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 7, col 2",
+      "source_key": "summary_statistics.json.by_cohort.c6.n_weather_dictionary_hits",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1,193,286",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 7, col 3",
+      "source_key": "summary_statistics.json.by_cohort.c6.n_tokens",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "11.11",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 7, col 4",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "8.44",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 7, col 5",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].dispersion_authors.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "13.88",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 7, col 6",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[5].ci_pooled_per_10k[1]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "11.04",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 7, col 7",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 7, col 8",
+      "source_key": "summary_statistics.json.by_cohort.c6.n_authors",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10,540",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 8, col 2",
+      "source_key": "summary_statistics.json.weather_dictionary.n_hits_total",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9,248,093",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 8, col 3",
+      "source_key": "summary_statistics.json.n_tokens",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "11.40",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 8, col 4",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[2].dispersion_authors.median",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "9.84",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 8, col 5",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[6].ci_pooled_per_10k[0]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "13.09",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 8, col 6",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[6].ci_pooled_per_10k[1]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "12.19",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 8, col 7",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[6].mean_doc_per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "69",
+      "table_context": "tab:weather_all (Weather dictionary hits per 10,000 tokens by author birth co...), row 8, col 8",
+      "source_key": "summary_statistics.json.n_units",
+      "source": "results/summary_statistics.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "11.09",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 2, col 2",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10.81",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 2, col 3",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].mean_doc_per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "10.94",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 2, col 4",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[2].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "13.32",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 2, col 5",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[3].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "11.99",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 2, col 6",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[3].dispersion_authors.median",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "11.11",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 2, col 7",
+      "source_key": "estimation_results.json.models.weather_all.outputs.by_group[0].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.60",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 2, col 8",
+      "source_key": "estimation_results.json.models.weather_all.outputs.trend.spearman_rho",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.208",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 2, col 9",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[8].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.74",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 3, col 2",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[50].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.10",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 3, col 3",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[1].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.07",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 3, col 4",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[2].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.21",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 3, col 5",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[3].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.50",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 3, col 6",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[4].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.86",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 3, col 7",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[5].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.37",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 3, col 8",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[56].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.469",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 3, col 9",
+      "source_key": "estimation_results.json.term_frequencies.c5.terms[65].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.94",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 4, col 2",
+      "source_key": "estimation_results.json.models.wind_words.outputs.by_group[0].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.18",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 4, col 3",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[50].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.04",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 4, col 4",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[4].ci_pooled_per_10k[1]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3.15",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 4, col 5",
+      "source_key": "estimation_results.json.models.wind_words.outputs.by_group[3].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.16",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 4, col 6",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[50].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.36",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 4, col 7",
+      "source_key": "estimation_results.json.models.wind_words.outputs.by_group[5].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-0.09",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 4, col 8",
+      "source_key": "estimation_results.json.models.wind_words.outputs.trend.spearman_rho",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.872",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 4, col 9",
+      "source_key": "estimation_results.json.term_frequencies.c5.terms[30].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.31",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 5, col 2",
+      "source_key": "estimation_results.json.models.storm_words.outputs.by_group[0].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.29",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 5, col 3",
+      "source_key": "estimation_results.json.models.storm_words.outputs.by_group[1].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.55",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 5, col 4",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[2].ci_pooled_per_10k[1]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.94",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 5, col 5",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[4].dispersion_authors.p75",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.73",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 5, col 6",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[70].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.64",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 5, col 7",
+      "source_key": "estimation_results.json.models.storm_words.outputs.by_group[0].dispersion_authors.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-0.66",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 5, col 8",
+      "source_key": "estimation_results.json.models.storm_words.outputs.trend.spearman_rho",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.156",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 5, col 9",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[15].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.73",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 6, col 2",
+      "source_key": "estimation_results.json.models.fog_words.outputs.by_group[0].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.40",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 6, col 3",
+      "source_key": "estimation_results.json.models.fog_words.outputs.by_group[1].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.88",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 6, col 4",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[6].ci_pooled_per_10k[0]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.23",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 6, col 5",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[6].ci_pooled_per_10k[1]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.80",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 6, col 6",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[32].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.53",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 6, col 7",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[53].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.77",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 6, col 8",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[0].mean_doc_per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.072",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 6, col 9",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[7].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.82",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 7, col 2",
+      "source_key": "estimation_results.json.models.fog_words.outputs.by_group[3].ci_pooled_per_10k[0]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.10",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 7, col 3",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[1].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.11",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 7, col 4",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[6].mean_doc_per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.56",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 7, col 5",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[61].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.06",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 7, col 6",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[4].ci_pooled_per_10k[1]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.44",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 7, col 7",
+      "source_key": "estimation_results.json.models.storm_words.outputs.by_group[0].dispersion_authors.p25",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.83",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 7, col 8",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[2].dispersion_authors.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.042",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 7, col 9",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[9].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.98",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 8, col 2",
+      "source_key": "estimation_results.json.models.wind_words.outputs.by_group[2].dispersion_authors.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.64",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 8, col 3",
+      "source_key": "estimation_results.json.models.storm_words.outputs.by_group[4].dispersion_authors.p75",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "3.04",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 8, col 4",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[4].dispersion_authors.max",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.94",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 8, col 5",
+      "source_key": "estimation_results.json.models.wind_words.outputs.by_group[0].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.83",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 8, col 6",
+      "source_key": "estimation_results.json.models.sun_words.outputs.by_group[4].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.25",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 8, col 7",
+      "source_key": "estimation_results.json.models.snow_ice_words.outputs.by_group[2].ci_pooled_per_10k[1]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.20",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 8, col 8",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[57].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.704",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 8, col 9",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[2].ci_pooled_per_10k[0]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.57",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 9, col 2",
+      "source_key": "estimation_results.json.models.snow_ice_words.outputs.by_group[3].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.09",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 9, col 3",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[2].dispersion_authors.median",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.25",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 9, col 4",
+      "source_key": "estimation_results.json.models.fog_words.outputs.by_group[4].ci_mean_doc_per_10k[1]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.29",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 9, col 5",
+      "source_key": "estimation_results.json.models.fog_words.outputs.by_group[6].ci_mean_doc_per_10k[1]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.92",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 9, col 6",
+      "source_key": "estimation_results.json.models.snow_ice_words.outputs.by_group[6].ci_mean_doc_per_10k[0]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.03",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 9, col 7",
+      "source_key": "estimation_results.json.models.cloud_words.outputs.by_group[5].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-0.71",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 9, col 8",
+      "source_key": "estimation_results.json.models.cloud_words.outputs.trend.spearman_rho",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.111",
+      "table_context": "tab:families (Weather word families per 10,000 tokens by author birth coho...), row 9, col 9",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[44].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.43",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 2, col 2",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[28].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.53",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 2, col 3",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[33].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.71",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 2, col 4",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[32].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.80",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 2, col 5",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[32].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.87",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 2, col 6",
+      "source_key": "estimation_results.json.term_frequencies.c5.terms[30].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.52",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 2, col 7",
+      "source_key": "estimation_results.json.term_frequencies.c6.terms[29].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.43",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 2, col 8",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[28].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.397",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 2, col 9",
+      "source_key": "estimation_results.json.models.wind_words.outputs.by_group[5].dispersion_authors.min",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.56",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 3, col 2",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[61].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.28",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 3, col 3",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[71].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.17",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 3, col 4",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[66].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.72",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 3, col 5",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[70].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.38",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 3, col 6",
+      "source_key": "estimation_results.json.term_frequencies.c5.terms[69].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.28",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 3, col 7",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[71].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.03",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 3, col 8",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[1].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.957",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 3, col 9",
+      "source_key": "estimation_results.json.models.cloud_words.outputs.by_group[0].ci_mean_doc_per_10k[0]",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.68",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 4, col 2",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[42].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.74",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 4, col 3",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[50].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.64",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 4, col 4",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[47].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.69",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 4, col 5",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[49].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.51",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 4, col 6",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[42].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.54",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 4, col 7",
+      "source_key": "estimation_results.json.term_frequencies.c6.terms[46].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-0.66",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 4, col 8",
+      "source_key": "estimation_results.json.models.storm_words.outputs.trend.spearman_rho",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.156",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 4, col 9",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[15].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.21",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 5, col 2",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[8].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.04",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 5, col 3",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[22].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.32",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 5, col 4",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[9].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.33",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 5, col 5",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[62].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.11",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 5, col 6",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[44].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.36",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 5, col 7",
+      "source_key": "estimation_results.json.term_frequencies.c5.terms[0].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.54",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 5, col 8",
+      "source_key": "estimation_results.json.term_frequencies.c6.terms[46].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.266",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 5, col 9",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[28].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.46",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 6, col 2",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[37].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.51",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 6, col 3",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[42].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.61",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 6, col 4",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[41].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.97",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 6, col 5",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[42].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.32",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 6, col 6",
+      "source_key": "estimation_results.json.term_frequencies.c5.terms[41].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.90",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 6, col 7",
+      "source_key": "estimation_results.json.term_frequencies.c6.terms[38].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.83",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 6, col 8",
+      "source_key": "estimation_results.json.models.precipitation.outputs.by_group[2].dispersion_authors.sd",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.042",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 6, col 9",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[9].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.68",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 7, col 2",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[45].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.54",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 7, col 3",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[53].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.17",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 7, col 4",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[50].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.02",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 7, col 5",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[52].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "2.08",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 7, col 6",
+      "source_key": "estimation_results.json.term_frequencies.c5.terms[54].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "1.53",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 7, col 7",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[53].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-0.09",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 7, col 8",
+      "source_key": "estimation_results.json.models.wind_words.outputs.trend.spearman_rho",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.872",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 7, col 9",
+      "source_key": "estimation_results.json.term_frequencies.c5.terms[30].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.67",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 8, col 2",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[3].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.48",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 8, col 3",
+      "source_key": "estimation_results.json.term_frequencies.c2.terms[3].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.58",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 8, col 4",
+      "source_key": "estimation_results.json.term_frequencies.c3.terms[3].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.63",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 8, col 5",
+      "source_key": "estimation_results.json.term_frequencies.c1.terms[6].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.49",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 8, col 6",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[5].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.56",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 8, col 7",
+      "source_key": "estimation_results.json.term_frequencies.c6.terms[3].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "-0.31",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 8, col 8",
+      "source_key": "estimation_results.json.models.keyness_weather_c2.outputs.terms[22].log_ratio",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "table_cell",
+      "output": "paper/paper.tex",
+      "cell_value": "0.544",
+      "table_context": "tab:terms (Seven focal weather terms per 10,000 tokens by author birth ...), row 8, col 9",
+      "source_key": "estimation_results.json.term_frequencies.c4.terms[29].per_10k",
+      "source": "results/estimation_results.json"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "waugh2008talking",
+      "status": "verified_title",
+      "registry": "openalex",
+      "external_id": null
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "laughlin2020fog",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.5250/resilience.7.2-3.0132"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "michel2010quantitative",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1126/science.1199644"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "koplenig2015why",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1093/llc/fqv030"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "koplenig2015the",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1093/llc/fqv037"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "hanlon2018london",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.3386/w24488"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "morris1955ruskin",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1111/1540_6245.jaac14.2.0248"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "hopps2015the",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.5040/9780567662064.ch-007"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "lichtenstein2020artistic",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1093/aesthj/ayaa041"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "bories2022the",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1515/9783110781502-001"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "krautter2023the",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1515/9783111317779-011"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "grimmer2013text",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1093/pan/mps028"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "gentzkow2019text",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.1257/jel.20181020"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "ProjectGutenberg",
+      "status": "verified_title",
+      "registry": "openalex",
+      "external_id": "doi:10.1201/9781003573302-69"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "dunning1993accurate",
+      "status": "verified_title",
+      "registry": "openalex",
+      "external_id": null
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "rayson2000comparing",
+      "status": "verified_doi",
+      "registry": "openalex",
+      "external_id": "doi:10.3115/1117729.1117730"
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "hardie2014log",
+      "status": "unverifiable",
+      "registry": null,
+      "external_id": null
+    },
+    {
+      "type": "citation",
+      "output": "paper/paper.tex",
+      "key": "church1990word",
+      "status": "verified_title",
+      "registry": "openalex",
+      "external_id": "doi:10.5555/89086.89095"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_cohort_trend.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_corpus_median_length_by_cohort.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_corpus_tokens_by_cohort.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_keyness_c1.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_keyness_c2.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_keyness_c3.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_keyness_c4.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_keyness_c5.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_keyness_c6.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_keyness_weather_c1.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_keyness_weather_c2.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_keyness_weather_c3.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_keyness_weather_c4.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_keyness_weather_c5.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "figure",
+      "output": "results/figures/fig_keyness_weather_c6.pdf",
+      "source": "results/figure_spec.json"
+    },
+    {
+      "type": "estimation",
+      "output": "results/estimation_results.json",
+      "script": "code/run_estimation.py"
+    },
+    {
+      "type": "data",
+      "output": "data/data.db",
+      "queries": "replication/data_queries.sql",
+      "sources": "data/data_sources.json"
+    }
+  ],
+  "amendments": [
+    {
+      "path": "README.md",
+      "sha256_before": "8992c3e15fd946bf74fe2e0f26ad47113e25373c20bda694bd8cf2de4f3a3fa2",
+      "sha256_after": "fd2f766490460356fa79b60e63fd5e7bcbc7a3c77d5d2fe32f4cdda4b94dceac",
+      "reason": "exported again on 2026-10-21 from the original run (run database and a copy of its workspace; no study rerun, no model calls) with e2er c6d7bf2 to add the recorded data-preparation steps (get_data.py loads the Gutenberg texts again, build_data.py builds the corpus tables, data/sample_ids_v2.csv ships with the scripts that made it); files the operating system had deleted from the workspace were restored byte-identical from the 2026-10-15 export, and manifest.json was rebuilt from the run database. This README section says so.",
+      "at": "2026-10-21T10:29:33Z",
+      "kind": "re_export"
+    },
+    {
+      "path": "paper/paper.tex",
+      "sha256_before": "dd92d98ffbe35b0384a4e04e8fac7c42bd4bea72475d92d6c0ece65ce04b61f1",
+      "sha256_after": "6f09e94c103ebfa81879b6ad7d71cbc3fa84b0778c6c52e37b8cb52bcd8d1b24",
+      "reason": "stamped with the dossier link",
+      "at": "2026-10-21T10:53:49Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256_before": "4f3764ab634a91d9ee085f3b4300f9ab1122b1b77af220ecb4eb6365c4098f86",
+      "sha256_after": "abd3fc8889f9c1220ee98d66770f7977dde1b498571b9430f9014a54795ae723",
+      "reason": "recompiled with the dossier link",
+      "at": "2026-10-21T10:53:49Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "README.md",
+      "sha256_before": "fd2f766490460356fa79b60e63fd5e7bcbc7a3c77d5d2fe32f4cdda4b94dceac",
+      "sha256_after": "78ceddae16f4ae36a660bff77b0d27b14f62dba9d8e60d9be09c34bf437ca249",
+      "reason": "the study's summary for its GitHub repository, at the top",
+      "at": "2026-10-21T10:53:55Z",
+      "kind": "readme"
+    }
+  ]
+}

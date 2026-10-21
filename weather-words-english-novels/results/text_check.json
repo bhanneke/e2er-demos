@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "reasons": [],
+  "notes": [],
+  "stats": {
+    "terms_c1": 66,
+    "terms_c2": 75,
+    "terms_c3": 71,
+    "terms_c4": 73,
+    "terms_c5": 73,
+    "terms_c6": 69,
+    "terms_all": 86,
+    "keyness_c1": 40,
+    "keyness_weather_c1": 68,
+    "keyness_c2": 40,
+    "keyness_weather_c2": 68,
+    "keyness_c3": 40,
+    "keyness_weather_c3": 68,
+    "keyness_c4": 40,
+    "keyness_weather_c4": 68,
+    "keyness_c5": 40,
+    "keyness_weather_c5": 68,
+    "keyness_c6": 40,
+    "keyness_weather_c6": 68,
+    "n_documents": 84,
+    "n_tokens": 9248093
+  }
+}

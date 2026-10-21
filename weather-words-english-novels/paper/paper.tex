@@ -1,0 +1,352 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[authoryear]{natbib}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+\title{The Vocabulary of Weather in English-Language Novels by Author Birth Cohort, 1770--1899}
+\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/d9f0b0004906f789}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Weather and climate are a recognised theme of the Victorian novel, but accounts of this theme typically rest on a few canonical texts. We ask how the vocabulary of weather (rain, wind, storm, fog, snow, sun, cloud and related words) varies across English-language novels by authors born in six cohorts, 1770--1799 to 1880--1899. Using 84 novels by 69 authors from Project Gutenberg (14 novels per cohort, 9.2 million tokens), we count a hand-built dictionary of 90 exact word forms per 10,000 tokens, compare cohorts with log-likelihood keyness and log ratios, and check the dictionary hits against a hand-judged sample of 198 passages. The pooled weather rate is stable across cohorts, between about 11 and 13 hits per 10,000 tokens, and the range of author rates is much wider than the range of cohort rates, although the author-bootstrap intervals are wide enough to leave sizeable cohort differences open. Beneath this stability, individual word families move: snow and ice words rise from 0.82 hits per 10,000 tokens in the first cohort to a peak of 2.06 in the fifth and 1.44 in the sixth, a pattern we regard as suggestive, and \emph{tempest} is concentrated in the earliest cohort. Fog and mist words are also more frequent in the sixth cohort, but precision in the hand-checked sample (not weighted by term frequency) is 0.71 overall and only 0.42 for storm words, 0.50 for fog words and 0.58 for cloud words, so these three families partly measure figurative language; the hand check found none of only four sampled fog hits in the sixth cohort to be weather (too few to bound the share well), and the fog rise cannot be read as more fog description. A reduced lexicon defined after the hand check makes the composite flat, lowers the rank correlation of the fog rise while the fog and mist rate still roughly doubles, and yields a steadier fall of storm words; because this lexicon was fitted to the hand-checked sample, we treat the storm fall as a pattern worth testing, not a finding. All patterns are descriptive and refer to this corpus of popular, digitised novels; none is a causal estimate.
+
+\medskip
+\noindent\textbf{Keywords:} weather vocabulary; English-language novel; author cohorts; keyness; dictionary validation; Project Gutenberg; computational literary studies
+\end{abstract}
+
+\section{Introduction}
+
+Weather is a staple of the English novel, from the storm that breaks over a Gothic romance to the London fog that settles over a Victorian city. Close readings of single authors and single books have built a rich account of how nineteenth-century fiction used the sky, treating weather and climate as a theme of the Victorian novel and reading Dickens's fog in relation to coal \citep{waugh2008talking, laughlin2020fog}. Such accounts rest on a small number of canonical texts, and it is not established whether the themes they identify appear as shifts in vocabulary across a broader set of novels, or whether they reflect which books receive critical attention.
+
+Corpus methods can test this question at scale, but the dominant source of large-scale evidence, the Google Books n-gram data, indexes publication year across mixed genres and is sensitive to changes in corpus composition \citep{michel2010quantitative, koplenig2015why, koplenig2015the}. To keep genre and source constant, this paper fixes the genre (novels), fixes the source (Project Gutenberg), and indexes authors by birth year. Our research question is: How did the vocabulary of weather vary across English-language novels by authors born in six cohorts, 1770--1799 to 1880--1899?
+
+We answer this question descriptively. We draw novels at random within cohort, at most two per author, from a frame of popular Project Gutenberg catalogue entries whose depth differs by cohort (the eligible pool of the two earliest cohorts was close to exhausted, so those cohorts approach a census of the frame), and cut every cohort to 14 novels. We count 90 exact weather word forms per 10,000 tokens, compare cohorts with keyness statistics, and validate the dictionary against a hand-judged sample of 198 passages. The paper makes no causal claim: it does not say that climate, urbanisation, literary movements or editorial fashion caused any difference between cohorts.
+
+Our main findings are as follows. First, the pooled density of weather words is stable in its point estimates: every cohort uses between about 11 and 13 weather words per 10,000 tokens, and the range of cohort rates is narrower than the range of author rates within cohorts, although the intervals are wide enough to leave sizeable cohort differences open. Second, the stability of the total conceals movement in individual word families. Snow and ice words rise from 0.82 hits per 10,000 tokens in the first cohort to a peak of 2.06 in the fifth and 1.44 in the sixth, the vocabulary of fog and mist is more frequent in the sixth cohort, and the word \emph{tempest} is a marker of the earliest cohort. Third, a hand check of 198 sampled hits shows that the dictionary is a good measure of precipitation, wind, snow and sun, but a poor measure of storm, fog and cloud words, where between four and six in ten hits are figurative or have another sense; in particular, none of only four sampled fog hits in the sixth cohort was weather (too few to bound the share), so the higher fog rate there cannot be read as more fog description. Fourth, with six cohorts and 14 novels each, only large differences can be told apart from noise, and most of the family-level trends we report are not distinguishable from zero.
+
+Our research makes three contributions. First, we provide a new descriptive fact: a documented cohort profile of a concrete lexical field in the English novel, normalised by tokens and reported with intervals that resample authors, which respects the clustering of novels within authors that a token-level interval ignores. Second, we show how much a ``trend'' in a word family depends on measurement choices; the composite profile is flat under the full and core dictionaries and nominally rising, but statistically indistinguishable from flat, under a restricted one, and the family-level readings change once the hand check is applied. Third, we provide a validation template for dictionary measures of a lexical field in fiction, including the term-level patterns of false positives that matter most for cohort comparisons.
+
+The remainder of this study is structured as follows. The next section positions the study relative to the literature on weather in the novel and on lexical change. Section 3 describes the corpus and the method. Section 4 reports results by cohort and by term, and Section 5 reports the validation and robustness checks. Section 6 discusses limitations, and Section 7 concludes.
+
+\section{Related Literature}
+
+Literary scholarship on weather in the Victorian novel is largely qualitative. \citet{waugh2008talking} treats climate and weather as a theme of Victorian fiction, and \citet{laughlin2020fog} reads Dickens's fog as an index of a coal-based energy regime, an argument that connects the vocabulary of fog to an external history of pollution. The measurable counterpart of that history is documented by \citet{hanlon2018london}, who reconstructs London fog, pollution and mortality over a century. These works motivate the expectation that fog vocabulary should be prominent in cohorts writing during the era of coal smoke, but they are organised around single authors or texts and offer no cohort-level frequencies. Our study supplies such frequencies for a defined lexical field and treats the expectation as a hypothesis, not as a result.
+
+A second stream concerns the pathetic fallacy and the shift from Romantic to Victorian and modernist nature description \citep{morris1955ruskin, hopps2015the, lichtenstein2020artistic}. This literature is concerned mainly with poetry and with theory, and a bag-of-words design cannot detect the pathetic fallacy as such. What a frequency design can do is show whether weather words become more or less common, and, through hand validation, how often they are used for states of mind and not for the sky. We therefore use validation to qualify every cohort contrast in a family where figurative use is common.
+
+A third stream is computational literary studies and the quantitative study of cultural change in digitised text \citep{bories2022the, krautter2023the}. The n-gram literature shows how powerful word-frequency series are, and how fragile they become when genre mix and corpus composition change over time \citep{michel2010quantitative, koplenig2015why, koplenig2015the}. Methodological accounts of text as data stress that any automatic measure must be validated on the corpus at hand \citep{grimmer2013text, gentzkow2019text}. We follow this advice and differ from the n-gram design in three ways: we hold genre constant, we group authors by generation instead of by calendar year, and we validate the dictionary by hand. We found no study that compares weather vocabulary in novels across author-birth cohorts; this statement rests on a limited literature search and should be read as such.
+
+\section{Corpus and Method}
+
+\subsection{Corpus}
+
+The corpus consists of novels from Project Gutenberg \citep{ProjectGutenberg}. A document is one novel, and the time axis is the author's birth year as the Gutenberg catalogue records it. We use six cohorts of author birth years: 1770--1799 (cohort 1), 1800--1819 (cohort 2), 1820--1839 (cohort 3), 1840--1859 (cohort 4), 1860--1879 (cohort 5) and 1880--1899 (cohort 6). We do not look up or approximate publication years. Cohorts therefore overlap in the years in which their members published, and period and cohort effects cannot be separated.
+
+The sampling frame is the set of the 320 most popular catalogue rows per cohort search, in the catalogue's popularity order (the download counts themselves are empty in our extract and were not used), so the frame favours books that remain popular on Project Gutenberg today. The frame was built unevenly: for the earliest cohorts the eligible pool was close to exhausted at 14 to 15 novels, whereas later cohorts drew 14 from a larger pool, so selection probabilities and the degree of popularity bias differ by cohort, and the planned minimum of 30 authors per cohort was not reached. From 4,160 catalogue rows read across all searches,
+% src: summary_statistics.json#sample_flow.0.n
+we obtained 1,409 unique ebooks,
+% src: summary_statistics.json#sample_flow.1.n
+of which 632 were catalogue-eligible: English-language, a single catalogue person with a recorded birth year in 1770--1899, plain text available, not under copyright, fiction-type, with non-novel forms and collections removed.
+% src: summary_statistics.json#sample_flow.2.n
+From these we drew novels at random within cohort (seed 20261014, at most two per author per cohort) and loaded their full texts. After loading, we removed translations, books on non-English literature bookshelves and non-novels,
+% src: summary_statistics.json#sample_flow.5.dropped
+and we removed novels with fewer than 30,000 tokens after cleaning.
+% src: summary_statistics.json#sample_flow.6.dropped
+Because the cohort with the fewest eligible novels determined the sample size, we cut every cohort to 14 novels, keeping the lowest draw ranks, which leaves 84 novels by 69 authors.
+% src: summary_statistics.json#n_observations
+% src: summary_statistics.json#n_units
+The preceding design had planned about 120 novels; the final corpus is smaller because the exclusions were applied after the texts were loaded and word counts became known.
+
+Table~\ref{tab:corpus} describes the corpus. It contains 9,248,093 tokens and 78,344 distinct token types; the median novel has 87,638.5 tokens.
+% src: summary_statistics.json#n_tokens
+% src: summary_statistics.json#n_types
+% src: summary_statistics.json#outcome.tokens_per_document.median
+Novels in the earliest two cohorts are longer than those in later cohorts, a difference that matters because we normalise by tokens and report per-novel rates beside pooled rates. The cohort labels give the design ranges, but the realised birth years are narrower: 1770--1797 in cohort 1 and 1880--1890 in cohort 6, the latest author birth year in the corpus, so we describe the corpus as a whole as authors born 1770--1890.
+% src: summary_statistics.json#cohorts.c1.birth_year_max
+% src: summary_statistics.json#author_birth_year.max
+
+\input{tables/corpus.tex}
+
+\subsection{Preprocessing and the weather dictionary}
+
+We lower-case the text and tokenise it with the regular expression \texttt{[a-z]+(?:['’][a-z]+)?}, which keeps words with an apostrophe. We apply no lemmatisation and no stop-word removal to token counts; the scikit-learn English stop-word list is applied only to key-term lists. The Gutenberg header, footer and licence are removed, as are tables of contents and editors' introductions where they can be detected; the 48,466 characters removed across the corpus are recorded per document.
+% src: summary_statistics.json#front_matter_chars_cut.total
+
+The weather dictionary contains 90 exact word forms, written for this study from the research question's word list plus common inflections and close synonyms. It is not a published dictionary. We use exact forms only, with no wildcards, so that \emph{wind} does not match \emph{window} or \emph{winding}. We exclude \emph{hail} (a greeting, and the phrase ``within hail'', outnumber weather hail in novels) and \emph{storming} (storming a fort). The words are grouped in seven families: precipitation, wind, storm, fog and mist, snow and ice, sun, and cloud. Ambiguous forms such as \emph{shower}, \emph{thunder}, \emph{icy} and the cloud forms are kept and covered by the validation sample.
+
+\subsection{Measures and statistics}
+
+Our main measure is the number of dictionary hits per 10,000 tokens of a group. We report this pooled rate and the mean of per-novel rates, which weights each novel equally. Intervals come from a bootstrap that resamples authors with replacement within cohort and keeps all sampled novels of a drawn author (seed 20261014, 2,000 draws; 95 percent percentile intervals). Resampling authors addresses the clustering of novels within authors, which a token-level interval would ignore.
+
+To compare a cohort with the other five cohorts we use the log-likelihood statistic $G^2$ \citep{dunning1993accurate, rayson2000comparing} together with the log ratio of relative frequencies as an effect size \citep{hardie2014log}. For a term with $a$ occurrences in a target of $c$ tokens and $b$ in a reference of $d$ tokens, the log ratio is $\log_2\big((a/c)/(b/d)\big)$, with a zero count taken as 0.5. We compute keyness for dictionary terms with a total count of at least 10 and treat $G^2$ above 15.13 ($p<0.0001$) as the threshold for a reportable difference. Keyness treats tokens as independent, which overstates certainty because words cluster in novels and in authors; we therefore use it to rank terms and read the author-level intervals alongside it. For collocations we use adjacent-pair pointwise mutual information \citep{church1990word} with a minimum count of five. To summarise a cohort profile in one number we report the Spearman rank correlation between the six cohort rates and cohort order, which is a description of monotone drift and not a causal estimate. With six points, only a near-perfect monotone profile can produce a small $p$ value, and we report these $p$ values without adjustment for the 15 profiles examined. The $p$ values are t-approximations; with six points they are anti-conservative and exact permutation values are larger, so we read them as rough guides and not as tests.
+
+Finally, we validate the dictionary by hand. For each of the eight measures (the composite and the seven families) we drew a cohort-stratified sample of passages containing a hit, with ambiguous terms placed first within each cohort cell, and judged by reading whether the word, in its passage, names a weather or sky phenomenon. The sample is not weighted by term frequency, so the resulting precision values describe the sampled mix of terms and not the corpus-weighted precision.
+
+\section{Results by Cohort and Term}
+
+\subsection{The composite weather rate}
+
+Table~\ref{tab:weather_all} shows that the density of weather words is stable across cohorts. The pooled rate is 11.09 hits per 10,000 tokens in cohort 1 and 11.11 in cohort 6, and it ranges only from 10.81 in cohort 2 to 13.32 in cohort 4.
+% src: estimation_results.json#models.weather_all.outputs.by_group.0.per_10k
+% src: estimation_results.json#models.weather_all.outputs.by_group.5.per_10k
+% src: estimation_results.json#models.weather_all.outputs.by_group.1.per_10k
+% src: estimation_results.json#models.weather_all.outputs.by_group.3.per_10k
+The corpus-wide rate is 11.40 per 10,000 tokens, and every one of the 84 novels contains at least one weather word.
+% src: estimation_results.json#models.weather_all.outputs.by_group.6.per_10k
+% src: estimation_results.json#models.weather_all.outputs.by_group.6.share_docs_with_hit
+The bump in cohort 4 is the largest departure, but its author-bootstrap interval of 10.87 to 15.71 overlaps the intervals of all other cohorts, for example 7.01 to 15.32 for cohort 2.
+% src: estimation_results.json#models.weather_all.outputs.by_group.3.ci_pooled_per_10k
+% src: estimation_results.json#models.weather_all.outputs.by_group.1.ci_pooled_per_10k
+The Spearman correlation between cohort order and the composite rate is 0.60 ($p=0.208$), which is not distinguishable from no monotone drift.
+% src: estimation_results.json#models.weather_all.outputs.trend.spearman_rho
+% src: estimation_results.json#models.weather_all.outputs.trend.spearman_p
+The range of author rates is much wider than the range of cohort rates (a comparison of extremes with pooled means, not a variance decomposition, which we do not report): across authors in the whole corpus, the rate runs from 2.10 to 31.35 hits per 10,000 tokens, with a median of 10.44.
+% src: estimation_results.json#models.weather_all.outputs.by_group.6.dispersion_authors.min
+% src: estimation_results.json#models.weather_all.outputs.by_group.6.dispersion_authors.max
+% src: estimation_results.json#models.weather_all.outputs.by_group.6.dispersion_authors.median
+In this sense the composite measure supports no claim that weather writing became denser or sparser in a general way. The wide intervals also mean that the data cannot exclude sizeable cohort differences in either direction, so the profile is unresolved as much as stable; and because hand-checked precision is lower in the latest cohort (Section 5.1), a flat raw rate need not be a flat rate of weather description.
+
+\input{tables/weather_all.tex}
+
+Single authors can carry a cohort figure. In cohort 1, one author accounts for 30.9 percent of all hits, in cohort 6 one author for 26.9 percent, and in cohort 4 one author for 23.4 percent.
+% src: estimation_results.json#models.weather_all.outputs.by_group.0.dispersion_authors.top_author_share_of_hits
+% src: estimation_results.json#models.weather_all.outputs.by_group.5.dispersion_authors.top_author_share_of_hits
+% src: estimation_results.json#models.weather_all.outputs.by_group.3.dispersion_authors.top_author_share_of_hits
+Dropping the single heaviest novel of each cohort lowers the cohort 4 rate from 13.32 to 11.92, which is close to the cohort 5 rate of 11.42 after the same removal (11.99 in full) and removes most of the bump.
+% src: estimation_results.json#robustness.leave_one_out_weather_all.c4.full
+% src: estimation_results.json#robustness.leave_one_out_weather_all.c4.without_heaviest_novel
+% src: estimation_results.json#robustness.leave_one_out_weather_all.c5.without_heaviest_novel
+With that novel removed from each cohort, the Spearman correlation falls to 0.09 ($p=0.872$).
+% src: estimation_results.json#robustness.trend_without_heaviest_novel.spearman_rho
+% src: estimation_results.json#robustness.trend_without_heaviest_novel.spearman_p
+
+\subsection{Word families}
+
+Table~\ref{tab:families} breaks the composite into its seven families. Snow and ice words show the clearest drift: their rate rises from 0.82 per 10,000 tokens in cohort 1 to 2.06 in cohort 5 and falls back to 1.44 in cohort 6, with a Spearman correlation of 0.83 ($p=0.042$).
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.snow_ice_words.cohort_rates_per_10k.0
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.snow_ice_words.cohort_rates_per_10k.4
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.snow_ice_words.cohort_rates_per_10k.5
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.snow_ice_words.spearman_rho
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.snow_ice_words.spearman_p
+Fog and mist words are more frequent in later cohorts, from 0.73 in cohort 1 and 0.40 in cohort 2 to 1.53 in cohort 6 (Spearman 0.77, $p=0.072$), although the profile is not monotone.
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.fog_words.cohort_rates_per_10k.0
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.fog_words.cohort_rates_per_10k.1
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.fog_words.cohort_rates_per_10k.5
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.fog_words.spearman_rho
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.fog_words.spearman_p
+This rise cannot be read as more fog description in the later novels: the hand check found none of the 4 sampled fog hits in cohort 6 to be weather (a zero in four is compatible with a true precision of up to about 0.6), and the precision of the fog family is 0.50 overall (Section 5.1).
+% computed: cohort 6 fog items judged correct, 0 of 4, from text_validation.json (fog_words items, cohort 6)
+% src: text_validation.json#fog_words.precision
+The reduced lexicon of Section 5.2, defined after the hand check, lowers the rank correlation of the fog rise but leaves the rate roughly doubling, and it keeps the forms fog and mist, which the hand check found to be figurative in many hits.
+Storm words move in the opposite direction, from 2.31 per 10,000 tokens in cohort 1 to 1.64 in cohort 6 (Spearman $-0.66$, $p=0.156$), and cloud words fall from 1.57 to 1.03 (Spearman $-0.71$, $p=0.111$).
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.storm_words.cohort_rates_per_10k.0
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.storm_words.cohort_rates_per_10k.5
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.storm_words.spearman_rho
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.storm_words.spearman_p
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.cloud_words.cohort_rates_per_10k.0
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.cloud_words.cohort_rates_per_10k.5
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.cloud_words.spearman_rho
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.cloud_words.spearman_p
+Precipitation words peak in cohort 5 at 1.50 and are lowest in cohort 1 at 0.74, wind words show no ordered drift (Spearman $-0.09$), and sun words rise from 1.98 in cohort 1 to a plateau near 3 in cohorts 3 to 5 before falling to 2.25 in cohort 6.
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.precipitation.cohort_rates_per_10k.4
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.precipitation.cohort_rates_per_10k.0
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.wind_words.spearman_rho
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.sun_words.cohort_rates_per_10k.0
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_category.sun_words.cohort_rates_per_10k.5
+Of the 15 cohort profiles we examine (the composite, seven families and seven single terms), two reach a Spearman $p$ value below 0.05, both of them snow-related; with this many correlated profiles one such result is expected by chance alone, so we treat the snow and ice rise as suggestive and the rest as unresolved.
+
+\input{tables/families.tex}
+
+Table~\ref{tab:terms} shows the seven focal single terms. The word \emph{snow} rises from 0.46 per 10,000 tokens in cohort 1 to 1.32 in cohort 5, and \emph{rain} peaks at 0.87 in cohort 5 against 0.43 in cohort 1.
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_term.snow.cohort_rates_per_10k.0
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_term.snow.cohort_rates_per_10k.4
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_term.rain.cohort_rates_per_10k.4
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_term.rain.cohort_rates_per_10k.0
+The word \emph{fog} is rare in every cohort and highly uneven: it occurs 9 times in cohort 2, a rate of 0.04 per 10,000 tokens, against 0.36 in cohort 6.
+% src: estimation_results.json#models.keyness_weather_c2.outputs.terms.0.count_target
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_term.fog.cohort_rates_per_10k.1
+% src: estimation_results.json#models.cohort_trend.outputs.trend_by_term.fog.cohort_rates_per_10k.5
+The words \emph{wind} and \emph{sun} stay near their corpus levels in all cohorts, and \emph{cloud} and \emph{storm} drift slightly downward. These single-term profiles are small in absolute terms, a fraction of one hit per 10,000 tokens for most terms, and a handful of novels can move them.
+
+\input{tables/terms.tex}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.85\linewidth]{fig_cohort_trend.pdf}
+\caption{Frequency per 10,000 tokens of seven focal weather terms by author birth cohort (shown on the horizontal axis as cohorts c1 to c6. The realised author birth years are 1770--1797 (c1), 1803--1819 (c2), 1820--1838 (c3), 1840--1859 (c4), 1860--1878 (c5) and 1880--1890 (c6)).}
+% src: summary_statistics.json#cohorts.c1.birth_year_min
+% src: summary_statistics.json#cohorts.c1.birth_year_max
+% src: summary_statistics.json#cohorts.c2.birth_year_min
+% src: summary_statistics.json#cohorts.c6.birth_year_max
+\label{fig:cohort_trend}
+\end{figure}
+
+\subsection{Key weather terms by cohort}
+
+Keyness compares each cohort with the other five and ranks the dictionary terms by $G^2$. At the threshold of 15.13, six terms or fewer per cohort qualify, and cohort 3 has none.
+% src: estimation_results.json#models.keyness_weather_c3.outputs.terms.0.g2
+In cohort 1, \emph{tempest} is the clearest marker, with 75 occurrences against 76 in the other five cohorts combined, although the reference is about 4.3 times as large ($G^2=72.74$, log ratio 2.09).
+% src: estimation_results.json#models.keyness_weather_c1.outputs.terms.0.count_target
+% src: estimation_results.json#models.keyness_weather_c1.outputs.terms.0.count_reference
+% src: estimation_results.json#models.keyness_weather_c1.outputs.terms.0.g2
+% src: estimation_results.json#models.keyness_weather_c1.outputs.terms.0.log_ratio
+The same cohort is relatively poor in \emph{sunlight} (2 against 164 occurrences; $G^2=53.52$, log ratio $-4.25$) and \emph{sunshine} ($G^2=28.72$), and it uses \emph{gale} ($G^2=26.94$, log ratio 1.18) and \emph{clouds} ($G^2=17.95$, log ratio 0.71) more than the rest.
+% src: estimation_results.json#models.keyness_weather_c1.outputs.terms.1.count_target
+% src: estimation_results.json#models.keyness_weather_c1.outputs.terms.1.count_reference
+% src: estimation_results.json#models.keyness_weather_c1.outputs.terms.1.g2
+% src: estimation_results.json#models.keyness_weather_c1.outputs.terms.1.log_ratio
+% src: estimation_results.json#models.keyness_weather_c1.outputs.terms.2.g2
+% src: estimation_results.json#models.keyness_weather_c1.outputs.terms.3.g2
+% src: estimation_results.json#models.keyness_weather_c1.outputs.terms.3.log_ratio
+% src: estimation_results.json#models.keyness_weather_c1.outputs.terms.5.g2
+% src: estimation_results.json#models.keyness_weather_c1.outputs.terms.5.log_ratio
+The earliest cohort thus has more of the vocabulary of the sky in motion (tempests, gales, clouds), and cohorts 2 and 4 have more of the vocabulary of light (sunshine, sunlight). We do not read this as a trend toward light: cohorts 3, 5 and 6 are not marked by these terms, the tokeniser splits hyphens, so that closed and hyphenated spellings (sunlight, sun-light) may differ by period, and the earliest sample contains sea and frontier romances in which tempests are expected on grounds of setting and register.
+
+Cohort 2 stands out for the near absence of \emph{fog}, with 9 occurrences against 184 in the other cohorts ($G^2=61.59$, log ratio $-2.83$), and for \emph{sunshine}, which is more frequent than elsewhere (141 against 177; $G^2=50.72$, log ratio 1.19).
+% src: estimation_results.json#models.keyness_weather_c2.outputs.terms.0.count_reference
+% src: estimation_results.json#models.keyness_weather_c2.outputs.terms.0.g2
+% src: estimation_results.json#models.keyness_weather_c2.outputs.terms.0.log_ratio
+% src: estimation_results.json#models.keyness_weather_c2.outputs.terms.1.count_target
+% src: estimation_results.json#models.keyness_weather_c2.outputs.terms.1.count_reference
+% src: estimation_results.json#models.keyness_weather_c2.outputs.terms.1.g2
+% src: estimation_results.json#models.keyness_weather_c2.outputs.terms.1.log_ratio
+Cohort 4 uses \emph{mist} (69 against 217; $G^2=22.60$, log ratio 1.01) and \emph{sunlight} (44 against 122; $G^2=19.16$, log ratio 1.19) more than the other cohorts.
+% src: estimation_results.json#models.keyness_weather_c4.outputs.terms.0.count_target
+% src: estimation_results.json#models.keyness_weather_c4.outputs.terms.0.count_reference
+% src: estimation_results.json#models.keyness_weather_c4.outputs.terms.0.g2
+% src: estimation_results.json#models.keyness_weather_c4.outputs.terms.0.log_ratio
+% src: estimation_results.json#models.keyness_weather_c4.outputs.terms.1.count_target
+% src: estimation_results.json#models.keyness_weather_c4.outputs.terms.1.count_reference
+% src: estimation_results.json#models.keyness_weather_c4.outputs.terms.1.g2
+% src: estimation_results.json#models.keyness_weather_c4.outputs.terms.1.log_ratio
+Cohort 5 is marked by \emph{snow} (137 against 529; $G^2=48.54$, log ratio 1.04) and \emph{rained} ($G^2=18.16$, log ratio 2.03) and is poor in \emph{tempest} (3 against 148; $G^2=18.85$, log ratio $-2.64$).
+% src: estimation_results.json#models.keyness_weather_c5.outputs.terms.0.count_target
+% src: estimation_results.json#models.keyness_weather_c5.outputs.terms.0.count_reference
+% src: estimation_results.json#models.keyness_weather_c5.outputs.terms.0.g2
+% src: estimation_results.json#models.keyness_weather_c5.outputs.terms.0.log_ratio
+% src: estimation_results.json#models.keyness_weather_c5.outputs.terms.2.g2
+% src: estimation_results.json#models.keyness_weather_c5.outputs.terms.2.log_ratio
+% src: estimation_results.json#models.keyness_weather_c5.outputs.terms.1.count_target
+% src: estimation_results.json#models.keyness_weather_c5.outputs.terms.1.count_reference
+% src: estimation_results.json#models.keyness_weather_c5.outputs.terms.1.g2
+% src: estimation_results.json#models.keyness_weather_c5.outputs.terms.1.log_ratio
+Cohort 6 has only one qualifying term, \emph{misty} (25 against 58; $G^2=16.84$, log ratio 1.54), and the next terms, \emph{tempest} and \emph{fog}, fall below the threshold.
+% src: estimation_results.json#models.keyness_weather_c6.outputs.terms.0.count_target
+% src: estimation_results.json#models.keyness_weather_c6.outputs.terms.0.count_reference
+% src: estimation_results.json#models.keyness_weather_c6.outputs.terms.0.g2
+% src: estimation_results.json#models.keyness_weather_c6.outputs.terms.0.log_ratio
+% src: estimation_results.json#models.keyness_weather_c6.outputs.terms.1.g2
+Taken together, \emph{tempest} falls from a marker of the earliest cohort to a term that is rare in cohorts 5 and 6, while \emph{mist} and its relatives are more frequent in cohorts 4 and 6, with the caveat that fog-family hits are often figurative (Section 5.1); this is the keyness counterpart of the family profiles above. Because keyness treats tokens as independent, and because single novels can contribute dozens of occurrences of a rare term, these lists identify candidates for reading and not established cohort markers. We do not tabulate how many novels or authors carry each term, and a few novels may supply most of a marker's count.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.32\linewidth]{fig_keyness_weather_c1.pdf}
+\includegraphics[width=0.32\linewidth]{fig_keyness_weather_c2.pdf}
+\includegraphics[width=0.32\linewidth]{fig_keyness_weather_c3.pdf}\\[2mm]
+\includegraphics[width=0.32\linewidth]{fig_keyness_weather_c4.pdf}
+\includegraphics[width=0.32\linewidth]{fig_keyness_weather_c5.pdf}
+\includegraphics[width=0.32\linewidth]{fig_keyness_weather_c6.pdf}
+\caption{Key weather terms of each cohort against the other five (log ratio, base 2; positive values are more frequent in the cohort). Panels run from cohort 1 (born 1770--1797, top left) to cohort 6 (born 1880--1890, bottom right).}
+\label{fig:keyness_weather}
+\end{figure}
+
+\subsection{Collocates}
+
+Adjacent-pair collocations show which senses of the node words dominate. The strongest pairs with a count of at least five are \emph{dense fog} and \emph{white fog}, \emph{thunder storm} (12 occurrences), \emph{drizzling rain} and \emph{heavy rain}, and \emph{rain fell} (15 occurrences). The collocates describe the literal weather event, its intensity and its course (the storm \emph{came}, \emph{passed} or \emph{tossed} a ship). Adjacent-pair association says nothing about figurative use, which the hand check shows for storm, fog and cloud words.
+% src: estimation_results.json#weather_collocates.outputs.pairs
+
+\section{Validation and Robustness}
+
+\subsection{Hand-checked precision}
+
+We judged 198 sampled passages: 30 for the composite measure and 24 for each of the seven families. Of these, 140 were judged correct, a precision of 0.71. This pooled figure describes the sample, which places ambiguous terms first and is not weighted by term frequency, and not the corpus; a single coder judged the passages and no agreement statistic is available.
+% computed: n_correct = 22+21+21+10+12+20+20+14 from text_validation.json (weather_all, precipitation, wind_words, storm_words, fog_words, snow_ice_words, sun_words, cloud_words); n_checked = 30 + 7*24 = 198; 140/198
+Precision differs sharply by family. For precipitation (21 of 24) and wind (21 of 24) it is 0.88, and for snow and ice (20 of 24) and sun (20 of 24) it is 0.83.
+% src: text_validation.json#precipitation.precision
+% src: text_validation.json#wind_words.precision
+% src: text_validation.json#snow_ice_words.precision
+% src: text_validation.json#sun_words.precision
+For the composite it is 0.73 (22 of 30).
+% src: text_validation.json#weather_all.precision
+For cloud words it is 0.58 (14 of 24), for fog words 0.50 (12 of 24), and for storm words 0.42 (10 of 24).
+% src: text_validation.json#cloud_words.precision
+% src: text_validation.json#fog_words.precision
+% src: text_validation.json#storm_words.precision
+Between four and six in ten hits in these three families are therefore not weather in the sense the measure assumes.
+
+The wrong hits follow patterns that matter for interpretation. Storm words are used for troubles and excitement (``storms and disappointments''), for speed (``like lightning''), as an intensifier (``thundering''), for the noise of surf and music, and for objects (a hurricane lantern); \emph{thunder} forms were judged correct in only one of six sampled hits. Fog and mist words are used for obscurity of mind, for smoke, steam and gasoline fumes, and, in one American novel, for ``standing fog'' meaning dry grass. Cloud words are used for faces and eyes (a clouded brow, cloudy eyes), for steam and for the idiom ``under a cloud''. Sun words include names and a newspaper (``the Sun'', ``Sun Dance'') and the sun as a god or a cosmic body, and snow words include a surname. By contrast, the forms of \emph{rain}, \emph{breeze}, \emph{snow} and \emph{cloudless} were almost always literal: all 19 sampled hits for \emph{rain}, \emph{rains}, \emph{rained} and \emph{rainy} and all 11 for \emph{breeze} forms were correct.
+
+Precision also varies by cohort in the pooled sample of 33 items per cohort. It is highest in cohort 4 (28 of 33, 0.85) and lowest in cohort 6 (18 of 33, 0.55), driven by figurative or non-weather uses of fog, storm and sun words in the latest cohort.
+% computed: cohort precision from text_validation.md (cohort 4: 28/33 = 0.85; cohort 6: 18/33 = 0.55); the per-item judgments are in text_validation.json
+With 33 items per cohort the interval around each figure is about $\pm$0.16, so only the contrast between the two ends carries weight. It implies, however, that part of a raw cohort difference in a dictionary rate can reflect figurative use, and that a flat raw rate across cohorts with falling precision need not be a flat rate of weather description; we do not compute precision-adjusted rates. Precision does not measure recall: weather described without any listed form, such as \emph{pouring}, \emph{drenched}, \emph{chilly} or \emph{blew}, is missed.
+
+\subsection{Alternative lexicons and leave-out checks}
+
+We repeat the composite profile for restricted lexicons. The core lexicon of 23 forms is built from the focal terms named in the research question and their plurals, with a composite profile that is flat to slightly rising from 8.36 in cohort 1 to 10.18 in cohort 4 and back to 8.03 in cohort 6 (Spearman 0.14, $p=0.787$).
+% src: estimation_results.json#robustness.core_lexicon.n_terms
+% src: estimation_results.json#robustness.core_lexicon.trend.cohort_rates_per_10k.0
+% src: estimation_results.json#robustness.core_lexicon.trend.cohort_rates_per_10k.3
+% src: estimation_results.json#robustness.core_lexicon.trend.cohort_rates_per_10k.5
+% src: estimation_results.json#robustness.core_lexicon.trend.spearman_rho
+% src: estimation_results.json#robustness.core_lexicon.trend.spearman_p
+The unambiguous lexicon of 73 forms, which drops the 17 forms flagged as ambiguous in the design (among them \emph{wind}, \emph{storm}, \emph{sun}, \emph{cloud} and \emph{thunder} forms), shows a rising profile from 4.43 in cohort 1 to 6.57 in cohort 4 and 5.60 in cohort 6 (Spearman 0.71, $p=0.111$).
+% src: estimation_results.json#robustness.unambiguous_lexicon.n_terms
+% src: estimation_results.json#robustness.unambiguous_lexicon.trend.cohort_rates_per_10k.0
+% src: estimation_results.json#robustness.unambiguous_lexicon.trend.cohort_rates_per_10k.3
+% src: estimation_results.json#robustness.unambiguous_lexicon.trend.cohort_rates_per_10k.5
+% src: estimation_results.json#robustness.unambiguous_lexicon.trend.spearman_rho
+% src: estimation_results.json#robustness.unambiguous_lexicon.trend.spearman_p
+The point estimates of the profile thus depend on which words are counted: the full dictionary and the core lexicon are flat and the unambiguous lexicon rises nominally, but none of the correlations is distinguishable from zero, so the variants do not separate a flat from a rising profile. The three variants agree that cohort 4 has the highest rate, but they disagree on whether the later cohorts stay above the earliest. We do not choose among them; the validation shows that the ambiguous forms carry much of the figurative use, and that dropping them changes what is measured.
+
+Leave-one-author-out rates show that single authors can move a cohort's position. In cohort 4 the composite rate ranges from 12.29 to 13.97 when each author is left out in turn, and in cohort 1 from 9.42 to 12.29 around the full rate of 11.09, a span that covers the range of the other cohorts' rates (10.81 to 13.32), so the order of cohorts 1, 2, 3 and 6, which differ by about 0.3, is not meaningful.
+% src: estimation_results.json#robustness.leave_one_out_weather_all.c4.leave_one_author_out_min
+% src: estimation_results.json#robustness.leave_one_out_weather_all.c4.leave_one_author_out_max
+% src: estimation_results.json#robustness.leave_one_out_weather_all.c1.leave_one_author_out_min
+% src: estimation_results.json#robustness.leave_one_out_weather_all.c1.leave_one_author_out_max
+Excluding capitalised mid-sentence hits, which removes surnames and the newspaper, changes the Spearman correlation of the extended lexicon from 0.60 to 0.31 ($p=0.544$) and that of the unambiguous lexicon from 0.71 to 0.77 ($p=0.072$); with six cohorts these shifts show how little the rank statistic carries.
+% src: estimation_results.json#robustness.extended_minus_capitalised_midsentence_hits.trend.spearman_rho
+% src: estimation_results.json#robustness.extended_minus_capitalised_midsentence_hits.trend.spearman_p
+% src: estimation_results.json#robustness.unambiguous_minus_capitalised_hits.trend.spearman_rho
+% src: estimation_results.json#robustness.unambiguous_minus_capitalised_hits.trend.spearman_p
+
+One further variant was defined after the hand check and is therefore post hoc. It recomputes the composite and the storm, fog and cloud families without the forms the validation judged unusable (\emph{thunder}, \emph{thunders}, \emph{thundered}, \emph{thundering}, \emph{hurricane}, \emph{haze}, \emph{hazy}, \emph{clouded}, \emph{cloudy} and \emph{overcast}) and without capitalised mid-sentence hits; the two changes are made at once and not reported separately. The composite becomes flat, with a Spearman correlation of $-0.09$ ($p=0.872$) between cohort order and the rate.
+% src: estimation_results.json#robustness.post_hoc_reduced_lexicon.families.weather_all.trend.spearman_rho
+% src: estimation_results.json#robustness.post_hoc_reduced_lexicon.families.weather_all.trend.spearman_p
+The rank correlation of the fog and mist words falls, but their rate still roughly doubles, from 0.65 per 10,000 tokens in cohort 1 to 1.26 in cohort 6 (Spearman 0.54, $p=0.266$), against 0.73 to 1.53 under the full dictionary. The variant keeps the forms fog and mist, so it cannot address their figurative use.
+% src: estimation_results.json#robustness.post_hoc_reduced_lexicon.families.fog_words.trend.cohort_rates_per_10k.0
+% src: estimation_results.json#robustness.post_hoc_reduced_lexicon.families.fog_words.trend.cohort_rates_per_10k.5
+% src: estimation_results.json#robustness.post_hoc_reduced_lexicon.families.fog_words.trend.spearman_rho
+% src: estimation_results.json#robustness.post_hoc_reduced_lexicon.families.fog_words.trend.spearman_p
+Storm words fall more steadily, from 1.68 in cohort 1 to 0.96 in cohort 6 (Spearman $-0.94$, $p=0.005$, an asymptotic value that overstates the evidence at six points and that follows a lexicon chosen after seeing the sample).
+% src: estimation_results.json#robustness.post_hoc_reduced_lexicon.families.storm_words.trend.cohort_rates_per_10k.0
+% src: estimation_results.json#robustness.post_hoc_reduced_lexicon.families.storm_words.trend.cohort_rates_per_10k.5
+% src: estimation_results.json#robustness.post_hoc_reduced_lexicon.families.storm_words.trend.spearman_rho
+% src: estimation_results.json#robustness.post_hoc_reduced_lexicon.families.storm_words.trend.spearman_p
+Because the term list was chosen after we had looked at the sample, and because the precision of the reduced storm family was not re-checked by hand, we call this decline a pattern worth testing and not a finding. For the same reason the snow and ice rise remains suggestive.
+
+\section{Limitations}
+
+Our results describe a particular selection of books. The frame is the 320 most popular catalogue rows per cohort search, so it favours popular fiction that volunteers digitised and that is out of U.S. copyright. We coded no gender, ethnicity or nationality and looked up no publication year, so the composition of the corpus by these traits is unknown. The sample comprises 84 novels with 14 per cohort and 9 to 14 authors per cohort, so the author-level intervals are wide, and a few heavy authors can carry a cohort rate. Counts describe these novels and not the English novel, and they show word use but not meaning, reception or cause. Genre and setting also shift across cohorts (for example sea and historical romance in the earliest, northern and Western adventure in the later cohorts), so a cohort pattern can reflect genre or setting, and the latest cohort covers only the early part of its authors' careers.
+
+The time axis is the author's birth year, and we use no publication year. Cohorts therefore overlap in the years in which their members wrote, and generational formation cannot be separated from the date of writing or from the author's age at writing; a cohort difference can reflect any of the three. Finally, the dictionary was written for this study and is not a published instrument, its precision is below 0.7 for three of the seven families, and the validation sample is small, not weighted by term frequency, judged by a single coder and unable to speak to recall. The tokeniser splits hyphens and treats dialect spellings as unlisted forms, so orthographic and dialect conventions that differ by period or region may shift counts (sunlight against sun-light, or elided forms in dialect fiction); we did not test this. We report all families and lexicon variants we computed.
+
+\section{Conclusion}
+
+Across 84 English-language novels by authors born 1770--1890, the overall density of weather vocabulary is stable at roughly 11 to 13 hits per 10,000 tokens, and the range of author rates is much wider than the range of cohort rates, although wide intervals leave sizeable cohort differences open. The corpus therefore gives no support to the claim that weather writing became uniformly more or less prominent. Movement occurs inside the lexical field: snow and ice vocabulary rises from 0.82 hits per 10,000 tokens in the first cohort to a peak of 2.06 in the fifth and 1.44 in the sixth, a suggestive pattern, and \emph{tempest} belongs to the earliest cohort. Fog and mist words are more frequent in the sixth cohort, but the hand check found none of only four sampled fog hits there to be weather, and a reduced lexicon defined after the hand check lowers the rank correlation of the rise without changing the rate much, so it cannot be read as more fog description. The same reduced lexicon shows storm words falling steadily across cohorts, which we regard as a pattern worth testing and not a finding. Our design cannot attribute any of these patterns to climate, pollution or literary fashion, and most are not statistically distinguishable from noise at six cohorts of 14 novels.
+
+Our work has implications for practice in computational literary studies. A dictionary count of a figurative lexical field needs a hand-checked sample before cohort differences are read as differences in the described world, and the profile of a word family can change depending on which ambiguous forms are retained. Future research could pursue two specific questions: whether the decline of storm words persists in a hand-checked, pre-specified reduced lexicon, and whether the snow and ice profile survives in a larger, randomly drawn corpus with publication years recorded for a subsample.
+
+\bibliographystyle{apalike}
+\bibliography{refs}
+
+\end{document}

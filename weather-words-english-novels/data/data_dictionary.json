@@ -1,0 +1,895 @@
+{
+  "title": "Data dictionary: the vocabulary of weather in English-language novels by author birth cohort, 1770-1899",
+  "tables": [
+    {
+      "name": "gutenberg_books_c1",
+      "source": "gutenberg",
+      "series": "Project Gutenberg books (topic=fiction, languages=en, author_year_start=1770, author_year_end=1840)",
+      "frequency": "one row per ebook",
+      "role": "sampling frame for cohort c1; at most 320 popularity-sorted catalogue rows; birth years filtered in build_data.py",
+      "columns": [
+        {
+          "name": "id"
+        },
+        {
+          "name": "title"
+        },
+        {
+          "name": "authors"
+        },
+        {
+          "name": "author_birth_year"
+        },
+        {
+          "name": "languages"
+        },
+        {
+          "name": "subjects",
+          "min_non_null": 0.5
+        },
+        {
+          "name": "bookshelves",
+          "min_non_null": 0.5
+        }
+      ],
+      "min_non_null": 0.5,
+      "licence": "Project Gutenberg licence (https://www.gutenberg.org/policy/license.html): \"These books are not restricted by copyright in the United States and anyone located in the United States — including Project Gutenberg and you — may read and distribute them. If you don't live in the United States you'll have to check the laws of the country you live in before downloading and distributing our ebooks.\" \"If you strip the Project Gutenberg license and all references to Project Gutenberg from the text, you are left with a text unrestricted by U.S. intellectual property law.\" Permissions (https://www.gutenberg.org/policy/permission.html): \"No permission is needed for non-commercial use.\" Catalogue (https://www.gutenberg.org/policy/robot_access.html): \"The catalog data are granted to the public domain.\"",
+      "citation": "Project Gutenberg. (n.d.). Retrieved October 14, 2026, from https://www.gutenberg.org.",
+      "provenance": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror) (https://www.gutenberg.org)",
+      "cite_key": "ProjectGutenberg"
+    },
+    {
+      "name": "gutenberg_books_c2",
+      "source": "gutenberg",
+      "series": "Project Gutenberg books (topic=fiction, languages=en, author_year_start=1800, author_year_end=1880)",
+      "frequency": "one row per ebook",
+      "role": "sampling frame for cohort c2; at most 320 popularity-sorted catalogue rows",
+      "columns": [
+        {
+          "name": "id"
+        },
+        {
+          "name": "title"
+        },
+        {
+          "name": "authors"
+        },
+        {
+          "name": "author_birth_year"
+        },
+        {
+          "name": "languages"
+        },
+        {
+          "name": "subjects",
+          "min_non_null": 0.5
+        },
+        {
+          "name": "bookshelves",
+          "min_non_null": 0.5
+        }
+      ],
+      "min_non_null": 0.5,
+      "licence": "Project Gutenberg licence (https://www.gutenberg.org/policy/license.html): \"These books are not restricted by copyright in the United States and anyone located in the United States — including Project Gutenberg and you — may read and distribute them. If you don't live in the United States you'll have to check the laws of the country you live in before downloading and distributing our ebooks.\" \"If you strip the Project Gutenberg license and all references to Project Gutenberg from the text, you are left with a text unrestricted by U.S. intellectual property law.\" Permissions (https://www.gutenberg.org/policy/permission.html): \"No permission is needed for non-commercial use.\" Catalogue (https://www.gutenberg.org/policy/robot_access.html): \"The catalog data are granted to the public domain.\"",
+      "citation": "Project Gutenberg. (n.d.). Retrieved October 14, 2026, from https://www.gutenberg.org.",
+      "provenance": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror) (https://www.gutenberg.org)",
+      "cite_key": "ProjectGutenberg"
+    },
+    {
+      "name": "gutenberg_books_c3",
+      "source": "gutenberg",
+      "series": "Project Gutenberg books (topic=fiction, languages=en, author_year_start=1820, author_year_end=1900)",
+      "frequency": "one row per ebook",
+      "role": "sampling frame for cohort c3; at most 320 popularity-sorted catalogue rows",
+      "columns": [
+        {
+          "name": "id"
+        },
+        {
+          "name": "title"
+        },
+        {
+          "name": "authors"
+        },
+        {
+          "name": "author_birth_year"
+        },
+        {
+          "name": "languages"
+        },
+        {
+          "name": "subjects",
+          "min_non_null": 0.5
+        },
+        {
+          "name": "bookshelves",
+          "min_non_null": 0.5
+        }
+      ],
+      "min_non_null": 0.5,
+      "licence": "Project Gutenberg licence (https://www.gutenberg.org/policy/license.html): \"These books are not restricted by copyright in the United States and anyone located in the United States — including Project Gutenberg and you — may read and distribute them. If you don't live in the United States you'll have to check the laws of the country you live in before downloading and distributing our ebooks.\" \"If you strip the Project Gutenberg license and all references to Project Gutenberg from the text, you are left with a text unrestricted by U.S. intellectual property law.\" Permissions (https://www.gutenberg.org/policy/permission.html): \"No permission is needed for non-commercial use.\" Catalogue (https://www.gutenberg.org/policy/robot_access.html): \"The catalog data are granted to the public domain.\"",
+      "citation": "Project Gutenberg. (n.d.). Retrieved October 14, 2026, from https://www.gutenberg.org.",
+      "provenance": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror) (https://www.gutenberg.org)",
+      "cite_key": "ProjectGutenberg"
+    },
+    {
+      "name": "gutenberg_books_c4",
+      "source": "gutenberg",
+      "series": "Project Gutenberg books (topic=fiction, languages=en, author_year_start=1840, author_year_end=1930)",
+      "frequency": "one row per ebook",
+      "role": "sampling frame for cohort c4; at most 320 popularity-sorted catalogue rows",
+      "columns": [
+        {
+          "name": "id"
+        },
+        {
+          "name": "title"
+        },
+        {
+          "name": "authors"
+        },
+        {
+          "name": "author_birth_year"
+        },
+        {
+          "name": "languages"
+        },
+        {
+          "name": "subjects",
+          "min_non_null": 0.5
+        },
+        {
+          "name": "bookshelves",
+          "min_non_null": 0.5
+        }
+      ],
+      "min_non_null": 0.5,
+      "licence": "Project Gutenberg licence (https://www.gutenberg.org/policy/license.html): \"These books are not restricted by copyright in the United States and anyone located in the United States — including Project Gutenberg and you — may read and distribute them. If you don't live in the United States you'll have to check the laws of the country you live in before downloading and distributing our ebooks.\" \"If you strip the Project Gutenberg license and all references to Project Gutenberg from the text, you are left with a text unrestricted by U.S. intellectual property law.\" Permissions (https://www.gutenberg.org/policy/permission.html): \"No permission is needed for non-commercial use.\" Catalogue (https://www.gutenberg.org/policy/robot_access.html): \"The catalog data are granted to the public domain.\"",
+      "citation": "Project Gutenberg. (n.d.). Retrieved October 14, 2026, from https://www.gutenberg.org.",
+      "provenance": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror) (https://www.gutenberg.org)",
+      "cite_key": "ProjectGutenberg"
+    },
+    {
+      "name": "gutenberg_books_c5",
+      "source": "gutenberg",
+      "series": "Project Gutenberg books (topic=fiction, languages=en, author_year_start=1860, author_year_end=1950)",
+      "frequency": "one row per ebook",
+      "role": "sampling frame for cohort c5; at most 320 popularity-sorted catalogue rows",
+      "columns": [
+        {
+          "name": "id"
+        },
+        {
+          "name": "title"
+        },
+        {
+          "name": "authors"
+        },
+        {
+          "name": "author_birth_year"
+        },
+        {
+          "name": "languages"
+        },
+        {
+          "name": "subjects",
+          "min_non_null": 0.5
+        },
+        {
+          "name": "bookshelves",
+          "min_non_null": 0.5
+        }
+      ],
+      "min_non_null": 0.5,
+      "licence": "Project Gutenberg licence (https://www.gutenberg.org/policy/license.html): \"These books are not restricted by copyright in the United States and anyone located in the United States — including Project Gutenberg and you — may read and distribute them. If you don't live in the United States you'll have to check the laws of the country you live in before downloading and distributing our ebooks.\" \"If you strip the Project Gutenberg license and all references to Project Gutenberg from the text, you are left with a text unrestricted by U.S. intellectual property law.\" Permissions (https://www.gutenberg.org/policy/permission.html): \"No permission is needed for non-commercial use.\" Catalogue (https://www.gutenberg.org/policy/robot_access.html): \"The catalog data are granted to the public domain.\"",
+      "citation": "Project Gutenberg. (n.d.). Retrieved October 14, 2026, from https://www.gutenberg.org.",
+      "provenance": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror) (https://www.gutenberg.org)",
+      "cite_key": "ProjectGutenberg"
+    },
+    {
+      "name": "gutenberg_books_c6",
+      "source": "gutenberg",
+      "series": "Project Gutenberg books (topic=fiction, languages=en, author_year_start=1880, author_year_end=1960)",
+      "frequency": "one row per ebook",
+      "role": "sampling frame for cohort c6; at most 320 popularity-sorted catalogue rows",
+      "columns": [
+        {
+          "name": "id"
+        },
+        {
+          "name": "title"
+        },
+        {
+          "name": "authors"
+        },
+        {
+          "name": "author_birth_year"
+        },
+        {
+          "name": "languages"
+        },
+        {
+          "name": "subjects",
+          "min_non_null": 0.5
+        },
+        {
+          "name": "bookshelves",
+          "min_non_null": 0.5
+        }
+      ],
+      "min_non_null": 0.5,
+      "licence": "Project Gutenberg licence (https://www.gutenberg.org/policy/license.html): \"These books are not restricted by copyright in the United States and anyone located in the United States — including Project Gutenberg and you — may read and distribute them. If you don't live in the United States you'll have to check the laws of the country you live in before downloading and distributing our ebooks.\" \"If you strip the Project Gutenberg license and all references to Project Gutenberg from the text, you are left with a text unrestricted by U.S. intellectual property law.\" Permissions (https://www.gutenberg.org/policy/permission.html): \"No permission is needed for non-commercial use.\" Catalogue (https://www.gutenberg.org/policy/robot_access.html): \"The catalog data are granted to the public domain.\"",
+      "citation": "Project Gutenberg. (n.d.). Retrieved October 14, 2026, from https://www.gutenberg.org.",
+      "provenance": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror) (https://www.gutenberg.org)",
+      "cite_key": "ProjectGutenberg"
+    },
+    {
+      "name": "gutenberg_texts_c1",
+      "source": "gutenberg",
+      "series": "Project Gutenberg texts 2276, 7987, 1384, 7087, 601, 6450, 7974, 161, 2496, 6490, 6086, 1296, 4927, 105, 1051, 792, 84, 7281, 4926, 6112 (header, footer and licence removed)",
+      "frequency": "one row per ebook",
+      "role": "corpus texts c1 (ids drawn with seed from the eligible frame)",
+      "licence": "Project Gutenberg licence (https://www.gutenberg.org/policy/license.html): \"These books are not restricted by copyright in the United States and anyone located in the United States — including Project Gutenberg and you — may read and distribute them. If you don't live in the United States you'll have to check the laws of the country you live in before downloading and distributing our ebooks.\" \"If you strip the Project Gutenberg license and all references to Project Gutenberg from the text, you are left with a text unrestricted by U.S. intellectual property law.\" Permissions (https://www.gutenberg.org/policy/permission.html): \"No permission is needed for non-commercial use.\" Catalogue (https://www.gutenberg.org/policy/robot_access.html): \"The catalog data are granted to the public domain.\"",
+      "citation": "Hogg, James. (n.d.). The Private Memoirs and Confessions of a Justified Sinner. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/2276. Scott, Walter. (n.d.). The Fair Maid of Perth; Or, St. Valentine's Day. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/7987. Galt, John. (n.d.). The Ayrshire Legatees; Or, The Pringle Family. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1384. Thompson, Daniel P. (Daniel Pierce). (n.d.). Gaut Gurley; Or, the Trappers of Umbagog: A Tale of Border Life. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/7087. Lewis, M. G. (Matthew Gregory). (n.d.). The Monk: A Romance. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/601. Cooper, James Fenimore. (n.d.). The Prairie. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/6450. Cooper, James Fenimore. (n.d.). The Pilot: A Tale of the Sea. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/7974. Austen, Jane. (n.d.). Sense and Sensibility. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/161. Mitford, Mary Russell. (n.d.). Our Village. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/2496. Scott, Walter. (n.d.). The Betrothed. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/6490. Porter, Jane. (n.d.). The Scottish Chiefs. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/6086. Galt, John. (n.d.). The Provost. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1296. Bulfinch, Thomas. (n.d.). Legends of Charlemagne. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/4927. Austen, Jane. (n.d.). Persuasion. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/105. Carlyle, Thomas. (n.d.). Sartor Resartus: The Life and Opinions of Herr Teufelsdröckh. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1051. Brown, Charles Brockden. (n.d.). Wieland; Or, The Transformation: An American Tale. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/792. Shelley, Mary Wollstonecraft. (n.d.). Frankenstein; or, the modern prometheus. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/84. Scott, Michael. (n.d.). Tom Cringle's Log. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/7281. Bulfinch, Thomas. (n.d.). The Age of Chivalry. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/4926. Haliburton, Thomas Chandler. (n.d.). Nature and Human Nature. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/6112.",
+      "provenance": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror) (https://www.gutenberg.org), release 2026-10-14",
+      "version": "2026-10-14",
+      "source_files": [
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/2276/pg2276.txt",
+          "sha256": "5f07381cc40a947c2d741c0846a18fb702c08d8dfc54618caf4dedcdfa2288bb"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/7987/pg7987.txt",
+          "sha256": "f13a62151d7719235212e65f64f77d2d155f4197c243912d17132617ab06a2c7"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1384/pg1384.txt",
+          "sha256": "5c0c0ce01ebd220266068dcc9b07eb206eaba21a4a8a87c2741aa87f23b6f34f"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/7087/pg7087.txt",
+          "sha256": "115ee781b03b015f9a830daa9e9d0aa9741a6d04ff056e54e55e72bc8681b4a5"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/601/pg601.txt",
+          "sha256": "9b139e3492be456112e578f4f7c220951ea9a561a52e7b0283622e33d85d34db"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/6450/pg6450.txt",
+          "sha256": "b7906c99a739abee3b4f814210db3e2ae9ebeef1eaa85425b347cea2798747c2"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/7974/pg7974.txt",
+          "sha256": "cd4af8f6dacb5d94b70de7f8cc9603e943754e9d478dcc3e2e7b4ea28b0fd20c"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/161/pg161.txt",
+          "sha256": "22272ec4d4da2f50cda51edf34ab8486b325c4a99580120db565fb8917228a22"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/2496/pg2496.txt",
+          "sha256": "8f656c040753b0bb60b57627cb8094a9957647b9948b18d1489b1a272ac71412"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/6490/pg6490.txt",
+          "sha256": "f79d93ed716af10a6e863679055ae36470748e0fc83e07244b74fd0ec2914404"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/6086/pg6086.txt",
+          "sha256": "37c0cb6069535b16e449e27d0fc4e46159f247929f120c2d5925c319431e32b0"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1296/pg1296.txt",
+          "sha256": "fbb6158580b9733b8c71f714d6a58e72a210f1ecc9c641b99ecc6c2684b281df"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/4927/pg4927.txt",
+          "sha256": "37c2420a12e17c0ae29cc4ba6967fc47725ef578a5df2dc35b8899a4bcb24172"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/105/pg105.txt",
+          "sha256": "64ffb821b9e9eb1040c103a44c28893c94ebe33ffbb911288b5022efaecbfefc"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1051/pg1051.txt",
+          "sha256": "c1288524cc264ec111112b3b7a5cf677688232a080712199fd2262a32819404c"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/792/pg792.txt",
+          "sha256": "3ef3e8ffde9c451d5c5a5418644a4155629e984f90a26bcb3b527f17d2aa9d43"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/84/pg84.txt",
+          "sha256": "7810cd483cffcf2cc8a1d8f0d5807931e69d4f48cd14149b8c76f88af82fead3"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/7281/pg7281.txt",
+          "sha256": "6fb831dc0f39b0eabc72cd1b1242f701f8fe0527d65a171756a6dfef9483df84"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/4926/pg4926.txt",
+          "sha256": "162236959221cee0c0908ef7db75873933af75b5be047141810bad866f585ce1"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/6112/pg6112.txt",
+          "sha256": "12724d45f61fd54c6ab7660031b2f8ae2bd42df3e2cc4de4b0b03421489cf979"
+        }
+      ],
+      "cite_key": "ProjectGutenberg"
+    },
+    {
+      "name": "gutenberg_texts_c2",
+      "source": "gutenberg",
+      "series": "Project Gutenberg texts 917, 203, 1366, 1235, 1258, 77, 599, 619, 4590, 4067, 1028, 4631, 2472, 2759, 145, 768, 1565, 422, 15 (header, footer and licence removed)",
+      "frequency": "one row per ebook",
+      "role": "corpus texts c2",
+      "licence": "Project Gutenberg licence (https://www.gutenberg.org/policy/license.html): \"These books are not restricted by copyright in the United States and anyone located in the United States — including Project Gutenberg and you — may read and distribute them. If you don't live in the United States you'll have to check the laws of the country you live in before downloading and distributing our ebooks.\" \"If you strip the Project Gutenberg license and all references to Project Gutenberg from the text, you are left with a text unrestricted by U.S. intellectual property law.\" Permissions (https://www.gutenberg.org/policy/permission.html): \"No permission is needed for non-commercial use.\" Catalogue (https://www.gutenberg.org/policy/robot_access.html): \"The catalog data are granted to the public domain.\"",
+      "citation": "Dickens, Charles. (n.d.). Barnaby Rudge: A Tale of the Riots of 'Eighty. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/917. Stowe, Harriet Beecher. (n.d.). Uncle Tom's Cabin. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/203. Reade, Charles. (n.d.). The Cloister and the Hearth. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1366. Gautier, Théophile. (n.d.). Captain Fracasse. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1235. Dumas, Alexandre. (n.d.). Ten Years Later. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1258. Hawthorne, Nathaniel. (n.d.). The House of the Seven Gables. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/77. Thackeray, William Makepeace. (n.d.). Vanity Fair. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/599. Trollope, Anthony. (n.d.). The Warden. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/619. Arthur, T. S. (Timothy Shay). (n.d.). After the Storm. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/4590. Mühlbach, L. (Luise). (n.d.). Frederick the Great and His Court. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/4067. Brontë, Charlotte. (n.d.). The Professor. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1028. Arthur, T. S. (Timothy Shay). (n.d.). The Hand but Not the Heart; Or, The Life-Trials of Jessie Loring. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/4631. Reade, Charles. (n.d.). White Lies. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/2472. Dumas, Alexandre. (n.d.). The Man in the Iron Mask. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/2759. Eliot, George. (n.d.). Middlemarch. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/145. Brontë, Emily. (n.d.). Wuthering Heights. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/768. Lytton, Edward Bulwer Lytton, Baron. (n.d.). The Last Days of Pompeii. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1565. Borrow, George. (n.d.). The Romany Rye. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/422. Melville, Herman. (n.d.). Moby-Dick; or, The Whale. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/15.",
+      "provenance": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror) (https://www.gutenberg.org), release 2026-10-14",
+      "version": "2026-10-14",
+      "source_files": [
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/917/pg917.txt",
+          "sha256": "5b09fd1ce613c5db2d1387b505295054e58989f624c11fba0d1e674301a84296"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/203/pg203.txt",
+          "sha256": "95e4ce1153f8506d9903df84541cfa99c8ac6ad3ad69bcf5ea37d042d01a0a98"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1366/pg1366.txt",
+          "sha256": "262df1acd030ae0038d1338441c7758499fab3201e2eef9bd7ed8f2d97f1d03e"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1235/pg1235.txt",
+          "sha256": "3ded309720db6ed28812e3e29c7a102e739906c15d33a03dd8ac05de20ebced1"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1258/pg1258.txt",
+          "sha256": "54d0cd64afeb279d22f956cc7ba133f70b0ce0765324f0a2744e6c3414d2a47b"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/77/pg77.txt",
+          "sha256": "0d09eef49bec474dc4253b3035f298425280ec82d3e70b43befa443dd5e9819a"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/599/pg599.txt",
+          "sha256": "36c7db9809ec4e833125f9ccc81ee66583ea6d698114b2907d2220599126fddd"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/619/pg619.txt",
+          "sha256": "be4a85fb084c19a3c5ef583344dd81ce69d92fe80ce7c1b5add67d528c3863a2"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/4590/pg4590.txt",
+          "sha256": "bddc54912cf6bfc19bc65b4149244b3d568a27ad1ac902fae66e874d764cf32d"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/4067/pg4067.txt",
+          "sha256": "dee240cf9c5c1519c182c1b72a933d8ae4f613c157233149ad3d780724fefa9c"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1028/pg1028.txt",
+          "sha256": "bc07adf208c5fe27396d01af8648375345dd2f498e856aabd694634a64c79553"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/4631/pg4631.txt",
+          "sha256": "b9b059d7be648317731e77d85caf77d42f694f0873f6f2b6b5aa0e14d57280ba"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/2472/pg2472.txt",
+          "sha256": "d11d9cfa8f0f5f36439eb69be8d9d451a494062ed174b4046e596130894bd5c8"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/2759/pg2759.txt",
+          "sha256": "3985ba4be41addde0de3c0d759993dd036ce5fdba139099d57bf73868342bed6"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/145/pg145.txt",
+          "sha256": "dc2e0107e6ae07e8e33da934b2ec4e8e600826a2e0cd48df265119cd02e5fb50"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/768/pg768.txt",
+          "sha256": "e533fe750589f0421d5d744576315f5c2b9b0d69e981179ea0551bbf134c5e02"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1565/pg1565.txt",
+          "sha256": "c290e0c98047722798efc216abe44777a12f9254ce2c807e1d06d0e2ba698d2e"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/422/pg422.txt",
+          "sha256": "69462acdd0262408dbe522cf128a2be14740e0117ef241859b65d6a7be0a88cb"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/15/pg15.txt",
+          "sha256": "cca79713fb2eb809daa7da6538018a0190a57d661b59f3a2b68ce4e137bbf8fc"
+        }
+      ],
+      "cite_key": "ProjectGutenberg"
+    },
+    {
+      "name": "gutenberg_texts_c3",
+      "source": "gutenberg",
+      "series": "Project Gutenberg texts 1627, 4957, 1608, 1748, 1353, 335, 83, 4795, 357, 1290, 287, 154, 325, 155, 169, 3365, 2601, 2695, 547, 581 (header, footer and licence removed)",
+      "frequency": "one row per ebook",
+      "role": "corpus texts c3",
+      "licence": "Project Gutenberg licence (https://www.gutenberg.org/policy/license.html): \"These books are not restricted by copyright in the United States and anyone located in the United States — including Project Gutenberg and you — may read and distribute them. If you don't live in the United States you'll have to check the laws of the country you live in before downloading and distributing our ebooks.\" \"If you strip the Project Gutenberg license and all references to Project Gutenberg from the text, you are left with a text unrestricted by U.S. intellectual property law.\" Permissions (https://www.gutenberg.org/policy/permission.html): \"No permission is needed for non-commercial use.\" Catalogue (https://www.gutenberg.org/policy/robot_access.html): \"The catalog data are granted to the public domain.\"",
+      "citation": "Collins, Wilkie. (n.d.). The Evil Genius: A Domestic Story. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1627. Ballou, Maturin M. (Maturin Murray). (n.d.). The Heart's Secret; Or, the Fortunes of a Soldier: a Story of Love and the Low Latitudes.. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/4957. Dumas, Alexandre. (n.d.). Camille (La Dame aux Camilias). Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1608. Gaboriau, Emile. (n.d.). Other People's Money. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1748. Verne, Jules. (n.d.). Off on a Comet! a Journey through Planetary Space. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1353. Davis, Rebecca Harding. (n.d.). Frances Waldeaux: A Novel. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/335. Verne, Jules. (n.d.). From the Earth to the moon; and, round the moon. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/83. Ballou, Maturin M. (Maturin Murray). (n.d.). The Circassian Slave, or, the Sultan's favorite : a story of Constantinople and the Caucasus. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/4795. Morris, William. (n.d.). A Dream of John Ball; and, A King's Lesson. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/357. Flaubert, Gustave. (n.d.). Salammbo. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1290. Barr, Amelia E.. (n.d.). Remember the Alamo. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/287. Howells, William Dean. (n.d.). The Rise of Silas Lapham. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/154. MacDonald, George. (n.d.). Phantastes: A Faerie Romance for Men and Women. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/325. Collins, Wilkie. (n.d.). The Moonstone. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/155. Morris, William. (n.d.). The Well at the World's End: A Tale. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/169. Howells, William Dean. (n.d.). Their Wedding Journey. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/3365. Yonge, Charlotte M. (Charlotte Mary). (n.d.). Heartsease; Or, The Brother's Wife. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/2601. Harte, Bret. (n.d.). Jeff Briggs's Love Story. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/2695. Gaboriau, Emile. (n.d.). Baron Trigault's Vengeance. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/547. Jenkins, Edward. (n.d.). Ginx's Baby: His Birth and Other Misfortunes; a Satire. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/581.",
+      "provenance": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror) (https://www.gutenberg.org), release 2026-10-14",
+      "version": "2026-10-14",
+      "source_files": [
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1627/pg1627.txt",
+          "sha256": "80ea0eaae18994306633d55b43d4adb6f059bb6e6c7d84c92773082f929726d6"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/4957/pg4957.txt",
+          "sha256": "8320aa5c7c6e2a62409a264e2630a4117b72fe3e3cdb3e0d0b8cbaae2acf21ab"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1608/pg1608.txt",
+          "sha256": "19b186bfcfd0be5dd068897aeed000dc1526a92d2c04589966f8fb5b842427c4"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1748/pg1748.txt",
+          "sha256": "a6f71fa7bdd6d6653e5b086356e6350128f361b90ed4da1ffd921e03610cd7b3"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1353/pg1353.txt",
+          "sha256": "93abddfa1fb93350b67dbbb99a4a1d4572f12990cf1b87d22e44d8b632f1ed0d"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/335/pg335.txt",
+          "sha256": "adae2f4e19a8f7a89559b499b924eb82cbd38d76ddf9d83d9e0bad4785e3c24a"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/83/pg83.txt",
+          "sha256": "6d87062870643bf9364d09f5c6b37ce53dab524501041d87e7d83a2e1b2f744d"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/4795/pg4795.txt",
+          "sha256": "00ee1540c529e2892974a7c325d022afb6f726469469cf1a31a345fe048ba9c3"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/357/pg357.txt",
+          "sha256": "e68899a105096e6ddad78f5454500482b5467fc61b4c5c47a85987f2c08012da"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1290/pg1290.txt",
+          "sha256": "58f146713328eeeb912ff814c299900b952c0f14405802c659a44614566c2233"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/287/pg287.txt",
+          "sha256": "7c96f5f420009003073cf41314a7657d168067db666e71fe4bf056b037f80cae"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/154/pg154.txt",
+          "sha256": "0ddff78b3fab89b116975d2b808f685f22b652d2bc3b85bbe4188519f46552fd"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/325/pg325.txt",
+          "sha256": "0c2e1727d889006cae20f37284f6c9c71d64d808f36d92aeeb3dc83cfb4bd1ec"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/155/pg155.txt",
+          "sha256": "e2f9023a41c388fa2b0d2a21d71a363e603b33860d8d964e314b5f4da7e6f837"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/169/pg169.txt",
+          "sha256": "eebab2428c982c4b9c6261348d1ac71be71f10d6edc71b8bb2c513f8ad82fa19"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/3365/pg3365.txt",
+          "sha256": "ddb94c307a74ca3d95ece6f44fbe6496344980b823a5f0464cbae37ca764d0e7"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/2601/pg2601.txt",
+          "sha256": "0ed985c3d1f3b4ba65003550b99ece05553dc8761e0425fbd3d9929f3082f2d8"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/2695/pg2695.txt",
+          "sha256": "7efbca5ae7baaaa4423a6059db233a6006936cb0e15452d92377820de6f4f86c"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/547/pg547.txt",
+          "sha256": "a6d089822d4de929d9c5cf3927cf570b4c886f1867838d4501bf47292f899d89"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/581/pg581.txt",
+          "sha256": "b7389427119f896d76a4912321c621a08adede0532bcf1b04041406f640ff96c"
+        }
+      ],
+      "cite_key": "ProjectGutenberg"
+    },
+    {
+      "name": "gutenberg_texts_c4",
+      "source": "gutenberg",
+      "series": "Project Gutenberg texts 493, 1690, 3044, 174, 367, 2721, 4393, 6008, 122, 4982, 176, 903, 973, 491, 372, 1851, 604, 133, 3823, 477 (header, footer and licence removed)",
+      "frequency": "one row per ebook",
+      "role": "corpus texts c4",
+      "licence": "Project Gutenberg licence (https://www.gutenberg.org/policy/license.html): \"These books are not restricted by copyright in the United States and anyone located in the United States — including Project Gutenberg and you — may read and distribute them. If you don't live in the United States you'll have to check the laws of the country you live in before downloading and distributing our ebooks.\" \"If you strip the Project Gutenberg license and all references to Project Gutenberg from the text, you are left with a text unrestricted by U.S. intellectual property law.\" Permissions (https://www.gutenberg.org/policy/permission.html): \"No permission is needed for non-commercial use.\" Catalogue (https://www.gutenberg.org/policy/robot_access.html): \"The catalog data are granted to the public domain.\"",
+      "citation": "Conrad, Joseph. (n.d.). Falk: A Reminiscence. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/493. Haggard, H. Rider (Henry Rider). (n.d.). Marie: An Episode in the Life of the Late Allan Quatermain. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1690. Hardy, Thomas. (n.d.). Desperate Remedies. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/3044. Wilde, Oscar. (n.d.). The Picture of Dorian Gray. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/174. Jewett, Sarah Orne. (n.d.). The Country of the Pointed Firs. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/367. Haggard, H. Rider (Henry Rider). (n.d.). Eric Brighteyes. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/2721. Munroe, Kirk. (n.d.). Wakulla: a story of adventure in Florida. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/4393. Savage, Richard. (n.d.). The Midnight Passenger : A Novel. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/6008. Hardy, Thomas. (n.d.). The Return of the Native. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/122. Barr, Robert. (n.d.). A Rock in the Baltic. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/4982. James, Henry. (n.d.). Roderick Hudson. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/176. Doyle, Arthur Conan. (n.d.). The White Company. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/903. Pyle, Howard. (n.d.). Howard Pyle's Book of Pirates: Fiction, Fact & Fancy Concerning the Buccaneers & Marooners of the Spanish Main. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/973. Atherton, Gertrude Franklin Horn. (n.d.). Rezanov. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/491. Stevenson, Robert Louis. (n.d.). Prince Otto, a Romance. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/372. Green, Anna Katharine. (n.d.). The Woman in the Alcove. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1851. Arnold, Edwin Lester. (n.d.). Gulliver of Mars. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/604. Frederic, Harold. (n.d.). The Damnation of Theron Ware. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/133. Corelli, Marie. (n.d.). Thelma. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/3823. Ferri, Enrico. (n.d.). Criminal Sociology. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/477.",
+      "provenance": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror) (https://www.gutenberg.org), release 2026-10-14",
+      "version": "2026-10-14",
+      "source_files": [
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/493/pg493.txt",
+          "sha256": "184d907922ab8109abaae4fa3b6df5ef08cc4081c5339d98274a02f90870c2a0"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1690/pg1690.txt",
+          "sha256": "71785a57926528fb4fc03be0aaede1d92fd957f89f979e29cdf02ac19a643bc4"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/3044/pg3044.txt",
+          "sha256": "8299333073ba24c83520cc6d74fc648a8c0b9aef7feeaa195738f912e847a1f5"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/174/pg174.txt",
+          "sha256": "38f36b510417177aa87a6a24c968e3ec63a447b7df36a9c1a7c5a3f2d9e51547"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/367/pg367.txt",
+          "sha256": "ff48b61ae482871dd66a319b657278d56a900e536646cb037e0c7f84c877229b"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/2721/pg2721.txt",
+          "sha256": "e5108e5da7006e6048c5bb9df96b25edfebba7546ed6e41f0696108c0773753d"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/4393/pg4393.txt",
+          "sha256": "4a6018dc56635f0f3374545f1ddd3f4fafd17b669bc31a59c7a5f6a7f11f73b6"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/6008/pg6008.txt",
+          "sha256": "9faa0d46f6b024af7ae3294614bc61fc08dcc902f64e2c82458e158c390004da"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/122/pg122.txt",
+          "sha256": "bdd2c262086b9c8ae4361ef1e7f29fcc9e462bbab108cbe94c3e972276444b14"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/4982/pg4982.txt",
+          "sha256": "80b078e508ff2d3a47c06df5c453e881330c63d5569fd8158699d638bed92e09"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/176/pg176.txt",
+          "sha256": "5c6214bec7cc9a26acb6f26380a924b9f5e96b8861b0b1e7260e5df6bd349421"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/903/pg903.txt",
+          "sha256": "c3ebc40de1a437c1870c3dc222cd88abdb0473f241b3bd06d15932636bea7e59"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/973/pg973.txt",
+          "sha256": "52048401a12949e46fb5d9c7939a7f13f43572c83758685652bdbad916969d8f"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/491/pg491.txt",
+          "sha256": "d8ad6c9dbc0f22ea434e9f26c10fc7bcf23fcb719d7988d79d43e4357d3ef17a"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/372/pg372.txt",
+          "sha256": "64d3ff39f4c3d076974c201ecc8a7b8c6ec1799d1d38f971c101c30e2d050a6b"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1851/pg1851.txt",
+          "sha256": "2577dc5763bdf0ee54fc75ceb77fc4c1fc066ec1b00aa7c54fcd21fa7397f8cf"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/604/pg604.txt",
+          "sha256": "e431eec11233d99b3c2e08b338b542a5388390cf7f6420d9b38562aa7fea48a1"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/133/pg133.txt",
+          "sha256": "d839ca2a496a4130cef755442a37cae23be398a46ece6afbcc92eb1a4ae265df"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/3823/pg3823.txt",
+          "sha256": "a31770102cecef940ceae9af5186fdd14107049a1123a4e961ada3894fd2dca2"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/477/pg477.txt",
+          "sha256": "534506ca7f9040a088731fd6259655dfa93cf10b19281ad418b7a217b5146f93"
+        }
+      ],
+      "cite_key": "ProjectGutenberg"
+    },
+    {
+      "name": "gutenberg_texts_c5",
+      "source": "gutenberg",
+      "series": "Project Gutenberg texts 321, 3427, 140, 2687, 78, 3413, 5626, 1908, 5349, 3247, 1878, 4284, 5009, 5610, 1881, 1976, 4747, 1269, 330, 1386 (header, footer and licence removed)",
+      "frequency": "one row per ebook",
+      "role": "corpus texts c5",
+      "licence": "Project Gutenberg licence (https://www.gutenberg.org/policy/license.html): \"These books are not restricted by copyright in the United States and anyone located in the United States — including Project Gutenberg and you — may read and distribute them. If you don't live in the United States you'll have to check the laws of the country you live in before downloading and distributing our ebooks.\" \"If you strip the Project Gutenberg license and all references to Project Gutenberg from the text, you are left with a text unrestricted by U.S. intellectual property law.\" Permissions (https://www.gutenberg.org/policy/permission.html): \"No permission is needed for non-commercial use.\" Catalogue (https://www.gutenberg.org/policy/robot_access.html): \"The catalog data are granted to the public domain.\"",
+      "citation": "Norris, Frank. (n.d.). Moran of the Lady Letty. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/321. Butler, Ellis Parker. (n.d.). Kilo : being the love story of Eliph' Hewlitt, book agent. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/3427. Sinclair, Upton. (n.d.). The Jungle. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/140. Sabatini, Rafael. (n.d.). The Snare. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/2687. Burroughs, Edgar Rice. (n.d.). Tarzan of the Apes. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/78. White, Stewart Edward. (n.d.). The Blazed Trail. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/3413. Osbourne, Lloyd. (n.d.). The Motormaniacs. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/5626. Bower, B. M.. (n.d.). Her Prairie Knight. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1908. McCutcheon, George Barr. (n.d.). Castle Craneycrow. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/5349. Connor, Ralph. (n.d.). The Patrol of the Sun Dance Trail. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/3247. Oppenheim, E. Phillips (Edward Phillips). (n.d.). A Millionaire of Yesterday. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1878. Mackay, Isabel Ecclestone. (n.d.). The Window-Gazer. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/4284. Adams, Samuel Hopkins. (n.d.). The Unspeakable Perk. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/5009. Harland, Henry. (n.d.). The Cardinal's snuff-box. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/5610. Grey, Zane. (n.d.). The Call of the Canyon. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1881. Oppenheim, E. Phillips (Edward Phillips). (n.d.). Peter Ruff and the Double Four. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1976. Curwood, James Oliver. (n.d.). The River's End. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/4747. Wells, H. G. (Herbert George). (n.d.). The soul of a bishop. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1269. Rinehart, Mary Roberts. (n.d.). Where There's a Will. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/330. Wister, Owen. (n.d.). Lady Baltimore. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1386.",
+      "provenance": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror) (https://www.gutenberg.org), release 2026-10-14",
+      "version": "2026-10-14",
+      "source_files": [
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/321/pg321.txt",
+          "sha256": "d2e85949f59ce95592429ae4d52109fd04cf30ea85a455ed1d20bfc8c375b911"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/3427/pg3427.txt",
+          "sha256": "80fbe899f69af21dea765d75cb95434138bd9ad9432f06cdaeaa536ebc771efb"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/140/pg140.txt",
+          "sha256": "1a28274fdea8c1438ebad3d7d07946b3d8a0779754427ba4a4da3b64882b7514"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/2687/pg2687.txt",
+          "sha256": "921f569bde7cf443cc8b693865b2f1f343caa732aef7be6926fd23ce825c7c38"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/78/pg78.txt",
+          "sha256": "9fac1bdb66c2a3e955baaf1ce4601ba18145921679041779c2403e49b6bf4260"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/3413/pg3413.txt",
+          "sha256": "da365a5255f030b0f82dcc917438d5902e7971b47f447cace1601a753f8b7031"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/5626/pg5626.txt",
+          "sha256": "e95dd5f1002a9eea58f9c33c50c13e962eb08d0ebc2131b37008a368c0189f98"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1908/pg1908.txt",
+          "sha256": "fcfd871382a1465a44a25fc1b327f801530f0cb4b06de63aee9f1c1b7c1a06ce"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/5349/pg5349.txt",
+          "sha256": "15a5eda2609af03a20982a7d905f3bf5bc918a0336874371b182758214f825bc"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/3247/pg3247.txt",
+          "sha256": "b2801eda78c4435b9c8a1d4a77ce9c8b1d2d43af62ccec424f415d24a01226f5"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1878/pg1878.txt",
+          "sha256": "08d757c34750ba2e6ae29d32754442d2da98eb34eb477870b1ec9662bbd84c15"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/4284/pg4284.txt",
+          "sha256": "14587fb0b071d4fbf2b09ce6ee0d5a1c002aa2633a580ec071570f2b72390676"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/5009/pg5009.txt",
+          "sha256": "d3357aaada00a954c910fbceb88091a5f4d9a6c285d199b422e3398b118a3606"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/5610/pg5610.txt",
+          "sha256": "7d9dbf1adccf3b6f47715e4a9cb58af1361b6331f3186feb787da00d4346530f"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1881/pg1881.txt",
+          "sha256": "db049a2cdcdd0449f3ab852b0d74408fe65f7d8d5cb9b57597e23926923d6f73"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1976/pg1976.txt",
+          "sha256": "872d064c704944ea7884d49110e2f1ad00f0c1167ee7ea0048be018a7eb5d8f1"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/4747/pg4747.txt",
+          "sha256": "57c4e4376e02db19011f921bb14dc2712f60eb7e5ab6e49c4b4bdb9bf96a0b30"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1269/pg1269.txt",
+          "sha256": "a9303760d23510a23baa274188ba213f41bc6329008c66a6d1cf85ae75a95101"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/330/pg330.txt",
+          "sha256": "705fba84914d728c17b09b495247947ca60b55a46c6e1161efaf13510afc5616"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1386/pg1386.txt",
+          "sha256": "c23887baf15a47319f8321cc4ef680fb5241aea37fc2bd41fe087257d38916ba"
+        }
+      ],
+      "cite_key": "ProjectGutenberg"
+    },
+    {
+      "name": "gutenberg_texts_c6",
+      "source": "gutenberg",
+      "series": "Project Gutenberg texts 2546, 4922, 1155, 6115, 2126, 5738, 1402, 172, 1602, 1182, 765, 543, 546, 1156, 3264, 859, 3479, 3676, 1747, 748 (header, footer and licence removed)",
+      "frequency": "one row per ebook",
+      "role": "corpus texts c6",
+      "licence": "Project Gutenberg licence (https://www.gutenberg.org/policy/license.html): \"These books are not restricted by copyright in the United States and anyone located in the United States — including Project Gutenberg and you — may read and distribute them. If you don't live in the United States you'll have to check the laws of the country you live in before downloading and distributing our ebooks.\" \"If you strip the Project Gutenberg license and all references to Project Gutenberg from the text, you are left with a text unrestricted by U.S. intellectual property law.\" Permissions (https://www.gutenberg.org/policy/permission.html): \"No permission is needed for non-commercial use.\" Catalogue (https://www.gutenberg.org/policy/robot_access.html): \"The catalog data are granted to the public domain.\"",
+      "citation": "Mulford, Clarence Edward. (n.d.). Hopalong Cassidy's Rustler Round-Up; Or, Bar-20. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/2546. Mulford, Clarence Edward. (n.d.). Bar-20 Days. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/4922. Christie, Agatha. (n.d.). The Secret Adversary. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1155. Kyne, Peter B. (Peter Bernard). (n.d.). The Long Chance. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/6115. Rohmer, Sax. (n.d.). The Quest of the Sacred Slipper. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/2126. Kyne, Peter B. (Peter Bernard). (n.d.). Cappy Ricks; Or, the Subjugation of Matt Peasley. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/5738. Morley, Christopher. (n.d.). Where the Blue Begins. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1402. Morley, Christopher. (n.d.). The Haunted Bookshop. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/172. Ferber, Edna. (n.d.). Dawn O'Hara: The Girl Who Laughed. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1602. Rohmer, Sax. (n.d.). Dope. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1182. Merritt, Abraham. (n.d.). The Moon Pool. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/765. Lewis, Sinclair. (n.d.). Main Street. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/543. Stout, Rex. (n.d.). Under the Andes. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/546. Lewis, Sinclair. (n.d.). Babbitt. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1156. Stead, Robert J. C.. (n.d.). Dennison Grant: A Novel of To-day. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/3264. Mayo, Margaret. (n.d.). Polly of the Circus. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/859. Merritt, Abraham. (n.d.). The Metal Monster. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/3479. Angellotti, Marion Polk. (n.d.). The Firefly of France. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/3676. Lincoln, Natalie Sumner. (n.d.). The Red Seal. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1747. Yates, Dornford. (n.d.). The Brother of Daphne. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/748.",
+      "provenance": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror) (https://www.gutenberg.org), release 2026-10-14",
+      "version": "2026-10-14",
+      "source_files": [
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/2546/pg2546.txt",
+          "sha256": "6cf9f5509d61748612e91e5efc64481c08e1d36e4981921183613cacca334eb4"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/4922/pg4922.txt",
+          "sha256": "3cfda7c1514db79816d77c4aeadd7a1ce7a9be5c24014726dad2d50d9976373e"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1155/pg1155.txt",
+          "sha256": "407cb2f13a6ea106cabab86de15a34a520e02065ec5e23fe3fec1380a6eba2f5"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/6115/pg6115.txt",
+          "sha256": "f5e4cafc97983004609799135a8164f25dffcb75238a770d468b83504e0b2701"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/2126/pg2126.txt",
+          "sha256": "3d097e60d567b5eac2731c60c9d65a4adb8f6b181904c75d601ccc9db3956c93"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/5738/pg5738.txt",
+          "sha256": "045f50a22ee3ccbbbf6741b155f68014065e4510355c3c7cad8740eba2cc0125"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1402/pg1402.txt",
+          "sha256": "7782f4dcc299edcb575af6cddf6c241766cd087179997bdef0caaae1a600900b"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/172/pg172.txt",
+          "sha256": "7959f50e5f1549aec9d2b3780dc2aedfa62d66d108b1096c0620187e6f80d66a"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1602/pg1602.txt",
+          "sha256": "1b0a4b9e4ed87c330a8c81afdc09ebbac322cdb4099354d38f84732440344f2b"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1182/pg1182.txt",
+          "sha256": "238b18d1b944a56631866d10e7fa066bcdaddcc65b9e0df8cfc106605b6fc3ea"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/765/pg765.txt",
+          "sha256": "b72206ee9e86a39352d44929d9693aae3059a62f14f9e9babeb0286a5e163ded"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/543/pg543.txt",
+          "sha256": "68f2bcb2a8d1d62f3a2e747aa7b387c8201c53c3ea6f866e1ed7864ec8055cc2"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/546/pg546.txt",
+          "sha256": "9e4a6919682116570615cfab8bd2f3f1960205ab0e1f22d8d87eabf0947e5985"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1156/pg1156.txt",
+          "sha256": "735c608e3a22267bcc0a3821503b00a322acbca80142faad332a8e89d41858f6"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/3264/pg3264.txt",
+          "sha256": "c77ed1dae0bb1d48d7825d6f1163aa1ab2b2c56991720a062ee9182b2351e915"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/859/pg859.txt",
+          "sha256": "8f099be8d268df522e4458a24c6e82fadc44e1542d993a94b16863b3a115d5fd"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/3479/pg3479.txt",
+          "sha256": "5dbdfe1f6fee5a4b1dc252644756718d7623df7b0e05bb1d4fa171af720b4133"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/3676/pg3676.txt",
+          "sha256": "61e5c912a41b9b5fccc62f7b0dfb4789984903467f8b79b556527a4ced3e21b1"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1747/pg1747.txt",
+          "sha256": "2ed057e906a596558088da909841a362e9a0a734f6cda3b4060939812e454a80"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/748/pg748.txt",
+          "sha256": "3a7f1dcc70dd75f97679c67ebb467ac31e986db081d842f2287ff80bfbbbdd1d"
+        }
+      ],
+      "cite_key": "ProjectGutenberg"
+    },
+    {
+      "name": "gutenberg_texts_c3_refill",
+      "source": "gutenberg",
+      "series": "Project Gutenberg texts 993, 6102, 750, 1684, 6113, 2374, 840, 5700, 693 (header, footer and licence removed)",
+      "licence": "Project Gutenberg licence (https://www.gutenberg.org/policy/license.html): \"These books are not restricted by copyright in the United States and anyone located in the United States — including Project Gutenberg and you — may read and distribute them. If you don't live in the United States you'll have to check the laws of the country you live in before downloading and distributing our ebooks.\" \"If you strip the Project Gutenberg license and all references to Project Gutenberg from the text, you are left with a text unrestricted by U.S. intellectual property law.\" Permissions (https://www.gutenberg.org/policy/permission.html): \"No permission is needed for non-commercial use.\" Catalogue (https://www.gutenberg.org/policy/robot_access.html): \"The catalog data are granted to the public domain.\"",
+      "citation": "Higginson, Thomas Wentworth. (n.d.). Malbone: An Oldport Romance. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/993. Roe, Edward Payson. (n.d.). From Jest to Earnest. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/6102. Anonymous. (n.d.). The High History of the Holy Graal. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/750. Meredith, George. (n.d.). The Egoist: A Comedy in Narrative. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/1684. Roe, Edward Payson. (n.d.). A Day of Fate. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/6113. Brame, Charlotte M.. (n.d.). Dora Thorne. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/2374. Blackmore, R. D. (Richard Doddridge). (n.d.). Lorna Doone: A Romance of Exmoor. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/840. Yonge, Charlotte M. (Charlotte Mary). (n.d.). Love and Life: An Old Story in Eighteenth Century Costume. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/5700. Mitchell, S. Weir (Silas Weir). (n.d.). The Autobiography of a Quack, and The Case of George Dedlow. Urbana, Illinois: Project Gutenberg. Retrieved October 14, 2026, from www.gutenberg.org/ebooks/693.",
+      "provenance": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror) (https://www.gutenberg.org), release 2026-10-14",
+      "version": "2026-10-14",
+      "source_files": [
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/993/pg993.txt",
+          "sha256": "8bfabea9250d8a894c7f2d6a88afe4701f473a6b6c3d0079fa492b4ef316a595"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/6102/pg6102.txt",
+          "sha256": "e8f134d34366695d5ad3af51f8a27bf021c61dc6f887a9d74072578505ef524e"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/750/pg750.txt",
+          "sha256": "bfda0cfcd4bb89a7fcba2c4ee9ff259af662398d047162c6ddd55758f6c48917"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/1684/pg1684.txt",
+          "sha256": "6c6b926977dec9c59199c11a9d8022e3bc42bf06fbe6c7f51564642ea5b32402"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/6113/pg6113.txt",
+          "sha256": "a70133b561dc56b83345dc10129dc611dcc37478dc16b980bcfc7450ec3dfbef"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/2374/pg2374.txt",
+          "sha256": "29cebe96b6fa3d9baaa17d5952957dd53ca62acc9dac08be36694795d9d2ffbc"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/840/pg840.txt",
+          "sha256": "6d6112e87f6e5e8ae886e3b7ecae36b8bd3396d0e9a585b345619a4ea4d92967"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/5700/pg5700.txt",
+          "sha256": "e49c858fbb554cd2bc46d0eaa63a9b32fdd88d7a8e154dcb02d73817f1c95cb3"
+        },
+        {
+          "url": "https://gutenberg.pglaf.org/cache/epub/693/pg693.txt",
+          "sha256": "990d61a2fe1f29615bac0f6e42801e306bf7c9490571b082d70962f71c133e1c"
+        }
+      ],
+      "cite_key": "ProjectGutenberg",
+      "min_non_null": 0.85,
+      "columns": [
+        {
+          "name": "authors",
+          "min_non_null": 0.85
+        },
+        {
+          "name": "author_birth_year",
+          "min_non_null": 0.85
+        },
+        {
+          "name": "author_death_year",
+          "min_non_null": 0.85
+        }
+      ],
+      "null_note": "pg750 (The High History of the Holy Graal) is anonymous in the catalogue, so author fields are null for 1 of 9 rows; it has no birth year and cannot enter a cohort."
+    }
+  ],
+  "loading_notes": [
+    "Catalogue: e2er-data gutenberg books --languages en --topic fiction --author-year-start S --author-year-end E --limit 320 --table gutenberg_books_cK (S,E as in each table's series). The frame is only the 320 most popular catalogue rows per cohort search (popularity-sorted). The catalogue filter selects authors ALIVE in the span, so it is only a candidate frame; the cohort is assigned from author_birth_year in build_data.py. Several searches per cohort (topics novel, fiction, romance, adventure) may be concatenated in the build script, never in the loaded tables.",
+    "Texts: e2er-data gutenberg text --ids <20 ids> --table gutenberg_texts_cK. The 20 ids per cohort are drawn by build_data.py logic with a fixed seed (20261014) from the eligible frame, and written to data/sample_ids.csv before loading so the load is reproducible. Loads are at most 20 books each.",
+    "Word counts are known only after the texts are loaded, so the 30,000-token rule is applied after loading and may shrink a cohort below 20; then every cohort is cut to the smallest n (equal n per cohort) and the shortfall is reported in data_summary.md."
+  ],
+  "fields": {
+    "doc_id": "'pg' + Gutenberg ebook number; unique key of the corpus table",
+    "title": "catalogue title",
+    "author": "first author as in the catalogue (one author only)",
+    "author_birth_year": "integer, as the Gutenberg/Gutendex catalogue records it; the only basis of the cohort and the only time axis (no publication year is looked up or used)",
+    "author_death_year": "integer, catalogue",
+    "cohort": "c1 1770-1799, c2 1800-1819, c3 1820-1839, c4 1840-1859, c5 1860-1879, c6 1880-1899; exactly one per novel by birth year (c1 is 30 years wide, the others 20; this is stated in the paper)",
+    "language": "'en' (catalogue languages must equal ['en'] exactly)",
+    "word_count": "number of tokens under the recorded token_pattern (before stop-word removal)",
+    "source_id": "Project Gutenberg ebook number",
+    "file_sha256": "SHA-256 of the text as analysed (UTF-8), recorded in corpus_manifest.json",
+    "text": "book text with Gutenberg header/footer removed by the connector, and front/back matter cut by build_data.py"
+  },
+  "inclusion_rules": [
+    "language list is exactly ['en']",
+    "subjects or bookshelves contain Fiction/Novel/Romance/Adventure/Detective/Historical-type terms, and do not contain Poetry, Drama, Short stories, Essays, Letters, Children's, Juvenile, Biography; books with a translator in the catalogue record are excluded (translations)",
+    "exactly one author, with author_birth_year in 1770-1899",
+    "has_plain_text is true and copyright is not true",
+    "word_count >= 30,000 tokens (novel length; excludes novellas and stories), applied after the texts are loaded because counts are unknown before",
+    "de-duplication: one edition per work, keyed on normalised title + author; keep the lowest ebook number whose text is complete; also drop texts with identical SHA-256; omnibus volumes and multi-volume sets that contain several titles are dropped",
+    "boilerplate: connector removes the Gutenberg header, footer and licence; build_data.py additionally removes contents lists, prefaces/introductions by editors, transcriber's notes and illustration lists where detectable; what was cut is recorded per document"
+  ],
+  "sample_balance": "Stratified random sample, equal n (target 20) per cohort, drawn with seed 20261014 after filtering. At most 2 novels per author per cohort (cap prevents one author dominating). Gender, genre and nationality are not balanced because the catalogue does not hold them reliably; the paper reports the author-count and the share of the corpus from the largest author per cohort, and runs the main comparison with each document weighted equally (mean of per-document rates) alongside pooled rates per 10,000 tokens. Length varies across cohorts; results are per 10,000 tokens and the median length per cohort is reported.",
+  "weather_dictionary": {
+    "note": "Frozen in corpus_design.json. Exact word forms only, no wildcards at all; inflections and plurals are listed explicitly, no lemma table. 'hail' (greeting, 'within hail') and 'storming' (storming a fort) are excluded. Ambiguous terms kept and covered by the hand-checked validation sample: shower/showers, thunder forms, icy, cloud forms, plus wind (verb), sun (Sunday, surname), figurative storm/cloud, and the surnames Snow/Rain/Frost; precision is reported per category.",
+    "categories": [
+      "precipitation",
+      "wind",
+      "storm",
+      "fog",
+      "snow_ice",
+      "sun",
+      "cloud"
+    ]
+  },
+  "unavailable": [
+    "Publication year is not used at all (not looked up, no robustness check); the time axis is the author's birth year as the catalogue records it. Author gender, nationality and genre are not in the catalogue and are not analysed.",
+    "Other corpora (Standard Ebooks, ELTeC, Chadwyck-Healey) are not among the available sources, so the sampling frame is Project Gutenberg only."
+  ]
+}

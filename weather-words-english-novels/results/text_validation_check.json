@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "measures": {
+    "weather_all": {
+      "n_items": 30,
+      "n_correct": 22,
+      "precision": 0.7333
+    },
+    "precipitation": {
+      "n_items": 24,
+      "n_correct": 21,
+      "precision": 0.875
+    },
+    "wind_words": {
+      "n_items": 24,
+      "n_correct": 21,
+      "precision": 0.875
+    },
+    "storm_words": {
+      "n_items": 24,
+      "n_correct": 10,
+      "precision": 0.4167
+    },
+    "fog_words": {
+      "n_items": 24,
+      "n_correct": 12,
+      "precision": 0.5
+    },
+    "snow_ice_words": {
+      "n_items": 24,
+      "n_correct": 20,
+      "precision": 0.8333
+    },
+    "sun_words": {
+      "n_items": 24,
+      "n_correct": 20,
+      "precision": 0.8333
+    },
+    "cloud_words": {
+      "n_items": 24,
+      "n_correct": 14,
+      "precision": 0.5833
+    }
+  },
+  "reasons": [],
+  "notes": [
+    "storm_words: precision 0.42; most hits may not mean what the measure assumes",
+    "fog_words: precision 0.50; most hits may not mean what the measure assumes",
+    "cloud_words: precision 0.58; most hits may not mean what the measure assumes"
+  ]
+}

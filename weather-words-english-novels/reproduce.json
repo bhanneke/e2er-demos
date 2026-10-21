@@ -1,0 +1,543 @@
+{
+  "schema": "e2er-reproduce/1",
+  "about": "Written by e2er at export (2026-10-21) from what the run recorded: the scripts that wrote estimation_results.json, from the estimation script on, in the order the run ran them (its script log); the files they read; and the packages they import. code/requirements.txt pins 13 package(s) at the versions the run used.",
+  "python": "3.14",
+  "requirements": "code/requirements.txt",
+  "files": {
+    "build_data.py": "code/scratch/build_data.py",
+    "run_estimation.py": "code/run_estimation.py",
+    "corpus_design.json": "design/corpus_design.json",
+    "corpus_manifest.json": "data/corpus_manifest.json",
+    "data.db": "data/data.db",
+    "data/sample_ids_v2.csv": "data/sample_ids_v2.csv",
+    "fig_cohort_trend.pdf": "results/figures/fig_cohort_trend.pdf",
+    "fig_corpus_median_length_by_cohort.pdf": "results/figures/fig_corpus_median_length_by_cohort.pdf",
+    "fig_corpus_tokens_by_cohort.pdf": "results/figures/fig_corpus_tokens_by_cohort.pdf",
+    "figure_spec.json": "results/figure_spec.json",
+    "stopwords.txt": "misc/stopwords.txt",
+    "summary_statistics.json": "results/summary_statistics.json",
+    "text_validation.json": "results/text_validation.json",
+    "validation_sample.json": "results/validation_sample.json",
+    "get_data.py": "code/get_data.py"
+  },
+  "steps": [
+    {
+      "run": [
+        "python",
+        "get_data.py"
+      ],
+      "about": "load the inputs the folder does not ship (if any)"
+    },
+    {
+      "run": [
+        "python",
+        "build_data.py"
+      ],
+      "about": "data preparation: builds the study's tables from the loaded ones",
+      "when_missing": [
+        "data.db"
+      ]
+    },
+    {
+      "run": [
+        "python",
+        "run_estimation.py"
+      ],
+      "about": "the estimation script"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data.db",
+      "sha256": "03be205ef275be68b25516e79b0b94fbf3bf89d55a438d52e6911f681ec19db7",
+      "source": "the study's database, tables: corpus (made by the study during the run); corpus_cohort_summary (made by the study during the run); corpus_token_counts (made by the study during the run); gutenberg_books_c1 (Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg books (topic=fiction, languages=en, author_year_start=1770, author_year_end=1840), loaded 2026-10-14); gutenberg_books_c2 (Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg books (topic=fiction, languages=en, author_year_start=1800, author_year_end=1880), loaded 2026-10-14); gutenberg_books_c3 (Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg books (topic=fiction, languages=en, author_year_start=1820, author_year_end=1900), loaded 2026-10-14); gutenberg_books_c4 (Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg books (topic=fiction, languages=en, author_year_start=1840, author_year_end=1930), loaded 2026-10-14); gutenberg_books_c5 (Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg books (topic=fiction, languages=en, author_year_start=1860, author_year_end=1950), loaded 2026-10-14); gutenberg_books_c6 (Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg books (topic=fiction, languages=en, author_year_start=1880, author_year_end=1960), loaded 2026-10-14); gutenberg_texts_c1 (Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg texts 2276, 7987, 1384, 7087, 601, 6450, 7974, 161, 2496, 6490, 6086, 1296, 4927, 105, 1051, 792, 84, 7281, 4926, 6112 (header, footer and licence removed), release 2026-10-14, loaded 2026-10-14); gutenberg_texts_c2 (Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg texts 917, 203, 1366, 1235, 1258, 77, 599, 619, 4590, 4067, 1028, 4631, 2472, 2759, 145, 768, 1565, 422, 15 (header, footer and licence removed), release 2026-10-14, loaded 2026-10-14); gutenberg_texts_c3 (Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg texts 1627, 4957, 1608, 1748, 1353, 335, 83, 4795, 357, 1290, 287, 154, 325, 155, 169, 3365, 2601, 2695, 547, 581 (header, footer and licence removed), release 2026-10-14, loaded 2026-10-14); gutenberg_texts_c3_refill (Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg texts 993, 6102, 750, 1684, 6113, 2374, 840, 5700, 693 (header, footer and licence removed), release 2026-10-14, loaded 2026-10-14); gutenberg_texts_c4 (Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg texts 493, 1690, 3044, 174, 367, 2721, 4393, 6008, 122, 4982, 176, 903, 973, 491, 372, 1851, 604, 133, 3823, 477 (header, footer and licence removed), release 2026-10-14, loaded 2026-10-14); gutenberg_texts_c5 (Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg texts 321, 3427, 140, 2687, 78, 3413, 5626, 1908, 5349, 3247, 1878, 4284, 5009, 5610, 1881, 1976, 4747, 1269, 330, 1386 (header, footer and licence removed), release 2026-10-14, loaded 2026-10-14); gutenberg_texts_c6 (Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg texts 2546, 4922, 1155, 6115, 2126, 5738, 1402, 172, 1602, 1182, 765, 543, 546, 1156, 3264, 859, 3479, 3676, 1747, 748 (header, footer and licence removed), release 2026-10-14, loaded 2026-10-14); weather_dictionary_hits (made by the study during the run)",
+      "tables": {
+        "corpus": {
+          "rows": 84,
+          "content_sha256": "cae50c41b86be78bd9f46168627c16c3f7fa38f4804f48f0de25d2c7c45afd6b",
+          "numeric_sha256": "cae50c41b86be78bd9f46168627c16c3f7fa38f4804f48f0de25d2c7c45afd6b",
+          "columns": [
+            "doc_id",
+            "text",
+            "title",
+            "author",
+            "author_birth_year",
+            "cohort",
+            "language",
+            "source_id"
+          ]
+        },
+        "corpus_cohort_summary": {
+          "rows": 6,
+          "content_sha256": "0d17e270fbe7a74156bd799c7a2cc76f2b3f1346dacb01a4828238be3665cf34",
+          "numeric_sha256": "0d17e270fbe7a74156bd799c7a2cc76f2b3f1346dacb01a4828238be3665cf34",
+          "columns": [
+            "cohort",
+            "n_docs",
+            "n_authors",
+            "n_tokens",
+            "birth_year_min",
+            "birth_year_max"
+          ]
+        },
+        "corpus_token_counts": {
+          "rows": 84,
+          "content_sha256": "4bda1fc2497fcb47876d3ec26e7a7f0734c208af8bb5a7093a95dc6385ad1976",
+          "numeric_sha256": "4bda1fc2497fcb47876d3ec26e7a7f0734c208af8bb5a7093a95dc6385ad1976",
+          "columns": [
+            "doc_id",
+            "cohort",
+            "n_tokens"
+          ]
+        },
+        "gutenberg_books_c1": {
+          "rows": 320,
+          "content_sha256": "cdbc46bf8d8f5b41159ce95bcc567139992322290fd2e3306f310303827349db",
+          "numeric_sha256": "3f99c88cc75d504a98ef0ae7b7193135b8e5cd53798ecd2d1b5e69ee2274e868",
+          "columns": [
+            "id",
+            "title",
+            "authors",
+            "author_birth_year",
+            "author_death_year",
+            "languages",
+            "subjects",
+            "bookshelves",
+            "copyright",
+            "media_type",
+            "download_count",
+            "has_plain_text"
+          ]
+        },
+        "gutenberg_books_c2": {
+          "rows": 320,
+          "content_sha256": "c31f5088d8c13f63a549d41d13e7a38377387f518d2d09307ff88d19cdffc073",
+          "numeric_sha256": "c31f5088d8c13f63a549d41d13e7a38377387f518d2d09307ff88d19cdffc073",
+          "columns": [
+            "id",
+            "title",
+            "authors",
+            "author_birth_year",
+            "author_death_year",
+            "languages",
+            "subjects",
+            "bookshelves",
+            "copyright",
+            "media_type",
+            "download_count",
+            "has_plain_text"
+          ]
+        },
+        "gutenberg_books_c3": {
+          "rows": 320,
+          "content_sha256": "f97df0e494dcdc711a2f0ed52d32c36eed2364029f666ffd322e00baa6f5754f",
+          "numeric_sha256": "f97df0e494dcdc711a2f0ed52d32c36eed2364029f666ffd322e00baa6f5754f",
+          "columns": [
+            "id",
+            "title",
+            "authors",
+            "author_birth_year",
+            "author_death_year",
+            "languages",
+            "subjects",
+            "bookshelves",
+            "copyright",
+            "media_type",
+            "download_count",
+            "has_plain_text"
+          ]
+        },
+        "gutenberg_books_c4": {
+          "rows": 320,
+          "content_sha256": "7300beb00f6f56295a88015451784ca0a27c718a14d359ea503a4eb92fd7516f",
+          "numeric_sha256": "7300beb00f6f56295a88015451784ca0a27c718a14d359ea503a4eb92fd7516f",
+          "columns": [
+            "id",
+            "title",
+            "authors",
+            "author_birth_year",
+            "author_death_year",
+            "languages",
+            "subjects",
+            "bookshelves",
+            "copyright",
+            "media_type",
+            "download_count",
+            "has_plain_text"
+          ]
+        },
+        "gutenberg_books_c5": {
+          "rows": 320,
+          "content_sha256": "aca5530731b06f4bff724c1bc23006322d6f1f2467475504d7046722bbaed5cd",
+          "numeric_sha256": "aca5530731b06f4bff724c1bc23006322d6f1f2467475504d7046722bbaed5cd",
+          "columns": [
+            "id",
+            "title",
+            "authors",
+            "author_birth_year",
+            "author_death_year",
+            "languages",
+            "subjects",
+            "bookshelves",
+            "copyright",
+            "media_type",
+            "download_count",
+            "has_plain_text"
+          ]
+        },
+        "gutenberg_books_c6": {
+          "rows": 320,
+          "content_sha256": "bb86a513bfd9ddcf6145215e9ce2fdecc9000f47219fedfcd81795598442a76e",
+          "numeric_sha256": "acb84da3a5d4ada4feb18623d3afef9317431d4c80c4d7e50e5cd49568ef7b17",
+          "columns": [
+            "id",
+            "title",
+            "authors",
+            "author_birth_year",
+            "author_death_year",
+            "languages",
+            "subjects",
+            "bookshelves",
+            "copyright",
+            "media_type",
+            "download_count",
+            "has_plain_text"
+          ]
+        },
+        "gutenberg_texts_c1": {
+          "rows": 20,
+          "content_sha256": "71e7331760f1729d52e7df75aa2340e53335ca736351a9f26cf132d8e8fec995",
+          "numeric_sha256": "71e7331760f1729d52e7df75aa2340e53335ca736351a9f26cf132d8e8fec995",
+          "columns": [
+            "id",
+            "title",
+            "authors",
+            "author_birth_year",
+            "author_death_year",
+            "languages",
+            "subjects",
+            "bookshelves",
+            "copyright",
+            "media_type",
+            "download_count",
+            "has_plain_text",
+            "text",
+            "characters",
+            "words"
+          ]
+        },
+        "gutenberg_texts_c2": {
+          "rows": 19,
+          "content_sha256": "974412dc3e97d6bba52a273a88b8a363117d2955308644ff365d4726c5f419c4",
+          "numeric_sha256": "974412dc3e97d6bba52a273a88b8a363117d2955308644ff365d4726c5f419c4",
+          "columns": [
+            "id",
+            "title",
+            "authors",
+            "author_birth_year",
+            "author_death_year",
+            "languages",
+            "subjects",
+            "bookshelves",
+            "copyright",
+            "media_type",
+            "download_count",
+            "has_plain_text",
+            "text",
+            "characters",
+            "words"
+          ]
+        },
+        "gutenberg_texts_c3": {
+          "rows": 20,
+          "content_sha256": "a5eae7ccb1d7e78bdd05629babe6f6649e8f050fded19775720ecc2d6b2731ad",
+          "numeric_sha256": "a5eae7ccb1d7e78bdd05629babe6f6649e8f050fded19775720ecc2d6b2731ad",
+          "columns": [
+            "id",
+            "title",
+            "authors",
+            "author_birth_year",
+            "author_death_year",
+            "languages",
+            "subjects",
+            "bookshelves",
+            "copyright",
+            "media_type",
+            "download_count",
+            "has_plain_text",
+            "text",
+            "characters",
+            "words"
+          ]
+        },
+        "gutenberg_texts_c3_refill": {
+          "rows": 9,
+          "content_sha256": "2388f1e3ed42e730285f3b626099800aec3d1b08e0b7dba3703c8a3b6be92a30",
+          "numeric_sha256": "1e685ba0b1771f6fabdec26290b8ef63626118a5951a833c7c8ac7184cbad85a",
+          "columns": [
+            "id",
+            "title",
+            "authors",
+            "author_birth_year",
+            "author_death_year",
+            "languages",
+            "subjects",
+            "bookshelves",
+            "copyright",
+            "media_type",
+            "download_count",
+            "has_plain_text",
+            "text",
+            "characters",
+            "words"
+          ]
+        },
+        "gutenberg_texts_c4": {
+          "rows": 20,
+          "content_sha256": "136399bb5f1fb7887a4f7110e0b2586b4b829aaac66ff24183d86e1e3451fc21",
+          "numeric_sha256": "136399bb5f1fb7887a4f7110e0b2586b4b829aaac66ff24183d86e1e3451fc21",
+          "columns": [
+            "id",
+            "title",
+            "authors",
+            "author_birth_year",
+            "author_death_year",
+            "languages",
+            "subjects",
+            "bookshelves",
+            "copyright",
+            "media_type",
+            "download_count",
+            "has_plain_text",
+            "text",
+            "characters",
+            "words"
+          ]
+        },
+        "gutenberg_texts_c5": {
+          "rows": 20,
+          "content_sha256": "797f55d9f2ee19e2e8403db7ca7051b39d54bfbeed9567743fbdd77d164cf810",
+          "numeric_sha256": "797f55d9f2ee19e2e8403db7ca7051b39d54bfbeed9567743fbdd77d164cf810",
+          "columns": [
+            "id",
+            "title",
+            "authors",
+            "author_birth_year",
+            "author_death_year",
+            "languages",
+            "subjects",
+            "bookshelves",
+            "copyright",
+            "media_type",
+            "download_count",
+            "has_plain_text",
+            "text",
+            "characters",
+            "words"
+          ]
+        },
+        "gutenberg_texts_c6": {
+          "rows": 20,
+          "content_sha256": "b3b5451253b271b7774507820355f68d42538a8faf4e54faf17f36d66290993b",
+          "numeric_sha256": "b3b5451253b271b7774507820355f68d42538a8faf4e54faf17f36d66290993b",
+          "columns": [
+            "id",
+            "title",
+            "authors",
+            "author_birth_year",
+            "author_death_year",
+            "languages",
+            "subjects",
+            "bookshelves",
+            "copyright",
+            "media_type",
+            "download_count",
+            "has_plain_text",
+            "text",
+            "characters",
+            "words"
+          ]
+        },
+        "weather_dictionary_hits": {
+          "rows": 2311,
+          "content_sha256": "40e2aa5496df341c7a4f19d8deb2131092a9db9db276e4a5acba9e1fd87e481d",
+          "numeric_sha256": "40e2aa5496df341c7a4f19d8deb2131092a9db9db276e4a5acba9e1fd87e481d",
+          "columns": [
+            "doc_id",
+            "cohort",
+            "term",
+            "category",
+            "n"
+          ]
+        }
+      },
+      "reload": "get_data.py",
+      "not_read": [
+        "gutenberg_books_c1",
+        "gutenberg_books_c2",
+        "gutenberg_books_c3",
+        "gutenberg_books_c4",
+        "gutenberg_books_c5",
+        "gutenberg_books_c6"
+      ]
+    },
+    {
+      "path": "data/sample_ids_v2.csv",
+      "sha256": "8b857c1c9a2cbd4684ab1567c7391fbfa355dc91aad1255f06005dfcaf967a73",
+      "source": "a file the study's code reads",
+      "rows": 320,
+      "content_sha256": "3301517d88c49e1581498f2b03bd8dce6b040b09b71cd1c59297182c1a994d02",
+      "numeric_sha256": "49ce552bb77c39a093d869e808d6abf7ec3386082c280747f137c342a3439c72",
+      "made_by": {
+        "script": "draw_refill.py",
+        "run": "2026-10-14T22:48:54Z",
+        "file": "code/scratch/draw_refill.py",
+        "from": [
+          {
+            "path": "data/sample_ids.csv",
+            "script": "draw_sample.py",
+            "run": "2026-10-14T18:06:53Z",
+            "file": "code/scratch/draw_sample.py",
+            "seeded": true
+          }
+        ]
+      }
+    }
+  ],
+  "compare": [
+    {
+      "published": "results/estimation_results.json",
+      "produced": "estimation_results.json"
+    }
+  ],
+  "notes": [
+    "data/sample_ids_v2.csv was made during the run by draw_refill.py, from data/sample_ids.csv (draw_sample.py, a seeded draw). The folder ships the file the study used and the script (code/scratch/draw_refill.py); the rerun reads the file and does not draw it again.",
+    "get_data.py also lists 7 load(s) of open sources (Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror)) that went into the inputs. It loads one again only when the folder lacks it (a folder without data.db, too large for its host): that needs the internet and takes about as long as the run's own loads, and a source may have revised its data since.",
+    "When data.db is not in the folder, build_data.py builds the tables the estimation reads (corpus, corpus_cohort_summary, corpus_token_counts, weather_dictionary_hits) again from the tables get_data.py loads, as the run did."
+  ],
+  "database": {
+    "path": "data.db",
+    "about": "Where each table of data.db came from in the run (data_sources.json for loads; the script log, or else the scripts' code, for tables a script wrote) and how a rerun without data.db gets it back. A table no step reads is not loaded again and not compared.",
+    "tables": {
+      "gutenberg_books_c1": {
+        "how": "loaded",
+        "source": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg books (topic=fiction, languages=en, author_year_start=1770, author_year_end=1840), loaded 2026-10-14",
+        "evidence": "data_sources.json",
+        "read": false,
+        "back": null
+      },
+      "gutenberg_books_c2": {
+        "how": "loaded",
+        "source": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg books (topic=fiction, languages=en, author_year_start=1800, author_year_end=1880), loaded 2026-10-14",
+        "evidence": "data_sources.json",
+        "read": false,
+        "back": null
+      },
+      "gutenberg_books_c3": {
+        "how": "loaded",
+        "source": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg books (topic=fiction, languages=en, author_year_start=1820, author_year_end=1900), loaded 2026-10-14",
+        "evidence": "data_sources.json",
+        "read": false,
+        "back": null
+      },
+      "gutenberg_books_c4": {
+        "how": "loaded",
+        "source": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg books (topic=fiction, languages=en, author_year_start=1840, author_year_end=1930), loaded 2026-10-14",
+        "evidence": "data_sources.json",
+        "read": false,
+        "back": null
+      },
+      "gutenberg_books_c5": {
+        "how": "loaded",
+        "source": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg books (topic=fiction, languages=en, author_year_start=1860, author_year_end=1950), loaded 2026-10-14",
+        "evidence": "data_sources.json",
+        "read": false,
+        "back": null
+      },
+      "gutenberg_books_c6": {
+        "how": "loaded",
+        "source": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg books (topic=fiction, languages=en, author_year_start=1880, author_year_end=1960), loaded 2026-10-14",
+        "evidence": "data_sources.json",
+        "read": false,
+        "back": null
+      },
+      "gutenberg_texts_c1": {
+        "how": "loaded",
+        "source": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg texts 2276, 7987, 1384, 7087, 601, 6450, 7974, 161, 2496, 6490, 6086, 1296, 4927, 105, 1051, 792, 84, 7281, 4926, 6112 (header, footer and licence removed), release 2026-10-14, loaded 2026-10-14",
+        "evidence": "data_sources.json",
+        "read": true,
+        "back": "get_data.py"
+      },
+      "gutenberg_texts_c2": {
+        "how": "loaded",
+        "source": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg texts 917, 203, 1366, 1235, 1258, 77, 599, 619, 4590, 4067, 1028, 4631, 2472, 2759, 145, 768, 1565, 422, 15 (header, footer and licence removed), release 2026-10-14, loaded 2026-10-14",
+        "evidence": "data_sources.json",
+        "read": true,
+        "back": "get_data.py"
+      },
+      "gutenberg_texts_c3": {
+        "how": "loaded",
+        "source": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg texts 1627, 4957, 1608, 1748, 1353, 335, 83, 4795, 357, 1290, 287, 154, 325, 155, 169, 3365, 2601, 2695, 547, 581 (header, footer and licence removed), release 2026-10-14, loaded 2026-10-14",
+        "evidence": "data_sources.json",
+        "read": true,
+        "back": "get_data.py"
+      },
+      "gutenberg_texts_c5": {
+        "how": "loaded",
+        "source": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg texts 321, 3427, 140, 2687, 78, 3413, 5626, 1908, 5349, 3247, 1878, 4284, 5009, 5610, 1881, 1976, 4747, 1269, 330, 1386 (header, footer and licence removed), release 2026-10-14, loaded 2026-10-14",
+        "evidence": "data_sources.json",
+        "read": true,
+        "back": "get_data.py"
+      },
+      "gutenberg_texts_c4": {
+        "how": "loaded",
+        "source": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg texts 493, 1690, 3044, 174, 367, 2721, 4393, 6008, 122, 4982, 176, 903, 973, 491, 372, 1851, 604, 133, 3823, 477 (header, footer and licence removed), release 2026-10-14, loaded 2026-10-14",
+        "evidence": "data_sources.json",
+        "read": true,
+        "back": "get_data.py"
+      },
+      "gutenberg_texts_c6": {
+        "how": "loaded",
+        "source": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg texts 2546, 4922, 1155, 6115, 2126, 5738, 1402, 172, 1602, 1182, 765, 543, 546, 1156, 3264, 859, 3479, 3676, 1747, 748 (header, footer and licence removed), release 2026-10-14, loaded 2026-10-14",
+        "evidence": "data_sources.json",
+        "read": true,
+        "back": "get_data.py"
+      },
+      "gutenberg_texts_c3_refill": {
+        "how": "loaded",
+        "source": "Project Gutenberg ebooks (catalogue via Gutendex; texts from Project Gutenberg's mirror), Project Gutenberg texts 993, 6102, 750, 1684, 6113, 2374, 840, 5700, 693 (header, footer and licence removed), release 2026-10-14, loaded 2026-10-14",
+        "evidence": "data_sources.json",
+        "read": true,
+        "back": "get_data.py"
+      },
+      "corpus": {
+        "how": "built",
+        "by": "build_data.py",
+        "evidence": "the scripts' code",
+        "read": true,
+        "back": "build_data.py"
+      },
+      "corpus_cohort_summary": {
+        "how": "built",
+        "by": "build_data.py",
+        "evidence": "the scripts' code",
+        "read": true,
+        "back": "build_data.py"
+      },
+      "corpus_token_counts": {
+        "how": "built",
+        "by": "build_data.py",
+        "evidence": "the scripts' code",
+        "read": true,
+        "back": "build_data.py"
+      },
+      "weather_dictionary_hits": {
+        "how": "built",
+        "by": "build_data.py",
+        "evidence": "the scripts' code",
+        "read": true,
+        "back": "build_data.py"
+      }
+    }
+  }
+}

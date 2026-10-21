@@ -1,0 +1,201 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>How did the vocabulary of weather (rain, wind, storm, fog, snow, sun, cloud a...</title><style>
+:root{--paper:#faf9f6;--card:#fff;--ink:#1b1f2b;--muted:#5f6676;--line:#e3ded4;
+--ok:#2c7a54;--bad:#ab392f;--accent:#ad5a29;--okbg:#e6f2ea;--badbg:#fbe9e7}
+@media(prefers-color-scheme:dark){:root{--paper:#14161c;--card:#1b1e26;--ink:#e9e7e1;
+--muted:#98a0af;--line:#2c313b;--ok:#56b483;--bad:#e07a6d;--accent:#e0884d;
+--okbg:#16302a;--badbg:#3a201d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);line-height:1.6;
+font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:940px;margin:0 auto;padding:40px 20px 72px}
+h1{font-size:30px;line-height:1.15;margin:0 0 8px}
+h2{font-size:20px;margin:44px 0 12px}
+h3{font-size:15px;margin:0}
+p{margin:0 0 12px;max-width:70ch}
+.muted{color:var(--muted)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px}
+a{color:var(--accent)}
+.lede{border-bottom:2px solid var(--ink);padding-bottom:22px;margin-bottom:8px}
+.abstract{background:var(--card);border:1px solid var(--line);padding:18px 20px;margin:18px 0}
+.reads{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+.reads a{display:block;padding:10px 14px;border:1px solid var(--line);background:var(--card);
+border-radius:4px;text-decoration:none;color:var(--ink);font-size:14px}
+.reads a.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.reads a .p{display:block;font-size:11px;color:var(--muted);font-family:ui-monospace,Menlo,monospace}
+.reads a.primary .p{color:rgba(255,255,255,.85)}
+.v{display:grid;grid-template-columns:26px 150px 1fr;gap:12px;padding:12px 16px;
+border-bottom:1px solid var(--line);align-items:start}
+.v:last-child{border-bottom:none}
+.vs{border:1px solid var(--line);background:var(--card)}
+.mark{font-weight:700}
+.ok{color:var(--ok)}.bad{color:var(--bad)}
+.pill{display:inline-block;padding:2px 8px;border-radius:3px;font-size:11px;
+text-transform:uppercase;letter-spacing:.06em}
+.pill.ok{background:var(--okbg)}.pill.bad{background:var(--badbg)}
+table{border-collapse:collapse;width:100%;background:var(--card);border:1px solid var(--line)}
+th{text-align:left;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+color:var(--muted);padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:7px 10px;border-bottom:1px solid var(--paper);font-size:13.5px;vertical-align:top}
+td.n{text-align:right;font-family:ui-monospace,Menlo,monospace;white-space:nowrap;color:var(--muted)}
+details{border:1px solid var(--line);background:var(--card);margin-bottom:6px}
+summary{cursor:pointer;padding:10px 14px;font-weight:600;display:flex;
+justify-content:space-between;gap:12px;list-style:none}
+summary::-webkit-details-marker{display:none}
+details ul{margin:0;padding:0 0 8px;list-style:none;border-top:1px solid var(--line)}
+details li{display:flex;justify-content:space-between;gap:12px;padding:5px 14px}
+footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
+color:var(--muted);font-size:13px}
+@media(max-width:620px){.v{grid-template-columns:26px 1fr}.v div:last-child{grid-column:2}}
+</style></head><body><div class='wrap'>
+<div class='lede'>
+<h1>How did the vocabulary of weather (rain, wind, storm, fog, snow, sun, cloud a...</h1>
+<p class='muted'>How did the vocabulary of weather (rain, wind, storm, fog, snow, sun, cloud and related words) vary across English-language novels by authors born in six cohorts, 1770–1799 to 1880–1899?</p>
+<p class='mono muted'>backend: claude_code · model: sonnet · governance: full · exported_at: 20261021</p>
+</div>
+<div class='reads'>
+<a href='paper/paper.pdf' class='primary'>The paper (PDF)<span class='p'>paper/paper.pdf</span></a>
+<a href='paper/paper.tex'>LaTeX source<span class='p'>paper/paper.tex</span></a>
+<a href='paper/abstract.tex'>Abstract<span class='p'>paper/abstract.tex</span></a>
+<a href='results/estimation_results.json'>Estimation results<span class='p'>results/estimation_results.json</span></a>
+<a href='replication/estimation.py'>Replication script<span class='p'>replication/estimation.py</span></a>
+</div>
+<div class='abstract'><h3>Abstract</h3><p>Accounts of weather in the Victorian novel rest on a few canonical texts. We ask how weather vocabulary varied across English-language novels by authors born in six cohorts, 1770--1799 to 1880--1899. Using 84 Project Gutenberg novels by 69 authors (14 per cohort, 9.2 million tokens), we count 90 exact weather word forms per 10,000 tokens, compare cohorts, and check the hits against a hand-judged sample of 198 passages. % src: summary_statistics.json#n_observations, #n_units, #n_tokens, #weather_dictionary.n_terms The pooled weather rate is stable, between about 11 and 13 hits per 10,000 tokens. Snow and ice words rise from 0.82 hits in the first cohort to a peak of 2.06 in the fifth and 1.44 in the sixth, a suggestive pattern, and \emph{tempest} is concentrated in the earliest cohort. % src: estimation_results.json#cohort_trend.trend_by_category.snow_ice_words.cohort_rates_per_10k; estimation_results.json#models.weather_all.outputs.trend.cohort_rates_per_10k Fog and mist words are more frequent in the sixth cohort, but dictionary precision is 0.71 overall and only 0.42, 0.50 and 0.58 for storm, fog and cloud words, and none of four sampled sixth-cohort fog hits was weather, so the rise cannot be read as more fog description. % src: text_validation.md (140 of 198 correct; storm_words 10/24, fog_words 12/24, cloud_words 14/24; 0 of 4 cohort-6 fog hits) A reduced lexicon defined after the hand check flattens the composite and gives a steadier fall in storm words, a pattern worth testing, not a finding. % src: estimation_results.json#robustness.post_hoc_reduced_lexicon All patterns are descriptive and refer to this corpus of popular, digitised novels; none is a causal estimate. \noindent\textbf{Keywords:} weather vocabulary; English-language novel; author birth cohorts; dictionary validation; keyness; Project Gutenberg; computational literary studies</p></div>
+<h2>What was checked</h2>
+<div class='vs'>
+<div class='v'><div class='mark ok'>✓</div><div><strong>Tables</strong></div><div class='muted'>4 rendered from the result files, 0 unresolved</div></div>
+<div class='v'><div class='mark ok'>✓</div><div><strong>Numbers</strong></div><div class='muted'>211 table cells trace to a source key, 0 critical mismatches</div></div>
+<div class='v'><div class='mark ok'>✓</div><div><strong>Citations</strong></div><div class='muted'>17 of 18 verified, 0 missing from the bibliography</div></div>
+<div class='v'><div class='mark muted'>·</div><div><strong>e2er&#x27;s internal quality review</strong></div><div class='muted'>5.6 of 10 (weighted average): data 5.5, methods 5.0, plausibility 5.5, technical 6.0, writing 6.5</div></div>
+</div>
+<p class='muted' style='margin-top:14px'>These are the results the run recorded, not a re-check. The internal quality review is a score: six reviewer specialists each score the draft from one angle, and the score is their weighted average. To verify the bundle independently — re-hash every file, recompute the numbers, re-render the tables and resolve every citation — run <span class='mono'>e2er verify</span> on this folder.</p>
+<h2>Provenance</h2>
+<p><strong>100</strong> files inventoried by SHA-256, <strong>246</strong> derivation edges recording where each output came from.</p>
+<table><thead><tr><th>Edge</th><th style='text-align:right'>Count</th></tr></thead><tbody>
+<tr><td class='mono'>table_cell</td><td class='n'>211</td></tr>
+<tr><td class='mono'>citation</td><td class='n'>18</td></tr>
+<tr><td class='mono'>figure</td><td class='n'>15</td></tr>
+<tr><td class='mono'>estimation</td><td class='n'>1</td></tr>
+<tr><td class='mono'>data</td><td class='n'>1</td></tr>
+</tbody></table>
+<h2>Everything in this folder</h2>
+<details><summary><span>paper</span><span class='mono muted'>8 files · 287 KB</span></summary><ul>
+<li><a class='mono' href='paper/abstract.tex'>paper/abstract.tex</a><span class='mono muted'>1 KB</span></li>
+<li><a class='mono' href='paper/paper.pdf'>paper/paper.pdf</a><span class='mono muted'>210 KB</span></li>
+<li><a class='mono' href='paper/paper.tex'>paper/paper.tex</a><span class='mono muted'>48 KB</span></li>
+<li><a class='mono' href='paper/refs.bib'>paper/refs.bib</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='paper/tables/corpus.tex'>paper/tables/corpus.tex</a><span class='mono muted'>1 KB</span></li>
+<li><a class='mono' href='paper/tables/families.tex'>paper/tables/families.tex</a><span class='mono muted'>1 KB</span></li>
+<li><a class='mono' href='paper/tables/terms.tex'>paper/tables/terms.tex</a><span class='mono muted'>980 B</span></li>
+<li><a class='mono' href='paper/tables/weather_all.tex'>paper/tables/weather_all.tex</a><span class='mono muted'>1 KB</span></li>
+</ul></details>
+<details><summary><span>results</span><span class='mono muted'>28 files · 877 KB</span></summary><ul>
+<li><a class='mono' href='results/corpus_check.json'>results/corpus_check.json</a><span class='mono muted'>11 KB</span></li>
+<li><a class='mono' href='results/estimation_results.json'>results/estimation_results.json</a><span class='mono muted'>321 KB</span></li>
+<li><a class='mono' href='results/figure_check.json'>results/figure_check.json</a><span class='mono muted'>5 KB</span></li>
+<li><a class='mono' href='results/figure_spec.json'>results/figure_spec.json</a><span class='mono muted'>27 KB</span></li>
+<li><a class='mono' href='results/figures/fig_cohort_trend.pdf'>results/figures/fig_cohort_trend.pdf</a><span class='mono muted'>19 KB</span></li>
+<li><a class='mono' href='results/figures/fig_corpus_median_length_by_cohort.pdf'>results/figures/fig_corpus_median_length_by_cohort.pdf</a><span class='mono muted'>11 KB</span></li>
+<li><a class='mono' href='results/figures/fig_corpus_tokens_by_cohort.pdf'>results/figures/fig_corpus_tokens_by_cohort.pdf</a><span class='mono muted'>12 KB</span></li>
+<li><a class='mono' href='results/figures/fig_keyness_c1.pdf'>results/figures/fig_keyness_c1.pdf</a><span class='mono muted'>20 KB</span></li>
+<li><a class='mono' href='results/figures/fig_keyness_c2.pdf'>results/figures/fig_keyness_c2.pdf</a><span class='mono muted'>20 KB</span></li>
+<li><a class='mono' href='results/figures/fig_keyness_c3.pdf'>results/figures/fig_keyness_c3.pdf</a><span class='mono muted'>20 KB</span></li>
+<li><a class='mono' href='results/figures/fig_keyness_c4.pdf'>results/figures/fig_keyness_c4.pdf</a><span class='mono muted'>20 KB</span></li>
+<li><a class='mono' href='results/figures/fig_keyness_c5.pdf'>results/figures/fig_keyness_c5.pdf</a><span class='mono muted'>20 KB</span></li>
+<li><a class='mono' href='results/figures/fig_keyness_c6.pdf'>results/figures/fig_keyness_c6.pdf</a><span class='mono muted'>20 KB</span></li>
+<li><a class='mono' href='results/figures/fig_keyness_weather_c1.pdf'>results/figures/fig_keyness_weather_c1.pdf</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='results/figures/fig_keyness_weather_c2.pdf'>results/figures/fig_keyness_weather_c2.pdf</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='results/figures/fig_keyness_weather_c3.pdf'>results/figures/fig_keyness_weather_c3.pdf</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='results/figures/fig_keyness_weather_c4.pdf'>results/figures/fig_keyness_weather_c4.pdf</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='results/figures/fig_keyness_weather_c5.pdf'>results/figures/fig_keyness_weather_c5.pdf</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='results/figures/fig_keyness_weather_c6.pdf'>results/figures/fig_keyness_weather_c6.pdf</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='results/number_verification.json'>results/number_verification.json</a><span class='mono muted'>61 KB</span></li>
+<li><a class='mono' href='results/summary_statistics.json'>results/summary_statistics.json</a><span class='mono muted'>4 KB</span></li>
+<li><a class='mono' href='results/table_render_report.json'>results/table_render_report.json</a><span class='mono muted'>201 B</span></li>
+<li><a class='mono' href='results/table_spec.json'>results/table_spec.json</a><span class='mono muted'>5 KB</span></li>
+<li><a class='mono' href='results/text_check.json'>results/text_check.json</a><span class='mono muted'>571 B</span></li>
+<li><a class='mono' href='results/text_validation.json'>results/text_validation.json</a><span class='mono muted'>66 KB</span></li>
+<li><a class='mono' href='results/text_validation.md'>results/text_validation.md</a><span class='mono muted'>10 KB</span></li>
+<li><a class='mono' href='results/text_validation_check.json'>results/text_validation_check.json</a><span class='mono muted'>1 KB</span></li>
+<li><a class='mono' href='results/validation_sample.json'>results/validation_sample.json</a><span class='mono muted'>60 KB</span></li>
+</ul></details>
+<details><summary><span>design</span><span class='mono muted'>5 files · 52 KB</span></summary><ul>
+<li><a class='mono' href='design/corpus_design.json'>design/corpus_design.json</a><span class='mono muted'>11 KB</span></li>
+<li><a class='mono' href='design/econometric_spec.md'>design/econometric_spec.md</a><span class='mono muted'>4 KB</span></li>
+<li><a class='mono' href='design/literature_review.md'>design/literature_review.md</a><span class='mono muted'>8 KB</span></li>
+<li><a class='mono' href='design/paper_plan.md'>design/paper_plan.md</a><span class='mono muted'>20 KB</span></li>
+<li><a class='mono' href='design/researcher_instructions.md'>design/researcher_instructions.md</a><span class='mono muted'>7 KB</span></li>
+</ul></details>
+<details><summary><span>code</span><span class='mono muted'>18 files · 94 KB</span></summary><ul>
+<li><a class='mono' href='code/get_data.py'>code/get_data.py</a><span class='mono muted'>8 KB</span></li>
+<li><a class='mono' href='code/requirements.txt'>code/requirements.txt</a><span class='mono muted'>541 B</span></li>
+<li><a class='mono' href='code/run_estimation.py'>code/run_estimation.py</a><span class='mono muted'>23 KB</span></li>
+<li><a class='mono' href='code/scratch/build_data.py'>code/scratch/build_data.py</a><span class='mono muted'>12 KB</span></li>
+<li><a class='mono' href='code/scratch/check_shelves.py'>code/scratch/check_shelves.py</a><span class='mono muted'>989 B</span></li>
+<li><a class='mono' href='code/scratch/check_texts.py'>code/scratch/check_texts.py</a><span class='mono muted'>489 B</span></li>
+<li><a class='mono' href='code/scratch/draw_refill.py'>code/scratch/draw_refill.py</a><span class='mono muted'>2 KB</span></li>
+<li><a class='mono' href='code/scratch/draw_sample.py'>code/scratch/draw_sample.py</a><span class='mono muted'>3 KB</span></li>
+<li><a class='mono' href='code/scratch/explore.py'>code/scratch/explore.py</a><span class='mono muted'>528 B</span></li>
+<li><a class='mono' href='code/scratch/fix_dict.py'>code/scratch/fix_dict.py</a><span class='mono muted'>677 B</span></li>
+<li><a class='mono' href='code/scratch/judge_validation.py'>code/scratch/judge_validation.py</a><span class='mono muted'>11 KB</span></li>
+<li><a class='mono' href='code/scratch/list_titles.py'>code/scratch/list_titles.py</a><span class='mono muted'>360 B</span></li>
+<li><a class='mono' href='code/scratch/make_validation.py'>code/scratch/make_validation.py</a><span class='mono muted'>7 KB</span></li>
+<li><a class='mono' href='code/scratch/paper_draft.log'>code/scratch/paper_draft.log</a><span class='mono muted'>17 KB</span></li>
+<li><a class='mono' href='code/scratch/plan_ids.py'>code/scratch/plan_ids.py</a><span class='mono muted'>1 KB</span></li>
+<li><a class='mono' href='code/scratch/print_ids.py'>code/scratch/print_ids.py</a><span class='mono muted'>173 B</span></li>
+<li><a class='mono' href='code/scratch/show.py'>code/scratch/show.py</a><span class='mono muted'>695 B</span></li>
+<li><a class='mono' href='code/scratch/show_est.py'>code/scratch/show_est.py</a><span class='mono muted'>722 B</span></li>
+</ul></details>
+<details><summary><span>data</span><span class='mono muted'>6 files · 145.4 MB</span></summary><ul>
+<li><a class='mono' href='data/corpus_manifest.json'>data/corpus_manifest.json</a><span class='mono muted'>42 KB</span></li>
+<li><a class='mono' href='data/data.db'>data/data.db</a><span class='mono muted'>145.1 MB</span></li>
+<li><a class='mono' href='data/data_dictionary.json'>data/data_dictionary.json</a><span class='mono muted'>70 KB</span></li>
+<li><a class='mono' href='data/data_sources.json'>data/data_sources.json</a><span class='mono muted'>131 KB</span></li>
+<li><a class='mono' href='data/data_summary.md'>data/data_summary.md</a><span class='mono muted'>7 KB</span></li>
+<li><a class='mono' href='data/sample_ids_v2.csv'>data/sample_ids_v2.csv</a><span class='mono muted'>84 KB</span></li>
+</ul></details>
+<details><summary><span>replication</span><span class='mono muted'>4 files · 35 KB</span></summary><ul>
+<li><a class='mono' href='replication/README.md'>replication/README.md</a><span class='mono muted'>4 KB</span></li>
+<li><a class='mono' href='replication/audit_log.csv'>replication/audit_log.csv</a><span class='mono muted'>3 KB</span></li>
+<li><a class='mono' href='replication/data_queries.sql'>replication/data_queries.sql</a><span class='mono muted'>137 B</span></li>
+<li><a class='mono' href='replication/estimation.py'>replication/estimation.py</a><span class='mono muted'>27 KB</span></li>
+</ul></details>
+<details><summary><span>reviews</span><span class='mono muted'>7 files · 116 KB</span></summary><ul>
+<li><a class='mono' href='reviews/citation_integrity.json'>reviews/citation_integrity.json</a><span class='mono muted'>9 KB</span></li>
+<li><a class='mono' href='reviews/review_aggregation.json'>reviews/review_aggregation.json</a><span class='mono muted'>1 KB</span></li>
+<li><a class='mono' href='reviews/review_data.md'>reviews/review_data.md</a><span class='mono muted'>24 KB</span></li>
+<li><a class='mono' href='reviews/review_methods.md'>reviews/review_methods.md</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='reviews/review_plausibility.md'>reviews/review_plausibility.md</a><span class='mono muted'>13 KB</span></li>
+<li><a class='mono' href='reviews/review_technical.md'>reviews/review_technical.md</a><span class='mono muted'>24 KB</span></li>
+<li><a class='mono' href='reviews/review_writing.md'>reviews/review_writing.md</a><span class='mono muted'>21 KB</span></li>
+</ul></details>
+<details><summary><span>misc</span><span class='mono muted'>21 files · 377 KB</span></summary><ul>
+<li><a class='mono' href='misc/fig_cohort_trend.pdf'>misc/fig_cohort_trend.pdf</a><span class='mono muted'>19 KB</span></li>
+<li><a class='mono' href='misc/fig_corpus_median_length_by_cohort.pdf'>misc/fig_corpus_median_length_by_cohort.pdf</a><span class='mono muted'>11 KB</span></li>
+<li><a class='mono' href='misc/fig_corpus_tokens_by_cohort.pdf'>misc/fig_corpus_tokens_by_cohort.pdf</a><span class='mono muted'>12 KB</span></li>
+<li><a class='mono' href='misc/fig_keyness_c1.pdf'>misc/fig_keyness_c1.pdf</a><span class='mono muted'>20 KB</span></li>
+<li><a class='mono' href='misc/fig_keyness_c2.pdf'>misc/fig_keyness_c2.pdf</a><span class='mono muted'>20 KB</span></li>
+<li><a class='mono' href='misc/fig_keyness_c3.pdf'>misc/fig_keyness_c3.pdf</a><span class='mono muted'>20 KB</span></li>
+<li><a class='mono' href='misc/fig_keyness_c4.pdf'>misc/fig_keyness_c4.pdf</a><span class='mono muted'>20 KB</span></li>
+<li><a class='mono' href='misc/fig_keyness_c5.pdf'>misc/fig_keyness_c5.pdf</a><span class='mono muted'>20 KB</span></li>
+<li><a class='mono' href='misc/fig_keyness_c6.pdf'>misc/fig_keyness_c6.pdf</a><span class='mono muted'>20 KB</span></li>
+<li><a class='mono' href='misc/fig_keyness_weather_c1.pdf'>misc/fig_keyness_weather_c1.pdf</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='misc/fig_keyness_weather_c2.pdf'>misc/fig_keyness_weather_c2.pdf</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='misc/fig_keyness_weather_c3.pdf'>misc/fig_keyness_weather_c3.pdf</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='misc/fig_keyness_weather_c4.pdf'>misc/fig_keyness_weather_c4.pdf</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='misc/fig_keyness_weather_c5.pdf'>misc/fig_keyness_weather_c5.pdf</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='misc/fig_keyness_weather_c6.pdf'>misc/fig_keyness_weather_c6.pdf</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='misc/figure_render_report.json'>misc/figure_render_report.json</a><span class='mono muted'>591 B</span></li>
+<li><a class='mono' href='misc/paper_draft.blg'>misc/paper_draft.blg</a><span class='mono muted'>262 B</span></li>
+<li><a class='mono' href='misc/paper_draft.tex.applied.diff'>misc/paper_draft.tex.applied.diff</a><span class='mono muted'>39 KB</span></li>
+<li><a class='mono' href='misc/paper_draft.tex.edits.json'>misc/paper_draft.tex.edits.json</a><span class='mono muted'>14 KB</span></li>
+<li><a class='mono' href='misc/refs.bib'>misc/refs.bib</a><span class='mono muted'>22 KB</span></li>
+<li><a class='mono' href='misc/stopwords.txt'>misc/stopwords.txt</a><span class='mono muted'>1 KB</span></li>
+</ul></details>
+<details><summary><span>(root)</span><span class='mono muted'>2 files · 26 KB</span></summary><ul>
+<li><a class='mono' href='README.md'>README.md</a><span class='mono muted'>1 KB</span></li>
+<li><a class='mono' href='reproduce.json'>reproduce.json</a><span class='mono muted'>24 KB</span></li>
+</ul></details>
+<footer>Generated by e2er at export and fingerprinted in provenance.json like every other file. Everything above is read from this bundle — open any file beside this one to check it. Verification establishes that the paper's claims trace to the artifacts that produced them; whether the analysis was a good idea is a separate question, and still the reader's.</footer>
+</div></body></html>
