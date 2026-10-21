@@ -5,7 +5,7 @@
 
 **Question:** How are confirmed exoplanets distributed in planet radius and orbital period, and how does that distribution change when radii measured from transits are separated from radii calculated from planet mass?
 
-**Dossier:** https://e2er.org/d/4b37c8f62f137839 (every step of the run, the models, the data loads and the checks; id `sha256:4b37c8f62f137839e64d88c04652fe7addacbaa7c3e98b9a94418102de1371d2`)
+**Dossier:** https://e2er.org/d/3f3a95d2a49b0c71 (every step of the run, the models, the data loads and the checks; id `sha256:3f3a95d2a49b0c71e9445ca5c86f2088f5835c1ad3be7d762ea1c130faa1f621`)
 
 **Made with:** e2er 0.16.0; template descriptive-study; model sonnet (claude_code)
 

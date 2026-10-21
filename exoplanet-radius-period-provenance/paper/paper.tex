@@ -9,12 +9,21 @@
 \title{How Are Confirmed Exoplanets Distributed in Planet Radius and Orbital Period? A Descriptive Decomposition by Radius Provenance}
 \date{}
 
-\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/4b37c8f62f137839}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
+\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/3f3a95d2a49b0c71}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
 \begin{document}
 \maketitle
 
 \begin{abstract}
-\noindent The catalogue of confirmed exoplanets is routinely read as a map of where planets are, yet its radii come from two routes: transit depth, and a mass-radius relation applied to planets without a transit. We separate these routes using the label that the NASA Exoplanet Archive attaches to each radius and describe the joint distribution of radius and orbital period for each group. Planets with radii calculated from mass are larger and sit on much longer orbits than planets with transit-measured radii, and the two groups overlap little in the radius-period plane. Of the two humps in the pooled radius distribution, the one at 2 to 4 Earth radii consists mostly of transit-measured radii (1,901 of 2,090 planets), whereas more than half of the giant-planet hump at 8 to 15 Earth radii consists of radii calculated from mass (846 of 1,529). The study is purely descriptive: it documents patterns in the catalogue, not in the planet population, and makes no causal claim.
+\noindent The radius-period diagram of the NASA Exoplanet Archive is widely read as a map of where planets are, yet its radii come from two routes: transit depth, and a mass-radius relation applied to planets without a transit. We ask how catalogued planets are distributed in radius and orbital period, and how that distribution changes when the two routes are separated using the archive's own label. We describe 6,045 planets with both values.
+% src: estimation_results.json#sample.n_observations
+Planets with radii calculated from mass, about a fifth of the sample, have a median radius about five times and a median period about 45 times those of transit-measured planets.
+% src: estimation_results.json#comparisons.calculated_minus_measured_transiting.lp_median_diff.ratio_10_pow
+The small-planet hump consists mostly of transit-measured radii, while more than half of the giant-planet hump consists of calculated radii, which the assumed relation caps at 14.3 Earth radii.
+% src: estimation_results.json#statistics.radius_calculated.max
+The two provenances therefore describe different parts of the catalogue, and pooled patterns in the diagram mix them.
+
+\medskip
+\noindent Keywords: exoplanets, planet radius, orbital period, NASA Exoplanet Archive, mass-radius relation.
 \end{abstract}
 
 \section{Introduction}

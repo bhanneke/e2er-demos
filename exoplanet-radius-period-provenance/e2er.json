@@ -1,7 +1,7 @@
 {
   "schema": "e2er-research-object/0.1",
   "id": "bhanneke/exoplanet-radius-period-provenance",
-  "content_id": "sha256:96072a373cf1e176e440b4d638ed5315ca6316835f1c28d4c496f9bfe945c28a",
+  "content_id": "sha256:ea8fff3894dce9f325a8fa59842951aff037ed362b99ebc6c494360261678b99",
   "title": "How are confirmed exoplanets distributed in planet radius and orbital period,...",
   "question": "How are confirmed exoplanets distributed in planet radius and orbital period, and how does that distribution change when radii measured from transits are separated from radii calculated from planet mass?",
   "contributors": [
@@ -461,15 +461,15 @@
   "outputs": [
     {
       "path": "paper/abstract.tex",
-      "sha256": "791b69545b82e12daabed78f7c871a340bd20762ba89ad0d9a88265821d2e6ab"
+      "sha256": "6e2bb42c4ae0552a7e710150cf461204591df3b67a49e4a109917d9a16a626ee"
     },
     {
       "path": "paper/paper.pdf",
-      "sha256": "de42bb51ce30df8059e93b09dad82b720e667e7ea304d6fced7c6933af32bb47"
+      "sha256": "e2b7ac3fe82bdf2c7cbfd18fd630d559889ec4d951fe77b7d710cb7cff61d3af"
     },
     {
       "path": "paper/paper.tex",
-      "sha256": "7152a7bbbb3cfd43d2040a3264beb7cc9fdb81f18160eb66f55637d621252a4f"
+      "sha256": "8260f58c8642fdbf33a3e79e6a2be3521082c0394706af2c1e21732743ff97ec"
     },
     {
       "path": "paper/refs.bib",
@@ -582,12 +582,12 @@
     {
       "check": "integrity",
       "status": "PASS",
-      "detail": "59 files hash-verified against provenance.json; 76 table cell(s) traced in the derivation graph; 5 change(s) after export recorded as amendments (README.md, paper/paper.pdf, paper/paper.tex)"
+      "detail": "59 files hash-verified against provenance.json; 76 table cell(s) traced in the derivation graph; 12 change(s) after export recorded as amendments (README.md, paper/abstract.tex, paper/paper.pdf); the abstract rewritten after export by e2er's abstract step (paper/abstract.tex, paper/paper.pdf, paper/paper.tex, report.html)"
     },
     {
       "check": "numbers",
       "status": "PASS",
-      "detail": "76 table cell(s) are source values at the precision shown; text (not gating): 142 of 142 number(s) are source values, 0 differ from the quantity named nearby, 0 untraced"
+      "detail": "76 table cell(s) are source values at the precision shown; text (not gating): 140 of 140 number(s) are source values, 0 differ from the quantity named nearby, 0 untraced"
     },
     {
       "check": "tables",
@@ -696,9 +696,89 @@
     }
   },
   "dossier": {
-    "id": "sha256:4b37c8f62f137839e64d88c04652fe7addacbaa7c3e98b9a94418102de1371d2",
-    "url": "https://e2er.org/d/4b37c8f62f137839",
+    "id": "sha256:3f3a95d2a49b0c71e9445ca5c86f2088f5835c1ad3be7d762ea1c130faa1f621",
+    "url": "https://e2er.org/d/3f3a95d2a49b0c71",
     "doc": {
+      "amendments": [
+        {
+          "at": "2026-10-19T22:44:09Z",
+          "e2er_version": "0.17.1",
+          "from_dossier": "sha256:4968c2075e30009dbf1a3868b94ee6aa05ac6aca888293ae5c88473a5b18bfb9",
+          "from_version": 1,
+          "kind": "carried_over",
+          "path": "e2er.json",
+          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 1 (https://e2er.org/d/4968c2075e30009d). Its steps are the ones that version recorded; none was added or rebuilt.",
+          "sha256_before": "eb59749b5a442bbcfb6a5848ef5cf286461ec422bdb863de1dc9f575016dfb55"
+        },
+        {
+          "path": "paper/abstract.tex",
+          "kind": "abstract_rewritten",
+          "sha256_before": "791b69545b82e12daabed78f7c871a340bd20762ba89ad0d9a88265821d2e6ab",
+          "sha256_after": "6e2bb42c4ae0552a7e710150cf461204591df3b67a49e4a109917d9a16a626ee",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:02:20Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 1556
+        },
+        {
+          "path": "paper/paper.tex",
+          "kind": "abstract_rewritten",
+          "sha256_before": "7152a7bbbb3cfd43d2040a3264beb7cc9fdb81f18160eb66f55637d621252a4f",
+          "sha256_after": "45bea0fe1d14072802d82884cff8f934dc969bad674183784d8dd6e6978a67d4",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:02:20Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 20510
+        },
+        {
+          "path": "paper/paper.pdf",
+          "kind": "abstract_rewritten",
+          "sha256_before": "de42bb51ce30df8059e93b09dad82b720e667e7ea304d6fced7c6933af32bb47",
+          "sha256_after": "34140e410afa504572d038dabef8a5b3cc48aed2e7fa86f1b5eace2474b67b7e",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:02:20Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 55982
+        },
+        {
+          "path": "report.html",
+          "kind": "abstract_rewritten",
+          "sha256_before": "3393f75f4f902e03b4d7bf029dd3dd99b434b6cbfd992a629e48076a7e886092",
+          "sha256_after": "d4637b5b3b9f2c9c007dacb260418f47bac01c3a7d0d0e09360ebd2b71e7c199",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:02:20Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 16520
+        },
+        {
+          "path": "e2er.json",
+          "kind": "carried_over",
+          "sha256_before": "902e4b6fb637d85fc0176343e941c8b27bb6fe334d477effe983ec92af9f42e1",
+          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 2 (https://e2er.org/d/4b37c8f62f137839). Its steps are the ones that version recorded; none was added or rebuilt.",
+          "at": "2026-10-21T23:03:10Z",
+          "from_version": 2,
+          "from_dossier": "sha256:4b37c8f62f137839e64d88c04652fe7addacbaa7c3e98b9a94418102de1371d2",
+          "e2er_version": "0.17.3"
+        }
+      ],
+      "availability": {
+        "data": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        },
+        "code": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        }
+      },
       "components": [
         {
           "id": "agent:abstract_writer",
@@ -2341,29 +2421,7 @@
           "type": "specialist"
         }
       ],
-      "availability": {
-        "data": {
-          "access": "public",
-          "url": "https://github.com/bhanneke/e2er-demos"
-        },
-        "code": {
-          "access": "public",
-          "url": "https://github.com/bhanneke/e2er-demos"
-        }
-      },
-      "purpose": "demonstration",
-      "amendments": [
-        {
-          "path": "e2er.json",
-          "kind": "carried_over",
-          "sha256_before": "eb59749b5a442bbcfb6a5848ef5cf286461ec422bdb863de1dc9f575016dfb55",
-          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 1 (https://e2er.org/d/4968c2075e30009d). Its steps are the ones that version recorded; none was added or rebuilt.",
-          "at": "2026-10-19T22:44:09Z",
-          "from_version": 1,
-          "from_dossier": "sha256:4968c2075e30009dbf1a3868b94ee6aa05ac6aca888293ae5c88473a5b18bfb9",
-          "e2er_version": "0.17.1"
-        }
-      ]
+      "purpose": "demonstration"
     }
   }
 }
