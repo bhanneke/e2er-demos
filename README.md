@@ -20,12 +20,12 @@ Each folder holds the files of one study made with [e2er](https://e2er.org): the
    How does GDP per capita in purchasing power standards vary across the EU's NUTS-2 regions in 2024, and how strongly do regions with high and low GDP per capita cluster in space?
 7. [`road-traffic-death-rates-2021/`](road-traffic-death-rates-2021/) · [study page](https://e2er.org/bhanneke/road-traffic-death-rates-2021) · [dossier](https://e2er.org/d/c655a736c75bf6bb)  
    How do estimated road traffic death rates per 100,000 people vary across countries and WHO regions in 2021? A descriptive study with the WHO Global Health Observatory indicator RS_198.
-8. `weather-words-english-novels/` (files not in this repository yet) · [study page](https://e2er.org/bhanneke/weather-words-english-novels)  
+8. [`weather-words-english-novels/`](weather-words-english-novels/) · [study page](https://e2er.org/bhanneke/weather-words-english-novels) · [dossier](https://e2er.org/d/d9f0b0004906f789)  
    How did the vocabulary of weather (rain, wind, storm, fog, snow, sun, cloud and related words) vary across English-language novels by authors born in six cohorts, 1770–1799 to 1880–1899?
 
 ## Data and their terms
 
-Data go into a folder only when their source's terms allow passing them on. Data from sources whose terms do not (for example Gaia, Eurostat GISCO and the WHO Global Health Observatory), and files a study built from them, are left out. The README of each folder names every file left out and the reason, and `e2er reproduce <folder>` loads those data again from their source and rebuilds the derived files with the study's own scripts. The data keep their sources' terms; each folder's README gives the terms and the citation of every source.
+Data go into a folder only when their source's terms allow passing them on. Data from sources whose terms do not (for example Gaia, Eurostat GISCO and the WHO Global Health Observatory), and files a study built from them, are left out. The README of each folder names every file left out and the reason, and `e2er reproduce <folder>` loads those data again from their source and rebuilds the derived files with the study's own scripts. A data file larger than GitHub takes (100 MB) is left out as well when the study's recorded steps get it back: demo 8's `data/data.db` (145 MB), whose Project Gutenberg texts `e2er reproduce` loads again and whose corpus tables it builds again with the study's own script. The data keep their sources' terms; each folder's README gives the terms and the citation of every source.
 
 ## Checking a study
 
