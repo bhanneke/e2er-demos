@@ -5,14 +5,22 @@
 \usepackage{amsmath}
 
 \title{Estimated Road Traffic Death Rates across Countries and WHO Regions, 2021}
-\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/c655a736c75bf6bb}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
+\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/a73c0a40f591db08}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
 \date{}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-Road traffic deaths remain a major source of preventable mortality, yet the reported burden differs sharply between countries. We describe the distribution of the World Health Organization's estimated road traffic death rate (GHO indicator RS\_198) across 195 countries in 2021, summarise it by the six WHO regions, and identify the countries with the highest and lowest rates. The national median is 12.3 deaths per 100,000 population, and the middle half of countries lie between 7.3 and 18.1. The African region averages 19.4, roughly three times the 6.7 observed in the European region. WHO region membership accounts for about 39 percent of the variation in national rates. The values are model-based estimates that combine observed data with WHO's modelling assumptions, and the extract analysed here carries no uncertainty bounds. The paper makes no causal claims.
+Road traffic deaths remain a major source of preventable mortality, yet the reported burden differs sharply between countries. We ask how the World Health Organization's estimated road traffic death rate varies across countries and WHO regions in 2021. We describe the rate for 195 countries and areas in the WHO Global Health Observatory, summarise it by the six WHO regions, and identify the highest and lowest rates. The median country records 12.3 deaths per 100,000 population, unweighted by population size.
+% src: estimation_results.json#sample.n_observations
+% src: estimation_results.json#statistics.death_rate.median
+The African region averages about three times the rate of the European region, the lowest of the six. Regions separate 39 percent of the variation in national rates.
+% src: estimation_results.json#variance_decomposition.between_region_share
+Because the rates are model-based estimates, the pattern describes WHO's modelled figures, which show a wide gap between countries that follows regional lines.
+
+\medskip
+\noindent Keywords: road traffic deaths, WHO regions, Global Health Observatory, descriptive study.
 \end{abstract}
 
 \section{Introduction}

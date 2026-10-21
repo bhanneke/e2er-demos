@@ -4,7 +4,7 @@
       "bytes": 5689,
       "part": "study",
       "path": "README.md",
-      "sha256": "599ab68062261c24df76794ca98201772168815dbb62b91bfe4d763657a8b9e2"
+      "sha256": "d2c754a490b7ce2450744ad1fc97c082796fdd05c2700d5330b1cd1b98115a65"
     },
     {
       "bytes": 4861,
@@ -85,10 +85,10 @@
       "sha256": "9d183bac94da9d663ccbee8ffe0bfc44e73bc0bd53636603b6fb174d6565e299"
     },
     {
-      "bytes": 72897,
+      "bytes": 76162,
       "part": "study",
       "path": "e2er.json",
-      "sha256": "ecae14c984cf130ee7bc4ebd51f205199949e7d1438588d58673e247fae95ed4"
+      "sha256": "142fd54d4a7d5572564b004545f8c2b765722082af4faa54c3fcdb1fecbd50df"
     },
     {
       "bytes": 13142,
@@ -127,16 +127,22 @@
       "sha256": "741d3d78668f05ae202d401de14f56b8aa51140ebaaf46b00d41662f5f12f971"
     },
     {
-      "bytes": 51347,
+      "bytes": 1170,
       "part": "study",
-      "path": "paper/paper.pdf",
-      "sha256": "e535311752af1ce26cdbd1cbe8839db5493d41b69c4db2a4e95571d7f32b8582"
+      "path": "paper/abstract.tex",
+      "sha256": "d4e80e8e257bba589c706ceaf317980eb6a5cb8372d2f32d9e98c3c119a64a4e"
     },
     {
-      "bytes": 15696,
+      "bytes": 51261,
+      "part": "study",
+      "path": "paper/paper.pdf",
+      "sha256": "56f67089f858f294ada495122622228f490f3032f4e5600b8896cc2a9a2d1639"
+    },
+    {
+      "bytes": 15962,
       "part": "study",
       "path": "paper/paper.tex",
-      "sha256": "4ac2afe3bcbf9b0feb047be0e2d029d2d91d0894e4205e74645daea29a5dc9ef"
+      "sha256": "08c2c72b1b082c47ae43d8894a0541ace67a1ff15e986d79bf794f48f726920f"
     },
     {
       "bytes": 5437,
@@ -157,10 +163,10 @@
       "sha256": "94073a53d9947e3b0c26c704c0b9e9a55103bc535cb25b875ee7be2931a07484"
     },
     {
-      "bytes": 25031,
+      "bytes": 28358,
       "part": "study",
       "path": "provenance.json",
-      "sha256": "1ad19e8138ed9d932335a3775c2bb6fe2ac9b4c3ab8efa105c47696f80eee620"
+      "sha256": "0c30a0a1f640703d6456fd24c87f7bcb4eb38cd9880d5578268e891a7b84d677"
     },
     {
       "bytes": 7130,
@@ -181,10 +187,10 @@
       "sha256": "9fb717ffed1bca38efd2fe0f8fa8fee9238847410806177b3302648b4e22683b"
     },
     {
-      "bytes": 13122,
+      "bytes": 14023,
       "part": "study",
       "path": "report.html",
-      "sha256": "a5499f269d22f4582a0f01927c8b72fbb1c6032e9c11f3fa8da826e4d47151e8"
+      "sha256": "ac586d4e9dbe704d2eeffc09327fa3459731e74dc015fc69a82cc4befe208ea2"
     },
     {
       "bytes": 3827,
@@ -296,7 +302,7 @@
     }
   ],
   "created": "20261015",
-  "e2er_version": "0.17.1",
+  "e2er_version": "0.17.3",
   "environment": {
     "hashes": true,
     "lock": "e2er-package/requirements.lock.txt",
@@ -304,7 +310,7 @@
     "python": "3.12",
     "resolved_as_of": "2026-10-16"
   },
-  "fingerprint": "sha256:5c616561790cd3c468f8be3534186f21afb9c4286c90603d621eeb81803686ca",
+  "fingerprint": "sha256:2eb7d09d41bf8b40ded46f1aa308957ceae83c4a238464ce53074df840bde6fa",
   "format": "e2er-package/1",
   "left_out": [
     {
@@ -320,32 +326,102 @@
       "content": {
         "tables": {
           "country_names": {
+            "columns": [
+              "adm0_a3",
+              "iso_a3_eh",
+              "iso_a3",
+              "name",
+              "name_long",
+              "continent",
+              "region_un",
+              "subregion",
+              "pop_est",
+              "geometry"
+            ],
             "content_sha256": "f810457fde37f5756dca49eb64ee66c8f73a3d459b75e6898cab227f4d9b5556",
             "numeric_sha256": "8161b52753a8ef561d454330986ac7573916fb2af320f1e76067f1fa279fd32d",
             "rows": 242
           },
           "road_deaths_2021": {
+            "columns": [
+              "indicator",
+              "spatial_type",
+              "location",
+              "parent_location",
+              "time_type",
+              "year",
+              "period",
+              "dim1_type",
+              "dim1",
+              "dim2_type",
+              "dim2",
+              "dim3_type",
+              "dim3",
+              "value",
+              "low",
+              "high",
+              "value_text",
+              "comments",
+              "updated"
+            ],
             "content_sha256": "10810423479c642767bac0abb8a22868eaf179b305ebd32e9dea3060b081c35e",
             "numeric_sha256": "524524ac672678911ac0a910de8e9887462db0d5cb48ca909072f48fc3a0fabb",
             "rows": 204
           },
           "who_region_lookup": {
+            "columns": [
+              "region_code",
+              "region_name",
+              "value"
+            ],
             "content_sha256": "776d577ea7c3d368051485fc791767fe87c41776b9e5b089a86469f05589b812",
             "numeric_sha256": "776d577ea7c3d368051485fc791767fe87c41776b9e5b089a86469f05589b812",
             "rows": 6
           },
           "who_rs198_2021": {
+            "columns": [
+              "indicator",
+              "spatial_type",
+              "location",
+              "parent_location",
+              "time_type",
+              "year",
+              "period",
+              "dim1_type",
+              "dim1",
+              "dim2_type",
+              "dim2",
+              "dim3_type",
+              "dim3",
+              "value",
+              "low",
+              "high",
+              "value_text",
+              "comments",
+              "updated"
+            ],
             "content_sha256": "10810423479c642767bac0abb8a22868eaf179b305ebd32e9dea3060b081c35e",
             "numeric_sha256": "524524ac672678911ac0a910de8e9887462db0d5cb48ca909072f48fc3a0fabb",
             "rows": 204
           },
           "who_rs198_2021_clean": {
+            "columns": [
+              "iso3",
+              "country_name",
+              "who_region_name",
+              "who_region",
+              "year",
+              "value",
+              "low",
+              "high"
+            ],
             "content_sha256": "7d760c0da4945585f888d50992f2567af45fde6e222bb14b4db52f11238be723",
             "numeric_sha256": "2c4ec3a5d6ada5fc3d7195433e8946da7ea09907d3163b0d747c27385e1c7627",
             "rows": 195
           }
         }
       },
+      "kind": "terms",
       "loads": [
         "country_names",
         "road_deaths_2021",

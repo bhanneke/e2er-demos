@@ -1,7 +1,7 @@
 {
   "schema": "e2er-research-object/0.1",
   "id": "bhanneke/road-traffic-death-rates-2021",
-  "content_id": "sha256:1ad19e8138ed9d932335a3775c2bb6fe2ac9b4c3ab8efa105c47696f80eee620",
+  "content_id": "sha256:0c30a0a1f640703d6456fd24c87f7bcb4eb38cd9880d5578268e891a7b84d677",
   "title": "How do estimated road traffic death rates per 100,000 people vary across coun...",
   "question": "How do estimated road traffic death rates per 100,000 people vary across countries and WHO regions in 2021? A descriptive study with the WHO Global Health Observatory indicator RS_198.",
   "contributors": [
@@ -388,12 +388,16 @@
   ],
   "outputs": [
     {
+      "path": "paper/abstract.tex",
+      "sha256": "d4e80e8e257bba589c706ceaf317980eb6a5cb8372d2f32d9e98c3c119a64a4e"
+    },
+    {
       "path": "paper/paper.pdf",
-      "sha256": "e535311752af1ce26cdbd1cbe8839db5493d41b69c4db2a4e95571d7f32b8582"
+      "sha256": "56f67089f858f294ada495122622228f490f3032f4e5600b8896cc2a9a2d1639"
     },
     {
       "path": "paper/paper.tex",
-      "sha256": "4ac2afe3bcbf9b0feb047be0e2d029d2d91d0894e4205e74645daea29a5dc9ef"
+      "sha256": "08c2c72b1b082c47ae43d8894a0541ace67a1ff15e986d79bf794f48f726920f"
     },
     {
       "path": "paper/refs.bib",
@@ -461,7 +465,7 @@
     }
   ],
   "provenance": {
-    "files": 47,
+    "files": 48,
     "edges": {
       "citation": 4,
       "data": 1,
@@ -474,12 +478,12 @@
     {
       "check": "integrity",
       "status": "PASS",
-      "detail": "47 files hash-verified against provenance.json; 41 table cell(s) traced in the derivation graph; 5 change(s) after export recorded as amendments (README.md, paper/paper.pdf, paper/paper.tex)"
+      "detail": "48 files hash-verified against provenance.json; 41 table cell(s) traced in the derivation graph; 12 change(s) after export recorded as amendments (README.md, paper/abstract.tex, paper/paper.pdf); the abstract rewritten after export by e2er's abstract step (paper/abstract.tex, paper/paper.pdf, paper/paper.tex, report.html)"
     },
     {
       "check": "numbers",
       "status": "PASS",
-      "detail": "44 table cell(s) are source values at the precision shown; text (not gating): 63 of 65 number(s) are source values, 0 differ from the quantity named nearby, 2 untraced"
+      "detail": "44 table cell(s) are source values at the precision shown; text (not gating): 59 of 61 number(s) are source values, 0 differ from the quantity named nearby, 2 untraced"
     },
     {
       "check": "tables",
@@ -574,7 +578,8 @@
     "left_out": [
       {
         "path": "data/data.db",
-        "reason": "the terms of the WHO Global Health Observatory (WHO GHO) do not allow passing the data on"
+        "reason": "the terms of the WHO Global Health Observatory (WHO GHO) do not allow passing the data on",
+        "kind": "terms"
       }
     ]
   },
@@ -590,9 +595,88 @@
     }
   },
   "dossier": {
-    "id": "sha256:c655a736c75bf6bbca0227142bc52b9270b7ca1c5ee0f79fb91bd84d527b8e2a",
-    "url": "https://e2er.org/d/c655a736c75bf6bb",
+    "id": "sha256:a73c0a40f591db08ec7957e98d09f1b44455fce3b439bcca357dcc1bacae42e6",
+    "url": "https://e2er.org/d/a73c0a40f591db08",
     "doc": {
+      "amendments": [
+        {
+          "at": "2026-10-19T22:46:23Z",
+          "e2er_version": "0.17.1",
+          "from_dossier": "sha256:8a2a519e8cd9d086ba1156a9b5f060fafd8fceb342b737bb1dcea0c6bdfc02ce",
+          "from_version": 1,
+          "kind": "carried_over",
+          "path": "e2er.json",
+          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 1 (https://e2er.org/d/8a2a519e8cd9d086). Its steps are the ones that version recorded; none was added or rebuilt.",
+          "sha256_before": "f16017731422c7d7439da291dc9f1ab0f43013996bc0b9efe1c8f2d10b6b2f02"
+        },
+        {
+          "path": "paper/abstract.tex",
+          "kind": "abstract_rewritten",
+          "sha256_before": null,
+          "sha256_after": "d4e80e8e257bba589c706ceaf317980eb6a5cb8372d2f32d9e98c3c119a64a4e",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:11:11Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": null
+        },
+        {
+          "path": "paper/paper.tex",
+          "kind": "abstract_rewritten",
+          "sha256_before": "4ac2afe3bcbf9b0feb047be0e2d029d2d91d0894e4205e74645daea29a5dc9ef",
+          "sha256_after": "85a0bbee17d86f0315565a999ea8a8930800dd70e51cad38ee64c84706186e48",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:11:11Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 15696
+        },
+        {
+          "path": "paper/paper.pdf",
+          "kind": "abstract_rewritten",
+          "sha256_before": "e535311752af1ce26cdbd1cbe8839db5493d41b69c4db2a4e95571d7f32b8582",
+          "sha256_after": "9bc62298982a6b71a3bff13d46d10c377522c9f30e9c4f551c13757a2f83049f",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:11:11Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 51347
+        },
+        {
+          "path": "report.html",
+          "kind": "abstract_rewritten",
+          "sha256_before": "a5499f269d22f4582a0f01927c8b72fbb1c6032e9c11f3fa8da826e4d47151e8",
+          "sha256_after": "ac586d4e9dbe704d2eeffc09327fa3459731e74dc015fc69a82cc4befe208ea2",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-21T23:11:11Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 13122
+        },
+        {
+          "path": "e2er.json",
+          "kind": "carried_over",
+          "sha256_before": "3eefa528faa118900ae166189162e79e3f639f2f49bfe2fb4a599bd84bc92bbf",
+          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 2 (https://e2er.org/d/c655a736c75bf6bb). Its steps are the ones that version recorded; none was added or rebuilt.",
+          "at": "2026-10-21T23:11:26Z",
+          "from_version": 2,
+          "from_dossier": "sha256:c655a736c75bf6bbca0227142bc52b9270b7ca1c5ee0f79fb91bd84d527b8e2a",
+          "e2er_version": "0.17.3"
+        }
+      ],
+      "availability": {
+        "data": {
+          "access": "private"
+        },
+        "code": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        }
+      },
       "components": [
         {
           "id": "agent:data_analyst",
@@ -1946,28 +2030,7 @@
           "type": "specialist"
         }
       ],
-      "availability": {
-        "data": {
-          "access": "private"
-        },
-        "code": {
-          "access": "public",
-          "url": "https://github.com/bhanneke/e2er-demos"
-        }
-      },
-      "purpose": "demonstration",
-      "amendments": [
-        {
-          "path": "e2er.json",
-          "kind": "carried_over",
-          "sha256_before": "f16017731422c7d7439da291dc9f1ab0f43013996bc0b9efe1c8f2d10b6b2f02",
-          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 1 (https://e2er.org/d/8a2a519e8cd9d086). Its steps are the ones that version recorded; none was added or rebuilt.",
-          "at": "2026-10-19T22:46:23Z",
-          "from_version": 1,
-          "from_dossier": "sha256:8a2a519e8cd9d086ba1156a9b5f060fafd8fceb342b737bb1dcea0c6bdfc02ce",
-          "e2er_version": "0.17.1"
-        }
-      ]
+      "purpose": "demonstration"
     }
   }
 }
