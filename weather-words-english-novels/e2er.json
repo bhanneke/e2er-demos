@@ -1,7 +1,7 @@
 {
   "schema": "e2er-research-object/0.1",
   "id": "bhanneke/weather-words-english-novels",
-  "content_id": "sha256:acba66e2aa16582e34724e43dadc1ef44e5d5c220ab99af203c48318823670c5",
+  "content_id": "sha256:91974dea76255c01a551d630d9d43054b212f0b4906e11c1cf59e1a71003ac4a",
   "title": "How did the vocabulary of weather (rain, wind, storm, fog, snow, sun, cloud a...",
   "question": "How did the vocabulary of weather (rain, wind, storm, fog, snow, sun, cloud and related words) vary across English-language novels by authors born in six cohorts, 1770–1799 to 1880–1899?",
   "contributors": [
@@ -517,15 +517,15 @@
   "outputs": [
     {
       "path": "paper/abstract.tex",
-      "sha256": "d6b1046f38507cf65e1237dff70936f20ef90e4b19d39b7209db4732aa5bb05b"
+      "sha256": "05a82493ea9f7cad019b6146579f89b06d8cf4be2a9cf3171467d97f0677a449"
     },
     {
       "path": "paper/paper.pdf",
-      "sha256": "012eb9840b88294fda8b1eeb0c719e75fdf953b2abe2ca838fd7a24737a634d7"
+      "sha256": "26c2befec2b86964b5ae85fba949c4270277487b85702109b16eaa39c29b0e7a"
     },
     {
       "path": "paper/paper.tex",
-      "sha256": "d66cf47b8844dfeedb957e0791bb2ed56314ebcf59e5b18584089bbc7d655602"
+      "sha256": "4450205991f53acc1c5f2546925dd4c9e0a4f4607bad80e8233c0be61ef9f1d7"
     },
     {
       "path": "paper/refs.bib",
@@ -690,7 +690,7 @@
     {
       "check": "integrity",
       "status": "PASS",
-      "detail": "100 files hash-verified against provenance.json; 211 table cell(s) traced in the derivation graph; 11 change(s) after export recorded as amendments (README.md, paper/abstract.tex, paper/paper.pdf); the abstract rewritten after export by e2er's abstract step (paper/abstract.tex, paper/paper.pdf, paper/paper.tex, report.html)"
+      "detail": "100 files hash-verified against provenance.json; 211 table cell(s) traced in the derivation graph; 18 change(s) after export recorded as amendments (README.md, paper/abstract.tex, paper/paper.pdf); the abstract rewritten after export by e2er's abstract step (paper/abstract.tex, paper/paper.pdf, paper/paper.tex, report.html); the abstract edited by the researcher after export (paper/abstract.tex, paper/paper.pdf, paper/paper.tex, report.html)"
     },
     {
       "check": "numbers",
@@ -816,8 +816,8 @@
     }
   },
   "dossier": {
-    "id": "sha256:67f22aa2136e140dad0320341756dc97b55f9fbd4c981605ae119181d19fd5a3",
-    "url": "https://e2er.org/d/67f22aa2136e140d",
+    "id": "sha256:67003a14962e653f9ed78db89c1ef1d5a15aa24cfe4390cbb3bbd8b50c0dd426",
+    "url": "https://e2er.org/d/67003a14962e653f",
     "doc": {
       "study": {
         "title": "How did the vocabulary of weather (rain, wind, storm, fog, snow, sun, cloud a..."
@@ -4458,6 +4458,50 @@
           "backend": "claude_code",
           "e2er_version": "0.17.3",
           "bytes_before": 22321
+        },
+        {
+          "path": "paper/abstract.tex",
+          "kind": "abstract_edited_by_researcher",
+          "sha256_before": "d6b1046f38507cf65e1237dff70936f20ef90e4b19d39b7209db4732aa5bb05b",
+          "sha256_after": "05a82493ea9f7cad019b6146579f89b06d8cf4be2a9cf3171467d97f0677a449",
+          "reason": "corrected to the paper's claim: ranges compared, no variance decomposition",
+          "at": "2026-10-22T07:55:51Z",
+          "edited_by": "researcher",
+          "e2er_version": "0.17.3",
+          "bytes_before": 1307
+        },
+        {
+          "path": "paper/paper.tex",
+          "kind": "abstract_edited_by_researcher",
+          "sha256_before": "d66cf47b8844dfeedb957e0791bb2ed56314ebcf59e5b18584089bbc7d655602",
+          "sha256_after": "d635a3c6c4d7688d6081785675b8e1b00a3f5b4ec5b7479b1c01e9cc739a3f5f",
+          "reason": "corrected to the paper's claim: ranges compared, no variance decomposition",
+          "at": "2026-10-22T07:55:51Z",
+          "edited_by": "researcher",
+          "e2er_version": "0.17.3",
+          "bytes_before": 47669
+        },
+        {
+          "path": "paper/paper.pdf",
+          "kind": "abstract_edited_by_researcher",
+          "sha256_before": "012eb9840b88294fda8b1eeb0c719e75fdf953b2abe2ca838fd7a24737a634d7",
+          "sha256_after": "0b3d4bbc8adc2dad8b3b561aa80e284d4a1013aecbbe2ece0704fa3be4653cff",
+          "reason": "corrected to the paper's claim: ranges compared, no variance decomposition",
+          "at": "2026-10-22T07:55:51Z",
+          "edited_by": "researcher",
+          "e2er_version": "0.17.3",
+          "bytes_before": 86721
+        },
+        {
+          "path": "report.html",
+          "kind": "abstract_edited_by_researcher",
+          "sha256_before": "30dcb53ec00cb6ec656790f282fafb07d5cfc58e6c6372999e4d6925b4422739",
+          "sha256_after": "2e5e37bed190ef217ea92f1e52e3db845187d4e63aca80a8351f9e22770ed190",
+          "reason": "corrected to the paper's claim: ranges compared, no variance decomposition",
+          "at": "2026-10-22T07:55:51Z",
+          "edited_by": "researcher",
+          "e2er_version": "0.17.3",
+          "bytes_before": 21339
         }
       ]
     }
