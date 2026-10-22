@@ -8,32 +8,20 @@
 \onehalfspacing
 
 \title{Which Stars within 3 Degrees of the Pleiades Centre Share Its Astrometry? A Descriptive Reading of Gaia DR3 Membership, Parallax Distance and the Colour--Magnitude Diagram}
-\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/f6140fa5d03bcc07}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
+\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/70828157f74f556d}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
 \date{13 October 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We describe the stars within 3 degrees of the Pleiades centre that share the cluster's parallax and proper motion in Gaia DR3. The quality sample holds 9,970 sources with five- or six-parameter astrometry, a renormalised unit weight error (RUWE) below 1.4 and a parallax over error above 10.
-% src: estimation_results.json#sample.n_observations
-A three-sigma parallax window and a 5 mas/yr proper-motion radius, both centred by iterative clipping, select 1,112 members, or 11.2\% of the quality sample.
+The Pleiades is one of the nearest open clusters, and Gaia gives parallaxes and proper motions for its stars. We ask which stars in a small cone around the cluster centre are members by Gaia DR3 parallax and proper motion, and what the members' distances and colour--magnitude diagram show. A parallax window and a proper-motion radius, both centred by iterative clipping, select 1,112 members from the sources with precise astrometry.
 % src: estimation_results.json#membership.stage_counts.pm_radius
-% src: estimation_results.json#statistics.members_share.share
-The members have a median parallax of 7.367 mas and a median distance of 135.7 pc, with a 16th--84th percentile range of 132.3 to 139.3 pc. The distance is $1000/\varpi$ from the uncorrected parallax.
-% src: estimation_results.json#statistics.parallax_mas.median
+Inverting the uncorrected parallax, the members have a median distance of 135.7 parsecs.
 % src: estimation_results.json#distance_summary.distance_pc_median
-% src: estimation_results.json#distance_summary.distance_pc_p16
-% src: estimation_results.json#distance_summary.distance_pc_p84
-Their colour--magnitude diagram (CMD) is populated along a continuous main-sequence locus from $G = 6$ to $G = 18$, with the colours uncorrected for extinction.
-% src: estimation_results.json#main_sequence_locus.0.g_lower
-% src: estimation_results.json#main_sequence_locus.11.g_upper
-Membership counts move by less than 8\% under one-at-a-time changes to the selection, and the full cross of 48 cut combinations spans 913 to 1,184 members.
-% src: estimation_results.json#grid_full_cross.n_rows
-% src: estimation_results.json#grid_full_cross.n_members_min
-% src: estimation_results.json#grid_full_cross.n_members_max
-% src: estimation_results.json#membership.grid_max_change_share
-The study is descriptive: it reports what the astrometry and photometry show, makes no causal claim, and leaves the comparison with published Pleiades distances to a verified source.
+Their colour--magnitude diagram follows one continuous main sequence from bright to faint stars. The membership count shifts little under single changes to the selection and by up to about a fifth under combined changes. The members form a coherent group at that parallax distance, before any correction for the parallax zero-point.
+
+Keywords: Pleiades, open cluster, Gaia DR3, parallax distance, colour--magnitude diagram.
 \end{abstract}
 
 \section{Introduction}

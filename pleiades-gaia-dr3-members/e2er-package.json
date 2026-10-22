@@ -4,7 +4,7 @@
       "bytes": 6131,
       "part": "study",
       "path": "README.md",
-      "sha256": "332f27af93e9e16393a723ee3faa0eaf3a9b8beb4c4ffcb7c66f6b205047a049"
+      "sha256": "12875e65ef5a80e33229152f91692d7587a6f9b3a0369a914249c9c709a9938b"
     },
     {
       "bytes": 4644,
@@ -121,10 +121,10 @@
       "sha256": "9d183bac94da9d663ccbee8ffe0bfc44e73bc0bd53636603b6fb174d6565e299"
     },
     {
-      "bytes": 109537,
+      "bytes": 112782,
       "part": "study",
       "path": "e2er.json",
-      "sha256": "82ed7df5b7a8849b8be84b13a28310ca82d1bdcf972d0fe73539a6a7aea91f6a"
+      "sha256": "b17aa1e7e073770368d561f1fc399b7dfcc1c78bd0ccd4e2d8552a3961d709eb"
     },
     {
       "bytes": 169452,
@@ -181,22 +181,22 @@
       "sha256": "f2a9c68900245aabd50312260fd5c273d7c67d995af247c88f395a47977bc794"
     },
     {
-      "bytes": 1840,
+      "bytes": 1113,
       "part": "study",
       "path": "paper/abstract.tex",
-      "sha256": "5f2e11a14005c2d793cd99902ceeefd3fb8b36df1c48da72f7c98a9dcc152e42"
+      "sha256": "78bfd329e22bce50c70b92019cb70ab8106f0a7f13d37c9264889b3ba559709c"
     },
     {
-      "bytes": 78787,
+      "bytes": 78401,
       "part": "study",
       "path": "paper/paper.pdf",
-      "sha256": "ab7a5a62e861ab4e6f9abae5abbd4ff04df01a1ac935d4109b8d9079a72d2b22"
+      "sha256": "237148ac7977b4dbd60563c306aed5b99ade78a48cda9e096cd7600f5e7e7c99"
     },
     {
-      "bytes": 26035,
+      "bytes": 25165,
       "part": "study",
       "path": "paper/paper.tex",
-      "sha256": "ed5d9b07a24b2fb9cafd599e670400e9af2ee50688d9eadb5f3084f93222f82e"
+      "sha256": "3ee0d96b034e2fb5c102f76e002b84d21277a41b100a9faf424558807ec71017"
     },
     {
       "bytes": 11430,
@@ -223,10 +223,10 @@
       "sha256": "179851cbb95981b99027631175b43b5f20f63f9aaa2266b6be346974c7e8ea8b"
     },
     {
-      "bytes": 58084,
+      "bytes": 61334,
       "part": "study",
       "path": "provenance.json",
-      "sha256": "a0e8c0489139c2bcec04f94dc17ccca45897413ee4027bc85bdd844132403f92"
+      "sha256": "41066f3c39e894b684b6ae43a936e601235bad57613480a9b7e67211b30702de"
     },
     {
       "bytes": 6954,
@@ -247,10 +247,10 @@
       "sha256": "1131c2b0c69194d06916adb21b5b35f3f90e903cdbe1837eeb1426ad23df70e4"
     },
     {
-      "bytes": 17168,
+      "bytes": 16225,
       "part": "study",
       "path": "report.html",
-      "sha256": "67f9d2597889bc9f697e737ae82de4aec4afc3783fca02c75c8a4bc67739b550"
+      "sha256": "d4339953a10cab1d778231c4910b51fadfa236eca360f5b642d42342faeb48c3"
     },
     {
       "bytes": 3352,
@@ -380,7 +380,7 @@
     }
   ],
   "created": "20261015",
-  "e2er_version": "0.17.1",
+  "e2er_version": "0.17.3",
   "environment": {
     "hashes": true,
     "lock": "e2er-package/requirements.lock.txt",
@@ -388,29 +388,81 @@
     "python": "3.12",
     "resolved_as_of": "2026-10-16"
   },
-  "fingerprint": "sha256:5231c464b748fb5f3f19c6ad936013326235a666f85d11778e6cad351db4517e",
+  "fingerprint": "sha256:75a49d377fbe2ca0dfb2e3a99c1a92a11154baad50791c4ae97e0625871e274e",
   "format": "e2er-package/1",
   "left_out": [
     {
       "content": {
         "tables": {
           "gaia_clean": {
+            "columns": [
+              "source_id",
+              "ra",
+              "dec",
+              "dist_deg",
+              "parallax",
+              "parallax_error",
+              "parallax_over_error",
+              "pmra",
+              "pmra_error",
+              "pmdec",
+              "pmdec_error",
+              "ruwe",
+              "astrometric_params_solved",
+              "visibility_periods_used",
+              "phot_g_mean_mag",
+              "phot_g_mean_flux_over_error",
+              "phot_bp_mean_mag",
+              "phot_rp_mean_mag",
+              "bp_rp",
+              "cmd_group"
+            ],
             "content_sha256": "a6fd3090921b53e1b470af89b1b5a7d6f5bc0408bfcd2a7879a5300b1184e546",
             "numeric_sha256": "2d61392c1ad1fb7f44e4b4af4e840ccec354045f83704e5578882907b0051636",
             "rows": 9970
           },
           "gaia_dr3": {
+            "columns": [
+              "source_id",
+              "ra",
+              "dec",
+              "dist_deg",
+              "parallax",
+              "parallax_error",
+              "parallax_over_error",
+              "pmra",
+              "pmra_error",
+              "pmdec",
+              "pmdec_error",
+              "ruwe",
+              "astrometric_params_solved",
+              "visibility_periods_used",
+              "phot_g_mean_mag",
+              "phot_g_mean_flux_over_error",
+              "phot_bp_mean_mag",
+              "phot_rp_mean_mag",
+              "bp_rp"
+            ],
             "content_sha256": "e904b39c9f61d9d78c695bcf28eab271e96ff9c999b0bcc4bb70eaba22e43d79",
             "numeric_sha256": "2988c1e9e4b28accad97043b7b156c1e59978713223bf7bc4a1f2df49116f8ae",
             "rows": 14066
           },
           "pleiades_members": {
+            "columns": [
+              "source_id",
+              "bp_rp",
+              "phot_g_mean_mag",
+              "parallax",
+              "pmra",
+              "pmdec"
+            ],
             "content_sha256": "74a6637c24fc5415c91e7ea53c98d0e5f9a69b94af740868ddbe8eac093e4d44",
             "numeric_sha256": "8aa5c9d8a500924508cbf72b5d230d0a2f54a9dfe31f76f12ce983aaf65d8a46",
             "rows": 1112
           }
         }
       },
+      "kind": "terms",
       "needed": false,
       "path": "data/data.db",
       "reason": "the terms of ESA Gaia Data Release 3 (Gaia) do not allow passing the data on",
@@ -431,6 +483,7 @@
         "numeric_sha256": "9c89ff15f7b039256450565ae4f57694aa0fd4fac50acd304a1577c24cea9a8c",
         "rows": 9970
       },
+      "kind": "terms",
       "needed": true,
       "path": "data/gaia_clean.csv",
       "reason": "built from ESA Gaia Data Release 3 (Gaia) data, whose terms do not allow passing it on",
@@ -442,6 +495,7 @@
       "source": "gaia"
     },
     {
+      "kind": "terms",
       "needed": false,
       "path": "results/figure_spec.json",
       "reason": "built from ESA Gaia Data Release 3 (Gaia) data and holds them row by row (an array of 9,863 values at figures[2].y); its terms do not allow passing them on",

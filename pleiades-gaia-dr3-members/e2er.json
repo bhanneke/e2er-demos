@@ -1,7 +1,7 @@
 {
   "schema": "e2er-research-object/0.1",
   "id": "bhanneke/pleiades-gaia-dr3-members",
-  "content_id": "sha256:a0e8c0489139c2bcec04f94dc17ccca45897413ee4027bc85bdd844132403f92",
+  "content_id": "sha256:41066f3c39e894b684b6ae43a936e601235bad57613480a9b7e67211b30702de",
   "title": "Which stars within 3 degrees of the Pleiades centre are cluster members by Ga...",
   "question": "Which stars within 3 degrees of the Pleiades centre are cluster members by Gaia DR3 parallax and proper motion, and what do their colour-magnitude diagram and parallax distance distribution show about the cluster's distance and main sequence?",
   "contributors": [
@@ -493,15 +493,15 @@
   "outputs": [
     {
       "path": "paper/abstract.tex",
-      "sha256": "5f2e11a14005c2d793cd99902ceeefd3fb8b36df1c48da72f7c98a9dcc152e42"
+      "sha256": "78bfd329e22bce50c70b92019cb70ab8106f0a7f13d37c9264889b3ba559709c"
     },
     {
       "path": "paper/paper.pdf",
-      "sha256": "ab7a5a62e861ab4e6f9abae5abbd4ff04df01a1ac935d4109b8d9079a72d2b22"
+      "sha256": "237148ac7977b4dbd60563c306aed5b99ade78a48cda9e096cd7600f5e7e7c99"
     },
     {
       "path": "paper/paper.tex",
-      "sha256": "ed5d9b07a24b2fb9cafd599e670400e9af2ee50688d9eadb5f3084f93222f82e"
+      "sha256": "3ee0d96b034e2fb5c102f76e002b84d21277a41b100a9faf424558807ec71017"
     },
     {
       "path": "paper/refs.bib",
@@ -598,12 +598,12 @@
     {
       "check": "integrity",
       "status": "PASS",
-      "detail": "63 files hash-verified against provenance.json; 126 table cell(s) traced in the derivation graph; 5 change(s) after export recorded as amendments (README.md, paper/paper.pdf, paper/paper.tex)"
+      "detail": "63 files hash-verified against provenance.json; 126 table cell(s) traced in the derivation graph; 12 change(s) after export recorded as amendments (README.md, paper/abstract.tex, paper/paper.pdf); the abstract rewritten after export by e2er's abstract step (paper/abstract.tex, paper/paper.pdf, paper/paper.tex, report.html)"
     },
     {
       "check": "numbers",
       "status": "PASS",
-      "detail": "126 table cell(s) are source values at the precision shown; text (not gating): 151 of 153 number(s) are source values, 1 differ from the quantity named nearby, 1 untraced"
+      "detail": "126 table cell(s) are source values at the precision shown; text (not gating): 138 of 140 number(s) are source values, 1 differ from the quantity named nearby, 1 untraced"
     },
     {
       "check": "tables",
@@ -701,15 +701,18 @@
     "left_out": [
       {
         "path": "data/data.db",
-        "reason": "the terms of ESA Gaia Data Release 3 (Gaia) do not allow passing the data on"
+        "reason": "the terms of ESA Gaia Data Release 3 (Gaia) do not allow passing the data on",
+        "kind": "terms"
       },
       {
         "path": "data/gaia_clean.csv",
-        "reason": "built from ESA Gaia Data Release 3 (Gaia) data, whose terms do not allow passing it on"
+        "reason": "built from ESA Gaia Data Release 3 (Gaia) data, whose terms do not allow passing it on",
+        "kind": "terms"
       },
       {
         "path": "results/figure_spec.json",
-        "reason": "built from ESA Gaia Data Release 3 (Gaia) data and holds them row by row (an array of 9,863 values at figures[2].y); its terms do not allow passing them on"
+        "reason": "built from ESA Gaia Data Release 3 (Gaia) data and holds them row by row (an array of 9,863 values at figures[2].y); its terms do not allow passing them on",
+        "kind": "terms"
       }
     ]
   },
@@ -725,9 +728,88 @@
     }
   },
   "dossier": {
-    "id": "sha256:f6140fa5d03bcc0771579b7c57409c9e71014ce83c0487837f1c7cd116c8a7db",
-    "url": "https://e2er.org/d/f6140fa5d03bcc07",
+    "id": "sha256:70828157f74f556d3f9ec071999978d91d4512af0f8891f103d0b4b9d7244206",
+    "url": "https://e2er.org/d/70828157f74f556d",
     "doc": {
+      "amendments": [
+        {
+          "at": "2026-10-20T00:26:18Z",
+          "e2er_version": "0.17.1",
+          "from_dossier": "sha256:147b2eeec2427726cdb6d7c8791747dc774cddbd2c17be35033141b9c51bea80",
+          "from_version": 1,
+          "kind": "carried_over",
+          "path": "e2er.json",
+          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 1 (https://e2er.org/d/147b2eeec2427726). Its steps are the ones that version recorded; none was added or rebuilt.",
+          "sha256_before": "a6b10ec9226cf3ebf84a228d05e22a7b2b91947cc9a4b03cc0dc25dbabceeda1"
+        },
+        {
+          "path": "paper/abstract.tex",
+          "kind": "abstract_rewritten",
+          "sha256_before": "5f2e11a14005c2d793cd99902ceeefd3fb8b36df1c48da72f7c98a9dcc152e42",
+          "sha256_after": "78bfd329e22bce50c70b92019cb70ab8106f0a7f13d37c9264889b3ba559709c",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-22T07:58:24Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 1840
+        },
+        {
+          "path": "paper/paper.tex",
+          "kind": "abstract_rewritten",
+          "sha256_before": "ed5d9b07a24b2fb9cafd599e670400e9af2ee50688d9eadb5f3084f93222f82e",
+          "sha256_after": "47f00856a6b9b0527db2cacd84ecc00c951468e7c95e8e6311b92cf5191eef95",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-22T07:58:24Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 26035
+        },
+        {
+          "path": "paper/paper.pdf",
+          "kind": "abstract_rewritten",
+          "sha256_before": "ab7a5a62e861ab4e6f9abae5abbd4ff04df01a1ac935d4109b8d9079a72d2b22",
+          "sha256_after": "120599f45bb9601caa073dc48b19062e71ba94efd2a4a376b4fac8126c3edfaa",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-22T07:58:24Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 78787
+        },
+        {
+          "path": "report.html",
+          "kind": "abstract_rewritten",
+          "sha256_before": "67f9d2597889bc9f697e737ae82de4aec4afc3783fca02c75c8a4bc67739b550",
+          "sha256_after": "d4339953a10cab1d778231c4910b51fadfa236eca360f5b642d42342faeb48c3",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-22T07:58:24Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 17168
+        },
+        {
+          "path": "e2er.json",
+          "kind": "carried_over",
+          "sha256_before": "fe1525d5eed8b11ac43f6f4cf366ec235cca9a15c41f98b460d6243d47064aa9",
+          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 2 (https://e2er.org/d/f6140fa5d03bcc07). Its steps are the ones that version recorded; none was added or rebuilt.",
+          "at": "2026-10-22T07:58:58Z",
+          "from_version": 2,
+          "from_dossier": "sha256:f6140fa5d03bcc0771579b7c57409c9e71014ce83c0487837f1c7cd116c8a7db",
+          "e2er_version": "0.17.3"
+        }
+      ],
+      "availability": {
+        "data": {
+          "access": "private"
+        },
+        "code": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        }
+      },
       "components": [
         {
           "id": "agent:abstract_writer",
@@ -2830,28 +2912,7 @@
           "type": "specialist"
         }
       ],
-      "availability": {
-        "data": {
-          "access": "private"
-        },
-        "code": {
-          "access": "public",
-          "url": "https://github.com/bhanneke/e2er-demos"
-        }
-      },
-      "purpose": "demonstration",
-      "amendments": [
-        {
-          "path": "e2er.json",
-          "kind": "carried_over",
-          "sha256_before": "a6b10ec9226cf3ebf84a228d05e22a7b2b91947cc9a4b03cc0dc25dbabceeda1",
-          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 1 (https://e2er.org/d/147b2eeec2427726). Its steps are the ones that version recorded; none was added or rebuilt.",
-          "at": "2026-10-20T00:26:18Z",
-          "from_version": 1,
-          "from_dossier": "sha256:147b2eeec2427726cdb6d7c8791747dc774cddbd2c17be35033141b9c51bea80",
-          "e2er_version": "0.17.1"
-        }
-      ]
+      "purpose": "demonstration"
     }
   }
 }
