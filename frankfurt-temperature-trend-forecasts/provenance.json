@@ -23,7 +23,7 @@
   },
   "files": {
     "README.md": {
-      "sha256": "6af5e6712d5b60a19fb5f969008a4eafd7c6480b9b3ed41ff049add0f319cb6a",
+      "sha256": "9a9c432d221c92431d47d545326608f2283776f5fa069e06382a93ce03519967",
       "bytes": 4387
     },
     "code/requirements.txt": {
@@ -135,16 +135,16 @@
       "bytes": 11259
     },
     "paper/abstract.tex": {
-      "sha256": "f0bef6b8b8f99851107ba0f6ae81b54581484368787c3fc78e81741deb7d00e8",
-      "bytes": 2089
+      "sha256": "0ce6a2bb6c1e1c197073028775ff8a1c32d59ba277ea4f061fac33cc7b5899c7",
+      "bytes": 1421
     },
     "paper/paper.pdf": {
-      "sha256": "a81c0c43ac35e64f03828fab629e78936f50df0c092b08c88001f6928fd2a6aa",
-      "bytes": 111954
+      "sha256": "68693269f619270c151098996fc67dccfaa4a221cfc671f943583be8eb087427",
+      "bytes": 114112
     },
     "paper/paper.tex": {
-      "sha256": "4dc09831eab1c83ce2d00cad44e92bdb812685e4e1e34c8cb8b55e6ffa3f6a6f",
-      "bytes": 28283
+      "sha256": "9d3a84fa3d64338f980cb28a0b8d253b2ed79014b5efb22180665e61c51cee7c",
+      "bytes": 29706
     },
     "paper/refs.bib": {
       "sha256": "55c9206a0b9fb9b4b0181a084e2db79497e6706bdb2bcfe51274444203162054",
@@ -183,8 +183,8 @@
       "bytes": 34202
     },
     "report.html": {
-      "sha256": "c0ae43fed736a1791c60f19b790f17fe00a24a4385acbb2a693e0e1047e02359",
-      "bytes": 17737
+      "sha256": "a79a3053d7a738653486d390bdf5b5b8521ba2d552b842f22ff9f5d31741ab0f",
+      "bytes": 16684
     },
     "reproduce.json": {
       "sha256": "76e215112e924fb8e1bf0931f2d759b1dd74725b899500066f4019a0b1dac414",
@@ -1027,6 +1027,78 @@
       "sha256_after": "6af5e6712d5b60a19fb5f969008a4eafd7c6480b9b3ed41ff049add0f319cb6a",
       "reason": "the study's summary for its GitHub repository, at the top",
       "at": "2026-10-19T22:45:23Z",
+      "kind": "readme"
+    },
+    {
+      "path": "paper/abstract.tex",
+      "kind": "abstract_rewritten",
+      "sha256_before": "f0bef6b8b8f99851107ba0f6ae81b54581484368787c3fc78e81741deb7d00e8",
+      "sha256_after": "0ce6a2bb6c1e1c197073028775ff8a1c32d59ba277ea4f061fac33cc7b5899c7",
+      "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+      "at": "2026-10-22T08:00:41Z",
+      "model": "claude-sonnet-5-5",
+      "backend": "claude_code",
+      "e2er_version": "0.17.3",
+      "bytes_before": 2089
+    },
+    {
+      "path": "paper/paper.tex",
+      "kind": "abstract_rewritten",
+      "sha256_before": "4dc09831eab1c83ce2d00cad44e92bdb812685e4e1e34c8cb8b55e6ffa3f6a6f",
+      "sha256_after": "ab7b49cb34aedf3284ea46eed8cfeaf486b1b4eba27647cecb8dec59148f3c6b",
+      "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+      "at": "2026-10-22T08:00:41Z",
+      "model": "claude-sonnet-5-5",
+      "backend": "claude_code",
+      "e2er_version": "0.17.3",
+      "bytes_before": 28283
+    },
+    {
+      "path": "paper/paper.pdf",
+      "kind": "abstract_rewritten",
+      "sha256_before": "a81c0c43ac35e64f03828fab629e78936f50df0c092b08c88001f6928fd2a6aa",
+      "sha256_after": "0f85e10341a8e32d94a1c29b2f5d8d915aa7482f6644fe4abc641d5f470952c7",
+      "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+      "at": "2026-10-22T08:00:41Z",
+      "model": "claude-sonnet-5-5",
+      "backend": "claude_code",
+      "e2er_version": "0.17.3",
+      "bytes_before": 111954
+    },
+    {
+      "path": "report.html",
+      "kind": "abstract_rewritten",
+      "sha256_before": "c0ae43fed736a1791c60f19b790f17fe00a24a4385acbb2a693e0e1047e02359",
+      "sha256_after": "a79a3053d7a738653486d390bdf5b5b8521ba2d552b842f22ff9f5d31741ab0f",
+      "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+      "at": "2026-10-22T08:00:41Z",
+      "model": "claude-sonnet-5-5",
+      "backend": "claude_code",
+      "e2er_version": "0.17.3",
+      "bytes_before": 17737
+    },
+    {
+      "path": "paper/paper.tex",
+      "sha256_before": "ab7b49cb34aedf3284ea46eed8cfeaf486b1b4eba27647cecb8dec59148f3c6b",
+      "sha256_after": "9d3a84fa3d64338f980cb28a0b8d253b2ed79014b5efb22180665e61c51cee7c",
+      "reason": "stamped with the dossier link",
+      "at": "2026-10-22T08:01:11Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "sha256_before": "0f85e10341a8e32d94a1c29b2f5d8d915aa7482f6644fe4abc641d5f470952c7",
+      "sha256_after": "68693269f619270c151098996fc67dccfaa4a221cfc671f943583be8eb087427",
+      "reason": "recompiled with the dossier link",
+      "at": "2026-10-22T08:01:11Z",
+      "kind": "stamp"
+    },
+    {
+      "path": "README.md",
+      "sha256_before": "6af5e6712d5b60a19fb5f969008a4eafd7c6480b9b3ed41ff049add0f319cb6a",
+      "sha256_after": "9a9c432d221c92431d47d545326608f2283776f5fa069e06382a93ce03519967",
+      "reason": "the study's summary for its GitHub repository, at the top",
+      "at": "2026-10-22T08:01:11Z",
       "kind": "readme"
     }
   ]

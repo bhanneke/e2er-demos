@@ -1,7 +1,7 @@
 {
   "schema": "e2er-research-object/0.1",
   "id": "bhanneke/frankfurt-temperature-trend-forecasts",
-  "content_id": "sha256:3a1ea11a621536e0f03c716cee2135654ada8f37ce533c728d50e9dba504bda9",
+  "content_id": "sha256:fdedc9e496cf57649362ad138629a43750540d146191d022b2e5748c8b21e2b4",
   "title": "How has the monthly mean air temperature at 2 metres in Frankfurt am Main (NA...",
   "question": "How has the monthly mean air temperature at 2 metres in Frankfurt am Main (NASA POWER, 50.11 N, 8.68 E) changed since 1981, and how well do seasonal forecasting models predict the next 36 months compared with a seasonal naive baseline?",
   "contributors": [
@@ -535,15 +535,15 @@
   "outputs": [
     {
       "path": "paper/abstract.tex",
-      "sha256": "f0bef6b8b8f99851107ba0f6ae81b54581484368787c3fc78e81741deb7d00e8"
+      "sha256": "0ce6a2bb6c1e1c197073028775ff8a1c32d59ba277ea4f061fac33cc7b5899c7"
     },
     {
       "path": "paper/paper.pdf",
-      "sha256": "a81c0c43ac35e64f03828fab629e78936f50df0c092b08c88001f6928fd2a6aa"
+      "sha256": "68693269f619270c151098996fc67dccfaa4a221cfc671f943583be8eb087427"
     },
     {
       "path": "paper/paper.tex",
-      "sha256": "4dc09831eab1c83ce2d00cad44e92bdb812685e4e1e34c8cb8b55e6ffa3f6a6f"
+      "sha256": "9d3a84fa3d64338f980cb28a0b8d253b2ed79014b5efb22180665e61c51cee7c"
     },
     {
       "path": "paper/refs.bib",
@@ -644,12 +644,12 @@
     {
       "check": "integrity",
       "status": "PASS",
-      "detail": "65 files hash-verified against provenance.json; 72 table cell(s) traced in the derivation graph; 5 change(s) after export recorded as amendments (README.md, paper/paper.pdf, paper/paper.tex)"
+      "detail": "65 files hash-verified against provenance.json; 72 table cell(s) traced in the derivation graph; 12 change(s) after export recorded as amendments (README.md, paper/abstract.tex, paper/paper.pdf); the abstract rewritten after export by e2er's abstract step (paper/abstract.tex, paper/paper.pdf, paper/paper.tex, report.html)"
     },
     {
       "check": "numbers",
       "status": "PASS",
-      "detail": "76 table cell(s) are source values at the precision shown; text (not gating): 127 of 128 number(s) are source values, 0 differ from the quantity named nearby, 1 untraced"
+      "detail": "76 table cell(s) are source values at the precision shown; text (not gating): 129 of 130 number(s) are source values, 0 differ from the quantity named nearby, 1 untraced"
     },
     {
       "check": "tables",
@@ -770,9 +770,89 @@
     }
   },
   "dossier": {
-    "id": "sha256:c985731bebd416627892828103bd10b1f5c56b65ab97a6b399f143696a425c80",
-    "url": "https://e2er.org/d/c985731bebd41662",
+    "id": "sha256:1215b034eea11a01fc92c842bee5d11c7dae4eddf20227de6eadd54fc3229edc",
+    "url": "https://e2er.org/d/1215b034eea11a01",
     "doc": {
+      "amendments": [
+        {
+          "at": "2026-10-19T22:45:21Z",
+          "e2er_version": "0.17.1",
+          "from_dossier": "sha256:a6ba92eccb530a5b395e50b8e3797a41859dbb1ce55b787f5844eff431505409",
+          "from_version": 1,
+          "kind": "carried_over",
+          "path": "e2er.json",
+          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 1 (https://e2er.org/d/a6ba92eccb530a5b). Its steps are the ones that version recorded; none was added or rebuilt.",
+          "sha256_before": "8d64506a61c6db25e862c511f1f3245e7e5aa9010436aeb3c28e3a7fe5bedde0"
+        },
+        {
+          "path": "paper/abstract.tex",
+          "kind": "abstract_rewritten",
+          "sha256_before": "f0bef6b8b8f99851107ba0f6ae81b54581484368787c3fc78e81741deb7d00e8",
+          "sha256_after": "0ce6a2bb6c1e1c197073028775ff8a1c32d59ba277ea4f061fac33cc7b5899c7",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-22T08:00:41Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 2089
+        },
+        {
+          "path": "paper/paper.tex",
+          "kind": "abstract_rewritten",
+          "sha256_before": "4dc09831eab1c83ce2d00cad44e92bdb812685e4e1e34c8cb8b55e6ffa3f6a6f",
+          "sha256_after": "ab7b49cb34aedf3284ea46eed8cfeaf486b1b4eba27647cecb8dec59148f3c6b",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-22T08:00:41Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 28283
+        },
+        {
+          "path": "paper/paper.pdf",
+          "kind": "abstract_rewritten",
+          "sha256_before": "a81c0c43ac35e64f03828fab629e78936f50df0c092b08c88001f6928fd2a6aa",
+          "sha256_after": "0f85e10341a8e32d94a1c29b2f5d8d915aa7482f6644fe4abc641d5f470952c7",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-22T08:00:41Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 111954
+        },
+        {
+          "path": "report.html",
+          "kind": "abstract_rewritten",
+          "sha256_before": "c0ae43fed736a1791c60f19b790f17fe00a24a4385acbb2a693e0e1047e02359",
+          "sha256_after": "a79a3053d7a738653486d390bdf5b5b8521ba2d552b842f22ff9f5d31741ab0f",
+          "reason": "abstract rewritten by e2er's abstract step after the abstract fix; the paper's text and results are unchanged",
+          "at": "2026-10-22T08:00:41Z",
+          "model": "claude-sonnet-5-5",
+          "backend": "claude_code",
+          "e2er_version": "0.17.3",
+          "bytes_before": 17737
+        },
+        {
+          "path": "e2er.json",
+          "kind": "carried_over",
+          "sha256_before": "948cfb2baff37a774260eba7e02804dc9c679b2ef4f284d614f129600ce47978",
+          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 2 (https://e2er.org/d/c985731bebd41662). Its steps are the ones that version recorded; none was added or rebuilt.",
+          "at": "2026-10-22T08:01:08Z",
+          "from_version": 2,
+          "from_dossier": "sha256:c985731bebd416627892828103bd10b1f5c56b65ab97a6b399f143696a425c80",
+          "e2er_version": "0.17.3"
+        }
+      ],
+      "availability": {
+        "data": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        },
+        "code": {
+          "access": "public",
+          "url": "https://github.com/bhanneke/e2er-demos"
+        }
+      },
       "components": [
         {
           "id": "agent:abstract_writer",
@@ -2740,29 +2820,7 @@
           "type": "specialist"
         }
       ],
-      "availability": {
-        "data": {
-          "access": "public",
-          "url": "https://github.com/bhanneke/e2er-demos"
-        },
-        "code": {
-          "access": "public",
-          "url": "https://github.com/bhanneke/e2er-demos"
-        }
-      },
-      "purpose": "demonstration",
-      "amendments": [
-        {
-          "path": "e2er.json",
-          "kind": "carried_over",
-          "sha256_before": "8d64506a61c6db25e862c511f1f3245e7e5aa9010436aeb3c28e3a7fe5bedde0",
-          "reason": "published again with files on GitHub; run database not available, dossier carried over from version 1 (https://e2er.org/d/a6ba92eccb530a5b). Its steps are the ones that version recorded; none was added or rebuilt.",
-          "at": "2026-10-19T22:45:21Z",
-          "from_version": 1,
-          "from_dossier": "sha256:a6ba92eccb530a5b395e50b8e3797a41859dbb1ce55b787f5844eff431505409",
-          "e2er_version": "0.17.1"
-        }
-      ]
+      "purpose": "demonstration"
     }
   }
 }

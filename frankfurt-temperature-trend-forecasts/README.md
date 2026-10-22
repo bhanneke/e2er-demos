@@ -5,7 +5,7 @@
 
 **Question:** How has the monthly mean air temperature at 2 metres in Frankfurt am Main (NASA POWER, 50.11 N, 8.68 E) changed since 1981, and how well do seasonal forecasting models predict the next 36 months compared with a seasonal naive baseline?
 
-**Dossier:** https://e2er.org/d/c985731bebd41662 (every step of the run, the models, the data loads and the checks; id `sha256:c985731bebd416627892828103bd10b1f5c56b65ab97a6b399f143696a425c80`)
+**Dossier:** https://e2er.org/d/1215b034eea11a01 (every step of the run, the models, the data loads and the checks; id `sha256:1215b034eea11a01fc92c842bee5d11c7dae4eddf20227de6eadd54fc3229edc`)
 
 **Made with:** e2er 0.16.0; template time-series-forecasting; model sonnet (claude_code)
 

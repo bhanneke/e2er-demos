@@ -24,7 +24,7 @@
 }
 
 \title{Warming and Forecast Skill in Monthly Temperature: Frankfurt am Main, 1981--2025}
-\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/c985731bebd41662}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
+\author{Björn Hanneke with e2er\thanks{This paper was produced with e2er. Its dossier lists every step of the run (the specialists, the checks and the researcher's actions), the files the steps produced, and the template, specialists, skills, connectors and AI models used, pinned to the versions the run used where E2ER's repository holds them: \url{https://e2er.org/d/1215b034eea11a01}.}\thanks{Demonstration. This study was produced with e2er as a demonstration or test run and is published as is. It is not presented as a research contribution, and its author does not vouch for its findings.}}
 \date{\today}
 \pagestyle{fancy}
 \fancyhf{}
@@ -42,6 +42,16 @@
 
 \begin{document}
 \maketitle
+
+\begin{abstract}
+Monthly air temperature in Central Europe follows a strong annual cycle that hides slow warming, yet planners in energy, agriculture and urban heat management need forecasts up to three years ahead. We ask how monthly near-surface air temperature in Frankfurt am Main has changed since 1981, and whether seasonal forecasting models beat a seasonal naive baseline that repeats the value from twelve months earlier. We use NASA POWER reanalysis data for one grid cell, fit trend regressions, and compare four forecasting models with the baseline on a frozen three-year hold-out from 2023 to 2025. Temperature rose by about 0.50 degrees Celsius per decade from 1981 to 2022, in all four seasons, with no detectable change in the seasonal cycle. All four models cut the baseline's forecast error by about 30 percent, and no model outperforms the others. Simple statistical models that average over several years therefore forecast Frankfurt's monthly temperature better than reusing last year's value.
+% src: estimation_results.json#trend.annual_training_1981_2022.slope_per_decade
+% computed: 1 - h2_result.models.ets_ana.holdout_rmse_ratio_vs_seasonal_naive (0.68) to 1 - h2_result.models.sarima.holdout_rmse_ratio_vs_seasonal_naive (0.71), i.e. 29 to 32 percent
+
+\medskip
+\noindent Keywords: temperature trend, seasonal forecasting, seasonal naive benchmark, reanalysis, Frankfurt am Main.
+\end{abstract}
+
 
 \section{Introduction}
 
