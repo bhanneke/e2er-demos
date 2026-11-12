@@ -1,0 +1,72 @@
+{
+  "schema": "e2er-reproduce-report/1",
+  "folder": "<run folder>",
+  "environment": {
+    "sandbox": {
+      "image": "e2er-reproduce:404704b8c0ad3ee9",
+      "base": "python:3.12-slim",
+      "docker": "/usr/local/bin/docker"
+    },
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "2.3.3",
+      "python-dateutil": "2.9.0.post0",
+      "pytz": "2026.5",
+      "six": "1.17.0",
+      "tzdata": "2026.5"
+    },
+    "installer": "pip in a Docker sandbox (python:3.12-slim)",
+    "network_guard": true
+  },
+  "steps": [
+    {
+      "command": "python get_data.py",
+      "about": "load the inputs the folder does not ship (if any)",
+      "exit_code": 0,
+      "seconds": 6.9,
+      "tail": "",
+      "log": "<step log>",
+      "reload": true,
+      "network": [],
+      "missing": "",
+      "skipped": ""
+    },
+    {
+      "command": "python clean_rs198.py",
+      "about": "data preparation: builds the study's tables from the loaded ones",
+      "exit_code": 1,
+      "seconds": 1.0,
+      "tail": "           ^^^^^^^^^^^^^^^^^^^\nAssertionError: unit check failed\n== Sample flow ==\nraw rows: 588\nafter spatial_type = COUNTRY: 555 (dropped 33 REGION/GLOBAL rows)\nvalues outside 0-50 per 100,000: 2",
+      "log": "<step log>",
+      "reload": false,
+      "network": [],
+      "missing": "",
+      "skipped": ""
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data.db",
+      "source": "the study's database, tables: country_names (Natural Earth vector data: Admin 0 \u2013 Countries, countries of the world, Natural Earth v5.1.2, 1:50 million, EPSG:4326, release v5.1.2, loaded 2026-10-13); road_deaths_2021 (Global Health Observatory (GHO) data repository, World Health Organization, WHO GHO RS_198: Estimated road traffic death rate (per 100 000 population) (all locations, 2021\u20132021), release 2024-04-15, loaded 2026-10-13); who_region_lookup (made by the study during the run); who_rs198_2021 (Global Health Observatory (GHO) data repository, World Health Organization, WHO GHO RS_198: Estimated road traffic death rate (per 100 000 population) (all locations, 2021\u20132021), release 2024-04-15, loaded 2026-10-13); who_rs198_2021_clean (made by the study during the run)",
+      "tables_differ": [
+        "road_deaths_2021",
+        "who_region_lookup",
+        "who_rs198_2021",
+        "who_rs198_2021_clean"
+      ],
+      "status": "differs"
+    }
+  ],
+  "allow_network": false,
+  "sandbox": {
+    "image": "e2er-reproduce:404704b8c0ad3ee9",
+    "base": "python:3.12-slim",
+    "docker": "/usr/local/bin/docker"
+  },
+  "results": [],
+  "tables": null,
+  "verdict": "Could not reproduce: the step `python clean_rs198.py` failed.",
+  "exit_code": 2,
+  "run_folder_kept": false
+}

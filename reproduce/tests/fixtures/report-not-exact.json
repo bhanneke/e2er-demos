@@ -1,0 +1,105 @@
+{
+  "schema": "e2er-reproduce-report/1",
+  "folder": "<run folder>",
+  "environment": {
+    "sandbox": {
+      "image": "e2er-reproduce:dfe3d2b57d164ad4",
+      "base": "python:3.12-slim",
+      "docker": "/usr/local/bin/docker"
+    },
+    "python": "3.12.14",
+    "packages": {
+      "formulaic": "1.2.2",
+      "interface_meta": "2.0.1",
+      "narwhals": "2.27.1",
+      "numpy": "2.5.4",
+      "packaging": "26.3",
+      "pandas": "2.3.3",
+      "patsy": "1.0.3",
+      "python-dateutil": "2.9.0.post0",
+      "pytz": "2026.5",
+      "scipy": "1.18.1",
+      "six": "1.17.0",
+      "statsmodels": "0.15.0",
+      "typing_extensions": "4.16.0",
+      "tzdata": "2026.5",
+      "wrapt": "2.5.1"
+    },
+    "installer": "pip in a Docker sandbox (python:3.12-slim)",
+    "network_guard": true
+  },
+  "steps": [
+    {
+      "command": "python run_estimation.py",
+      "about": "the estimation script",
+      "exit_code": 0,
+      "seconds": 1493.2,
+      "tail": "",
+      "log": "<step log>",
+      "reload": false,
+      "network": [],
+      "missing": "",
+      "skipped": ""
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data.db",
+      "source": "the study's database, tables: frankfurt_t2m_annual (made by the study during the run); frankfurt_t2m_clean (made by the study during the run); frankfurt_t2m_monthly (NASA Prediction Of Worldwide Energy Resources (POWER), NASA Langley Research Center, NASA POWER monthly T2M at lat 50.11, lon 8.68, 1981\u20132025, release v2.10.0, loaded 2026-10-13)",
+      "status": "identical"
+    }
+  ],
+  "allow_network": false,
+  "sandbox": {
+    "image": "e2er-reproduce:dfe3d2b57d164ad4",
+    "base": "python:3.12-slim",
+    "docker": "/usr/local/bin/docker"
+  },
+  "results": [
+    {
+      "published": "results/estimation_results.json",
+      "produced": "estimation_results.json",
+      "values": 3463,
+      "counts": {
+        "identical": 1600,
+        "same_at_precision": 527,
+        "small_difference": 1332,
+        "differs": 4,
+        "missing_in_rerun": 0,
+        "only_in_rerun": 0
+      },
+      "matches": false,
+      "problem": null,
+      "largest_differences": [
+        {
+          "path": "horizon_errors/ets_ana/abs_error_by_h[2]",
+          "published": 7.144960642779807e-05,
+          "rerun": 0.00011875229105484664,
+          "relative_difference": 0.39833071182771085
+        },
+        {
+          "path": "horizon_errors/ets_ana/error_by_h[2]",
+          "published": -7.144960642779807e-05,
+          "rerun": -0.00011875229105484664,
+          "relative_difference": 0.39833071182771085
+        }
+      ]
+    }
+  ],
+  "tables": {
+    "rendered": 4,
+    "identical": [
+      "seasons.tex",
+      "diag.tex",
+      "oos.tex"
+    ],
+    "differ": [
+      "dm.tex"
+    ],
+    "not_shipped": [],
+    "not_compared": []
+  },
+  "verdict": "Not reproduced exactly: 1332 value(s) show small differences; 4 differ; 1 table(s) render differently.",
+  "exit_code": 1,
+  "run_folder_kept": false
+}

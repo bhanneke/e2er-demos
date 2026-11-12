@@ -1,0 +1,83 @@
+{
+  "schema": "e2er-reproduce-report/1",
+  "folder": "<run folder>",
+  "environment": {
+    "sandbox": {
+      "image": "e2er-reproduce:e121494ef28dc85a",
+      "base": "python:3.12-slim",
+      "docker": "/usr/local/bin/docker"
+    },
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "2.3.3",
+      "python-dateutil": "2.9.0.post0",
+      "pytz": "2026.5",
+      "scipy": "1.18.1",
+      "six": "1.17.0",
+      "tzdata": "2026.5"
+    },
+    "installer": "pip in a Docker sandbox (python:3.12-slim)",
+    "network_guard": true
+  },
+  "steps": [
+    {
+      "command": "python run_estimation.py",
+      "about": "the estimation script",
+      "exit_code": 0,
+      "seconds": 13.3,
+      "tail": "",
+      "log": "<step log>",
+      "reload": false,
+      "network": [],
+      "missing": "",
+      "skipped": ""
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data.db",
+      "source": "the study's database, tables: planets (NASA Exoplanet Archive (NASA Exoplanet Science Institute, IPAC/Caltech): Planetary Systems tables, confirmed exoplanets, NASA Exoplanet Archive Planetary Systems Composite Table (pscomppars), loaded 2026-10-13); planets_classified (made by the study during the run)",
+      "status": "identical"
+    }
+  ],
+  "allow_network": false,
+  "sandbox": {
+    "image": "e2er-reproduce:e121494ef28dc85a",
+    "base": "python:3.12-slim",
+    "docker": "/usr/local/bin/docker"
+  },
+  "results": [
+    {
+      "published": "results/estimation_results.json",
+      "produced": "estimation_results.json",
+      "values": 3539,
+      "counts": {
+        "identical": 3479,
+        "same_at_precision": 60,
+        "small_difference": 0,
+        "differs": 0,
+        "missing_in_rerun": 0,
+        "only_in_rerun": 0
+      },
+      "matches": true,
+      "problem": null,
+      "largest_differences": []
+    }
+  ],
+  "tables": {
+    "rendered": 4,
+    "identical": [
+      "groups.tex",
+      "radius_stats.tex",
+      "period_stats.tex",
+      "associations.tex"
+    ],
+    "differ": [],
+    "not_shipped": [],
+    "not_compared": []
+  },
+  "verdict": "Reproduced: every compared value is identical or the same at the published precision and every table renders the same.",
+  "exit_code": 0,
+  "run_folder_kept": false
+}

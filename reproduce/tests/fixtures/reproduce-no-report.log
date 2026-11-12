@@ -1,0 +1,2 @@
+Unpacked pk-spot-bitcoin-etf-comovement.e2er into <package folder> 75 file(s) match e2er-package.json (fingerprint sha256:06820857210c2e140c3c9b0b785aaa8dd8d23a1cbba9912d5e5f356bbab3ead4).
+error: reproduce.json: "compare": results/figure_spec.json is not in the folder

@@ -34,6 +34,10 @@ Each folder holds the files of one study made with [e2er](https://e2er.org): the
 
 Data go into a folder only when their source's terms allow passing them on. Data from sources whose terms do not (for example Gaia, Eurostat GISCO and the WHO Global Health Observatory), and files a study built from them, are left out. The README of each folder names every file left out and the reason, and `e2er reproduce <folder>` loads those data again from their source and rebuilds the derived files with the study's own scripts. A data file larger than GitHub takes (100 MB) is left out as well when the study's recorded steps get it back: demo 8's `data/data.db` (145 MB), whose Project Gutenberg texts `e2er reproduce` loads again and whose corpus tables it builds again with the study's own script. The data keep their sources' terms; each folder's README gives the terms and the citation of every source.
 
+## Rerun every week
+
+A GitHub Actions workflow reruns every study above, and the showcase [spot-bitcoin-etf-comovement](https://e2er.org/bhanneke/spot-bitcoin-etf-comovement), once a week with the latest e2er, and publishes whether each still reproduces as `reproduce-status.json` on the release `reproduce-status`. Each study's page on e2er.org shows the latest result. [`reproduce/README.md`](reproduce/README.md) says how it works and how to set up the same for your own studies.
+
 ## Checking a study
 
 ```bash

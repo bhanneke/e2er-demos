@@ -1,0 +1,183 @@
+# Reruns every study in reproduce/studies.json once a week and publishes whether each still
+# reproduces, as reproduce-status.json on the release `reproduce-status` of this repository.
+# e2er.org reads that file and shows one line on each study's page. reproduce/README.md says how
+# it works and how another repository can do the same.
+#
+# A study that does not reproduce is a result, not an error: its job passes and its entry says
+# so. A job fails only when this workflow itself breaks.
+name: Reproduce the studies
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"  # Mondays 03:17 UTC
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Rerun one study only (its project name, e.g. pleiades-gaia-dr3-members); empty for all"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: reproduce-status
+  cancel-in-progress: false
+
+jobs:
+  list:
+    name: List the studies
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      matrix: ${{ steps.list.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5.6.0
+        with:
+          python-version: "3.12"
+
+      - name: Test the status script
+        run: python -I -m unittest discover -s reproduce/tests
+
+      - name: Read reproduce/studies.json
+        id: list
+        env:
+          ONLY: ${{ github.event.inputs.only }}
+        run: |
+          python -I reproduce/status.py matrix --studies reproduce/studies.json --only "$ONLY" > matrix.json
+          echo "matrix=$(cat matrix.json)" >> "$GITHUB_OUTPUT"
+          cat matrix.json
+
+  study:
+    name: ${{ matrix.study.name }}
+    needs: list
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        study: ${{ fromJSON(needs.list.outputs.matrix) }}
+    env:
+      ADDRESS: ${{ matrix.study.address }}
+      NAME: ${{ matrix.study.name }}
+      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5.6.0
+        with:
+          python-version: "3.12"
+
+      - name: Install e2er (the latest release on PyPI)
+        id: install
+        run: |
+          python -m pip install --upgrade e2er
+          v="$(e2er --version)"
+          echo "$v"
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch the study package
+        id: fetch
+        run: |
+          mkdir -p out
+          set +e
+          e2er fetch "$ADDRESS" -o "out/$NAME.e2er" 2>&1 | tee out/fetch.log
+          rc=${PIPESTATUS[0]}
+          echo "exit=$rc" >> "$GITHUB_OUTPUT"
+          echo "e2er fetch exited with $rc"
+
+      - name: Reproduce the study
+        id: reproduce
+        if: steps.fetch.outputs.exit == '0'
+        run: |
+          set +e
+          # 50 minutes, so the job (60) still writes the entry; `timeout` exits with 124 then.
+          timeout --signal=INT --kill-after=2m 50m e2er reproduce "out/$NAME.e2er" --yes --json out/report.json 2>&1 | tee out/reproduce.log
+          rc=${PIPESTATUS[0]}
+          echo "exit=$rc" >> "$GITHUB_OUTPUT"
+          echo "e2er reproduce exited with $rc (0 reproduced, 1 not exactly, 2 could not run, 124 stopped after 50 minutes)"
+
+      - name: Write the study's entry
+        if: always()
+        env:
+          FETCH_EXIT: ${{ steps.fetch.outputs.exit }}
+          REPRODUCE_EXIT: ${{ steps.reproduce.outputs.exit }}
+          E2ER_VERSION: ${{ steps.install.outputs.version }}
+        run: |
+          args=()
+          if [ -n "$REPRODUCE_EXIT" ]; then args+=(--reproduce-exit "$REPRODUCE_EXIT"); fi
+          python -I reproduce/status.py entry \
+            --address "$ADDRESS" --fetch-exit "${FETCH_EXIT:-1}" "${args[@]}" \
+            --report out/report.json --log out/reproduce.log --fetch-log out/fetch.log \
+            --package "out/$NAME.e2er" --e2er-version "${E2ER_VERSION:-unknown}" \
+            --repository "$GITHUB_REPOSITORY" --run-url "$RUN_URL" -o out/entry.json
+          rm -f "out/$NAME.e2er"
+
+      - name: Keep the report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02  # v4.6.2
+        with:
+          name: reproduce-${{ matrix.study.name }}
+          path: out/
+          if-no-files-found: warn
+          retention-days: 90
+
+  publish:
+    name: Publish reproduce-status.json
+    needs: [list, study]
+    if: ${{ always() && needs.list.result == 'success' && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write  # creates the release `reproduce-status` and replaces its one file
+    env:
+      TAG: reproduce-status
+      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5.6.0
+        with:
+          python-version: "3.12"
+
+      - name: Download the studies' reports
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093  # v4.3.0
+        with:
+          pattern: reproduce-*
+          path: reports/
+
+      - name: Download the previous status
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p previous
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --pattern reproduce-status.json --dir previous --clobber \
+            || echo "No earlier status file."
+
+      - name: Merge the entries
+        run: |
+          prev=()
+          if [ -f previous/reproduce-status.json ]; then prev=(--previous previous/reproduce-status.json); fi
+          python -I reproduce/status.py merge --studies reproduce/studies.json --entries reports/ "${prev[@]}" \
+            --repository "$GITHUB_REPOSITORY" --run-url "$RUN_URL" -o reproduce-status.json --summary summary.md
+          cat summary.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Publish the file on the release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if ! gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --latest=false \
+              --title "Reproduction status" \
+              --notes "reproduce-status.json: whether each study in reproduce/studies.json still reproduces. The workflow reproduce.yml replaces the file after every run; e2er.org reads it. See reproduce/README.md."
+          fi
+          gh release upload "$TAG" reproduce-status.json --repo "$GITHUB_REPOSITORY" --clobber

@@ -1,0 +1,112 @@
+{
+  "schema": "e2er-reproduce-report/1",
+  "folder": "<run folder>",
+  "environment": {
+    "sandbox": {
+      "image": "e2er-reproduce:404704b8c0ad3ee9",
+      "base": "python:3.12-slim",
+      "docker": "/usr/local/bin/docker",
+      "reused": true
+    },
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "2.3.3",
+      "python-dateutil": "2.9.0.post0",
+      "pytz": "2026.5",
+      "six": "1.17.0",
+      "tzdata": "2026.5"
+    },
+    "installer": "pip in a Docker sandbox (python:3.12-slim)",
+    "network_guard": true
+  },
+  "steps": [
+    {
+      "command": "python get_data.py",
+      "about": "load the inputs the folder does not ship (if any)",
+      "exit_code": 0,
+      "seconds": 4.8,
+      "tail": "",
+      "log": "<step log>",
+      "reload": true,
+      "network": [],
+      "missing": "",
+      "skipped": ""
+    },
+    {
+      "command": "python clean_gaia.py",
+      "about": "data preparation: builds data/gaia_clean.csv again from the data loaded again",
+      "exit_code": 0,
+      "seconds": 0.8,
+      "tail": "",
+      "log": "<step log>",
+      "reload": false,
+      "network": [],
+      "missing": "",
+      "skipped": ""
+    },
+    {
+      "command": "python run_estimation.py",
+      "about": "the estimation script",
+      "exit_code": 0,
+      "seconds": 0.9,
+      "tail": "",
+      "log": "<step log>",
+      "reload": false,
+      "network": [],
+      "missing": "",
+      "skipped": ""
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/gaia_clean.csv",
+      "source": "a file the study's code reads",
+      "status": "differs"
+    },
+    {
+      "path": "data/gaia_dr3.csv",
+      "source": "Gaia Data Release 3 (ESA/Gaia/DPAC), Gaia ESA Archive, Gaia archive ADQL query: SELECT source_id, ra, dec, DISTANCE(POINT('ICRS', ra, dec), POINT('ICRS', 56.75, 24.12)) AS dist_deg, parallax, parallax_error, parallax_over_error, pmra, pmra_error, pmdec, pmdec_error, ruwe, astrometric_params_solved, visibility_periods_used, phot_g_mean_mag, phot_g_mean_flux_over_error, phot_bp_mean_mag, phot_rp_mean_mag, bp_rp FROM gaiadr3.gaia_source WHERE 1 = CONTAINS(POINT('ICRS', ra, dec), CIRCLE('ICRS', 56.75, 24.12, 3)) AND parallax > 2 AND parallax_over_error > 5, release DR3, loaded 2026-10-13",
+      "status": "differs"
+    }
+  ],
+  "allow_network": false,
+  "sandbox": {
+    "image": "e2er-reproduce:404704b8c0ad3ee9",
+    "base": "python:3.12-slim",
+    "docker": "/usr/local/bin/docker",
+    "reused": true
+  },
+  "results": [
+    {
+      "published": "results/estimation_results.json",
+      "produced": "estimation_results.json",
+      "values": 930,
+      "counts": {
+        "identical": 917,
+        "same_at_precision": 13,
+        "small_difference": 0,
+        "differs": 0,
+        "missing_in_rerun": 0,
+        "only_in_rerun": 0
+      },
+      "matches": true,
+      "problem": null,
+      "largest_differences": []
+    }
+  ],
+  "tables": {
+    "rendered": 3,
+    "identical": [
+      "summary.tex",
+      "grid.tex",
+      "locus.tex"
+    ],
+    "differ": [],
+    "not_shipped": [],
+    "not_compared": []
+  },
+  "verdict": "Not reproduced exactly: 2 input file(s) differ from the study's (data/gaia_clean.csv, data/gaia_dr3.csv).",
+  "exit_code": 1,
+  "run_folder_kept": false
+}
