@@ -196,3 +196,15 @@ class Merging(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SourceUnavailable(unittest.TestCase):
+    def test_a_source_that_did_not_answer_is_its_own_verdict(self):
+        report = {"category": "source_unavailable", "verdict": "Could not reproduce: WHO did not answer."}
+        e = entry(report, 2)
+        self.assertEqual(e["verdict"], "source-unavailable")
+        self.assertEqual(e["summary"], "Could not reproduce: WHO did not answer.")
+
+    def test_the_category_of_e2er_reports_maps_to_source_changed(self):
+        self.assertEqual(entry({"category": "source_changed", "verdict": "x"}, 2)["verdict"], "source-changed")
+

@@ -30,7 +30,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 SCHEMA = "e2er-reproduce-status/1"
-VERDICTS = ("reproduced", "not-exact", "failed", "source-changed")
+VERDICTS = ("reproduced", "not-exact", "failed", "source-changed", "source-unavailable")
 ADDRESS_RE = re.compile(r"^https://e2er\.org/([A-Za-z0-9](?:[A-Za-z0-9-]{0,38}))/([A-Za-z0-9._-]{1,100})$")
 REPO_RE = re.compile(r"^([A-Za-z0-9](?:[A-Za-z0-9-]{0,38}))/([A-Za-z0-9._-]{1,100})$")
 VERSION_RE = re.compile(r"^\d+\.\d+\.\d+(?:[A-Za-z0-9.+-]{0,30})$")
@@ -50,6 +50,7 @@ COUNT_KEYS = (
 RESULT_COUNTS = ("identical", "same_at_precision", "small_difference", "differs", "missing_in_rerun", "only_in_rerun")
 ENTRY_KEYS = {"address", "checked_at", "e2er_version", "verdict", "summary", "counts", "exit_code", "package_sha256", "run_url"}
 _SOURCE_CHANGED = re.compile(r"^source[-_ ]changed$")
+_SOURCE_UNAVAILABLE = re.compile(r"^source[-_ ]unavailable$")
 
 
 def now_utc() -> str:
@@ -188,6 +189,8 @@ def make_entry(*, address: str, fetch_exit: int, reproduce_exit: int | None, rep
         entry["verdict"] = "reproduced"
     elif source_changed(report):
         entry["verdict"] = "source-changed"
+    elif isinstance(report.get("category"), str) and _SOURCE_UNAVAILABLE.match(report["category"].strip().lower()):
+        entry["verdict"] = "source-unavailable"
     elif reproduce_exit == 1:
         entry["verdict"] = "not-exact"
     else:
@@ -197,6 +200,7 @@ def make_entry(*, address: str, fetch_exit: int, reproduce_exit: int | None, rep
         "not-exact": "Not reproduced exactly.",
         "source-changed": "The data loaded again from the source differ from the data the study recorded.",
         "failed": "The study's code could not be run.",
+        "source-unavailable": "A data source did not answer; the next run tries again.",
     }[entry["verdict"]]
     return entry
 

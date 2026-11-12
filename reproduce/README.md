@@ -23,6 +23,7 @@ The workflow runs every Monday at 03:17 UTC. To run it by hand, open Actions →
 | `reproduced` | `e2er reproduce` exits with 0: every compared value is identical or the same at the published precision, and every table renders the same | Reproduced on 12 November 2026 with e2er 0.20.1. |
 | `not-exact` | it exits with 1: values, tables or inputs differ | Reproduced with small numerical differences (only small differences), or "Not reproduced exactly" with e2er's summary |
 | `source-changed` | the report says that data loaded again from their source differ from the data the study recorded | The source data changed since publication, with e2er's summary |
+| `source-unavailable` | a data source did not answer (a time-out or a server error) | A data source did not answer when the study was rerun on …; the next run tries again. |
 | `failed` | the package could not be fetched, the code could not run (exit 2), or the rerun did not finish in 50 minutes | Did not reproduce on …, with the reason |
 
 The summary is e2er's own sentence from the report (`verdict`), cut to one line of at most 300 characters.
@@ -66,7 +67,7 @@ The summary is e2er's own sentence from the report (`verdict`), cut to one line 
 | `.address` | `https://e2er.org/<owner>/<project>` | the study |
 | `.checked_at` | UTC time | when the rerun finished |
 | `.e2er_version` | `0.20.1` | the e2er release that reran it |
-| `.verdict` | `reproduced`, `not-exact`, `source-changed` or `failed` | see above |
+| `.verdict` | `reproduced`, `not-exact`, `source-changed`, `source-unavailable` or `failed` | see above |
 | `.summary` | one line of plain text, 1 to 300 characters | what e2er said |
 | `.counts` | object of whole numbers, or `null` | compared values by outcome (`values`, `identical`, `same_at_precision`, `small_difference`, `differs`, `missing_in_rerun`, `only_in_rerun`), tables (`tables_rendered`, `tables_identical`, `tables_differ`) and inputs (`inputs`, `inputs_differ`); a count the report does not give is left out |
 | `.exit_code` | whole number or `null` | the exit code of `e2er reproduce` (`null` when the package could not be fetched) |
