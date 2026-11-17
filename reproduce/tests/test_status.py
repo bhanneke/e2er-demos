@@ -208,3 +208,23 @@ class SourceUnavailable(unittest.TestCase):
     def test_the_category_of_e2er_reports_maps_to_source_changed(self):
         self.assertEqual(entry({"category": "source_changed", "verdict": "x"}, 2)["verdict"], "source-changed")
 
+
+class KeepLastResult(unittest.TestCase):
+    def test_an_unanswering_source_keeps_the_last_real_result(self):
+        from status import keep_last_result
+        old = {"verdict": "reproduced", "checked_at": "2026-11-15T23:30:00Z", "summary": "Reproduced."}
+        new = {"verdict": "source-unavailable", "checked_at": "2026-11-23T03:40:00Z", "summary": "Could not reproduce yet."}
+        kept = keep_last_result(new, old)
+        self.assertEqual(kept["verdict"], "reproduced")
+        self.assertEqual(kept["checked_at"], "2026-11-15T23:30:00Z")
+        self.assertIn("did not answer when the study was rerun on 2026-11-23", kept["summary"])
+        self.assertLessEqual(len(kept["summary"]), 300)
+
+    def test_without_an_earlier_result_the_new_entry_stays(self):
+        from status import keep_last_result
+        new = {"verdict": "source-unavailable", "checked_at": "2026-11-23T03:40:00Z", "summary": "x"}
+        self.assertIs(keep_last_result(new, None), new)
+        self.assertIs(keep_last_result(new, {"verdict": "source-unavailable", "checked_at": "2026-11-15T00:00:00Z"}), new)
+        other = {"verdict": "not-exact", "checked_at": "2026-11-23T03:40:00Z", "summary": "y"}
+        self.assertIs(keep_last_result(other, {"verdict": "reproduced", "checked_at": "2026-11-15T00:00:00Z"}), other)
+

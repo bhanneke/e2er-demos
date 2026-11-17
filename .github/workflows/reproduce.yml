@@ -55,7 +55,8 @@ jobs:
   study:
     name: ${{ matrix.study.name }}
     needs: list
-    runs-on: ubuntu-latest
+    # The same processor type (arm64) as the Macs the studies ran on: some results differ in the last digits on x86.
+    runs-on: ubuntu-24.04-arm
     timeout-minutes: 60
     strategy:
       fail-fast: false

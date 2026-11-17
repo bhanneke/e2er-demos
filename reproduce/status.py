@@ -288,6 +288,21 @@ def matrix(addresses: list[str], only: str = "") -> list[dict]:
     return rows
 
 
+def keep_last_result(new: dict | None, old: dict | None) -> dict | None:
+    """A source that did not answer says nothing about the study: keep the last real result and say so.
+
+    Only when this run's verdict is source-unavailable and an earlier entry has another verdict; the earlier
+    entry keeps its verdict, date and run, and its summary gains one sentence on the source."""
+    if not new:
+        return old
+    if new.get("verdict") != "source-unavailable" or not old or old.get("verdict") == "source-unavailable":
+        return new
+    note = f" A data source did not answer when the study was rerun on {new['checked_at'][:10]}; this is the result of {old['checked_at'][:10]}."
+    kept = dict(old)
+    kept["summary"] = plain(old.get("summary", ""), SUMMARY_MAX - len(note)).rstrip() + note
+    return kept
+
+
 def merge(addresses: list[str], entries: list[dict], previous: dict | None, *, repository: str, run_url: str,
           generated_at: str | None = None) -> dict:
     """The status file: this run's entries, and the previous entry of each listed study this run did not check."""
@@ -295,7 +310,7 @@ def merge(addresses: list[str], entries: list[dict], previous: dict | None, *, r
     old = {}
     if isinstance(previous, dict) and not status_problems(previous) and previous.get("repository") == repository:
         old = {e["address"]: e for e in previous["studies"]}
-    studies = [fresh.get(a) or old.get(a) for a in addresses]
+    studies = [keep_last_result(fresh.get(a), old.get(a)) for a in addresses]
     return {
         "schema": SCHEMA,
         "repository": repository,
