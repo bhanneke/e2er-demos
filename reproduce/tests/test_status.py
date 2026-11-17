@@ -228,3 +228,18 @@ class KeepLastResult(unittest.TestCase):
         other = {"verdict": "not-exact", "checked_at": "2026-11-23T03:40:00Z", "summary": "y"}
         self.assertIs(keep_last_result(other, {"verdict": "reproduced", "checked_at": "2026-11-15T00:00:00Z"}), other)
 
+
+class AuthorsNote(unittest.TestCase):
+    def test_a_note_replaces_the_summary_unless_the_study_reproduced(self):
+        from status import with_note
+        e = {"verdict": "not-exact", "summary": "Not reproduced exactly: 144 differ."}
+        self.assertEqual(with_note(e, "Yahoo revises prices.")["summary"], "Yahoo revises prices.")
+        r = {"verdict": "reproduced", "summary": "Reproduced."}
+        self.assertIs(with_note(r, "Yahoo revises prices."), r)
+        self.assertIs(with_note(e, None), e)
+
+    def test_the_listed_notes_fit_the_status_file(self):
+        from status import read_notes
+        notes = read_notes(HERE.parent / "studies.json")
+        self.assertTrue(all(len(n) <= 300 for n in notes.values()))
+

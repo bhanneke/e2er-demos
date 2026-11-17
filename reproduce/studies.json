@@ -25,7 +25,8 @@
       "address": "https://e2er.org/bhanneke/weather-words-english-novels"
     },
     {
-      "address": "https://e2er.org/bhanneke/spot-bitcoin-etf-comovement"
+      "address": "https://e2er.org/bhanneke/spot-bitcoin-etf-comovement",
+      "note": "Yahoo Finance revises past prices after the fact, for dividends, splits and data corrections. The study used the prices it loaded on 5 October 2026; a rerun loads today's prices, so some values differ. The study's code and its record of the data explain every difference."
     }
   ]
 }

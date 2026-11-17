@@ -303,14 +303,33 @@ def keep_last_result(new: dict | None, old: dict | None) -> dict | None:
     return kept
 
 
+def read_notes(path: Path) -> dict[str, str]:
+    """The authors' notes in reproduce/studies.json, by address: one plain line each (at most SUMMARY_MAX)."""
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    out = {}
+    for s in doc.get("studies", []):
+        if isinstance(s, dict) and isinstance(s.get("note"), str) and s["note"].strip():
+            if len(s["note"]) > SUMMARY_MAX:
+                raise SystemExit(f"{path}: the note of {s.get('address')} is longer than {SUMMARY_MAX} characters")
+            out[s["address"]] = plain(s["note"])
+    return out
+
+
+def with_note(entry: dict | None, note: str | None) -> dict | None:
+    """A study that did not reproduce exactly shows the authors' note in place of e2er's verdict sentence."""
+    if not entry or not note or entry.get("verdict") == "reproduced":
+        return entry
+    return {**entry, "summary": note}
+
+
 def merge(addresses: list[str], entries: list[dict], previous: dict | None, *, repository: str, run_url: str,
-          generated_at: str | None = None) -> dict:
+          generated_at: str | None = None, notes: dict[str, str] | None = None) -> dict:
     """The status file: this run's entries, and the previous entry of each listed study this run did not check."""
     fresh = {e["address"]: e for e in entries if e.get("address") in addresses}
     old = {}
     if isinstance(previous, dict) and not status_problems(previous) and previous.get("repository") == repository:
         old = {e["address"]: e for e in previous["studies"]}
-    studies = [keep_last_result(fresh.get(a), old.get(a)) for a in addresses]
+    studies = [with_note(keep_last_result(fresh.get(a), old.get(a)), (notes or {}).get(a)) for a in addresses]
     return {
         "schema": SCHEMA,
         "repository": repository,
@@ -390,7 +409,8 @@ def main(argv: list[str] | None = None) -> int:
             continue
         entries.append(x)
     previous = _load_json(a.previous)
-    doc = merge(addresses, entries, previous if isinstance(previous, dict) else None, repository=a.repository, run_url=a.run_url)
+    doc = merge(addresses, entries, previous if isinstance(previous, dict) else None, repository=a.repository, run_url=a.run_url,
+                notes=read_notes(a.studies))
     problems = status_problems(doc)
     if problems:
         print("the status file is not valid: " + "; ".join(problems), file=sys.stderr)
